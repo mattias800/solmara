@@ -137,3 +137,11 @@ footer {
   font-size: 14px; color: var(--faint);
 }
 .footer-links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
+.instruments.wide .instrument .face { aspect-ratio: 10 / 3; }
+.tones { margin-top: 64px; max-width: 680px; }
+.tones h3 { margin: 0 0 8px; font-size: 30px; font-weight: 600; line-height: 1.1; }
+.tones p { margin: 0; color: var(--muted); }
+.tones .kind {
+  margin: 0 0 6px; font: 400 12px/1.4 "Geist Mono", monospace;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+}
