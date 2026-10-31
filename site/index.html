@@ -45,33 +45,62 @@
     </div>
   </header>
 
+  <figure class="editor-shot">
+    <img src="images/editor.webp" srcset="images/editor-800.webp 800w, images/editor.webp 1600w"
+         sizes="(max-width: 1272px) calc(100vw - 32px), 1240px" width="1600" height="868"
+         alt="The Solmara editor: a song's tracks in the arrangement, with the library of instruments beside it">
+    <figcaption>The editor as it is today. It will change as Solmara grows.</figcaption>
+  </figure>
+
   <main>
     <section id="instruments">
       <h2>Instruments with names, and faces of their own</h2>
       <p class="intro">Everything a song needs comes with Solmara. Your own plugins play beside them.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Vintergatan</h3>
+
+      <article class="feature">
+        <figure class="face">
+          <img src="images/vintergatan.webp" width="1440" height="900" loading="lazy"
+               alt="Vintergatan's window: three oscillators, two filters, envelopes, LFOs and macros">
+        </figure>
+        <div class="feature-text">
           <p class="kind">Wavetable synth</p>
-          <p>From soft pads to heavy bass. Opens your Serum and Vital presets.</p>
-        </article>
-        <article class="card">
-          <h3>Norrsken</h3>
+          <h3>Vintergatan</h3>
+          <p>The Milky Way. From soft pads to heavy bass, with wavetables to draw and shape and modulation you drag onto any knob.</p>
+          <p>Opens your Serum and Vital presets.</p>
+        </div>
+      </article>
+
+      <article class="feature reverse">
+        <figure class="face">
+          <img src="images/norrsken.webp" width="1358" height="620" loading="lazy"
+               alt="Norrsken's face: oscillators, filter, amplifier and modulation on a red case">
+        </figure>
+        <div class="feature-text">
           <p class="kind">Virtual analogue synth</p>
-          <p>Bright and immediate, for leads, stabs and pads.</p>
-        </article>
-        <article class="card">
-          <h3>PH-8, PH-6, PH-9</h3>
+          <h3>Norrsken</h3>
+          <p>The northern lights. A bright, immediate synth for leads, stabs and pads, with a face made to be played.</p>
+        </div>
+      </article>
+
+      <article class="feature machines">
+        <div class="feature-text">
           <p class="kind">Drum machines</p>
-          <p>Three analogue machines, every voice built from its circuit.</p>
-        </article>
-        <article class="card">
-          <h3>Multisampler</h3>
-          <p class="kind">Sampler</p>
-          <p>Plays sample libraries in SFZ, DecentSampler and SoundFont formats.</p>
-        </article>
-      </div>
+          <h3>PH-8, PH-9 and PH-6</h3>
+          <p>Three analogue drum machines, every voice built from its circuit.</p>
+        </div>
+        <figure class="face">
+          <img src="images/ph8.webp" width="1328" height="362" loading="lazy" alt="The PH-8 drum machine's window">
+        </figure>
+        <figure class="face">
+          <img src="images/ph9.webp" width="1263" height="420" loading="lazy" alt="The PH-9 drum machine's window">
+        </figure>
+        <figure class="face small">
+          <img src="images/ph6.webp" width="654" height="327" loading="lazy" alt="The PH-6 drum machine's face">
+        </figure>
+      </article>
+
       <ul class="more">
+        <li><strong>Sampler.</strong> Plays sample libraries in SFZ, DecentSampler and SoundFont formats.</li>
         <li><strong>Amps and pedals.</strong> Clean combos to high gain, drive pedals and cabinets.</li>
         <li><strong>For the mix.</strong> Compressors of every kind, channel strips and equalisers.</li>
         <li><strong>Rooms and echoes.</strong> Spring and plate reverbs, tape echo, chorus and phaser.</li>
