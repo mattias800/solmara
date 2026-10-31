@@ -3,56 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Solmara</title>
-  <meta name="description" content="Solmara is a music studio for your computer, in the making: instruments, effects and a timeline to write, record and mix your music.">
+  <title>Solmara: a music studio for your computer</title>
+  <meta name="description" content="Solmara is a music studio for your computer, in the making: instruments, effects and a timeline to write, play, record and mix, on Mac, Windows and Linux.">
+  <meta property="og:title" content="Solmara">
+  <meta property="og:description" content="A music studio for your computer, in the making.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mattias800.github.io/solmara/">
+  <meta property="og:image" content="https://mattias800.github.io/solmara/images/social-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#08090c">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/sky-2400.jpg" media="(min-width: 801px)">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
-    <div class="eclipse" aria-hidden="true"></div>
-    <h1>Solmara</h1>
-    <p class="lede">A music studio for your computer.<br>Write, play, record and mix, under a northern sky.</p>
-    <p class="status">In development. There is no download yet.</p>
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="hero-fade" aria-hidden="true"></div>
+
+    <nav class="nav">
+      <a class="wordmark" href="#top">Solmara</a>
+      <div class="nav-links">
+        <a href="#instruments">Instruments</a>
+        <a href="#progress">Progress</a>
+        <a href="https://github.com/mattias800/solmara">GitHub</a>
+      </div>
+    </nav>
+
+    <div class="hero-body" id="top">
+      <img class="logo" src="images/solmara-logo.webp" width="1200" height="599" alt="Solmara">
+      <h1>A music studio for your computer.</h1>
+      <p class="lede">Instruments, effects and a timeline to write, play, record and mix. On Mac, Windows and Linux.</p>
+      <p class="status">Early in development · nothing to download yet</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/mattias800/solmara">Follow the progress</a>
+        <a class="button" href="#instruments">See the instruments</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="grid">
-      <article>
-        <h2>Instruments</h2>
-        <p>Synthesizers led by Vintergatan, drum machines, keys, organs and samplers, with sounds made for them.</p>
-      </article>
-      <article>
-        <h2>Effects</h2>
-        <p>Amps and pedals, compressors, tape, spring and plate reverbs: models of the analogue sound people love, and effects of our own.</p>
-      </article>
-      <article>
-        <h2>Your way of writing</h2>
-        <p>A piano roll, a drum sequencer, a tracker, and patterns written as code. Every one plays in the same arrangement.</p>
-      </article>
-      <article>
-        <h2>Sounds to start with</h2>
-        <p>Free sample libraries and instruments, fetched from their makers with their terms shown before you take them.</p>
-      </article>
+    <section id="instruments">
+      <h2>Instruments with names, and faces of their own</h2>
+      <p class="intro">Everything a song needs comes with Solmara. Your own plugins play beside them.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Vintergatan</h3>
+          <p class="kind">Wavetable synth</p>
+          <p>From soft pads to heavy bass. Opens your Serum and Vital presets.</p>
+        </article>
+        <article class="card">
+          <h3>Norrsken</h3>
+          <p class="kind">Virtual analogue synth</p>
+          <p>Bright and immediate, for leads, stabs and pads.</p>
+        </article>
+        <article class="card">
+          <h3>PH-8, PH-6, PH-9</h3>
+          <p class="kind">Drum machines</p>
+          <p>Three analogue machines, every voice built from its circuit.</p>
+        </article>
+        <article class="card">
+          <h3>Multisampler</h3>
+          <p class="kind">Sampler</p>
+          <p>Plays sample libraries in SFZ, DecentSampler and SoundFont formats.</p>
+        </article>
+      </div>
+      <ul class="more">
+        <li><strong>Amps and pedals.</strong> Clean combos to high gain, drive pedals and cabinets.</li>
+        <li><strong>For the mix.</strong> Compressors of every kind, channel strips and equalisers.</li>
+        <li><strong>Rooms and echoes.</strong> Spring and plate reverbs, tape echo, chorus and phaser.</li>
+        <li><strong>Sounds to begin with.</strong> Free libraries from their makers, with their terms shown before you take them.</li>
+      </ul>
+    </section>
+
+    <section id="writing">
+      <h2>Four ways to write, one song</h2>
+      <div class="ways">
+        <div>
+          <h3>Piano roll</h3>
+          <p>The scale shaded behind your notes, and chords suggested for the ones you pick.</p>
+        </div>
+        <div>
+          <h3>Drum sequencer</h3>
+          <p>Steps, accents and swing, the way drum machines work.</p>
+        </div>
+        <div>
+          <h3>Tracker</h3>
+          <p>Rows of notes and commands, fast from the keyboard.</p>
+        </div>
+        <div>
+          <h3>Patterns as code</h3>
+          <p>A rhythm written as a line of text, heard as you type.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div>
+        <h3>Mac, Windows and Linux</h3>
+        <p>The same studio on all three. Start a song on one and finish it on another.</p>
+      </div>
+      <div>
+        <h3>Projects you can trust</h3>
+        <p>Saved as readable text, so a version history shows what changed, and brought back after a crash.</p>
+      </div>
+      <div>
+        <h3>Scriptable, if you want it</h3>
+        <p>Everything the editor does also works from the command line, so scripts and AI agents can build and mix a song. Leave it alone and Solmara is simply a studio.</p>
+      </div>
+    </section>
+
+    <section id="progress">
+      <h2>It is early</h2>
+      <p class="intro">Solmara is being built a piece at a time. When there is something to try, it will be here and under <a href="https://github.com/mattias800/solmara/releases">Releases</a> on GitHub.</p>
+      <ol class="stages">
+        <li class="now"><strong>In development</strong><span>Now. Nothing to download yet.</span></li>
+        <li><strong>Preview</strong><span>A first download to try.</span></li>
+        <li><strong>Beta</strong><span>Ready for real songs.</span></li>
+        <li><strong>1.0</strong><span>Stable.</span></li>
+      </ol>
     </section>
 
     <section class="name">
       <h2>The name</h2>
-      <p><em>Sol</em> is the sun. <em>Mara</em> is the spirit of Nordic folklore who sits on a sleeper's chest, the <em>mare</em> in <em>nightmare</em>.
-        Solmara is the sun's nightmare: an eclipse, when the wolf that chases the sun across the sky catches it.</p>
+      <p><em>Sol</em> is the sun. <em>Mara</em> is the spirit of Nordic folklore who sits on a sleeper's chest, the <em>mare</em> in <em>nightmare</em>. Solmara is the sun's nightmare: an eclipse, when the wolf that chases the sun across the sky catches it.</p>
     </section>
 
     <section class="help">
-      <h2>Found a problem?</h2>
+      <h2>Found a problem, or have an idea?</h2>
       <p>Tell us on <a href="https://github.com/mattias800/solmara/issues/new/choose">GitHub</a>: what you did, what you heard, and what you expected.</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Mattias Andersson</p>
+    <span>© 2026 Mattias Andersson</span>
+    <span class="footer-links">
+      <a href="https://github.com/mattias800/solmara/issues/new/choose">Report a problem</a>
+      <a href="https://github.com/mattias800/solmara">GitHub</a>
+    </span>
   </footer>
 </body>
 </html>

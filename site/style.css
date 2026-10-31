@@ -1,32 +1,117 @@
 :root {
-  --night: #0b0b0e;
-  --plate: #131318;
-  --line: #24242c;
-  --text: #ece6dc;
-  --muted: #9b958c;
-  --dawn: #f6b98a;
+  --night: #08090c;
+  --plate: #12131a;
+  --line: #23222c;
+  --text: #ebe6dc;
+  --soft: #c9c2b4;
+  --muted: #b3adbf;
+  --faint: #8f8a9e;
+  --gold: #dcc08a;
+  --gold-bright: #f3dfb2;
 }
+
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 html, body { margin: 0; background: var(--night); color: var(--text); }
 body { font: 400 17px/1.6 "Geist", system-ui, sans-serif; }
-a { color: var(--dawn); text-decoration: none; border-bottom: 1px solid rgba(246, 185, 138, 0.35); }
-a:hover { border-bottom-color: var(--dawn); }
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-bright); }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: "Cormorant", Georgia, serif; font-weight: 500; }
 
-.hero { text-align: center; padding: 96px 16px 72px; }
-.eclipse {
-  width: 168px; height: 168px; margin: 0 auto 40px; border-radius: 50%;
-  background: var(--night);
-  box-shadow: 0 0 0 2px rgba(246, 185, 138, 0.9), 0 0 36px 8px rgba(246, 185, 138, 0.35), 0 0 120px 30px rgba(246, 185, 138, 0.12);
+/* The hero: the night sky, held back so the words lead */
+.hero { position: relative; overflow: hidden; }
+.hero-sky {
+  position: absolute; inset: 0;
+  background: url("images/sky-2400.jpg") 62% top / cover no-repeat;
+  filter: saturate(0.4) brightness(0.55) contrast(1.05);
 }
-h1 { font-weight: 300; font-size: clamp(48px, 9vw, 88px); letter-spacing: 0.08em; margin: 0; }
-.lede { font-size: 20px; color: var(--text); margin: 18px 0 8px; }
-.status { font: 400 13px/1 "Geist Mono", monospace; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 28px; }
+@media (max-width: 800px) {
+  .hero-sky { background-image: url("images/sky-1200.jpg"); }
+}
+.hero-fade {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(8, 9, 12, 0.35) 0%, rgba(8, 9, 12, 0.15) 40%, var(--night) 100%);
+}
 
-main { max-width: 960px; margin: 0 auto; padding: 0 16px 64px; }
-h2 { font-weight: 500; font-size: 18px; margin: 0 0 8px; color: var(--dawn); }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-.grid article { background: var(--plate); border: 1px solid var(--line); border-radius: 10px; padding: 22px; }
-.grid p, .name p, .help p { margin: 0; color: var(--muted); }
-.name, .help { margin-top: 56px; max-width: 640px; }
+.nav {
+  position: relative; max-width: 1240px; margin: 0 auto; padding: 22px 16px;
+  display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; justify-content: space-between;
+}
+.wordmark { font-family: "Cormorant", Georgia, serif; font-weight: 600; font-size: 28px; color: var(--text); }
+.nav-links { display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 15px; }
+.nav-links a { color: var(--soft); }
+.nav-links a:hover { color: var(--text); }
 
-footer { border-top: 1px solid var(--line); text-align: center; padding: 24px 16px; color: var(--muted); font-size: 13px; }
+.hero-body { position: relative; max-width: 1240px; margin: 0 auto; padding: 72px 16px 96px; text-align: center; }
+.logo { display: block; width: min(440px, 80vw); height: auto; margin: 0 auto; }
+h1 { margin: 40px auto 0; max-width: 860px; font-size: clamp(44px, 6.4vw, 84px); line-height: 1; }
+.lede { margin: 22px auto 0; max-width: 560px; font-size: 19px; color: var(--soft); }
+.status {
+  margin: 22px 0 0; font: 400 13px/1.4 "Geist Mono", monospace;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+}
+.actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.button {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 8px;
+  border: 1px solid rgba(235, 230, 220, 0.3); color: var(--text);
+}
+.button:hover { color: var(--text); border-color: rgba(235, 230, 220, 0.6); }
+.button.primary { background: var(--text); border-color: var(--text); color: var(--night); font-weight: 500; }
+.button.primary:hover { background: #fff; color: var(--night); }
+
+/* The page below */
+main { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+main section { padding-top: 120px; }
+h2 { margin: 0 0 12px; font-size: clamp(36px, 4vw, 52px); line-height: 1.05; }
+.intro { margin: 0 0 40px; max-width: 620px; color: var(--muted); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.card { padding: 26px; border-radius: 12px; background: var(--plate); border: 1px solid var(--line); }
+.card h3 { margin: 0; font-size: 30px; font-weight: 600; line-height: 1.1; }
+.card .kind {
+  margin: 6px 0 14px; font: 400 12px/1.4 "Geist Mono", monospace;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+}
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+.more {
+  list-style: none; margin: 36px 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px 32px;
+  color: var(--muted); font-size: 15px;
+}
+.more strong { display: block; color: var(--text); font-weight: 500; }
+
+.ways { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 40px; }
+.ways div { border-top: 1px solid var(--line); padding-top: 18px; }
+.ways h3, .facts h3 { margin: 0 0 6px; font-size: 26px; font-weight: 600; }
+.ways p, .facts p { margin: 0; color: var(--muted); font-size: 15px; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.facts div { padding: 28px; border-radius: 12px; border: 1px solid var(--line); }
+
+.stages {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;
+}
+.stages li { border-top: 2px solid #2b2a36; padding-top: 14px; }
+.stages strong { display: block; font-weight: 500; }
+.stages span { font-size: 14px; color: var(--faint); }
+.stages .now { border-top-color: var(--gold); }
+.stages .now strong { color: var(--gold); }
+.stages .now span { color: var(--muted); }
+
+.name, .help { max-width: 720px; margin: 0 auto; text-align: center; }
+.name p {
+  margin: 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.4; color: var(--soft);
+}
+.help p { margin: 0; color: var(--muted); }
+
+footer {
+  max-width: 1240px; margin: 120px auto 0; padding: 28px 16px 44px; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 14px 32px; justify-content: space-between;
+  font-size: 14px; color: var(--faint);
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
