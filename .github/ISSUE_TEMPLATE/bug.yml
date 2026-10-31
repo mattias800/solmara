@@ -1,0 +1,35 @@
+name: Something doesn't work
+description: Solmara crashed, froze, lost something or did what you didn't ask.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, step by step, and what Solmara did then.
+      placeholder: "I dragged a clip onto the drum track, and the app closed."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Solmara version
+      description: If you know it.
+  - type: dropdown
+    id: system
+    attributes:
+      label: Computer
+      options: [Mac, Windows, Linux]
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: A screenshot, a short recording, or the project (zipped) helps a lot.

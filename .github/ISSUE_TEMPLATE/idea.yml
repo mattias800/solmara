@@ -1,0 +1,16 @@
+name: I have an idea
+description: Something you wish Solmara did, or did differently.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like to do, and what is in the way now?
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How do you do it today?
+      description: In another app, with hardware, or a workaround. Optional.

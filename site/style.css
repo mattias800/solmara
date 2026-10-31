@@ -1,0 +1,32 @@
+:root {
+  --night: #0b0b0e;
+  --plate: #131318;
+  --line: #24242c;
+  --text: #ece6dc;
+  --muted: #9b958c;
+  --dawn: #f6b98a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--night); color: var(--text); }
+body { font: 400 17px/1.6 "Geist", system-ui, sans-serif; }
+a { color: var(--dawn); text-decoration: none; border-bottom: 1px solid rgba(246, 185, 138, 0.35); }
+a:hover { border-bottom-color: var(--dawn); }
+
+.hero { text-align: center; padding: 96px 16px 72px; }
+.eclipse {
+  width: 168px; height: 168px; margin: 0 auto 40px; border-radius: 50%;
+  background: var(--night);
+  box-shadow: 0 0 0 2px rgba(246, 185, 138, 0.9), 0 0 36px 8px rgba(246, 185, 138, 0.35), 0 0 120px 30px rgba(246, 185, 138, 0.12);
+}
+h1 { font-weight: 300; font-size: clamp(48px, 9vw, 88px); letter-spacing: 0.08em; margin: 0; }
+.lede { font-size: 20px; color: var(--text); margin: 18px 0 8px; }
+.status { font: 400 13px/1 "Geist Mono", monospace; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 28px; }
+
+main { max-width: 960px; margin: 0 auto; padding: 0 16px 64px; }
+h2 { font-weight: 500; font-size: 18px; margin: 0 0 8px; color: var(--dawn); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.grid article { background: var(--plate); border: 1px solid var(--line); border-radius: 10px; padding: 22px; }
+.grid p, .name p, .help p { margin: 0; color: var(--muted); }
+.name, .help { margin-top: 56px; max-width: 640px; }
+
+footer { border-top: 1px solid var(--line); text-align: center; padding: 24px 16px; color: var(--muted); font-size: 13px; }

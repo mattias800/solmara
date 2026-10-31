@@ -1,0 +1,29 @@
+name: It sounds wrong
+description: Clicks, dropouts, distortion, an instrument or effect that doesn't sound as it should.
+labels: [sound]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you hear?
+      description: Which instrument, effect or track, and when it happens.
+      placeholder: "The spring reverb crackles when I turn Decay up while playing."
+    validations:
+      required: true
+  - type: input
+    id: interface
+    attributes:
+      label: Audio interface and sample rate
+      description: As Preferences → Audio shows them.
+  - type: dropdown
+    id: system
+    attributes:
+      label: Computer
+      options: [Mac, Windows, Linux]
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: A recording or the project
+      description: A short audio clip of the problem, or the project (zipped), makes it much easier to find.
