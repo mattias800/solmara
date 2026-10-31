@@ -62,37 +62,34 @@ h1 { margin: 40px auto 0; max-width: 860px; font-size: clamp(44px, 6.4vw, 84px);
 .button.primary:hover { background: #fff; color: var(--night); }
 
 /* The page below */
-main { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+main { max-width: 1032px; margin: 0 auto; padding: 0 16px; }
 main section { padding-top: 120px; }
 h2 { margin: 0 0 12px; font-size: clamp(36px, 4vw, 52px); line-height: 1.05; }
 .intro { margin: 0 0 40px; max-width: 620px; color: var(--muted); }
 
 /* Screenshots of the editor and of the instruments' faces */
-.editor-shot { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+/* Screenshots of the editor and of the instruments' faces, each a link to its full size */
+.editor-shot { max-width: 1032px; margin: 0 auto; padding: 0 16px; }
 .editor-shot img, .face img {
-  display: block; width: 100%; height: auto; border-radius: 10px;
-  border: 1px solid var(--line); box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+  display: block; width: 100%; height: auto; border-radius: 8px;
+  border: 1px solid var(--line); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
+.editor-shot a, .face { display: block; cursor: zoom-in; }
 .editor-shot figcaption { margin-top: 14px; text-align: center; font-size: 14px; color: var(--faint); }
-.face { margin: 0; }
-.face.small { max-width: 654px; }
 
-.feature {
-  display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 32px 48px;
-  align-items: center; margin-top: 72px;
+
+.instruments { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px 32px; }
+.instrument .face, .machines .face { margin-bottom: 18px; }
+.instrument .face { aspect-ratio: 1440 / 900; display: flex; align-items: center; }
+.machines { margin-top: 56px; }
+.machine-faces {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;
+  align-items: start; margin-top: 20px;
 }
-.feature.reverse { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
-.feature.reverse .face { order: 2; }
-.feature.machines { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-.feature.machines .feature-text { max-width: 620px; margin-bottom: 8px; }
-@media (max-width: 860px) {
-  .feature { grid-template-columns: minmax(0, 1fr); }
-  .feature.reverse .face { order: 0; }
-}
-.feature-text h3 { margin: 0 0 10px; font-size: 40px; font-weight: 600; line-height: 1.05; }
-.feature-text p { margin: 0 0 10px; color: var(--muted); }
-.feature-text .kind {
-  margin: 0 0 8px; font: 400 12px/1.4 "Geist Mono", monospace;
+.instrument h3, .machines h3 { margin: 0 0 8px; font-size: 30px; font-weight: 600; line-height: 1.1; }
+.instrument p, .machines p { margin: 0; color: var(--muted); font-size: 15px; }
+.instruments .kind, .machines .kind {
+  margin: 0 0 6px; font: 400 12px/1.4 "Geist Mono", monospace;
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
 }
 
