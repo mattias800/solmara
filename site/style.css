@@ -80,8 +80,13 @@ h2 { margin: 0 0 12px; font-size: clamp(36px, 4vw, 52px); line-height: 1.05; }
 
 .instruments { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px 32px; }
 .instrument .face, .machines .face { margin-bottom: 18px; }
-.instrument .face { aspect-ratio: 1440 / 900; display: flex; align-items: center; }
-.machines { margin-top: 56px; }
+.instrument .face { aspect-ratio: 1440 / 900; display: flex; align-items: center; justify-content: center; }
+.instrument .face img { width: auto; max-width: 100%; max-height: 100%; }
+.machines, .more-synths { margin-top: 64px; }
+.more-synths .group-title { margin: 0 0 24px; font-size: 30px; font-weight: 600; line-height: 1.1; }
+.instruments.small { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 24px; }
+.instruments.small .instrument h3 { font-size: 24px; }
+.instruments.small .instrument p { font-size: 14px; }
 .machine-faces {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;
   align-items: start; margin-top: 20px;
