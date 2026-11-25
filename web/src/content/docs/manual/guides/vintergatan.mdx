@@ -1,0 +1,70 @@
+---
+title: Vintergatan, the flagship synth
+description: Its oscillators, filters, modulation by dragging, effects inside, its three faces, and opening Vital and Serum presets.
+---
+import Shot from '../../../../components/Shot.astro';
+import face from '../../../../assets/devices/vintergatan.webp';
+
+**Vintergatan**, the Milky Way, is Solmara's flagship synth: one instrument for pads, basses, leads, keys and sound design. Everything it does is reachable at once in its window, and every source of movement can be dragged onto any knob.
+
+<Shot src={face} alt="Vintergatan's window: three oscillators down the left, the filters and voices in the middle, routes and sends at the right, and the modulation sources along the foot." />
+
+## How the sound goes
+
+Three oscillators, **A**, **B** and **C**, a sub, noise and another track's audio go into two filters, then the amplifier, the voices' unison and pan, and out through an effects chain of its own.
+
+## Oscillators
+
+Each oscillator has a **mode**, and shows only its mode's controls:
+
+- **Wavetable:** a table of waveforms, morphed through by its **position**, and bent by one of sixteen **warps**: sync, bends, pulse width, mirror, quantize, remap, FM, AM and ring modulation from another oscillator, squeeze and formant.
+- **Analog:** a saw, pulse, triangle or sine, clean or with the **character** of one of Solmara's modelled synths: Mini Moonbeam's, Shy One's, June Bloom's, Promise Bloom's, the Two-Filter Mono's, Titan 303's. B and C can hard-sync to A and be bent by it.
+- **Sample** and **Multisample:** audio played across the keys.
+- **Granular:** a sample read as a cloud of grains.
+- **Spectral:** a sample taken apart into its spectrum and put together again as it plays, so its speed, its pitch and its timbre move apart from each other.
+
+Right-click an oscillator's title to copy its settings, paste them into another, or swap two.
+
+A table's menu offers the factory's tables by kind, the oscillator's own audio, **Load audio…**, and **Draw…**, where you draw a first and a last frame and how many frames morph between them.
+
+## Filters
+
+Two filters, joined **in series**, **in parallel**, **split**, or **per source**, each source going to the filter you choose. Their circuits are those of Solmara's modelled filters. Drag a filter's corner on its response to set its cutoff and resonance.
+
+## Modulation, by dragging
+
+Six envelopes, ten LFOs, sixteen macros, and what you play (velocity, the key, the mod wheel, pitch bend, pressure, slide and random) are the **sources**, as tiles along the window's foot.
+
+- **Drag a source's grip onto a knob** to make it move that knob. The words at the mouse say what letting go does.
+- A knob shows its first two routes as arcs in their sources' colours, each ending in a ring: drag the ring to set how far the route moves it.
+- Right-click a knob to take a route away. The list of **routes in use** shows every route, its amount a bar to drag.
+
+Envelopes are edited on their pictures: drag a corner for a time or the sustain, or a stage up or down to bend it. LFOs have shapes you can draw.
+
+While it plays, the pictures move: a dot for each voice on its table, its filter's corner, its envelopes and its LFOs, and each route's bar shows where its source has it now.
+
+## Voices
+
+**Mono** or **poly**, **glide**, and **unison** on each oscillator with its own number of voices, spread and width, drawn as bars. **Arp** has an arpeggiator of its own: shapes as cards, twelve pattern slots, and a pattern editor whose rows are the notes you hold.
+
+## Effects inside
+
+Any of Solmara's effects go in Vintergatan's own **effects** chain, after its voices, saved with the preset. Two **FX buses** beside it take sends from each oscillator, the sub, the noise, the input and each filter, each bus its own chain and level, so the reverb can take only the pad's top oscillator. The macros can move the effects' knobs.
+
+## Three faces
+
+- **Compact**, as it is added: the three oscillators, the first filter, the amplifier's envelope and four macros.
+- **Expanded:** every control in the chain's two rows, a page of envelopes, LFOs or macros at a time.
+- **Its window** (<kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd>): everything at once, at 1,440 by 900.
+
+## Opening Vital and Serum presets
+
+Vintergatan opens **Vital** presets and **Serum 2** presets as its own, wavetables, envelopes, LFOs, macros and routes with them:
+
+- **File › Import Vital and Serum presets as Vintergatan presets…** turns a preset or a whole folder of them into Vintergatan presets in your library, sorted by kind (Bass, Pad, Keys…).
+
+Where a preset uses something Vintergatan does not have, the nearest it has stands in.
+
+## Every control
+
+[Vintergatan's reference](../../devices/instruments/vintergatan/) lists every one of its controls, with its range and where it starts.

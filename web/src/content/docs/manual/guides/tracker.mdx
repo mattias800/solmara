@@ -1,0 +1,46 @@
+---
+title: Trackers and modules
+description: Write in a tracker clip with the keyboard, import XM and MOD modules, and play GoatTracker songs.
+---
+
+For those who write music in rows of notes and commands, Solmara has a **tracker clip**, in the manner of the classic trackers, and plays tracker modules as they were made.
+
+## Import a module
+
+**File › Import XM, MOD or GoatTracker module…**, or drag the file onto the arrangement. An XM or MOD module becomes a tracker clip with its patterns, its order and its instruments built from its samples. If the project had no clips yet, the module's tempo becomes the project's.
+
+## The tracker clip
+
+A tracker clip holds its own song: an **order list** of patterns down the left, **patterns** of rows and channels, and **instruments** built from samples. Double-click it, or select it and press <kbd>Enter</kbd>, to open the pattern editor. Click the grid to give it the keys.
+
+In the arrangement the clip shows its song as it plays: alternate patterns in a brighter tint of the track's colour, each with its number where it starts, the notes where they sound through speed changes, breaks, jumps and loops.
+
+## Writing in the pattern editor
+
+The keys are the classic tracker keys:
+
+| Key | Does |
+| --- | --- |
+| Arrows | Move by row and by column |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd> | The next / the previous channel |
+| <kbd>Page Up</kbd>, <kbd>Page Down</kbd>, <kbd>Home</kbd>, <kbd>End</kbd> | Jump |
+| <kbd>Z</kbd>–<kbd>M</kbd> and <kbd>Q</kbd>–<kbd>P</kbd> | Enter notes, at the octave set in the toolbar or with <kbd>F1</kbd>–<kbd>F8</kbd> |
+| <kbd>`</kbd> or <kbd>1</kbd> | Key off |
+| Hex digits, letters | The instrument, volume, effect and its parameter |
+| <kbd>Delete</kbd> | Clear (<kbd>Shift</kbd> clears the whole cell) |
+| <kbd>Insert</kbd> / <kbd>Backspace</kbd> | Insert a row / delete the row above (<kbd>Shift</kbd> for all channels) |
+| <kbd>Shift</kbd>+arrows | Select a block |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>C</kbd>, <kbd>X</kbd>, <kbd>V</kbd> | Copy, cut, paste a block |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Up</kbd> / <kbd>Down</kbd> | Transpose a semitone (<kbd>Shift</kbd> for an octave) |
+
+The cursor row stays in the middle of the view as you move, and the channel headers stay pinned. Out of edit mode, the note keys only play, for jamming.
+
+## Instruments and samples
+
+The instruments belong to the clip, numbered as in a module. Each has up to 16 samples and a keymap that chooses which plays on each note, volume and panning envelopes, a fadeout and an auto-vibrato. A sample can be a region of a longer file, so one breakbeat can be chopped into many, with a loop that runs forward or back and forth. **Load sample** in the inspector loads any audio file into a slot.
+
+A channel can also play through the **track's devices** instead of its samples: its notes go to the track's instrument and effects, written in tracker rows.
+
+## GoatTracker songs
+
+Songs from GoatTracker 2, for the sound chip of an early-1980s home computer, open as a clip of their own, played on Solmara's own model of the chip, with an editor of their own. A packed SID tune opens the same way and plays by its own code.

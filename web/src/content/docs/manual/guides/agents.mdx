@@ -1,0 +1,51 @@
+---
+title: Make music with an agent
+description: Connect an AI agent to Solmara, what it can do in your project, and how it shows you around.
+---
+
+An AI agent, such as Claude or Codex, can work in Solmara beside you: build a sketch, write a part, set up a mix, or find a setting and show you where it is. It works in the project you have open, and every change it makes is a step you can see, hear and undo.
+
+## Connect an agent
+
+Solmara comes with **solmara-mcp**, a server for the [Model Context Protocol](https://modelcontextprotocol.io) that agents speak. The agent starts it as it needs it; you only tell the agent where it is.
+
+In Claude Code:
+
+```sh
+claude mcp add solmara -- /path/to/solmara-mcp
+```
+
+For an agent that reads a JSON configuration:
+
+```json
+{"mcpServers": {"solmara": {"command": "/path/to/solmara-mcp"}}}
+```
+
+`/path/to/` is the folder Solmara is installed in.
+
+## What it can do
+
+The agent has the same operations as the editor: tracks, clips and notes, devices and their knobs, automation, the mixer, presets, rendering and more. A few ways to put it to work:
+
+- *"A four-bar house beat at 124, a bassline under it, and chords in A minor."*
+- *"Rename and colour these forty tracks by instrument, and set up a reverb and a delay to send to."*
+- *"Level the mix and tell me where it clips."*
+- *"Write a counter-melody for the chorus."*
+
+Notes, chords and drum patterns can be read and written as short lines of text, so an agent can read a part, change it and write it back.
+
+## Working side by side
+
+- **Its changes show up in the editor** as it makes them, within a moment, and playback carries on. Each one is a step on your undo list.
+- **It plays what it made:** it can start, stop and move your editor's transport, and set the loop, so you hear a change straight away.
+- **If you have unsaved changes** when it saves, the editor asks which to keep: **Reload and lose mine**, or **Keep mine**, so your next save wins.
+
+## Let it show you around
+
+Ask where something is (*"where do I set the swing?"*) and the agent can light it up in the editor and lead you there step by step, opening the menus and windows on the way. **Help › Tours** has a few guided tours of its own to start with.
+
+## From a script
+
+Everything an agent does is also a command of **solmara-cli**, for scripts of your own, and a whole batch of changes can be sent at once as JSON, applied all together or not at all.
+
+An agent is an option, never a requirement. Without one, Solmara is simply a studio.

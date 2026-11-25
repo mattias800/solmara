@@ -1,0 +1,30 @@
+---
+title: Samplers
+description: Play sample libraries, slice a loop to remix it, play a sample across the keys, and make clouds of grains.
+---
+
+Solmara has four samplers, each for a different job, in the library under **Instruments › Samplers**.
+
+## Sampler: sample libraries
+
+**Sampler** plays whole sample libraries in **SFZ**, **DecentSampler** and **SoundFont** formats, a piano or a string section in many layers. It plays them where they lie on your disk, streaming long samples from there, so a big library loads quickly. Its knobs are the library's own controls and its volume.
+
+Free libraries from their makers are in **View › Get content…**: once installed, each program is a Sampler preset in the library, under its kind (Piano, Keys, Bass, Drums…). If a project uses a library you don't have, the Sampler offers **Get this pack**.
+
+## Slice Player: remix a loop
+
+**Slice Player** cuts a loop into parts at its hits, a part on each key from C1 up, each named by what it sounds like (kick, snare, ghost, hat or percussion), with its own pitch, level, pan, decay and reverse. It writes a **drum pattern** that plays the loop as it was, so you can remix it in the [drum editor](../drum-patterns/): move hits, mute them, swap the snare for another.
+
+**Slice to new track**, in an audio clip's menu, does it all in one go: a new MIDI track with a Slice Player holding the loop, and the pattern that plays it. A filter with an LFO, and a held tail for slower tempos, are on its face.
+
+## Simple Sampler: one sample across the keys
+
+**Simple Sampler** plays one sample from a root note, up and down the keyboard, with a trim, a forward loop and an amplitude envelope. **Load sample** loads any audio file. It is also what a [Drum Rack](../devices/#racks-devices-inside-a-device) pad gets when you drop a sample on it.
+
+## Granular Sampler: clouds of grains
+
+**Granular Sampler** plays a sample as many short, overlapping **grains**, for pads, textures and sounds that drift. Set where in the sample it reads (**position**) and how fast it moves through it (**scan**), how long each grain is and how many there are, and how far they scatter in place, pitch and stereo. **Freeze** holds it still. An LFO moves the position, pitch, density and size, so the cloud keeps changing.
+
+## Drum Rack: your own kit
+
+**Drum Rack** builds a kit a pad at a time. Drop samples from your file manager straight onto its pads, or an instrument or a preset on each. A pad can [choke](../drum-patterns/#drum-machines) others, as a closed hi-hat cuts an open one.

@@ -45,24 +45,65 @@ export default defineConfig({
 				{
 					label: 'How to',
 					items: [
-						{ label: 'Tracks', slug: 'manual/guides/tracks' },
-						{ label: 'Work with clips', slug: 'manual/guides/clips' },
-						{ label: 'Write notes in the piano roll', slug: 'manual/guides/piano-roll' },
-						{ label: 'Compose with chords', slug: 'manual/guides/composer' },
-						{ label: 'Drum and step patterns', slug: 'manual/guides/drum-patterns' },
-						{ label: 'Devices and presets', slug: 'manual/guides/devices' },
-						{ label: 'Automate a sound', slug: 'manual/guides/automation' },
-						{ label: 'Audio clips', slug: 'manual/guides/audio-clips' },
-						{ label: 'Record', slug: 'manual/guides/recording' },
-						{ label: 'Mix', slug: 'manual/guides/mixing' },
-						{ label: 'The library and sounds', slug: 'manual/guides/library' },
-						{ label: 'Save and export', slug: 'manual/guides/projects' },
+						{
+							label: 'Arrange',
+							items: [
+								{ label: 'Tracks', slug: 'manual/guides/tracks' },
+								{ label: 'Work with clips', slug: 'manual/guides/clips' },
+								{ label: 'Tempo, time and markers', slug: 'manual/guides/tempo-and-markers' },
+								{ label: 'Play clips live in the session', slug: 'manual/guides/session' },
+								{ label: 'Automate a sound', slug: 'manual/guides/automation' },
+							],
+						},
+						{
+							label: 'Write',
+							items: [
+								{ label: 'Write notes in the piano roll', slug: 'manual/guides/piano-roll' },
+								{ label: 'Compose with chords', slug: 'manual/guides/composer' },
+								{ label: 'Drum and step patterns', slug: 'manual/guides/drum-patterns' },
+								{ label: 'MIDI devices', slug: 'manual/guides/midi-devices' },
+								{ label: 'Trackers and modules', slug: 'manual/guides/tracker' },
+							],
+						},
+						{
+							label: 'Sound',
+							items: [
+								{ label: 'Devices and presets', slug: 'manual/guides/devices' },
+								{ label: 'Vintergatan, the flagship synth', slug: 'manual/guides/vintergatan' },
+								{ label: 'Samplers', slug: 'manual/guides/samplers' },
+								{ label: 'The Modular', slug: 'manual/guides/modular' },
+								{ label: 'Guitar and bass', slug: 'manual/guides/guitar' },
+								{ label: 'The library and sounds', slug: 'manual/guides/library' },
+							],
+						},
+						{
+							label: 'Record and audio',
+							items: [
+								{ label: 'Record', slug: 'manual/guides/recording' },
+								{ label: 'Audio clips', slug: 'manual/guides/audio-clips' },
+							],
+						},
+						{
+							label: 'Mix and finish',
+							items: [
+								{ label: 'Mix', slug: 'manual/guides/mixing' },
+								{ label: 'Master a song', slug: 'manual/guides/mastering' },
+								{ label: 'Save and export', slug: 'manual/guides/projects' },
+							],
+						},
+						{
+							label: 'AI and agents',
+							items: [
+								{ label: 'AI on your own computer', slug: 'manual/guides/ai' },
+								{ label: 'Make music with an agent', slug: 'manual/guides/agents' },
+							],
+						},
 					],
 				},
 				{
 					label: 'Reference',
 					items: [
-						{ label: 'Arrangement: mouse and keys', slug: 'manual/reference/arrangement-mouse-and-keys' },
+						{ label: "Arrangement: mouse and keys", slug: 'manual/reference/arrangement-mouse-and-keys' },
 						{ label: 'Keyboard shortcuts', slug: 'manual/reference/keyboard-shortcuts' },
 						{ label: 'Preferences', slug: 'manual/reference/preferences' },
 					],

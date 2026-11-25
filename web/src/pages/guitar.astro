@@ -5,6 +5,7 @@ import OriginFilter from '../components/OriginFilter.astro';
 import { guitar, guitarFamilies } from '../lib/devices';
 
 const families = guitarFamilies.filter((family) => family.devices.length > 0);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Site
@@ -36,7 +37,7 @@ const families = guitarFamilies.filter((family) => family.devices.length > 0);
 		<p class="intro">
 			Sign in to <a href="https://www.tone3000.com">TONE3000</a> from Solmara to find amps, pedals and whole rigs that players
 			have captured with Neural Amp Modeler. Download them into your library and play them in the A2 Modeller Amp. A project
-			keeps the tones it uses, so it opens the same on another computer.
+			keeps the tones it uses, so it opens the same on another computer. <a href={`${base}/manual/guides/guitar/`}>Guitar and bass, in the manual →</a>
 		</p>
 	</section>
 </Site>

@@ -1,0 +1,46 @@
+---
+title: The Modular
+description: Patch modules into an instrument or an effect of your own, with cables, voltages, subpatches and prefabs.
+---
+import Shot from '../../../../components/Shot.astro';
+import patch from '../../../../assets/modular/patch.webp';
+
+The **Modular** is a modular synthesizer inside Solmara: modules patched together with cables into an instrument, or an effect, of your own. It comes in two kinds:
+
+- **Modular**, an instrument: it plays its track's notes, one voice or many.
+- **Modular FX**, an effect: the track's audio comes in at its **Audio** jacks, for effects no chain can make. It hears the notes too.
+
+Add one from the library like any device, and open its window from the key in its header.
+
+<Shot src={patch} alt="The Modular's window: a clock drives a step sequencer, cables running to an envelope, the module library at the left." />
+
+## The window
+
+- **The library** at the left lists the modules by group: Sources, Filters and amps, Shapers, Modulation, Sequencing, Effects, Logic and math, Mixing and routing, Utilities, Displays and Subpatches. Below them, every Solmara instrument, effect and MIDI device can go in the rack too. Double-click a module to add it, or drag it onto the canvas. Right-click the empty canvas for the same list.
+- **From the track** and **to the track**: the boxes where the rack meets the track: its audio, its notes as pitch, gate and velocity, pressure and bend, the song's clock, reset and run, and the macros.
+- **Along the top:** the voices, the output, the mix, legato and glide, and the macros that play the patch from outside.
+
+Zoom and pan around the canvas; **Cables** shows or hides them; **Panic** silences everything at once.
+
+## Patching
+
+**Drag from an output to an input** to connect them. Inputs are on the left of each module, outputs on the right. Right-click a cable to inspect it or take it away.
+
+- One output can feed as many inputs as you like. An input takes one cable; to combine sources, use a mixer.
+- Each cable has an **amount** and an **offset**, to scale what it carries.
+- Signals are voltages: audio is ten volts at full scale, pitch is **one volt per octave** with 0 V at middle C, and a gate rises to 10 V. Audio and control voltage can go anywhere: an LFO into an audio input, an audio signal modulating a filter.
+- **Feedback** is allowed: mark one cable in the loop as **delayed**, and it holds its signal back by a single sample.
+
+A cable into a knob's input moves the knob around where it is set, so a patch is still played with its knobs and automated like any device.
+
+## Subpatches and prefabs
+
+Select modules and fold them into a **subpatch**: a module of your own, with its own inputs and outputs, opened to edit what is inside. **Save as prefab** keeps it in the library; every copy of a prefab follows it, so a change to one, applied, changes them all.
+
+## Start from a patch
+
+The library has dozens of Modular patches to start from: basses, leads, pads, keys, plucks, bells, drums and self-playing sequences, built from the rack's own modules. A patch that plays on its own needs no notes; it plays while the song does.
+
+## Modules as effects
+
+Some modules are effects worth having on their own: a wavefolder, a modal resonator, a spectral bank, grain textures. The library's **Modular FX** presets put one in a Modular FX for you, ready to drop on any track.

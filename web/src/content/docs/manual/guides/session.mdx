@@ -1,0 +1,51 @@
+---
+title: Play clips live in the session
+description: Scenes and slots, launching clips and scenes, recording into a slot, and follow actions.
+---
+
+Beside the arrangement, where clips have their place in time, every project has a **session**, where clips are launched while the song plays: to jam, to try ideas against each other, or to perform.
+
+Press <kbd>Tab</kbd>, or the session key in the top bar, to show it in place of the arrangement. <kbd>Tab</kbd> again goes back.
+
+## Scenes and slots
+
+The session is a grid. Each track has a **column**, and each **scene** is a row across them. Where they meet is a **slot**, which holds one clip or none. A clip in a slot is a clip like any other, edited the same way; it just has no place in time.
+
+- **A clip's slot** is in its track's colour, with a picture of its notes or its audio, and the key that launches it at its left. The key is green while the clip plays and flashes while it waits for the beat to launch on.
+- **The Main column** at the right holds the scenes, numbered; **+** under them adds one.
+- **The status row** at the foot shows what each track is doing: which pass of its clip it is on and how far round, or that it plays the arrangement.
+- **The mixer** sits under the slots, a strip in each column.
+
+## Launch
+
+- **Click a clip's key** to launch it. It plays round and round on its track until another clip on the track is launched, or the track is stopped.
+- **Click a scene's triangle**, in the Main column, to launch every clip in its row together. A track with an empty slot in that scene stops.
+- **The square** in an empty slot stops its track.
+- **Back to the arrangement:** the key at the right of a track's status brings it back to playing the arrangement; the key under the Main column brings every track back.
+
+A launch waits for the next bar by default, so everything stays in time. **Launch**, at the top right, sets how long it waits.
+
+While a track plays the session, its arrangement is silent, and its header says SESSION.
+
+## With the keys
+
+The arrows move the selected slot, or the selected scene along the Main column. <kbd>Enter</kbd> launches the selected slot's clip or scene, and then selects the next scene down, so you can step through a song scene by scene. <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> inserts a scene, and <kbd>Shift</kbd>+<kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> **captures** what every track plays now into a new scene. <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> duplicates a scene, or a clip into the next free slot down.
+
+## Make clips in the session
+
+- **Double-click an empty slot** for a clip of its track's kind, a bar long.
+- **Drag a clip** to an empty slot (<kbd>Alt</kbd> copies it), or drop an audio file there.
+- **Drag a clip onto Session**, or press <kbd>Tab</kbd> while dragging, to carry it between the views: from the arrangement into a slot, or from a slot onto the arrangement.
+- **Record into a slot:** on an armed track, an empty slot shows a circle. Click it, and from the next launch what you play goes into a new clip there. Click again to end it; the clip plays on from there, in step.
+
+## How a clip launches
+
+The inspector has a **Launch** part for a clip in a slot:
+
+- **Mode:** **Trigger** launches it; **Gate** plays it while the key is held; **Toggle** launches it and the next press stops it; **Repeat** launches it again and again while held.
+- **Legato:** it takes over where the clip playing on its track is, in step with it, instead of from its start.
+- **Quantize:** how long its launch waits, in place of the session's.
+- **Loop:** off, it plays once and then its track falls silent.
+- **Follow action:** what happens when it has played: stop, play again, or launch the previous, next, first, last, any or another clip in its group of slots, with a chance between two actions. A scene has a follow action too, among the scenes.
+
+A scene can also set the **tempo** and the **time signature** when it is launched, from its menu, so a song's parts can each have their own.
