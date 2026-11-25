@@ -5,7 +5,7 @@ description: "Rhythm Map"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: plays drum patterns from a map of rhythms as the song plays. Where on the map it stands sets how plain or syncopated its kick and snare are, a density for each of four drums thins or fills them, and each drum has a mirror that plays between its hits. The track's own notes pass through.
 

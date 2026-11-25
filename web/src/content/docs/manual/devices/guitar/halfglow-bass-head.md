@@ -7,7 +7,7 @@ description: "Hybrid bass head: valve preamp, solid-state punch."
 
 **An emulation of an analogue original,** modelled on the 1990s American hybrid bass head: a valve preamp into a solid-state power amp.
 
-A modelled hybrid bass head with its cabinet: a valve preamp with a gain, bright, ultra high and ultra low, an active bass, a middle of five frequencies and a treble, a valve drive stage of its own, a nine-band graphic EQ, and a solid-state power amp behind a master. Punchy and tight: modelled on the rack-era hybrid bass head and fitted to a plugin model of the unit.
+A modelled hybrid bass head with its cabinet: a valve preamp with a gain, bright, ultra high and ultra low, an active bass, a middle of five frequencies and a treble, a valve drive stage of its own, a nine-band graphic EQ, and a solid-state power amp behind a master. Punchy and tight: modelled on the rack-era hybrid bass head.
 
 [Halfglow Bass Head on the website](/solmara/guitar/#halfglow-bass-head)
 

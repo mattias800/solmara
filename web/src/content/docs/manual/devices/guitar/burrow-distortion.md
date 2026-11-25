@@ -7,7 +7,7 @@ description: "Op-amp distortion into diodes in the style of the late-1970s Ameri
 
 **An emulation of an analogue original,** modelled on the late-1970s American op-amp distortion pedal.
 
-An op-amp distortion for guitar: a slow op-amp whose gain the distortion knob raises, its bandwidth narrowing as it does, clipping into two diodes to ground, then a filter knob that darkens it. From a gritty overdrive to a thick, saturated distortion. Distortion, filter, volume, and an output; light or full quality. Modelled on the American op-amp distortion pedal of the late 1970s and fitted to a model of it.
+An op-amp distortion for guitar: a slow op-amp whose gain the distortion knob raises, its bandwidth narrowing as it does, clipping into two diodes to ground, then a filter knob that darkens it. From a gritty overdrive to a thick, saturated distortion. Distortion, filter, volume, and an output; light or full quality. Modelled on the American op-amp distortion pedal of the late 1970s.
 
 [Burrow Distortion on the website](/solmara/guitar/#burrow-distortion)
 

@@ -41,7 +41,7 @@ export type Origin = 'own' | 'analogue' | 'digital';
 export const originParts: { key: Origin; label: string; short: string }[] = [
 	{ key: 'own', label: 'Our own designs', short: 'Our own design' },
 	{ key: 'analogue', label: 'Emulations of analogue gear', short: 'Analogue emulation' },
-	{ key: 'digital', label: 'Emulations of digital gear and software', short: 'Digital emulation' },
+	{ key: 'digital', label: 'Emulations of digital gear', short: 'Digital emulation' },
 ];
 export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)!.short;
 /** A family's devices in its three parts, the empty ones left out. */

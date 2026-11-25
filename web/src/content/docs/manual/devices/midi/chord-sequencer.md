@@ -5,7 +5,7 @@ description: "Chord Sequencer"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: sixteen chords on pads, from sets in many styles or written by hand, each lit by how well it would follow the last, played from the keys or by a progression of up to sixteen bars, with velocity, humanizing, a bass taken away or a root added, and eight patterns.
 

@@ -5,7 +5,7 @@ description: "Valve channel strip in the style of the modern American tube strip
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on a modern American valve channel-strip plugin: preamp, three-band EQ and optical leveller.
+**An emulation of an analogue original,** modelled on a modern American valve channel strip: preamp, three-band EQ and optical leveller.
 
 A modelled modern American valve channel strip: a valve microphone preamplifier of two triode stages with a gain switch and a level knob that warms and then drives it, an 80 Hz low cut, a three-band equaliser of a low shelf, a swept mid bell and a high shelf, an optical compressor with one knob that also sets its make-up gain, and the output. The preamplifier at two or four times the sample rate, as late at both.
 

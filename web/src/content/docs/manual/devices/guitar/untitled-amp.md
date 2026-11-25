@@ -5,7 +5,7 @@ description: "Tight heavy rig: two gates, a drive, a boost, a two-gain valve amp
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on a 2020s tight high-gain rig plugin.
+**An emulation of an analogue original,** modelled on a modern tight high-gain rig: two gates, a drive, a boost, a two-gain valve amp and a miked cabinet.
 
 A tight, heavy guitar rig in one device, each section switched by itself: a gate, a downward expander; a gate pedal; a drive pedal with drive, tone and level; a boost that keeps the lows out of the amp; one amp, a valve circuit of ours revoiced toward a digital amp suite's, with a low or high input, pull, gain I and gain II, low, mid, high, presence, master and level; a nine-band EQ with a high-pass and a low-pass; and its cabinet. It holds the audio back by 76 frames.
 

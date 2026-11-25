@@ -5,7 +5,7 @@ description: "Note Tool"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: lets through the notes within a range of keys and of velocities, or outside it, and moves, fixes or scales their pitch, octave, velocity on a curve, and length, limits how many sound at once, and holds them.
 

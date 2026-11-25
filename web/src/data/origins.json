@@ -1,5 +1,5 @@
 {
- "_": "Where each device comes from. A device listed here emulates another, analogue or digital (software counts as digital), and modelledOn says what it is modelled on, plainly, never by its maker's or its model's name. A device not listed is a design of Solmara's own.",
+ "_": "Where each device comes from. A device listed here emulates gear, analogue or digital, and modelledOn says what it is modelled on, plainly: never by its maker's or its model's name, and never as another company's software. A device not listed is a design of Solmara's own.",
  "emulations": {
   "builtin.tube-mixer-saturator": {
    "circuit": "analogue",
@@ -37,17 +37,9 @@
    "circuit": "analogue",
    "modelledOn": "the late-1960s British classic console channel: transformer preamp, EQ and compressor"
   },
-  "builtin.anchor-arpeggiator": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
   "builtin.arcturus-2600": {
    "circuit": "analogue",
    "modelledOn": "the early-1970s American semi-modular studio synth, its modules patched on the panel and played from a duophonic keyboard"
-  },
-  "builtin.bassline-generator": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
   },
   "builtin.temper-high-gain-amplifier": {
    "circuit": "analogue",
@@ -81,13 +73,9 @@
    "circuit": "analogue",
    "modelledOn": "the late-1970s American op-amp distortion pedal"
   },
-  "builtin.chord-sequencer": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
   "builtin.modern-metal-rig": {
-   "circuit": "digital",
-   "modelledOn": "a modern metal amp plugin, fitted section by section"
+   "circuit": "analogue",
+   "modelledOn": "a modern metal rig: a gate, a chug, low dirt, a tight amp and a cabinet"
   },
   "builtin.clean-combo-amplifier": {
    "circuit": "analogue",
@@ -142,20 +130,12 @@
    "modelledOn": "the bus compressor of the 1980s British large-format consoles"
   },
   "builtin.djent-amp": {
-   "circuit": "digital",
-   "modelledOn": "a 2020s progressive-metal rig plugin"
+   "circuit": "analogue",
+   "modelledOn": "a modern progressive-metal rig: a gate, a drive, three valve amps, a nine-band EQ and a miked cabinet"
   },
   "builtin.spring-reverb": {
    "circuit": "analogue",
    "modelledOn": "the early-1960s American outboard spring reverb tank of surf guitar"
-  },
-  "builtin.drum-sequencer": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
-  "builtin.dual-arpeggio": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
   },
   "builtin.character-compressor": {
    "circuit": "analogue",
@@ -179,7 +159,7 @@
   },
   "builtin.formant-shifter": {
    "circuit": "digital",
-   "modelledOn": "the 2010s vocal-transformer plugins"
+   "modelledOn": "the vocal transformers of 2010s pop and hip-hop"
   },
   "builtin.dimension-chorus": {
    "circuit": "analogue",
@@ -230,8 +210,8 @@
    "modelledOn": "the late-1960s American solid-state optical leveler that followed the valve one"
   },
   "builtin.leviathan-rig": {
-   "circuit": "digital",
-   "modelledOn": "a 2020s heavy-guitar rig plugin: gate, drives, three amps, EQ and cabinet"
+   "circuit": "analogue",
+   "modelledOn": "a modern heavy-guitar rig: a gate, two drive pedals, three valve amps, an EQ and a miked cabinet"
   },
   "builtin.clean-boost-pedal": {
    "circuit": "analogue",
@@ -293,18 +273,6 @@
    "circuit": "analogue",
    "modelledOn": "the 1970s British class-A console preamp and equaliser"
   },
-  "builtin.note-echo": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
-  "builtin.note-generator": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
-  "builtin.note-tool": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
   "builtin.oberon-eight": {
    "circuit": "analogue",
    "modelledOn": "the early-1980s American eight-voice polysynth that splits and doubles two patches across its keys"
@@ -341,14 +309,6 @@
    "circuit": "analogue",
    "modelledOn": "the 1950s American passive high- and low-cut program filter"
   },
-  "builtin.pattern-mutator": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
-  "builtin.poly-sequencer": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
   "builtin.five-voice-polysynth": {
    "circuit": "analogue",
    "modelledOn": "the late-1970s American five-voice polysynth, the first that remembered every knob"
@@ -377,17 +337,9 @@
    "circuit": "analogue",
    "modelledOn": "the late-1960s American FET limiting amplifier and its all-buttons mode"
   },
-  "builtin.random-tool": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
-  },
   "builtin.reed-piano": {
    "circuit": "analogue",
    "modelledOn": "the 1960s American reed electric piano of classrooms and soul records"
-  },
-  "builtin.rhythm-map": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
   },
   "builtin.rotary-speaker": {
    "circuit": "analogue",
@@ -400,10 +352,6 @@
   "builtin.two-transistor-fuzz": {
    "circuit": "analogue",
    "modelledOn": "the late-1960s British round two-transistor fuzz"
-  },
-  "builtin.scales-and-chords": {
-   "circuit": "digital",
-   "modelledOn": "the player devices of another DAW"
   },
   "builtin.one-oscillator-monosynth": {
    "circuit": "analogue",
@@ -446,8 +394,8 @@
    "modelledOn": "the mid-century American tonewheel console organ, with drawbars, percussion and chorus-vibrato"
   },
   "builtin.tube-console-strip": {
-   "circuit": "digital",
-   "modelledOn": "a modern American valve channel-strip plugin: preamp, three-band EQ and optical leveller"
+   "circuit": "analogue",
+   "modelledOn": "a modern American valve channel strip: preamp, three-band EQ and optical leveller"
   },
   "builtin.tube-grand-channel": {
    "circuit": "analogue",
@@ -470,8 +418,8 @@
    "modelledOn": "the late-1970s Japanese semi-modular monosynth with two screaming filters and a patch panel"
   },
   "builtin.untitled-amp": {
-   "circuit": "digital",
-   "modelledOn": "a 2020s tight high-gain rig plugin"
+   "circuit": "analogue",
+   "modelledOn": "a modern tight high-gain rig: two gates, a drive, a boost, a two-gain valve amp and a miked cabinet"
   },
   "builtin.vireo": {
    "circuit": "digital",

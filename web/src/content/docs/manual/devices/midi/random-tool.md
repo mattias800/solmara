@@ -5,7 +5,7 @@ description: "Random Tool"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: lets notes through by a sequence of yes and no, or by chance, and by chance sets or moves their pitch, velocity and length within ranges, each with a chance of its own or one for all.
 

@@ -1,5 +1,5 @@
 /* Where a device comes from: our own designs, emulations of analogue gear,
-   emulations of digital gear and software (25 November 2026). */
+   emulations of digital gear (25 November 2026). */
 .part-title { margin: 48px 0 28px; font-size: 24px; font-weight: 600; color: var(--soft); display: flex; align-items: baseline; gap: 10px; }
 .part-title::after { content: ""; flex: 1; border-top: 1px solid var(--line); transform: translateY(-6px); }
 .part-title small { font: 400 12px "Geist Mono", monospace; color: var(--faint); }

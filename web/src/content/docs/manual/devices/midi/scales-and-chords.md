@@ -5,7 +5,7 @@ description: "Scales & Chords"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: keeps each note to a key and scale, moving one outside it to the nearest scale note or silencing it, and can play each as a chord of the scale, of one to five notes stacked in its thirds, inverted or opened, with an octave above or below and a colour on top.
 

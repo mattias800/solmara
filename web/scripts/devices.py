@@ -57,6 +57,9 @@ FORBIDDEN = [
 # "waves" of sound, "variable-mu") count only as their makers write them.
 EXACT = [r"\bSequential\b(?! [Ss]witch)", r"\bARP\b",r"\bEMS\b", r"\bAPI\b", r"\bSSL\b", r"\bUAD\b", r"\bEMT\b", r"\bWaves\b", r"\bVital\b",
          r"\bVirus\b", r"\bE-mu\b", r"\bE-MU\b", r"\bRAT\b", r"\bBoss\b", r"\bBOSS\b", r"\bVox\b", r"\bVOX\b"]
+# Nor does a device say it was made after another company's software: what
+# it is modelled on is the gear, never a plugin or another DAW's device.
+FORBIDDEN += [r"\bplug-?ins?\b(?! (?:you|of your own))", r"another DAW"]
 FORBIDDEN_RE = re.compile("|".join(FORBIDDEN), re.IGNORECASE)
 EXACT_RE = re.compile("|".join(EXACT))
 # Names a device may say because it imports their presets: interoperability

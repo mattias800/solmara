@@ -5,7 +5,7 @@ description: "Poly Sequencer"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: a polyphonic step sequencer in a scale, whose notes can be boxes that play chords, repeats, arpeggios or strums, with eight patterns of four variations each that switch by themselves, a velocity lane, and transposition from the keys.
 

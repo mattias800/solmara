@@ -5,7 +5,7 @@ description: "Note Echo"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**An emulation of a digital original,** modelled on the player devices of another DAW.
+**A design of Solmara's own.**
 
 A MIDI device: repeats each note, as a delay repeats sound, up to sixteen times, each repeat a step later, moved in pitch from the one before and louder or softer. With no time between them the repeats stack into chords.
 
