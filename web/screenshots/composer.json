@@ -1,0 +1,15 @@
+{
+ "schemaVersion": 1,
+ "label": "Composer demo",
+ "operations": [
+  {"op": "set-track", "track": "track_1", "name": "Keys", "color": "#C77BD6"},
+  {"op": "add-device", "track": "track_1", "type": "builtin.eight-voice-polysynth"},
+  {"op": "add-clip", "ref": "verse", "track": "track_1", "startBeat": 0, "lengthBeats": 16, "name": "Verse"},
+  {"op": "write-notes", "clip": "$verse", "text": "grid 1/8\nnotes  e5 = = d5 c5 = d5 e5 | c5 = = = a4 = = - | e5 = g5 = e5 = d5 c5 | d5 = = = = = = - \n"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 0, "lengthBeats": 4, "chord": "Am"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 4, "lengthBeats": 4, "chord": "F"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 8, "lengthBeats": 4, "chord": "C"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 12, "lengthBeats": 4, "chord": "G"},
+  {"op": "clip-sequence", "clip": "$verse", "chords": "arp-up-eighths", "roots": "follow"}
+ ]
+}

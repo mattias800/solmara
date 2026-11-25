@@ -20,3 +20,21 @@
 .module-group h3 { margin: 0 0 10px; font-size: 22px; font-weight: 600; }
 .module-group h3 small { font: 400 12px "Geist Mono", monospace; color: var(--faint); margin-left: 6px; }
 .module-group ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+
+/* The presets of other instruments a device opens. */
+.opens { font-size: 14px !important; color: var(--gold) !important; }
+.card .opens { font-size: 13px !important; }
+.aside .opens-box { border-color: #4a3f26; background: #17140d; }
+.aside .opens-box h3 { color: var(--gold); }
+.aside .opens-box p { color: var(--soft); }
+
+/* The flagship's spotlight on the home page, and a device page's highlights. */
+.spotlight { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 40px; align-items: center; }
+.spotlight h2 { margin: 4px 0 12px; font-size: clamp(44px, 5vw, 64px); }
+.spotlight-text { display: grid; gap: 14px; align-content: start; }
+.lede-large { margin: 0; font-size: 18px; color: var(--soft); max-width: 60ch; }
+.spotlight-points { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; font-size: 15px; color: var(--muted); }
+.spotlight-points strong { color: var(--text); font-weight: 500; }
+.spotlight-face img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.spotlight-features { padding-top: 56px; display: grid; gap: 14px; }
+@media (max-width: 860px) { .spotlight { grid-template-columns: minmax(0, 1fr); } .spotlight-face { order: -1; } }

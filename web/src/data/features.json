@@ -1,0 +1,33 @@
+{
+ "_": "Hand-written highlights for a device's own page, by its page name: a heading and what makes it. The home page's spotlight shows the flagship's first four.",
+ "vintergatan": {
+  "heading": "Our flagship synth",
+  "lede": "Vintergatan, the Milky Way, is the synth to spend your time in: one instrument for pads, basses, leads, keys and sound design, with everything reachable at once in a window of its own.",
+  "items": [
+   {
+    "title": "Three oscillators, six kinds each",
+    "text": "Each oscillator is a wavetable, an analogue oscillator, a sample, a multisample, a cloud of grains or a spectral one. A wavetable morphs through its table and bends through sixteen warps, from sync and formant to FM, AM and ring modulation from another oscillator."
+   },
+   {
+    "title": "Analogue hearts inside",
+    "text": "An analogue oscillator can take the character of Solmara's own modelled synths, Mini Moonbeam's, Shy One's, June Bloom's and more, and its two filters use the circuits of its analogue models, in series, in parallel or split."
+   },
+   {
+    "title": "Drag to modulate",
+    "text": "Drag an envelope, an LFO you draw yourself, a macro or the mod wheel onto any knob to make it move. Sixteen macros on the front, and a matrix that shows every route."
+   },
+   {
+    "title": "Effects inside the synth",
+    "text": "Any of Solmara's effects in a chain of its own, after the voices, and two effect buses each oscillator, filter and noise can send to, all saved in the preset."
+   },
+   {
+    "title": "Opens what you already have",
+    "text": "Vital and Serum 2 presets open as Vintergatan presets, wavetables, envelopes, LFOs and routes with them, one at a time or a whole folder into the library."
+   },
+   {
+    "title": "Arpeggiator, unison and glide",
+    "text": "An arpeggiator of its own, unison on every oscillator with its own spread and width, glide, and mono or poly voices."
+   }
+  ]
+ }
+}

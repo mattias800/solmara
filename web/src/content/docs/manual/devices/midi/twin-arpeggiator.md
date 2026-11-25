@@ -5,8 +5,6 @@ description: "Twin Arpeggiator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: two arpeggiators side by side, each over the held notes in its own range of keys, up, down, up and down or at random over one to four octaves, or as a pattern of up to four notes a step, with a velocity lane, a gate, and a hold. Notes outside both ranges pass through.
 
 [Twin Arpeggiator on the website](/solmara/write/#twin-arpeggiator)

@@ -24,8 +24,9 @@ const more = device.modelledOn ? null : summary && summary !== device.blurb ? su
 		<h3>{device.label}{device.inProgress && <span class="wip">In progress</span>}</h3>
 		<p>{device.blurb}</p>
 		{more && <p>{more}</p>}
-		<p class:list={['origin', device.origin]}>
+		{device.opens && <p class="opens">{device.opens}</p>}
+		{device.origin !== 'unsaid' && <p class:list={['origin', device.origin]}>
 			<span>{originLabel(device.origin)}</span>{device.modelledOn && <>, modelled on {device.modelledOn}.</>}
-		</p>
+		</p>}
 	</div>
 </article>

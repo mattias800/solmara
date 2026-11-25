@@ -6,6 +6,7 @@ import { getEntry } from 'astro:content';
 import Site from '../../layouts/Site.astro';
 import { familyOf, instruments, originLabel, type Shown } from '../../lib/devices';
 import demos from '../../data/demos.json';
+import featureData from '../../data/features.json';
 
 export function getStaticPaths() {
 	// The Modular has a page of its own, /modular/.
@@ -23,6 +24,7 @@ const previous = index > 0 ? siblings[index - 1] : null;
 const next = index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null;
 const related = siblings.filter((other) => other !== device).slice(0, 5);
 const manual = await getEntry('docs', `manual/devices/instruments/${device.slug}`);
+const features = (featureData as unknown as Record<string, { heading: string; lede: string; items: { title: string; text: string }[] }>)[device.slug];
 const heard = (demos as Record<string, { title: string; file: string }[]>)[device.slug] ?? [];
 const facts = [
 	originLabel(device.origin),
@@ -58,6 +60,21 @@ const facts = [
 		</figure>
 	)}
 
+	{features && (
+		<section class="spotlight-features">
+			<p class="kind">{features.heading}</p>
+			<p class="lede-large">{features.lede}</p>
+			<div class="features">
+				{features.items.map((item) => (
+					<div class="feature">
+						<h3>{item.title}</h3>
+						<p>{item.text}</p>
+					</div>
+				))}
+			</div>
+		</section>
+	)}
+
 	<div class="device-body">
 		<div>
 			<h2>What it is</h2>
@@ -79,6 +96,12 @@ const facts = [
 			)}
 		</div>
 		<aside class="aside">
+			{device.opens && (
+				<div class="box opens-box">
+					<h3>Bring your sounds</h3>
+					<p>{device.opens}</p>
+				</div>
+			)}
 			{manual && (
 				<div class="box manual">
 					<h3>In the manual</h3>

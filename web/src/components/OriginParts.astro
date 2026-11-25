@@ -7,8 +7,15 @@ import { byOrigin, type Shown } from '../lib/devices';
 interface Props {
 	devices: Shown[];
 }
+const unsaid = Astro.props.devices.filter((device) => device.origin === 'unsaid');
 const parts = byOrigin(Astro.props.devices);
 ---
+
+{unsaid.length > 0 && (
+	<div class="rows">
+		{unsaid.map((device) => <DeviceRow device={device} />)}
+	</div>
+)}
 
 {parts.map((part) => (
 	<div class="origin-part" data-origin={part.key}>

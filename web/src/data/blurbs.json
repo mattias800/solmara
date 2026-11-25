@@ -1,7 +1,7 @@
 {
  "Vintergatan": {
   "kind": "Wavetable synth",
-  "text": "The Milky Way. From soft pads to heavy bass, with wavetables to draw and shape and modulation you drag onto any knob. Opens your Serum and Vital presets."
+  "text": "The Milky Way. From soft pads to heavy bass, with wavetables to draw and shape and modulation you drag onto any knob."
  },
  "Norrsken": {
   "kind": "Virtual analogue synth",
@@ -45,7 +45,7 @@
  },
  "Six-Op FM": {
   "kind": "FM synth",
-  "text": "Six operators and their algorithms, for electric pianos, bells and basses that cut. Opens the original's voice banks."
+  "text": "Six operators and their algorithms, for electric pianos, bells and basses that cut."
  },
  "SID": {
   "kind": "Chip synth",

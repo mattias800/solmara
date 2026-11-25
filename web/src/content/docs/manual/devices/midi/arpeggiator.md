@@ -5,8 +5,6 @@ description: "Arpeggiator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: plays the notes held in a shape (up, down, played, chord, random...) or a drawn pattern whose rows are the held notes, so it follows any chord, with chance, ratchets, conditions, scale steps, swing and a range of shifted passes; twelve pattern slots. Vintergatan's arp is the same.
 
 [Arpeggiator on the website](/solmara/write/#arpeggiator)

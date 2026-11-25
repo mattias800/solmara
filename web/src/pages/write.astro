@@ -1,6 +1,8 @@
 ---
 import Site from '../layouts/Site.astro';
 import OriginParts from '../components/OriginParts.astro';
+import Shot from '../components/Shot.astro';
+import composer from '../assets/composer/window.webp';
 import { midiDevices } from '../lib/devices';
 import writing from '../data/writing.json';
 
@@ -36,13 +38,51 @@ const ways = [
 		</div>
 	</section>
 
-	<section class="family">
-		<h2>Composer</h2>
+	<section class="family" id="composer">
+		<p class="kind">Composer</p>
+		<h2>Write with chords, not only notes</h2>
 		<p class="intro">
-			Double-click a clip to open it in a window of its own: its notes, its chords in a lane of their own, a palette of the
-			chords in its key, and sequences that play those chords as arpeggios and rhythms.
-			<a href={`${base}/manual/`}>The manual</a> shows how.
+			Double-click a clip and it opens in Composer, a window of its own as large as your screen allows. A clip there is more
+			than notes: it has chords in a lane above them, a key, and sequences that play its chords. Each clip has its own
+			window, and several can be open at once, on another screen too.
 		</p>
+		<figure class="big-face" style="margin: 0">
+			<Shot src={composer} alt="Composer: a verse's melody over four chords, Am, F, C and G, in their lane, with the layers at the left, the chords that fit at the right, and the sequences and voicing below" />
+		</figure>
+		<div class="features">
+			<div class="feature">
+				<h3>Chords in a lane</h3>
+				<p>Chords lie over the bars, each named and coloured by its place in the key. Drag them longer, shorter or to another bar.</p>
+			</div>
+			<div class="feature">
+				<h3>It knows the key</h3>
+				<p>Composer hears the key in your notes and chords, or keeps the one you choose, and colours every chord by its degree in it.</p>
+			</div>
+			<div class="feature">
+				<h3>Chords that fit</h3>
+				<p>For the bar you are on, the chords that fit your melody, ranked, with the next chords that would follow well, more colourful ones, and chords borrowed from outside the key. Hear one before you keep it.</p>
+			</div>
+			<div class="feature">
+				<h3>Sequences play them</h3>
+				<p>A chord can be held, strummed, broken into an arpeggio or played as a groove. Pick from strums, arpeggios, piano styles, basslines and grooves by genre, or make your own from notes you played.</p>
+			</div>
+			<div class="feature">
+				<h3>Voicing done for you</h3>
+				<p>Each chord takes the inversion closest to the one before, in the style and range you choose: close, open, drop 2, shell or power, with a bass note and a top note of your choice.</p>
+			</div>
+			<div class="feature">
+				<h3>Melody, chords and roots</h3>
+				<p>Three layers, each played through the track you choose, muted or soloed alone: a pad playing the chords and a bass playing the roots, all from one clip.</p>
+			</div>
+			<div class="feature">
+				<h3>Out to the arrangement</h3>
+				<p>Drag the melody, the chords or the roots out onto a track, held or as played, as a new clip of plain notes.</p>
+			</div>
+			<div class="feature">
+				<h3>Phrases from AI</h3>
+				<p>Generate writes a new piano phrase, continues yours, or harmonizes your melody, on your own computer. <a href={`${base}/ai/`}>AI in Solmara →</a></p>
+			</div>
+		</div>
 	</section>
 
 	<section class="family" id="midi">

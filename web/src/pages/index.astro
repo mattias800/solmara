@@ -1,6 +1,12 @@
 ---
 import Site from '../layouts/Site.astro';
-import { counts } from '../lib/devices';
+import Shot from '../components/Shot.astro';
+import editorShot from '../assets/home/editor.webp';
+import { byId, counts } from '../lib/devices';
+import featureData from '../data/features.json';
+
+const flagship = byId('builtin.vintergatan');
+const flagshipFeatures = (featureData as unknown as Record<string, { heading: string; lede: string; items: { title: string; text: string }[] }>).vintergatan;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const at = (path: string) => `${base}/${path}`;
@@ -38,7 +44,7 @@ const doors = [
 	{
 		href: at('write/'),
 		title: 'Four ways to write',
-		text: `Piano roll, drum sequencer, tracker and patterns as code, all in one song, with ${counts.midi} MIDI devices for arpeggios, chords and beats.`,
+		text: `Composer, to write with chords and sequences, beside the piano roll, drum sequencer, tracker and patterns as code, with ${counts.midi} MIDI devices for arpeggios, chords and beats.`,
 		go: 'Writing music',
 	},
 	{
@@ -79,18 +85,26 @@ const doors = [
 	</div>
 
 	<figure class="editor-shot">
-		<a href={at('images/editor.webp')}>
-			<img
-				src={at('images/editor.webp')}
-				srcset={`${at('images/editor-800.webp')} 800w, ${at('images/editor.webp')} 1600w`}
-				sizes="(max-width: 1032px) calc(100vw - 32px), 1000px"
-				width="1600"
-				height="868"
-				alt="The Solmara editor: a song's tracks in the arrangement, with the library of instruments beside it"
-			/>
-		</a>
+		<Shot src={editorShot} alt="The Solmara editor: a song's tracks and an automation lane in the arrangement, the library of instruments beside it, and a synth's face below" loading="eager" />
 		<figcaption>The editor as it is today. It will change as Solmara grows.</figcaption>
 	</figure>
+
+	{flagship?.image && (
+		<section class="spotlight">
+			<div class="spotlight-text">
+				<p class="kind">{flagshipFeatures.heading}</p>
+				<h2>Vintergatan</h2>
+				<p class="lede-large">{flagshipFeatures.lede}</p>
+				<ul class="spotlight-points">
+					{flagshipFeatures.items.slice(0, 4).map((item) => (
+						<li><strong>{item.title}.</strong> {item.text.split('. ')[0].replace(/\.$/, '')}.</li>
+					))}
+				</ul>
+				<p><a class="button primary" href={at('instruments/vintergatan/')}>Meet Vintergatan</a></p>
+			</div>
+			<a class="spotlight-face" href={at('instruments/vintergatan/')}><Shot src={flagship.image} alt="Vintergatan's window: three oscillators, two filters, envelopes, LFOs and macros" /></a>
+		</section>
+	)}
 
 	<section>
 		<h2>Find your way</h2>

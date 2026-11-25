@@ -6,6 +6,7 @@ import exported from '../data/devices.json';
 import blurbs from '../data/blurbs.json';
 import site from '../data/site.json';
 import origins from '../data/origins.json';
+import opensData from '../data/opens.json';
 
 export interface Device {
 	id: string;
@@ -34,22 +35,28 @@ export interface Shown extends Device {
 	origin: Origin;
 	/** For an emulation, what it is modelled on, never by its maker's or its model's name. */
 	modelledOn: string | null;
+	/** The presets of other instruments it opens (interoperability, where products are named). */
+	opens: string | null;
 }
 
-export type Origin = 'own' | 'analogue' | 'digital';
+// 'unsaid' for a device whose origin the website does not tell: the MIDI
+// players, which follow another DAW's functions closely and are neither
+// called our own nor said to be modelled on software.
+export type Origin = 'own' | 'analogue' | 'digital' | 'unsaid';
 /** The three parts every family's devices are shown in, in this order. */
 export const originParts: { key: Origin; label: string; short: string }[] = [
 	{ key: 'own', label: 'Our own designs', short: 'Our own design' },
 	{ key: 'analogue', label: 'Emulations of analogue gear', short: 'Analogue emulation' },
 	{ key: 'digital', label: 'Emulations of digital gear', short: 'Digital emulation' },
 ];
-export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)!.short;
+export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)?.short ?? '';
 /** A family's devices in its three parts, the empty ones left out. */
 export const byOrigin = (list: Shown[]) =>
 	originParts.map((part) => ({ ...part, devices: list.filter((device) => device.origin === part.key) })).filter((part) => part.devices.length > 0);
 
 const faces = import.meta.glob<{ default: ImageMetadata }>('../assets/devices/*.webp', { eager: true });
 const handWritten = blurbs as Record<string, { kind: string | null; text: string | null }>;
+const opens = opensData as unknown as Record<string, { text: string }>;
 const emulations = origins.emulations as Record<string, { circuit: 'analogue' | 'digital'; modelledOn: string }>;
 
 const sentence = (text: string) => text.charAt(0).toUpperCase() + text.slice(1) + (/[.!?]$/.test(text) ? '' : '.');
@@ -70,8 +77,9 @@ function shown(device: Device): Shown {
 		blurb: words?.text ?? (summary || firstSentence(device.description)),
 		inProgress: site.inProgress.includes(device.id),
 		image: device.face ? (faces[`../assets/devices/${device.face}.webp`]?.default ?? null) : null,
-		origin: emulations[device.id]?.circuit ?? 'own',
+		origin: device.kind === 'midi' ? 'unsaid' : (emulations[device.id]?.circuit ?? 'own'),
 		modelledOn: emulations[device.id]?.modelledOn ?? null,
+		opens: opens[device.id]?.text ?? null,
 	};
 }
 

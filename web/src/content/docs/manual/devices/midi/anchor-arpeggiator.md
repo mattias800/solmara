@@ -5,8 +5,6 @@ description: "Anchor Arpeggiator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: an arpeggio of two parts, an anchor that plays one to three of the chord's notes in a sparse, repeating rhythm, and a movement that runs through the others between them in one of forty shapes, as thick as its density says, with rhythm and octave modifiers chosen by a seed.
 
 [Anchor Arpeggiator on the website](/solmara/write/#anchor-arpeggiator)

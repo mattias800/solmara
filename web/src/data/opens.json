@@ -1,0 +1,18 @@
+{
+ "_": "The presets of other instruments a device opens: interoperability, the one place the website names another product or a model (the owner, 25 November 2026). Only what the app does today, or 'coming' where it says so.",
+ "builtin.vintergatan": {
+  "text": "Opens Vital and Serum 2 presets, their wavetables and modulation with them."
+ },
+ "builtin.jet-8000": {
+  "text": "Opens JP-8000 and JP-8080 patches and performances, as SysEx, MIDI files or .pfm."
+ },
+ "builtin.norrsken": {
+  "text": "Opens Nord Lead 2X programs, performances and kits, as SysEx or MIDI files."
+ },
+ "builtin.six-operator-fm-synth": {
+  "text": "Opens DX7 voice banks and single voices."
+ },
+ "builtin.vireo": {
+  "text": "Opens Virus TI Singles from SysEx; loading the wavetables of its firmware is coming."
+ }
+}

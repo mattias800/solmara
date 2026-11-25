@@ -76,7 +76,7 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     if origin:
         kind = "an analogue" if origin["circuit"] == "analogue" else "a digital"
         lines += [f"**An emulation of {kind} original,** modelled on {origin['modelledOn']}.", ""]
-    else:
+    elif device.get("kind") != "midi":  # The players' origin is not told.
         lines += ["**A design of Solmara's own.**", ""]
     if device.get("description"):
         lines += [device["description"], ""]

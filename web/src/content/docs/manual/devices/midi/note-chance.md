@@ -5,8 +5,6 @@ description: "Note Chance"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: lets notes through by a sequence of yes and no, or by chance, and by chance sets or moves their pitch, velocity and length within ranges, each with a chance of its own or one for all.
 
 [Note Chance on the website](/solmara/write/#note-chance)

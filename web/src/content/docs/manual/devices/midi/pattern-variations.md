@@ -5,8 +5,6 @@ description: "Pattern Variations"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: plays a polyphonic pattern of steps, and makes variations of it at a click: notes moved by octaves and fifths or further, swapped, thinned or filled, lengthened, and accented. Eight patterns, transposed from the keys.
 
 [Pattern Variations on the website](/solmara/write/#pattern-variations)

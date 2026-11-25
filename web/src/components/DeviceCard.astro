@@ -19,4 +19,5 @@ const { device, family } = Astro.props;
 	<h3>{device.label}{device.inProgress && <span class="wip">In progress</span>}</h3>
 	<p>{device.blurb}</p>
 	{device.modelledOn && <p class="modelled">Modelled on {device.modelledOn}.</p>}
+	{device.opens && <p class="opens">{device.opens}</p>}
 </a>

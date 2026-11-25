@@ -5,8 +5,6 @@ description: "Note Repeater"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: repeats each note, as a delay repeats sound, up to sixteen times, each repeat a step later, moved in pitch from the one before and louder or softer. With no time between them the repeats stack into chords.
 
 [Note Repeater on the website](/solmara/write/#note-repeater)

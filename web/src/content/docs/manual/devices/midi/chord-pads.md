@@ -5,8 +5,6 @@ description: "Chord Pads"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: sixteen chords on pads, from sets in many styles or written by hand, each lit by how well it would follow the last, played from the keys or by a progression of up to sixteen bars, with velocity, humanizing, a bass taken away or a root added, and eight patterns.
 
 [Chord Pads on the website](/solmara/write/#chord-pads)

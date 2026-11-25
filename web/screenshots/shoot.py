@@ -15,6 +15,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from PIL import Image
+
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parent / "src" / "assets" / "clips"
 SCALE = 2  # Pixels to a point: as sharp as a high-DPI screen.
@@ -44,6 +46,35 @@ def main() -> None:
         shot = work / "arrangement.bmp"
         run(app, str(song), "--screenshot", str(shot), "--screenshot-size", "1400", "700", "--screenshot-scale", str(SCALE))
         subprocess.run([sys.executable, str(HERE / "crops.py"), str(shot), str(ASSETS), str(SCALE)], check=True)
+
+        # The whole editor, for the website's home: the library open, the
+        # Keys track's chain below the arrangement.
+        for panel in ("library", "editor"):
+            run(cli, "layout", str(song), panel, "on")
+        whole = work / "editor.bmp"
+        run(app, str(song), "--select", "track_3", "--screenshot", str(whole), "--screenshot-size", "1600", "900",
+            "--screenshot-scale", str(SCALE))
+        home = HERE.parent / "src" / "assets" / "home"
+        home.mkdir(parents=True, exist_ok=True)
+        # Without the status line, which shows the project's path.
+        picture_of_editor = Image.open(whole).convert("RGB")
+        picture_of_editor.crop((0, 0, picture_of_editor.width, picture_of_editor.height - 32 * SCALE)).save(
+            home / "editor.webp", quality=88, method=6)
+        print("Editor:", home / "editor.webp")
+
+        # Composer: a verse of melody over four chords, played by a sequence,
+        # its window open as a clip's is when it plays alone.
+        verse = work / "Composer.daw"
+        run(cli, "new", str(verse), "Composer", "--empty")
+        run(cli, "apply", str(verse), str(HERE / "composer.json"))
+        picture = work / "composer.bmp"
+        run(app, str(verse), "--play-clip", "clip_1", "--screenshot-playing", "1", "--screenshot", str(picture),
+            "--screenshot-size", "1600", "950", "--screenshot-scale", str(SCALE))
+        window = next(work.glob("composer-device_*.bmp"))
+        out = HERE.parent / "src" / "assets" / "composer"
+        out.mkdir(parents=True, exist_ok=True)
+        Image.open(window).convert("RGB").save(out / "window.webp", quality=90, method=6)
+        print("Composer:", out / "window.webp")
 
 
 if __name__ == "__main__":

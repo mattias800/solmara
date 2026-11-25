@@ -5,8 +5,6 @@ description: "Transpose"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
-**A design of Solmara's own.**
-
 A MIDI device: moves the track's notes by steps of a scale, by semitones, and by octaves before the instrument plays them, in the project's scale or one of its own.
 
 [Transpose on the website](/solmara/write/#transpose)
