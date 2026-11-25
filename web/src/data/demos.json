@@ -1,1 +1,250 @@
-{}
+{
+ "oberon-eight": [
+  {
+   "title": "Breathing Pad, chords",
+   "file": "audio/demos/oberon-eight-1.mp3"
+  },
+  {
+   "title": "Breath Lead, a melody",
+   "file": "audio/demos/oberon-eight-2.mp3"
+  }
+ ],
+ "ph-8": [
+  {
+   "title": "Its own kit, a beat",
+   "file": "audio/demos/ph-8-1.mp3"
+  }
+ ],
+ "titan-303": [
+  {
+   "title": "Accent Builder, an acid line",
+   "file": "audio/demos/titan-303-1.mp3"
+  },
+  {
+   "title": "High Acid, a melody",
+   "file": "audio/demos/titan-303-2.mp3"
+  }
+ ],
+ "tine-electric-piano": [
+  {
+   "title": "Ballad Bell, chords, played",
+   "file": "audio/demos/tine-electric-piano-1.mp3"
+  },
+  {
+   "title": "Bright Pop, a melody",
+   "file": "audio/demos/tine-electric-piano-2.mp3"
+  }
+ ],
+ "sid": [
+  {
+   "title": "Beating Pulse Pad, chords",
+   "file": "audio/demos/sid-1.mp3"
+  },
+  {
+   "title": "Breathy Triangle Lead, a melody",
+   "file": "audio/demos/sid-2.mp3"
+  }
+ ],
+ "vireo": [
+  {
+   "title": "Chord Gate Saw Pad, chords",
+   "file": "audio/demos/vireo-1.mp3"
+  },
+  {
+   "title": "Dusty Rave Lead, a melody",
+   "file": "audio/demos/vireo-2.mp3"
+  }
+ ],
+ "vintergatan": [
+  {
+   "title": "Ambient Techno Pad, chords",
+   "file": "audio/demos/vintergatan-1.mp3"
+  },
+  {
+   "title": "Anthem Supersaw Lead, a melody",
+   "file": "audio/demos/vintergatan-2.mp3"
+  }
+ ],
+ "kick": [
+  {
+   "title": "Deep House Round, four to the floor",
+   "file": "audio/demos/kick-1.mp3"
+  },
+  {
+   "title": "Dusty Tape, four to the floor",
+   "file": "audio/demos/kick-2.mp3"
+  }
+ ],
+ "mini-moonbeam": [
+  {
+   "title": "Classic Bass, a bass line",
+   "file": "audio/demos/mini-moonbeam-1.mp3"
+  },
+  {
+   "title": "Brass Lead, a melody",
+   "file": "audio/demos/mini-moonbeam-2.mp3"
+  }
+ ],
+ "shy-one": [
+  {
+   "title": "Acid Squelch, a bass line",
+   "file": "audio/demos/shy-one-1.mp3"
+  },
+  {
+   "title": "Glide Lead, a melody",
+   "file": "audio/demos/shy-one-2.mp3"
+  }
+ ],
+ "reed-electric-piano": [
+  {
+   "title": "Ballad Tremolo, chords, played",
+   "file": "audio/demos/reed-electric-piano-1.mp3"
+  },
+  {
+   "title": "Barking Stage, a melody",
+   "file": "audio/demos/reed-electric-piano-2.mp3"
+  }
+ ],
+ "string-ensemble": [
+  {
+   "title": "Brass Ensemble, chords",
+   "file": "audio/demos/string-ensemble-1.mp3"
+  },
+  {
+   "title": "Contrabass Line, a bass line",
+   "file": "audio/demos/string-ensemble-2.mp3"
+  }
+ ],
+ "electric-clavichord": [
+  {
+   "title": "Bridge Pickup Bite, chords, played",
+   "file": "audio/demos/electric-clavichord-1.mp3"
+  },
+  {
+   "title": "Brilliant Only, a melody",
+   "file": "audio/demos/electric-clavichord-2.mp3"
+  }
+ ],
+ "tonewheel-organ": [
+  {
+   "title": "Ballad Flutes, chords, played",
+   "file": "audio/demos/tonewheel-organ-1.mp3"
+  },
+  {
+   "title": "Ballad Jazz, a melody",
+   "file": "audio/demos/tonewheel-organ-2.mp3"
+  }
+ ],
+ "six-op-fm": [
+  {
+   "title": "Breath Pad, chords",
+   "file": "audio/demos/six-op-fm-1.mp3"
+  },
+  {
+   "title": "Bassoon Lead, a melody",
+   "file": "audio/demos/six-op-fm-2.mp3"
+  }
+ ],
+ "two-filter-mono": [
+  {
+   "title": "Acid Squelch, a bass line",
+   "file": "audio/demos/two-filter-mono-1.mp3"
+  },
+  {
+   "title": "Fifth Lead, a melody",
+   "file": "audio/demos/two-filter-mono-2.mp3"
+  }
+ ],
+ "promise-bloom": [
+  {
+   "title": "Breath Pad, chords",
+   "file": "audio/demos/promise-bloom-1.mp3"
+  },
+  {
+   "title": "Airy Lead, a melody",
+   "file": "audio/demos/promise-bloom-2.mp3"
+  }
+ ],
+ "juniper-eight": [
+  {
+   "title": "Choir Pad, chords",
+   "file": "audio/demos/juniper-eight-1.mp3"
+  },
+  {
+   "title": "Breathy Unison Lead, a melody",
+   "file": "audio/demos/juniper-eight-2.mp3"
+  }
+ ],
+ "cosmos-80": [
+  {
+   "title": "Dawn Sweep, chords",
+   "file": "audio/demos/cosmos-80-1.mp3"
+  },
+  {
+   "title": "Brilliance Lead, a melody",
+   "file": "audio/demos/cosmos-80-2.mp3"
+  }
+ ],
+ "cosine-zone": [
+  {
+   "title": "Bell Pad, chords",
+   "file": "audio/demos/cosine-zone-1.mp3"
+  },
+  {
+   "title": "Digital Flute, a melody",
+   "file": "audio/demos/cosine-zone-2.mp3"
+  }
+ ],
+ "arcturus-2600": [
+  {
+   "title": "Glide Bass, a bass line",
+   "file": "audio/demos/arcturus-2600-1.mp3"
+  },
+  {
+   "title": "Classic Lead, a melody",
+   "file": "audio/demos/arcturus-2600-2.mp3"
+  }
+ ],
+ "jet-8000": [
+  {
+   "title": "Auto-Pan Shimmer, chords",
+   "file": "audio/demos/jet-8000-1.mp3"
+  },
+  {
+   "title": "Anthem Superstring, a melody",
+   "file": "audio/demos/jet-8000-2.mp3"
+  }
+ ],
+ "norrsken": [
+  {
+   "title": "Drivis, chords",
+   "file": "audio/demos/norrsken-1.mp3"
+  },
+  {
+   "title": "Blixt, a melody",
+   "file": "audio/demos/norrsken-2.mp3"
+  }
+ ],
+ "june-bloom": [
+  {
+   "title": "Airy Pad, chords",
+   "file": "audio/demos/june-bloom-1.mp3"
+  },
+  {
+   "title": "Breath Lead, a melody",
+   "file": "audio/demos/june-bloom-2.mp3"
+  }
+ ],
+ "ph-6": [
+  {
+   "title": "Its own kit, a beat",
+   "file": "audio/demos/ph-6-1.mp3"
+  }
+ ],
+ "ph-9": [
+  {
+   "title": "Its own kit, a beat",
+   "file": "audio/demos/ph-9-1.mp3"
+  }
+ ]
+}

@@ -38,3 +38,4 @@
 .spotlight-face img { display: block; width: auto; max-width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
 .spotlight-features { padding-top: 56px; display: grid; gap: 14px; }
 @media (max-width: 860px) { .spotlight { grid-template-columns: minmax(0, 1fr); } .spotlight-face { order: -1; } }
+.listen audio { color-scheme: dark; height: 40px; }
