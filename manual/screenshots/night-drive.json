@@ -1,0 +1,182 @@
+{
+ "schemaVersion": 1,
+ "label": "Night Drive demo",
+ "operations": [
+  {
+   "op": "set-track",
+   "track": "track_1",
+   "name": "Drums"
+  },
+  {
+   "op": "add-device",
+   "track": "track_1",
+   "type": "builtin.drum-rack"
+  },
+  {
+   "op": "add-clip",
+   "ref": "beat",
+   "track": "track_1",
+   "startBeat": 0,
+   "lengthBeats": 4,
+   "name": "Beat"
+  },
+  {
+   "op": "write-notes",
+   "clip": "$beat",
+   "text": "grid 1/16\nkick   x---x---x---x---\nsnare  ----x-------x---\nhat    --x---x---x---x-\n"
+  },
+  {
+   "op": "set-clip",
+   "clip": "$beat",
+   "loopBeats": 4
+  },
+  {
+   "op": "resize-placement",
+   "placement": "$beat.placement",
+   "lengthBeats": 16
+  },
+  {
+   "op": "add-track",
+   "ref": "bass",
+   "name": "Bass",
+   "kind": "midi"
+  },
+  {
+   "op": "add-device",
+   "track": "$bass",
+   "type": "builtin.norrsken"
+  },
+  {
+   "op": "add-clip",
+   "ref": "line",
+   "track": "$bass",
+   "startBeat": 0,
+   "lengthBeats": 16,
+   "name": "Bassline"
+  },
+  {
+   "op": "write-notes",
+   "clip": "$line",
+   "text": "grid 1/8\nnotes  a1 = - a1 c2 - a1 -  | f1 = - f1 a1 - f1 - | c2 = - c2 e2 - c2 - | g1 = - g1 b1 - d2 - \n"
+  },
+  {
+   "op": "add-track",
+   "ref": "keys",
+   "name": "Keys",
+   "kind": "midi"
+  },
+  {
+   "op": "add-device",
+   "ref": "syn",
+   "track": "$keys",
+   "type": "builtin.norrsken"
+  },
+  {
+   "op": "add-clip",
+   "ref": "chords",
+   "track": "$keys",
+   "startBeat": 0,
+   "lengthBeats": 16,
+   "name": "Chords"
+  },
+  {
+   "op": "write-notes",
+   "clip": "$chords",
+   "text": "grid 1/4\nnotes  [a3 c4 e4] = = = | [f3 a3 c4] = = = | [c4 e4 g4] = = = | [g3 b3 d4] = = = \n"
+  },
+  {
+   "op": "add-lane",
+   "ref": "sweep",
+   "track": "$keys",
+   "parameter": "$syn.cutoff"
+  },
+  {
+   "op": "add-automation-clip",
+   "ref": "rise",
+   "lane": "$sweep",
+   "name": "Filter rise",
+   "startBeat": 0,
+   "lengthBeats": 8
+  },
+  {
+   "op": "add-point",
+   "envelope": "$rise.envelope",
+   "startStep": 0,
+   "value": 25
+  },
+  {
+   "op": "add-point",
+   "envelope": "$rise.envelope",
+   "startStep": 16,
+   "value": 95
+  },
+  {
+   "op": "add-point",
+   "envelope": "$rise.envelope",
+   "startStep": 24,
+   "value": 57
+  },
+  {
+   "op": "add-point",
+   "envelope": "$rise.envelope",
+   "startStep": 31,
+   "value": 38
+  },
+  {
+   "op": "set-clip",
+   "clip": "$rise",
+   "loopBeats": 8
+  },
+  {
+   "op": "resize-placement",
+   "placement": "$rise.placement",
+   "lengthBeats": 16
+  },
+  {
+   "op": "add-automation-clip",
+   "ref": "fall",
+   "lane": "$sweep",
+   "name": "Open up",
+   "startBeat": 18,
+   "lengthBeats": 6
+  },
+  {
+   "op": "add-point",
+   "envelope": "$fall.envelope",
+   "startStep": 0,
+   "value": 40
+  },
+  {
+   "op": "add-point",
+   "envelope": "$fall.envelope",
+   "startStep": 12,
+   "value": 70
+  },
+  {
+   "op": "add-point",
+   "envelope": "$fall.envelope",
+   "startStep": 23,
+   "value": 120
+  },
+  {
+   "op": "set-track",
+   "track": "track_1",
+   "color": "#E0A84F"
+  },
+  {
+   "op": "set-track",
+   "track": "$bass",
+   "color": "#5B8DEF"
+  },
+  {
+   "op": "set-track",
+   "track": "$keys",
+   "color": "#C77BD6"
+  },
+  {
+   "op": "set-lane",
+   "lane": "$sweep",
+   "height": 110
+  }
+ ]
+}
