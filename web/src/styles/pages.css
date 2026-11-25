@@ -66,7 +66,7 @@ h2, h3 { text-wrap: balance; }
 .facts-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .facts-row li { font: 400 12px/1 "Geist Mono", monospace; color: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 7px 9px; }
 .big-face { margin: 0; }
-.big-face img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.big-face img { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
 .device-body { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 40px; margin-top: 48px; }
 .device-body h2 { font-size: 34px; }
 .device-body p { margin: 0 0 14px; color: var(--soft); max-width: 65ch; }

@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import Shot from '../components/Shot.astro';
 import Site from '../layouts/Site.astro';
 import patch from '../assets/modular/patch.webp';
 import exported from '../data/modules.json';
@@ -23,7 +23,7 @@ const groups = order
 >
 	<section>
 		<figure class="big-face" style="margin: 0">
-			<a href={patch.src}><Image src={patch} widths={[800, 1280]} sizes="(max-width: 1032px) 96vw, 1000px" alt="The Modular's window: a clock drives a step sequencer, patched by cables to an envelope, with the library of modules at the left" loading="eager" /></a>
+			<a href={patch.src}><Shot src={patch} alt="The Modular's window: a clock drives a step sequencer, patched by cables to an envelope, with the library of modules at the left" loading="eager" /></a>
 		</figure>
 		<p class="caption" style="margin-top: 14px; color: var(--faint); font-size: 14px; text-align: center">Berlin School, one of the factory patches: a clock drives a sixteen-step sequence.</p>
 	</section>

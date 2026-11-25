@@ -17,7 +17,7 @@ from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from devices import App, DATA, WEB, check_words  # noqa: E402
+from devices import App, DATA, SCALE, WEB, check_words  # noqa: E402
 
 
 def main() -> None:
@@ -53,11 +53,12 @@ def main() -> None:
         if isinstance(device_id, dict):
             device_id = device_id.get("id")
         shot = app.work / "modular.bmp"
-        app.shoot(str(project), "--window", device_id, "--screenshot", str(shot), "--screenshot-size", "1600", "950")
+        app.shoot(str(project), "--window", device_id, "--screenshot", str(shot), "--screenshot-size", "1600", "950",
+                  "--screenshot-scale", str(SCALE))
         window = Image.open(shot.with_name(f"{shot.stem}-{device_id}.bmp"))
         out = WEB / "src" / "assets" / "modular"
         out.mkdir(parents=True, exist_ok=True)
-        window.crop((0, 24, window.width, window.height)).convert("RGB").save(out / "patch.webp", quality=88, method=6)
+        window.crop((0, 24 * SCALE, window.width, window.height)).convert("RGB").save(out / "patch.webp", quality=88, method=6)
         print(f"{patch_name} in its window: {out / 'patch.webp'}")
 
 

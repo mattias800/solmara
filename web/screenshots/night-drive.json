@@ -96,7 +96,7 @@
    "lane": "$sweep",
    "name": "Filter rise",
    "startBeat": 0,
-   "lengthBeats": 8
+   "lengthBeats": 4
   },
   {
    "op": "add-point",
@@ -107,38 +107,38 @@
   {
    "op": "add-point",
    "envelope": "$rise.envelope",
-   "startStep": 16,
+   "startStep": 8,
    "value": 95
   },
   {
    "op": "add-point",
    "envelope": "$rise.envelope",
-   "startStep": 24,
+   "startStep": 12,
    "value": 57
   },
   {
    "op": "add-point",
    "envelope": "$rise.envelope",
-   "startStep": 31,
+   "startStep": 15,
    "value": 38
   },
   {
    "op": "set-clip",
    "clip": "$rise",
-   "loopBeats": 8
+   "loopBeats": 4
   },
   {
    "op": "resize-placement",
    "placement": "$rise.placement",
-   "lengthBeats": 16
+   "lengthBeats": 8
   },
   {
    "op": "add-automation-clip",
    "ref": "fall",
    "lane": "$sweep",
    "name": "Open up",
-   "startBeat": 18,
-   "lengthBeats": 6
+   "startBeat": 10,
+   "lengthBeats": 4
   },
   {
    "op": "add-point",
@@ -149,13 +149,13 @@
   {
    "op": "add-point",
    "envelope": "$fall.envelope",
-   "startStep": 12,
+   "startStep": 6,
    "value": 70
   },
   {
    "op": "add-point",
    "envelope": "$fall.envelope",
-   "startStep": 23,
+   "startStep": 15,
    "value": 120
   },
   {

@@ -30,6 +30,9 @@ from PIL import Image
 WEB = Path(__file__).resolve().parent.parent
 DATA = WEB / "src" / "data"
 FACES = WEB / "src" / "assets" / "devices"
+# Pictures are taken as on a display of twice the density, every point two
+# pixels, and shown at their size in points: sharp, and never enlarged.
+SCALE = 2
 
 # Makers and models of the gear and plugins Solmara's devices are modelled
 # on or measured against. None of them may appear on the public site.
@@ -174,20 +177,21 @@ def export_faces(app: App, devices: list[dict]) -> None:
         device_id, track_id = refs[f"d{index}"], refs[f"t{index}"]
         shot = app.work / f"{device['slug']}.bmp"
         if device["window"]:
-            app.shoot(str(project), "--window", device_id, "--screenshot", str(shot), "--screenshot-size", "1600", "950")
+            app.shoot(str(project), "--window", device_id, "--screenshot", str(shot), "--screenshot-size", "1600", "950",
+                      "--screenshot-scale", str(SCALE))
             window = shot.with_name(f"{shot.stem}-{device_id}.bmp")
             image = Image.open(window)
-            save_face(image.crop((0, 24, image.width, image.height)), device["slug"])  # Without its title bar.
+            save_face(image.crop((0, 24 * SCALE, image.width, image.height)), device["slug"])  # Without its title bar.
         else:
             anchors = app.work / f"{device['slug']}.json"
             app.shoot(str(project), "--select", track_id, "--screenshot", str(shot), "--screenshot-anchors", str(anchors),
-                      "--screenshot-size", "1600", "950")
+                      "--screenshot-size", "1600", "950", "--screenshot-scale", str(SCALE))
             found = [a for a in json.loads(anchors.read_text(encoding="utf-8"))["anchors"]
                      if a["name"] == device_id.replace("device_", "device:") and a["window"] == "editor"]
             if not found:
                 print(f"  {device['label']}: no card on screen, no face", file=sys.stderr)
                 continue
-            x, y, w, h = (round(v) for v in found[0]["rect"])
+            x, y, w, h = (round(v * SCALE) for v in found[0]["rect"])
             save_face(Image.open(shot).crop((x, y, x + w, y + h)), device["slug"])
         device["face"] = device["slug"]
         print(f"  {device['label']}", flush=True)

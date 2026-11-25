@@ -2,7 +2,7 @@
 // A device on its family's page: its face beside what it is, where it
 // comes from, and what it is for. Its id is its name, so other pages link
 // to its place here.
-import { Image } from 'astro:assets';
+import Shot from './Shot.astro';
 import { originLabel, type Shown } from '../lib/devices';
 
 interface Props {
@@ -17,7 +17,7 @@ const more = device.modelledOn ? null : summary && summary !== device.blurb ? su
 
 <article class="row" id={device.slug} data-origin={device.origin}>
 	<div class="shot">
-		{device.image && <Image src={device.image} widths={[480, 800, 1200]} sizes="(max-width: 760px) 92vw, 560px" alt={`${device.label}'s face`} />}
+		{device.image && <Shot src={device.image} alt={`${device.label}'s face`} />}
 	</div>
 	<div>
 		<p class="kind">{device.kindLabel}</p>

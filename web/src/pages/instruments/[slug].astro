@@ -1,7 +1,7 @@
 ---
 // An instrument's own page: its face, what it is, how it sounds, and where
 // the manual has every control of it.
-import { Image } from 'astro:assets';
+import Shot from '../../components/Shot.astro';
 import { getEntry } from 'astro:content';
 import Site from '../../layouts/Site.astro';
 import { familyOf, instruments, originLabel, type Shown } from '../../lib/devices';
@@ -54,7 +54,7 @@ const facts = [
 
 	{device.image && (
 		<figure class="big-face" style="margin-top: 32px">
-			<Image src={device.image} widths={[800, 1200, 1800]} sizes="(max-width: 1032px) 96vw, 1000px" alt={`${device.label}'s face`} loading="eager" />
+			<Shot src={device.image} alt={`${device.label}'s face`} loading="eager" />
 		</figure>
 	)}
 

@@ -136,8 +136,8 @@
  },
  {
   "id": "builtin.note-generator",
-  "slug": "euclidean-notes",
-  "label": "Euclidean Notes",
+  "slug": "euclid-lines",
+  "label": "Euclid Lines",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -147,7 +147,7 @@
   "window": false,
   "sidechain": false,
   "controls": 77,
-  "face": "euclidean-notes"
+  "face": "euclid-lines"
  },
  {
   "id": "builtin.poly-sequencer",

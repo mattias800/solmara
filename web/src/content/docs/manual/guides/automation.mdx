@@ -2,12 +2,14 @@
 title: Automate a sound
 description: Make a knob, a fader or a pan move by itself as the song plays, and edit the curve it follows.
 ---
+import Shot from '../../../../components/Shot.astro';
+import automationLane from '../../../../assets/clips/automation-lane.webp';
 
 **Automation** makes a control move by itself as the song plays: a filter that opens over eight bars, a volume that swells into the chorus, a pan that drifts from side to side. You draw the movement as a curve, and Solmara turns the control as the playhead passes.
 
 Automation lives in **lanes**, rows under a track. Each lane moves one control, and holds **automation clips**, which are clips of curves.
 
-![An automation lane for the Keys track's filter cutoff, holding two clips: Filter rise, which loops, and Open up.](../../../../assets/clips/automation-lane.webp)
+<Shot src={automationLane} alt="An automation lane for the Keys track's filter cutoff, holding two clips: Filter rise, which loops, and Open up." />
 
 ## Add a lane
 

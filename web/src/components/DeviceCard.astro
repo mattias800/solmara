@@ -1,7 +1,7 @@
 ---
 // A device in a grid: its face, what it is, its name and a line about it,
 // linked to where the website shows it.
-import { Image } from 'astro:assets';
+import Shot from './Shot.astro';
 import { pageOf, type Shown } from '../lib/devices';
 
 interface Props {
@@ -13,7 +13,7 @@ const { device, family } = Astro.props;
 
 <a class="card" href={pageOf(device, import.meta.env.BASE_URL)} data-family={family} data-origin={device.origin}>
 	<div class="shot">
-		{device.image && <Image src={device.image} widths={[400, 640]} sizes="(max-width: 640px) 92vw, 320px" alt={`${device.label}'s face`} />}
+		{device.image && <Shot src={device.image} alt={`${device.label}'s face`} />}
 	</div>
 	<p class="kind">{device.kindLabel}</p>
 	<h3>{device.label}{device.inProgress && <span class="wip">In progress</span>}</h3>

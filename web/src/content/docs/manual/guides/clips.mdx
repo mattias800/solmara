@@ -2,10 +2,13 @@
 title: Work with clips
 description: Make, select, move, resize, loop, split and copy clips on the arrangement.
 ---
+import Shot from '../../../../components/Shot.astro';
+import arrangement from '../../../../assets/clips/arrangement.webp';
+import clipEdge from '../../../../assets/clips/clip-edge.webp';
 
 A song in Solmara is built from **clips**: pieces of music that lie on the tracks of the arrangement, one after another. A clip on a MIDI track holds notes; a clip on an audio track plays a recording. This page shows how to make clips and change them.
 
-![The first four bars of a song: three tracks, Drums, Bass and Keys, each holding a clip, and an automation lane under Keys.](../../../../assets/clips/arrangement.webp)
+<Shot src={arrangement} alt="The first four bars of a song: three tracks, Drums, Bass and Keys, each holding a clip, and an automation lane under Keys." />
 
 The **Beat** clip above is selected: its name strip is white. The small notches along its top mark where it starts over: it is a one-bar clip, looped four times.
 
@@ -44,7 +47,7 @@ When several clips are selected, dragging one moves them all.
 
 Point at a clip's **right edge**, in its **upper half**. The pointer becomes a pair of arrows. Drag left or right.
 
-![A clip's right edge, enlarged. Dragging the upper half makes the clip longer or shorter; dragging the lower half loops it.](../../../../assets/clips/clip-edge.webp)
+<Shot src={clipEdge} alt="A clip's right edge. Dragging the upper half makes the clip longer or shorter; dragging the lower half loops it." />
 
 Making a clip shorter hides its end but doesn't delete it: drag the edge out again and it comes back.
 

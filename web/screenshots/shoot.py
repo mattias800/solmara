@@ -17,6 +17,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parent / "src" / "assets" / "clips"
+SCALE = 2  # Pixels to a point: as sharp as a high-DPI screen.
 
 
 def tool(build: Path, name: str) -> str:
@@ -41,8 +42,8 @@ def main() -> None:
         for panel in ("library", "inspector", "editor"):
             run(cli, "layout", str(song), panel, "off")
         shot = work / "arrangement.bmp"
-        run(app, str(song), "--screenshot", str(shot), "--screenshot-size", "1400", "700")
-        subprocess.run([sys.executable, str(HERE / "crops.py"), str(shot), str(ASSETS)], check=True)
+        run(app, str(song), "--screenshot", str(shot), "--screenshot-size", "1400", "700", "--screenshot-scale", str(SCALE))
+        subprocess.run([sys.executable, str(HERE / "crops.py"), str(shot), str(ASSETS), str(SCALE)], check=True)
 
 
 if __name__ == "__main__":

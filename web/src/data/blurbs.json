@@ -243,7 +243,7 @@
   "kind": "Variations",
   "text": "Plays a pattern of steps and makes variations of it at a click."
  },
- "Euclidean Notes": {
+ "Euclid Lines": {
   "kind": "Generative",
   "text": "Four lines of Euclidean rhythms whose notes wander in a scale."
  },
