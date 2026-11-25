@@ -5,6 +5,8 @@ description: "Filter"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A modelled analogue filter: a transistor ladder, a squelchy diode ladder, a screaming Sallen-Key, a polished OTA cascade, or a smooth state variable, driven into saturation and ringing at high resonance, as low-, band-, or high-pass, with an LFO and an envelope follower to move its cutoff. The follower listens to the filter's input or another track by sidechain.
 
 [Filter on the website](/solmara/effects/#filter)

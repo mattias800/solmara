@@ -5,6 +5,8 @@ description: "Granular Sampler"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A sample played as windowed grains: position and scan, size and density, spray, pitch, freeze, stereo scatter, an amplitude envelope and LFO modulation; 16 voices and 128 grains.
 
 [Granular Sampler on the website](/solmara/instruments/granular-sampler/)

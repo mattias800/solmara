@@ -5,6 +5,8 @@ description: "Five-circuit saturator in the style of the classic studio colour b
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on five classic colour circuits of the studio: tape, transformers, valves and a valve distortion box.
+
 A modelled saturator of five circuits, each a gain stage of a piece of studio hardware worked out from its parts: a tape recorder's valve preamplifier, warm and even; a British console's transistor microphone amplifier, bright and gritty; a class-A console channel, thick and rounded; and a valve distortion unit's pentode, edgy and buzzing, and the same valve run as a triode, fat and smooth. Drive, a low cut and a tone tilt before the stage, a high cut after it, gentle or steep, a punish switch that drives it 20 dB harder, a thump at the low cut, mix, and output with an automatic gain that holds the level as the drive goes up. In stereo, each channel through its own circuit, the stage at two, four, eight or sixteen times the sample rate, as late at each.
 
 [Five-Circuit Saturator on the website](/solmara/effects/#five-circuit-saturator)

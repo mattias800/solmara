@@ -1,6 +1,6 @@
 ---
 import Site from '../layouts/Site.astro';
-import DeviceRow from '../components/DeviceRow.astro';
+import OriginParts from '../components/OriginParts.astro';
 import { mastering } from '../lib/devices';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -28,8 +28,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	<section class="family">
 		<h2>In the suite</h2>
 		<p class="intro">Each is also an effect of its own, for any track or bus.</p>
-		<div class="rows">
-			{mastering.map((device) => <DeviceRow device={device} />)}
-		</div>
+		<OriginParts devices={mastering} />
 	</section>
 </Site>

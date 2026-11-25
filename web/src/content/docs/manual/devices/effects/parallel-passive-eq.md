@@ -5,6 +5,8 @@ description: "Parallel passive valve EQ in the style of the late-1990s American 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1990s American parallel passive valve equaliser of mastering rooms.
+
 A modelled stereo valve equaliser whose four bands stand side by side rather than one after another: each a coil and a capacitor, a bell or a shelf, switched to cut, out or boost, with a gain that is flat at its bottom and a bandwidth that also sets how far the band reaches, and in shelf mode a dip or a bump beside the shelf. Bands at one frequency do not add up. Passive high and low pass filters, a trim, and two valve amplifiers and an output transformer that give back what the network loses. At two or four times the sample rate, as late at both.
 
 [Parallel Passive EQ on the website](/solmara/effects/#parallel-passive-eq)

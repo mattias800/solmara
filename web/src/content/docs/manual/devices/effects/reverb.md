@@ -5,6 +5,8 @@ description: "Reverb"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A space to ring in: room, hall, plate, or a shimmer whose tail climbs in pitch, with pre-delay, damping, a size to sweep, a freeze, and ducking, by its own input or by a sidechain.
 
 [Reverb on the website](/solmara/effects/#reverb)

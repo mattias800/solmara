@@ -5,6 +5,8 @@ description: "Chromatic tuner: the note and cents of a held string."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A chromatic tuner for guitar, bass, and anything that holds a note: it shows the note it hears and how many cents sharp or flat, against a reference for A4, and passes the audio as it came or mutes it while tuning, as a tuner pedal does. It reads a steady string to within half a cent from a dropped low D up. Agents read it with the tuner command.
 
 [Tuner on the website](/solmara/guitar/#tuner)

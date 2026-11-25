@@ -5,6 +5,8 @@ description: "VCA bus compressor in the style of the 1980s British large-format 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the bus compressor of the 1980s British large-format consoles.
+
 A modelled bus compressor built on a voltage-controlled amplifier, for gluing a mix bus or a drum bus: a threshold, ratios of 2, 4, and 10 to 1, an attack of 0.1 to 30 ms and a release of 0.1 to 1.2 s on switches, with an automatic release that lets a short peak go quickly and a long passage slowly, and a make-up gain. One peak detector serves both channels, so the stereo image holds still. Its timing is the circuit's network of a diode, resistances, and capacitors, solved exactly. With a high-pass in the sidechain, a mix of the compressed with what went in, a switch for where the detector listens, ahead of the gain element or behind it, and a sidechain from another track. Modelled on the stereo compressor in the centre section of a large British mixing console of the 1980s.
 
 [Desk Glue Bus Compressor on the website](/solmara/effects/#desk-glue-bus-compressor)

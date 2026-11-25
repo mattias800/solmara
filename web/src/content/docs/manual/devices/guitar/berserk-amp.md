@@ -5,6 +5,8 @@ description: "Three-channel valve head with a temper switch: thick, dark modern 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on a modern three-channel high-gain valve head with a temper switch.
+
 A modelled three-channel high-gain valve head with a temper switch, and a cabinet that can be switched off: an input valve, the temper's voicing and the gain pot, a second valve, a third on the high and insane channels, a clipping stage that clips one side of the wave first, a fourth stage into a cathode follower, a bass, middle, and treble stack after the clipping, the master, and the power stage's loop with its depth and presence. Clean, high, and insane channels; calm, fierce, and rage tempers, each a set of the circuit's values fitted to a reference. It holds the audio back by 38 frames.
 
 [Berserk Amp on the website](/solmara/guitar/#berserk-amp)

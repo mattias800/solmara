@@ -5,6 +5,8 @@ description: "Ring Modulator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Multiplies the audio by a carrier, a sine, triangle, or square, for metallic and bell tones.
 
 [Ring Modulator on the website](/solmara/effects/#ring-modulator)

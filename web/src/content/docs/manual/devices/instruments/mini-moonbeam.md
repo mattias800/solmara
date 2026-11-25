@@ -5,6 +5,8 @@ description: "Three-oscillator monosynth in the style of the early-1970s America
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1970s American portable monosynth with three oscillators into a ladder filter.
+
 A modelled three-oscillator monosynth of the early 1970s, built from its circuit and fitted to a reference by measurement: three free-running oscillators with ranges in feet (LO, 32' to 2') and the circuit's waveforms (triangle, shark-tooth or reverse saw, saw, three pulses), noise white or pink, and a five-input mixer that overdrives the filter, into a transistor ladder and two contours. One voice with low-note priority, a single trigger, and glide. The filter and the contours are plain stand-ins until they are fitted.
 
 [Mini Moonbeam on the website](/solmara/instruments/mini-moonbeam/)

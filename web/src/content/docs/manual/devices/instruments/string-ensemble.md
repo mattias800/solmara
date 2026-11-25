@@ -5,6 +5,8 @@ description: "String ensemble in the style of the 1970s string machines: lush st
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s string machines, their bass and upper sections through a rich ensemble.
+
 A modelled string ensemble keyboard of the 1970s, fitted to a reference by measurement: a divide-down organ, every key always running from one master clock, keyed through its own crescendo and sustain; violin, viola, trumpet and horn on every key and contrabass and cello on the lower keys, each register a fixed filter; and the ensemble, three bucket-brigade lines swept by a slow and a fast oscillator, in mono or stereo. A choir register and an LFO for vibrato and tremolo, which its reference adds.
 
 [String Ensemble on the website](/solmara/instruments/string-ensemble/)

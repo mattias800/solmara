@@ -5,6 +5,8 @@ description: "Stereo imager: width by band, the lows in mono."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A stereo imager for the master and for buses, the mastering family's: how wide each of four bands is, from mono through as it came to its side doubled, split where the crossover splits so at every width 1 it changes nothing; and the lows folded to mono below a frequency, as a master's should be.
 
 [Trollspegeln Imager on the website](/solmara/effects/#trollspegeln-imager)

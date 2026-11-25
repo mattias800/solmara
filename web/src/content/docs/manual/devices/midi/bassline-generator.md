@@ -5,6 +5,8 @@ description: "Bassline Generator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the player devices of another DAW.
+
 A MIDI device: makes a bass line of an on-beat phrase and an off-beat one, chosen from busy to sparse and varied through the pattern, its intervals stretched and made minor, transposed from the keys or played as written, with eight patterns.
 
 [Bassline Generator on the website](/solmara/write/#bassline-generator)

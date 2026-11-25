@@ -5,6 +5,8 @@ description: "Compressor"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Evens out level: turns down what rises above a threshold, by a ratio. It can listen to another track by sidechain, through a filter, so a kick ducks a bass.
 
 [Compressor on the website](/solmara/effects/#compressor)

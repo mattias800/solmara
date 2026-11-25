@@ -5,6 +5,8 @@ description: "Five-voice polysynth in the style of the late-1970s American progr
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1970s American five-voice polysynth, the first that remembered every knob.
+
 A modelled five-voice polysynth of the late 1970s, built from its circuit and fitted to a reference by measurement: each voice two oscillators, A with its saw and pulse and sync to B, B with its saw, triangle and pulse, a low-frequency mode and the keyboard on or off, and noise, into a four-pole low-pass that sings at full resonance and an amplifier, each on an envelope of its own. Poly-Mod takes the filter's envelope and oscillator B to A's pitch and pulse width and to the filter; the mod wheel takes the LFO and the noise to either oscillator and the filter. Glide, unison, and a release switch.
 
 [Promise Bloom on the website](/solmara/instruments/promise-bloom/)

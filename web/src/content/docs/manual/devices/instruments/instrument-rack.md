@@ -5,6 +5,8 @@ description: "Instrument Rack"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Several instruments played as one. Each chain holds an instrument, with MIDI devices before it and audio effects after it, and has a level, a pan, a mute, and a solo. Every chain plays every note, for layers, unless it is given a range of keys or of velocities, for a split keyboard or a sound that changes with how hard a key is struck.
 
 ## Controls

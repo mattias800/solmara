@@ -5,6 +5,8 @@ description: "Valve leveling amplifier in the style of the 1990s American racks:
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1990s American valve leveling amplifier.
+
 A modelled American valve leveling amplifier of the 1990s: one knob sets how much and how hard, its ratio growing with the reduction; three attacks and releases, the slower ones following the program; a valve after the cell whose headroom the saturation knob moves, a low cut on the input or the detector, a parallel mix. At four times the sample rate.
 
 [Tube Leveling Amp on the website](/solmara/effects/#tube-leveling-amp)

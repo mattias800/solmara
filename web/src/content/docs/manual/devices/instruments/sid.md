@@ -5,6 +5,8 @@ description: "Three-voice chip synth in the style of the 1980s home-computer sou
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the sound chip of the best-selling home computer of the early 1980s: three voices and a filter.
+
 A three-voice chip synth with clocked oscillators and ADSR, pulse width, sync, ring modulation, and a shared filter. Poly or unison; two chip models and PAL/NTSC clocks. An approximate SID sound engine.
 
 [SID on the website](/solmara/instruments/sid/)

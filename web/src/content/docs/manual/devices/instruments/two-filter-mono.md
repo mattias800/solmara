@@ -5,6 +5,8 @@ description: "Semi-modular two-filter monosynth in the style of the late-1970s J
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1970s Japanese semi-modular monosynth with two screaming filters and a patch panel.
+
 A modelled semi-modular monosynth of the late 1970s, built from its circuit and fitted to a reference by measurement: two oscillators, the first with its triangle, saw, pulse of a width by hand and white noise, the second with its saw, square, narrow pulse and the ring modulator of the two, by a pitch knob of its own, each by its level into a high-pass and a low-pass in series, each with its cutoff and its peak, and an amplifier. Two envelopes, EG 1 (delay, attack, release) to the pitch and EG 2 (hold, attack, decay, sustain, release) to the filters and the amplifier; an MG from a falling saw through a triangle to a rising one, to the pitch and the filters; portamento. Its normalled routing; the filters, the envelopes and the MG are plain stand-ins until they are fitted.
 
 [Two-Filter Mono on the website](/solmara/instruments/two-filter-mono/)

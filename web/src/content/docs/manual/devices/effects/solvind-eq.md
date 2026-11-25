@@ -5,6 +5,8 @@ description: "Listening EQ: what hides is tamed, what is hidden brought up."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 An equaliser that listens, the mastering family's: many times a second it works out which bands of what passes hide the bands about them, on a model of hearing, and turns those down and the hidden ones up, so a master or a bus is clearer and more even without a fixed curve. Recover and Tame set how far each way, Bias how the spectrum is split between them, Brighten whether the unmasking leans to the highs or the lows, Boost the balance of a louder or quieter playback, and two limits where it acts; the loudness is held, so it is not heard louder. 21 ms late, which the renderer takes out.
 
 [Solvind EQ on the website](/solmara/effects/#solvind-eq)

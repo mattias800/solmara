@@ -5,6 +5,8 @@ description: "Tight heavy rig: a gate, a drive pedal, three valve amps, a nine-b
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on a 2020s progressive-metal rig plugin.
+
 A tight, heavy guitar rig in one device, each section switched by itself: a gate, a downward expander; a drive pedal with drive, bright, volume, and a six-place attack switch that leaves the lows out of the clipping; one of three amps, clean, rhythm and lead, valve circuits of ours revoiced toward a digital amp suite's, with gain, low, mid, high, presence, master, a voice switch each, a boost on the clean, and level; a nine-band EQ with a high-pass and a low-pass; and a cabinet for each amp. It holds the audio back by 76 frames.
 
 [Djent Amp on the website](/solmara/guitar/#djent-amp)

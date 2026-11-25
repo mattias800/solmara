@@ -1,6 +1,7 @@
 ---
 import Site from '../layouts/Site.astro';
-import DeviceRow from '../components/DeviceRow.astro';
+import OriginParts from '../components/OriginParts.astro';
+import OriginFilter from '../components/OriginFilter.astro';
 import { guitar, guitarFamilies } from '../lib/devices';
 
 const families = guitarFamilies.filter((family) => family.devices.length > 0);
@@ -15,6 +16,7 @@ const families = guitarFamilies.filter((family) => family.devices.length > 0);
 	lede="Plug in and play through a whole rig, from the gate to the miked cabinet. Every amp and pedal is modelled on its circuit."
 >
 	<section>
+		<OriginFilter devices={families.flatMap((family) => family.devices)} />
 		<ul class="jump" aria-label="Families">
 			{families.map((family) => <li><a href={`#${family.key}`}>{family.label} ({family.devices.length})</a></li>)}
 			<li><a href="#tones">Captured tones</a></li>
@@ -22,11 +24,9 @@ const families = guitarFamilies.filter((family) => family.devices.length > 0);
 	</section>
 
 	{families.map((family) => (
-		<section class="family" id={family.key}>
+		<section class="family" id={family.key} data-filtered>
 			<h2>{family.label}</h2>
-			<div class="rows">
-				{family.devices.map((device) => <DeviceRow device={device} />)}
-			</div>
+			<OriginParts devices={family.devices} />
 		</section>
 	))}
 

@@ -5,6 +5,8 @@ description: "Sampler"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Plays a sample library where it lies on the disk, its long samples streamed from there: SFZ and DecentSampler, with Kontakt to come. Its knobs are the library's MIDI controllers and its volume.
 
 [Sampler on the website](/solmara/instruments/sampler/)

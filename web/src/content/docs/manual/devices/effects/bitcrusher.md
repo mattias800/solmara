@@ -5,6 +5,8 @@ description: "Bitcrusher"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Takes fewer samples a second and keeps each to fewer bits: grit and alias of early samplers.
 
 [Bitcrusher on the website](/solmara/effects/#bitcrusher)

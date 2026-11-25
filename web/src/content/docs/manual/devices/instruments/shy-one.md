@@ -5,6 +5,8 @@ description: "One-oscillator monosynth in the style of the early-1980s Japanese 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese portable monosynth with one oscillator, a sub, an arpeggiator and a sequencer.
+
 A modelled one-oscillator monosynth of the early 1980s, built from its circuit and fitted to a reference by measurement: one oscillator with its saw, a pulse with its width by hand, by the LFO or by the envelope, a sub-oscillator one or two octaves down or a narrow pulse, and noise, each by its slider, into a four-pole transconductance low-pass that sings at full resonance and an amplifier opened by the envelope or the gate. One envelope, started by the gate and each key, by the gate alone, or by the LFO; an LFO of four waveforms to the pitch, the pulse width and the filter; portamento always or between keys held together; the bender and its push to the LFO. The last key struck sounds.
 
 [Shy One on the website](/solmara/instruments/shy-one/)

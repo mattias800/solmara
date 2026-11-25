@@ -1,0 +1,497 @@
+{
+ "_": "Where each device comes from. A device listed here emulates another, analogue or digital (software counts as digital), and modelledOn says what it is modelled on, plainly, never by its maker's or its model's name. A device not listed is a design of Solmara's own.",
+ "emulations": {
+  "builtin.tube-mixer-saturator": {
+   "circuit": "analogue",
+   "modelledOn": "the 1950s American valve broadcast microphone mixer"
+  },
+  "builtin.blues-combo-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the mid-1960s British 2x12 valve combo of blues-rock"
+  },
+  "builtin.mastering-eq-1960s": {
+   "circuit": "analogue",
+   "modelledOn": "the in-house disc-mastering equaliser of a 1960s Detroit record label"
+  },
+  "builtin.studio-eq-1960s": {
+   "circuit": "analogue",
+   "modelledOn": "the in-house seven-band stepped graphic equaliser of a 1960s Detroit record label"
+  },
+  "builtin.early-digital-reverb": {
+   "circuit": "digital",
+   "modelledOn": "the first commercial digital reverb, of the mid-1970s"
+  },
+  "builtin.vca-compressor-1976": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s American VCA compressor, fast and punchy with a soft knee"
+  },
+  "builtin.digital-hall-reverb": {
+   "circuit": "digital",
+   "modelledOn": "the late-1970s American digital reverb whose halls and plates were on every record of the 1980s"
+  },
+  "builtin.digital-ambience-reverb": {
+   "circuit": "digital",
+   "modelledOn": "the early-1980s British digital reverb of ambience, gated and reversed drums"
+  },
+  "builtin.british-class-a-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s British classic console channel: transformer preamp, EQ and compressor"
+  },
+  "builtin.anchor-arpeggiator": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.arcturus-2600": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1970s American semi-modular studio synth, its modules patched on the panel and played from a duophonic keyboard"
+  },
+  "builtin.bassline-generator": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.temper-high-gain-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "a modern three-channel high-gain valve head with a temper switch"
+  },
+  "builtin.console-channel-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the channel of the 1980s British large-format consoles"
+  },
+  "builtin.valve-character-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the one-knob valve character compressors made for thickening drums and bass"
+  },
+  "builtin.chiming-combo-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the 1960s British 30-watt combo with its treble-boost channel"
+  },
+  "builtin.master-volume-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s British master-volume valve head of hard rock"
+  },
+  "builtin.jumpered-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s British 100-watt valve head, its two channels jumpered"
+  },
+  "builtin.british-rock-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s British console channel that recorded the decade's rock bands"
+  },
+  "builtin.op-amp-distortion": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s American op-amp distortion pedal"
+  },
+  "builtin.chord-sequencer": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.modern-metal-rig": {
+   "circuit": "digital",
+   "modelledOn": "a modern metal amp plugin, fitted section by section"
+  },
+  "builtin.clean-combo-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s American twin-speaker clean combo with reverb and vibrato"
+  },
+  "builtin.class-a-tube-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1990s American class-A valve channel strip"
+  },
+  "builtin.four-stage-phaser": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s American one-knob four-stage phaser pedal"
+  },
+  "builtin.bucket-brigade-flanger": {
+   "circuit": "analogue",
+   "modelledOn": "the bucket-brigade flanger pedals of the 1970s"
+  },
+  "builtin.echo-chamber": {
+   "circuit": "analogue",
+   "modelledOn": "the underground echo chambers of a 1950s Hollywood studio"
+  },
+  "builtin.phase-distortion-synth": {
+   "circuit": "digital",
+   "modelledOn": "the mid-1980s Japanese home keyboards that made their sound by phase distortion"
+  },
+  "builtin.cosmos-80": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s Japanese flagship polysynth with two layers to a voice, a ribbon and pressure on every key"
+  },
+  "builtin.opto-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the 1980s Danish valve optical compressor of mixing and mastering rooms"
+  },
+  "builtin.danish-midrange-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the Danish passive valve mid-range equaliser"
+  },
+  "builtin.danish-multiband-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the Danish three-band valve optical compressor for masters"
+  },
+  "builtin.danish-program-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the Danish passive valve program equaliser"
+  },
+  "builtin.danish-tube-channel": {
+   "circuit": "analogue",
+   "modelledOn": "the Danish valve channel: preamp, passive program EQ and optical compressor"
+  },
+  "builtin.vca-bus-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the bus compressor of the 1980s British large-format consoles"
+  },
+  "builtin.djent-amp": {
+   "circuit": "digital",
+   "modelledOn": "a 2020s progressive-metal rig plugin"
+  },
+  "builtin.spring-reverb": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1960s American outboard spring reverb tank of surf guitar"
+  },
+  "builtin.drum-sequencer": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.dual-arpeggio": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.character-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American compressor that imitates valves and tape with analogue circuits under digital control"
+  },
+  "builtin.echo-workstation": {
+   "circuit": "analogue",
+   "modelledOn": "the classic tape, oil-can and bucket-brigade echoes, as the 2000s studio echo boxes gather them"
+  },
+  "builtin.electric-clavichord": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s German electric clavichord of funk"
+  },
+  "builtin.analog-saturator": {
+   "circuit": "analogue",
+   "modelledOn": "five classic colour circuits of the studio: tape, transformers, valves and a valve distortion box"
+  },
+  "builtin.flip-top-bass-combo": {
+   "circuit": "analogue",
+   "modelledOn": "the 1960s American flip-top valve bass combo of the studios"
+  },
+  "builtin.formant-shifter": {
+   "circuit": "digital",
+   "modelledOn": "the 2010s vocal-transformer plugins"
+  },
+  "builtin.dimension-chorus": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s Japanese studio rack chorus with four push-buttons"
+  },
+  "builtin.plate-reverb": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1950s German studio plate: a sheet of steel in a frame two metres long"
+  },
+  "builtin.germanium-mastering-eq": {
+   "circuit": "analogue",
+   "modelledOn": "a British germanium mastering equaliser after the late-1960s consoles"
+  },
+  "builtin.overdrive-pedal": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s Japanese green overdrive pedal"
+  },
+  "builtin.hybrid-bass-head": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American hybrid bass head: a valve preamp into a solid-state power amp"
+  },
+  "builtin.valve-bass-stack": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s American 300-watt valve bass head and its cabinet of eight tens"
+  },
+  "builtin.jet-8000": {
+   "circuit": "digital",
+   "modelledOn": "the late-1990s Japanese virtual-analogue dance synth with the supersaw and the morphing knobs"
+  },
+  "builtin.six-voice-polysynth": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese six-voice polysynth with one oscillator a voice and a stereo chorus"
+  },
+  "builtin.bbd-chorus": {
+   "circuit": "analogue",
+   "modelledOn": "the chorus of the early-1980s Japanese six-voice polysynths"
+  },
+  "builtin.eight-voice-polysynth": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese eight-voice flagship polysynth, two oscillators a voice, split or layered"
+  },
+  "builtin.opto-leveler": {
+   "circuit": "analogue",
+   "modelledOn": "the 1960s American valve optical leveler, the studio's vocal compressor"
+  },
+  "builtin.fast-opto-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s American solid-state optical leveler that followed the valve one"
+  },
+  "builtin.leviathan-rig": {
+   "circuit": "digital",
+   "modelledOn": "a 2020s heavy-guitar rig plugin: gate, drives, three amps, EQ and cabinet"
+  },
+  "builtin.clean-boost-pedal": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s American one-transistor clean boost"
+  },
+  "builtin.crushing-leveler": {
+   "circuit": "analogue",
+   "modelledOn": "the 1960s American transistor level controller made for podium microphones"
+  },
+  "builtin.tape-echo": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s Japanese tape echo with three playback heads and a spring reverb"
+  },
+  "builtin.mastering-vari-mu": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American balanced variable-mu valve compressor of mastering rooms"
+  },
+  "builtin.bucket-brigade-delay": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s American bucket-brigade delay pedal with its chorus and vibrato"
+  },
+  "builtin.distortion-pedal": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1990s Japanese high-gain metal pedal with its three-band EQ"
+  },
+  "builtin.micro-pitch-doubler": {
+   "circuit": "digital",
+   "modelledOn": "the micro-pitch doubling of the 1980s studio rack harmonisers"
+  },
+  "builtin.tube-stage": {
+   "circuit": "analogue",
+   "modelledOn": "the mid-century American valve microphone preamp"
+  },
+  "builtin.variable-mu-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1950s American variable-mu valve limiter, a rack of twenty valves"
+  },
+  "builtin.three-oscillator-monosynth": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1970s American portable monosynth with three oscillators into a ladder filter"
+  },
+  "builtin.sustaining-fuzz": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s American four-stage sustaining fuzz"
+  },
+  "builtin.transistor-ladder-filter": {
+   "circuit": "analogue",
+   "modelledOn": "the four-pole transistor ladder filter of the late-1960s American modular and portable synths"
+  },
+  "builtin.opto-tremolo": {
+   "circuit": "analogue",
+   "modelledOn": "the optical tremolo of the 1960s American guitar amplifiers"
+  },
+  "builtin.norrsken": {
+   "circuit": "digital",
+   "modelledOn": "the late-1990s Scandinavian virtual-analogue keyboard in its red case, with morphs on every knob"
+  },
+  "builtin.class-a-channel": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s British class-A console preamp and equaliser"
+  },
+  "builtin.note-echo": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.note-generator": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.note-tool": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.oberon-eight": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s American eight-voice polysynth that splits and doubles two patches across its keys"
+  },
+  "builtin.ph6": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese small analogue drum machine, the bass machine's companion"
+  },
+  "builtin.ph6-part": {
+   "circuit": "analogue",
+   "modelledOn": "one voice of the early-1980s Japanese small analogue drum machine"
+  },
+  "builtin.ph8": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese analogue rhythm composer whose kick and handclap made electro and hip-hop"
+  },
+  "builtin.ph8-part": {
+   "circuit": "analogue",
+   "modelledOn": "one voice of the early-1980s Japanese analogue rhythm composer"
+  },
+  "builtin.ph9": {
+   "circuit": "analogue",
+   "modelledOn": "the mid-1980s Japanese drum machine of analogue drums and sampled cymbals that built house and techno"
+  },
+  "builtin.ph9-part": {
+   "circuit": "analogue",
+   "modelledOn": "one voice of the mid-1980s Japanese analogue and sampled drum machine"
+  },
+  "builtin.passive-mastering-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1990s American parallel passive valve equaliser of mastering rooms"
+  },
+  "builtin.passive-high-low-filter": {
+   "circuit": "analogue",
+   "modelledOn": "the 1950s American passive high- and low-cut program filter"
+  },
+  "builtin.pattern-mutator": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.poly-sequencer": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.five-voice-polysynth": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s American five-voice polysynth, the first that remembered every knob"
+  },
+  "builtin.american-bus-compressor": {
+   "circuit": "analogue",
+   "modelledOn": "the 2000s American discrete stereo bus compressor, its knee and its detector switchable"
+  },
+  "builtin.american-console-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the 2000s American discrete console channel strip"
+  },
+  "builtin.passive-equaliser": {
+   "circuit": "analogue",
+   "modelledOn": "the 1950s American passive valve program equaliser that boosts and cuts one band at once"
+  },
+  "builtin.tube-midrange-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1950s American passive valve mid-range equaliser"
+  },
+  "builtin.ladder-envelope-filter": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s auto-wahs, through a transistor ladder filter"
+  },
+  "builtin.fet-limiter": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s American FET limiting amplifier and its all-buttons mode"
+  },
+  "builtin.random-tool": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.reed-piano": {
+   "circuit": "analogue",
+   "modelledOn": "the 1960s American reed electric piano of classrooms and soul records"
+  },
+  "builtin.rhythm-map": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.rotary-speaker": {
+   "circuit": "analogue",
+   "modelledOn": "the mid-century rotating-speaker organ cabinet, its horn and its drum"
+  },
+  "builtin.sid-synth": {
+   "circuit": "digital",
+   "modelledOn": "the sound chip of the best-selling home computer of the early 1980s: three voices and a filter"
+  },
+  "builtin.two-transistor-fuzz": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s British round two-transistor fuzz"
+  },
+  "builtin.scales-and-chords": {
+   "circuit": "digital",
+   "modelledOn": "the player devices of another DAW"
+  },
+  "builtin.one-oscillator-monosynth": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese portable monosynth with one oscillator, a sub, an arpeggiator and a sequencer"
+  },
+  "builtin.six-operator-fm-synth": {
+   "circuit": "digital",
+   "modelledOn": "the early-1980s Japanese six-operator FM keyboard that brought digital synthesis to every studio"
+  },
+  "builtin.ota-compressor-pedal": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s American OTA compressor pedal"
+  },
+  "builtin.string-ensemble": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s string machines, their bass and upper sections through a rich ensemble"
+  },
+  "builtin.tape-machine": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s Swiss studio tape recorder"
+  },
+  "builtin.inductor-wah": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s inductor wah pedal"
+  },
+  "builtin.british-console-eq-1970s": {
+   "circuit": "analogue",
+   "modelledOn": "the channel equaliser of an early-1970s British studio desk"
+  },
+  "builtin.tine-electric-piano": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s American tine electric piano in its suitcase cabinet, with its stereo vibrato"
+  },
+  "builtin.titan-303": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s Japanese bass machine whose accent and slide became the sound of acid"
+  },
+  "builtin.tonewheel-organ": {
+   "circuit": "analogue",
+   "modelledOn": "the mid-century American tonewheel console organ, with drawbars, percussion and chorus-vibrato"
+  },
+  "builtin.tube-console-strip": {
+   "circuit": "digital",
+   "modelledOn": "a modern American valve channel-strip plugin: preamp, three-band EQ and optical leveller"
+  },
+  "builtin.tube-grand-channel": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American valve channel: leveler, equaliser and preamp"
+  },
+  "builtin.tube-leveling-amp": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American valve leveling amplifier"
+  },
+  "builtin.tube-program-eq": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American passive valve program equaliser"
+  },
+  "builtin.tube-vocal-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1990s American valve vocal channel"
+  },
+  "builtin.two-filter-monosynth": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1970s Japanese semi-modular monosynth with two screaming filters and a patch panel"
+  },
+  "builtin.untitled-amp": {
+   "circuit": "digital",
+   "modelledOn": "a 2020s tight high-gain rig plugin"
+  },
+  "builtin.vireo": {
+   "circuit": "digital",
+   "modelledOn": "the 2000s German virtual-analogue and wavetable synth of trance and dance music"
+  },
+  "builtin.pitch-shift-pedal": {
+   "circuit": "digital",
+   "modelledOn": "the 1990s pitch-shifting expression pedal"
+  },
+  "builtin.high-gain-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the 1990s American high-gain valve head with its switchable rectifiers"
+  },
+  "builtin.american-class-a-strip": {
+   "circuit": "analogue",
+   "modelledOn": "the American discrete console channel with its proportional-Q equaliser"
+  },
+  "builtin.zener-limiter": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1960s British console limiter built on zener diodes"
+  }
+ }
+}

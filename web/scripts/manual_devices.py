@@ -72,6 +72,12 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
         MARK,
         "",
     ]
+    origin = device.get("origin")
+    if origin:
+        kind = "an analogue" if origin["circuit"] == "analogue" else "a digital"
+        lines += [f"**An emulation of {kind} original,** modelled on {origin['modelledOn']}.", ""]
+    else:
+        lines += ["**A design of Solmara's own.**", ""]
     if device.get("description"):
         lines += [device["description"], ""]
     elif lede:
@@ -79,6 +85,8 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     if device["id"] not in site_hidden:
         place = {"instruments": f"/solmara/instruments/{device['slug']}/", "guitar": f"/solmara/guitar/#{device['slug']}",
                  "midi": f"/solmara/write/#{device['slug']}"}.get(family(device), f"/solmara/effects/#{device['slug']}")
+        if device["id"] == "builtin.modular":
+            place = "/solmara/modular/"
         lines += [f"[{device['label']} on the website]({place})", ""]
     if controls:
         lines += [
@@ -95,8 +103,28 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     return path
 
 
+def check_site_words() -> None:
+    """The website's own words about the devices, checked as the app's are."""
+    import devices as export
+    hits: list[str] = []
+    for name, words in json.loads((DATA / "blurbs.json").read_text(encoding="utf-8")).items():
+        for field in ("kind", "text"):
+            found: list[str] = []
+            export.check_words(f"{name} {field}", words.get(field), found)
+            # Vintergatan opens Serum's and Vital's presets: interoperability.
+            hits += [hit for hit in found if not (name == "Vintergatan" and ("'Serum'" in hit or "'Vital'" in hit))]
+    for type_id, origin in json.loads((DATA / "origins.json").read_text(encoding="utf-8"))["emulations"].items():
+        export.check_words(f"{type_id} modelledOn", origin["modelledOn"], hits)
+    if hits:
+        raise SystemExit("Makers' or models' names in the website's words:\n  " + "\n  ".join(hits))
+
+
 def main() -> None:
+    check_site_words()
     devices = json.loads((DATA / "devices.json").read_text(encoding="utf-8"))
+    origins = json.loads((DATA / "origins.json").read_text(encoding="utf-8"))["emulations"]
+    for device in devices:
+        device["origin"] = origins.get(device["id"])
     hidden = set(json.loads((DATA / "site.json").read_text(encoding="utf-8"))["hidden"])
     written = [p for p in (write(d, hidden) for d in devices) if p]
     print(f"{len(written)} chapters written, {len(devices) - len(written)} kept as written by hand")

@@ -5,6 +5,8 @@ description: "Six-operator FM synth in the style of the 1980s Japanese digital k
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the early-1980s Japanese six-operator FM keyboard that brought digital synthesis to every studio.
+
 A modelled six-operator FM synthesizer of 1983, its digital engine's behaviour held to a reference by measurement: six sine operators in one of 32 algorithms, each at a ratio of the key's pitch or a fixed frequency, with its output level and an envelope of four rates and four levels; one operator feeds itself back. Sixteen voices.
 
 [Six-Op FM on the website](/solmara/instruments/six-op-fm/)

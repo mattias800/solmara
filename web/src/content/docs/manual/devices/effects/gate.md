@@ -5,6 +5,8 @@ description: "Gate"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Turns down audio below a threshold, with smooth attack and release, hold, and hysteresis. Its filtered detector can listen to another track before or after that track's fader.
 
 [Gate on the website](/solmara/effects/#gate)

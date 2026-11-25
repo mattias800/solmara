@@ -5,6 +5,7 @@ import type { ImageMetadata } from 'astro';
 import exported from '../data/devices.json';
 import blurbs from '../data/blurbs.json';
 import site from '../data/site.json';
+import origins from '../data/origins.json';
 
 export interface Device {
 	id: string;
@@ -29,12 +30,36 @@ export interface Shown extends Device {
 	blurb: string;
 	inProgress: boolean;
 	image: ImageMetadata | null;
+	/** A design of Solmara's own, or an emulation of other gear or software. */
+	origin: Origin;
+	/** For an emulation, what it is modelled on, never by its maker's or its model's name. */
+	modelledOn: string | null;
 }
+
+export type Origin = 'own' | 'analogue' | 'digital';
+/** The three parts every family's devices are shown in, in this order. */
+export const originParts: { key: Origin; label: string; short: string }[] = [
+	{ key: 'own', label: 'Our own designs', short: 'Our own design' },
+	{ key: 'analogue', label: 'Emulations of analogue gear', short: 'Analogue emulation' },
+	{ key: 'digital', label: 'Emulations of digital gear and software', short: 'Digital emulation' },
+];
+export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)!.short;
+/** A family's devices in its three parts, the empty ones left out. */
+export const byOrigin = (list: Shown[]) =>
+	originParts.map((part) => ({ ...part, devices: list.filter((device) => device.origin === part.key) })).filter((part) => part.devices.length > 0);
 
 const faces = import.meta.glob<{ default: ImageMetadata }>('../assets/devices/*.webp', { eager: true });
 const handWritten = blurbs as Record<string, { kind: string | null; text: string | null }>;
+const emulations = origins.emulations as Record<string, { circuit: 'analogue' | 'digital'; modelledOn: string }>;
 
 const sentence = (text: string) => text.charAt(0).toUpperCase() + text.slice(1) + (/[.!?]$/.test(text) ? '' : '.');
+/** The first sentence of the app's longer description, for a device with no shorter words. */
+const firstSentence = (text: string | null) => {
+	if (!text) return '';
+	const plain = text.replace(/^A MIDI device: /, '');
+	const end = plain.search(/\.(\s|$)/);
+	return sentence(end > 0 ? plain.slice(0, end) : plain);
+};
 
 function shown(device: Device): Shown {
 	const words = handWritten[device.label];
@@ -42,9 +67,11 @@ function shown(device: Device): Shown {
 	return {
 		...device,
 		kindLabel: words?.kind ?? (device.tag ? sentence(device.tag).replace(/\.$/, '') : device.group ?? ''),
-		blurb: words?.text ?? summary,
+		blurb: words?.text ?? (summary || firstSentence(device.description)),
 		inProgress: site.inProgress.includes(device.id),
 		image: device.face ? (faces[`../assets/devices/${device.face}.webp`]?.default ?? null) : null,
+		origin: emulations[device.id]?.circuit ?? 'own',
+		modelledOn: emulations[device.id]?.modelledOn ?? null,
 	};
 }
 
@@ -84,6 +111,7 @@ export const mastering = site.mastering.map(byId).filter((device): device is Sho
 /** Where a device is shown on the website: its own page, or its place on its family's. */
 export function pageOf(device: Shown, base: string): string {
 	const root = base.replace(/\/$/, '');
+	if (device.id === 'builtin.modular') return `${root}/modular/`;
 	if (device.kind === 'instrument') return `${root}/instruments/${device.slug}/`;
 	if (device.kind === 'midi') return `${root}/write/#${device.slug}`;
 	if (device.group === 'Guitar & bass') return `${root}/guitar/#${device.slug}`;

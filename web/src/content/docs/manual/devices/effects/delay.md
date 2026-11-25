@@ -5,6 +5,8 @@ description: "Delay"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Repeats in time with the project or free: clean, tape, lo-fi, diffuse, or reversed, with filters, wobble, ping pong, and ducking, by its own input or by a sidechain.
 
 [Delay on the website](/solmara/effects/#delay)

@@ -5,6 +5,8 @@ description: "The first digital reverb: a dense, smooth, dark tail for vocals, d
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the first commercial digital reverb, of the mid-1970s.
+
 The first digital reverb, of the mid-1970s, modelled as its algorithm: a long loop of memory with many taps between converters of a short word with gain ranging, at a low sample rate behind steep filters, so the tail is dense, smooth, and dark above 11 kHz. A time of 0.4 to 4.5 s, with the lows and the highs at multiples of it, and pre-delay; beside the reverb, its programs of two delays, phasing, chorus, echo, and a long space. The converters' hiss, mix, and output. Edits never stop the tail.
 
 [1976 Digital Reverb on the website](/solmara/effects/#1976-digital-reverb)

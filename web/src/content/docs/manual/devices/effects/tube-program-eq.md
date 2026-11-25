@@ -5,6 +5,8 @@ description: "Passive valve program EQ in the style of the 1990s American racks:
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1990s American passive valve program equaliser.
+
 A modelled American passive program equaliser of the 1990s with its valve make-up: four bands, each boost or cut on seven stepped coils with its width, the outer two shelf or bell, and low and high cuts. At four times the sample rate.
 
 [Tube Program EQ on the website](/solmara/effects/#tube-program-eq)

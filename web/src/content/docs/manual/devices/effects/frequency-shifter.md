@@ -5,6 +5,8 @@ description: "Frequency Shifter"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Moves every partial of the audio by the same number of hertz, up or down: unlike a pitch shift, the harmonics stop being harmonic, from a slow phasing swirl at a few hertz to bell and robot tones; the right channel can go the other way.
 
 [Frequency Shifter on the website](/solmara/effects/#frequency-shifter)

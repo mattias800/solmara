@@ -5,6 +5,8 @@ description: "Upward and downward compressor: three bands, the loud pushed down,
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A three-band upward and downward compressor, for sound design and for loud, dense sounds: each band is pushed down above its push line and lifted below its lift line at once, so what is loud comes down and what is quiet comes up, with Depth for how much of it is heard and Time for how fast it moves. Vital's multiband compressor imports as it.
 
 [Tidvatten Compressor on the website](/solmara/effects/#tidvatten-compressor)

@@ -5,6 +5,8 @@ description: "Seven-band stepped graphic EQ in the style of a 1960s American lab
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the in-house seven-band stepped graphic equaliser of a 1960s Detroit record label.
+
 A modelled seven-band stepped graphic equaliser in the style of the in-house equalisers of a 1960s American record label's studios: passive coils and capacitors in two interleaved constant-resistance networks (50 Hz to 12.5 kHz, -8 to +8 dB in whole steps), so a band's width follows its gain and two bands of a network pull on each other; a make-up amplifier that clips hard at its rails, and the transformers, the input's core giving low notes a third harmonic. At four times the sample rate.
 
 [1960s Studio EQ on the website](/solmara/effects/#1960s-studio-eq)

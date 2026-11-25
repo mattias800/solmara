@@ -5,6 +5,8 @@ description: "Rotating speaker in the style of the mid-century organ cabinets: t
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the mid-century rotating-speaker organ cabinet, its horn and its drum.
+
 A modelled rotating speaker cabinet, built from its mechanism: a valve amplifier that overdrives into a crossover near 800 Hz, a horn turning above it and a drum below, slow, fast or stopped, each reaching its speed in its own time; the pitch moved by each mouth's Doppler shift, the level by where it points, and what it sends back off the cabinet's walls; two microphones, their spread and distance. For organs, guitars, electric pianos and synths. Switching speed while it plays sweeps between them.
 
 [Rotary Speaker on the website](/solmara/effects/#rotary-speaker)

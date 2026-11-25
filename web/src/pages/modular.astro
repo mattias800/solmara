@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import Site from '../layouts/Site.astro';
+import patch from '../assets/modular/patch.webp';
+import exported from '../data/modules.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const { modules, patches } = exported as { modules: { id: string; label: string; part: string; summary: string | null }[]; patches: number };
+// The groups in the order the rack's library lists them.
+const order = ['Sources', 'Filters and amps', 'Shapers', 'Modulation', 'Sequencing', 'Effects', 'Logic and math', 'Mixing and routing', 'Utilities', 'Displays', 'Subpatches'];
+const groups = order
+	.map((part) => ({ part, modules: modules.filter((module) => module.part === part) }))
+	.filter((group) => group.modules.length > 0);
+---
+
+<Site
+	title="Modular"
+	section="modular"
+	description={`Solmara's modular: ${modules.length} modules to patch into instruments and effects of your own, as an instrument or as an effect, with ${patches} patches to start from.`}
+	eyebrow={`${modules.length} modules · ${patches} patches`}
+	heading="A modular synthesizer inside your studio"
+	lede="Patch modules together with cables and play the result like any instrument, or put it in an effects chain. Oscillators, filters, sequencers, logic and effects, as many as you like, in a window of their own."
+>
+	<section>
+		<figure class="big-face" style="margin: 0">
+			<a href={patch.src}><Image src={patch} widths={[800, 1280]} sizes="(max-width: 1032px) 96vw, 1000px" alt="The Modular's window: a clock drives a step sequencer, patched by cables to an envelope, with the library of modules at the left" loading="eager" /></a>
+		</figure>
+		<p class="caption" style="margin-top: 14px; color: var(--faint); font-size: 14px; text-align: center">Berlin School, one of the factory patches: a clock drives a sixteen-step sequence.</p>
+	</section>
+
+	<section class="features" style="padding-top: 64px">
+		<div class="feature">
+			<h3>An instrument, or an effect</h3>
+			<p>The Modular plays its track's notes, one voice or many. The Modular FX takes the track's audio in instead, for effects no chain can make. Both hear the notes, the song's clock and its transport.</p>
+		</div>
+		<div class="feature">
+			<h3>Patched with cables</h3>
+			<p>Drag from an output to an input. Every cable has a scale and an offset, one output feeds as many inputs as you like, and feedback loops are allowed where you mark one cable to hold back a sample.</p>
+		</div>
+		<div class="feature">
+			<h3>Subpatches and prefabs</h3>
+			<p>Fold modules into a subpatch of your own, with its own inputs and outputs. Save it as a prefab and every copy follows when you change one.</p>
+		</div>
+		<div class="feature">
+			<h3>{patches} patches to start from</h3>
+			<p>Basses, leads, pads, keys, plucks, bells, drums and self-playing sequences, built only from the rack's own modules.</p>
+		</div>
+		<div class="feature">
+			<h3>Macros on the front</h3>
+			<p>Nine macro knobs on the rack's front reach into the patch, so a patch plays and automates like any instrument.</p>
+		</div>
+		<div class="feature">
+			<h3>An agent can patch too</h3>
+			<p>Every module, cable and knob is there for an agent to add, connect and set, so you can ask for a patch and then play it. <a href={`${base}/agents/`}>Agents →</a></p>
+		</div>
+	</section>
+
+	<section class="family">
+		<h2>The modules</h2>
+		<p class="intro">{modules.length} modules in {groups.length} groups. Any of Solmara's instruments and effects can stand in the rack too, patched like a module.</p>
+		<div class="module-groups">
+			{groups.map((group) => (
+				<div class="module-group">
+					<h3>{group.part} <small>{group.modules.length}</small></h3>
+					<ul>
+						{group.modules.map((module) => <li title={module.summary ?? undefined}>{module.label}</li>)}
+					</ul>
+				</div>
+			))}
+		</div>
+	</section>
+</Site>

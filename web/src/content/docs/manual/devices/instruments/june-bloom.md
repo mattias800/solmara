@@ -5,6 +5,8 @@ description: "Six-voice polysynth with chorus in the style of the early-1980s Ja
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese six-voice polysynth with one oscillator a voice and a stereo chorus.
+
 A modelled six-voice polysynth of the mid-1980s, built from its circuit and fitted to a reference by measurement: each voice a digitally clocked oscillator, its saw, a pulse from it with its width by hand or by the LFO, a square sub-oscillator an octave down, and noise, into a four-pole transconductance low-pass that sings at full resonance and an amplifier opened by the voice's envelope or its gate; then a stepped high-pass and the bucket-brigade chorus. One LFO with a delay, a bender to the pitch, the filter and the LFO, and two ways of giving out the voices.
 
 [June Bloom on the website](/solmara/instruments/june-bloom/)

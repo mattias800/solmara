@@ -5,6 +5,8 @@ description: "Pitch correction: tunes a voice to the scale, natural or hard."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Corrects a voice's pitch as it plays: the pitch is heard every 5 ms and moved to the nearest note of the project's scale guide, or of a scale chosen here. The retune speed is how fast it gets there: at 0 the voice jumps from note to note and its vibrato is gone, the effect known from records; at 50 to 100 ms it sounds sung in tune, its scoops and vibrato kept. Humanize retunes a held note more slowly, amount corrects part of the way, transpose and formant move the voice and its vowels' colour, and detune aims at another tuning than A 440. The voice is made again a period at a time (TD-PSOLA), which keeps its tone; where no pitch is heard it passes as it came. For one voice at a time: a vocal, a lead, a bass line. It plays 30 to 60 ms late, by its range, which the mix makes up for.
 
 [Pitch Correction on the website](/solmara/effects/#pitch-correction)

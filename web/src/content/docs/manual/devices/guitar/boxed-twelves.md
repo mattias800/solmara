@@ -5,6 +5,8 @@ description: "4x12 speaker cabinet: the miked box after any amp."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A guitar speaker cabinet with its microphone, to follow a guitar amplifier: a closed box of four twelve-inch speakers, as a row of filters fitted to measured cabinets, in two voicings, forward and thick, with the microphone's place across the cone, the box's resonance, and its size. Low and high cuts, phase, mix, and level. It holds the audio back by nothing. For a cabinet of your own, as an impulse response, use Cabinet IR.
 
 [Boxed Twelves on the website](/solmara/guitar/#boxed-twelves)

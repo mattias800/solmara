@@ -5,6 +5,8 @@ description: "Clean combo in the style of the late-1960s American twin-speaker a
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s American twin-speaker clean combo with reverb and vibrato.
+
 A modelled American clean guitar combo of two channels, without its speakers or reverb: in each channel an input valve that drives a passive treble, middle, and bass stack straight from its plate, a volume with a bright switch, and a second valve; the vibrato channel has a third after a large divider, more gain, and an optical tremolo. A long-tailed phase inverter and four beam tetrodes in fixed bias with a strong feedback loop give a big, clean power stage that breaks up late, on two speakers' load. Volume, treble, middle, and bass, bright, the channel and the high or low input, the tremolo with its speed and intensity, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the 100-watt two-speaker combo with the black panel of the mid-1960s, the clean sound of country, soul, and session guitar, built from its published drawing and fitted to a plugin model of the unit.
 
 [Class Clean Combo on the website](/solmara/guitar/#class-clean-combo)

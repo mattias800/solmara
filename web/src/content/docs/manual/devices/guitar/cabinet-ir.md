@@ -5,6 +5,8 @@ description: "Guitar cabinet from an impulse response of your own."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Any guitar speaker cabinet, as an impulse response loaded from a WAV file, which is kept with the project and applied by convolution: how much of it is used, low and high cuts, phase, mix, and level. Without a response it passes the audio unchanged. It holds the audio back by nothing.
 
 [Cabinet IR on the website](/solmara/guitar/#cabinet-ir)

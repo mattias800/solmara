@@ -5,6 +5,8 @@ description: "Vocoder"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Makes a carrier speak through 4 to 40 bands of an input's envelopes. Noise, external audio, the input itself, or a pitch-following oscillator; with formants, freeze, and a band patchbay.
 
 [Vocoder on the website](/solmara/effects/#vocoder)

@@ -5,6 +5,8 @@ description: "Volume shaper: a drawn duck in time with the song, as a sidechain 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A volume curve drawn over a stretch of the song, from a sixteenth to two bars, that turns a track down and up again in time: the pumping of a sidechained compressor under a kick, with no sidechain, or gates and swells. A second curve can move a filter's cutoff in the same time. Each cycle starts on the song's grid or with each note; ready shapes start it, and its curves are drawn.
 
 [Pulsar Shaper on the website](/solmara/effects/#pulsar-shaper)

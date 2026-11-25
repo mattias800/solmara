@@ -5,6 +5,8 @@ description: "Valve channel in the style of the 1990s American leveling and prog
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1990s American valve channel: leveler, equaliser and preamp.
+
 A modelled American valve channel of the 1990s: a levelling compressor whose one knob sets how much and how hard, with three attacks and releases and a saturation knob for its valve's headroom, and a passive equaliser of four bands, each boost or cut on seven stepped coils with its width, and low and high cuts, with its valve make-up; the order switchable, a parallel mix. At four times the sample rate.
 
 [Tube Grand Channel on the website](/solmara/effects/#tube-grand-channel)

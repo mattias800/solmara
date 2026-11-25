@@ -5,6 +5,8 @@ description: "Transistor console channel in the style of the late-1960s British 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s British classic console channel: transformer preamp, EQ and compressor.
+
 A modelled channel of the British class-A consoles of the late 1960s and early 1970s: a low and a high cut, an inductor equaliser (a low shelf, a mid bell with a ten-way Q and a high shelf, each with an off position) ahead of the compressor or after the limiter, a diode-bridge compressor and limiter on stepped switches with a dry share, and a transformer-coupled class-A drive stage with a character network ahead of it. At two or four times the sample rate, as late at both.
 
 [Albion Desk Strip on the website](/solmara/effects/#albion-desk-strip)

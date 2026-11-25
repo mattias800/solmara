@@ -5,6 +5,8 @@ description: "Valve combo in the style of the mid-1960s British 2x12 combos: war
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the mid-1960s British 2x12 valve combo of blues-rock.
+
 A modelled British guitar combo of the mid-1960s, without its speakers: the jumpered head's circuit of two channels and four input jacks, with its own numbers, two beam tetrodes in push-pull, no capacitor across the first channel's volume, and a tremolo on the second channel. Two volumes, bass, middle, treble, presence, the tremolo's intensity and speed, which jack the guitar is in and whether a jumper joins the channels, and a quality switch. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 2x12 combo of the mid-1960s that blues-rock broke up through.
 
 [1960s Blues Combo on the website](/solmara/guitar/#1960s-blues-combo)

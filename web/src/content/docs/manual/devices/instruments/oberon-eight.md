@@ -5,6 +5,8 @@ description: "Eight-voice polysynth in the style of the early-1980s American pol
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s American eight-voice polysynth that splits and doubles two patches across its keys.
+
 A modelled eight-voice polysynth of the early 1980s, built from its circuit and held to a reference by measurement: each voice two chip oscillators, each a saw and a pulse that may sound together, sync and cross-modulation, a mixer with noise into a four-pole low-pass switchable to a two-pole state-variable, and an amplifier, each on its own envelope. An LFO by two depths to the frequencies, the filter, the pulse widths and the amplifier, and the lever's vibrato. An upper and a lower patch, played whole, double or split; unison, hold and portamento.
 
 [Oberon Eight on the website](/solmara/instruments/oberon-eight/)

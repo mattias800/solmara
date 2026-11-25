@@ -5,9 +5,11 @@ description: "Modular"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A modular synth that plays the track's notes: patch sample-rate oscillators, filters, envelopes, sequencers, utilities, effects and ordinary devices with polyphonic voltage cables.
 
-[Modular on the website](/solmara/instruments/modular/)
+[Modular on the website](/solmara/modular/)
 
 ## Controls
 

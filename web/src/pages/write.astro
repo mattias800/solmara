@@ -1,6 +1,6 @@
 ---
 import Site from '../layouts/Site.astro';
-import DeviceRow from '../components/DeviceRow.astro';
+import OriginParts from '../components/OriginParts.astro';
 import { midiDevices } from '../lib/devices';
 import writing from '../data/writing.json';
 
@@ -48,8 +48,6 @@ const ways = [
 	<section class="family" id="midi">
 		<h2>MIDI devices</h2>
 		<p class="intro">Put them before an instrument to play arpeggios, chords, bass lines and beats, or to bend the notes you play.</p>
-		<div class="rows">
-			{midiDevices.map((device) => <DeviceRow device={device} />)}
-		</div>
+		<OriginParts devices={midiDevices} />
 	</section>
 </Site>

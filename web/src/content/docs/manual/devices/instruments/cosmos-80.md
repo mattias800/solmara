@@ -5,6 +5,8 @@ description: "Two-layer polysynth in the style of the late-1970s Japanese flagsh
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1970s Japanese flagship polysynth with two layers to a voice, a ribbon and pressure on every key.
+
 A modelled eight-voice polysynth of the late 1970s whose every voice is two whole synthesizers layered, held to a reference by measurement: each channel a VCO with its saw, its square and its pulse-width LFO, noise and a sine beside the filters, a high-pass and a low-pass in series each with its resonance, a filter envelope from its initial level to its attack level, and an ADSR. The strike brightens, raises and bends each note; each key's own pressure brightens and raises it and drives the sub-oscillator's speed, vibrato and filter swing on it. Keyboard control of brilliance and level, a sub-oscillator, a ring modulator with its own envelope, detune, portamento or glissando, a ribbon, and a chorus or tremolo.
 
 [Cosmos 80 on the website](/solmara/instruments/cosmos-80/)

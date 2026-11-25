@@ -5,6 +5,8 @@ description: "Tine electric piano in the style of the 1970s American suitcase pi
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s American tine electric piano in its suitcase cabinet, with its stereo vibrato.
+
 A modelled tine electric piano of the 1970s, built from how it makes its sound and held to a reference by measurement: a felt hammer strikes a steel tine on its tone bar, which rings as a few modes in front of an electromagnetic pickup whose flux bends what it hears, a bell when played softly and a bark when played hard; a damper on each key, the sustain pedal, and the key's and the damper's knock. The stage model's passive output, or the suitcase model's preamp, bass and treble, stereo tremolo, amplifier and speakers. 32 tines sound at once.
 
 [Tine Electric Piano on the website](/solmara/instruments/tine-electric-piano/)

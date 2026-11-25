@@ -5,6 +5,8 @@ description: "Vintergatan"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 The flagship synth: three oscillators, each a wavetable that morphs and bends, an analog oscillator that drifts, syncs and is bent by the first, a sample or grains of one; a sub, noise, and another track's audio; two filters in series, in parallel, split, or each source to its own; six envelopes, ten LFOs, sixteen macros, a matrix of 64 routes, five ways of unison (each voice at twice the rate, or in Eco, as the preferences choose for playing, at the rate with its modulation worked out every 16 samples), a chain of any of Solmara's effects after its voices, and two FX busses, bus1 and bus2, each a chain its oscillators, sub, noise, input and filters send to.
 
 [Vintergatan on the website](/solmara/instruments/vintergatan/)

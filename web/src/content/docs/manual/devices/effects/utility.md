@@ -5,6 +5,8 @@ description: "Utility"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Gain, pan, and a DC offset.
 
 [Utility on the website](/solmara/effects/#utility)

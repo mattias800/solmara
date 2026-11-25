@@ -5,6 +5,8 @@ description: "Passive valve EQ in the style of the 1950s American program equali
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1950s American passive valve program equaliser that boosts and cuts one band at once.
+
 A modelled passive program equaliser with a valve make-up amplifier: a low shelf that boosts and cuts at once, a peak in the highs with a bandwidth knob, and a high cut, all in one network of pots, capacitors, and a coil, whose sections lean on each other. A switch takes the valves and the transformers out for a clean amplifier at a fraction of the processing. Modelled on the passive valve program equaliser of the 1950s, known for boosting and cutting the lows at once, a lift with a dip above it, for kicks and basses, and for a broad, smooth high boost.
 
 [Push-Pull EQ on the website](/solmara/effects/#push-pull-eq)

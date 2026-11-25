@@ -5,6 +5,8 @@ description: "Three-band opto compressor in the style of the Danish studio units
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the Danish three-band valve optical compressor for masters.
+
 A modelled Danish stereo three-band optical compressor of the 1990s: two crossovers of one resistor and capacitor each, so the bands sum back flat, and in each band an optical cell in a passive divider lit by a sidechain common to both channels, with its threshold, ratio, attack, release and gain; the output, a balance, a parallel mix, mid/side.
 
 [Danish Multiband Compressor on the website](/solmara/effects/#danish-multiband-compressor)

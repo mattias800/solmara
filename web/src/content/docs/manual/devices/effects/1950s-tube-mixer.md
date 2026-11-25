@@ -5,6 +5,8 @@ description: "Valve microphone mixer in the style of the 1950s American broadcas
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1950s American valve broadcast microphone mixer.
+
 A modelled valve microphone mixer of the 1950s American broadcast and studio amplifiers, as a saturator: a line input, or a microphone input through its transformer, the channel's gain into a high-mu preamplifier valve, the mixer's simple bass and treble, the master level into a single-ended output valve on its output transformer, which rounds and then flattens the top of the wave, a mix, and the unit's own hiss. In stereo, each channel through its own valves, at four times the sample rate.
 
 [1950s Tube Mixer on the website](/solmara/effects/#1950s-tube-mixer)

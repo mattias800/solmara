@@ -5,6 +5,8 @@ description: "Mastering clipper: peaks off before the limiter, in six curves."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A clipper for the master and for buses, the mastering family's: it drives the audio into a ceiling it never passes, to take the fastest peaks off before a limiter, more cleanly than a limiter can. Its algorithm is how it bends into the ceiling, from hard through soft, sine, a diode pair's and tape's to a valve's lopsided curve, its softness how far under the ceiling it starts, and it runs at once, four, or sixteen times the rate so what it makes does not fold back.
 
 [Polarnatt Clipper on the website](/solmara/effects/#polarnatt-clipper)

@@ -5,6 +5,8 @@ description: "Small analogue drum machine in the style of the early-1980s Japane
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese small analogue drum machine, the bass machine's companion.
+
 The small analogue drum machine of the early 1980s as one instrument: its seven sounds on their General MIDI keys, the kick, the snare, the low and high toms, the cymbal and the open and closed hats, the closed one cutting the open; each sound's own knobs, the machine's accent and its volume. It expands into a drum rack of its voices, for an effect on one sound.
 
 [PH-6 on the website](/solmara/instruments/ph-6/)

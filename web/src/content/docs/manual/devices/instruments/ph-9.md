@@ -5,6 +5,8 @@ description: "Analogue and sampled drum machine in the style of the mid-1980s Ja
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the mid-1980s Japanese drum machine of analogue drums and sampled cymbals that built house and techno.
+
 The drum machine of the mid-1980s as one instrument: its eleven sounds on their General MIDI keys, the kick with its attack, the snare, three toms, the rim shot and the hand clap, and the closed and open hats, the crash and the ride, the closed hat cutting the open; each sound's own knobs, the machine's total accent and its volume. It expands into a drum rack of its voices, for an effect on one sound.
 
 [PH-9 on the website](/solmara/instruments/ph-9/)

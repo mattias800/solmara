@@ -5,6 +5,8 @@ description: "Reed electric piano in the style of the 1960s American classroom p
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1960s American reed electric piano of classrooms and soul records.
+
 A modelled reed electric piano of the late 1960s and the 1970s, built from its physics: a felt hammer strikes a steel reed tuned by the solder at its tip, which rings in its three bending modes, far from harmonic, the harder the strike the brighter. Each reed swings through the slot of a charged comb, a capacitor whose bell-shaped law turns a hard-struck key's swing into its bark. A preamp that clips softly and unevenly, the instrument's tremolo through a lamp and a photoresistor, a tone, and its small speakers or the line out. Dampers on all but the top keys, the sustain pedal (CC 64), and the keys' thump.
 
 [Reed Electric Piano on the website](/solmara/instruments/reed-electric-piano/)

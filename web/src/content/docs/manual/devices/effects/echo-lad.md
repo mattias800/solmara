@@ -5,6 +5,8 @@ description: "Multi-style echo in the style of the 2000s studio echo boxes: tape
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the classic tape, oil-can and bucket-brigade echoes, as the 2000s studio echo boxes gather them.
+
 A modelled multi-style echo, for vocals, guitars, keys, synths and drums: one echo with a choice of four machines to play through. Studio tape, a two-track machine used for slap and echo, soft and steady; tape echo, the single-head 1960s tape echo with its preamp, dark and wavering; oil can, the 1960s drum-in-oil echo, narrow, uneven and wavering; early digital, the 1980s rack delay, clean to its converters' rails. Single, Dual, Ping-pong and Rhythm feels, Groove and Feel to swing and push the repeats, saturation into the machine, low and high cuts in the loop, and a time that glides as a tape transport does, synced to the tempo or free.
 
 [Echo Lad on the website](/solmara/effects/#echo-lad)

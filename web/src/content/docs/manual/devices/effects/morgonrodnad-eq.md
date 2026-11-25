@@ -5,6 +5,8 @@ description: "Parametric EQ: eight bands, in stereo, mid and side, or linear pha
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 The parametric EQ, the mastering family's: eight bands of low cut, shelf, bell, notch, and high cut filters, each on both sides, their middle, or their side. Shelves and bells can cut or boost dynamically from their band level or another track by sidechain. In linear phase it draws the same curve and leaves the phase alone, some 85 ms late.
 
 [Morgonrodnad EQ on the website](/solmara/effects/#morgonrodnad-eq)

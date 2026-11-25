@@ -5,6 +5,8 @@ description: "Tape echo with spring reverb in the style of the 1970s Japanese ta
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s Japanese tape echo with three playback heads and a spring reverb.
+
 A modelled tape echo: a loop of tape that never stops, one record head, and three playback heads at fixed distances along it, with a spring reverb beside it. A twelve-position selector chooses which heads play and whether the springs do. The repeat rate is the motor's speed, so turning it bends the pitch of every echo still on the tape, and it can be set from the project's tempo instead. Intensity feeds the heads back to the record head: each pass is recorded again, so repeats darken and compress, and past about 70 with one head they grow until the tape saturates and the machine sings by itself; more heads sing sooner, all three by about 53. Bass and treble on the echoes, echo and reverb volume, input level, wow, flutter, hiss, and the dry signal passed beside it with no delay. The tape is the tape machine's model of hysteresis. Modelled on the Japanese tape echo of the middle 1970s with three heads and a spring tank, the echo of dub and of space rock.
 
 [Low Orbit Echo on the website](/solmara/effects/#low-orbit-echo)

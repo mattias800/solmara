@@ -3,12 +3,13 @@
 // sky (the home page has the large one), and the footer.
 import '../styles/site.css';
 import '../styles/pages.css';
+import '../styles/origins.css';
 
 interface Props {
 	title: string;
 	description: string;
 	/** The nav item this page is under. */
-	section?: 'instruments' | 'effects' | 'guitar' | 'write' | 'ai' | 'agents' | 'mastering' | 'progress' | 'about';
+	section?: 'instruments' | 'modular' | 'effects' | 'guitar' | 'write' | 'ai' | 'agents' | 'mastering' | 'progress' | 'about';
 	/** The big header of the home page, in place of a page's own. */
 	home?: boolean;
 	/** A page's heading and its lede, under the sky. */
@@ -22,6 +23,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const at = (path: string) => `${base}/${path}`;
 const nav = [
 	{ key: 'instruments', label: 'Instruments', href: at('instruments/') },
+	{ key: 'modular', label: 'Modular', href: at('modular/') },
 	{ key: 'effects', label: 'Effects', href: at('effects/') },
 	{ key: 'guitar', label: 'Guitar', href: at('guitar/') },
 	{ key: 'write', label: 'Write', href: at('write/') },

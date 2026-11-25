@@ -1,0 +1,22 @@
+/* Where a device comes from: our own designs, emulations of analogue gear,
+   emulations of digital gear and software (25 November 2026). */
+.part-title { margin: 48px 0 28px; font-size: 24px; font-weight: 600; color: var(--soft); display: flex; align-items: baseline; gap: 10px; }
+.part-title::after { content: ""; flex: 1; border-top: 1px solid var(--line); transform: translateY(-6px); }
+.part-title small { font: 400 12px "Geist Mono", monospace; color: var(--faint); }
+.origin-part:first-of-type .part-title { margin-top: 8px; }
+.origin { font-size: 14px !important; color: var(--muted); }
+.origin span { color: var(--soft); font-weight: 500; }
+.origin.own span { color: var(--gold); }
+.card .modelled { font-size: 13px; color: var(--faint); }
+
+/* The instruments' index, in its three parts. */
+.instrument-part { padding-top: 56px; }
+.instrument-part:first-of-type { padding-top: 0; }
+.instrument-part > h2 { font-size: clamp(30px, 3.4vw, 40px); margin-bottom: 6px; }
+.instrument-part > .intro { margin-bottom: 32px; }
+
+/* The Modular's modules, by group. */
+.module-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 28px 24px; }
+.module-group h3 { margin: 0 0 10px; font-size: 22px; font-weight: 600; }
+.module-group h3 small { font: 400 12px "Geist Mono", monospace; color: var(--faint); margin-left: 6px; }
+.module-group ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }

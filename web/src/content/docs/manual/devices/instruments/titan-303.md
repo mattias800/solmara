@@ -5,6 +5,8 @@ description: "Titan 303 in the style of the early-1980s Japanese bass machines: 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese bass machine whose accent and slide became the sound of acid.
+
 A modelled acid bass line synthesizer of the early 1980s, built from its circuit and fitted to a reference by measurement: one oscillator, its saw or the square a waveshaper makes from it, into a four-pole diode-ladder low-pass and an amplifier. A decay-only envelope on the filter by its amount and decay, and a fixed one on the amplifier. Played by notes: a velocity of 100 or more accents a note, louder and brighter, accents in a row building through the accent's sweep; a note struck while another is held slides to its pitch. A drive after it: off, or the overdrive or the distortion pedal's circuit.
 
 [Titan 303 on the website](/solmara/instruments/titan-303/)

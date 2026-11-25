@@ -5,6 +5,8 @@ description: "Class-A valve channel strip in the style of the late-1990s America
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1990s American class-A valve channel strip.
+
 A modelled class-A valve channel strip of the late 1990s: a line or microphone input and a high-pass, a valve preamplifier in a loop of heavy feedback with a High Gain switch, an optical compressor whose lamp lights a photoresistor against a ratio pot, its attack and release on two pots and a faster attack switch, and a four-band discrete equaliser (a bass and a treble shelf, two sweeping mids with x10 and Q switches) that can go ahead of the compressor or into its sidechain; then the output. At two or four times the sample rate, as late at both.
 
 [Class-A Tube Strip on the website](/solmara/effects/#class-a-tube-strip)

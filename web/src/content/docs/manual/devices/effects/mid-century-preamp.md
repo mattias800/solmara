@@ -5,6 +5,8 @@ description: "Valve mic preamp in the style of the mid-century studio preamps: w
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the mid-century American valve microphone preamp.
+
 A modelled valve saturator for any track: two triode stages and an output transformer. The second stage adds a second harmonic that grows with the level and flattens one side of the wave when it is driven hard; the first joins in when the gain switch is up; the transformer's core fills on low notes and thickens them. Gain switch, drive, bias, which moves the balance of even and odd harmonics, a tone before the valves and one after, mix, and output, with switches for the valves, the transformer, and an automatic gain that keeps a tone at -12 dBFS as loud as it went in wherever the drive stands, and a quality switch for how far above the sample rate the circuits are solved. In stereo, each channel through its own circuits. Modelled on the valve line amplifier in each channel of an American recording console of the 1960s, with the output transformer of a valve microphone preamplifier.
 
 [Mid-Century Preamp on the website](/solmara/effects/#mid-century-preamp)

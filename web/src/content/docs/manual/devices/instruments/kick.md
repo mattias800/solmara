@@ -5,6 +5,8 @@ description: "Kick"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A kick drum of five layers, each a body (a sine blended with a waveform and a wavetable), a click, noise, or a sample or factory click, shaped over the hit by curves of pitch, level, and place in the table, with points that follow the key and lock the phase; velocity, random, and LFO, drive, tone, and a limiter. Its layers go to bus A, bus B, or straight on, and its chains busA, busB, and master hold effects for each, the master's for what they come to.
 
 [Kick on the website](/solmara/instruments/kick/)

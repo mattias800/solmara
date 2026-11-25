@@ -5,6 +5,8 @@ description: "Inductor wah in the style of the late-1960s American wah pedals: a
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s inductor wah pedal.
+
 An inductor wah pedal for guitar, keys and bass: a resonant peak that the pedal sweeps from some 480 Hz at the heel to 2 kHz at the toe, the lows held under it. The pedal is a parameter to automate or to map a MIDI expression pedal to; or an envelope follower or an oscillator moves it, as an auto-wah. Pedal, mode, depth, rate, sensitivity, and an output. Modelled on the American wah of the late 1960s and fitted to a model of it.
 
 [Teardrop Wah on the website](/solmara/guitar/#teardrop-wah)

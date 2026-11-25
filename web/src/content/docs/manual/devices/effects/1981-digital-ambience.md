@@ -5,6 +5,8 @@ description: "1980s digital reverb: tight ambience, gated nonlinear and reverse 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the early-1980s British digital reverb of ambience, gated and reversed drums.
+
 A digital reverb of the early 1980s, modelled as its algorithm and known for its programs: the short, dense ambience that puts a drum in a room, rooms, halls, and plates, the gated nonlinear program whose sound holds and then stops, a reverse that swells and stops, echoes, a chorus, and a freeze. A tapped early field and a recirculating loop at a clock of its own between steep converter filters. Pre-delay, decay with low and high multipliers, the converters' hiss, mix, and output. Edits never stop the tail.
 
 [1981 Digital Ambience on the website](/solmara/effects/#1981-digital-ambience)

@@ -5,6 +5,8 @@ description: "Basic Synth"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A plain oscillator voice: sine, saw, square, or triangle.
 
 ## Controls

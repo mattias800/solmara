@@ -5,6 +5,8 @@ description: "Console channel strip in the style of the 1980s British large-form
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the channel of the 1980s British large-format consoles.
+
 A modelled console channel strip of the later, cleaner kind, for every track of a mix: an input trim and a phase switch, a high-pass of 18 dB an octave and a low-pass of 12, a four-band equaliser whose low and high bands are shelves that switch to bells and whose two middle bands are fully parametric, with the console's two voicings of how a band's width follows its gain, a compressor with a continuous ratio up to a limiter, a threshold, an attack, a release, a fast attack switch, and automatic make-up, an expander or gate with a threshold, a range, a release, and a fast attack, switches that put the dynamics before or after the equaliser and the filters or the equaliser into the dynamics' sidechain, and an output trim. Clean operational amplifiers and voltage-controlled amplifiers: its character is its equaliser's curves and its dynamics' timing. Modelled on the channel strip of the large British mixing console of the 1980s with its four-band equaliser and channel dynamics.
 
 [Big Desk Strip on the website](/solmara/effects/#big-desk-strip)

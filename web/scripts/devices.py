@@ -34,7 +34,7 @@ FACES = WEB / "src" / "assets" / "devices"
 # Makers and models of the gear and plugins Solmara's devices are modelled
 # on or measured against. None of them may appear on the public site.
 FORBIDDEN = [
-    r"\broland\b", r"\bmoog\b", r"\bkorg\b", r"\byamaha\b", r"\bsequential\b", r"\bprophet\b", r"\boberheim\b",
+    r"\broland\b", r"\bmoog\b", r"\bkorg\b", r"\byamaha\b", r"sequential circuits", r"\bprophet\b", r"\boberheim\b",
     r"\bclavia\b", r"\bnord\b", r"\bhammond\b", r"\bfender\b", r"\brhodes\b", r"\bwurlitzer\b", r"\bhohner\b",
     r"\bclavinet\b", r"\bteletronix\b", r"\bla-2a\b", r"\b1176\b", r"\burei\b", r"universal audio", r"\bneve\b",
     r"\bpultec\b", r"\bfairchild\b", r"tube-tech", r"tube tech", r"\bmesa\b", r"\bboogie\b", r"\bmarshall\b",
@@ -55,7 +55,7 @@ FORBIDDEN = [
 ]
 # Short names that are also words or abbreviations ("arp" for arpeggiator,
 # "waves" of sound, "variable-mu") count only as their makers write them.
-EXACT = [r"\bARP\b", r"\bEMS\b", r"\bAPI\b", r"\bSSL\b", r"\bUAD\b", r"\bEMT\b", r"\bWaves\b", r"\bVital\b",
+EXACT = [r"\bSequential\b(?! [Ss]witch)", r"\bARP\b",r"\bEMS\b", r"\bAPI\b", r"\bSSL\b", r"\bUAD\b", r"\bEMT\b", r"\bWaves\b", r"\bVital\b",
          r"\bVirus\b", r"\bE-mu\b", r"\bE-MU\b", r"\bRAT\b", r"\bBoss\b", r"\bBOSS\b", r"\bVox\b", r"\bVOX\b"]
 FORBIDDEN_RE = re.compile("|".join(FORBIDDEN), re.IGNORECASE)
 EXACT_RE = re.compile("|".join(EXACT))

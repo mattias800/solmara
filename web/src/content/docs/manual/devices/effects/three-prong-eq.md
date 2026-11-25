@@ -5,6 +5,8 @@ description: "Console channel equaliser in the style of the early-1970s British 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the channel equaliser of an early-1970s British studio desk.
+
 A modelled British console channel equaliser of the early 1970s: four bands on faders at four stepped frequencies each, a broad low and high shelf on one amplifier and two coil-and-capacitor mids on another, so that each pair leans on one another and a mid's Q follows its gain; three high-pass and three low-pass buttons that can be pressed together; and the output amplifier, which the saturation knob drives into its rails. At two or four times the sample rate, as late at both.
 
 [Three-Prong EQ on the website](/solmara/effects/#three-prong-eq)

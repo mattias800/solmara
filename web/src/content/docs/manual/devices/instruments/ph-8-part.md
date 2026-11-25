@@ -5,6 +5,8 @@ description: "The PH-8 one channel at a time: kick, snare, toms, congas, rim, cl
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on one voice of the early-1980s Japanese analogue rhythm composer.
+
 One channel of the PH-8 alone, for a pad of a drum rack: the tabs on its face choose which, the bass drum, snare, toms and congas, rim shot and claves, clap and maracas, cowbell, cymbal and hats, each keeping its own knobs; any key strikes it.
 
 ## Controls

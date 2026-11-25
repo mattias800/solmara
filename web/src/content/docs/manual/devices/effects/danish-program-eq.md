@@ -5,6 +5,8 @@ description: "Passive valve program EQ in the style of the Danish studio units: 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the Danish passive valve program equaliser.
+
 A modelled Danish passive program equaliser of the late 1980s and 1990s with its valve make-up: a low shelf at four places that boosts and cuts at once, a high peak at ten places from 1 to 16 kHz whose width is a knob, and a high cut at three. At four times the sample rate.
 
 [Danish Program EQ on the website](/solmara/effects/#danish-program-eq)

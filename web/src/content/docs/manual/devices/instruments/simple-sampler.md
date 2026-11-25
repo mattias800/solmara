@@ -5,6 +5,8 @@ description: "Simple Sampler"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Plays one sample from a root note, with trim, forward looping and an ADSR amplitude envelope.
 
 [Simple Sampler on the website](/solmara/instruments/simple-sampler/)

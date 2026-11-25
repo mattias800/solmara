@@ -4,11 +4,14 @@
 import { Image } from 'astro:assets';
 import { getEntry } from 'astro:content';
 import Site from '../../layouts/Site.astro';
-import { familyOf, instruments, type Shown } from '../../lib/devices';
+import { familyOf, instruments, originLabel, type Shown } from '../../lib/devices';
 import demos from '../../data/demos.json';
 
 export function getStaticPaths() {
-	return instruments.map((device) => ({ params: { slug: device.slug }, props: { device } }));
+	// The Modular has a page of its own, /modular/.
+	return instruments
+		.filter((device) => device.id !== 'builtin.modular')
+		.map((device) => ({ params: { slug: device.slug }, props: { device } }));
 }
 
 const { device } = Astro.props as { device: Shown };
@@ -22,6 +25,7 @@ const related = siblings.filter((other) => other !== device).slice(0, 5);
 const manual = await getEntry('docs', `manual/devices/instruments/${device.slug}`);
 const heard = (demos as Record<string, { title: string; file: string }[]>)[device.slug] ?? [];
 const facts = [
+	originLabel(device.origin),
 	family?.label,
 	device.controls ? `${device.controls} controls` : null,
 	device.window ? 'A window of its own' : null,
@@ -57,6 +61,7 @@ const facts = [
 	<div class="device-body">
 		<div>
 			<h2>What it is</h2>
+			{device.modelledOn && <p class="origin"><span>Modelled on</span> {device.modelledOn}.</p>}
 			{device.description ? <p>{device.description}</p> : <p>{device.blurb}</p>}
 			{device.inProgress && (
 				<p class="callout">{device.label} is still being built: what it does and how it looks may change before it is done.</p>

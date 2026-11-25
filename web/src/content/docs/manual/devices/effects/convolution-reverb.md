@@ -5,6 +5,8 @@ description: "Convolution Reverb"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A recorded space from a user-loaded impulse response, with sample-accurate trim, pre-delay, damping, mix and level. A second stereo response in the right slot makes four true-stereo paths. Responses are kept in the project; up to 30 seconds are used. Without a primary response it passes audio unchanged.
 
 [Convolution Reverb on the website](/solmara/effects/#convolution-reverb)

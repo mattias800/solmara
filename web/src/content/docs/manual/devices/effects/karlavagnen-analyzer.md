@@ -5,6 +5,8 @@ description: "Analyzer: loudness, true peak, spectrum and stereo, as a master is
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Measures what passes through it and changes nothing: loudness as the streaming services read it (momentary, short-term, integrated, and its range), true peak, correlation, the spectrum and the stereo image. The master has one of its own, opened from the Loudness readout in the top bar; this one measures a track, or a place in a chain. Agents read the same numbers with the loudness command.
 
 [Karlavagnen Analyzer on the website](/solmara/effects/#karlavagnen-analyzer)

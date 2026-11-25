@@ -5,6 +5,8 @@ description: "Analogue drum machine in the style of the early-1980s Japanese rhy
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese analogue rhythm composer whose kick and handclap made electro and hip-hop.
+
 The analogue drum machine of the early 1980s as one instrument: its sixteen sounds on their General MIDI keys, the bridged-T kick, the snare, three toms and three congas, the rim shot and the claves, the hand clap and the maracas, the cowbell, the cymbal and the two hats, the closed one cutting the open; each sound's own knobs, the machine's accent and its volume. It expands into a drum rack of its voices, for an effect on one sound.
 
 [PH-8 on the website](/solmara/instruments/ph-8/)

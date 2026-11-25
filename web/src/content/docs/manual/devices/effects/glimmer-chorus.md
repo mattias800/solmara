@@ -5,6 +5,8 @@ description: "Ensemble chorus: up to eight voices, swept, with feedback."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 An ensemble chorus: one to four pairs of voices between two delay times, swept by a slow sine and spread across the stereo field, with feedback through a band of the wet sound, from a gentle widening to a ringing, flanging shimmer. Its rate can follow the song's tempo.
 
 [Glimmer Chorus on the website](/solmara/effects/#glimmer-chorus)

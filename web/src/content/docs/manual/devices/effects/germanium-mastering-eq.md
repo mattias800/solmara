@@ -5,6 +5,8 @@ description: "Stereo mastering equaliser in the style of the late-1960s British 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on a British germanium mastering equaliser after the late-1960s consoles.
+
 A modelled stereo mastering equaliser of germanium-transistor amplifiers in the style of the British studio console equalisers of the late 1960s: four bands of stepped frequency (a bass and a treble that peak or shelve, two presence bells), each on an amplifier of its own with a stepped gain and a range switch, its width following its gain; a stepped high and low pass; and the transformers, the input's core giving low notes a faint third harmonic. At four times the sample rate.
 
 [Germanium Mastering EQ on the website](/solmara/effects/#germanium-mastering-eq)

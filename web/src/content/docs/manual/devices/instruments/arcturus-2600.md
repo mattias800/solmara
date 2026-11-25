@@ -5,6 +5,8 @@ description: "Semi-modular monosynth in the style of the early-1970s American st
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1970s American semi-modular studio synth, its modules patched on the panel and played from a duophonic keyboard.
+
 A modelled semi-modular monosynth of the early 1970s, built from its circuit and held to a reference by measurement, its normalled routing the default patch: three oscillators (saws, a square, a triangle, a sine and pulses, sync and frequency modulation between them), noise with its colour, a ring modulator, a four-pole low-pass to singing, an ADSR and an AR, an amplifier with linear and exponential inputs, a mixer with pan and spring reverb, a sample-and-hold on its clock, an envelope follower and a lag. The common patch cords are panel choices. One voice, or two on the keyboard's lower and upper keys; portamento and delayed vibrato.
 
 [Arcturus 2600 on the website](/solmara/instruments/arcturus-2600/)

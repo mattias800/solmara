@@ -5,6 +5,8 @@ description: "RMS bus compressor in the style of the 2000s American discrete uni
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 2000s American discrete stereo bus compressor, its knee and its detector switchable.
+
 A modelled stereo bus compressor of discrete op-amps, VCAs and an output transformer, for a mix bus or a drum bus: an RMS detector in each channel, ratios of 1.5 to infinity to 1, attacks of 0.03 to 30 ms, releases of 0.05 to 2 s on a switch or a variable one, three knees, a weighting in the detector that hears the low end less and the top more for a punchier sound, feed-forward or feedback, and a link between the two channels by a share from independent to 100 % through a filter. Modelled on the American bus compressors of the late 1990s and 2000s.
 
 [Punch Bus Compressor on the website](/solmara/effects/#punch-bus-compressor)

@@ -5,6 +5,8 @@ description: "Heavy rig: a gate, two drive pedals, three valve amps, a nine-band
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on a 2020s heavy-guitar rig plugin: gate, drives, three amps, EQ and cabinet.
+
 A heavy guitar rig in one device, each section switched by itself: a gate, a downward expander; an overdrive and a distortion pedal; one of three amps, clean, rust and hot, valve circuits of ours revoiced toward a digital amp suite's, with gain, low, mid, high, master, presence, depth (the lows round the speaker's resonance), bright, and level; a nine-band EQ, a low shelf, seven bells an octave apart and a high shelf; and a cabinet for each amp. It holds the audio back by 76 frames.
 
 [Leviathan Rig on the website](/solmara/guitar/#leviathan-rig)

@@ -5,6 +5,8 @@ description: "Passive valve mid-range EQ in the style of the Danish studio units
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the Danish passive valve mid-range equaliser.
+
 A modelled Danish passive mid-range equaliser of the late 1980s and 1990s with its valve make-up: a low peak at five places, a dip at eleven and a high peak at five, on stepped coils. At four times the sample rate.
 
 [Danish Midrange EQ on the website](/solmara/effects/#danish-midrange-eq)

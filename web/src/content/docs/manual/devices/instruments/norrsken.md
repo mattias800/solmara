@@ -5,6 +5,8 @@ description: "Virtual-analogue polysynth in the style of the late-1990s Scandina
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the late-1990s Scandinavian virtual-analogue keyboard in its red case, with morphs on every knob.
+
 A modelled twenty-voice virtual-analogue synthesizer from Stockholm, of the turn of the century: its digital engine held to a reference by measurement and blind listening: two oscillators with sync, linear FM and ring modulation, a filter of five types with distortion, three envelopes, two LFOs (the second an arpeggiator or an echo), velocity and wheel morphs on every knob, unison, and the wheel, the stick, aftertouch and a pedal as the hardware takes them. Imports the hardware's documented SysEx programs.
 
 [Norrsken on the website](/solmara/instruments/norrsken/)

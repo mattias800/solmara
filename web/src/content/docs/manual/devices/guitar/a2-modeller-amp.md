@@ -5,6 +5,8 @@ description: "A Neural Amp Modeler capture of an amp, a pedal or a rig, played f
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A tone captured with Neural Amp Modeler, an amp, a pedal or a whole rig, played from its .nam file (NAM's A2, Lite and Full, and A1's WaveNets and LSTMs), which is kept with the project; with an input gain, a calibration to the level the tone was captured at, the output levelled by its loudness, and an output gain. It holds the audio back by 64 frames, and 128 where the model's rate is not the project's.
 
 [A2 Modeller Amp on the website](/solmara/guitar/#a2-modeller-amp)

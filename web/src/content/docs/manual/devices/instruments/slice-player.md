@@ -5,6 +5,8 @@ description: "Slice Player"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A loop cut into parts at its hits, each part on a key with its own pitch, level, pan, decay and reverse, named by what it sounds like; it writes a drum pattern that plays the loop, to remix it in the drum editor. A filter with an LFO, poly or choke voices, and a held tail for slower tempos.
 
 [Slice Player on the website](/solmara/instruments/slice-player/)

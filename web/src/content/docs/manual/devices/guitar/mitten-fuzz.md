@@ -5,6 +5,8 @@ description: "Four-stage sustaining fuzz in the style of the 1970s American big 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s American four-stage sustaining fuzz.
+
 A four-stage sustaining fuzz for guitar and bass: a booster into two transistor stages that each clip softly and evenly, a tone stack that blends a low-pass and a high-pass with a scooped middle between them, and a recovery stage. A thick, smooth wall of fuzz with a long, singing sustain. Sustain, tone, volume, and an output; light or full quality. Modelled on the big American fuzz of the early 1970s and fitted to a model of it.
 
 [Mitten Fuzz on the website](/solmara/guitar/#mitten-fuzz)

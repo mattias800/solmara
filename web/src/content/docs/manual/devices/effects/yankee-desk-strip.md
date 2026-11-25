@@ -5,6 +5,8 @@ description: "Discrete console channel in the style of the American desks: propo
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the American discrete console channel with its proportional-Q equaliser.
+
 A modelled channel of the American discrete consoles: a high-pass and a low-pass on pots that can go into the compressor's sidechain, a four-band equaliser of stepped switches whose bands narrow as they rise (the outer bands a shelf, a bell or a cut, a range that halves or quarters every step), a VCA compressor with feedback or feed-forward detection, a hard or soft knee and a parallel share, and the discrete op-amp output stage driven into its rails, its character setting how readily the highs clip. At two or four times the sample rate, as late at both.
 
 [Yankee Desk Strip on the website](/solmara/effects/#yankee-desk-strip)

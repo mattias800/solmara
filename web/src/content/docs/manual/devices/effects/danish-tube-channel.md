@@ -5,6 +5,8 @@ description: "Valve channel in the style of the Danish studio units: passive pro
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the Danish valve channel: preamp, passive program EQ and optical compressor.
+
 A modelled Danish valve channel of the late 1980s and 1990s: a passive program equaliser with a low shelf that boosts and cuts at once and a broadening high peak, a passive mid-range equaliser of a low peak, a dip and a high peak on stepped coils, and an optical compressor with fixed and manual timing, each section with its valve make-up; the order switchable, a parallel mix, mid/side. The equalisers at four times the sample rate.
 
 [Danish Tube Channel on the website](/solmara/effects/#danish-tube-channel)

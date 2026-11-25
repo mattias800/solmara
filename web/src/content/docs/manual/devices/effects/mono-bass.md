@@ -5,6 +5,8 @@ description: "Mono Bass"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Makes everything under a frequency mono and leaves what is above it as it was.
 
 [Mono Bass on the website](/solmara/effects/#mono-bass)

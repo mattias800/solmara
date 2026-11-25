@@ -5,6 +5,8 @@ description: "Multiband compressor: four bands, each held or lifted on its own."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A multiband compressor for the master and for buses, the mastering family's: four bands, split where the crossover splits and summing back flat, each a compressor over its threshold, by its ratio, or under 1:1 one that lifts it, with its own attack, release, gain, solo and mute. A new one changes nothing until a band is set to.
 
 [Plejaderna Multiband on the website](/solmara/effects/#plejaderna-multiband)

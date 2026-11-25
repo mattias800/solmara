@@ -5,6 +5,8 @@ description: "OTA compressor pedal in the style of the 1970s American squash box
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s American OTA compressor pedal.
+
 A compressor pedal for guitar: a transconductance gain cell whose gain a detector of its own output pulls down, fast to clamp and slow to let go. It evens out picking, lifts a fading note into a long sustain, and squashes the attack of a clean funk or country part. Sustain, volume, and an output. Modelled on the orange and red compressor pedals of the 1970s and fitted to a model of one.
 
 [Squash Compressor on the website](/solmara/guitar/#squash-compressor)

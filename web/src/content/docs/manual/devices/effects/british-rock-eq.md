@@ -5,6 +5,8 @@ description: "Transistor console channel in the style of the late-1960s British 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s British console channel that recorded the decade's rock bands.
+
 A modelled British console channel of the late 1960s: a transistor preamplifier with stepped gain that grits up as it is turned up, then a passive equaliser of coils and capacitors: a bass that peaks on a large coil at four frequencies or cuts the lows in five steps, a mid that peaks or dips at eight frequencies, and a stepped treble shelf, all in one divider so that they lean on one another; then the make-up stage, which clips on one side first, the output transformer, and the level. At two or four times the sample rate, as late at both.
 
 [British Rock EQ on the website](/solmara/effects/#british-rock-eq)

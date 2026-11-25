@@ -5,6 +5,8 @@ description: "Room maker: its track's bands cut where another track plays."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Makes room in its track for another, band by band: it listens to the other track by sidechain and turns its own track down in each of 32 bands by as much as the other is loud there, so a vocal comes through the guitars without the guitars ducked as a whole. Amount, attack and release, the range it cuts in, only where the two clash, and each side cut by where the other sits. No latency.
 
 [Molnlucka on the website](/solmara/effects/#molnlucka)

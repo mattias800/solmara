@@ -5,6 +5,8 @@ description: "Mid/Side"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Splits the signal into its middle, what the two channels share, and its sides, what they differ by, each to go through a chain of devices of its own, and puts them together after. With both chains empty it changes nothing.
 
 [Mid/Side on the website](/solmara/effects/#mid-side)

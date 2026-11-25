@@ -5,6 +5,8 @@ description: "Jumpered valve head in the style of the late-1960s British 100-wat
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s British 100-watt valve head, its two channels jumpered.
+
 A modelled British guitar head of two channels and no master volume, without a cabinet: four input jacks, a high and a low for a normal channel and a bright one, into the two halves of the input valve; a volume for each, the bright one with a large capacitor that lifts the top the more the lower it is turned; the two mixed into a second stage coupled to a cathode follower, a passive tone stack whose knobs lean on each other, and four European output pentodes in push-pull on a speaker's load, with the presence in the power stage's feedback loop. With no master the volumes drive the power stage as well, and turned up it is the power stage that distorts. Bright and normal volumes, bass, middle, treble, presence, which jack the guitar is in and whether a jumper joins the channels, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt lead head of the late 1960s with its clear front panel, the loud, open crunch of that era's rock, cleaner than a master-volume head at the same settings.
 
 [British Jumper Head on the website](/solmara/guitar/#british-jumper-head)

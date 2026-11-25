@@ -5,6 +5,8 @@ description: "Pitch-shift pedal in the style of the 1990s expression-pedal shift
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the 1990s pitch-shifting expression pedal.
+
 A pitch-shift pedal for guitar: an expression pedal sweeps the shift between a heel and a toe interval, up to two octaves either way, for octave leads, dive bombs, harmonies and detuned doubling, and drops a tuning without retuning. Polyphonic and 10 ms late whatever the interval, or 16 ms to join low chords; a classic character glitches as the early digital pedals did. Pedal, heel, toe, mix, character, glide, an octave-down and a semitone-up layer, an output, and the latency.
 
 [Whiny Shifter on the website](/solmara/guitar/#whiny-shifter)

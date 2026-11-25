@@ -5,6 +5,8 @@ description: "Pattern Mutator"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the player devices of another DAW.
+
 A MIDI device: plays a polyphonic pattern of steps, and makes variations of it at a click: notes moved by octaves and fifths or further, swapped, thinned or filled, lengthened, and accented. Eight patterns, transposed from the keys.
 
 [Pattern Mutator on the website](/solmara/write/#pattern-mutator)

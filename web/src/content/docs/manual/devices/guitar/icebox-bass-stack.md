@@ -5,6 +5,8 @@ description: "All-valve bass stack in the style of the late-1960s American 300-w
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s American 300-watt valve bass head and its cabinet of eight tens.
+
 A modelled all-valve bass head of 300 watts with its 8x10 cabinet, both its channels: in each an input valve, the ultra low switch into the volume with the ultra high switch's capacitor round it, a second valve and a passive bass and treble stack, the first with a middle of three frequencies and a bass cut; and a power stage of six output valves on a stiff supply, with no master, so the volume drives the power stage too. Volume, bass, middle, and treble, the channel, ultra high, ultra low, the normal or bright jack, and the cabinet on or off. Modelled on the 1969 rock bass head and its fridge-sized cabinet, built from its published drawing and fitted to a plugin model of the unit.
 
 [Icebox Bass Stack on the website](/solmara/guitar/#icebox-bass-stack)

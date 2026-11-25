@@ -5,6 +5,8 @@ description: "Vocal pitch and formant shifter in the style of the 2010s vocal-tr
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the 2010s vocal-transformer plugins.
+
 A modelled vocal pitch and formant shifter in the style of the 2010s vocal-transformer plugins, for vocals, raps and spoken lines: the pitch moved up to an octave either way and the formants, the voice's size, moved apart from it, a period at a time (TD-PSOLA), so a voice keeps its tone. Transpose moves it, Quantize first draws it to the nearest semitone, Robot holds it on one note; Link moves the formants with the pitch; a valve-like Drive and a Mix. For one voice at a time. It plays 50 ms late, which the mix makes up for.
 
 [Formant Shifter on the website](/solmara/effects/#formant-shifter)

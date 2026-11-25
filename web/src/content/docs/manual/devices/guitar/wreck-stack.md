@@ -5,6 +5,8 @@ description: "High-gain valve head in the style of the 1990s American metal amps
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1990s American high-gain valve head with its switchable rectifiers.
+
 A modelled high-gain guitar amplifier, without a cabinet: stacked valve stages that hand their clipping on to each other, a tone stack, and a push-pull power stage on a speaker's load. Gain, bass, mid, treble, presence, and master, a clean channel and a lead one, a mode switch that takes the feedback off the power stage, a supply held stiff or rectified by silicon or by valves, which sag under a loud note, at the full voltage or a lowered one, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device: alone it is harsh. Modelled on the two-channel American high-gain valve head of the 1990s with a choice of rectifiers, the sound of that decade's heavy guitars.
 
 [Wreck Stack on the website](/solmara/guitar/#wreck-stack)

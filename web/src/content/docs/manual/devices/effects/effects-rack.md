@@ -5,6 +5,8 @@ description: "Effects Rack"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Chains of devices side by side: the signal goes through each chain, and what they give is summed. Each chain has a level, a pan, a mute, and a solo, for a blend of a sound with what a chain makes of it, or of several treatments of one sound.
 
 [Effects Rack on the website](/solmara/effects/#effects-rack)

@@ -1,0 +1,455 @@
+{
+ "modules": [
+  {
+   "id": "builtin.modular-oscillator",
+   "label": "Modular Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-complex-oscillator",
+   "label": "Complex Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-wavetable",
+   "label": "Morph Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-lfo",
+   "label": "Modular LFO",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-envelope",
+   "label": "Modular ADSR",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-function",
+   "label": "Slope Function",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-vca",
+   "label": "Modular VCA",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-filter",
+   "label": "Modular Multimode Filter",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-dual-filter",
+   "label": "Dual Multimode Filter",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-mixer",
+   "label": "Modular Mixer",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-attenuverter",
+   "label": "Attenuverter",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-offset",
+   "label": "Constant Voltage",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-noise",
+   "label": "Noise and Random",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-random",
+   "label": "Stepped Random",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-sample-hold",
+   "label": "Sample and Hold",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-slew",
+   "label": "Slew Limiter",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-quantizer",
+   "label": "Pitch Quantizer",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-clock",
+   "label": "Modular Clock",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-divider",
+   "label": "Clock Divider",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-sequencer",
+   "label": "Voltage Sequencer",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-euclidean",
+   "label": "Euclidean Gates",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-logic",
+   "label": "Gate Logic",
+   "part": "Logic and math",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-comparator",
+   "label": "Voltage Comparator",
+   "part": "Logic and math",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-switch",
+   "label": "Sequential Switch",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-router",
+   "label": "Router",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-mid-side",
+   "label": "Mid/Side",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-crossover",
+   "label": "Crossover",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-mixer8",
+   "label": "Stereo Mixer",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-readout",
+   "label": "Value Readout",
+   "part": "Displays",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-xy",
+   "label": "XY Scope",
+   "part": "Displays",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-spectrum",
+   "label": "Spectrum",
+   "part": "Displays",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-label",
+   "label": "Label",
+   "part": "Displays",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-crossfade",
+   "label": "Voltage Crossfader",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-pan",
+   "label": "Voltage Panner",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-wavefolder",
+   "label": "Wavefolder",
+   "part": "Shapers",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-ring",
+   "label": "Ring Modulator",
+   "part": "Shapers",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-saturation",
+   "label": "Voltage Saturator",
+   "part": "Shapers",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-shaper",
+   "label": "Shaper",
+   "part": "Shapers",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-pitch-utility",
+   "label": "Pitch Utility",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-delay",
+   "label": "Modular Delay",
+   "part": "Effects",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-chorus",
+   "label": "Chorus / Flanger",
+   "part": "Effects",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-phaser",
+   "label": "Phaser",
+   "part": "Effects",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-frequency-shifter",
+   "label": "Frequency Shifter",
+   "part": "Effects",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-pitch-shifter",
+   "label": "Pitch Shifter",
+   "part": "Effects",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-resonator",
+   "label": "Modal Resonator",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-granular",
+   "label": "Grain Texture",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-spectral",
+   "label": "Spectral Bank",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-follower",
+   "label": "Envelope Follower",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-rectifier",
+   "label": "Voltage Rectifier",
+   "part": "Shapers",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-multiple",
+   "label": "Buffered Multiple",
+   "part": "Mixing and routing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-bernoulli",
+   "label": "Probability Gates",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-trigger-delay",
+   "label": "Trigger Delay",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-transport",
+   "label": "Transport",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-phasor",
+   "label": "Phasor",
+   "part": "Modulation",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-step-sequencer",
+   "label": "Step Sequencer",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-trigger-sequencer",
+   "label": "Trigger Sequencer",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-clock-ratio",
+   "label": "Clock Ratio",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-clock-quantizer",
+   "label": "Clock Quantizer",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-math",
+   "label": "Math",
+   "part": "Logic and math",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-latch",
+   "label": "Latch",
+   "part": "Logic and math",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-counter",
+   "label": "Counter",
+   "part": "Logic and math",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-ratchet",
+   "label": "Ratchet",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-shift-register",
+   "label": "Shift Register",
+   "part": "Sequencing",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-midi-cv",
+   "label": "Note to CV",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-voice-info",
+   "label": "Voice Info",
+   "part": "Utilities",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-scope",
+   "label": "Signal Monitor",
+   "part": "Displays",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-low-pass-gate",
+   "label": "Coupled Low-pass Gate",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-character-oscillator",
+   "label": "Character Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-character-filter",
+   "label": "Character Filter",
+   "part": "Filters and amps",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-wavetable-oscillator",
+   "label": "Wavetable Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-sample-oscillator",
+   "label": "Sample Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-multisample",
+   "label": "Multisample Oscillator",
+   "part": "Sources",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-subpatch",
+   "label": "Subpatch",
+   "part": "Subpatches",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-input",
+   "label": "Subpatch Input",
+   "part": "Subpatches",
+   "summary": null
+  },
+  {
+   "id": "builtin.modular-output",
+   "label": "Subpatch Output",
+   "part": "Subpatches",
+   "summary": null
+  }
+ ],
+ "patches": 65
+}

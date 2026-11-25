@@ -45,7 +45,7 @@
  },
  "Six-Op FM": {
   "kind": "FM synth",
-  "text": "Six operators and their algorithms, for electric pianos, bells and basses that cut. Opens DX7 voice banks."
+  "text": "Six operators and their algorithms, for electric pianos, bells and basses that cut. Opens the original's voice banks."
  },
  "SID": {
   "kind": "Chip synth",
@@ -129,7 +129,7 @@
  },
  "Quack Filter": {
   "kind": "Envelope filter",
-  "text": "The auto-wah, for funk guitar, clavinet and bass."
+  "text": "The auto-wah, for funk guitar, clav and bass."
  },
  "Clementine Phaser": {
   "kind": "Phaser",
@@ -270,5 +270,9 @@
  "Random Tool": {
   "kind": "Chance",
   "text": "Lets notes through by chance or by a pattern, and varies them."
+ },
+ "Kick": {
+  "kind": "Kick drum",
+  "text": "A kick drum built from five layers, a body, a click, noise or a sample, each shaped over the hit by curves of pitch and level."
  }
 }

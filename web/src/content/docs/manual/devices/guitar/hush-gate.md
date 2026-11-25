@@ -5,6 +5,8 @@ description: "Noise gate pedal: silence between high-gain riffs."
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 A noise gate pedal for high-gain guitar: it shuts the hiss and hum of a driven amplifier between notes and lets each note through whole. It listens through a band of 80 Hz to 4 kHz, so neither hum nor hiss holds it open, or to another track by sidechain, such as a dry guitar before the amplifier. It opens at the threshold over the attack, smoothly, stays open for the hold once the note falls the hysteresis under the threshold, and closes over the release evenly in decibels, the way a string dies away, to the range. Put it after the drive and before the delay.
 
 [Hush Gate on the website](/solmara/guitar/#hush-gate)

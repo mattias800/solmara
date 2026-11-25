@@ -5,6 +5,8 @@ description: "The PH-9 one channel at a time: kick, snare, toms, rim, clap, hats
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on one voice of the mid-1980s Japanese analogue and sampled drum machine.
+
 One channel of the PH-9 alone, for a pad of a drum rack: the tabs on its face choose which, the bass drum, snare, three toms, rim shot, clap, hats, crash and ride, each keeping its own knobs; any key strikes it.
 
 ## Controls

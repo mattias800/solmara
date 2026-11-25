@@ -5,6 +5,8 @@ description: "Valve vocal channel in the style of the late-1990s American vocal 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1990s American valve vocal channel.
+
 A modelled American valve vocal channel of the late 1990s: a line input transformer, a 6 dB low cut and the input pot, a passive optical compressor ahead of the valves with stepped attack and release, a two-triode preamplifier whose gain switch sets its feedback, a passive equaliser of a low peak, a mid dip and a high peak on stepped coils, a passive optical de-esser or limiter, a valve line amplifier and the output transformer. The preamplifier at two or four times the sample rate, as late at both.
 
 [Tube Vocal Strip on the website](/solmara/effects/#tube-vocal-strip)

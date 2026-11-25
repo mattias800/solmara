@@ -5,6 +5,8 @@ description: "Crossover"
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**A design of Solmara's own.**
+
 Splits the signal into two, three, or four bands at frequencies that are set, each band to go through a chain of devices of its own, and sums them after. With the chains empty it leaves the level as it was.
 
 [Crossover on the website](/solmara/effects/#crossover)

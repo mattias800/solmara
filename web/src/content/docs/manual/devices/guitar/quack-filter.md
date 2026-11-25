@@ -5,6 +5,8 @@ description: "Envelope filter in the style of the 1970s auto-wahs, through a lad
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s auto-wahs, through a transistor ladder filter.
+
 A modelled envelope filter, the auto-wah, for funk guitar, clav, bass, and synths: the four-pole transistor ladder of the classic monosynth, whose corner an envelope follower moves up by how loud the input is, so that each note opens the filter as it starts and lets it close as it dies away. Cutoff, resonance, and drive are the ladder's; amount sets how far a note opens it; the mode is slow, a swell that lingers, or fast, a snap that falls back; and a mix against the dry signal. Modelled on the low-pass effect boxes built on the synthesizer's filter.
 
 [Quack Filter on the website](/solmara/guitar/#quack-filter)

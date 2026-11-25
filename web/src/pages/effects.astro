@@ -1,6 +1,7 @@
 ---
 import Site from '../layouts/Site.astro';
-import DeviceRow from '../components/DeviceRow.astro';
+import OriginParts from '../components/OriginParts.astro';
+import OriginFilter from '../components/OriginFilter.astro';
 import { effectFamilies, effects } from '../lib/devices';
 
 const families = effectFamilies.filter((family) => family.devices.length > 0);
@@ -15,18 +16,17 @@ const families = effectFamilies.filter((family) => family.devices.length > 0);
 	lede="Compressors, equalisers, channel strips, tape, chorus and reverbs, each built from how it works and given a face of its own."
 >
 	<section>
+		<OriginFilter devices={families.flatMap((family) => family.devices)} />
 		<ul class="jump" aria-label="Families">
 			{families.map((family) => <li><a href={`#${family.key}`}>{family.label} ({family.devices.length})</a></li>)}
 		</ul>
 	</section>
 
 	{families.map((family) => (
-		<section class="family" id={family.key}>
+		<section class="family" id={family.key} data-filtered>
 			<h2>{family.label}</h2>
 			<p class="intro">{family.intro}</p>
-			<div class="rows">
-				{family.devices.map((device) => <DeviceRow device={device} />)}
-			</div>
+			<OriginParts devices={family.devices} />
 		</section>
 	))}
 </Site>

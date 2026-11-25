@@ -5,6 +5,8 @@ description: "Balanced variable-mu valve compressor in the style of the 1990s Am
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1990s American balanced variable-mu valve compressor of mastering rooms.
+
 A modelled variable-mu valve compressor and limiter for masters: a balanced pair of valves between an input and an output transformer, whose gain the sidechain turns down by taking both grids further under their cathodes, fed back from the output through a valve rectifier. Input, threshold, attack and output dials from 0 to 10, a recovery switch of five places from 8 s to 0.2 s, Compress or Limit, a high-pass in the sidechain, the two channels linked or apart, left and right or middle and side, and a mix. The ratio grows with the reduction, so its knee softens as it limits more. Modelled on the balanced valve limiters of the 1990s American mastering rooms.
 
 [Mastering Vari-Mu on the website](/solmara/effects/#mastering-vari-mu)

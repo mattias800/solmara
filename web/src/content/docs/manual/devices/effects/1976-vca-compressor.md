@@ -5,6 +5,8 @@ description: "VCA compressor in the style of the 1970s American units: fast, pun
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1970s American VCA compressor, fast and punchy with a soft knee.
+
 A modelled compressor built on a true-RMS detector and a voltage-controlled amplifier, for hitting a snare, a kick or a bass hard: a threshold, a compression knob from 1 to 1 up to infinity to 1, and an output gain. It has no attack or release: the detector averages the square of the signal, so it takes hold the faster the further over the threshold a sound is and lets go at a steady rate in dB, and it puts a thump on a drum. With a high-pass on what the detector hears and a mix of the compressed with what went in. Modelled on the American feed-forward compressor of the middle 1970s, the one with the infinity on its dial.
 
 [1976 VCA Compressor on the website](/solmara/effects/#1976-vca-compressor)

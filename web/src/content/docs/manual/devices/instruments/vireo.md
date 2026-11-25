@@ -5,6 +5,8 @@ description: "Wavetable and virtual analogue synth: hard leads, supersaw-style s
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the 2000s German virtual-analogue and wavetable synth of trance and dance music.
+
 A wavetable and virtual analogue synth of the early 2000s German kind: two Classic oscillators with sub, third oscillator, noise and ring, two multimode filters with an analogue ladder, four envelopes, three LFOs, a six-slot matrix and unison, wave and HyperSaw oscillator modes and its effects. Its state is the original's 512-byte Single, and its own SysEx patches and banks load. Another track's audio is its external input.
 
 [Vireo on the website](/solmara/instruments/vireo/)

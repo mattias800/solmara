@@ -1,0 +1,34 @@
+---
+// Chips that show only our own designs, or only the emulations of analogue
+// or of digital gear, on a page whose devices are rows (data-origin) in
+// parts (.origin-part) of families (.family).
+import { originParts, type Shown } from '../lib/devices';
+
+interface Props {
+	devices: Shown[];
+}
+const { devices } = Astro.props;
+const parts = originParts.map((part) => ({ ...part, count: devices.filter((device) => device.origin === part.key).length }));
+---
+
+<div class="chips" role="group" aria-label="Show where they come from">
+	<button class="chip" type="button" data-origin-show="all" aria-pressed="true">All <small>{devices.length}</small></button>
+	{parts.filter((part) => part.count > 0).map((part) => (
+		<button class="chip" type="button" data-origin-show={part.key} aria-pressed="false">{part.label} <small>{part.count}</small></button>
+	))}
+</div>
+
+<script>
+	const chips = document.querySelectorAll<HTMLButtonElement>('[data-origin-show]');
+	for (const chip of chips) {
+		chip.addEventListener('click', () => {
+			for (const other of chips) other.setAttribute('aria-pressed', String(other === chip));
+			const show = chip.dataset.originShow;
+			for (const part of document.querySelectorAll<HTMLElement>('.origin-part'))
+				part.hidden = show !== 'all' && part.dataset.origin !== show;
+			// A family with nothing left to show is hidden too, with its heading.
+			for (const family of document.querySelectorAll<HTMLElement>('.family[data-filtered]'))
+				family.hidden = ![...family.querySelectorAll<HTMLElement>('.origin-part')].some((part) => !part.hidden);
+		});
+	}
+</script>

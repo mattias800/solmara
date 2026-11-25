@@ -5,6 +5,8 @@ description: "Valve opto compressor in the style of the 1980s Danish studio unit
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 1980s Danish valve optical compressor of mixing and mastering rooms.
+
 A modelled optical compressor with a valve make-up amplifier: a photoresistor lit by the sidechain turns the audio down ahead of the amplifier. Threshold, ratio, attack, release, and gain, with fixed, manual, or combined timing, and a switch that takes the valves out for a clean amplifier at a fraction of the processing. Modelled on the blue-faced Danish valve opto compressor of the 1980s, a usual choice on vocals, bass, and a mix bus for gain reduction that is hard to hear.
 
 [Danish Blue Compressor on the website](/solmara/effects/#danish-blue-compressor)

@@ -1,18 +1,24 @@
 ---
 import Site from '../../layouts/Site.astro';
 import DeviceCard from '../../components/DeviceCard.astro';
-import { instrumentFamilies, instruments } from '../../lib/devices';
+import { byOrigin, familyOf, instrumentFamilies, instruments } from '../../lib/devices';
 
 const families = instrumentFamilies.filter((family) => family.devices.length > 0);
+const intros: Record<string, string> = {
+	own: 'Instruments of Solmara’s own design: the wavetable synth, the modular, the samplers and the drum tools.',
+	analogue: 'Synths, keys and drum machines modelled on analogue instruments, circuit by circuit, and held to references by measurement and by ear.',
+	digital: 'Synths modelled on digital instruments, from the early FM and phase-distortion keyboards to the virtual-analogue synths of the 1990s and 2000s.',
+};
+const parts = byOrigin(instruments);
 ---
 
 <Site
 	title="Instruments"
 	section="instruments"
-	description={`Solmara's ${instruments.length} instruments: analogue and digital synths, keys, drum machines and samplers.`}
+	description={`Solmara's ${instruments.length} instruments: our own designs, and emulations of analogue and digital synths, keys and drum machines.`}
 	eyebrow={`${instruments.length} instruments`}
 	heading="Instruments with names, and faces of their own"
-	lede="Synths, keys, drum machines and samplers. The analogue ones are models of their circuits, held to references by measurement and by ear. Your own plugins play beside them."
+	lede="Synths, keys, drum machines and samplers: some of our own design, the rest modelled on the analogue and digital instruments they come from. Your own plugins play beside them."
 >
 	<section>
 		<div class="chips" role="group" aria-label="Show a family">
@@ -23,9 +29,15 @@ const families = instrumentFamilies.filter((family) => family.devices.length > 0
 				</button>
 			))}
 		</div>
-		<div class="cards">
-			{families.flatMap((family) => family.devices.map((device) => <DeviceCard device={device} family={family.key} />))}
-		</div>
+		{parts.map((part) => (
+			<div class="instrument-part" data-part={part.key}>
+				<h2>{part.label}</h2>
+				<p class="intro">{intros[part.key]}</p>
+				<div class="cards">
+					{part.devices.map((device) => <DeviceCard device={device} family={familyOf(device)?.key} />)}
+				</div>
+			</div>
+		))}
 	</section>
 
 	<ul class="more">
@@ -36,7 +48,8 @@ const families = instrumentFamilies.filter((family) => family.devices.length > 0
 </Site>
 
 <script>
-	// The chips show one family's cards, or all of them.
+	// The chips show one family's cards, or all of them; a part with none
+	// left to show is hidden with its heading.
 	const chips = document.querySelectorAll<HTMLButtonElement>('.chip[data-show]');
 	const cards = document.querySelectorAll<HTMLElement>('.card[data-family]');
 	for (const chip of chips) {
@@ -44,6 +57,8 @@ const families = instrumentFamilies.filter((family) => family.devices.length > 0
 			for (const other of chips) other.setAttribute('aria-pressed', String(other === chip));
 			const show = chip.dataset.show;
 			for (const card of cards) card.hidden = show !== 'all' && card.dataset.family !== show;
+			for (const part of document.querySelectorAll<HTMLElement>('.instrument-part'))
+				part.hidden = ![...part.querySelectorAll<HTMLElement>('.card')].some((card) => !card.hidden);
 		});
 	}
 </script>

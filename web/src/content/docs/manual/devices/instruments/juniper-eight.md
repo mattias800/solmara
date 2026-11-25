@@ -5,6 +5,8 @@ description: "Eight-voice polysynth in the style of the early-1980s Japanese fla
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the early-1980s Japanese eight-voice flagship polysynth, two oscillators a voice, split or layered.
+
 A modelled eight-voice polysynth of the early 1980s, built from its circuit and held to a reference by measurement: each voice two oscillators, the first with its triangle, saw, pulse and square and cross-modulation from the second, the second with its sine, saw, pulse and noise, sync either way, a source mix into a high-pass and a four-pole low-pass switchable to two poles that sings at full resonance, and an amplifier, on two envelopes that follow the keys if asked. An LFO with its delay to the oscillators, the pulse width, the filter and the amplifier. An upper and a lower patch, played whole, dual or split; solo, unison and two poly modes; hold, portamento and an arpeggiator.
 
 [Juniper Eight on the website](/solmara/instruments/juniper-eight/)

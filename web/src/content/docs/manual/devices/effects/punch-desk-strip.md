@@ -5,6 +5,8 @@ description: "Discrete console channel strip in the style of the 2000s American 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the 2000s American discrete console channel strip.
+
 A modelled console channel strip of the American discrete kind, for every track of a mix: a microphone or line preamplifier with a pad, a phase switch and a low cut, a passive sweep filter (a high-pass of 12 dB an octave and a low-pass of 6), a gate or expander with a threshold, a depth, a release or hold and a fast attack, a VCA compressor with a threshold, a continuous ratio up to a limiter, three attacks, a release, a soft or hard knee and feedback or feed-forward detection that keeps the level the same as it compresses, a four-band equaliser of stepped frequencies and gains whose bands narrow as they rise, or a ten-band graphic equaliser in its place, before or after the dynamics or into their sidechain, and a fader. Modelled on the channel of the American discrete consoles of the 2000s.
 
 [Punch Desk Strip on the website](/solmara/effects/#punch-desk-strip)

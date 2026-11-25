@@ -5,6 +5,8 @@ description: "Stereo disc-mastering EQ in the style of a 1960s American label's 
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the in-house disc-mastering equaliser of a 1960s Detroit record label.
+
 A modelled two-channel seven-band stepped mastering equaliser in the style of the disc-mastering equaliser of a 1960s American record label: the studio unit's passive interleaved coil networks, each band dipping or peaking 1 to 8 dB at its frequency or an octave lower at half speed; left and right or mid and side; steep elliptic disc-cutting filters at 70 Hz and 15 kHz; the make-up amplifier's hard rails and the transformers. At four times the sample rate.
 
 [1960s Mastering EQ on the website](/solmara/effects/#1960s-mastering-eq)

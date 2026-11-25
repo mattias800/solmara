@@ -5,6 +5,8 @@ description: "Phase-distortion synth in the style of the mid-1980s Japanese home
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of a digital original,** modelled on the mid-1980s Japanese home keyboards that made their sound by phase distortion.
+
 A modelled phase-distortion synth of the mid-1980s Japanese home keyboards, held to a reference by measurement: two lines, each a cosine read through a bent phase (saw, square, pulse, double sine, saw-pulse and three resonance waves, one or two in alternate cycles), with 8-step envelopes on its pitch, its bend (DCW) and its level (DCA), key follow, ring and noise modulation, line detune, vibrato, portamento and the DAC's colour. Eight voices, four with both lines.
 
 [Cosine Zone on the website](/solmara/instruments/cosine-zone/)

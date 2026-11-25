@@ -5,6 +5,8 @@ description: "Diode-bridge limiter in the style of the late-1960s British studio
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
 
+**An emulation of an analogue original,** modelled on the late-1960s British console limiter built on zener diodes.
+
 A modelled limiter of the British studio consoles of the late 1960s, as a modern two-channel unit re-made it: a diode bridge across the audio whose conductance a feedback sidechain sets, its threshold a zener diode's. An input switch and its Low or High gain, attack and release switches (2 and the six vintage recovery times 3, 6, 10, 15, 18 and 21 among the new), the output, Comp 1 (gentle, slow), Comp 2 (its curve, faster) or Limit, a high-pass in the sidechain, THD (the bridge following the wave itself, a rounding that never clips), the two channels linked or apart, left and right or middle and side.
 
 [Zener Diode Limiter on the website](/solmara/effects/#zener-diode-limiter)
