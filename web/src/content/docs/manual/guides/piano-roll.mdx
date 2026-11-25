@@ -1,0 +1,64 @@
+---
+title: Write notes in the piano roll
+description: Draw, select, move and shape notes, quantize and humanize them, and edit velocity and controllers.
+---
+import Shot from '../../../../components/Shot.astro';
+import roll from '../../../../assets/manual/piano-roll.webp';
+
+The **piano roll** is where the notes of a MIDI clip are written: time runs left to right, pitch bottom to top, and a keyboard down the left names every key.
+
+Open it by selecting a clip of notes and pressing <kbd>Enter</kbd>, or double-click the clip to open it in its own [Composer](../composer/) window, the same editor larger, with chords beside it.
+
+<Shot src={roll} alt="The piano roll: a melody's notes on the rows of their keys, the keyboard at the left, and the velocity lane below." />
+
+## Draw notes
+
+- **Double-click and drag** on an empty part of the grid to draw a note as long as the drag. <kbd>Esc</kbd> gives it up.
+- **Double-click without dragging** for a note as long as the last one you drew, or one grid cell long.
+- With the **Draw** tool chosen in the bar, a single press draws, without the double-click.
+- **Play the keys** at the left: they play the track's instrument, so you can find the note before you write it.
+
+## Select and move
+
+- **Click** a note to select it and hear it. <kbd>Shift</kbd>- or <kbd>Cmd/Ctrl</kbd>-click adds a note or takes it out.
+- **Drag a box** around notes on an empty part of the grid. <kbd>Cmd/Ctrl</kbd>+<kbd>A</kbd> selects them all.
+- **Click a key** at the left to select every note on it; drag over keys for a range.
+- **Drag** a selected note to move them all; its right edge makes them longer or shorter. Hold <kbd>Cmd/Ctrl</kbd> to leave the grid, and <kbd>Alt/Option</kbd> to copy instead of move.
+- **The arrows** move the selection a grid step or a semitone; <kbd>Shift</kbd>+<kbd>Up</kbd>/<kbd>Down</kbd> by an octave, and <kbd>Shift</kbd>+<kbd>Left</kbd>/<kbd>Right</kbd> make them a step longer or shorter.
+- **Delete:** double-click a note, or press <kbd>Delete</kbd> (<kbd>Backspace</kbd> on a Mac).
+- **Copy and paste:** <kbd>Cmd/Ctrl</kbd>+<kbd>C</kbd>, <kbd>X</kbd> and <kbd>V</kbd>; <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> duplicates the selection straight after itself.
+
+## The grid
+
+**Grid** in the bar sets what notes snap to: sixteenths at first, or **Adaptive** (it follows the zoom), a bar, 1/4, 1/8, 1/16, 1/32 and triplets.
+
+| Key | Does |
+| --- | --- |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>1</kbd> / <kbd>2</kbd> | A finer or a coarser grid |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>3</kbd> | Triplets on or off |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>4</kbd> | Snapping on or off |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>5</kbd> | A fixed grid or the adaptive one |
+
+Zoom with <kbd>Cmd/Ctrl</kbd> and the scroll wheel, or pinch on a touchpad.
+
+## Tidy and loosen
+
+- **Quantize** (<kbd>Cmd/Ctrl</kbd>+<kbd>U</kbd>) pulls the selected notes, or all of them, to the grid.
+- **Humanize** loosens them again a little, in time and in loudness, so a part sounds played.
+- **Legato** makes each note last until the next.
+- **Transpose ±** moves notes by a semitone, an octave or a step of the key.
+- **Key**, in Composer's bar, shades the rows of the clip's key, so the notes in it are easy to find. Choose one, or let Solmara hear it from your notes.
+
+## Velocity and controllers
+
+The lane under the notes shows how loud each note is, as a stalk where it starts:
+
+- With **Points**, drag a stalk up or down. Stalks of selected notes move together.
+- With **Draw**, drag across the stalks to give each the height the mouse passes.
+- With **Line**, drag a straight line across them, for a crescendo or a fade.
+
+The button at the lane's head shows other things a keyboard sends instead: the mod wheel, pitch bend, aftertouch, expression, the sustain pedal and timbre, or any controller by its number. Each is a curve, drawn and edited as [automation](../automation/) is. For pitch bend, aftertouch and timbre, **Note** in the lane's head edits the selected note's own curve instead of the clip's, for an expressive bend on one note.
+
+## Play from the computer keyboard
+
+<kbd>Caps Lock</kbd>, or **Keys** in the top bar, makes the computer keyboard play notes: <kbd>A</kbd> to <kbd>K</kbd> are the white keys from C, <kbd>W</kbd> <kbd>E</kbd> <kbd>T</kbd> <kbd>Y</kbd> <kbd>U</kbd> the black ones, <kbd>Z</kbd> and <kbd>X</kbd> move an octave down and up, and <kbd>C</kbd> and <kbd>V</kbd> play softer and louder. **View › Keyboard on screen** shows a keyboard you can play with the mouse, with a pitch wheel and a mod wheel.

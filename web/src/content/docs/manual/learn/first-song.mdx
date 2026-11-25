@@ -1,0 +1,96 @@
+---
+title: Your first song
+description: From an empty project to a looping beat, a bassline, chords and a mix, in about twenty minutes.
+---
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+In this walk-through you make a short loop: a drum beat, a bassline under it, chords over it, a reverb to put them in a room, and a mix you render to a file. It takes about twenty minutes, and every step can be undone with <kbd>Cmd/Ctrl</kbd>+<kbd>Z</kbd>.
+
+<Aside type="tip">Rest the mouse on anything you are unsure of: the help line at the bottom left says what it is and what clicking or dragging it does.</Aside>
+
+## 1. A beat
+
+<Steps>
+
+1. Choose **File › New project**. You get an empty song with one MIDI track.
+
+2. In the library at the left, open **Instruments › Drums** and drag **PH-8**, a drum machine, onto the track's header. Double-click the track's name and call it *Drums*.
+
+3. Right-click an empty place on the Drums row, in the first bar, and choose **Create Drum pattern**. A one-bar pattern appears.
+
+4. Select the pattern and press <kbd>Enter</kbd> to open it. Each row is one of the PH-8's seventeen drums, each square a step of a sixteenth note. Click to strike:
+   - **Bass drum:** steps 1, 5, 9 and 13.
+   - **Snare drum:** steps 5 and 13.
+   - **Closed hat:** every other step: 1, 3, 5 and on.
+
+5. Press <kbd>Space</kbd> to play, and **Loop** in the top bar so it goes round. Press <kbd>Esc</kbd> to go back to the arrangement.
+
+</Steps>
+
+Want more feel? Drag a hit up or down for its loudness, or try **Swing** in the pattern's title row. [Drum and step patterns](../../guides/drum-patterns/) has the rest.
+
+## 2. A bassline
+
+<Steps>
+
+1. Press <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> for a new MIDI track, and call it *Bass*.
+
+2. Drag **Mini Moonbeam** from **Instruments › Synths** onto it. Click its name in its title, in the devices panel, to browse its presets, and pick one from **Bass**.
+
+3. On the Bass row, **double-click and drag** across four bars to draw a clip that long. Select it and press <kbd>Enter</kbd> to open the piano roll.
+
+4. **Double-click and drag** to draw notes, one bar each, low on the keyboard: **A**, then **F**, then **C**, then **G**. Click the keys at the left first to hear where they are.
+
+5. Play. For a busier line, cut each long note into eighths, or draw shorter notes on the off-beats.
+
+</Steps>
+
+## 3. Chords
+
+<Steps>
+
+1. Make one more MIDI track, *Keys*, and drag **Juniper Eight** onto it. Pick a preset from **Pad**.
+
+2. Draw a four-bar clip on its row, as before, then **double-click** it. It opens in **Composer**.
+
+3. Turn on **Chords** in Composer's bar. **Double-click** the chord lane above each bar to put a chord there. Then click a chord and pick from **Fits** at the right: try **Am**, **F**, **C** and **G**, so the chords sit on your bassline. Click a suggestion to hear it, double-click to keep it.
+
+4. Along the foot, choose a sequence: **Held and strummed** for long chords, or **Broken and arpeggios** to play them as an arpeggio. Give it to **All chords**.
+
+5. Press **Clip** to hear the chords alone, then play the song.
+
+</Steps>
+
+[Compose with chords](../../guides/composer/) shows what else Composer can do: voicing, layers, and writing a phrase with AI.
+
+## 4. A room for it
+
+<Steps>
+
+1. Press <kbd>Cmd/Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> for a return track, and call it *Space*.
+
+2. Drag **Gemini Plate**, a plate reverb, from **Audio effects › Delay and reverb** onto it.
+
+3. Show the mixer with <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>. On the Keys strip, turn its send to Space up. The chords now ring in the plate.
+
+</Steps>
+
+## 5. Mix and finish
+
+<Steps>
+
+1. In the mixer, set the faders so the kick and the bass sit together and the chords sit behind them. Keep the master meter out of the red.
+
+2. To make the loop longer, select the three clips (<kbd>Shift</kbd>-click them) and press <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> to duplicate them after themselves.
+
+3. Save with <kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd>.
+
+4. **File › Render project…** renders the song to a WAV or FLAC file.
+
+</Steps>
+
+You have a song. From here:
+
+- [Work with clips](../../guides/clips/) to build it into verses and choruses.
+- [Automate a sound](../../guides/automation/) so a filter opens into the drop.
+- [Record](../../guides/recording/) your own playing.

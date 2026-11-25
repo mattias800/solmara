@@ -1,0 +1,79 @@
+---
+title: Compose with chords
+description: Composer's chord lane, keys, chord suggestions, sequences, voicing, layers and drag-out.
+---
+import Shot from '../../../../components/Shot.astro';
+import composer from '../../../../assets/composer/window.webp';
+
+**Composer** is the piano roll in a window of its own, with chords beside the notes. Double-click a clip of notes to open it. Each clip has its own window, any number can be open at once, on another screen too, and they open again with the project. <kbd>Cmd/Ctrl</kbd>+<kbd>W</kbd> closes one.
+
+<Shot src={composer} alt="Composer: a verse's melody over four chords in the lane above it, the layers at the left, the chords that fit at the right, and the sequences and voicing along the foot." />
+
+## Turn chords on
+
+**Chords** in the bar turns on everything about chords: their lane, the layers, the chord palette, the sequences and the voicing. Adding a chord turns it on by itself. Off, the clip is plain notes, its chords kept for when you turn them on again.
+
+**Clip** in the bar plays the clip alone, round and round, with its chords, and nothing else of the song. Press it again, or stop, to go back to where you were.
+
+## Write chords
+
+The chords lie in a lane above the notes:
+
+- **Drag across the lane** to make a chord, or **double-click** it for one as long as the bar. It starts as the chord that fits the notes under it best.
+- **Drag a chord** to move it, or its edges to make it longer or shorter.
+- **Double-click or right-click a chord** to choose another: what fits its notes, any root, forty kinds of chord, or a bass note under it.
+- <kbd>Shift</kbd>- or <kbd>Cmd/Ctrl</kbd>-click selects several chords at once.
+
+Under each chord the rows of its notes are lit, and the keys name each note's place in it: R, 3, 5, 7.
+
+## The key
+
+**Key** in the bar is the key Solmara hears in your notes and chords, or the one you choose, or none. At the right, **Key · from the notes** lists the keys that fit, best first. Each chord is coloured by its place in the key (I, IV, V and the rest), filled when it belongs to the key and hollow when it is borrowed from outside it.
+
+## Chords that fit
+
+At the right, for the chord you selected:
+
+- **Fits:** the chords that fit the notes over those beats, scored out of 100.
+- **Next:** chords that would follow well.
+- **Colour:** richer versions.
+- **Borrowed:** chords from outside the key.
+- **All:** every kind, on any root.
+
+**Click a chord to try it** in place: you hear it alone, or in time while the loop plays. **Double-click** or press <kbd>Enter</kbd> to keep it, and <kbd>Esc</kbd> to let it go. <kbd>Up</kbd> and <kbd>Down</kbd> try each in turn.
+
+**Notes | Chords** (<kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>) switches the middle to a map of the key's chords, a column for each degree, from the plain triad up to its sevenths and ninths, with the borrowed ones beside them. Click one to try it, double-click to keep it, or drag it onto the lane.
+
+## Sequences play the chords
+
+A chord can be held, strummed, broken into an arpeggio or played as a groove. Along the foot, the sequences are in categories: held and strummed, stabs and grooves, broken and arpeggios, piano styles, guitar and strums, by genre, bass, and your own. Search by name or by meter, such as 3/4.
+
+Choose what a click gives the sequence to: **This chord**, **All chords**, or **New chords**. While the loop plays, a click tries a sequence in time; double-click or <kbd>Enter</kbd> keeps it. Drag a card onto a chord to give it that one.
+
+**+ From the notes** makes a sequence of your own from notes you selected over a chord, which then plays that shape on any chord. Your own sequences are kept for every project.
+
+## Voicing
+
+At the right of the foot, how a chord's notes are stacked:
+
+- **Inversion:** auto picks the one closest to the chord before, so the chords move smoothly; or choose one.
+- **Style:** close, open, drop 2, drop 3, shell, power, quartal or octaves.
+- **Bass note:** the root, third, fifth or seventh an octave below, or none.
+- **Top note:** a tone of the chord on top, or kept under the melody.
+- **Range:** the notes stay between two keys, C3 to C5 at first.
+
+## Layers: melody, chords and roots
+
+At the left, the clip's three layers: its **melody** (your notes), its **chords** and their **roots**. Each plays through a track you choose, the clip's own at first, so a pad on one track can play the chords and a bass on another the roots, all from one clip. **M** and **S** mute and solo a layer, and its tag says how it shows on the roll: **edit**, **shown**, **ghost** or **hidden**. The roots start muted.
+
+## Drag out to a track
+
+Under the layers, drag the melody, the chords (held or as played) or the roots (held or as played) onto a track, or below the tracks for a new one. It lands as a new clip of plain notes, apart from the clip it came from. A click places it at the playhead instead.
+
+## Turn notes into chords
+
+Select several notes, right-click one of them, and make them a chord of the lane: the note you clicked becomes the root, and the chord is named for you (Am7, C/E). **Up a step of the key** and **Down a step of the key** move notes along the key instead of by semitones.
+
+## Generate a phrase
+
+**Generate**, beside Notes and Chords, writes a piano phrase with AI on your own computer: a **New phrase** as long as the clip, **Continue** from the notes you have, or **Harmonize** your melody. **Safe · Wild** sets how adventurous it is. Each take is kept to choose from; nothing changes your clip until you keep one. The model downloads the first time you use it.

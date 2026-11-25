@@ -1,0 +1,61 @@
+---
+title: Devices and presets
+description: Add instruments and effects, arrange the chain, turn knobs, load and save presets, and use racks.
+---
+import Shot from '../../../../components/Shot.astro';
+import devices from '../../../../assets/manual/devices.webp';
+
+A track's sound comes from its **devices**: a MIDI track's instrument, the MIDI devices before it, and the effects after it, in a chain. The devices panel under the arrangement shows the chain of the track you are on. Click a track's header to show its devices.
+
+<Shot src={devices} alt="A track's device chain: a polysynth's face, then a chorus after it." />
+
+## Add a device
+
+- **Double-click** an instrument or effect in the library to add it to the track you are on.
+- **Drag it** onto a track's header or row, or to a place in the chain. A line shows where it lands, and the words at the mouse say what the drop will do.
+- **Drag it below the tracks** to make a new track for it.
+- **Right-click a gap in the chain** to add an instrument, an effect or a preset there.
+
+A MIDI track has one instrument. **MIDI devices**, such as an arpeggiator or a chord player, change the notes on their way to the instrument and always stand before it. Effects go on any track.
+
+**Swap a device** by dropping another on the middle of its face: like for like, an instrument for the instrument or an effect for an effect. Dropped on its left or right third, the new device goes before or after it.
+
+## Arrange the chain
+
+- **Drag a device by its title** to another place in the chain, or to another track; hold <kbd>Alt/Option</kbd> to copy it.
+- **Click a title** to select the device, then <kbd>Delete</kbd> (<kbd>Backspace</kbd> on a Mac) removes it and <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> duplicates it.
+- **The switch** in a device's title turns it on and off.
+- **A device's window**, from the key in its header, shows a larger face where it has one. A compact face keeps a long chain short.
+
+## Turn the knobs
+
+Drag a knob up or down, with <kbd>Shift</kbd> for fine steps; double-click it for its default. You hear it as it turns, and letting go makes it one step to undo. Rest the mouse on any control and the help line says what it does. Right-click a knob to reset it, automate it in a lane, or give it to a macro.
+
+A red mark on a knob means it is automated; while the song plays, a red arc shows where the automation has taken it.
+
+## Presets
+
+A device's title names the preset it came from, with a <kbd>*</kbd> once you have changed it.
+
+- **The arrows beside the name** load the preset before and after.
+- **Click the name** to browse its presets: search them, narrow them by category and tag, and click one to **try** it while the song plays; <kbd>Up</kbd> and <kbd>Down</kbd> try the next. <kbd>Enter</kbd> or a double-click keeps it; <kbd>Esc</kbd> puts the device back as it was.
+- **Right-click the title** to save the device as a preset, with a name, a category, tags and a description, or to go back to the preset it came from.
+
+Presets also open straight from the library: double-click one to add it, or drop it on a device of its type to load it there.
+
+## Racks: devices inside a device
+
+- **Rack** (an effect) runs several chains side by side and blends them, each with its level, pan, mute and solo.
+- **Instrument Rack** plays several instruments as one, as layers, or split across the keyboard by key or velocity.
+- **Drum Rack** is a kit built a pad at a time, an instrument and its effects on each pad.
+- **Crossover** splits the sound into two, three or four bands, a chain for each; **Mid/Side** into the middle and the sides.
+
+A device that holds chains has **macros**: right-click a knob inside it and choose **Move it with a macro**, and one knob on the rack's face turns everything it was given. Right-click the macro to name it and set how far it moves each control.
+
+## Plugins
+
+Solmara plays your CLAP, VST3 and Audio Unit plugins beside its own devices. They are in the library under **Plugins**, and go into the chain as any device does. **Open window** on a plugin's face shows its own window. The plugins Solmara found, and any it could not read, are listed in **Preferences › Plugins**.
+
+## How hard it works
+
+Each device's title shows the share of a processor core it takes, and **Load** in the top bar how near the whole song is to dropping out. A track with nothing playing and its effects rung out sleeps and costs nothing. For a heavy track, see [freezing](../tracks/#freeze-a-heavy-track).

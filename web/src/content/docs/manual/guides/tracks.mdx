@@ -1,0 +1,52 @@
+---
+title: Tracks
+description: Add tracks, name, colour, move and group them, and freeze a heavy one.
+---
+
+A song is made of **tracks**, a row each on the arrangement. A **MIDI track** plays notes through an instrument; an **audio track** plays recordings and samples; a **return track** takes what other tracks send it, for a shared reverb or delay; a **group track** holds other tracks; and the **master track** is the whole mix.
+
+## Add a track
+
+- <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> adds a MIDI track, <kbd>Cmd/Ctrl</kbd>+<kbd>T</kbd> an audio track, and <kbd>Cmd/Ctrl</kbd>+<kbd>Option/Alt</kbd>+<kbd>T</kbd> a return track. Each comes after the track you are on, in its group.
+- **Drag an instrument, an effect or a preset** from the library into the empty space below the tracks: it gets a track of its own, named after it. An instrument makes a MIDI track, an effect an audio track.
+- **Right-click below the tracks** for a menu: a track of any kind, a track with a device or one of its presets on it, a track preset, or tracks from another project.
+
+## The track's header
+
+At the left of each row:
+
+- Its **name** and its kind, where there is room.
+- The round **arm** key, red while the track is armed to record.
+- **A**, which lists everything on the track that can be automated, to add a lane for it.
+- **M** mutes the track, **S** solos it.
+- Its **volume** and **pan**. Drag a box up or down (with <kbd>Shift</kbd> for finer steps); double-click it for 0 dB or the middle.
+
+A tall track shows a level meter and a fader across its header instead of the volume box.
+
+## Name, select and move
+
+- **Rename:** double-click the name, or select the track and press <kbd>Cmd/Ctrl</kbd>+<kbd>R</kbd> or <kbd>F2</kbd>.
+- **Select:** click its header. <kbd>Cmd/Ctrl</kbd>-click adds a track or takes it out; <kbd>Shift</kbd>-click selects every track from the last one clicked. <kbd>Up</kbd> and <kbd>Down</kbd> move to the track above or below.
+- **Move:** drag a header up or down. A line shows where it lands, and how far right the mouse is says whether it goes into a group or stays outside it.
+- **Duplicate:** <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd>. **Delete:** <kbd>Delete</kbd>, or <kbd>Backspace</kbd> on a Mac.
+- **Make it taller or shorter:** drag the bottom edge of its header, with <kbd>Shift</kbd> for every track at once. Double-click the edge for the usual height, or right-click it for Small, Default, Large or Extra large.
+
+## Colours
+
+Right-click a header for **Color**, from a palette, and **Background**, a colour behind the row and its mixer strip apart from its clips' colour. **Color tracks by name**, in the menu of the TRACKS corner above the headers, colours every track by its name's family, so the kick and kick trigger share a colour.
+
+## Groups
+
+Select tracks and press <kbd>Cmd/Ctrl</kbd>+<kbd>G</kbd> to put them in a new group. A group's row shows its tracks' clips faintly in their own colours, and its triangle folds them away, in the arrangement and in the mixer alike. **Move to group** and **Remove from group** in a track's menu move tracks between groups. A group's menu also has **Tint**, a colour laid over all its tracks, and **Color tracks from group**.
+
+## Freeze a heavy track
+
+**Freeze track** in a track's menu renders it to audio, which plays in its place while its clips and devices rest, so a heavy synth costs next to nothing. A frozen track says FROZEN in ice blue; its fader, pan and sends still work, and **Thaw track** brings it back to life. **Flatten track** keeps the audio and lets the clips and devices go, making it an audio track. If something it depends on changes, such as the tempo, it says STALE in amber, and **Freeze again** renders it anew.
+
+## Keep a track for later
+
+**Save as preset…** in a track's menu saves it, with its devices and, if you like, its clips and automation, to the library. A group saves with its tracks.
+
+## Settings in the inspector
+
+Click a track's header and the inspector shows its settings: its colours, its instrument and MIDI devices, its input and monitoring, the group or output it plays to, its sends, and whether it is frozen.

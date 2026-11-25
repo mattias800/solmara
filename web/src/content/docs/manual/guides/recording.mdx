@@ -1,0 +1,40 @@
+---
+title: Record
+description: Record MIDI from a keyboard and audio from an input, with the metronome and a count-in.
+---
+
+## Before you start
+
+- **Choose your input** in **Preferences › Audio** (a microphone or an interface) and your keyboards in **Preferences › MIDI**. MIDI keyboards play on Windows and macOS for now.
+- **The metronome:** **Click** in the top bar turns it on. The small menu beside it sets its sound, its level and the **count-in** before recording: none, or one, two or four bars.
+
+## Record notes
+
+1. **Arm** a MIDI track with the round key in its header; it turns red. With no track armed, the selected MIDI track records.
+2. Press **Record** in the top bar, or <kbd>F9</kbd>. From a stop, the metronome counts in first, then the song plays.
+3. Play your keyboard, or the computer keyboard (<kbd>Caps Lock</kbd> turns it on).
+4. Stop with **Record**, <kbd>F9</kbd> or Stop.
+
+Each armed track gets a new clip of what you played, from the bar you began in to the end of the bar your last note ends in, as one step to undo. Notes are kept exactly as you played them; [quantize](../piano-roll/#tidy-and-loosen) them afterwards if you want them on the grid.
+
+## Record audio
+
+1. **Arm** an audio track. Its armed light is ringed by the input's level, yellow at full scale.
+2. Right-click the arm key, or choose **Audio input** in the track's menu, to take both channels of the input or only the left or right, and to **hear the input through the track**, with its effects: off, while armed, or always. The key is outlined in blue while you hear the input.
+3. Press **Record**. A red stretch on the track grows from where the recording began.
+4. Stop, and the track has a clip of the take, from the start of the bar.
+
+Several armed tracks record at once, MIDI and audio together. If a recording sits a little late, **Preferences › Audio** has the offset recordings are moved by.
+
+## Takes and comps
+
+**Record in a loop** to play a part again and again: turn **Loop** on, set the range in the ruler (<kbd>Shift</kbd>-drag it, or drag either end), arm the tracks and record. Each time round is a **take**. When you stop, each track has a **comp**: the latest take plays on its main lane, and every take lies beneath it.
+
+Build the best performance from the takes:
+
+- **Click a take** under a section to play that take there.
+- **Right-click a section** to choose a take or silence, split it where you clicked, or join it to the next.
+- **Drag a section's right edge** to move where one take hands over to the next. Audio crossfades there, 4 ms unless you set it longer.
+- **A**, beside a take, plays the whole take; click again to go back to your choices.
+
+Any clip of notes or audio can start a comp: **Create comp** in its menu. The takes themselves are never changed; copy one to the arrangement to edit it.

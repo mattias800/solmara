@@ -1,0 +1,38 @@
+{
+ "schemaVersion": 1,
+ "label": "The manual's song",
+ "operations": [
+  {"op": "set-track", "track": "track_1", "name": "Drums", "color": "#E0A84F"},
+  {"op": "add-device", "ref": "drums", "track": "track_1", "type": "builtin.ph8"},
+  {"op": "add-clip", "ref": "beat", "track": "track_1", "startBeat": 0, "lengthBeats": 16, "type": "drum-pattern", "name": "Beat"},
+  {"op": "set-drum-pattern", "clip": "$beat", "text": ["accent:          ....!.......!...", "Kick (36):       x.....x...x.x...", "Snare (38):      ....x.......x...", "Clap (39):       ............x...", "Closed Hat (42): x.x.x.x.x.x.x.xx", "Open Hat (46):   ..............x."]},
+
+  {"op": "add-track", "ref": "bass", "name": "Bass", "kind": "midi"},
+  {"op": "set-track", "track": "$bass", "color": "#5B8DEF"},
+  {"op": "add-device", "track": "$bass", "type": "builtin.three-oscillator-monosynth"},
+  {"op": "add-clip", "ref": "line", "track": "$bass", "startBeat": 0, "lengthBeats": 16, "name": "Bassline"},
+  {"op": "write-notes", "clip": "$line", "text": "grid 1/8\nnotes  a1 a1 a2 a1 - a1 a2 a1 | f1 f1 f2 f1 - f1 f2 f1 | c2 c2 c3 c2 - c2 c3 c2 | g1 g1 g2 g1 - g1 g2 g1 \n"},
+
+  {"op": "add-track", "ref": "keys", "name": "Keys", "kind": "midi"},
+  {"op": "set-track", "track": "$keys", "color": "#C77BD6"},
+  {"op": "add-device", "track": "$keys", "type": "builtin.eight-voice-polysynth"},
+  {"op": "add-device", "track": "$keys", "type": "builtin.bbd-chorus"},
+  {"op": "add-clip", "ref": "verse", "track": "$keys", "startBeat": 0, "lengthBeats": 16, "name": "Verse"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 0, "lengthBeats": 4, "chord": "Am"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 4, "lengthBeats": 4, "chord": "F"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 8, "lengthBeats": 4, "chord": "C"},
+  {"op": "add-chord-block", "clip": "$verse", "startBeat": 12, "lengthBeats": 4, "chord": "G"},
+  {"op": "clip-sequence", "clip": "$verse", "chords": "arp-up-eighths"},
+
+  {"op": "add-track", "ref": "lead", "name": "Lead", "kind": "midi"},
+  {"op": "set-track", "track": "$lead", "color": "#4FC1A6"},
+  {"op": "add-device", "track": "$lead", "type": "builtin.vintergatan"},
+  {"op": "add-clip", "ref": "tune", "track": "$lead", "startBeat": 0, "lengthBeats": 16, "name": "Tune"},
+  {"op": "write-notes", "clip": "$tune", "text": "grid 1/8\nnotes  e5 = = d5 c5 = d5 e5 | c5 = = = a4 = = - | e5 = g5 = e5 = d5 c5 | d5 = = = = = = - \n"},
+
+  {"op": "add-track", "ref": "space", "name": "Space", "kind": "return"},
+  {"op": "add-device", "track": "$space", "type": "builtin.plate-reverb"},
+  {"op": "add-send", "track": "$keys", "return": "$space", "levelDb": -12},
+  {"op": "add-send", "track": "$lead", "return": "$space", "levelDb": -9}
+ ]
+}

@@ -1,0 +1,45 @@
+---
+title: Drum and step patterns
+description: Program beats in the drum editor, and basslines and riffs in the step editor.
+---
+import Shot from '../../../../components/Shot.astro';
+import drums from '../../../../assets/manual/drum-editor.webp';
+
+Besides plain clips of notes, a MIDI track can hold two kinds of **pattern**, written the way drum machines and bass machines are programmed: in steps.
+
+## Make a pattern
+
+Right-click an empty place on a MIDI track and choose **Create Drum pattern** or **Create Step pattern**. A clip of notes on a drum track can also become a drum pattern: **Convert to drum pattern** in its menu. Either kind turns back into plain notes with **To MIDI**.
+
+## The drum editor
+
+<Shot src={drums} alt="The drum editor: a lane for each drum, sixteen steps across, the accent row above them." />
+
+A **lane** for each drum, sixteen **steps** across, a page at a time.
+
+- **Click a step** to strike it or clear it; drag across steps to paint.
+- **Drag a hit up or down** for its loudness (<kbd>Shift</kbd> for finer). <kbd>Shift</kbd>-click steps it through soft, normal and strong.
+- **<kbd>Alt</kbd>-drag a hit sideways** to move it off its step, for a pushed or laid-back feel.
+- **Right-click a step** for its velocity, a flam, a ratchet (a roll within the step) and its probability.
+- **The accent row** above the steps accents a whole step for every drum. Right-click it to accent every beat or none.
+- **A lane's head** has its drum's colour and name, the key it plays, and **M** and **S**. Right-click it to rename, re-key, lengthen, move or remove it. **+ Lane** adds a drum.
+
+The title row sets the number of steps (1 to 64), the step length, the **swing** and the groove. **Values** shows a lane of one setting under the pads (velocity, chance, ratchet, flam or offset), so you can draw a crescendo or a run of rolls across it.
+
+**Window**, or a double-click on the clip, opens the pattern in a larger window with the library's drum patterns as cards below it. Click a card to hear it on your kit, in time while the song plays; double-click to load it, the whole pattern or one lane of it. **Save** keeps your pattern in the library.
+
+## The step editor
+
+A step pattern is a piano roll held to steps, for basslines, acid lines and riffs: a column is a step, a row a semitone.
+
+- **Click a cell** to put the step's note there; drag a note up or down for its pitch (<kbd>Shift</kbd> by octaves). Double-click a note to rest its step.
+- **The accent and slide lanes** under the grid: click to flip a step, or drag to paint. A slide bends into the next note.
+- **Click a key at the left** to write that note into the chosen step and move on to the next, or play the steps in from the computer keyboard.
+- **With the grid clicked last:** <kbd>Left</kbd> and <kbd>Right</kbd> choose a step, <kbd>Up</kbd> and <kbd>Down</kbd> move its note, and <kbd>Delete</kbd> (<kbd>Backspace</kbd> on a Mac) rests it.
+- **Right-click a step** to make it a note, a tie or a rest, accent or slide it, or shift, reverse or transpose the whole pattern.
+
+The title row has the number of steps, the step length, the swing and the gate. Every change made while the song plays is heard from the next note on.
+
+## Drum machines
+
+Solmara's drum machines, **PH-8**, **PH-9** and **PH-6**, play a pattern on their own kits. The **Drum Rack** builds a kit of your own a sound at a time: drop an instrument, a sample or a preset on each of its pads. A pad can choke others, as a closed hi-hat cuts an open one.

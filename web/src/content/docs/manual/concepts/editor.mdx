@@ -1,0 +1,51 @@
+---
+title: The editor at a glance
+description: Where everything is in Solmara's window, and what each part is for.
+---
+import Shot from '../../../../components/Shot.astro';
+import overview from '../../../../assets/manual/overview.webp';
+import mixer from '../../../../assets/manual/mixer.webp';
+
+Solmara is one window. Everything you work with is in it, side by side, with no borders between the parts.
+
+<Shot src={overview} alt="Solmara's window with six numbered parts: the top bar, the library, the arrangement, the devices, the inspector and the help line." />
+
+1. **The top bar.** The **File**, **View** and **Help** menus, then the transport: play, record, loop, the metronome and the computer keyboard. Then where the playhead is, the tempo (with **Tap** to tap it in), the loop's range, how hard the computer is working (**Load**) and how loud the song is (**LUFS**). At the right, keys that show and hide the panels.
+2. **The library.** Every instrument, effect, preset, sample and plugin, in collections, categories and places down its left edge, and a search at the top. Drag something onto a track, or double-click it to add it to the track you are on.
+3. **The arrangement.** Your song from left to right: a row for each track, with its header at the left and its clips along the bars. The grid and the zoom are at the right of its title.
+4. **The devices.** The chain of the track you are on: its instrument and its effects, in the order the sound goes through them. Click a track's header to show its chain.
+5. **The inspector.** The settings of what you selected: a track's colour, input and output, sends and more, or a clip's start, length, loop and fades.
+6. **The help line.** It says what is under the mouse: a control's name and value, and what a click, a drag or a double-click does there. When you wonder what something does, rest the mouse on it and read here.
+
+## The mixer
+
+Press <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>, or the mixer key in the top bar, to show the mixer under the arrangement: every track as a channel strip with its fader, meter, pan and sends, the return tracks after them and the master at the right.
+
+<Shot src={mixer} alt="The mixer: a channel strip for each track, with its sends, pan, fader and meter, and its output at the foot." />
+
+## Editing a clip
+
+A clip opens where you need it:
+
+- **Double-click a clip of notes** to open it in its own **Composer** window, as large as your screen allows.
+- **Select a clip and press <kbd>Enter</kbd>** to open its editor in the arrangement's place: the piano roll, the drum or step editor, the tracker or the curve of an automation clip. <kbd>Esc</kbd> takes you back.
+
+## Making room
+
+Each side panel and the devices can be hidden when you need the room:
+
+- The library: <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>B</kbd> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> on Windows and Linux)
+- The inspector: <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>I</kbd>
+- The devices: <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>L</kbd>
+
+A hidden panel leaves a narrow strip at its edge that brings it back with a click. Drag the edge between two panels to make one wider or narrower, and double-click the edge for its usual size. The help line hides with <kbd>?</kbd>; its words then show as tooltips.
+
+## Undo everything
+
+<kbd>Cmd/Ctrl</kbd>+<kbd>Z</kbd> undoes and <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> redoes. Every change is a step with a name, and the history is saved with the project, so you can still undo after you close it and open it again. <kbd>Esc</kbd> during a drag puts everything back as it was before you pressed the mouse.
+
+## Next
+
+- [Tracks](../../guides/tracks/): add them, name them, colour and group them.
+- [Work with clips](../../guides/clips/): the building blocks of your song.
+- [Arrangement: mouse and keys](../../reference/arrangement-mouse-and-keys/): everything at once, to look up.

@@ -29,6 +29,28 @@ def tool(build: Path, name: str) -> str:
     return str(exe)
 
 
+# Where the overview's numbers stand, in points: the top bar, the library,
+# the arrangement, the devices, the inspector and the help bar.
+MARKS = [(398, 28), (212, 112), (1300, 150), (250, 650), (1570, 112), (212, 786)]
+
+
+def mark_overview(image):
+    from PIL import ImageDraw, ImageFont
+    draw = ImageDraw.Draw(image)
+    for font_name in ("C:/Windows/Fonts/segoeuib.ttf", "/System/Library/Fonts/Helvetica.ttc", "DejaVuSans-Bold.ttf"):
+        try:
+            font = ImageFont.truetype(font_name, 13 * SCALE)
+            break
+        except OSError:
+            font = ImageFont.load_default(13 * SCALE)
+    for number, (x, y) in enumerate(MARKS, start=1):
+        r = 11 * SCALE
+        cx, cy = x * SCALE, y * SCALE
+        draw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(220, 192, 138), outline=(8, 9, 12), width=2 * SCALE)
+        draw.text((cx, cy), str(number), font=font, fill=(8, 9, 12), anchor="mm")
+    return image
+
+
 def main() -> None:
     if len(sys.argv) != 2:
         sys.exit(__doc__)
@@ -61,6 +83,34 @@ def main() -> None:
         picture_of_editor.crop((0, 0, picture_of_editor.width, picture_of_editor.height - 32 * SCALE)).save(
             home / "editor.webp", quality=88, method=6)
         print("Editor:", home / "editor.webp")
+
+        # The manual's song: drums, bass, chords, a lead and a reverb return,
+        # for the chapters' pictures.
+        song2 = work / "Manual.daw"
+        run(cli, "new", str(song2), "Night Drive", "--empty")
+        run(cli, "apply", str(song2), str(HERE / "manual-song.json"))
+        for panel in ("library", "inspector", "editor"):
+            run(cli, "layout", str(song2), panel, "on")
+        manual = HERE.parent / "src" / "assets" / "manual"
+        manual.mkdir(parents=True, exist_ok=True)
+
+        def take(name, *flags, crop=None, size=("1600", "950")):
+            bmp = work / f"{name}.bmp"
+            run(app, str(song2), *flags, "--screenshot", str(bmp), "--screenshot-size", *size, "--screenshot-scale", str(SCALE))
+            image = Image.open(bmp).convert("RGB")
+            left, top, right, bottom = crop or (0, 0, image.width // SCALE, image.height // SCALE - 32)
+            image = image.crop((left * SCALE, top * SCALE, right * SCALE, bottom * SCALE))
+            image.save(manual / f"{name}.webp", quality=88, method=6)
+            return image
+
+        # Never the status line: it shows the project's path, a user's folder.
+        overview = take("overview", "--select", "track_3", crop=(0, 0, 1600, 918))
+        mark_overview(overview).save(manual / "overview.webp", quality=88, method=6)
+        take("devices", "--select", "track_3", crop=(236, 612, 1340, 918))
+        take("mixer", "--view", "mixer")
+        take("piano-roll", "--select", "clip_4")
+        take("drum-editor", "--select", "clip_1")
+        print("Manual's pictures:", manual)
 
         # Composer: a verse of melody over four chords, played by a sequence,
         # its window open as a clip's is when it plays alone.

@@ -1,0 +1,46 @@
+---
+title: Mix
+description: The mixer, faders and meters, sends and return tracks, groups, the master and mastering.
+---
+import Shot from '../../../../components/Shot.astro';
+import mixer from '../../../../assets/manual/mixer.webp';
+
+## The mixer
+
+Show the mixer with <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>, or the key left of <kbd>1</kbd>. It sits under the arrangement, so you can see both at once; drag the bar above it to make it taller.
+
+<Shot src={mixer} alt="The mixer: a channel strip for each track, with its sends, pan, fader and meter." />
+
+Every track is a **channel strip**: its sends and pan, a fader beside a meter, mute, solo and arm, and its output at the foot. The return tracks follow, and the master is pinned at the right.
+
+- **Drag a fader** for the volume, with <kbd>Shift</kbd> for fine steps; double-click it for 0 dB. Dragging the fader of a selected track moves every selected track's fader by as much.
+- **The meters** turn yellow from -9 dB and red from -0.5 dB. The box under a meter holds the highest peak; click it to clear it.
+- **Width:** drag a strip's right edge, or set every strip to Compact, Narrow, Normal or Wide with the switch at the mixer's right.
+- **Move strips** by dragging their names, as tracks are moved.
+
+## A console in every strip
+
+A strip shows the track's processing above its pan, as a large console's channel does: the **input**, the **filters**, the **gate**, the **dynamics** and the **EQ**, each filled by a device in the track's chain. Drag a point on the EQ's curve to set its band; turn a compressor's threshold right there. An empty section offers to add an EQ, a low cut or a compressor, placed where a console has it. **ORDER** beside a strip's kind says its chain is not in a console's order, such as an EQ before the compressor.
+
+## Sends and return tracks
+
+A **return track** holds an effect many tracks share, such as one reverb for the whole song. Add one with <kbd>Cmd/Ctrl</kbd>+<kbd>Option/Alt</kbd>+<kbd>T</kbd>, and put the effect on it.
+
+Each track then has a **send** to it: turn the send's knob up in the mixer or the inspector to send that much of the track. A send can be taken before the fader or after it, and automated like the volume.
+
+## Groups
+
+[Group tracks](../tracks/#groups) appear in the mixer under a bracket in the group's colour. The group's own strip sets the level of all of them, and its effects work on their sum.
+
+## The master
+
+The master strip, at the right, is the whole mix. Put effects on it by clicking it: if the project has no master track yet, moving any master control, or **Add master track** in its right-click menu, adds one, with its own devices and automation.
+
+## Finish the mix
+
+- **Mastering:** put the mastering suite on the master: an EQ, a multiband compressor, an imager, a clipper and a limiter, made to work together.
+- **The Analyzer** reads the mix's loudness, true peak, spectrum and stereo as streaming services measure them, and lets you hear the song at their levels.
+- **View › Check the mix** listens to the whole mix and lists what may need attention, worst first, with what helps; each finding takes you to its tracks and bars.
+- **LUFS** in the top bar always says how loud the song plays.
+
+When the mix is done, [render it](../projects/#render-your-song) to a file.

@@ -32,19 +32,40 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Welcome', slug: 'manual' },
 				{
-					label: 'How to',
-					items: [
-						{ label: 'Work with clips', slug: 'manual/guides/clips' },
-						{ label: 'Automate a sound', slug: 'manual/guides/automation' },
-					],
+					label: 'Learn',
+					items: [{ label: 'Your first song', slug: 'manual/learn/first-song' }],
 				},
 				{
 					label: 'Understand',
-					items: [{ label: 'How clips loop', slug: 'manual/concepts/looping' }],
+					items: [
+						{ label: 'The editor at a glance', slug: 'manual/concepts/editor' },
+						{ label: 'How clips loop', slug: 'manual/concepts/looping' },
+					],
+				},
+				{
+					label: 'How to',
+					items: [
+						{ label: 'Tracks', slug: 'manual/guides/tracks' },
+						{ label: 'Work with clips', slug: 'manual/guides/clips' },
+						{ label: 'Write notes in the piano roll', slug: 'manual/guides/piano-roll' },
+						{ label: 'Compose with chords', slug: 'manual/guides/composer' },
+						{ label: 'Drum and step patterns', slug: 'manual/guides/drum-patterns' },
+						{ label: 'Devices and presets', slug: 'manual/guides/devices' },
+						{ label: 'Automate a sound', slug: 'manual/guides/automation' },
+						{ label: 'Audio clips', slug: 'manual/guides/audio-clips' },
+						{ label: 'Record', slug: 'manual/guides/recording' },
+						{ label: 'Mix', slug: 'manual/guides/mixing' },
+						{ label: 'The library and sounds', slug: 'manual/guides/library' },
+						{ label: 'Save and export', slug: 'manual/guides/projects' },
+					],
 				},
 				{
 					label: 'Reference',
-					items: [{ label: 'Arrangement: mouse and keys', slug: 'manual/reference/arrangement-mouse-and-keys' }],
+					items: [
+						{ label: 'Arrangement: mouse and keys', slug: 'manual/reference/arrangement-mouse-and-keys' },
+						{ label: 'Keyboard shortcuts', slug: 'manual/reference/keyboard-shortcuts' },
+						{ label: 'Preferences', slug: 'manual/reference/preferences' },
+					],
 				},
 				{
 					label: 'Devices',

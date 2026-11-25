@@ -1,0 +1,38 @@
+---
+title: Save and export
+description: Projects, templates, saving, recovering after a crash, rendering the song and exporting MIDI.
+---
+
+## Projects
+
+A project is a folder ending in `.daw`, which holds the song and every sound it uses. **File › New project** starts one, **File › Open project…** opens one, and **File › Your songs** lists the ones you have worked on.
+
+You can begin without saving: whatever you bring in is kept safe until the first save moves it into the project.
+
+## Save
+
+**Save** (<kbd>Cmd/Ctrl</kbd>+<kbd>S</kbd>) and **Save as…** are in the File menu. The status line says each time when it saved, so a save after a save is seen to happen. Projects are saved as readable text, so a version history shows what changed.
+
+Closing with unsaved changes asks first: **Save**, **Don't save**, or **Cancel**.
+
+If Solmara stops unexpectedly, your work is brought back the next time it opens.
+
+## Templates
+
+**File › Save as template…** keeps the current project as a starting point: its tracks, devices, sends, tempo and layout, and its clips if you tick them. **File › New from template…** starts a project from one, and one template can be the default for every new project.
+
+## Share a project
+
+**File › Collect project for sharing…** gathers every file the project uses into its folder, so it opens the same on another computer. **File › Find missing media…** finds audio that was moved, and **Relink selected audio…** points a clip at its file again.
+
+## Render your song
+
+**File › Render project…** renders the whole song to a WAV or FLAC file, at the sample rate you choose, with the tail of its reverbs and delays after the end. Mute and solo are honoured, so you can render a single part, or the song without its vocals.
+
+## Export MIDI
+
+**File › Export MIDI…** saves the song's notes as a `.mid` file, a track for each track. A MIDI track's or clip's menu exports just that. On macOS you can also drag a clip of notes out of the window, onto the desktop or into another program, as a MIDI file.
+
+## Import
+
+The File menu also imports audio, tracker modules (XM, MOD and GoatTracker), and the tracks of another project, with their devices, clips and automation.

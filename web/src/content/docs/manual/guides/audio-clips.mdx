@@ -1,0 +1,41 @@
+---
+title: Audio clips
+description: Import audio, fade and crossfade, set gain, reverse, line up microphones, and split stems.
+---
+
+## Bring audio in
+
+- **Drag audio files** from your file manager onto the arrangement. Dropped on an audio track, a file becomes a clip at the grid line nearest the mouse; dropped below the tracks, it gets a track of its own, named after the file.
+- **Several files at once**, such as a band's stems named `01 Kick.wav`, `02 Snare.wav`, arrive in the order their numbers count, each on its own track, coloured by their names' families.
+- **File › Import audio…** does the same from a file dialog.
+
+WAV, AIFF, FLAC and Ogg Vorbis open everywhere; MP3, AAC and Apple Lossless on macOS, and MP3 and AAC on Windows. A file Solmara cannot play as it is is converted once, and the status line says what was changed. Audio is copied into the project, so it travels with it.
+
+## Shape a clip
+
+- **Fades:** an audio clip has a handle at each top corner. Drag the left one for a fade-in and the right one for a fade-out; right-click a handle for its curve (equal power, a line or an S).
+- **Gain:** drag the diamond at the middle of the clip's top up or down (<kbd>Shift</kbd> for finer); double-click it for 0 dB. **Set gain to reach** in the clip's menu sets it so the clip peaks at 0, -1 or -6 dB, or plays at -14, -16 or -23 LUFS.
+- **Trim:** drag either edge. Nothing is lost: what you trim comes back when you drag the edge out again.
+- **Slip:** hold <kbd>Shift</kbd> and <kbd>Cmd/Ctrl</kbd> and drag to move the audio under the clip while the clip stays put.
+- **Split:** <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> cuts the selected clips at the playhead.
+- **Reverse** in the menu plays the clip backwards; **Invert polarity** turns it upside down.
+
+## Crossfades
+
+Where two audio clips overlap, the later one plays over the earlier, and its fade-in is the crossfade between them. Drag the small crossed handle at the top of the later clip to make the crossfade longer.
+
+## Line up two microphones
+
+With two audio clips of the same source selected, **Line up with** in one clip's menu finds how much later it hears the sound and sets its **delay** to take that away, so the two sound full together rather than thin. It also says when the two agree better with one turned upside down, which **Invert polarity** then puts right.
+
+## Turn audio into notes
+
+An audio clip's menu has **Convert Melody**, **Convert Harmony** and **Convert Drums to New MIDI Track**: Solmara listens to the clip and writes what it hears as notes. Drag an audio clip onto a MIDI track to hear its notes on that track's instrument.
+
+## Split a song into its parts
+
+**Separate stems** in an audio clip's menu splits a recording into vocals, drums, bass, guitar, piano and the rest, each on a track of its own, with AI on your own computer. The model downloads the first time.
+
+## Render a part to audio
+
+**Render to new track** in any clip's menu renders that clip through its track's devices to an audio clip on a new track just below, to cut up, reverse or stretch.
