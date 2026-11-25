@@ -1,0 +1,29 @@
+---
+title: "Concrete Echo Chamber"
+description: "Studio echo chamber in the style of the 1950s Hollywood underground chambers: a real room's dense, dark bloom."
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+A studio echo chamber modelled as a room: a bare room of shellacked concrete under the studio, a loudspeaker at one end fed from the console's echo send, and two microphones whose signals come back as the return. Each of its four rooms has its size, its walls and its speaker; the time each band rings comes from them and from the air, which takes the highs on every metre, and the first reflections are the speaker's images in the walls, heard where the microphones stand. Four pairs of microphones (valve omnis, ribbons, condenser omnis, valve cardioids), moved from the speaker to the far end; decay hangs absorbent in the room, down to about a second; pre-delay and a low cut on the send, three bands and width on the return, mix and output. Modelled on the underground chambers of a 1950s Hollywood studio.
+
+[Concrete Echo Chamber on the website](/solmara/effects/#concrete-echo-chamber)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Room | Room A, Room B, Room C, Room D | Room B |
+| Mics | Valve omni, Ribbon, Condenser omni, Valve cardioid | Condenser omni |
+| Position | 0 to 10 | 10 |
+| Pre-delay | 0 ms to 250 ms | 0 ms |
+| Decay | 0 to 10 | 10 |
+| Low cut | 20 Hz to 750 Hz | 20 Hz |
+| Bass | -10 dB to 10 dB | 0 dB |
+| Mid | -10 dB to 10 dB | 0 dB |
+| Treble | -10 dB to 10 dB | 0 dB |
+| Width | 0 to 100 | 100 |
+| Mix | 0 to 100 | 25 |
+| Output | -24 dB to 24 dB | 0 dB |

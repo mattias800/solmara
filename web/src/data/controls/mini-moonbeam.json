@@ -1,0 +1,472 @@
+[
+ {
+  "key": "masterTune",
+  "label": "Tune",
+  "unit": "semitones",
+  "minimum": -2.5,
+  "maximum": 2.5,
+  "default": 0.0
+ },
+ {
+  "key": "glide",
+  "label": "Glide",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "glideOn",
+  "label": "Glide on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "modulationMix",
+  "label": "Modulation mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "oscillatorModulation",
+  "label": "Oscillator modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterModulation",
+  "label": "Filter modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "modWheel",
+  "label": "Modulation wheel",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc1Range",
+  "label": "Osc 1 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 3.0,
+  "choices": [
+   "LO",
+   "32'",
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "osc1Wave",
+  "label": "Osc 1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Shark-tooth",
+   "Saw",
+   "Square",
+   "Wide pulse",
+   "Narrow pulse"
+  ]
+ },
+ {
+  "key": "osc2Range",
+  "label": "Osc 2 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 3.0,
+  "choices": [
+   "LO",
+   "32'",
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "osc2Tune",
+  "label": "Osc 2 frequency",
+  "unit": "semitones",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.07
+ },
+ {
+  "key": "osc2Wave",
+  "label": "Osc 2 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Shark-tooth",
+   "Saw",
+   "Square",
+   "Wide pulse",
+   "Narrow pulse"
+  ]
+ },
+ {
+  "key": "osc3Range",
+  "label": "Osc 3 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "LO",
+   "32'",
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "osc3Tune",
+  "label": "Osc 3 frequency",
+  "unit": "semitones",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc3Wave",
+  "label": "Osc 3 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Reverse saw",
+   "Saw",
+   "Square",
+   "Wide pulse",
+   "Narrow pulse"
+  ]
+ },
+ {
+  "key": "osc3Keyboard",
+  "label": "Osc 3 control",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "osc1Level",
+  "label": "Osc 1 volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "osc1On",
+  "label": "Osc 1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "osc2Level",
+  "label": "Osc 2 volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "osc2On",
+  "label": "Osc 2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "osc3Level",
+  "label": "Osc 3 volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "osc3On",
+  "label": "Osc 3",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "externalLevel",
+  "label": "External input volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "externalOn",
+  "label": "External input",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "noiseLevel",
+  "label": "Noise volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "noiseOn",
+  "label": "Noise",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "noiseColour",
+  "label": "Noise colour",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Pink",
+   "White"
+  ]
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "emphasis",
+  "label": "Emphasis",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "contourAmount",
+  "label": "Amount of contour",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "keyboardThird",
+  "label": "Keyboard control 1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "keyboardTwoThirds",
+  "label": "Keyboard control 2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterAttack",
+  "label": "Filter attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.5
+ },
+ {
+  "key": "filterDecay",
+  "label": "Filter decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "filterSustain",
+  "label": "Filter sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "decaySwitch",
+  "label": "Decay",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "ampAttack",
+  "label": "Loudness attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.3
+ },
+ {
+  "key": "ampDecay",
+  "label": "Loudness decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "ampSustain",
+  "label": "Loudness sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "drift",
+  "label": "Drift",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "velocity",
+  "label": "Velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ },
+ {
+  "key": "voices",
+  "label": "Voices",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Mono",
+   "2 voices",
+   "3 voices",
+   "4 voices",
+   "5 voices",
+   "6 voices",
+   "7 voices",
+   "8 voices"
+  ]
+ }
+]

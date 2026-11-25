@@ -1,0 +1,97 @@
+[
+ {
+  "key": "peLowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "20 Hz",
+   "30 Hz",
+   "60 Hz",
+   "100 Hz"
+  ]
+ },
+ {
+  "key": "peLowBoost",
+  "label": "Low Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peLowAtten",
+  "label": "Low Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peHighFreq",
+  "label": "High Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 4.0,
+  "choices": [
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "16 kHz"
+  ]
+ },
+ {
+  "key": "peHighBoost",
+  "label": "High Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peBandwidth",
+  "label": "Bandwidth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peAttenFreq",
+  "label": "Atten Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "5 kHz",
+   "10 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "peHighAtten",
+  "label": "High Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peOutput",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ }
+]

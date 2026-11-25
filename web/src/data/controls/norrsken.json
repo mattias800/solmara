@@ -1,0 +1,832 @@
+[
+ {
+  "key": "osc2Pitch",
+  "label": "Osc 2 pitch",
+  "unit": "st",
+  "minimum": -60.0,
+  "maximum": 60.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc2Fine",
+  "label": "Osc 2 fine",
+  "unit": "dial",
+  "minimum": -64.0,
+  "maximum": 63.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Oscillator balance",
+  "unit": "dial",
+  "minimum": -64.0,
+  "maximum": 63.0,
+  "default": -64.0
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterAmount",
+  "label": "Filter envelope amount",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "pulseWidth",
+  "label": "Pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "fm",
+  "label": "FM / ring tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterAttack",
+  "label": "Filter attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterDecay",
+  "label": "Filter decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "filterSustain",
+  "label": "Filter sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterRelease",
+  "label": "Filter release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 32.0
+ },
+ {
+  "key": "ampAttack",
+  "label": "Amp attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampDecay",
+  "label": "Amp decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "ampSustain",
+  "label": "Amp sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "ampRelease",
+  "label": "Amp release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 16.0
+ },
+ {
+  "key": "glide",
+  "label": "Portamento",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "gain",
+  "label": "Program gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "modAttack",
+  "label": "Mod attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "modDecay",
+  "label": "Mod decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "modAmount",
+  "label": "Mod envelope amount",
+  "unit": "dial",
+  "minimum": -64.0,
+  "maximum": 63.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo1Rate",
+  "label": "LFO 1 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lfo1Amount",
+  "label": "LFO 1 amount",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo2Rate",
+  "label": "LFO 2 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lfo2Amount",
+  "label": "LFO 2 amount / arp range",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc2PitchMorph",
+  "label": "Pitch morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc2FineMorph",
+  "label": "Fine morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "mixMorph",
+  "label": "Balance morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cutoffMorph",
+  "label": "Cutoff morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "resonanceMorph",
+  "label": "Resonance morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterAmountMorph",
+  "label": "Filter amount morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "pulseWidthMorph",
+  "label": "Width morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "fmMorph",
+  "label": "FM morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterAttackMorph",
+  "label": "Filter attack morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterDecayMorph",
+  "label": "Filter decay morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterSustainMorph",
+  "label": "Filter sustain morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterReleaseMorph",
+  "label": "Filter release morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampAttackMorph",
+  "label": "Amp attack morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampDecayMorph",
+  "label": "Amp decay morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampSustainMorph",
+  "label": "Amp sustain morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampReleaseMorph",
+  "label": "Amp release morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "glideMorph",
+  "label": "Portamento morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "gainMorph",
+  "label": "Gain morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "modAttackMorph",
+  "label": "Mod attack morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "modDecayMorph",
+  "label": "Mod decay morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "modAmountMorph",
+  "label": "Mod amount morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo1RateMorph",
+  "label": "LFO 1 rate morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo1AmountMorph",
+  "label": "LFO 1 amount morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo2RateMorph",
+  "label": "LFO 2 rate morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfo2AmountMorph",
+  "label": "LFO 2 amount morph",
+  "unit": "dial",
+  "minimum": -128.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "osc1Wave",
+  "label": "Osc 1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Pulse",
+   "Saw",
+   "Triangle",
+   "Sine"
+  ]
+ },
+ {
+  "key": "osc2Wave",
+  "label": "Osc 2 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Pulse",
+   "Saw",
+   "Triangle",
+   "Noise"
+  ]
+ },
+ {
+  "key": "sync",
+  "label": "Oscillator sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "ring",
+  "label": "Ring modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "distortion",
+  "label": "Filter distortion",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterType",
+  "label": "Filter type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "LP 12",
+   "LP 24",
+   "HP 24",
+   "Band-pass",
+   "Notch + LP"
+  ]
+ },
+ {
+  "key": "osc2KeyTrack",
+  "label": "Osc 2 keyboard tracking",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterKeyTrack",
+  "label": "Filter keyboard tracking",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "One third",
+   "Two thirds",
+   "Full"
+  ]
+ },
+ {
+  "key": "lfo1Wave",
+  "label": "LFO 1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "Random",
+   "Saw",
+   "Triangle",
+   "Square",
+   "Smooth random"
+  ]
+ },
+ {
+  "key": "lfo1Dest",
+  "label": "LFO 1 destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "Pulse width",
+   "Filter",
+   "Pitch 2",
+   "Pitch 1+2",
+   "FM"
+  ]
+ },
+ {
+  "key": "voiceMode",
+  "label": "Voice mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Poly",
+   "Legato",
+   "Mono"
+  ]
+ },
+ {
+  "key": "wheelDest",
+  "label": "Wheel destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "Filter",
+   "FM",
+   "Pitch 2",
+   "LFO 1 amount",
+   "Morph"
+  ]
+ },
+ {
+  "key": "unison",
+  "label": "Unison",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "modDest",
+  "label": "Mod envelope destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 3.0,
+  "choices": [
+   "Pitch 2",
+   "FM",
+   "Pulse width",
+   "Off"
+  ]
+ },
+ {
+  "key": "glideAuto",
+  "label": "Automatic portamento",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterVelocity",
+  "label": "Filter envelope velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octave",
+  "label": "Octave shift",
+  "unit": "oct",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "-2",
+   "-1",
+   "0",
+   "+1",
+   "+2"
+  ]
+ },
+ {
+  "key": "lfo2Dest",
+  "label": "LFO 2 / arpeggiator",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 8.0,
+  "choices": [
+   "Arp down",
+   "Arp up",
+   "Arp up/down",
+   "Amp",
+   "Pitch 1+2",
+   "Arp random",
+   "Echo",
+   "Filter",
+   "Off"
+  ]
+ },
+ {
+  "key": "unisonDetune",
+  "label": "Unison detune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 2.0
+ },
+ {
+  "key": "outputMode",
+  "label": "Output mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Auto stereo",
+   "Mono",
+   "Alternate voices"
+  ]
+ },
+ {
+  "key": "lfo1Sync",
+  "label": "LFO 1 clock sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "2/1",
+   "1/1",
+   "1/2",
+   "1/4",
+   "1/8",
+   "1/8 triplet",
+   "1/16"
+  ]
+ },
+ {
+  "key": "lfo2Sync",
+  "label": "LFO 2 clock sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "2/1",
+   "1/1",
+   "1/2",
+   "1/4",
+   "1/8",
+   "1/8 triplet",
+   "1/16"
+  ]
+ },
+ {
+  "key": "modWheel",
+  "label": "Modulation wheel",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "bender",
+  "label": "Pitch stick",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "bendRange",
+  "label": "Pitch bend range",
+  "unit": "st",
+  "minimum": 0.0,
+  "maximum": 48.0,
+  "default": 2.0
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tuning",
+  "unit": "cents",
+  "minimum": -99.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "pressure",
+  "label": "Aftertouch",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "pressureAmount",
+  "label": "Aftertouch amount",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ]
+ },
+ {
+  "key": "pressureDest",
+  "label": "Aftertouch destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "LFO 1 amount",
+   "LFO 2 amount",
+   "Filter",
+   "FM",
+   "Osc 2 pitch"
+  ]
+ },
+ {
+  "key": "expression",
+  "label": "Expression pedal",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "expressionAmount",
+  "label": "Expression amount",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ]
+ },
+ {
+  "key": "expressionDest",
+  "label": "Expression destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "LFO 1 amount",
+   "LFO 2 amount",
+   "Filter",
+   "FM",
+   "Osc 2 pitch"
+  ]
+ },
+ {
+  "key": "arpHold",
+  "label": "Arpeggiator hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

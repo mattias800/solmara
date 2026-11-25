@@ -1,0 +1,56 @@
+[
+ {
+  "key": "lowCut",
+  "label": "Low Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "50 Hz",
+   "80 Hz",
+   "100 Hz",
+   "150 Hz",
+   "250 Hz",
+   "500 Hz",
+   "750 Hz",
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz"
+  ]
+ },
+ {
+  "key": "highCut",
+  "label": "High Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0,
+  "choices": [
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "6 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "15 kHz",
+   "Off"
+  ]
+ },
+ {
+  "key": "in",
+  "label": "In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "key": "manual",
+  "label": "Manual",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 60.0
+ },
+ {
+  "key": "speed",
+  "label": "Speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 45.0
+ },
+ {
+  "key": "regen",
+  "label": "Regen",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 12.0,
+  "default": 0.0
+ }
+]

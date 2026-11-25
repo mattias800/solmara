@@ -1,0 +1,98 @@
+---
+// Every page of the website: the nav, a page's own header under the night
+// sky (the home page has the large one), and the footer.
+import '../styles/site.css';
+import '../styles/pages.css';
+
+interface Props {
+	title: string;
+	description: string;
+	/** The nav item this page is under. */
+	section?: 'instruments' | 'effects' | 'guitar' | 'write' | 'ai' | 'agents' | 'mastering' | 'progress' | 'about';
+	/** The big header of the home page, in place of a page's own. */
+	home?: boolean;
+	/** A page's heading and its lede, under the sky. */
+	heading?: string;
+	lede?: string;
+	eyebrow?: string;
+}
+
+const { title, description, section, home = false, heading, lede, eyebrow } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const at = (path: string) => `${base}/${path}`;
+const nav = [
+	{ key: 'instruments', label: 'Instruments', href: at('instruments/') },
+	{ key: 'effects', label: 'Effects', href: at('effects/') },
+	{ key: 'guitar', label: 'Guitar', href: at('guitar/') },
+	{ key: 'write', label: 'Write', href: at('write/') },
+	{ key: 'ai', label: 'AI', href: at('ai/') },
+	{ key: 'agents', label: 'Agents', href: at('agents/') },
+	{ key: 'mastering', label: 'Mastering', href: at('mastering/') },
+	{ key: 'progress', label: 'Progress', href: at('progress/') },
+];
+const pageTitle = home ? title : `${title} · Solmara`;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={home ? 'Solmara' : title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site).href} />
+		<meta property="og:image" content={new URL(at('images/social-card.jpg'), Astro.site).href} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="theme-color" content="#08090c" />
+		<link rel="icon" href={at('favicon.svg')} type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap"
+			rel="stylesheet"
+		/>
+		{home && <link rel="preload" as="image" href={at('images/sky-2400.jpg')} media="(min-width: 801px)" />}
+	</head>
+	<body>
+		<a class="skip" href="#content">Skip to the page</a>
+		<header class:list={['hero', { 'page-hero': !home }]}>
+			<div class="hero-sky" aria-hidden="true"></div>
+			<div class="hero-fade" aria-hidden="true"></div>
+			<nav class="nav" aria-label="Solmara">
+				<a class="wordmark" href={at('')}>Solmara</a>
+				<div class="nav-links">
+					{nav.map((item) => (
+						<a href={item.href} aria-current={section === item.key ? 'page' : undefined}>{item.label}</a>
+					))}
+					<a class="manual-link" href={at('manual/')}>Manual</a>
+				</div>
+			</nav>
+			{home ? (
+				<slot name="hero" />
+			) : (
+				<div class="page-head">
+					{eyebrow && <p class="eyebrow">{eyebrow}</p>}
+					<h1>{heading ?? title}</h1>
+					{lede && <p class="lede">{lede}</p>}
+				</div>
+			)}
+		</header>
+
+		<main id="content">
+			<slot />
+		</main>
+
+		<footer>
+			<span>© 2026 Mattias Andersson</span>
+			<span class="footer-links">
+				<a href={at('about/')}>About</a>
+				<a href={at('manual/')}>Manual</a>
+				<a href="https://github.com/mattias800/solmara/issues/new/choose">Report a problem</a>
+				<a href="https://github.com/mattias800/solmara">GitHub</a>
+			</span>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+[
+ {
+  "key": "reduction",
+  "label": "Gain Reduction",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 33.5,
+  "default": 0.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "compLowCut",
+  "label": "Low Cut",
+  "unit": "Hz",
+  "minimum": 0.0,
+  "maximum": 600.0,
+  "default": 0.0
+ },
+ {
+  "key": "compLowCutAt",
+  "label": "Low Cut On",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Input",
+   "Detector"
+  ]
+ },
+ {
+  "key": "saturation",
+  "label": "Saturation",
+  "unit": "dial",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "parallel",
+  "label": "Parallel",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

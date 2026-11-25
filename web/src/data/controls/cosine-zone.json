@@ -1,0 +1,1122 @@
+[
+ {
+  "key": "line",
+  "label": "Line select",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "1",
+   "2",
+   "1+1'",
+   "1+2'"
+  ]
+ },
+ {
+  "key": "octave",
+  "label": "Octave",
+  "unit": "choice",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "-1",
+   "0",
+   "+1"
+  ]
+ },
+ {
+  "key": "detuneOctave",
+  "label": "Detune octave",
+  "unit": "steps",
+  "minimum": -3.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "detuneNote",
+  "label": "Detune note",
+  "unit": "semitones",
+  "minimum": -11.0,
+  "maximum": 11.0,
+  "default": 0.0
+ },
+ {
+  "key": "detuneFine",
+  "label": "Detune fine",
+  "unit": "steps",
+  "minimum": -60.0,
+  "maximum": 60.0,
+  "default": 0.0
+ },
+ {
+  "key": "modulation",
+  "label": "Modulation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Ring",
+   "Noise"
+  ]
+ },
+ {
+  "key": "vibratoWave",
+  "label": "Vibrato wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw up",
+   "Saw down",
+   "Square"
+  ]
+ },
+ {
+  "key": "vibratoDelay",
+  "label": "Vibrato delay",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "vibratoRate",
+  "label": "Vibrato rate",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "vibratoDepth",
+  "label": "Vibrato depth",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "portamentoTime",
+  "label": "Portamento time",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 30.0
+ },
+ {
+  "key": "bendRange",
+  "label": "Bend range",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 2.0
+ },
+ {
+  "key": "dac",
+  "label": "DAC",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dB",
+  "minimum": -40.0,
+  "maximum": 6.0,
+  "default": 0.0
+ },
+ {
+  "key": "wave1A",
+  "label": "L1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Saw",
+   "Square",
+   "Pulse",
+   "Double sine",
+   "Saw-pulse",
+   "Resonance I",
+   "Resonance II",
+   "Resonance III"
+  ]
+ },
+ {
+  "key": "wave1B",
+  "label": "L1 second wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 0.0,
+  "choices": [
+   "None",
+   "Saw",
+   "Square",
+   "Pulse",
+   "Double sine",
+   "Saw-pulse",
+   "Resonance I",
+   "Resonance II",
+   "Resonance III"
+  ]
+ },
+ {
+  "key": "dcw1KeyFollow",
+  "label": "L1 DCW key follow",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1KeyFollow",
+  "label": "L1 DCA key follow",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Rate1",
+  "label": "L1 dco rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate2",
+  "label": "L1 dco rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate3",
+  "label": "L1 dco rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate4",
+  "label": "L1 dco rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate5",
+  "label": "L1 dco rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate6",
+  "label": "L1 dco rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate7",
+  "label": "L1 dco rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Rate8",
+  "label": "L1 dco rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco1Level1",
+  "label": "L1 dco level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level2",
+  "label": "L1 dco level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level3",
+  "label": "L1 dco level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level4",
+  "label": "L1 dco level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level5",
+  "label": "L1 dco level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level6",
+  "label": "L1 dco level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level7",
+  "label": "L1 dco level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Level8",
+  "label": "L1 dco level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1Sustain",
+  "label": "L1 dco sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco1End",
+  "label": "L1 dco end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "dcw1Rate1",
+  "label": "L1 dcw rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 80.0
+ },
+ {
+  "key": "dcw1Rate2",
+  "label": "L1 dcw rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 45.0
+ },
+ {
+  "key": "dcw1Rate3",
+  "label": "L1 dcw rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 55.0
+ },
+ {
+  "key": "dcw1Rate4",
+  "label": "L1 dcw rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw1Rate5",
+  "label": "L1 dcw rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw1Rate6",
+  "label": "L1 dcw rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw1Rate7",
+  "label": "L1 dcw rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw1Rate8",
+  "label": "L1 dcw rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw1Level1",
+  "label": "L1 dcw level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 75.0
+ },
+ {
+  "key": "dcw1Level2",
+  "label": "L1 dcw level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 35.0
+ },
+ {
+  "key": "dcw1Level3",
+  "label": "L1 dcw level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Level4",
+  "label": "L1 dcw level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Level5",
+  "label": "L1 dcw level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Level6",
+  "label": "L1 dcw level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Level7",
+  "label": "L1 dcw level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Level8",
+  "label": "L1 dcw level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw1Sustain",
+  "label": "L1 dcw sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 2.0
+ },
+ {
+  "key": "dcw1End",
+  "label": "L1 dcw end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 3.0
+ },
+ {
+  "key": "dca1Rate1",
+  "label": "L1 dca rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "dca1Rate2",
+  "label": "L1 dca rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 60.0
+ },
+ {
+  "key": "dca1Rate3",
+  "label": "L1 dca rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Rate4",
+  "label": "L1 dca rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Rate5",
+  "label": "L1 dca rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Rate6",
+  "label": "L1 dca rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Rate7",
+  "label": "L1 dca rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Rate8",
+  "label": "L1 dca rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca1Level1",
+  "label": "L1 dca level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "dca1Level2",
+  "label": "L1 dca level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level3",
+  "label": "L1 dca level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level4",
+  "label": "L1 dca level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level5",
+  "label": "L1 dca level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level6",
+  "label": "L1 dca level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level7",
+  "label": "L1 dca level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Level8",
+  "label": "L1 dca level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca1Sustain",
+  "label": "L1 dca sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 1.0
+ },
+ {
+  "key": "dca1End",
+  "label": "L1 dca end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 2.0
+ },
+ {
+  "key": "wave2A",
+  "label": "L2 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Saw",
+   "Square",
+   "Pulse",
+   "Double sine",
+   "Saw-pulse",
+   "Resonance I",
+   "Resonance II",
+   "Resonance III"
+  ]
+ },
+ {
+  "key": "wave2B",
+  "label": "L2 second wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 0.0,
+  "choices": [
+   "None",
+   "Saw",
+   "Square",
+   "Pulse",
+   "Double sine",
+   "Saw-pulse",
+   "Resonance I",
+   "Resonance II",
+   "Resonance III"
+  ]
+ },
+ {
+  "key": "dcw2KeyFollow",
+  "label": "L2 DCW key follow",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2KeyFollow",
+  "label": "L2 DCA key follow",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Rate1",
+  "label": "L2 dco rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate2",
+  "label": "L2 dco rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate3",
+  "label": "L2 dco rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate4",
+  "label": "L2 dco rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate5",
+  "label": "L2 dco rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate6",
+  "label": "L2 dco rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate7",
+  "label": "L2 dco rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Rate8",
+  "label": "L2 dco rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dco2Level1",
+  "label": "L2 dco level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level2",
+  "label": "L2 dco level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level3",
+  "label": "L2 dco level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level4",
+  "label": "L2 dco level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level5",
+  "label": "L2 dco level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level6",
+  "label": "L2 dco level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level7",
+  "label": "L2 dco level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Level8",
+  "label": "L2 dco level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2Sustain",
+  "label": "L2 dco sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "dco2End",
+  "label": "L2 dco end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "dcw2Rate1",
+  "label": "L2 dcw rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 80.0
+ },
+ {
+  "key": "dcw2Rate2",
+  "label": "L2 dcw rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 45.0
+ },
+ {
+  "key": "dcw2Rate3",
+  "label": "L2 dcw rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 55.0
+ },
+ {
+  "key": "dcw2Rate4",
+  "label": "L2 dcw rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw2Rate5",
+  "label": "L2 dcw rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw2Rate6",
+  "label": "L2 dcw rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw2Rate7",
+  "label": "L2 dcw rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw2Rate8",
+  "label": "L2 dcw rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dcw2Level1",
+  "label": "L2 dcw level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 75.0
+ },
+ {
+  "key": "dcw2Level2",
+  "label": "L2 dcw level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 35.0
+ },
+ {
+  "key": "dcw2Level3",
+  "label": "L2 dcw level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Level4",
+  "label": "L2 dcw level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Level5",
+  "label": "L2 dcw level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Level6",
+  "label": "L2 dcw level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Level7",
+  "label": "L2 dcw level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Level8",
+  "label": "L2 dcw level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dcw2Sustain",
+  "label": "L2 dcw sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 2.0
+ },
+ {
+  "key": "dcw2End",
+  "label": "L2 dcw end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 3.0
+ },
+ {
+  "key": "dca2Rate1",
+  "label": "L2 dca rate 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "dca2Rate2",
+  "label": "L2 dca rate 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 60.0
+ },
+ {
+  "key": "dca2Rate3",
+  "label": "L2 dca rate 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Rate4",
+  "label": "L2 dca rate 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Rate5",
+  "label": "L2 dca rate 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Rate6",
+  "label": "L2 dca rate 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Rate7",
+  "label": "L2 dca rate 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Rate8",
+  "label": "L2 dca rate 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "dca2Level1",
+  "label": "L2 dca level 1",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "dca2Level2",
+  "label": "L2 dca level 2",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level3",
+  "label": "L2 dca level 3",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level4",
+  "label": "L2 dca level 4",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level5",
+  "label": "L2 dca level 5",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level6",
+  "label": "L2 dca level 6",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level7",
+  "label": "L2 dca level 7",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Level8",
+  "label": "L2 dca level 8",
+  "unit": "steps",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "dca2Sustain",
+  "label": "L2 dca sustain step",
+  "unit": "step",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 1.0
+ },
+ {
+  "key": "dca2End",
+  "label": "L2 dca end step",
+  "unit": "step",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 2.0
+ }
+]

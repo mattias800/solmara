@@ -1,0 +1,55 @@
+[
+ {
+  "key": "style",
+  "label": "Style",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "I",
+   "II",
+   "III"
+  ]
+ },
+ {
+  "key": "detune",
+  "label": "Detune",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 200.0,
+  "default": 100.0
+ },
+ {
+  "key": "delay",
+  "label": "Delay",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 200.0,
+  "default": 100.0
+ },
+ {
+  "key": "focus",
+  "label": "Focus",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 10000.0,
+  "default": 20.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ }
+]

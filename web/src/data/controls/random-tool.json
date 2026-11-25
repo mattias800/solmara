@@ -1,0 +1,329 @@
+[
+ {
+  "key": "conditional",
+  "label": "Conditional",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "steps",
+  "label": "Steps",
+  "unit": "count",
+  "minimum": 2.0,
+  "maximum": 8.0,
+  "default": 4.0
+ },
+ {
+  "key": "reset",
+  "label": "Reset",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Reset on Play",
+   "Reset 1 sec",
+   "Reset 5 sec",
+   "No Reset"
+  ]
+ },
+ {
+  "key": "chord",
+  "label": "Chord",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "probability",
+  "label": "Probability",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "passChance",
+  "label": "Pass chance",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "pitch",
+  "label": "Random pitch",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pitchMode",
+  "label": "Pitch mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "Set To",
+   "Octaves +/-",
+   "Octaves +",
+   "Semitones +/-",
+   "Between"
+  ]
+ },
+ {
+  "key": "pitchNote",
+  "label": "Set key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "pitchOctaves",
+  "label": "Octaves",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "pitchSemitones",
+  "label": "Semitones",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 7.0
+ },
+ {
+  "key": "pitchLow",
+  "label": "Lowest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "pitchHigh",
+  "label": "Highest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 72.0
+ },
+ {
+  "key": "pitchChance",
+  "label": "Pitch chance",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "velocity",
+  "label": "Random velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "velocityMode",
+  "label": "Velocity mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Set To",
+   "Offset +/-",
+   "Between"
+  ]
+ },
+ {
+  "key": "velocityValue",
+  "label": "Set velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "velocityOffset",
+  "label": "Velocity offset",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 20.0
+ },
+ {
+  "key": "velocityLow",
+  "label": "Lowest velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 40.0
+ },
+ {
+  "key": "velocityHigh",
+  "label": "Highest velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 110.0
+ },
+ {
+  "key": "velocityChance",
+  "label": "Velocity chance",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "length",
+  "label": "Random length",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lengthMode",
+  "label": "Length mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Set To",
+   "Between"
+  ]
+ },
+ {
+  "key": "lengthValue",
+  "label": "Set length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 5.0,
+  "choices": [
+   "Pulse",
+   "1/128",
+   "1/64",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "lengthLow",
+  "label": "Shortest",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 3.0,
+  "choices": [
+   "Pulse",
+   "1/128",
+   "1/64",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "lengthHigh",
+  "label": "Longest",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 10.0,
+  "choices": [
+   "Pulse",
+   "1/128",
+   "1/64",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "lengthChance",
+  "label": "Length chance",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "syncChance",
+  "label": "Sync chance",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "sharedChance",
+  "label": "Shared chance",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ }
+]

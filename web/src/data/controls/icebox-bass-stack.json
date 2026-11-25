@@ -1,0 +1,108 @@
+[
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "middle",
+  "label": "Middle",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "channel",
+  "label": "Channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "First",
+   "Second"
+  ]
+ },
+ {
+  "key": "mid_frequency",
+  "label": "Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "220 Hz",
+   "800 Hz",
+   "3 kHz"
+  ]
+ },
+ {
+  "key": "ultra_high",
+  "label": "Ultra High",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "ultra_low",
+  "label": "Ultra Low",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On",
+   "Bass Cut"
+  ]
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Bright"
+  ]
+ },
+ {
+  "key": "cabinet",
+  "label": "Cabinet",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

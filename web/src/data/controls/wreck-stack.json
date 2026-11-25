@@ -1,0 +1,112 @@
+[
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "master",
+  "label": "Master",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Modern",
+   "Vintage",
+   "Raw"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Standard",
+   "Ultra"
+  ]
+ },
+ {
+  "key": "rectifier",
+  "label": "Rectifier",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stiff",
+   "Silicon",
+   "Valves"
+  ]
+ },
+ {
+  "key": "mains",
+  "label": "Mains",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Full",
+   "Lowered"
+  ]
+ },
+ {
+  "key": "channel",
+  "label": "Channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Clean",
+   "Lead"
+  ]
+ }
+]

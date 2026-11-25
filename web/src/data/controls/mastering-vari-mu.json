@@ -1,0 +1,117 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "threshold",
+  "label": "Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "recovery",
+  "label": "Recovery",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "8 s",
+   "4 s",
+   "0.6 s",
+   "0.4 s",
+   "0.2 s"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Compress",
+   "Limit"
+  ]
+ },
+ {
+  "key": "sidechainFilter",
+  "label": "SC High-Pass",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "matrix",
+  "label": "Matrix",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Left-Right",
+   "Mid-Side"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Light",
+   "Oversampled"
+  ]
+ }
+]

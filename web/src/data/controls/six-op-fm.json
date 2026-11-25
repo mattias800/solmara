@@ -1,0 +1,1574 @@
+[
+ {
+  "key": "algorithm",
+  "label": "Algorithm",
+  "unit": "dial",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 32.0
+ },
+ {
+  "key": "feedback",
+  "label": "Feedback",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "keySync",
+  "label": "Oscillator key sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "transpose",
+  "label": "Transpose",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "pitchR1",
+  "label": "Pitch EG rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "pitchR2",
+  "label": "Pitch EG rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "pitchR3",
+  "label": "Pitch EG rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "pitchR4",
+  "label": "Pitch EG rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "pitchL1",
+  "label": "Pitch EG level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "pitchL2",
+  "label": "Pitch EG level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "pitchL3",
+  "label": "Pitch EG level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "pitchL4",
+  "label": "Pitch EG level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 50.0
+ },
+ {
+  "key": "lfoSpeed",
+  "label": "LFO speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 35.0
+ },
+ {
+  "key": "lfoDelay",
+  "label": "LFO delay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoPmd",
+  "label": "LFO pitch depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoAmd",
+  "label": "LFO amplitude depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoSync",
+  "label": "LFO key sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lfoWave",
+  "label": "LFO wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw down",
+   "Saw up",
+   "Square",
+   "Sine",
+   "Sample and hold"
+  ]
+ },
+ {
+  "key": "pitchModSens",
+  "label": "Pitch sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 3.0
+ },
+ {
+  "key": "mono",
+  "label": "Mono",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Poly",
+   "Mono"
+  ]
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamentoMode",
+  "label": "Portamento mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Fingered",
+   "Full time"
+  ]
+ },
+ {
+  "key": "dac",
+  "label": "DAC",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Vintage",
+   "Clean"
+  ]
+ },
+ {
+  "key": "feedbackSteps",
+  "label": "Feedback steps",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Six-op",
+   "Four-op"
+  ]
+ },
+ {
+  "key": "reverbRate",
+  "label": "Reverb rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "wheelPitch",
+  "label": "Wheel to pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "wheelAmp",
+  "label": "Wheel to amplitude",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "breathPitch",
+  "label": "Breath to pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "breathAmp",
+  "label": "Breath to amplitude",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "footPitch",
+  "label": "Foot to pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "footAmp",
+  "label": "Foot to amplitude",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1On",
+  "label": "Operator 1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op1Output",
+  "label": "Operator 1 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1Mode",
+  "label": "Operator 1 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op1Coarse",
+  "label": "Operator 1 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op1Fine",
+  "label": "Operator 1 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1Detune",
+  "label": "Operator 1 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1R1",
+  "label": "Operator 1 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1R2",
+  "label": "Operator 1 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1R3",
+  "label": "Operator 1 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1R4",
+  "label": "Operator 1 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op1L1",
+  "label": "Operator 1 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1L2",
+  "label": "Operator 1 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1L3",
+  "label": "Operator 1 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op1L4",
+  "label": "Operator 1 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1BreakPoint",
+  "label": "Operator 1 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op1LeftDepth",
+  "label": "Operator 1 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1RightDepth",
+  "label": "Operator 1 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1LeftCurve",
+  "label": "Operator 1 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op1RightCurve",
+  "label": "Operator 1 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op1RateScaling",
+  "label": "Operator 1 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1AmpModSens",
+  "label": "Operator 1 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1VelocitySens",
+  "label": "Operator 1 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op1Wave",
+  "label": "Operator 1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ },
+ {
+  "key": "op2On",
+  "label": "Operator 2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op2Output",
+  "label": "Operator 2 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2Mode",
+  "label": "Operator 2 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op2Coarse",
+  "label": "Operator 2 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op2Fine",
+  "label": "Operator 2 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2Detune",
+  "label": "Operator 2 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2R1",
+  "label": "Operator 2 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2R2",
+  "label": "Operator 2 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2R3",
+  "label": "Operator 2 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2R4",
+  "label": "Operator 2 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op2L1",
+  "label": "Operator 2 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2L2",
+  "label": "Operator 2 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2L3",
+  "label": "Operator 2 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op2L4",
+  "label": "Operator 2 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2BreakPoint",
+  "label": "Operator 2 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op2LeftDepth",
+  "label": "Operator 2 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2RightDepth",
+  "label": "Operator 2 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2LeftCurve",
+  "label": "Operator 2 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op2RightCurve",
+  "label": "Operator 2 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op2RateScaling",
+  "label": "Operator 2 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2AmpModSens",
+  "label": "Operator 2 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2VelocitySens",
+  "label": "Operator 2 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op2Wave",
+  "label": "Operator 2 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ },
+ {
+  "key": "op3On",
+  "label": "Operator 3",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op3Output",
+  "label": "Operator 3 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3Mode",
+  "label": "Operator 3 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op3Coarse",
+  "label": "Operator 3 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op3Fine",
+  "label": "Operator 3 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3Detune",
+  "label": "Operator 3 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3R1",
+  "label": "Operator 3 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3R2",
+  "label": "Operator 3 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3R3",
+  "label": "Operator 3 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3R4",
+  "label": "Operator 3 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op3L1",
+  "label": "Operator 3 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3L2",
+  "label": "Operator 3 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3L3",
+  "label": "Operator 3 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op3L4",
+  "label": "Operator 3 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3BreakPoint",
+  "label": "Operator 3 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op3LeftDepth",
+  "label": "Operator 3 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3RightDepth",
+  "label": "Operator 3 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3LeftCurve",
+  "label": "Operator 3 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op3RightCurve",
+  "label": "Operator 3 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op3RateScaling",
+  "label": "Operator 3 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3AmpModSens",
+  "label": "Operator 3 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3VelocitySens",
+  "label": "Operator 3 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op3Wave",
+  "label": "Operator 3 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ },
+ {
+  "key": "op4On",
+  "label": "Operator 4",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op4Output",
+  "label": "Operator 4 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4Mode",
+  "label": "Operator 4 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op4Coarse",
+  "label": "Operator 4 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op4Fine",
+  "label": "Operator 4 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4Detune",
+  "label": "Operator 4 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4R1",
+  "label": "Operator 4 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4R2",
+  "label": "Operator 4 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4R3",
+  "label": "Operator 4 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4R4",
+  "label": "Operator 4 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op4L1",
+  "label": "Operator 4 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4L2",
+  "label": "Operator 4 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4L3",
+  "label": "Operator 4 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op4L4",
+  "label": "Operator 4 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4BreakPoint",
+  "label": "Operator 4 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op4LeftDepth",
+  "label": "Operator 4 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4RightDepth",
+  "label": "Operator 4 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4LeftCurve",
+  "label": "Operator 4 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op4RightCurve",
+  "label": "Operator 4 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op4RateScaling",
+  "label": "Operator 4 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4AmpModSens",
+  "label": "Operator 4 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4VelocitySens",
+  "label": "Operator 4 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op4Wave",
+  "label": "Operator 4 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ },
+ {
+  "key": "op5On",
+  "label": "Operator 5",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op5Output",
+  "label": "Operator 5 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5Mode",
+  "label": "Operator 5 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op5Coarse",
+  "label": "Operator 5 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op5Fine",
+  "label": "Operator 5 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5Detune",
+  "label": "Operator 5 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5R1",
+  "label": "Operator 5 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5R2",
+  "label": "Operator 5 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5R3",
+  "label": "Operator 5 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5R4",
+  "label": "Operator 5 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op5L1",
+  "label": "Operator 5 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5L2",
+  "label": "Operator 5 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5L3",
+  "label": "Operator 5 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op5L4",
+  "label": "Operator 5 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5BreakPoint",
+  "label": "Operator 5 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op5LeftDepth",
+  "label": "Operator 5 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5RightDepth",
+  "label": "Operator 5 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5LeftCurve",
+  "label": "Operator 5 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op5RightCurve",
+  "label": "Operator 5 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op5RateScaling",
+  "label": "Operator 5 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5AmpModSens",
+  "label": "Operator 5 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5VelocitySens",
+  "label": "Operator 5 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op5Wave",
+  "label": "Operator 5 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ },
+ {
+  "key": "op6On",
+  "label": "Operator 6",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "op6Output",
+  "label": "Operator 6 output level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6Mode",
+  "label": "Operator 6 frequency mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Ratio",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "op6Coarse",
+  "label": "Operator 6 coarse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 31.0,
+  "default": 1.0
+ },
+ {
+  "key": "op6Fine",
+  "label": "Operator 6 fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6Detune",
+  "label": "Operator 6 detune",
+  "unit": "dial",
+  "minimum": -7.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6R1",
+  "label": "Operator 6 rate 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6R2",
+  "label": "Operator 6 rate 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6R3",
+  "label": "Operator 6 rate 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6R4",
+  "label": "Operator 6 rate 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 70.0
+ },
+ {
+  "key": "op6L1",
+  "label": "Operator 6 level 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6L2",
+  "label": "Operator 6 level 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6L3",
+  "label": "Operator 6 level 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 99.0
+ },
+ {
+  "key": "op6L4",
+  "label": "Operator 6 level 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6BreakPoint",
+  "label": "Operator 6 break point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 39.0
+ },
+ {
+  "key": "op6LeftDepth",
+  "label": "Operator 6 left depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6RightDepth",
+  "label": "Operator 6 right depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 99.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6LeftCurve",
+  "label": "Operator 6 left curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op6RightCurve",
+  "label": "Operator 6 right curve",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "-Lin",
+   "-Exp",
+   "+Exp",
+   "+Lin"
+  ]
+ },
+ {
+  "key": "op6RateScaling",
+  "label": "Operator 6 rate scaling",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6AmpModSens",
+  "label": "Operator 6 amplitude sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6VelocitySens",
+  "label": "Operator 6 velocity sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "op6Wave",
+  "label": "Operator 6 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Squared",
+   "Half",
+   "Half squared",
+   "Double",
+   "Double squared",
+   "Humps",
+   "Humps squared"
+  ]
+ }
+]

@@ -1,0 +1,96 @@
+[
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mid",
+  "label": "Middle",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "depth",
+  "label": "Depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "master",
+  "label": "Master",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "channel",
+  "label": "Channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Clean",
+   "High",
+   "Insane"
+  ]
+ },
+ {
+  "key": "temper",
+  "label": "Temper",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Calm",
+   "Fierce",
+   "Rage"
+  ]
+ },
+ {
+  "key": "cab",
+  "label": "Cab",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

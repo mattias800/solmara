@@ -1,0 +1,484 @@
+[
+ {
+  "key": "part",
+  "label": "Part",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Bass drum",
+   "Snare drum",
+   "Low tom",
+   "Mid tom",
+   "High tom",
+   "Rim shot",
+   "Hand clap",
+   "Cowbell",
+   "Cymbal",
+   "Open hat",
+   "Closed hat",
+   "Low conga",
+   "Mid conga",
+   "High conga",
+   "Claves",
+   "Maracas"
+  ]
+ },
+ {
+  "key": "bd.tone",
+  "label": "Bass drum tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bd.decay",
+  "label": "Bass drum decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bd.sweep",
+  "label": "Bass drum sweep",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bd.level",
+  "label": "Bass drum level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "sd.tone",
+  "label": "Snare drum tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "sd.snappy",
+  "label": "Snare drum snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "sd.decay",
+  "label": "Snare drum decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "sd.level",
+  "label": "Snare drum level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lt.tune",
+  "label": "Low tom tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lt.snappy",
+  "label": "Low tom snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lt.decay",
+  "label": "Low tom decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lt.level",
+  "label": "Low tom level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mt.tune",
+  "label": "Mid tom tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mt.snappy",
+  "label": "Mid tom snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mt.decay",
+  "label": "Mid tom decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mt.level",
+  "label": "Mid tom level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ht.tune",
+  "label": "High tom tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ht.snappy",
+  "label": "High tom snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ht.decay",
+  "label": "High tom decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ht.level",
+  "label": "High tom level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "rs.tune",
+  "label": "Rim shot tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "rs.decay",
+  "label": "Rim shot decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "rs.level",
+  "label": "Rim shot level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cp.tone",
+  "label": "Hand clap tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cp.level",
+  "label": "Hand clap level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cb.tune",
+  "label": "Cowbell tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cb.decay",
+  "label": "Cowbell decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "cb.level",
+  "label": "Cowbell level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cy.tone",
+  "label": "Cymbal tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cy.decay",
+  "label": "Cymbal decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cy.band",
+  "label": "Cymbal band",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cy.level",
+  "label": "Cymbal level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "oh.tone",
+  "label": "Open hat tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "oh.decay",
+  "label": "Open hat decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "oh.band",
+  "label": "Open hat band",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "oh.level",
+  "label": "Open hat level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ch.tone",
+  "label": "Closed hat tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ch.decay",
+  "label": "Closed hat decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ch.band",
+  "label": "Closed hat band",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ch.level",
+  "label": "Closed hat level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lc.tune",
+  "label": "Low conga tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lc.snappy",
+  "label": "Low conga snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lc.decay",
+  "label": "Low conga decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lc.level",
+  "label": "Low conga level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mc.tune",
+  "label": "Mid conga tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mc.snappy",
+  "label": "Mid conga snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mc.decay",
+  "label": "Mid conga decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mc.level",
+  "label": "Mid conga level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "hc.tune",
+  "label": "High conga tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "hc.snappy",
+  "label": "High conga snappy",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "hc.decay",
+  "label": "High conga decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "hc.level",
+  "label": "High conga level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cl.tune",
+  "label": "Claves tune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cl.decay",
+  "label": "Claves decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "cl.level",
+  "label": "Claves level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ma.tone",
+  "label": "Maracas tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ma.level",
+  "label": "Maracas level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ }
+]

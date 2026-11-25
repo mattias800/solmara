@@ -1,0 +1,105 @@
+[
+ {
+  "key": "drive",
+  "label": "Drive",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "speed",
+  "label": "Speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "7.5 ips",
+   "15 ips",
+   "30 ips"
+  ]
+ },
+ {
+  "key": "tape",
+  "label": "Tape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Vintage",
+   "Studio",
+   "High output",
+   "Hot"
+  ]
+ },
+ {
+  "key": "bias",
+  "label": "Bias",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bump",
+  "label": "Head bump",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "wow",
+  "label": "Wow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 20.0
+ },
+ {
+  "key": "flutter",
+  "label": "Flutter",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 20.0
+ },
+ {
+  "key": "hiss",
+  "label": "Hiss",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "4x",
+   "8x"
+  ]
+ }
+]

@@ -1,0 +1,146 @@
+---
+title: "Sampler"
+description: "Sampler"
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+Plays a sample library where it lies on the disk, its long samples streamed from there: SFZ and DecentSampler, with Kontakt to come. Its knobs are the library's MIDI controllers and its volume.
+
+[Sampler on the website](/solmara/instruments/sampler/)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Volume | -60 dB to 12 dB | 0 dB |
+| CC 0 | 0 to 127 | 0 |
+| CC 1 | 0 to 127 | 0 |
+| CC 2 | 0 to 127 | 0 |
+| CC 3 | 0 to 127 | 0 |
+| CC 4 | 0 to 127 | 0 |
+| CC 5 | 0 to 127 | 0 |
+| CC 6 | 0 to 127 | 0 |
+| CC 7 | 0 to 127 | 0 |
+| CC 8 | 0 to 127 | 0 |
+| CC 9 | 0 to 127 | 0 |
+| CC 10 | 0 to 127 | 0 |
+| CC 11 | 0 to 127 | 0 |
+| CC 12 | 0 to 127 | 0 |
+| CC 13 | 0 to 127 | 0 |
+| CC 14 | 0 to 127 | 0 |
+| CC 15 | 0 to 127 | 0 |
+| CC 16 | 0 to 127 | 0 |
+| CC 17 | 0 to 127 | 0 |
+| CC 18 | 0 to 127 | 0 |
+| CC 19 | 0 to 127 | 0 |
+| CC 20 | 0 to 127 | 0 |
+| CC 21 | 0 to 127 | 0 |
+| CC 22 | 0 to 127 | 0 |
+| CC 23 | 0 to 127 | 0 |
+| CC 24 | 0 to 127 | 0 |
+| CC 25 | 0 to 127 | 0 |
+| CC 26 | 0 to 127 | 0 |
+| CC 27 | 0 to 127 | 0 |
+| CC 28 | 0 to 127 | 0 |
+| CC 29 | 0 to 127 | 0 |
+| CC 30 | 0 to 127 | 0 |
+| CC 31 | 0 to 127 | 0 |
+| CC 32 | 0 to 127 | 0 |
+| CC 33 | 0 to 127 | 0 |
+| CC 34 | 0 to 127 | 0 |
+| CC 35 | 0 to 127 | 0 |
+| CC 36 | 0 to 127 | 0 |
+| CC 37 | 0 to 127 | 0 |
+| CC 38 | 0 to 127 | 0 |
+| CC 39 | 0 to 127 | 0 |
+| CC 40 | 0 to 127 | 0 |
+| CC 41 | 0 to 127 | 0 |
+| CC 42 | 0 to 127 | 0 |
+| CC 43 | 0 to 127 | 0 |
+| CC 44 | 0 to 127 | 0 |
+| CC 45 | 0 to 127 | 0 |
+| CC 46 | 0 to 127 | 0 |
+| CC 47 | 0 to 127 | 0 |
+| CC 48 | 0 to 127 | 0 |
+| CC 49 | 0 to 127 | 0 |
+| CC 50 | 0 to 127 | 0 |
+| CC 51 | 0 to 127 | 0 |
+| CC 52 | 0 to 127 | 0 |
+| CC 53 | 0 to 127 | 0 |
+| CC 54 | 0 to 127 | 0 |
+| CC 55 | 0 to 127 | 0 |
+| CC 56 | 0 to 127 | 0 |
+| CC 57 | 0 to 127 | 0 |
+| CC 58 | 0 to 127 | 0 |
+| CC 59 | 0 to 127 | 0 |
+| CC 60 | 0 to 127 | 0 |
+| CC 61 | 0 to 127 | 0 |
+| CC 62 | 0 to 127 | 0 |
+| CC 63 | 0 to 127 | 0 |
+| CC 64 | 0 to 127 | 0 |
+| CC 65 | 0 to 127 | 0 |
+| CC 66 | 0 to 127 | 0 |
+| CC 67 | 0 to 127 | 0 |
+| CC 68 | 0 to 127 | 0 |
+| CC 69 | 0 to 127 | 0 |
+| CC 70 | 0 to 127 | 0 |
+| CC 71 | 0 to 127 | 0 |
+| CC 72 | 0 to 127 | 0 |
+| CC 73 | 0 to 127 | 0 |
+| CC 74 | 0 to 127 | 0 |
+| CC 75 | 0 to 127 | 0 |
+| CC 76 | 0 to 127 | 0 |
+| CC 77 | 0 to 127 | 0 |
+| CC 78 | 0 to 127 | 0 |
+| CC 79 | 0 to 127 | 0 |
+| CC 80 | 0 to 127 | 0 |
+| CC 81 | 0 to 127 | 0 |
+| CC 82 | 0 to 127 | 0 |
+| CC 83 | 0 to 127 | 0 |
+| CC 84 | 0 to 127 | 0 |
+| CC 85 | 0 to 127 | 0 |
+| CC 86 | 0 to 127 | 0 |
+| CC 87 | 0 to 127 | 0 |
+| CC 88 | 0 to 127 | 0 |
+| CC 89 | 0 to 127 | 0 |
+| CC 90 | 0 to 127 | 0 |
+| CC 91 | 0 to 127 | 0 |
+| CC 92 | 0 to 127 | 0 |
+| CC 93 | 0 to 127 | 0 |
+| CC 94 | 0 to 127 | 0 |
+| CC 95 | 0 to 127 | 0 |
+| CC 96 | 0 to 127 | 0 |
+| CC 97 | 0 to 127 | 0 |
+| CC 98 | 0 to 127 | 0 |
+| CC 99 | 0 to 127 | 0 |
+| CC 100 | 0 to 127 | 0 |
+| CC 101 | 0 to 127 | 0 |
+| CC 102 | 0 to 127 | 0 |
+| CC 103 | 0 to 127 | 0 |
+| CC 104 | 0 to 127 | 0 |
+| CC 105 | 0 to 127 | 0 |
+| CC 106 | 0 to 127 | 0 |
+| CC 107 | 0 to 127 | 0 |
+| CC 108 | 0 to 127 | 0 |
+| CC 109 | 0 to 127 | 0 |
+| CC 110 | 0 to 127 | 0 |
+| CC 111 | 0 to 127 | 0 |
+| CC 112 | 0 to 127 | 0 |
+| CC 113 | 0 to 127 | 0 |
+| CC 114 | 0 to 127 | 0 |
+| CC 115 | 0 to 127 | 0 |
+| CC 116 | 0 to 127 | 0 |
+| CC 117 | 0 to 127 | 0 |
+| CC 118 | 0 to 127 | 0 |
+| CC 119 | 0 to 127 | 0 |
+| CC 120 | 0 to 127 | 0 |
+| CC 121 | 0 to 127 | 0 |
+| CC 122 | 0 to 127 | 0 |
+| CC 123 | 0 to 127 | 0 |
+| CC 124 | 0 to 127 | 0 |
+| CC 125 | 0 to 127 | 0 |
+| CC 126 | 0 to 127 | 0 |
+| CC 127 | 0 to 127 | 0 |

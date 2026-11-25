@@ -1,0 +1,46 @@
+[
+ {
+  "key": "distortion",
+  "label": "Distortion",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "filter",
+  "label": "Filter",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

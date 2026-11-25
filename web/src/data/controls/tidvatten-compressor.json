@@ -1,0 +1,274 @@
+[
+ {
+  "key": "crossover1Hz",
+  "label": "Low split",
+  "unit": "Hz",
+  "minimum": 40.0,
+  "maximum": 1000.0,
+  "default": 120.0
+ },
+ {
+  "key": "crossover2Hz",
+  "label": "High split",
+  "unit": "Hz",
+  "minimum": 500.0,
+  "maximum": 16000.0,
+  "default": 2500.0
+ },
+ {
+  "key": "band1Push",
+  "label": "Band 1 push",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -28.0
+ },
+ {
+  "key": "band1PushRatio",
+  "label": "Band 1 push ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 100.0,
+  "default": 6.0
+ },
+ {
+  "key": "band1Lift",
+  "label": "Band 1 lift",
+  "unit": "dB",
+  "minimum": -90.0,
+  "maximum": 0.0,
+  "default": -46.0
+ },
+ {
+  "key": "band1LiftRatio",
+  "label": "Band 1 lift ratio",
+  "unit": "ratio",
+  "minimum": 0.25,
+  "maximum": 20.0,
+  "default": 3.0
+ },
+ {
+  "key": "band1Gain",
+  "label": "Band 1 gain",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 30.0,
+  "default": 0.0
+ },
+ {
+  "key": "band1Solo",
+  "label": "Band 1 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band1Mute",
+  "label": "Band 1 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band2Push",
+  "label": "Band 2 push",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -26.0
+ },
+ {
+  "key": "band2PushRatio",
+  "label": "Band 2 push ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 100.0,
+  "default": 6.0
+ },
+ {
+  "key": "band2Lift",
+  "label": "Band 2 lift",
+  "unit": "dB",
+  "minimum": -90.0,
+  "maximum": 0.0,
+  "default": -44.0
+ },
+ {
+  "key": "band2LiftRatio",
+  "label": "Band 2 lift ratio",
+  "unit": "ratio",
+  "minimum": 0.25,
+  "maximum": 20.0,
+  "default": 3.0
+ },
+ {
+  "key": "band2Gain",
+  "label": "Band 2 gain",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 30.0,
+  "default": 0.0
+ },
+ {
+  "key": "band2Solo",
+  "label": "Band 2 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band2Mute",
+  "label": "Band 2 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band3Push",
+  "label": "Band 3 push",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -30.0
+ },
+ {
+  "key": "band3PushRatio",
+  "label": "Band 3 push ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 100.0,
+  "default": 6.0
+ },
+ {
+  "key": "band3Lift",
+  "label": "Band 3 lift",
+  "unit": "dB",
+  "minimum": -90.0,
+  "maximum": 0.0,
+  "default": -42.0
+ },
+ {
+  "key": "band3LiftRatio",
+  "label": "Band 3 lift ratio",
+  "unit": "ratio",
+  "minimum": 0.25,
+  "maximum": 20.0,
+  "default": 3.0
+ },
+ {
+  "key": "band3Gain",
+  "label": "Band 3 gain",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 30.0,
+  "default": 0.0
+ },
+ {
+  "key": "band3Solo",
+  "label": "Band 3 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band3Mute",
+  "label": "Band 3 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "depth",
+  "label": "Depth",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "time",
+  "label": "Time",
+  "unit": "linear",
+  "minimum": 0.1,
+  "maximum": 10.0,
+  "default": 1.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 200.0,
+  "default": 5.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 5.0,
+  "maximum": 2000.0,
+  "default": 120.0
+ },
+ {
+  "key": "upward",
+  "label": "Upward",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "downward",
+  "label": "Downward",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "inputDb",
+  "label": "In",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Out",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

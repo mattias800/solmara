@@ -1,0 +1,375 @@
+[
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "holdMode",
+  "label": "Hold mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Hold All",
+   "Latch",
+   "Chord",
+   "Toggle"
+  ]
+ },
+ {
+  "key": "clear",
+  "label": "Clear",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 9999.0,
+  "default": 0.0
+ },
+ {
+  "key": "playMode",
+  "label": "Play mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Retrig",
+   "Sync to Song"
+  ]
+ },
+ {
+  "key": "shuffle",
+  "label": "Shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "rate",
+  "label": "Rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0,
+  "choices": [
+   "1/64",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "steps",
+  "label": "Steps",
+  "unit": "count",
+  "minimum": 4.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "anchor",
+  "label": "Anchor",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "anchorPattern",
+  "label": "Anchor pattern",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 64.0,
+  "default": 1.0
+ },
+ {
+  "key": "anchorLength",
+  "label": "Anchor length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 410.0,
+  "default": 100.0
+ },
+ {
+  "key": "anchorVelocityMode",
+  "label": "Anchor velocity mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Offset",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "anchorVelocity",
+  "label": "Anchor velocity offset",
+  "unit": "velocity",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "anchorFixed",
+  "label": "Anchor fixed velocity",
+  "unit": "velocity",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "anchorOctave",
+  "label": "Anchor octave",
+  "unit": "oct",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "movement",
+  "label": "Movement",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "shape",
+  "label": "Shape",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 40.0,
+  "default": 1.0
+ },
+ {
+  "key": "density",
+  "label": "Density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "shiftRhythm",
+  "label": "Shift rhythm",
+  "unit": "steps",
+  "minimum": -16.0,
+  "maximum": 16.0,
+  "default": 0.0
+ },
+ {
+  "key": "movementLength",
+  "label": "Movement length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 410.0,
+  "default": 75.0
+ },
+ {
+  "key": "movementVelocityMode",
+  "label": "Movement velocity mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Offset",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "movementVelocity",
+  "label": "Movement velocity offset",
+  "unit": "velocity",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "movementFixed",
+  "label": "Movement fixed velocity",
+  "unit": "velocity",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "movementOctave",
+  "label": "Movement octave",
+  "unit": "oct",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanize",
+  "label": "Humanize",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "rhythmModifier",
+  "label": "Rhythm modifier",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rhythmFunction",
+  "label": "Rhythm function",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "Mute",
+   "Mute or Double",
+   "Double",
+   "Double or Triple",
+   "Triple",
+   "Triple or Quad",
+   "Quad"
+  ]
+ },
+ {
+  "key": "rhythmRepeat",
+  "label": "Doubled steps",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Repeat",
+   "Arpeggiate"
+  ]
+ },
+ {
+  "key": "rhythmAmount",
+  "label": "Rhythm amount",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 25.0
+ },
+ {
+  "key": "rhythmMovementOnly",
+  "label": "Rhythm movement only",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rhythmSeed",
+  "label": "Rhythm seed",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 9999.0,
+  "default": 1.0
+ },
+ {
+  "key": "octaveModifier",
+  "label": "Octave modifier",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octaveFunction",
+  "label": "Octave function",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 4.0,
+  "choices": [
+   "-2",
+   "-2 or -1",
+   "-1",
+   "-1 or +1",
+   "+1",
+   "+1 or +2",
+   "+2"
+  ]
+ },
+ {
+  "key": "octaveAmount",
+  "label": "Octave amount",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 25.0
+ },
+ {
+  "key": "octaveMovementOnly",
+  "label": "Octave movement only",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octaveSeed",
+  "label": "Octave seed",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 9999.0,
+  "default": 1.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

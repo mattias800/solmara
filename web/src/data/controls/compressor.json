@@ -1,0 +1,94 @@
+[
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -18.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 200.0,
+  "default": 10.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 5.0,
+  "maximum": 2000.0,
+  "default": 100.0
+ },
+ {
+  "key": "kneeDb",
+  "label": "Knee",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 6.0
+ },
+ {
+  "key": "makeupDb",
+  "label": "Makeup",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "sidechainLowCut",
+  "label": "SC low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2000.0,
+  "default": 20.0
+ },
+ {
+  "key": "sidechainHighCut",
+  "label": "SC high cut",
+  "unit": "Hz",
+  "minimum": 100.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "lookaheadMs",
+  "label": "Lookahead",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20.0,
+  "default": 0.0
+ },
+ {
+  "key": "sidechainListen",
+  "label": "SC listen",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

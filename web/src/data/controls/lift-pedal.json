@@ -1,0 +1,18 @@
+[
+ {
+  "key": "boost",
+  "label": "Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 70.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 12.0,
+  "default": 0.0
+ }
+]

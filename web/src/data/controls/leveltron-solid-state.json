@@ -1,0 +1,38 @@
+[
+ {
+  "key": "peakReduction",
+  "label": "Peak reduction",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 46.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Compress",
+   "Limit"
+  ]
+ },
+ {
+  "key": "emphasis",
+  "label": "HF emphasis",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ }
+]

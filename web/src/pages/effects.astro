@@ -1,0 +1,32 @@
+---
+import Site from '../layouts/Site.astro';
+import DeviceRow from '../components/DeviceRow.astro';
+import { effectFamilies, effects } from '../lib/devices';
+
+const families = effectFamilies.filter((family) => family.devices.length > 0);
+---
+
+<Site
+	title="Effects"
+	section="effects"
+	description={`Solmara's ${effects.length} effects: dynamics, EQ, channel strips, saturation, modulation, delays and reverbs.`}
+	eyebrow={`${effects.length} effects`}
+	heading="Effects, modelled on the circuits behind them"
+	lede="Compressors, equalisers, channel strips, tape, chorus and reverbs, each built from how it works and given a face of its own."
+>
+	<section>
+		<ul class="jump" aria-label="Families">
+			{families.map((family) => <li><a href={`#${family.key}`}>{family.label} ({family.devices.length})</a></li>)}
+		</ul>
+	</section>
+
+	{families.map((family) => (
+		<section class="family" id={family.key}>
+			<h2>{family.label}</h2>
+			<p class="intro">{family.intro}</p>
+			<div class="rows">
+				{family.devices.map((device) => <DeviceRow device={device} />)}
+			</div>
+		</section>
+	))}
+</Site>

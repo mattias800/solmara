@@ -1,0 +1,183 @@
+[
+ {
+  "key": "model",
+  "label": "Model",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0,
+  "choices": [
+   "Transistor ladder",
+   "Diode ladder",
+   "Sallen-Key",
+   "OTA cascade",
+   "State variable",
+   "Comb",
+   "Phaser",
+   "Formant"
+  ]
+ },
+ {
+  "key": "type",
+  "label": "Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Low 24",
+   "Low 12",
+   "Band 24",
+   "Band 12",
+   "High 24",
+   "High 12"
+  ]
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 2000.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "driveDb",
+  "label": "Drive",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 36.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoDepth",
+  "label": "LFO depth",
+  "unit": "octaves",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "Hz",
+  "minimum": 0.05,
+  "maximum": 20.0,
+  "default": 1.0
+ },
+ {
+  "key": "lfoSync",
+  "label": "LFO sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lfoDivision",
+  "label": "LFO division",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 8.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/16.",
+   "1/8",
+   "1/4T",
+   "1/8.",
+   "1/4",
+   "1/2T",
+   "1/4.",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "lfoShape",
+  "label": "LFO shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Triangle",
+   "Saw up",
+   "Saw down",
+   "Square",
+   "Random"
+  ]
+ },
+ {
+  "key": "lfoSpread",
+  "label": "LFO spread",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "follow",
+  "label": "Follow",
+  "unit": "octaves",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "followAttackMs",
+  "label": "Follow attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "followReleaseMs",
+  "label": "Follow release",
+  "unit": "ms",
+  "minimum": 5.0,
+  "maximum": 2000.0,
+  "default": 200.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "morph",
+  "label": "Morph",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0
+ }
+]

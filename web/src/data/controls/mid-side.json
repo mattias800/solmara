@@ -1,0 +1,90 @@
+[
+ {
+  "key": "midLevel",
+  "label": "Mid",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 6.0,
+  "default": 0.0
+ },
+ {
+  "key": "sideLevel",
+  "label": "Side",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 6.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro1",
+  "label": "Macro 1",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro2",
+  "label": "Macro 2",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro3",
+  "label": "Macro 3",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro4",
+  "label": "Macro 4",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro5",
+  "label": "Macro 5",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro6",
+  "label": "Macro 6",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro7",
+  "label": "Macro 7",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro8",
+  "label": "Macro 8",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "macro9",
+  "label": "Macro 9",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ }
+]

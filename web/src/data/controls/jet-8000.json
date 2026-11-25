@@ -1,0 +1,3554 @@
+[
+ {
+  "key": "upper.lfoWave",
+  "label": "Upper LFO 1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square",
+   "Random"
+  ]
+ },
+ {
+  "key": "upper.lfoRate",
+  "label": "Upper LFO 1 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.lfoFade",
+  "label": "Upper LFO 1 fade",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.lfo2Rate",
+  "label": "Upper LFO 2 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.lfo2Select",
+  "label": "Upper LFO 2 depth select",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Pitch",
+   "Filter",
+   "Amplifier"
+  ]
+ },
+ {
+  "key": "upper.ring",
+  "label": "Upper Ring modulation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "upper.crossMod",
+  "label": "Upper Cross modulation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.balance",
+  "label": "Upper Oscillator balance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.pitchDest",
+  "label": "Upper Pitch destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Both oscillators",
+   "Oscillator 2",
+   "Cross modulation"
+  ]
+ },
+ {
+  "key": "upper.pitchLfo1",
+  "label": "Upper Pitch LFO 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.pitchLfo2",
+  "label": "Upper Pitch LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.pitchEnv",
+  "label": "Upper Pitch envelope depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.pitchAttack",
+  "label": "Upper Pitch attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.pitchDecay",
+  "label": "Upper Pitch decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.osc1Wave",
+  "label": "Upper Oscillator 1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "Seven saws",
+   "Triangle modulation",
+   "Filtered noise",
+   "Feedback oscillator",
+   "Pulse",
+   "Saw",
+   "Triangle"
+  ]
+ },
+ {
+  "key": "upper.osc1Control1",
+  "label": "Upper Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.osc1Control2",
+  "label": "Upper Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.osc2Wave",
+  "label": "Upper Oscillator 2 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "Pulse",
+   "Saw",
+   "Triangle",
+   "Noise"
+  ]
+ },
+ {
+  "key": "upper.sync",
+  "label": "Upper Oscillator sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "upper.osc2Range",
+  "label": "Upper Oscillator 2 range",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 50.0,
+  "default": 25.0
+ },
+ {
+  "key": "upper.osc2Fine",
+  "label": "Upper Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "upper.osc2Control1",
+  "label": "Upper Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.osc2Control2",
+  "label": "Upper Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.filterType",
+  "label": "Upper Filter type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 2.0,
+  "choices": [
+   "High-pass",
+   "Band-pass",
+   "Low-pass"
+  ]
+ },
+ {
+  "key": "upper.filterSlope",
+  "label": "Upper Filter slope",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "12 dB/oct",
+   "24 dB/oct"
+  ]
+ },
+ {
+  "key": "upper.cutoff",
+  "label": "Upper Filter cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "upper.resonance",
+  "label": "Upper Filter resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.keyFollow",
+  "label": "Upper Filter key follow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.filterLfo1",
+  "label": "Upper Filter LFO 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.filterLfo2",
+  "label": "Upper Filter LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.filterEnv",
+  "label": "Upper Filter envelope depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.filterAttack",
+  "label": "Upper Filter attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.filterDecay",
+  "label": "Upper Filter decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.filterSustain",
+  "label": "Upper Filter sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "upper.filterRelease",
+  "label": "Upper Filter release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ampLevel",
+  "label": "Upper Amplifier level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "upper.ampLfo1",
+  "label": "Upper Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.ampLfo2",
+  "label": "Upper Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.ampAttack",
+  "label": "Upper Amplifier attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ampDecay",
+  "label": "Upper Amplifier decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ampSustain",
+  "label": "Upper Amplifier sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "upper.ampRelease",
+  "label": "Upper Amplifier release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.manualPan",
+  "label": "Upper Pan mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto pan",
+   "Manual pan"
+  ]
+ },
+ {
+  "key": "upper.bass",
+  "label": "Upper Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.treble",
+  "label": "Upper Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "upper.chorusType",
+  "label": "Upper Chorus type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0,
+  "choices": [
+   "Slow chorus",
+   "Medium chorus",
+   "Fast chorus",
+   "Clear chorus",
+   "Slow flange",
+   "Deep flange",
+   "Fast flange",
+   "Slow phase",
+   "Jet phase",
+   "Twist",
+   "Fixed phase 1",
+   "Fixed phase 2",
+   "Distortion"
+  ]
+ },
+ {
+  "key": "upper.chorusLevel",
+  "label": "Upper Chorus level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.delayType",
+  "label": "Upper Delay type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "Pan left to right",
+   "Pan right to left",
+   "Short pan",
+   "Short mono",
+   "Long mono"
+  ]
+ },
+ {
+  "key": "upper.delayTime",
+  "label": "Upper Delay time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.delayFeedback",
+  "label": "Upper Delay feedback",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.delayLevel",
+  "label": "Upper Delay level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.bendUp",
+  "label": "Upper Bend up",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 2.0
+ },
+ {
+  "key": "upper.bendDown",
+  "label": "Upper Bend down",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 2.0
+ },
+ {
+  "key": "upper.portamento",
+  "label": "Upper Portamento",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "upper.portamentoTime",
+  "label": "Upper Portamento time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.mono",
+  "label": "Upper Mono",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "upper.legato",
+  "label": "Upper Legato",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "upper.octave",
+  "label": "Upper Oscillator shift",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0
+ },
+ {
+  "key": "upper.ribbon.lfoRate",
+  "label": "Upper ribbon.LFO 1 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.lfoFade",
+  "label": "Upper ribbon.LFO 1 fade",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.lfo2Rate",
+  "label": "Upper ribbon.LFO 2 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.crossMod",
+  "label": "Upper ribbon.Cross modulation",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.balance",
+  "label": "Upper ribbon.Oscillator balance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.pitchLfo1",
+  "label": "Upper ribbon.Pitch LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.pitchLfo2",
+  "label": "Upper ribbon.Pitch LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.pitchEnv",
+  "label": "Upper ribbon.Pitch envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.pitchAttack",
+  "label": "Upper ribbon.Pitch attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.pitchDecay",
+  "label": "Upper ribbon.Pitch decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc1Control1",
+  "label": "Upper ribbon.Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc1Control2",
+  "label": "Upper ribbon.Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc2Range",
+  "label": "Upper ribbon.Oscillator 2 range",
+  "unit": "dial",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc2Fine",
+  "label": "Upper ribbon.Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc2Control1",
+  "label": "Upper ribbon.Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.osc2Control2",
+  "label": "Upper ribbon.Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.cutoff",
+  "label": "Upper ribbon.Filter cutoff",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.resonance",
+  "label": "Upper ribbon.Filter resonance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.keyFollow",
+  "label": "Upper ribbon.Filter key follow",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterLfo1",
+  "label": "Upper ribbon.Filter LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterLfo2",
+  "label": "Upper ribbon.Filter LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterEnv",
+  "label": "Upper ribbon.Filter envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterAttack",
+  "label": "Upper ribbon.Filter attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterDecay",
+  "label": "Upper ribbon.Filter decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterSustain",
+  "label": "Upper ribbon.Filter sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.filterRelease",
+  "label": "Upper ribbon.Filter release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampLevel",
+  "label": "Upper ribbon.Amplifier level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampLfo1",
+  "label": "Upper ribbon.Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampLfo2",
+  "label": "Upper ribbon.Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampAttack",
+  "label": "Upper ribbon.Amplifier attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampDecay",
+  "label": "Upper ribbon.Amplifier decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampSustain",
+  "label": "Upper ribbon.Amplifier sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.ampRelease",
+  "label": "Upper ribbon.Amplifier release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.bass",
+  "label": "Upper ribbon.Bass",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.treble",
+  "label": "Upper ribbon.Treble",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.chorusLevel",
+  "label": "Upper ribbon.Chorus level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.delayTime",
+  "label": "Upper ribbon.Delay time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.delayFeedback",
+  "label": "Upper ribbon.Delay feedback",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.delayLevel",
+  "label": "Upper ribbon.Delay level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbon.portamentoTime",
+  "label": "Upper ribbon.Portamento time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.lfoRate",
+  "label": "Upper velocity.LFO 1 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.lfoFade",
+  "label": "Upper velocity.LFO 1 fade",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.lfo2Rate",
+  "label": "Upper velocity.LFO 2 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.crossMod",
+  "label": "Upper velocity.Cross modulation",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.balance",
+  "label": "Upper velocity.Oscillator balance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.pitchLfo1",
+  "label": "Upper velocity.Pitch LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.pitchLfo2",
+  "label": "Upper velocity.Pitch LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.pitchEnv",
+  "label": "Upper velocity.Pitch envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.pitchAttack",
+  "label": "Upper velocity.Pitch attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.pitchDecay",
+  "label": "Upper velocity.Pitch decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc1Control1",
+  "label": "Upper velocity.Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc1Control2",
+  "label": "Upper velocity.Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc2Range",
+  "label": "Upper velocity.Oscillator 2 range",
+  "unit": "dial",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc2Fine",
+  "label": "Upper velocity.Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc2Control1",
+  "label": "Upper velocity.Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.osc2Control2",
+  "label": "Upper velocity.Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.cutoff",
+  "label": "Upper velocity.Filter cutoff",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.resonance",
+  "label": "Upper velocity.Filter resonance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.keyFollow",
+  "label": "Upper velocity.Filter key follow",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterLfo1",
+  "label": "Upper velocity.Filter LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterLfo2",
+  "label": "Upper velocity.Filter LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterEnv",
+  "label": "Upper velocity.Filter envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterAttack",
+  "label": "Upper velocity.Filter attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterDecay",
+  "label": "Upper velocity.Filter decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterSustain",
+  "label": "Upper velocity.Filter sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.filterRelease",
+  "label": "Upper velocity.Filter release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampLevel",
+  "label": "Upper velocity.Amplifier level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampLfo1",
+  "label": "Upper velocity.Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampLfo2",
+  "label": "Upper velocity.Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampAttack",
+  "label": "Upper velocity.Amplifier attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampDecay",
+  "label": "Upper velocity.Amplifier decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampSustain",
+  "label": "Upper velocity.Amplifier sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.ampRelease",
+  "label": "Upper velocity.Amplifier release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.bass",
+  "label": "Upper velocity.Bass",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.treble",
+  "label": "Upper velocity.Treble",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.chorusLevel",
+  "label": "Upper velocity.Chorus level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.delayTime",
+  "label": "Upper velocity.Delay time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.delayFeedback",
+  "label": "Upper velocity.Delay feedback",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.delayLevel",
+  "label": "Upper velocity.Delay level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocity.portamentoTime",
+  "label": "Upper velocity.Portamento time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbonBend",
+  "label": "Upper Ribbon bend switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocityOn",
+  "label": "Upper Velocity modulation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.lfoWave",
+  "label": "Lower LFO 1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square",
+   "Random"
+  ]
+ },
+ {
+  "key": "lower.lfoRate",
+  "label": "Lower LFO 1 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.lfoFade",
+  "label": "Lower LFO 1 fade",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.lfo2Rate",
+  "label": "Lower LFO 2 rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.lfo2Select",
+  "label": "Lower LFO 2 depth select",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Pitch",
+   "Filter",
+   "Amplifier"
+  ]
+ },
+ {
+  "key": "lower.ring",
+  "label": "Lower Ring modulation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lower.crossMod",
+  "label": "Lower Cross modulation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.balance",
+  "label": "Lower Oscillator balance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.pitchDest",
+  "label": "Lower Pitch destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Both oscillators",
+   "Oscillator 2",
+   "Cross modulation"
+  ]
+ },
+ {
+  "key": "lower.pitchLfo1",
+  "label": "Lower Pitch LFO 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.pitchLfo2",
+  "label": "Lower Pitch LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.pitchEnv",
+  "label": "Lower Pitch envelope depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.pitchAttack",
+  "label": "Lower Pitch attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.pitchDecay",
+  "label": "Lower Pitch decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.osc1Wave",
+  "label": "Lower Oscillator 1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "Seven saws",
+   "Triangle modulation",
+   "Filtered noise",
+   "Feedback oscillator",
+   "Pulse",
+   "Saw",
+   "Triangle"
+  ]
+ },
+ {
+  "key": "lower.osc1Control1",
+  "label": "Lower Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.osc1Control2",
+  "label": "Lower Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.osc2Wave",
+  "label": "Lower Oscillator 2 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "Pulse",
+   "Saw",
+   "Triangle",
+   "Noise"
+  ]
+ },
+ {
+  "key": "lower.sync",
+  "label": "Lower Oscillator sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lower.osc2Range",
+  "label": "Lower Oscillator 2 range",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 50.0,
+  "default": 25.0
+ },
+ {
+  "key": "lower.osc2Fine",
+  "label": "Lower Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lower.osc2Control1",
+  "label": "Lower Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.osc2Control2",
+  "label": "Lower Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.filterType",
+  "label": "Lower Filter type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 2.0,
+  "choices": [
+   "High-pass",
+   "Band-pass",
+   "Low-pass"
+  ]
+ },
+ {
+  "key": "lower.filterSlope",
+  "label": "Lower Filter slope",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "12 dB/oct",
+   "24 dB/oct"
+  ]
+ },
+ {
+  "key": "lower.cutoff",
+  "label": "Lower Filter cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "lower.resonance",
+  "label": "Lower Filter resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.keyFollow",
+  "label": "Lower Filter key follow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.filterLfo1",
+  "label": "Lower Filter LFO 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.filterLfo2",
+  "label": "Lower Filter LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.filterEnv",
+  "label": "Lower Filter envelope depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.filterAttack",
+  "label": "Lower Filter attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.filterDecay",
+  "label": "Lower Filter decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.filterSustain",
+  "label": "Lower Filter sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "lower.filterRelease",
+  "label": "Lower Filter release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ampLevel",
+  "label": "Lower Amplifier level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "lower.ampLfo1",
+  "label": "Lower Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.ampLfo2",
+  "label": "Lower Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.ampAttack",
+  "label": "Lower Amplifier attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ampDecay",
+  "label": "Lower Amplifier decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ampSustain",
+  "label": "Lower Amplifier sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "lower.ampRelease",
+  "label": "Lower Amplifier release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.manualPan",
+  "label": "Lower Pan mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto pan",
+   "Manual pan"
+  ]
+ },
+ {
+  "key": "lower.bass",
+  "label": "Lower Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.treble",
+  "label": "Lower Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 64.0
+ },
+ {
+  "key": "lower.chorusType",
+  "label": "Lower Chorus type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0,
+  "choices": [
+   "Slow chorus",
+   "Medium chorus",
+   "Fast chorus",
+   "Clear chorus",
+   "Slow flange",
+   "Deep flange",
+   "Fast flange",
+   "Slow phase",
+   "Jet phase",
+   "Twist",
+   "Fixed phase 1",
+   "Fixed phase 2",
+   "Distortion"
+  ]
+ },
+ {
+  "key": "lower.chorusLevel",
+  "label": "Lower Chorus level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.delayType",
+  "label": "Lower Delay type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "Pan left to right",
+   "Pan right to left",
+   "Short pan",
+   "Short mono",
+   "Long mono"
+  ]
+ },
+ {
+  "key": "lower.delayTime",
+  "label": "Lower Delay time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.delayFeedback",
+  "label": "Lower Delay feedback",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.delayLevel",
+  "label": "Lower Delay level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.bendUp",
+  "label": "Lower Bend up",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 2.0
+ },
+ {
+  "key": "lower.bendDown",
+  "label": "Lower Bend down",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 2.0
+ },
+ {
+  "key": "lower.portamento",
+  "label": "Lower Portamento",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lower.portamentoTime",
+  "label": "Lower Portamento time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.mono",
+  "label": "Lower Mono",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lower.legato",
+  "label": "Lower Legato",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lower.octave",
+  "label": "Lower Oscillator shift",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0
+ },
+ {
+  "key": "lower.ribbon.lfoRate",
+  "label": "Lower ribbon.LFO 1 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.lfoFade",
+  "label": "Lower ribbon.LFO 1 fade",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.lfo2Rate",
+  "label": "Lower ribbon.LFO 2 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.crossMod",
+  "label": "Lower ribbon.Cross modulation",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.balance",
+  "label": "Lower ribbon.Oscillator balance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.pitchLfo1",
+  "label": "Lower ribbon.Pitch LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.pitchLfo2",
+  "label": "Lower ribbon.Pitch LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.pitchEnv",
+  "label": "Lower ribbon.Pitch envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.pitchAttack",
+  "label": "Lower ribbon.Pitch attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.pitchDecay",
+  "label": "Lower ribbon.Pitch decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc1Control1",
+  "label": "Lower ribbon.Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc1Control2",
+  "label": "Lower ribbon.Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc2Range",
+  "label": "Lower ribbon.Oscillator 2 range",
+  "unit": "dial",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc2Fine",
+  "label": "Lower ribbon.Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc2Control1",
+  "label": "Lower ribbon.Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.osc2Control2",
+  "label": "Lower ribbon.Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.cutoff",
+  "label": "Lower ribbon.Filter cutoff",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.resonance",
+  "label": "Lower ribbon.Filter resonance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.keyFollow",
+  "label": "Lower ribbon.Filter key follow",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterLfo1",
+  "label": "Lower ribbon.Filter LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterLfo2",
+  "label": "Lower ribbon.Filter LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterEnv",
+  "label": "Lower ribbon.Filter envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterAttack",
+  "label": "Lower ribbon.Filter attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterDecay",
+  "label": "Lower ribbon.Filter decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterSustain",
+  "label": "Lower ribbon.Filter sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.filterRelease",
+  "label": "Lower ribbon.Filter release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampLevel",
+  "label": "Lower ribbon.Amplifier level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampLfo1",
+  "label": "Lower ribbon.Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampLfo2",
+  "label": "Lower ribbon.Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampAttack",
+  "label": "Lower ribbon.Amplifier attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampDecay",
+  "label": "Lower ribbon.Amplifier decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampSustain",
+  "label": "Lower ribbon.Amplifier sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.ampRelease",
+  "label": "Lower ribbon.Amplifier release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.bass",
+  "label": "Lower ribbon.Bass",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.treble",
+  "label": "Lower ribbon.Treble",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.chorusLevel",
+  "label": "Lower ribbon.Chorus level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.delayTime",
+  "label": "Lower ribbon.Delay time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.delayFeedback",
+  "label": "Lower ribbon.Delay feedback",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.delayLevel",
+  "label": "Lower ribbon.Delay level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbon.portamentoTime",
+  "label": "Lower ribbon.Portamento time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.lfoRate",
+  "label": "Lower velocity.LFO 1 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.lfoFade",
+  "label": "Lower velocity.LFO 1 fade",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.lfo2Rate",
+  "label": "Lower velocity.LFO 2 rate",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.crossMod",
+  "label": "Lower velocity.Cross modulation",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.balance",
+  "label": "Lower velocity.Oscillator balance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.pitchLfo1",
+  "label": "Lower velocity.Pitch LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.pitchLfo2",
+  "label": "Lower velocity.Pitch LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.pitchEnv",
+  "label": "Lower velocity.Pitch envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.pitchAttack",
+  "label": "Lower velocity.Pitch attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.pitchDecay",
+  "label": "Lower velocity.Pitch decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc1Control1",
+  "label": "Lower velocity.Oscillator 1 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc1Control2",
+  "label": "Lower velocity.Oscillator 1 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc2Range",
+  "label": "Lower velocity.Oscillator 2 range",
+  "unit": "dial",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc2Fine",
+  "label": "Lower velocity.Oscillator 2 fine / wide",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc2Control1",
+  "label": "Lower velocity.Oscillator 2 control 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.osc2Control2",
+  "label": "Lower velocity.Oscillator 2 control 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.cutoff",
+  "label": "Lower velocity.Filter cutoff",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.resonance",
+  "label": "Lower velocity.Filter resonance",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.keyFollow",
+  "label": "Lower velocity.Filter key follow",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterLfo1",
+  "label": "Lower velocity.Filter LFO 1",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterLfo2",
+  "label": "Lower velocity.Filter LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterEnv",
+  "label": "Lower velocity.Filter envelope depth",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterAttack",
+  "label": "Lower velocity.Filter attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterDecay",
+  "label": "Lower velocity.Filter decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterSustain",
+  "label": "Lower velocity.Filter sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.filterRelease",
+  "label": "Lower velocity.Filter release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampLevel",
+  "label": "Lower velocity.Amplifier level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampLfo1",
+  "label": "Lower velocity.Amplifier LFO 1 / pan",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampLfo2",
+  "label": "Lower velocity.Amplifier LFO 2",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampAttack",
+  "label": "Lower velocity.Amplifier attack",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampDecay",
+  "label": "Lower velocity.Amplifier decay",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampSustain",
+  "label": "Lower velocity.Amplifier sustain",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.ampRelease",
+  "label": "Lower velocity.Amplifier release",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.bass",
+  "label": "Lower velocity.Bass",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.treble",
+  "label": "Lower velocity.Treble",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.chorusLevel",
+  "label": "Lower velocity.Chorus level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.delayTime",
+  "label": "Lower velocity.Delay time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.delayFeedback",
+  "label": "Lower velocity.Delay feedback",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.delayLevel",
+  "label": "Lower velocity.Delay level",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocity.portamentoTime",
+  "label": "Lower velocity.Portamento time",
+  "unit": "dial",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbonBend",
+  "label": "Lower Ribbon bend switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocityOn",
+  "label": "Lower Velocity modulation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "keyMode",
+  "label": "Key mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Single",
+   "Dual",
+   "Split"
+  ]
+ },
+ {
+  "key": "split",
+  "label": "Split point",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "partDetune",
+  "label": "Part detune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "ribbon",
+  "label": "Ribbon",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "modWheel",
+  "label": "Modulation wheel",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "bender",
+  "label": "Pitch bend",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tune (cents)",
+  "unit": "dial",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "tempo",
+  "label": "Tempo",
+  "unit": "dial",
+  "minimum": 20.0,
+  "maximum": 250.0,
+  "default": 120.0
+ },
+ {
+  "key": "arp",
+  "label": "Arpeggiator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "arpMode",
+  "label": "Arpeggiator mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Up",
+   "Down",
+   "Up/down",
+   "Random",
+   "RPS"
+  ]
+ },
+ {
+  "key": "arpRange",
+  "label": "Arpeggiator range",
+  "unit": "dial",
+  "minimum": 1.0,
+  "maximum": 4.0,
+  "default": 1.0
+ },
+ {
+  "key": "arpRate",
+  "label": "Arpeggiator steps per beat",
+  "unit": "dial",
+  "minimum": 0.25,
+  "maximum": 8.0,
+  "default": 4.0
+ },
+ {
+  "key": "upper.patchBank",
+  "label": "Upper Patch bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Embedded",
+   "User",
+   "Preset"
+  ]
+ },
+ {
+  "key": "upper.patchProgram",
+  "label": "Upper Patch program",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.midiChannel",
+  "label": "Upper MIDI channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "Off"
+  ]
+ },
+ {
+  "key": "upper.transpose",
+  "label": "Upper Transpose (semitones)",
+  "unit": "dial",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.delaySync",
+  "label": "Upper Delay sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Sixteenth",
+   "Eighth triplet",
+   "Dotted sixteenth",
+   "Eighth",
+   "Quarter triplet",
+   "Dotted eighth",
+   "Quarter",
+   "Half triplet",
+   "Dotted quarter",
+   "Half"
+  ]
+ },
+ {
+  "key": "upper.lfoSync",
+  "label": "Upper LFO 1 sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 22.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Sixteenth",
+   "Eighth triplet",
+   "Dotted sixteenth",
+   "Eighth",
+   "Quarter triplet",
+   "Dotted eighth",
+   "Quarter",
+   "Half triplet",
+   "Dotted quarter",
+   "Half",
+   "Whole triplet",
+   "Dotted half",
+   "Whole",
+   "Double whole triplet",
+   "Dotted whole",
+   "Double whole",
+   "Three measures",
+   "Four measures",
+   "Five measures",
+   "Six measures",
+   "Seven measures",
+   "Eight measures"
+  ]
+ },
+ {
+  "key": "upper.chorusSync",
+  "label": "Upper Chorus sync",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 23.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.benderActive",
+  "label": "Upper Bender indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.velocityActive",
+  "label": "Upper Velocity indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.ribbonActive",
+  "label": "Upper Ribbon indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.patchBank",
+  "label": "Lower Patch bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Embedded",
+   "User",
+   "Preset"
+  ]
+ },
+ {
+  "key": "lower.patchProgram",
+  "label": "Lower Patch program",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.midiChannel",
+  "label": "Lower MIDI channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 1.0,
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "Off"
+  ]
+ },
+ {
+  "key": "lower.transpose",
+  "label": "Lower Transpose (semitones)",
+  "unit": "dial",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.delaySync",
+  "label": "Lower Delay sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Sixteenth",
+   "Eighth triplet",
+   "Dotted sixteenth",
+   "Eighth",
+   "Quarter triplet",
+   "Dotted eighth",
+   "Quarter",
+   "Half triplet",
+   "Dotted quarter",
+   "Half"
+  ]
+ },
+ {
+  "key": "lower.lfoSync",
+  "label": "Lower LFO 1 sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 22.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Sixteenth",
+   "Eighth triplet",
+   "Dotted sixteenth",
+   "Eighth",
+   "Quarter triplet",
+   "Dotted eighth",
+   "Quarter",
+   "Half triplet",
+   "Dotted quarter",
+   "Half",
+   "Whole triplet",
+   "Dotted half",
+   "Whole",
+   "Double whole triplet",
+   "Dotted whole",
+   "Double whole",
+   "Three measures",
+   "Four measures",
+   "Five measures",
+   "Six measures",
+   "Seven measures",
+   "Eight measures"
+  ]
+ },
+ {
+  "key": "lower.chorusSync",
+  "label": "Lower Chorus sync",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 23.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.benderActive",
+  "label": "Lower Bender indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.velocityActive",
+  "label": "Lower Velocity indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.ribbonActive",
+  "label": "Lower Ribbon indicator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "panelSelect",
+  "label": "Selected part",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Upper",
+   "Lower",
+   "Both"
+  ]
+ },
+ {
+  "key": "outputAssign",
+  "label": "Output assignment",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Mix",
+   "Parallel"
+  ]
+ },
+ {
+  "key": "arpDestination",
+  "label": "Arpeggio destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Both",
+   "Lower",
+   "Upper"
+  ]
+ },
+ {
+  "key": "voiceAssign",
+  "label": "Lower / upper voices",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "8 / 2",
+   "7 / 3",
+   "5 / 5",
+   "3 / 7",
+   "2 / 8",
+   "6 / 4",
+   "4 / 6"
+  ]
+ },
+ {
+  "key": "arpPattern",
+  "label": "Arpeggio beat pattern",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 89.0,
+  "default": 0.0
+ },
+ {
+  "key": "arpHold",
+  "label": "Arpeggio hold",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pedalAssign",
+  "label": "Pedal assignment",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 45.0,
+  "default": 0.0
+ },
+ {
+  "key": "individualTrigger",
+  "label": "Individual trigger",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "triggerDestination",
+  "label": "Trigger destination",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Filter",
+   "Amplifier",
+   "Both"
+  ]
+ },
+ {
+  "key": "triggerChannel",
+  "label": "Trigger channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16"
+  ]
+ },
+ {
+  "key": "triggerNote",
+  "label": "Trigger note (128 = all)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 128.0,
+  "default": 128.0
+ },
+ {
+  "key": "upper.envelopeType",
+  "label": "Upper Solo envelope type",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.osc2ExternalInput",
+  "label": "Upper OSC2 external input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.vmSend",
+  "label": "Upper Voice modulator send",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.unison",
+  "label": "Upper Unison",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.unisonDetune",
+  "label": "Upper Unison detune (cents)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 50.0,
+  "default": 5.0
+ },
+ {
+  "key": "upper.patchGain",
+  "label": "Upper Patch gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.externalTrigger",
+  "label": "Upper External trigger",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.externalTriggerDestination",
+  "label": "Upper External trigger destination",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.envelopeType",
+  "label": "Lower Solo envelope type",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.osc2ExternalInput",
+  "label": "Lower OSC2 external input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.vmSend",
+  "label": "Lower Voice modulator send",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.unison",
+  "label": "Lower Unison",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.unisonDetune",
+  "label": "Lower Unison detune (cents)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 50.0,
+  "default": 5.0
+ },
+ {
+  "key": "lower.patchGain",
+  "label": "Lower Patch gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.externalTrigger",
+  "label": "Lower External trigger",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.externalTriggerDestination",
+  "label": "Lower External trigger destination",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "upper.patchGroup",
+  "label": "Upper patch group",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 63.0,
+  "default": 0.0
+ },
+ {
+  "key": "lower.patchGroup",
+  "label": "Lower patch group",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 63.0,
+  "default": 0.0
+ },
+ {
+  "key": "vocalInputJack",
+  "label": "Vocal / upper input jack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.switch",
+  "label": "Voice Modulator Switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.panelMode",
+  "label": "Voice Modulator Panel Mode",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.algorithm",
+  "label": "Algorithm",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.delayType",
+  "label": "Voice Modulator Delay Type",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.ensembleType",
+  "label": "Ensemble Type",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 14.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.externalToInstrument",
+  "label": "External to Inst Send Switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.externalToVocal",
+  "label": "External to Vocal Send Switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.morphControl",
+  "label": "Vocal Morph Control Switch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.morphThreshold",
+  "label": "Vocal Morph Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.morphSensitivity",
+  "label": "Vocal Morph Sensitivity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.control1Assign",
+  "label": "Control 1 Assign",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 26.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.control2Assign",
+  "label": "Control 2 Assign",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 26.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character1",
+  "label": "Character 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character2",
+  "label": "Character 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character3",
+  "label": "Character 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character4",
+  "label": "Character 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character5",
+  "label": "Character 5",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character6",
+  "label": "Character 6",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character7",
+  "label": "Character 7",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character8",
+  "label": "Character 8",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character9",
+  "label": "Character 9",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character10",
+  "label": "Character 10",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character11",
+  "label": "Character 11",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.character12",
+  "label": "Character 12",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.vocalMix",
+  "label": "Vocal Mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.release",
+  "label": "Voice Modulator Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.resonance",
+  "label": "Voice Modulator Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.pan",
+  "label": "Voice Modulator Pan",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.level",
+  "label": "Voice Modulator Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.noiseCutoff",
+  "label": "Voice Modulator Noise Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.noiseLevel",
+  "label": "Voice Modulator Noise Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.gateThreshold",
+  "label": "Gate Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.robotPitch",
+  "label": "Robot Pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.robotControl",
+  "label": "Robot Control",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.robotLevel",
+  "label": "Robot Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.ensembleLevel",
+  "label": "Ensemble Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.delayTime",
+  "label": "Voice Modulator Delay Time",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.delayFeedback",
+  "label": "Voice Modulator Delay Feedback",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.delayLevel",
+  "label": "Voice Modulator Delay Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.ensembleSync",
+  "label": "Ensemble Sync",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 22.0,
+  "default": 0.0
+ },
+ {
+  "key": "voiceModulator.delaySync",
+  "label": "Voice Modulator Delay Sync",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "motionSet",
+  "label": "Motion set",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "motion1",
+  "label": "Motion 1",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "motion2",
+  "label": "Motion 2",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "motionRestart",
+  "label": "Motion restart",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "motionA1Length",
+  "label": "Motion A1 length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 4.0,
+  "choices": [
+   "Play once",
+   "1 measure",
+   "2 measures",
+   "3 measures",
+   "4 measures",
+   "5 measures",
+   "6 measures",
+   "7 measures",
+   "8 measures"
+  ]
+ },
+ {
+  "key": "motionA2Length",
+  "label": "Motion A2 length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 4.0,
+  "choices": [
+   "Play once",
+   "1 measure",
+   "2 measures",
+   "3 measures",
+   "4 measures",
+   "5 measures",
+   "6 measures",
+   "7 measures",
+   "8 measures"
+  ]
+ },
+ {
+  "key": "motionB1Length",
+  "label": "Motion B1 length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 4.0,
+  "choices": [
+   "Play once",
+   "1 measure",
+   "2 measures",
+   "3 measures",
+   "4 measures",
+   "5 measures",
+   "6 measures",
+   "7 measures",
+   "8 measures"
+  ]
+ },
+ {
+  "key": "motionB2Length",
+  "label": "Motion B2 length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 8.0,
+  "default": 4.0,
+  "choices": [
+   "Play once",
+   "1 measure",
+   "2 measures",
+   "3 measures",
+   "4 measures",
+   "5 measures",
+   "6 measures",
+   "7 measures",
+   "8 measures"
+  ]
+ }
+]

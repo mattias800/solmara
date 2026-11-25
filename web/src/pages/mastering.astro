@@ -1,0 +1,35 @@
+---
+import Site from '../layouts/Site.astro';
+import DeviceRow from '../components/DeviceRow.astro';
+import { mastering } from '../lib/devices';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Site
+	title="Mastering"
+	section="mastering"
+	description="Solmara's mastering suite on the master, and an analyzer that reads a song's loudness the way streaming services do."
+	eyebrow="Mastering"
+	heading="Finish a song in Solmara"
+	lede="A mastering chain on the master, and an analyzer that reads your song's loudness the way streaming services do and lets you hear it at their levels."
+>
+	<section>
+		<div class="mastering-shots">
+			<a class="face" href={`${base}/images/mastering-suite.webp`}>
+				<img src={`${base}/images/mastering-suite.webp`} width="1440" height="900" loading="lazy" alt="The mastering suite: equaliser, multiband compressor, imager, clipper and limiter, with a song playing through them" />
+			</a>
+			<a class="face" href={`${base}/images/analyzer.webp`}>
+				<img src={`${base}/images/analyzer.webp`} width="1240" height="846" loading="lazy" alt="The Analyzer: loudness, spectrum, stereo field and the song's loudness over time" />
+			</a>
+		</div>
+	</section>
+
+	<section class="family">
+		<h2>In the suite</h2>
+		<p class="intro">Each is also an effect of its own, for any track or bus.</p>
+		<div class="rows">
+			{mastering.map((device) => <DeviceRow device={device} />)}
+		</div>
+	</section>
+</Site>

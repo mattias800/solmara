@@ -1,0 +1,1771 @@
+[
+ {
+  "key": "pattern",
+  "label": "Pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "mode",
+  "label": "Playback mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "SEQ",
+   "SEQ+KEY",
+   "KEY"
+  ]
+ },
+ {
+  "key": "midiPitch",
+  "label": "MIDI pitch",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "midiVelocity",
+  "label": "MIDI velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octave",
+  "label": "Octave",
+  "unit": "count",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ },
+ {
+  "key": "root1",
+  "label": "Pattern 1 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps1",
+  "label": "Pattern 1 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift1",
+  "label": "Pattern 1 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate1",
+  "label": "Pattern 1 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle1",
+  "label": "Pattern 1 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank1",
+  "label": "Pattern 1 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase1",
+  "label": "Pattern 1 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity1",
+  "label": "Pattern 1 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength1",
+  "label": "Pattern 1 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape1",
+  "label": "Pattern 1 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount1",
+  "label": "Pattern 1 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank1",
+  "label": "Pattern 1 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase1",
+  "label": "Pattern 1 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity1",
+  "label": "Pattern 1 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength1",
+  "label": "Pattern 1 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape1",
+  "label": "Pattern 1 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount1",
+  "label": "Pattern 1 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range1",
+  "label": "Pattern 1 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness1",
+  "label": "Pattern 1 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root2",
+  "label": "Pattern 2 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps2",
+  "label": "Pattern 2 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift2",
+  "label": "Pattern 2 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate2",
+  "label": "Pattern 2 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle2",
+  "label": "Pattern 2 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank2",
+  "label": "Pattern 2 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase2",
+  "label": "Pattern 2 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity2",
+  "label": "Pattern 2 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength2",
+  "label": "Pattern 2 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape2",
+  "label": "Pattern 2 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount2",
+  "label": "Pattern 2 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank2",
+  "label": "Pattern 2 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase2",
+  "label": "Pattern 2 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity2",
+  "label": "Pattern 2 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength2",
+  "label": "Pattern 2 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape2",
+  "label": "Pattern 2 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount2",
+  "label": "Pattern 2 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range2",
+  "label": "Pattern 2 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness2",
+  "label": "Pattern 2 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root3",
+  "label": "Pattern 3 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps3",
+  "label": "Pattern 3 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift3",
+  "label": "Pattern 3 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate3",
+  "label": "Pattern 3 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle3",
+  "label": "Pattern 3 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank3",
+  "label": "Pattern 3 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase3",
+  "label": "Pattern 3 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity3",
+  "label": "Pattern 3 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength3",
+  "label": "Pattern 3 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape3",
+  "label": "Pattern 3 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount3",
+  "label": "Pattern 3 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank3",
+  "label": "Pattern 3 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase3",
+  "label": "Pattern 3 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity3",
+  "label": "Pattern 3 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength3",
+  "label": "Pattern 3 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape3",
+  "label": "Pattern 3 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount3",
+  "label": "Pattern 3 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range3",
+  "label": "Pattern 3 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness3",
+  "label": "Pattern 3 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root4",
+  "label": "Pattern 4 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps4",
+  "label": "Pattern 4 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift4",
+  "label": "Pattern 4 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate4",
+  "label": "Pattern 4 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle4",
+  "label": "Pattern 4 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank4",
+  "label": "Pattern 4 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase4",
+  "label": "Pattern 4 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity4",
+  "label": "Pattern 4 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength4",
+  "label": "Pattern 4 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape4",
+  "label": "Pattern 4 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount4",
+  "label": "Pattern 4 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank4",
+  "label": "Pattern 4 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase4",
+  "label": "Pattern 4 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity4",
+  "label": "Pattern 4 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength4",
+  "label": "Pattern 4 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape4",
+  "label": "Pattern 4 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount4",
+  "label": "Pattern 4 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range4",
+  "label": "Pattern 4 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness4",
+  "label": "Pattern 4 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root5",
+  "label": "Pattern 5 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps5",
+  "label": "Pattern 5 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift5",
+  "label": "Pattern 5 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate5",
+  "label": "Pattern 5 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle5",
+  "label": "Pattern 5 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank5",
+  "label": "Pattern 5 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase5",
+  "label": "Pattern 5 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity5",
+  "label": "Pattern 5 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength5",
+  "label": "Pattern 5 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape5",
+  "label": "Pattern 5 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount5",
+  "label": "Pattern 5 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank5",
+  "label": "Pattern 5 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase5",
+  "label": "Pattern 5 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity5",
+  "label": "Pattern 5 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength5",
+  "label": "Pattern 5 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape5",
+  "label": "Pattern 5 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount5",
+  "label": "Pattern 5 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range5",
+  "label": "Pattern 5 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness5",
+  "label": "Pattern 5 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root6",
+  "label": "Pattern 6 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps6",
+  "label": "Pattern 6 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift6",
+  "label": "Pattern 6 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate6",
+  "label": "Pattern 6 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle6",
+  "label": "Pattern 6 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank6",
+  "label": "Pattern 6 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase6",
+  "label": "Pattern 6 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity6",
+  "label": "Pattern 6 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength6",
+  "label": "Pattern 6 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape6",
+  "label": "Pattern 6 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount6",
+  "label": "Pattern 6 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank6",
+  "label": "Pattern 6 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase6",
+  "label": "Pattern 6 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity6",
+  "label": "Pattern 6 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength6",
+  "label": "Pattern 6 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape6",
+  "label": "Pattern 6 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount6",
+  "label": "Pattern 6 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range6",
+  "label": "Pattern 6 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness6",
+  "label": "Pattern 6 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root7",
+  "label": "Pattern 7 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps7",
+  "label": "Pattern 7 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift7",
+  "label": "Pattern 7 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate7",
+  "label": "Pattern 7 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle7",
+  "label": "Pattern 7 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank7",
+  "label": "Pattern 7 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase7",
+  "label": "Pattern 7 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity7",
+  "label": "Pattern 7 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength7",
+  "label": "Pattern 7 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape7",
+  "label": "Pattern 7 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount7",
+  "label": "Pattern 7 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank7",
+  "label": "Pattern 7 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase7",
+  "label": "Pattern 7 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity7",
+  "label": "Pattern 7 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength7",
+  "label": "Pattern 7 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape7",
+  "label": "Pattern 7 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount7",
+  "label": "Pattern 7 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range7",
+  "label": "Pattern 7 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness7",
+  "label": "Pattern 7 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "root8",
+  "label": "Pattern 8 root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "steps8",
+  "label": "Pattern 8 steps",
+  "unit": "count",
+  "minimum": 16.0,
+  "maximum": 64.0,
+  "default": 16.0
+ },
+ {
+  "key": "shift8",
+  "label": "Pattern 8 shift",
+  "unit": "steps",
+  "minimum": -32.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate8",
+  "label": "Pattern 8 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32",
+   "1/64"
+  ]
+ },
+ {
+  "key": "shuffle8",
+  "label": "Pattern 8 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "onBank8",
+  "label": "Pattern 8 on-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "onPhrase8",
+  "label": "Pattern 8 on-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 24.0
+ },
+ {
+  "key": "onVelocity8",
+  "label": "Pattern 8 on-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "onLength8",
+  "label": "Pattern 8 on-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 40.0
+ },
+ {
+  "key": "onShape8",
+  "label": "Pattern 8 on-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "onAmount8",
+  "label": "Pattern 8 on-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "offBank8",
+  "label": "Pattern 8 off-beat bank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "A",
+   "B"
+  ]
+ },
+ {
+  "key": "offPhrase8",
+  "label": "Pattern 8 off-beat phrase",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 12.0
+ },
+ {
+  "key": "offVelocity8",
+  "label": "Pattern 8 off-beat velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 80.0
+ },
+ {
+  "key": "offLength8",
+  "label": "Pattern 8 off-beat note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "offShape8",
+  "label": "Pattern 8 off-beat variator shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 1.0,
+  "choices": [
+   "Square",
+   "Pulse",
+   "Ramp",
+   "Square x2",
+   "Pulse x2",
+   "Ramp x2",
+   "Square x4",
+   "Pulse x4",
+   "Ramp x4",
+   "Inverted square",
+   "Inverted pulse",
+   "Inverted ramp",
+   "Inverted square x2",
+   "Inverted pulse x2",
+   "Inverted ramp x2",
+   "Inverted square x4",
+   "Inverted pulse x4",
+   "Inverted ramp x4"
+  ]
+ },
+ {
+  "key": "offAmount8",
+  "label": "Pattern 8 off-beat variator amount",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "range8",
+  "label": "Pattern 8 note range",
+  "unit": "",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "minorness8",
+  "label": "Pattern 8 minorness",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ }
+]

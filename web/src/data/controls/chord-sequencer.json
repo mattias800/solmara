@@ -1,0 +1,1129 @@
+[
+ {
+  "key": "pattern",
+  "label": "Pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "midi",
+  "label": "MIDI",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "external",
+  "label": "External trigger",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octave",
+  "label": "Octave",
+  "unit": "count",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "flats",
+  "label": "Flats",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "snap",
+  "label": "Snap",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Bar",
+   "1/2",
+   "1/4",
+   "1/8",
+   "1/16"
+  ]
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ },
+ {
+  "key": "root1",
+  "label": "Pattern 1 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity1",
+  "label": "Pattern 1 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim1",
+  "label": "Pattern 1 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity1",
+  "label": "Pattern 1 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity1",
+  "label": "Pattern 1 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming1",
+  "label": "Pattern 1 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass1",
+  "label": "Pattern 1 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below1",
+  "label": "Pattern 1 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom1",
+  "label": "Pattern 1 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop1",
+  "label": "Pattern 1 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars1",
+  "label": "Pattern 1 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle1",
+  "label": "Pattern 1 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root2",
+  "label": "Pattern 2 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity2",
+  "label": "Pattern 2 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim2",
+  "label": "Pattern 2 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity2",
+  "label": "Pattern 2 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity2",
+  "label": "Pattern 2 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming2",
+  "label": "Pattern 2 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass2",
+  "label": "Pattern 2 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below2",
+  "label": "Pattern 2 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom2",
+  "label": "Pattern 2 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop2",
+  "label": "Pattern 2 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars2",
+  "label": "Pattern 2 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle2",
+  "label": "Pattern 2 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root3",
+  "label": "Pattern 3 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity3",
+  "label": "Pattern 3 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim3",
+  "label": "Pattern 3 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity3",
+  "label": "Pattern 3 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity3",
+  "label": "Pattern 3 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming3",
+  "label": "Pattern 3 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass3",
+  "label": "Pattern 3 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below3",
+  "label": "Pattern 3 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom3",
+  "label": "Pattern 3 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop3",
+  "label": "Pattern 3 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars3",
+  "label": "Pattern 3 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle3",
+  "label": "Pattern 3 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root4",
+  "label": "Pattern 4 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity4",
+  "label": "Pattern 4 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim4",
+  "label": "Pattern 4 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity4",
+  "label": "Pattern 4 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity4",
+  "label": "Pattern 4 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming4",
+  "label": "Pattern 4 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass4",
+  "label": "Pattern 4 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below4",
+  "label": "Pattern 4 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom4",
+  "label": "Pattern 4 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop4",
+  "label": "Pattern 4 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars4",
+  "label": "Pattern 4 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle4",
+  "label": "Pattern 4 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root5",
+  "label": "Pattern 5 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity5",
+  "label": "Pattern 5 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim5",
+  "label": "Pattern 5 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity5",
+  "label": "Pattern 5 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity5",
+  "label": "Pattern 5 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming5",
+  "label": "Pattern 5 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass5",
+  "label": "Pattern 5 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below5",
+  "label": "Pattern 5 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom5",
+  "label": "Pattern 5 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop5",
+  "label": "Pattern 5 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars5",
+  "label": "Pattern 5 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle5",
+  "label": "Pattern 5 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root6",
+  "label": "Pattern 6 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity6",
+  "label": "Pattern 6 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim6",
+  "label": "Pattern 6 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity6",
+  "label": "Pattern 6 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity6",
+  "label": "Pattern 6 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming6",
+  "label": "Pattern 6 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass6",
+  "label": "Pattern 6 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below6",
+  "label": "Pattern 6 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom6",
+  "label": "Pattern 6 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop6",
+  "label": "Pattern 6 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars6",
+  "label": "Pattern 6 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle6",
+  "label": "Pattern 6 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root7",
+  "label": "Pattern 7 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity7",
+  "label": "Pattern 7 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim7",
+  "label": "Pattern 7 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity7",
+  "label": "Pattern 7 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity7",
+  "label": "Pattern 7 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming7",
+  "label": "Pattern 7 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass7",
+  "label": "Pattern 7 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below7",
+  "label": "Pattern 7 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom7",
+  "label": "Pattern 7 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop7",
+  "label": "Pattern 7 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars7",
+  "label": "Pattern 7 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle7",
+  "label": "Pattern 7 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "root8",
+  "label": "Pattern 8 set root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "velocity8",
+  "label": "Pattern 8 velocity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Original",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "trim8",
+  "label": "Pattern 8 velocity trim",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midiVelocity8",
+  "label": "Pattern 8 MIDI to velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "humanizeVelocity8",
+  "label": "Pattern 8 humanize velocity",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "humanizeTiming8",
+  "label": "Pattern 8 humanize timing",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "removeBass8",
+  "label": "Pattern 8 remove bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "Below"
+  ]
+ },
+ {
+  "key": "below8",
+  "label": "Pattern 8 remove below",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 48.0
+ },
+ {
+  "key": "rootBottom8",
+  "label": "Pattern 8 add root bottom",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootTop8",
+  "label": "Pattern 8 add root top",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "bars8",
+  "label": "Pattern 8 bars",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "shuffle8",
+  "label": "Pattern 8 shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ }
+]

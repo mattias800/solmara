@@ -1,0 +1,274 @@
+{
+ "Vintergatan": {
+  "kind": "Wavetable synth",
+  "text": "The Milky Way. From soft pads to heavy bass, with wavetables to draw and shape and modulation you drag onto any knob. Opens your Serum and Vital presets."
+ },
+ "Norrsken": {
+  "kind": "Virtual analogue synth",
+  "text": "The northern lights. A bright, immediate synth for leads, stabs and pads, with a face made to be played."
+ },
+ "Mini Moonbeam": {
+  "kind": "Monosynth",
+  "text": "Three oscillators into a ladder filter, for basses and leads with weight."
+ },
+ "Shy One": {
+  "kind": "Bass monosynth",
+  "text": "One oscillator with a sub, a filter and an arpeggiator. Small, quick and made for basslines."
+ },
+ "Two-Filter Mono": {
+  "kind": "Semi-modular mono",
+  "text": "A high-pass and a low-pass filter that both sing, and two oscillators with a raw edge."
+ },
+ "Titan 303": {
+  "kind": "Acid bass",
+  "text": "One oscillator, a squelching filter and an accent, for acid lines."
+ },
+ "June Bloom": {
+  "kind": "Polysynth",
+  "text": "One oscillator a voice with a sub, and a chorus that makes it wide."
+ },
+ "Juniper Eight": {
+  "kind": "Polysynth",
+  "text": "Eight voices of two oscillators, layered or split across the keys, with an arpeggiator."
+ },
+ "Promise Bloom": {
+  "kind": "Polysynth",
+  "text": "Five voices of two oscillators, with poly-mod for bells, brass and sweeps."
+ },
+ "String Ensemble": {
+  "kind": "String ensemble",
+  "text": "Bass and upper sections, from cello to choir, through a rich ensemble."
+ },
+ "Jet-8000": {
+  "kind": "Digital polysynth",
+  "text": "Eight voices in two parts, with seven oscillator modes, sync and cross modulation."
+ },
+ "Six-Op FM": {
+  "kind": "FM synth",
+  "text": "Six operators and their algorithms, for electric pianos, bells and basses that cut. Opens DX7 voice banks."
+ },
+ "SID": {
+  "kind": "Chip synth",
+  "text": "Three voices with the sound of an 8-bit home computer's chip: pulse, sync, ring modulation and a shared filter."
+ },
+ "Reed Electric Piano": {
+  "kind": "Reed electric piano",
+  "text": "Felt hammers on steel reeds, with tremolo and the bark of a driven preamp."
+ },
+ "Tine Electric Piano": {
+  "kind": "Tine electric piano",
+  "text": "Hammers on tines, a bell in the attack and a stereo vibrato."
+ },
+ "Electric Clavichord": {
+  "kind": "Electric clavichord",
+  "text": "Struck strings and their pickups, from soft to brilliant, for funk that bites."
+ },
+ "Tonewheel Organ": {
+  "kind": "Tonewheel organ",
+  "text": "Ninety-one tonewheels, drawbars, percussion and a chorus-vibrato."
+ },
+ "Leviathan Rig": {
+  "kind": "Guitar rig",
+  "text": "A heavy rig in one device: gate, overdrive, distortion, amp, EQ and cabinet, each switched by itself."
+ },
+ "Djent Amp": {
+  "kind": "Guitar rig",
+  "text": "Tight and heavy: a drive with its own attack, three amp channels, EQ and cabinet."
+ },
+ "Untitled Amp": {
+  "kind": "Guitar rig",
+  "text": "Gate, drive and boost into an amp with two gains, then EQ and cabinet."
+ },
+ "Green Overdrive Pedal": {
+  "kind": "Overdrive",
+  "text": "Lifts the middle of your guitar into two diodes, for a singing push into an amp."
+ },
+ "Metal District Pedal": {
+  "kind": "Distortion",
+  "text": "High gain with an equaliser of its own, from scooped to a wall of mids."
+ },
+ "Lift Pedal": {
+  "kind": "Clean boost",
+  "text": "One transistor that raises the level and the edge of an amp."
+ },
+ "Saucer Fuzz": {
+  "kind": "Fuzz",
+  "text": "Two transistors, germanium or silicon, from smooth to sputtering."
+ },
+ "Mitten Fuzz": {
+  "kind": "Sustaining fuzz",
+  "text": "Four stages of soft clipping and a tone stack, for sustain without end."
+ },
+ "Burrow Distortion": {
+  "kind": "Distortion",
+  "text": "An op-amp that narrows as you turn it up, from crunch to grind."
+ },
+ "Squash Compressor": {
+  "kind": "Compressor",
+  "text": "Evens your playing out, for clean funk and country picking."
+ },
+ "Whiny Shifter": {
+  "kind": "Pitch shifter",
+  "text": "An expression pedal sweeps the pitch between a heel and a toe interval."
+ },
+ "Hush Gate": {
+  "kind": "Noise gate",
+  "text": "Shuts the hiss of a driven amp between notes."
+ },
+ "Comet Flanger": {
+  "kind": "Flanger",
+  "text": "A bucket-brigade flanger for guitars, keys, drums and whole mixes."
+ },
+ "Memento Delay": {
+  "kind": "Delay",
+  "text": "A bucket-brigade echo, with chorus or vibrato on its repeats."
+ },
+ "Teardrop Wah": {
+  "kind": "Wah",
+  "text": "A resonant peak swept by the pedal, an envelope or an LFO."
+ },
+ "Quack Filter": {
+  "kind": "Envelope filter",
+  "text": "The auto-wah, for funk guitar, clavinet and bass."
+ },
+ "Clementine Phaser": {
+  "kind": "Phaser",
+  "text": "Four stages and one knob, for guitars and electric pianos."
+ },
+ "Neon Tremolo": {
+  "kind": "Optical tremolo",
+  "text": "A lamp and a photocell, pulsing like an old amplifier's tremolo."
+ },
+ "Leveltron Opto": {
+  "kind": "Optical leveller",
+  "text": "A lamp and a photocell turn the level down, smooth and slow, through a valve amplifier."
+ },
+ "Danish Blue Compressor": {
+  "kind": "Optical compressor",
+  "text": "Optical compression with a valve make-up stage: fixed, manual or both."
+ },
+ "Quickdraw FET": {
+  "kind": "FET limiter",
+  "text": "A field-effect transistor clamps the peaks fast, its ratios on buttons."
+ },
+ "Desk Glue Bus Compressor": {
+  "kind": "Bus compressor",
+  "text": "Glues a mix bus or a drum group together."
+ },
+ "Mid-Century Vari-Mu": {
+  "kind": "Variable-mu compressor",
+  "text": "Valves that turn down gently, for masters and drum buses."
+ },
+ "Blower Box": {
+  "kind": "Valve compressor",
+  "text": "Compression and valve heat in one, for drums, bass and buses."
+ },
+ "Push-Pull EQ": {
+  "kind": "Passive equaliser",
+  "text": "Boost and cut the same band at once, through a valve make-up amplifier."
+ },
+ "Not Out Class A": {
+  "kind": "Console channel",
+  "text": "A class-A console channel with its transformers, for shaping single tracks."
+ },
+ "Mid-Century Preamp": {
+  "kind": "Valve preamp",
+  "text": "Two triode stages and a transformer, for warmth on any track."
+ },
+ "Swiss Roll Tape": {
+  "kind": "Tape machine",
+  "text": "Onto tape and back: saturation, wow, flutter and hiss."
+ },
+ "June Chorus": {
+  "kind": "Bucket-brigade chorus",
+  "text": "Two delay lines of capacitors, for wide synths and clean guitars."
+ },
+ "Rotary Speaker": {
+  "kind": "Rotating speaker",
+  "text": "A horn and a drum that spin at speeds of their own: slow, fast or stopped."
+ },
+ "Moonladder": {
+  "kind": "Ladder filter",
+  "text": "A transistor ladder low-pass filter for any track."
+ },
+ "Filter": {
+  "kind": "Analogue filters",
+  "text": "Ladders, a diode ladder and more, with an LFO and an envelope follower."
+ },
+ "Low Orbit Echo": {
+  "kind": "Tape echo",
+  "text": "A loop of tape past three playback heads, with a spring reverb after them."
+ },
+ "Gemini Plate": {
+  "kind": "Plate reverb",
+  "text": "A sheet of steel under tension, its decay set by a damper."
+ },
+ "Drip Spring": {
+  "kind": "Spring reverb",
+  "text": "Two or three springs in a tank, as in a guitar amp."
+ },
+ "1978 Digital Hall": {
+  "kind": "Digital hall",
+  "text": "A hall reverb of the late 1970s, modelled as its algorithm."
+ },
+ "1976 Digital Reverb": {
+  "kind": "Early digital reverb",
+  "text": "The first digital reverb, of the mid-1970s, with its echo programs."
+ },
+ "1981 Digital Ambience": {
+  "kind": "Digital reverb",
+  "text": "An early-1980s digital reverb with its plates, halls and rooms."
+ },
+ "Anchor Arpeggiator": {
+  "kind": "Arpeggiator",
+  "text": "An arpeggio in two parts: an anchor on the chord's notes and a line that moves around it."
+ },
+ "Dual Arpeggio": {
+  "kind": "Arpeggiator",
+  "text": "Two arpeggiators side by side, each over its own range of keys."
+ },
+ "Chord Sequencer": {
+  "kind": "Chords",
+  "text": "Sixteen chords on pads, from sets in many styles or written by hand."
+ },
+ "Bassline Generator": {
+  "kind": "Bass lines",
+  "text": "A bass line from an on-beat and an off-beat phrase, varied at a click."
+ },
+ "Poly Sequencer": {
+  "kind": "Step sequencer",
+  "text": "A polyphonic step sequencer, kept in a scale."
+ },
+ "Pattern Mutator": {
+  "kind": "Variations",
+  "text": "Plays a pattern of steps and makes variations of it at a click."
+ },
+ "Note Generator": {
+  "kind": "Generative",
+  "text": "Four lines of Euclidean rhythms whose notes wander in a scale."
+ },
+ "Rhythm Map": {
+  "kind": "Drum patterns",
+  "text": "A map of rhythms: move across it and the beat changes."
+ },
+ "Drum Sequencer": {
+  "kind": "Drum steps",
+  "text": "Eight channels of sixteen steps, each a drum."
+ },
+ "Note Echo": {
+  "kind": "Note delay",
+  "text": "Repeats each note like a delay, its velocity and pitch moving as it goes."
+ },
+ "Scales & Chords": {
+  "kind": "Harmony",
+  "text": "Keeps notes to a scale, and turns one note into a chord."
+ },
+ "Note Tool": {
+  "kind": "Note filter",
+  "text": "Lets through the notes you want, and changes their pitch, length and velocity."
+ },
+ "Random Tool": {
+  "kind": "Chance",
+  "text": "Lets notes through by chance or by a pattern, and varies them."
+ }
+}

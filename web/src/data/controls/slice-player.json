@@ -1,0 +1,112 @@
+[
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.9
+ },
+ {
+  "key": "velocity",
+  "label": "Velocity",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "pitch",
+  "label": "Pitch",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "voices",
+  "label": "Voices",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Poly",
+   "Choke"
+  ]
+ },
+ {
+  "key": "gap",
+  "label": "Gap",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Decay",
+   "Stretch",
+   "Off"
+  ]
+ },
+ {
+  "key": "filterType",
+  "label": "Filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Low-pass",
+   "Band-pass",
+   "High-pass"
+  ]
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 2000.0,
+  "default": 40.0
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "Hz",
+  "minimum": 0.05,
+  "maximum": 20.0,
+  "default": 1.0
+ },
+ {
+  "key": "lfoAmount",
+  "label": "LFO to cutoff",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ }
+]

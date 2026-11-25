@@ -1,0 +1,96 @@
+[
+ {
+  "key": "amount",
+  "label": "Amount",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 150.0
+ },
+ {
+  "key": "depthDb",
+  "label": "Depth",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 30.0,
+  "default": 18.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2000.0,
+  "default": 20.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 500.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "stereo",
+  "label": "Stereo",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Follow it",
+   "Stereo",
+   "L / R",
+   "M / S"
+  ]
+ },
+ {
+  "key": "balance",
+  "label": "Balance",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "clashOnly",
+  "label": "Only where they clash",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "freeze",
+  "label": "Freeze",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

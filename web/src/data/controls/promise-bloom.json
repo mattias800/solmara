@@ -1,0 +1,518 @@
+[
+ {
+  "key": "polyModFilterEnv",
+  "label": "Poly-Mod filter envelope",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "polyModOscB",
+  "label": "Poly-Mod oscillator B",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "polyModFreqA",
+  "label": "Poly-Mod to frequency A",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "polyModPwA",
+  "label": "Poly-Mod to pulse width A",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "polyModFilter",
+  "label": "Poly-Mod to filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO frequency",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lfoSaw",
+  "label": "LFO saw",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lfoTriangle",
+  "label": "LFO triangle",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lfoSquare",
+  "label": "LFO square",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "wheelMix",
+  "label": "Wheel-Mod source mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "wheelFreqA",
+  "label": "Wheel-Mod to frequency A",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "wheelFreqB",
+  "label": "Wheel-Mod to frequency B",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "wheelPwA",
+  "label": "Wheel-Mod to pulse width A",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "wheelPwB",
+  "label": "Wheel-Mod to pulse width B",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "wheelFilter",
+  "label": "Wheel-Mod to filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscAFreq",
+  "label": "Oscillator A frequency",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 48.0,
+  "default": 24.0
+ },
+ {
+  "key": "oscASaw",
+  "label": "Oscillator A saw",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscAPulse",
+  "label": "Oscillator A pulse",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscAPw",
+  "label": "Oscillator A pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "oscASync",
+  "label": "Oscillator A sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscBFreq",
+  "label": "Oscillator B frequency",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 48.0,
+  "default": 24.0
+ },
+ {
+  "key": "oscBFine",
+  "label": "Oscillator B fine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 1.0
+ },
+ {
+  "key": "oscBSaw",
+  "label": "Oscillator B saw",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscBTriangle",
+  "label": "Oscillator B triangle",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscBPulse",
+  "label": "Oscillator B pulse",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscBPw",
+  "label": "Oscillator B pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "oscBLow",
+  "label": "Oscillator B low frequency",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscBKeyboard",
+  "label": "Oscillator B keyboard",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "oscALevel",
+  "label": "Oscillator A level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "oscBLevel",
+  "label": "Oscillator B level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "noiseLevel",
+  "label": "Noise level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterEnvAmount",
+  "label": "Filter envelope amount",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterKeyboard",
+  "label": "Filter keyboard",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "filterAttack",
+  "label": "Filter attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterDecay",
+  "label": "Filter decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "filterSustain",
+  "label": "Filter sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "filterRelease",
+  "label": "Filter release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "ampAttack",
+  "label": "Amplifier attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ampDecay",
+  "label": "Amplifier decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "ampSustain",
+  "label": "Amplifier sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "ampRelease",
+  "label": "Amplifier release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "glide",
+  "label": "Glide",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "unison",
+  "label": "Unison",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "unisonDetune",
+  "label": "Unison detune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tune",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "bendRange",
+  "label": "Bend range",
+  "unit": "semitones",
+  "minimum": 1.0,
+  "maximum": 12.0,
+  "default": 2.0
+ },
+ {
+  "key": "bender",
+  "label": "Pitch wheel",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "modWheel",
+  "label": "Mod wheel",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

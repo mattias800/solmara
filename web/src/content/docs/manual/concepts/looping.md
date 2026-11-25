@@ -1,0 +1,39 @@
+---
+title: How clips loop
+description: What a loop pass is, what you edit when a clip loops, and what dragging its edge does.
+---
+
+A looped clip plays the same material again and again, as many times as fits in its length. That material is one **pass**: a one-bar drum beat looped over four bars plays its pass four times.
+
+![A one-bar beat looped over four bars. The notches along its name strip mark where each pass begins.](../../../../assets/clips/arrangement.webp)
+
+## One pass, many repeats
+
+When you loop a clip, Solmara remembers how long one pass is. The first pass is the real content: the notes, or the curve, that you edit. Every pass after it is a repeat of the first, drawn a shade darker behind a notch in the clip's name strip.
+
+Because the repeats follow the first pass, a change you make once is heard every time round: move a hi-hat in the first bar, and it moves in all four.
+
+## Length and pass length
+
+A looped clip has two lengths:
+
+- **Its length:** how long it lasts on the arrangement.
+- **Its pass length:** how long one pass is.
+
+Dragging the lower half of the right edge changes the clip's length and keeps the pass the same, so you get more or fewer repeats. The inspector shows the pass length next to **Loop**, and you can type a new one there.
+
+A clip doesn't have to hold a whole number of passes. Stop it halfway through a pass and only the first half of that pass plays.
+
+## Stopping the loop
+
+Dragging the upper half of the right edge makes a clip longer or shorter **without** looping. On a looped clip, that drag also stops the loop: the clip then plays its content once, and the rest of its length is silent.
+
+You can turn a clip's loop on and off at any time with **Loop clip** and **Stop looping clip** in its right-click menu. Your notes are kept either way.
+
+## Which clips loop
+
+For now, MIDI clips and automation clips loop. Other kinds of clip don't yet.
+
+## Clip loops and the song's loop
+
+A clip's loop is separate from the **loop** in the top bar, which makes the whole song, or a part of it, play round and round. A looped clip repeats inside its own length while the song moves on.

@@ -1,0 +1,737 @@
+[
+ {
+  "key": "feet1",
+  "label": "I feet",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 1.0,
+  "choices": [
+   "16'",
+   "8'",
+   "5 1/3'",
+   "4'",
+   "2 2/3'",
+   "2'"
+  ]
+ },
+ {
+  "key": "pw1",
+  "label": "I pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwm1",
+  "label": "I PWM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwmSpeed1",
+  "label": "I PWM speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "square1",
+  "label": "I square",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "saw1",
+  "label": "I saw",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "noise1",
+  "label": "I noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "hpf1",
+  "label": "I high-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "hpfRes1",
+  "label": "I high-pass resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lpf1",
+  "label": "I low-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lpfRes1",
+  "label": "I low-pass resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "fenvIl1",
+  "label": "I VCF initial level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "fenvAl1",
+  "label": "I VCF attack level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "fenvAttack1",
+  "label": "I VCF attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "fenvDecay1",
+  "label": "I VCF decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "fenvRelease1",
+  "label": "I VCF release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vcfLevel1",
+  "label": "I VCF level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "sine1",
+  "label": "I sine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "level1",
+  "label": "I level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "attack1",
+  "label": "I attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "decay1",
+  "label": "I decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "sustain1",
+  "label": "I sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "release1",
+  "label": "I release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "initBrilliance1",
+  "label": "I initial brilliance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "initLevel1",
+  "label": "I initial level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "afterBrilliance1",
+  "label": "I after brilliance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "afterLevel1",
+  "label": "I after level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "feet2",
+  "label": "II feet",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 1.0,
+  "choices": [
+   "16'",
+   "8'",
+   "5 1/3'",
+   "4'",
+   "2 2/3'",
+   "2'"
+  ]
+ },
+ {
+  "key": "pw2",
+  "label": "II pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwm2",
+  "label": "II PWM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwmSpeed2",
+  "label": "II PWM speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "square2",
+  "label": "II square",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "saw2",
+  "label": "II saw",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "noise2",
+  "label": "II noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "hpf2",
+  "label": "II high-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "hpfRes2",
+  "label": "II high-pass resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lpf2",
+  "label": "II low-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.5
+ },
+ {
+  "key": "lpfRes2",
+  "label": "II low-pass resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "fenvIl2",
+  "label": "II VCF initial level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "fenvAl2",
+  "label": "II VCF attack level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "fenvAttack2",
+  "label": "II VCF attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "fenvDecay2",
+  "label": "II VCF decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "fenvRelease2",
+  "label": "II VCF release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vcfLevel2",
+  "label": "II VCF level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "sine2",
+  "label": "II sine",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "level2",
+  "label": "II level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "attack2",
+  "label": "II attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "decay2",
+  "label": "II decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "sustain2",
+  "label": "II sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "release2",
+  "label": "II release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "initBrilliance2",
+  "label": "II initial brilliance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "initLevel2",
+  "label": "II initial level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "afterBrilliance2",
+  "label": "II after brilliance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "afterLevel2",
+  "label": "II after level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "detune",
+  "label": "Detune",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 1.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "brilliance",
+  "label": "Brilliance",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "kbdBrillianceLow",
+  "label": "Keyboard brilliance low",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "kbdBrillianceHigh",
+  "label": "Keyboard brilliance high",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "kbdLevelLow",
+  "label": "Keyboard level low",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "kbdLevelHigh",
+  "label": "Keyboard level high",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "subWave",
+  "label": "Sub-oscillator function",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Saw down",
+   "Saw up",
+   "Square",
+   "Noise"
+  ]
+ },
+ {
+  "key": "subSpeed",
+  "label": "Sub-oscillator speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "subVco",
+  "label": "Sub-oscillator VCO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "subVcf",
+  "label": "Sub-oscillator VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "subVca",
+  "label": "Sub-oscillator VCA",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "touchPitch",
+  "label": "Touch pitch bend",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "afterSpeed",
+  "label": "After touch speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "afterVco",
+  "label": "After touch VCO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "afterVcf",
+  "label": "After touch VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringSpeed",
+  "label": "Ring speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "ringMod",
+  "label": "Ring modulation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringAttack",
+  "label": "Ring attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringDecay",
+  "label": "Ring decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringDepth",
+  "label": "Ring depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamentoMode",
+  "label": "Portamento on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "glissando",
+  "label": "Glissando",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "chorusSpeed",
+  "label": "Chorus/tremolo speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "chorusDepth",
+  "label": "Chorus/tremolo depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "chorus",
+  "label": "Chorus",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "tremolo",
+  "label": "Tremolo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tune",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "key": "compress",
+  "label": "Compress",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "saturation",
+  "label": "Saturation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "character",
+  "label": "Character",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "voice",
+  "label": "Voice",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Fat",
+   "Warm",
+   "Bright"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -20.0,
+  "maximum": 20.0,
+  "default": 0.0
+ },
+ {
+  "key": "autoGain",
+  "label": "Auto gain",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

@@ -1,0 +1,136 @@
+[
+ {
+  "key": "program",
+  "label": "Program",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Reverb",
+   "Delay",
+   "Phase",
+   "Chorus",
+   "Echo",
+   "Space"
+  ]
+ },
+ {
+  "key": "time",
+  "label": "Time",
+  "unit": "s",
+  "minimum": 0.4,
+  "maximum": 4.5,
+  "default": 2.8
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "x0.5",
+   "x1.0",
+   "x1.5",
+   "x2.0"
+  ]
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "x0.25",
+   "x0.33",
+   "x0.5",
+   "Max"
+  ]
+ },
+ {
+  "key": "preDelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 60.0,
+  "default": 40.0
+ },
+ {
+  "key": "delayLeftMs",
+  "label": "Left delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 315.0,
+  "default": 0.0
+ },
+ {
+  "key": "delayRightMs",
+  "label": "Right delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 315.0,
+  "default": 0.0
+ },
+ {
+  "key": "phaseMs",
+  "label": "Phase",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "chorusMode",
+  "label": "Chorus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ]
+ },
+ {
+  "key": "echoMs",
+  "label": "Echo",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 315.0,
+  "default": 0.0
+ },
+ {
+  "key": "noise",
+  "label": "Noise",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

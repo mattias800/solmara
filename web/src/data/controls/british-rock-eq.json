@@ -1,0 +1,146 @@
+[
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "20 dB",
+   "30 dB",
+   "40 dB",
+   "50 dB",
+   "60 dB",
+   "70 dB"
+  ]
+ },
+ {
+  "key": "polarity",
+  "label": "Polarity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 4.0,
+  "choices": [
+   "400 Hz",
+   "250 Hz",
+   "120 Hz",
+   "60 Hz",
+   "Off",
+   "-3 dB",
+   "-6 dB",
+   "-9 dB",
+   "-12 dB",
+   "-15 dB"
+  ]
+ },
+ {
+  "key": "bassGain",
+  "label": "Bass Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "midFreq",
+  "label": "Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 4.0,
+  "choices": [
+   "700 Hz",
+   "1 kHz",
+   "1.4 kHz",
+   "2 kHz",
+   "2.8 kHz",
+   "3.5 kHz",
+   "4.5 kHz",
+   "6 kHz"
+  ]
+ },
+ {
+  "key": "midGain",
+  "label": "Mid Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "midType",
+  "label": "Mid Type",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Trough",
+   "Peak"
+  ]
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 4.0,
+  "choices": [
+   "-16 dB",
+   "-12 dB",
+   "-8 dB",
+   "-4 dB",
+   "0 dB",
+   "+4 dB",
+   "+8 dB",
+   "+12 dB"
+  ]
+ },
+ {
+  "key": "eqIn",
+  "label": "EQ In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

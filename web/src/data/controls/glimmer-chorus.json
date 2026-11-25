@@ -1,0 +1,125 @@
+[
+ {
+  "key": "rate",
+  "label": "Rate",
+  "unit": "Hz",
+  "minimum": 0.01,
+  "maximum": 10.0,
+  "default": 0.6
+ },
+ {
+  "key": "sync",
+  "label": "Sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "division",
+  "label": "Division",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 11.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/16.",
+   "1/8",
+   "1/4T",
+   "1/8.",
+   "1/4",
+   "1/2T",
+   "1/4.",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "depth",
+  "label": "Depth",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "delay1Ms",
+  "label": "Delay 1",
+  "unit": "ms",
+  "minimum": 0.5,
+  "maximum": 40.0,
+  "default": 7.0
+ },
+ {
+  "key": "delay2Ms",
+  "label": "Delay 2",
+  "unit": "ms",
+  "minimum": 0.5,
+  "maximum": 40.0,
+  "default": 14.0
+ },
+ {
+  "key": "voices",
+  "label": "Voice pairs",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 4.0,
+  "default": 2.0
+ },
+ {
+  "key": "feedback",
+  "label": "Feedback",
+  "unit": "linear",
+  "minimum": -0.95,
+  "maximum": 0.95,
+  "default": 0.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2000.0,
+  "default": 20.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 500.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

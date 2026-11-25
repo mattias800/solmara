@@ -1,0 +1,22 @@
+[
+ {
+  "key": "pattern",
+  "label": "Pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

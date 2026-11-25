@@ -1,0 +1,74 @@
+[
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 35.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "drive",
+  "label": "Drive",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 6.9765625
+ },
+ {
+  "key": "amount",
+  "label": "Amount",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 60.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Slow",
+   "Fast"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

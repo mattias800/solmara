@@ -1,0 +1,110 @@
+[
+ {
+  "key": "lowFreq",
+  "label": "Low Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "20 Hz",
+   "30 Hz",
+   "60 Hz",
+   "100 Hz"
+  ]
+ },
+ {
+  "key": "lowBoost",
+  "label": "Low Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowAtten",
+  "label": "Low Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "highFreq",
+  "label": "High Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "16 kHz"
+  ]
+ },
+ {
+  "key": "highBoost",
+  "label": "High Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "bandwidth",
+  "label": "Bandwidth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "attenFreq",
+  "label": "Atten Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "5 kHz",
+   "10 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "highAtten",
+  "label": "High Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "valves",
+  "label": "Valves",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Standard",
+   "Ultra"
+  ]
+ }
+]

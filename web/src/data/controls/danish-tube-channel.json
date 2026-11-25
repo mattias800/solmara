@@ -1,0 +1,338 @@
+[
+ {
+  "key": "order",
+  "label": "Order",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Comp > EQ",
+   "EQ > Comp"
+  ]
+ },
+ {
+  "key": "midSide",
+  "label": "Mid/Side",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "peIn",
+  "label": "Program EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "peLowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "20 Hz",
+   "30 Hz",
+   "60 Hz",
+   "100 Hz"
+  ]
+ },
+ {
+  "key": "peLowBoost",
+  "label": "Low Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peLowAtten",
+  "label": "Low Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peHighFreq",
+  "label": "High Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 9.0,
+  "default": 4.0,
+  "choices": [
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "16 kHz"
+  ]
+ },
+ {
+  "key": "peHighBoost",
+  "label": "High Boost",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peBandwidth",
+  "label": "Bandwidth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peAttenFreq",
+  "label": "Atten Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "5 kHz",
+   "10 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "peHighAtten",
+  "label": "High Atten",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "peOutput",
+  "label": "Program Out",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meIn",
+  "label": "Mid EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "meLowFreq",
+  "label": "Low Peak Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz"
+  ]
+ },
+ {
+  "key": "meLowPeak",
+  "label": "Low Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meMidFreq",
+  "label": "Dip Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "7 kHz"
+  ]
+ },
+ {
+  "key": "meMidDip",
+  "label": "Dip",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meHighFreq",
+  "label": "High Peak Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz"
+  ]
+ },
+ {
+  "key": "meHighPeak",
+  "label": "High Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meOutput",
+  "label": "Mid Out",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "clIn",
+  "label": "Compressor",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "threshold",
+  "label": "Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "ratio",
+  "minimum": 2.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "timing",
+  "label": "Timing",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 2.0,
+  "choices": [
+   "Fixed",
+   "Fixed/Manual",
+   "Manual"
+  ]
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.3
+ },
+ {
+  "key": "scLowCut",
+  "label": "SC Low Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "80 Hz",
+   "220 Hz"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "generation",
+  "label": "Generation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Modern",
+   "Vintage"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Apart",
+   "Linked"
+  ]
+ }
+]

@@ -1,0 +1,52 @@
+---
+title: "1960s Mastering EQ"
+description: "Stereo disc-mastering EQ in the style of a 1960s American label's in-house unit: broad stepped coil bands at full or half speed, mid/side, steep disc-cutting filters."
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+A modelled two-channel seven-band stepped mastering equaliser in the style of the disc-mastering equaliser of a 1960s American record label: the studio unit's passive interleaved coil networks, each band dipping or peaking 1 to 8 dB at its frequency or an octave lower at half speed; left and right or mid and side; steep elliptic disc-cutting filters at 70 Hz and 15 kHz; the make-up amplifier's hard rails and the transformers. At four times the sample rate.
+
+[1960s Mastering EQ on the website](/solmara/effects/#1960s-mastering-eq)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| A 50 Hz | -8 dB to 8 dB | 0 dB |
+| A 130 Hz | -8 dB to 8 dB | 0 dB |
+| A 320 Hz | -8 dB to 8 dB | 0 dB |
+| A 800 Hz | -8 dB to 8 dB | 0 dB |
+| A 2 kHz | -8 dB to 8 dB | 0 dB |
+| A 5 kHz | -8 dB to 8 dB | 0 dB |
+| A 12.5 kHz | -8 dB to 8 dB | 0 dB |
+| A 50 Hz speed | Normal, Half | Normal |
+| A 130 Hz speed | Normal, Half | Normal |
+| A 320 Hz speed | Normal, Half | Normal |
+| A 800 Hz speed | Normal, Half | Normal |
+| A 2 kHz speed | Normal, Half | Normal |
+| A 5 kHz speed | Normal, Half | Normal |
+| A 12.5 kHz speed | Normal, Half | Normal |
+| A EQ | Out, In | In |
+| A output | -8 dB to 8 dB | 0 dB |
+| B 50 Hz | -8 dB to 8 dB | 0 dB |
+| B 130 Hz | -8 dB to 8 dB | 0 dB |
+| B 320 Hz | -8 dB to 8 dB | 0 dB |
+| B 800 Hz | -8 dB to 8 dB | 0 dB |
+| B 2 kHz | -8 dB to 8 dB | 0 dB |
+| B 5 kHz | -8 dB to 8 dB | 0 dB |
+| B 12.5 kHz | -8 dB to 8 dB | 0 dB |
+| B 50 Hz speed | Normal, Half | Normal |
+| B 130 Hz speed | Normal, Half | Normal |
+| B 320 Hz speed | Normal, Half | Normal |
+| B 800 Hz speed | Normal, Half | Normal |
+| B 2 kHz speed | Normal, Half | Normal |
+| B 5 kHz speed | Normal, Half | Normal |
+| B 12.5 kHz speed | Normal, Half | Normal |
+| B EQ | Out, In | In |
+| B output | -8 dB to 8 dB | 0 dB |
+| Filter | Off, High pass, Low pass, Band pass | Off |
+| Channels | Left/right, Mid/side | Left/right |
+| Link | Off, On | On |

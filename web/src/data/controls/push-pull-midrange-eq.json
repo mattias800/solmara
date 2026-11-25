@@ -1,0 +1,101 @@
+[
+ {
+  "key": "lowFreq",
+  "label": "Low Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz"
+  ]
+ },
+ {
+  "key": "lowPeak",
+  "label": "Low Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midFreq",
+  "label": "Dip Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "7 kHz"
+  ]
+ },
+ {
+  "key": "midDip",
+  "label": "Dip",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "highFreq",
+  "label": "High Frequency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz"
+  ]
+ },
+ {
+  "key": "highPeak",
+  "label": "High Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "valves",
+  "label": "Valves",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Standard",
+   "Ultra"
+  ]
+ }
+]

@@ -1,0 +1,246 @@
+[
+ {
+  "key": "xoLow",
+  "label": "Low X-Over",
+  "unit": "Hz",
+  "minimum": 60.0,
+  "maximum": 300.0,
+  "default": 175.0
+ },
+ {
+  "key": "xoLowRange",
+  "label": "Low Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "x1",
+   "x4"
+  ]
+ },
+ {
+  "key": "xoHigh",
+  "label": "High X-Over",
+  "unit": "Hz",
+  "minimum": 1200.0,
+  "maximum": 6000.0,
+  "default": 3600.0
+ },
+ {
+  "key": "lowThreshold",
+  "label": "Low Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowRatio",
+  "label": "Low Ratio",
+  "unit": "ratio",
+  "minimum": 1.5,
+  "maximum": 10.0,
+  "default": 2.8
+ },
+ {
+  "key": "lowAttack",
+  "label": "Low Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowRelease",
+  "label": "Low Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowGain",
+  "label": "Low Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.15
+ },
+ {
+  "key": "lowMute",
+  "label": "Low Mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "midThreshold",
+  "label": "Mid Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "midRatio",
+  "label": "Mid Ratio",
+  "unit": "ratio",
+  "minimum": 1.5,
+  "maximum": 10.0,
+  "default": 2.8
+ },
+ {
+  "key": "midAttack",
+  "label": "Mid Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "midRelease",
+  "label": "Mid Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "midGain",
+  "label": "Mid Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.15
+ },
+ {
+  "key": "midMute",
+  "label": "Mid Mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "highThreshold",
+  "label": "High Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "highRatio",
+  "label": "High Ratio",
+  "unit": "ratio",
+  "minimum": 1.5,
+  "maximum": 10.0,
+  "default": 2.8
+ },
+ {
+  "key": "highAttack",
+  "label": "High Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "highRelease",
+  "label": "High Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "highGain",
+  "label": "High Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.15
+ },
+ {
+  "key": "highMute",
+  "label": "High Mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "balance",
+  "label": "Balance",
+  "unit": "dB",
+  "minimum": -1.5,
+  "maximum": 1.5,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.4
+ },
+ {
+  "key": "compIn",
+  "label": "Compression",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "midSide",
+  "label": "Mid/Side",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Apart",
+   "Linked"
+  ]
+ }
+]

@@ -1,0 +1,360 @@
+[
+ {
+  "key": "a50",
+  "label": "A 50 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a130",
+  "label": "A 130 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a320",
+  "label": "A 320 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a800",
+  "label": "A 800 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a2k",
+  "label": "A 2 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a5k",
+  "label": "A 5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a12k",
+  "label": "A 12.5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "a50Half",
+  "label": "A 50 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a130Half",
+  "label": "A 130 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a320Half",
+  "label": "A 320 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a800Half",
+  "label": "A 800 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a2kHalf",
+  "label": "A 2 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a5kHalf",
+  "label": "A 5 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "a12kHalf",
+  "label": "A 12.5 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "aIn",
+  "label": "A EQ",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "aOutput",
+  "label": "A output",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b50",
+  "label": "B 50 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b130",
+  "label": "B 130 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b320",
+  "label": "B 320 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b800",
+  "label": "B 800 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b2k",
+  "label": "B 2 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b5k",
+  "label": "B 5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b12k",
+  "label": "B 12.5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "b50Half",
+  "label": "B 50 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b130Half",
+  "label": "B 130 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b320Half",
+  "label": "B 320 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b800Half",
+  "label": "B 800 Hz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b2kHalf",
+  "label": "B 2 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b5kHalf",
+  "label": "B 5 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "b12kHalf",
+  "label": "B 12.5 kHz speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Half"
+  ]
+ },
+ {
+  "key": "bIn",
+  "label": "B EQ",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "bOutput",
+  "label": "B output",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "filter",
+  "label": "Filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "High pass",
+   "Low pass",
+   "Band pass"
+  ]
+ },
+ {
+  "key": "stereo",
+  "label": "Channels",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Left/right",
+   "Mid/side"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

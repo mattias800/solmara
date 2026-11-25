@@ -1,0 +1,102 @@
+[
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "tremoloDepth",
+  "label": "Tremolo depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "tremoloRate",
+  "label": "Tremolo rate",
+  "unit": "Hz",
+  "minimum": 1.0,
+  "maximum": 15.0,
+  "default": 6.1
+ },
+ {
+  "key": "tone",
+  "label": "Tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.8
+ },
+ {
+  "key": "hardness",
+  "label": "Hardness",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.2
+ },
+ {
+  "key": "bark",
+  "label": "Bark",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.8
+ },
+ {
+  "key": "dynamics",
+  "label": "Dynamics",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.72
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "damper",
+  "label": "Damper",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "noise",
+  "label": "Key noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "speaker",
+  "label": "Output",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Line",
+   "Speakers"
+  ]
+ },
+ {
+  "key": "tune",
+  "label": "Tuning",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ }
+]

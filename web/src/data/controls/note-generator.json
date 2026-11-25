@@ -1,0 +1,750 @@
+[
+ {
+  "key": "baseKey",
+  "label": "Base key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "globalSteps",
+  "label": "Global steps",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 16.0
+ },
+ {
+  "key": "playMode",
+  "label": "Play mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Seq",
+   "Key"
+  ]
+ },
+ {
+  "key": "masterVary",
+  "label": "Master vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 200.0,
+  "default": 100.0
+ },
+ {
+  "key": "freezeStart",
+  "label": "Freeze start",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 1.0
+ },
+ {
+  "key": "freezeLength",
+  "label": "Freeze length",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 32.0,
+  "default": 0.0
+ },
+ {
+  "key": "freezeCycle",
+  "label": "Freeze cycle",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 9999.0,
+  "default": 0.0
+ },
+ {
+  "key": "outputMode",
+  "label": "Output mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Poly",
+   "Mono High",
+   "Mono Low",
+   "Mono Last",
+   "Mono Line"
+  ]
+ },
+ {
+  "key": "toScale",
+  "label": "To scale",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "scaleKey",
+  "label": "Scale key",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 12.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B",
+   "Base"
+  ]
+ },
+ {
+  "key": "scale",
+  "label": "Scale",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Major",
+   "Minor",
+   "Lydian",
+   "Mixolydian",
+   "Dorian",
+   "Phrygian",
+   "Locrian",
+   "Harmonic Minor",
+   "Melodic Minor",
+   "Major Pentatonic",
+   "Minor Pentatonic",
+   "Hemi Pentatonic",
+   "Dim Half-Whole",
+   "Dim Whole-Half",
+   "Whole Tone",
+   "Blues"
+  ]
+ },
+ {
+  "key": "octave",
+  "label": "Octave",
+  "unit": "oct",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1On",
+  "label": "Line 1 on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "line1Steps",
+  "label": "Line 1 steps",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 16.0
+ },
+ {
+  "key": "line1Rate",
+  "label": "Line 1 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 13.0,
+  "default": 7.0,
+  "choices": [
+   "1/2",
+   "3/8",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "Shuffle",
+   "1/16T",
+   "1/32",
+   "1/32T",
+   "1/64",
+   "1/128"
+  ]
+ },
+ {
+  "key": "line1Shift",
+  "label": "Line 1 shift",
+  "unit": "steps",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1Pattern",
+  "label": "Line 1 pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 8.0
+ },
+ {
+  "key": "line1PatternVary",
+  "label": "Line 1 pattern vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1Bias",
+  "label": "Line 1 bias",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1Length",
+  "label": "Line 1 length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 200.0,
+  "default": 80.0
+ },
+ {
+  "key": "line1LengthVary",
+  "label": "Line 1 length vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1Velocity",
+  "label": "Line 1 velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "line1VelocityVary",
+  "label": "Line 1 velocity vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1PitchVary",
+  "label": "Line 1 pitch vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "line1Spread",
+  "label": "Line 1 pitch spread",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line1RangeHigh",
+  "label": "Line 1 range high",
+  "unit": "st",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "line1RangeLow",
+  "label": "Line 1 range low",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 0.0,
+  "default": -12.0
+ },
+ {
+  "key": "line2On",
+  "label": "Line 2 on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "line2Steps",
+  "label": "Line 2 steps",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 16.0
+ },
+ {
+  "key": "line2Rate",
+  "label": "Line 2 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 13.0,
+  "default": 7.0,
+  "choices": [
+   "1/2",
+   "3/8",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "Shuffle",
+   "1/16T",
+   "1/32",
+   "1/32T",
+   "1/64",
+   "1/128"
+  ]
+ },
+ {
+  "key": "line2Shift",
+  "label": "Line 2 shift",
+  "unit": "steps",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2Pattern",
+  "label": "Line 2 pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 6.0
+ },
+ {
+  "key": "line2PatternVary",
+  "label": "Line 2 pattern vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2Bias",
+  "label": "Line 2 bias",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2Length",
+  "label": "Line 2 length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 200.0,
+  "default": 80.0
+ },
+ {
+  "key": "line2LengthVary",
+  "label": "Line 2 length vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2Velocity",
+  "label": "Line 2 velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "line2VelocityVary",
+  "label": "Line 2 velocity vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2PitchVary",
+  "label": "Line 2 pitch vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "line2Spread",
+  "label": "Line 2 pitch spread",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line2RangeHigh",
+  "label": "Line 2 range high",
+  "unit": "st",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "line2RangeLow",
+  "label": "Line 2 range low",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 0.0,
+  "default": -12.0
+ },
+ {
+  "key": "line2Offset",
+  "label": "Line 2 offset",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "line3On",
+  "label": "Line 3 on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "line3Steps",
+  "label": "Line 3 steps",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 16.0
+ },
+ {
+  "key": "line3Rate",
+  "label": "Line 3 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 13.0,
+  "default": 7.0,
+  "choices": [
+   "1/2",
+   "3/8",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "Shuffle",
+   "1/16T",
+   "1/32",
+   "1/32T",
+   "1/64",
+   "1/128"
+  ]
+ },
+ {
+  "key": "line3Shift",
+  "label": "Line 3 shift",
+  "unit": "steps",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3Pattern",
+  "label": "Line 3 pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 5.0
+ },
+ {
+  "key": "line3PatternVary",
+  "label": "Line 3 pattern vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3Bias",
+  "label": "Line 3 bias",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3Length",
+  "label": "Line 3 length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 200.0,
+  "default": 80.0
+ },
+ {
+  "key": "line3LengthVary",
+  "label": "Line 3 length vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3Velocity",
+  "label": "Line 3 velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "line3VelocityVary",
+  "label": "Line 3 velocity vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3PitchVary",
+  "label": "Line 3 pitch vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "line3Spread",
+  "label": "Line 3 pitch spread",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line3RangeHigh",
+  "label": "Line 3 range high",
+  "unit": "st",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "line3RangeLow",
+  "label": "Line 3 range low",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 0.0,
+  "default": -12.0
+ },
+ {
+  "key": "line3Offset",
+  "label": "Line 3 offset",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 7.0
+ },
+ {
+  "key": "line4On",
+  "label": "Line 4 on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "line4Steps",
+  "label": "Line 4 steps",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 16.0
+ },
+ {
+  "key": "line4Rate",
+  "label": "Line 4 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 13.0,
+  "default": 7.0,
+  "choices": [
+   "1/2",
+   "3/8",
+   "1/4",
+   "3/16",
+   "1/4T",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "Shuffle",
+   "1/16T",
+   "1/32",
+   "1/32T",
+   "1/64",
+   "1/128"
+  ]
+ },
+ {
+  "key": "line4Shift",
+  "label": "Line 4 shift",
+  "unit": "steps",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4Pattern",
+  "label": "Line 4 pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 32.0,
+  "default": 3.0
+ },
+ {
+  "key": "line4PatternVary",
+  "label": "Line 4 pattern vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4Bias",
+  "label": "Line 4 bias",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4Length",
+  "label": "Line 4 length",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 200.0,
+  "default": 80.0
+ },
+ {
+  "key": "line4LengthVary",
+  "label": "Line 4 length vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4Velocity",
+  "label": "Line 4 velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "line4VelocityVary",
+  "label": "Line 4 velocity vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4PitchVary",
+  "label": "Line 4 pitch vary",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "line4Spread",
+  "label": "Line 4 pitch spread",
+  "unit": "%",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "line4RangeHigh",
+  "label": "Line 4 range high",
+  "unit": "st",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "line4RangeLow",
+  "label": "Line 4 range low",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 0.0,
+  "default": -12.0
+ },
+ {
+  "key": "line4Offset",
+  "label": "Line 4 offset",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": -12.0
+ },
+ {
+  "key": "shuffle",
+  "label": "Shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 66.66666666666667
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "key": "gainDb",
+  "label": "Gain",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "pan",
+  "label": "Pan",
+  "unit": "position",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "dc",
+  "label": "DC offset",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ }
+]

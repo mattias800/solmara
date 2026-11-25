@@ -1,0 +1,100 @@
+/* The website as pages (25 November 2026): its sections, the device cards
+   and pages, and the words about a subject. Built on site.css. */
+:root { --manual: #8fb3d9; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 16px; z-index: 10; background: var(--plate); padding: 8px 12px; border-radius: 6px; }
+.nav { z-index: 2; }
+.nav-links a[aria-current="page"] { color: var(--text); box-shadow: 0 1px 0 var(--gold); }
+.nav-links a.manual-link { color: var(--manual); }
+.nav-links a.manual-link:hover { color: #c3d7ec; }
+
+/* A page's header: the sky as a band, the page's name under the nav. */
+.page-hero .hero-sky { background-position: 62% 30%; }
+.page-hero .hero-fade { background: linear-gradient(to bottom, rgba(8, 9, 12, 0.45) 0%, rgba(8, 9, 12, 0.6) 55%, var(--night) 100%); }
+.page-head { position: relative; max-width: 1032px; margin: 0 auto; padding: 40px 16px 56px; display: grid; gap: 14px; }
+.page-head h1 { margin: 0; text-align: left; max-width: 20ch; font-size: clamp(44px, 6vw, 76px); }
+.page-head .lede { margin: 0; text-align: left; max-width: 60ch; }
+.eyebrow { margin: 0; font: 400 12px/1.4 "Geist Mono", monospace; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+main > section:first-child { padding-top: 24px; }
+h2, h3 { text-wrap: balance; }
+
+/* Doors on the home page. */
+.doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
+.door { display: grid; gap: 8px; align-content: start; padding: 24px; border-radius: 12px; border: 1px solid var(--line); background: var(--plate); color: var(--text); }
+.door:hover { border-color: #3a3846; color: var(--text); }
+.door h3 { margin: 0; font-size: 28px; font-weight: 600; line-height: 1.1; }
+.door p { margin: 0; color: var(--muted); font-size: 15px; }
+.door .go { color: var(--gold); font-size: 14px; }
+
+/* Filters over a grid of devices. */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 32px; }
+.chip { font: 400 14px/1 "Geist", system-ui, sans-serif; padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--soft); background: transparent; cursor: pointer; }
+.chip:hover { border-color: #3a3846; color: var(--text); }
+.chip[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: var(--night); }
+.chip small { font: 400 11px "Geist Mono", monospace; opacity: 0.75; margin-left: 4px; }
+.chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* Device cards, each a link to a page or a place on one. */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 40px 28px; }
+.card { display: grid; gap: 6px; align-content: start; color: var(--text); }
+.card:hover { color: var(--text); }
+.card:hover h3 { color: var(--gold-bright); }
+.card .shot { aspect-ratio: 16 / 10; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+.card .shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45); }
+.card h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.1; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; }
+.kind { margin: 0; font: 400 12px/1.4 "Geist Mono", monospace; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.wip { display: inline-block; margin-left: 8px; vertical-align: 3px; font: 400 10px/1 "Geist Mono", monospace; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft); border: 1px dashed var(--faint); border-radius: 4px; padding: 4px 6px; }
+
+/* A family's page: a section a group, a row a device. */
+.family { padding-top: 96px; }
+.family > h2 { margin-bottom: 8px; }
+.family > .intro { margin-bottom: 40px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; font-size: 15px; }
+.rows { display: grid; gap: 64px; }
+.row { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px; align-items: center; scroll-margin-top: 24px; }
+.row .shot img { display: block; width: auto; height: auto; max-width: 100%; max-height: 420px; border-radius: 8px; border: 1px solid var(--line); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45); }
+.row h3 { margin: 4px 0 10px; font-size: 32px; font-weight: 600; line-height: 1.1; }
+.row p { margin: 0; color: var(--muted); font-size: 15px; }
+.row p + p { margin-top: 10px; }
+.row:target h3 { color: var(--gold-bright); }
+@media (max-width: 760px) { .row { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+
+/* A device's own page. */
+.crumbs { margin: 0; font-size: 14px; color: var(--faint); }
+.crumbs a { color: var(--muted); }
+.facts-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.facts-row li { font: 400 12px/1 "Geist Mono", monospace; color: var(--soft); border: 1px solid var(--line); border-radius: 4px; padding: 7px 9px; }
+.big-face { margin: 0; }
+.big-face img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55); }
+.device-body { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 40px; margin-top: 48px; }
+.device-body h2 { font-size: 34px; }
+.device-body p { margin: 0 0 14px; color: var(--soft); max-width: 65ch; }
+.aside { display: grid; gap: 16px; align-content: start; }
+.aside .box { border: 1px solid var(--line); border-radius: 12px; padding: 20px; background: var(--plate); display: grid; gap: 8px; }
+.aside .box h3 { margin: 0; font-size: 22px; font-weight: 600; }
+.aside .box p { margin: 0; color: var(--muted); font-size: 14px; }
+.aside .box ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 15px; }
+.aside .manual { background: #121a24; border-color: #26374a; }
+.aside .manual h3 { color: var(--manual); }
+.listen { display: grid; gap: 14px; margin-top: 28px; }
+.listen audio { width: 100%; }
+.listen figure { margin: 0; display: grid; gap: 6px; }
+.listen figcaption { font-size: 14px; color: var(--soft); }
+.siblings { display: flex; justify-content: space-between; gap: 16px; margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
+@media (max-width: 820px) { .device-body { grid-template-columns: minmax(0, 1fr); } }
+
+/* Words about a subject (AI, agents). */
+.prose { max-width: 720px; }
+.prose p, .prose li { color: var(--soft); }
+.prose h2 { margin-top: 72px; }
+.prose h3 { margin: 32px 0 8px; font-size: 28px; font-weight: 600; }
+.prose ul { padding-left: 20px; display: grid; gap: 6px; }
+.prose code { font: 400 0.88em "Geist Mono", monospace; background: var(--plate); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+.prose pre { background: var(--plate); border: 1px solid var(--line); border-radius: 8px; padding: 16px; overflow-x: auto; font: 400 13px/1.6 "Geist Mono", monospace; color: var(--soft); }
+.callout { border-left: 2px solid var(--gold); padding: 4px 0 4px 18px; color: var(--soft); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; margin-top: 32px; }
+.feature { border: 1px solid var(--line); border-radius: 12px; padding: 24px; display: grid; gap: 8px; align-content: start; background: var(--plate); }
+.feature h3 { margin: 0; font-size: 26px; font-weight: 600; line-height: 1.15; }
+.feature p { margin: 0; color: var(--muted); font-size: 15px; }
+.feature .in-manual { font-size: 14px; color: var(--manual); }

@@ -1,0 +1,958 @@
+[
+ {
+  "key": "band1On",
+  "label": "Band 1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band1Type",
+  "label": "Band 1 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band1Freq",
+  "label": "Band 1 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 30.0
+ },
+ {
+  "key": "band1Gain",
+  "label": "Band 1 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band1Q",
+  "label": "Band 1 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band2On",
+  "label": "Band 2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band2Type",
+  "label": "Band 2 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 1.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band2Freq",
+  "label": "Band 2 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 100.0
+ },
+ {
+  "key": "band2Gain",
+  "label": "Band 2 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band2Q",
+  "label": "Band 2 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band3On",
+  "label": "Band 3",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band3Type",
+  "label": "Band 3 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band3Freq",
+  "label": "Band 3 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 250.0
+ },
+ {
+  "key": "band3Gain",
+  "label": "Band 3 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band3Q",
+  "label": "Band 3 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band4On",
+  "label": "Band 4",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band4Type",
+  "label": "Band 4 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band4Freq",
+  "label": "Band 4 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 500.0
+ },
+ {
+  "key": "band4Gain",
+  "label": "Band 4 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band4Q",
+  "label": "Band 4 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band5On",
+  "label": "Band 5",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band5Type",
+  "label": "Band 5 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band5Freq",
+  "label": "Band 5 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 2000.0
+ },
+ {
+  "key": "band5Gain",
+  "label": "Band 5 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band5Q",
+  "label": "Band 5 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band6On",
+  "label": "Band 6",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band6Type",
+  "label": "Band 6 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 2.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band6Freq",
+  "label": "Band 6 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 5000.0
+ },
+ {
+  "key": "band6Gain",
+  "label": "Band 6 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band6Q",
+  "label": "Band 6 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band7On",
+  "label": "Band 7",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band7Type",
+  "label": "Band 7 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 4.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band7Freq",
+  "label": "Band 7 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 8000.0
+ },
+ {
+  "key": "band7Gain",
+  "label": "Band 7 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band7Q",
+  "label": "Band 7 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "band8On",
+  "label": "Band 8",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band8Type",
+  "label": "Band 8 type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 5.0,
+  "choices": [
+   "Low cut",
+   "Low shelf",
+   "Bell",
+   "Notch",
+   "High shelf",
+   "High cut"
+  ]
+ },
+ {
+  "key": "band8Freq",
+  "label": "Band 8 frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 18000.0
+ },
+ {
+  "key": "band8Gain",
+  "label": "Band 8 gain",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "band8Q",
+  "label": "Band 8 Q",
+  "unit": "Q",
+  "minimum": 0.1,
+  "maximum": 18.0,
+  "default": 0.71
+ },
+ {
+  "key": "gainDb",
+  "label": "Output gain",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "band1Dynamic",
+  "label": "Band 1 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band1Threshold",
+  "label": "Band 1 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band1Range",
+  "label": "Band 1 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band1Ratio",
+  "label": "Band 1 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band1Attack",
+  "label": "Band 1 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band1Release",
+  "label": "Band 1 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band2Dynamic",
+  "label": "Band 2 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band2Threshold",
+  "label": "Band 2 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band2Range",
+  "label": "Band 2 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band2Ratio",
+  "label": "Band 2 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band2Attack",
+  "label": "Band 2 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band2Release",
+  "label": "Band 2 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band3Dynamic",
+  "label": "Band 3 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band3Threshold",
+  "label": "Band 3 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band3Range",
+  "label": "Band 3 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band3Ratio",
+  "label": "Band 3 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band3Attack",
+  "label": "Band 3 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band3Release",
+  "label": "Band 3 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band4Dynamic",
+  "label": "Band 4 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band4Threshold",
+  "label": "Band 4 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band4Range",
+  "label": "Band 4 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band4Ratio",
+  "label": "Band 4 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band4Attack",
+  "label": "Band 4 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band4Release",
+  "label": "Band 4 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band5Dynamic",
+  "label": "Band 5 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band5Threshold",
+  "label": "Band 5 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band5Range",
+  "label": "Band 5 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band5Ratio",
+  "label": "Band 5 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band5Attack",
+  "label": "Band 5 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band5Release",
+  "label": "Band 5 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band6Dynamic",
+  "label": "Band 6 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band6Threshold",
+  "label": "Band 6 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band6Range",
+  "label": "Band 6 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band6Ratio",
+  "label": "Band 6 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band6Attack",
+  "label": "Band 6 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band6Release",
+  "label": "Band 6 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band7Dynamic",
+  "label": "Band 7 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band7Threshold",
+  "label": "Band 7 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band7Range",
+  "label": "Band 7 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band7Ratio",
+  "label": "Band 7 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band7Attack",
+  "label": "Band 7 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band7Release",
+  "label": "Band 7 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band8Dynamic",
+  "label": "Band 8 dynamic",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "band8Threshold",
+  "label": "Band 8 threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -24.0
+ },
+ {
+  "key": "band8Range",
+  "label": "Band 8 dynamic range",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": -6.0
+ },
+ {
+  "key": "band8Ratio",
+  "label": "Band 8 ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 20.0,
+  "default": 4.0
+ },
+ {
+  "key": "band8Attack",
+  "label": "Band 8 attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 500.0,
+  "default": 10.0
+ },
+ {
+  "key": "band8Release",
+  "label": "Band 8 release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 120.0
+ },
+ {
+  "key": "band1Channel",
+  "label": "Band 1 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band2Channel",
+  "label": "Band 2 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band3Channel",
+  "label": "Band 3 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band4Channel",
+  "label": "Band 4 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band5Channel",
+  "label": "Band 5 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band6Channel",
+  "label": "Band 6 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band7Channel",
+  "label": "Band 7 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "band8Channel",
+  "label": "Band 8 channel",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Stereo",
+   "Mid",
+   "Side"
+  ]
+ },
+ {
+  "key": "phase",
+  "label": "Phase",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Natural",
+   "Linear"
+  ]
+ }
+]

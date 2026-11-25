@@ -1,0 +1,354 @@
+[
+ {
+  "key": "tune",
+  "label": "Tune",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lfoWave",
+  "label": "LFO waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Square",
+   "Random",
+   "Noise"
+  ]
+ },
+ {
+  "key": "vcoMod",
+  "label": "LFO to pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "range",
+  "label": "Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "pwm",
+  "label": "Pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwmSource",
+  "label": "Pulse width by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "LFO",
+   "Manual",
+   "Envelope"
+  ]
+ },
+ {
+  "key": "pulseLevel",
+  "label": "Pulse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "sawLevel",
+  "label": "Saw",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "subLevel",
+  "label": "Sub-oscillator",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "subMode",
+  "label": "Sub-oscillator mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "-1 octave",
+   "-2 octaves",
+   "-2, narrow"
+  ]
+ },
+ {
+  "key": "noiseLevel",
+  "label": "Noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "envAmount",
+  "label": "Envelope to filter",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "filterMod",
+  "label": "LFO to filter",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "keyFollow",
+  "label": "Key follow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vcaMode",
+  "label": "Amplifier by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Envelope",
+   "Gate"
+  ]
+ },
+ {
+  "key": "envTrigger",
+  "label": "Envelope by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Gate and trigger",
+   "Gate",
+   "LFO"
+  ]
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "sustain",
+  "label": "Sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamentoMode",
+  "label": "Portamento by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Auto",
+   "On"
+  ]
+ },
+ {
+  "key": "transpose",
+  "label": "Transpose",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Middle",
+   "High"
+  ]
+ },
+ {
+  "key": "bendPitch",
+  "label": "Bender to pitch",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 1.67
+ },
+ {
+  "key": "bendFilter",
+  "label": "Bender to filter",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "bendLfo",
+  "label": "Bender's push to LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "bender",
+  "label": "Bender",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "modPush",
+  "label": "Bender's push",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "keyMode",
+  "label": "Keys play",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Keyboard",
+   "Arp down",
+   "Arp up-down",
+   "Arp up"
+  ]
+ },
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "clock",
+  "label": "Step",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 4.0,
+  "choices": [
+   "LFO",
+   "1/4",
+   "1/8",
+   "1/8T",
+   "1/16",
+   "1/16T",
+   "1/32"
+  ]
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

@@ -1,0 +1,156 @@
+[
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Clean",
+   "Tape",
+   "Lo-fi",
+   "Diffuse",
+   "Reverse"
+  ]
+ },
+ {
+  "key": "sync",
+  "label": "Sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "division",
+  "label": "Division",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 7.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/16.",
+   "1/8",
+   "1/4T",
+   "1/8.",
+   "1/4",
+   "1/2T",
+   "1/4.",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "timeMs",
+  "label": "Time",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 2000.0,
+  "default": 250.0
+ },
+ {
+  "key": "feedback",
+  "label": "Feedback",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.2,
+  "default": 0.45
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2000.0,
+  "default": 80.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 500.0,
+  "maximum": 20000.0,
+  "default": 8000.0
+ },
+ {
+  "key": "modRate",
+  "label": "Mod rate",
+  "unit": "Hz",
+  "minimum": 0.05,
+  "maximum": 10.0,
+  "default": 0.5
+ },
+ {
+  "key": "modDepth",
+  "label": "Mod depth",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "character",
+  "label": "Character",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "spread",
+  "label": "Spread",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "duck",
+  "label": "Duck",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "pingPong",
+  "label": "Ping pong",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "freeze",
+  "label": "Freeze",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

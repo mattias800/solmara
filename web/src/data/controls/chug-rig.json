@@ -1,0 +1,166 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 30.0,
+  "default": 0.0
+ },
+ {
+  "key": "shape",
+  "label": "Shape",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": -10.0,
+  "default": -50.0
+ },
+ {
+  "key": "chug",
+  "label": "Chug",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "chugFreq",
+  "label": "Chug frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2500.0,
+  "default": 249.0
+ },
+ {
+  "key": "lowDirt",
+  "label": "Low dirt",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "amp",
+  "label": "Amp",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "drive",
+  "label": "Drive",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "lofi",
+  "label": "Lo-fi",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "cab",
+  "label": "Cab",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 20.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 30.0,
+  "default": 0.0
+ },
+ {
+  "key": "stereo",
+  "label": "Channels",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Mono",
+   "Stereo"
+  ]
+ }
+]

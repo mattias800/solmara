@@ -1,0 +1,130 @@
+[
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Low",
+   "High"
+  ]
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low Cut",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "80 Hz"
+  ]
+ },
+ {
+  "key": "polarity",
+  "label": "Polarity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "lowShelf",
+  "label": "Low Shelf",
+  "unit": "dB",
+  "minimum": -17.7,
+  "maximum": 14.2,
+  "default": 0.0
+ },
+ {
+  "key": "midFreq",
+  "label": "Mid Freq",
+  "unit": "Hz",
+  "minimum": 315.0,
+  "maximum": 7200.0,
+  "default": 1000.0
+ },
+ {
+  "key": "midGain",
+  "label": "Mid Gain",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "highShelf",
+  "label": "High Shelf",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eqIn",
+  "label": "EQ In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "compression",
+  "label": "Compression",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "grIn",
+  "label": "GR In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

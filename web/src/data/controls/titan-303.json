@@ -1,0 +1,119 @@
+[
+ {
+  "key": "tune",
+  "label": "Tuning",
+  "unit": "semitones",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "waveform",
+  "label": "Waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "envMod",
+  "label": "Envelope mod",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "accent",
+  "label": "Accent",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "driveMode",
+  "label": "Drive",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Overdrive",
+   "Distortion"
+  ]
+ },
+ {
+  "key": "drive",
+  "label": "Drive amount",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "tone",
+  "label": "Drive tone",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "driveLevel",
+  "label": "Drive level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

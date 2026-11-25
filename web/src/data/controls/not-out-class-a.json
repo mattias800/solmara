@@ -1,0 +1,136 @@
+[
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "-10 dB",
+   "-5 dB",
+   "0 dB",
+   "+5 dB",
+   "+10 dB",
+   "+15 dB",
+   "+20 dB"
+  ]
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "midFreq",
+  "label": "Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "Off",
+   "360 Hz",
+   "700 Hz",
+   "1.6 kHz",
+   "3.2 kHz",
+   "4.8 kHz",
+   "7.2 kHz"
+  ]
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "Off",
+   "35 Hz",
+   "60 Hz",
+   "110 Hz",
+   "220 Hz"
+  ]
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "dial",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "highPass",
+  "label": "High Pass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "50 Hz",
+   "80 Hz",
+   "160 Hz",
+   "300 Hz"
+  ]
+ },
+ {
+  "key": "equaliser",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "phase",
+  "label": "Phase",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 3.0,
+  "choices": [
+   "4x",
+   "8x",
+   "16x",
+   "Light"
+  ]
+ }
+]

@@ -1,0 +1,319 @@
+[
+ {
+  "key": "map",
+  "label": "Map",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Straight",
+   "Floor",
+   "Broken",
+   "Half-time",
+   "Sparse",
+   "Clave"
+  ]
+ },
+ {
+  "key": "x",
+  "label": "X",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "y",
+  "label": "Y",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "rate",
+  "label": "Rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "1/4"
+  ]
+ },
+ {
+  "key": "shuffle",
+  "label": "Shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 50.0
+ },
+ {
+  "key": "reset",
+  "label": "Reset",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 64.0,
+  "default": 64.0
+ },
+ {
+  "key": "kickDensity",
+  "label": "Kick density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "kickMirror",
+  "label": "Kick mirror",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "kickLock",
+  "label": "Kick lock",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "kickLockX",
+  "label": "Kick lock X",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "kickLockY",
+  "label": "Kick lock Y",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "kickNote",
+  "label": "Kick note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 36.0
+ },
+ {
+  "key": "kickMirrorNote",
+  "label": "Kick mirror note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 45.0
+ },
+ {
+  "key": "snareDensity",
+  "label": "Snare density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "snareMirror",
+  "label": "Snare mirror",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "snareLock",
+  "label": "Snare lock",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "snareLockX",
+  "label": "Snare lock X",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "snareLockY",
+  "label": "Snare lock Y",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "snareNote",
+  "label": "Snare note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 38.0
+ },
+ {
+  "key": "snareMirrorNote",
+  "label": "Snare mirror note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 37.0
+ },
+ {
+  "key": "hatDensity",
+  "label": "Hat density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "hatMirror",
+  "label": "Hat mirror",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "hatLock",
+  "label": "Hat lock",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "hatLockX",
+  "label": "Hat lock X",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "hatLockY",
+  "label": "Hat lock Y",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "hatNote",
+  "label": "Hat note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 42.0
+ },
+ {
+  "key": "hatMirrorNote",
+  "label": "Hat mirror note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 46.0
+ },
+ {
+  "key": "percDensity",
+  "label": "Perc density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "percMirror",
+  "label": "Perc mirror",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "percLock",
+  "label": "Perc lock",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "percLockX",
+  "label": "Perc lock X",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "percLockY",
+  "label": "Perc lock Y",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "percNote",
+  "label": "Perc note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 39.0
+ },
+ {
+  "key": "percMirrorNote",
+  "label": "Perc mirror note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 75.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

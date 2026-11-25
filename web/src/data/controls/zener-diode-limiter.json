@@ -1,0 +1,123 @@
+[
+ {
+  "key": "inputGain",
+  "label": "Input Gain",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "High"
+  ]
+ },
+ {
+  "key": "thd",
+  "label": "THD",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Limit",
+   "THD"
+  ]
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dial",
+  "minimum": 1.0,
+  "maximum": 11.0,
+  "default": 6.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 1.0,
+  "maximum": 11.0,
+  "default": 2.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "dial",
+  "minimum": 1.0,
+  "maximum": 21.0,
+  "default": 3.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Comp 1",
+   "Comp 2",
+   "Limit"
+  ]
+ },
+ {
+  "key": "sidechain",
+  "label": "Side Chain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "30 Hz",
+   "50 Hz",
+   "90 Hz",
+   "150 Hz",
+   "300 Hz"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "matrix",
+  "label": "Matrix",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Left-Right",
+   "Mid-Side"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

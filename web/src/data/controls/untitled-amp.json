@@ -1,0 +1,314 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "dB",
+  "minimum": -96.0,
+  "maximum": 0.0,
+  "default": -96.0
+ },
+ {
+  "key": "gatePedal",
+  "label": "Gate pedal",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "gatePedalThreshold",
+  "label": "Threshold",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 35.0
+ },
+ {
+  "key": "drive",
+  "label": "Drive",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "driveDrive",
+  "label": "Drive",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "driveTone",
+  "label": "Tone",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "driveLevel",
+  "label": "Level",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "boost",
+  "label": "Boost",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "boostAmount",
+  "label": "Boost",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 35.0
+ },
+ {
+  "key": "amp",
+  "label": "Amp",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "ampInput",
+  "label": "Input",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "High"
+  ]
+ },
+ {
+  "key": "pull",
+  "label": "Pull",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "gain1",
+  "label": "Gain I",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 62.0
+ },
+ {
+  "key": "gain2",
+  "label": "Gain II",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 75.0
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 18.0
+ },
+ {
+  "key": "master",
+  "label": "Master",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "eq1",
+  "label": "65 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq2",
+  "label": "125 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq3",
+  "label": "250 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq4",
+  "label": "500 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq5",
+  "label": "1 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq6",
+  "label": "2 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq7",
+  "label": "4 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq8",
+  "label": "8 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq9",
+  "label": "16 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "highPass",
+  "label": "High-pass",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 500.0,
+  "default": 20.0
+ },
+ {
+  "key": "lowPass",
+  "label": "Low-pass",
+  "unit": "Hz",
+  "minimum": 1000.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "cab",
+  "label": "Cab",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

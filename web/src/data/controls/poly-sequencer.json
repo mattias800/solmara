@@ -1,0 +1,84 @@
+[
+ {
+  "key": "mode",
+  "label": "Play mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Seq",
+   "Key"
+  ]
+ },
+ {
+  "key": "transpose",
+  "label": "MIDI transpose",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On",
+   "On latch"
+  ]
+ },
+ {
+  "key": "pattern",
+  "label": "Pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "variation",
+  "label": "Variation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ]
+ },
+ {
+  "key": "autoSwitch",
+  "label": "Auto switch",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Next",
+   "Random",
+   "I-II, III-IV",
+   "I-I-I-II"
+  ]
+ },
+ {
+  "key": "shuffle",
+  "label": "Shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 66.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

@@ -1,0 +1,51 @@
+---
+import Site from '../layouts/Site.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Site
+	title="Making music with an agent"
+	section="agents"
+	description="An AI agent can work in Solmara beside you: build a song, play it, mix it, and show you where things are in the editor."
+	eyebrow="Agents"
+	heading="Make music with an agent beside you"
+	lede="Everything Solmara's editor does, an AI agent can do too. Ask it to sketch a beat, voice your chords, set up a mix or find a setting, and watch it happen in the editor, where you can hear it, change it or undo it."
+>
+	<section>
+		<div class="features">
+			<div class="feature">
+				<h3>It works in your project</h3>
+				<p>An agent edits the same project you have open. Each change it makes appears in the editor as it is made, and is one step on your undo list.</p>
+			</div>
+			<div class="feature">
+				<h3>It plays what it made</h3>
+				<p>The agent starts and stops your editor's transport, so you hear a change straight away, in the place you are listening.</p>
+			</div>
+			<div class="feature">
+				<h3>It shows you where things are</h3>
+				<p>Ask where a setting is, and the agent lights it up in the editor and walks you there, step by step, opening the menus and windows on the way.</p>
+			</div>
+			<div class="feature">
+				<h3>It reads music as text</h3>
+				<p>Notes, chords and drum patterns can be written and read as short lines of text, so an agent can read a part, change it and write it back.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="prose">
+		<h2>What it is good for</h2>
+		<ul>
+			<li>A first sketch: "a four-bar house beat at 124, a bassline under it, and chords in A minor."</li>
+			<li>The tedious part: renaming and colouring forty tracks, setting up sends, levelling a mix.</li>
+			<li>Learning Solmara: "where do I set the swing?" and it shows you.</li>
+			<li>Checking a mix: loudness, peaks and balance, read by the same analyzer you see.</li>
+		</ul>
+
+		<h2>How to connect one</h2>
+		<p>Solmara comes with a server for the <a href="https://modelcontextprotocol.io">Model Context Protocol</a>, which agents such as Claude and Codex speak. Connect your agent to it, and it can work in any project, with or without the editor open. Without the editor, it builds and renders songs on its own.</p>
+		<p>Every operation is also a command-line tool, for scripts. The manual will have the full reference.</p>
+		<p class="callout">Agents are an option, never a requirement. Leave them alone and Solmara is simply a studio.</p>
+		<p><a href={`${base}/ai/`}>The AI models inside Solmara →</a></p>
+	</section>
+</Site>

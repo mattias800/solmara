@@ -1,0 +1,42 @@
+---
+import Site from '../layouts/Site.astro';
+import DeviceRow from '../components/DeviceRow.astro';
+import { guitar, guitarFamilies } from '../lib/devices';
+
+const families = guitarFamilies.filter((family) => family.devices.length > 0);
+---
+
+<Site
+	title="Guitar"
+	section="guitar"
+	description="Amps, pedals and cabinets for guitar and bass in Solmara, and thousands of captured tones from TONE3000."
+	eyebrow={`${guitar.length} amps, pedals and cabinets`}
+	heading="Amps and pedals for your guitar"
+	lede="Plug in and play through a whole rig, from the gate to the miked cabinet. Every amp and pedal is modelled on its circuit."
+>
+	<section>
+		<ul class="jump" aria-label="Families">
+			{families.map((family) => <li><a href={`#${family.key}`}>{family.label} ({family.devices.length})</a></li>)}
+			<li><a href="#tones">Captured tones</a></li>
+		</ul>
+	</section>
+
+	{families.map((family) => (
+		<section class="family" id={family.key}>
+			<h2>{family.label}</h2>
+			<div class="rows">
+				{family.devices.map((device) => <DeviceRow device={device} />)}
+			</div>
+		</section>
+	))}
+
+	<section class="family" id="tones">
+		<p class="kind">TONE3000</p>
+		<h2>Thousands of tones, a click away</h2>
+		<p class="intro">
+			Sign in to <a href="https://www.tone3000.com">TONE3000</a> from Solmara to find amps, pedals and whole rigs that players
+			have captured with Neural Amp Modeler. Download them into your library and play them in the A2 Modeller Amp. A project
+			keeps the tones it uses, so it opens the same on another computer.
+		</p>
+	</section>
+</Site>

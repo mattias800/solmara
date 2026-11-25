@@ -1,0 +1,99 @@
+---
+// An instrument's own page: its face, what it is, how it sounds, and where
+// the manual has every control of it.
+import { Image } from 'astro:assets';
+import { getEntry } from 'astro:content';
+import Site from '../../layouts/Site.astro';
+import { familyOf, instruments, type Shown } from '../../lib/devices';
+import demos from '../../data/demos.json';
+
+export function getStaticPaths() {
+	return instruments.map((device) => ({ params: { slug: device.slug }, props: { device } }));
+}
+
+const { device } = Astro.props as { device: Shown };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const family = familyOf(device);
+const siblings = family?.devices ?? [];
+const index = siblings.indexOf(device);
+const previous = index > 0 ? siblings[index - 1] : null;
+const next = index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null;
+const related = siblings.filter((other) => other !== device).slice(0, 5);
+const manual = await getEntry('docs', `manual/devices/instruments/${device.slug}`);
+const heard = (demos as Record<string, { title: string; file: string }[]>)[device.slug] ?? [];
+const facts = [
+	family?.label,
+	device.controls ? `${device.controls} controls` : null,
+	device.window ? 'A window of its own' : null,
+	device.sidechain ? 'Sidechain input' : null,
+].filter(Boolean);
+---
+
+<Site
+	title={device.label}
+	section="instruments"
+	description={device.blurb}
+	eyebrow={device.kindLabel}
+	heading={device.label}
+	lede={device.blurb}
+>
+	<section>
+		<p class="crumbs">
+			<a href={`${base}/instruments/`}>Instruments</a>
+			{family && <> / {family.label}</>} / {device.label}
+			{device.inProgress && <span class="wip">In progress</span>}
+		</p>
+		<ul class="facts-row" style="margin-top: 14px">
+			{facts.map((fact) => <li>{fact}</li>)}
+		</ul>
+	</section>
+
+	{device.image && (
+		<figure class="big-face" style="margin-top: 32px">
+			<Image src={device.image} widths={[800, 1200, 1800]} sizes="(max-width: 1032px) 96vw, 1000px" alt={`${device.label}'s face`} loading="eager" />
+		</figure>
+	)}
+
+	<div class="device-body">
+		<div>
+			<h2>What it is</h2>
+			{device.description ? <p>{device.description}</p> : <p>{device.blurb}</p>}
+			{device.inProgress && (
+				<p class="callout">{device.label} is still being built: what it does and how it looks may change before it is done.</p>
+			)}
+			{heard.length > 0 && (
+				<div class="listen">
+					<h2>Hear it</h2>
+					{heard.map((demo) => (
+						<figure>
+							<figcaption>{demo.title}</figcaption>
+							<audio controls preload="none" src={`${base}/${demo.file}`}></audio>
+						</figure>
+					))}
+				</div>
+			)}
+		</div>
+		<aside class="aside">
+			{manual && (
+				<div class="box manual">
+					<h3>In the manual</h3>
+					<p>Every control of the {device.label}, with its range and where it starts.</p>
+					<a href={`${base}/manual/devices/instruments/${device.slug}/`}>Open its chapter →</a>
+				</div>
+			)}
+			{related.length > 0 && (
+				<div class="box">
+					<h3>More {family?.label.toLowerCase()}</h3>
+					<ul>
+						{related.map((other) => <li><a href={`${base}/instruments/${other.slug}/`}>{other.label}</a></li>)}
+					</ul>
+				</div>
+			)}
+		</aside>
+	</div>
+
+	<nav class="siblings" aria-label={`More ${family?.label.toLowerCase() ?? 'instruments'}`}>
+		{previous ? <a href={`${base}/instruments/${previous.slug}/`}>← {previous.label}</a> : <span></span>}
+		{next ? <a href={`${base}/instruments/${next.slug}/`}>{next.label} →</a> : <span></span>}
+	</nav>
+</Site>

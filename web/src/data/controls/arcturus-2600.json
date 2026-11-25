@@ -1,0 +1,808 @@
+[
+ {
+  "key": "vco1Range",
+  "label": "VCO-1 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "Low",
+   "-2 oct",
+   "-1 oct",
+   "Normal",
+   "+1 oct"
+  ]
+ },
+ {
+  "key": "vco1Coarse",
+  "label": "VCO-1 coarse",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Fine",
+  "label": "VCO-1 fine",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Kbd",
+  "label": "VCO-1 keyboard",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "vco1Fm2",
+  "label": "VCO-1 S&H",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Fm3",
+  "label": "VCO-1 ADSR",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Fm4",
+  "label": "VCO-1 FM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Fm4From",
+  "label": "VCO-1 FM from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vco1Sync",
+  "label": "VCO-1 sync to VCO-2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "vco2Range",
+  "label": "VCO-2 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "Low",
+   "-2 oct",
+   "-1 oct",
+   "Normal",
+   "+1 oct"
+  ]
+ },
+ {
+  "key": "vco2Coarse",
+  "label": "VCO-2 coarse",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Fine",
+  "label": "VCO-2 fine",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Kbd",
+  "label": "VCO-2 keyboard",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "vco2Fm2",
+  "label": "VCO-2 S&H",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Fm3",
+  "label": "VCO-2 ADSR",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Fm4",
+  "label": "VCO-2 FM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Fm4From",
+  "label": "VCO-2 FM from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vco2Width",
+  "label": "VCO-2 pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vco2Pwm",
+  "label": "VCO-2 PWM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Sync",
+  "label": "VCO-2 sync to VCO-1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "vco3Range",
+  "label": "VCO-3 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 3.0,
+  "choices": [
+   "Low",
+   "-2 oct",
+   "-1 oct",
+   "Normal",
+   "+1 oct"
+  ]
+ },
+ {
+  "key": "vco3Coarse",
+  "label": "VCO-3 coarse",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco3Fine",
+  "label": "VCO-3 fine",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco3Kbd",
+  "label": "VCO-3 keyboard",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "vco3Fm2",
+  "label": "VCO-3 noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco3Fm3",
+  "label": "VCO-3 ADSR",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco3Fm4",
+  "label": "VCO-3 FM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco3Fm4From",
+  "label": "VCO-3 FM from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vco3Width",
+  "label": "VCO-3 pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vco3Sync",
+  "label": "VCO-3 sync to VCO-1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "ringIn1",
+  "label": "Ring mod input 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringIn2",
+  "label": "Ring mod input 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "ringDc",
+  "label": "Ring mod coupling",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Audio",
+   "DC"
+  ]
+ },
+ {
+  "key": "noiseColor",
+  "label": "Noise colour",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "noiseLevel",
+  "label": "Noise level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "shLevel",
+  "label": "S&H input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "shRate",
+  "label": "S&H clock rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "shFrom",
+  "label": "S&H from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vcfCoarse",
+  "label": "VCF frequency",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vcfFine",
+  "label": "VCF fine",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfResonance",
+  "label": "VCF resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfIn1",
+  "label": "VCF ring mod",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfIn1From",
+  "label": "VCF input 1 from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vcfIn2",
+  "label": "VCF VCO-1 square",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vcfIn3",
+  "label": "VCF VCO-2 pulse",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfIn4",
+  "label": "VCF VCO-3 saw",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfIn5",
+  "label": "VCF noise",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfKbd",
+  "label": "VCF keyboard",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfFm2",
+  "label": "VCF ADSR",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "vcfFm3",
+  "label": "VCF FM",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfFm3From",
+  "label": "VCF FM from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "adsrAttack",
+  "label": "ADSR attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "adsrDecay",
+  "label": "ADSR decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "adsrSustain",
+  "label": "ADSR sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "adsrRelease",
+  "label": "ADSR release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "arAttack",
+  "label": "AR attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "arRelease",
+  "label": "AR release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "envTrigger",
+  "label": "Envelope trigger",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "S&H clock",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "vcaIn1",
+  "label": "VCA VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "vcaIn2",
+  "label": "VCA ring mod",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcaLin",
+  "label": "VCA AR (linear)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcaExp",
+  "label": "VCA ADSR (exp)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "mixIn1",
+  "label": "Mixer VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "mixIn2",
+  "label": "Mixer VCA",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "mixPan",
+  "label": "Pan",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "reverbLeft",
+  "label": "Reverb left",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "reverbRight",
+  "label": "Reverb right",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "followerLevel",
+  "label": "Envelope follower input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "followerFrom",
+  "label": "Envelope follower from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 16.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "VCO-1 saw",
+   "VCO-1 square",
+   "VCO-2 saw",
+   "VCO-2 triangle",
+   "VCO-2 sine",
+   "VCO-2 pulse",
+   "VCO-3 saw",
+   "VCO-3 pulse",
+   "Noise",
+   "Sample & hold",
+   "ADSR",
+   "AR",
+   "Envelope follower",
+   "Lag",
+   "Ring modulator",
+   "Keyboard"
+  ]
+ },
+ {
+  "key": "lagTime",
+  "label": "Lag",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vibratoSpeed",
+  "label": "Vibrato speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "vibratoDepth",
+  "label": "Vibrato depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vibratoDelay",
+  "label": "Vibrato delay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "keyMode",
+  "label": "Keyboard",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "One voice",
+   "Two voices"
+  ]
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tune",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ }
+]

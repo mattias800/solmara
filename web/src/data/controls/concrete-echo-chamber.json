@@ -1,0 +1,110 @@
+[
+ {
+  "key": "chamber",
+  "label": "Room",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Room A",
+   "Room B",
+   "Room C",
+   "Room D"
+  ]
+ },
+ {
+  "key": "mic",
+  "label": "Mics",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "Valve omni",
+   "Ribbon",
+   "Condenser omni",
+   "Valve cardioid"
+  ]
+ },
+ {
+  "key": "position",
+  "label": "Position",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "predelay",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 250.0,
+  "default": 0.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 750.0,
+  "default": 20.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 25.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

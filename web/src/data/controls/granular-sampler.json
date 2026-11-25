@@ -1,0 +1,187 @@
+[
+ {
+  "key": "rootNote",
+  "label": "Root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.8
+ },
+ {
+  "key": "position",
+  "label": "Position",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "scanSpeed",
+  "label": "Scan speed",
+  "unit": "ratio",
+  "minimum": -2.0,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "grainMs",
+  "label": "Grain size",
+  "unit": "ms",
+  "minimum": 5.0,
+  "maximum": 500.0,
+  "default": 80.0
+ },
+ {
+  "key": "density",
+  "label": "Density",
+  "unit": "grains/s",
+  "minimum": 0.0,
+  "maximum": 120.0,
+  "default": 20.0
+ },
+ {
+  "key": "spray",
+  "label": "Position spray",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 10.0
+ },
+ {
+  "key": "pitch",
+  "label": "Pitch",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "pitchSpray",
+  "label": "Pitch spray",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "stereoSpread",
+  "label": "Stereo scatter",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "freeze",
+  "label": "Freeze scan",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 10.0
+ },
+ {
+  "key": "decayMs",
+  "label": "Decay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 200.0
+ },
+ {
+  "key": "sustain",
+  "label": "Sustain",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.8
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 300.0
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "Hz",
+  "minimum": 0.05,
+  "maximum": 20.0,
+  "default": 0.5
+ },
+ {
+  "key": "positionMod",
+  "label": "LFO to position",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "pitchMod",
+  "label": "LFO to pitch",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "densityMod",
+  "label": "LFO to density",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "sizeMod",
+  "label": "LFO to size",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "seed",
+  "label": "Seed",
+  "unit": "integer",
+  "minimum": 0.0,
+  "maximum": 65535.0,
+  "default": 0.0
+ },
+ {
+  "key": "interpolation",
+  "label": "Interpolation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Linear",
+   "Cubic",
+   "Sinc"
+  ]
+ }
+]

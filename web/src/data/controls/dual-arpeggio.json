@@ -1,0 +1,356 @@
+[
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "shuffle",
+  "label": "Shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 62.0
+ },
+ {
+  "key": "arp1On",
+  "label": "Arp 1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp1Low",
+  "label": "Arp 1 lowest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp1High",
+  "label": "Arp 1 highest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "arp1Rate",
+  "label": "Arp 1 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 20.0,
+  "default": 4.0,
+  "choices": [
+   "1/64",
+   "1/32T",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/16 Shuffle",
+   "1/8T",
+   "1/8",
+   "3/16",
+   "1/4",
+   "3/8",
+   "2/4",
+   "3/4",
+   "4/4",
+   "5/4",
+   "6/4",
+   "7/4",
+   "2 bars",
+   "3 bars",
+   "4 bars",
+   "8 bars"
+  ]
+ },
+ {
+  "key": "arp1Octaves",
+  "label": "Arp 1 octaves",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 4.0,
+  "default": 1.0
+ },
+ {
+  "key": "arp1Repeat",
+  "label": "Arp 1 repeat",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp1Direction",
+  "label": "Arp 1 direction",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Up",
+   "Down",
+   "Up+Down",
+   "Random"
+  ]
+ },
+ {
+  "key": "arp1Steps",
+  "label": "Arp 1 steps",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp1Length",
+  "label": "Arp 1 length",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "arp1Pattern",
+  "label": "Arp 1 pattern",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp1Velocity",
+  "label": "Arp 1 velocity lane",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp1Shift",
+  "label": "Arp 1 shift",
+  "unit": "steps",
+  "minimum": -16.0,
+  "maximum": 16.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp1Transpose",
+  "label": "Arp 1 transpose",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp1Gate",
+  "label": "Arp 1 gate",
+  "unit": "%",
+  "minimum": 25.0,
+  "maximum": 400.0,
+  "default": 100.0
+ },
+ {
+  "key": "arp2On",
+  "label": "Arp 2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp2Low",
+  "label": "Arp 2 lowest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp2High",
+  "label": "Arp 2 highest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "arp2Rate",
+  "label": "Arp 2 rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 20.0,
+  "default": 4.0,
+  "choices": [
+   "1/64",
+   "1/32T",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/16 Shuffle",
+   "1/8T",
+   "1/8",
+   "3/16",
+   "1/4",
+   "3/8",
+   "2/4",
+   "3/4",
+   "4/4",
+   "5/4",
+   "6/4",
+   "7/4",
+   "2 bars",
+   "3 bars",
+   "4 bars",
+   "8 bars"
+  ]
+ },
+ {
+  "key": "arp2Octaves",
+  "label": "Arp 2 octaves",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 4.0,
+  "default": 1.0
+ },
+ {
+  "key": "arp2Repeat",
+  "label": "Arp 2 repeat",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp2Direction",
+  "label": "Arp 2 direction",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Up",
+   "Down",
+   "Up+Down",
+   "Random"
+  ]
+ },
+ {
+  "key": "arp2Steps",
+  "label": "Arp 2 steps",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp2Length",
+  "label": "Arp 2 length",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "arp2Pattern",
+  "label": "Arp 2 pattern",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp2Velocity",
+  "label": "Arp 2 velocity lane",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arp2Shift",
+  "label": "Arp 2 shift",
+  "unit": "steps",
+  "minimum": -16.0,
+  "maximum": 16.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp2Transpose",
+  "label": "Arp 2 transpose",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "arp2Gate",
+  "label": "Arp 2 gate",
+  "unit": "%",
+  "minimum": 25.0,
+  "maximum": 400.0,
+  "default": 100.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

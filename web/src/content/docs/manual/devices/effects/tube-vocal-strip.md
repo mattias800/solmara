@@ -1,0 +1,39 @@
+---
+title: "Tube Vocal Strip"
+description: "Valve vocal channel in the style of the late-1990s American vocal boxes: opto before the valves, passive peak-and-dip EQ, de-esser and limiter."
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+A modelled American valve vocal channel of the late 1990s: a line input transformer, a 6 dB low cut and the input pot, a passive optical compressor ahead of the valves with stepped attack and release, a two-triode preamplifier whose gain switch sets its feedback, a passive equaliser of a low peak, a mid dip and a high peak on stepped coils, a passive optical de-esser or limiter, a valve line amplifier and the output transformer. The preamplifier at two or four times the sample rate, as late at both.
+
+[Tube Vocal Strip on the website](/solmara/effects/#tube-vocal-strip)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Low Cut | Off, 80 Hz, 120 Hz | Off |
+| Phase | 0, 180 | 0 |
+| Input | 0 to 10 | 3 |
+| Gain | 40 dB, 45 dB, 50 dB, 55 dB, 60 dB | 50 dB |
+| Comp In | Out, In | In |
+| Threshold | 0 to 10 | 5 |
+| Attack | Fast, Med Fast, Medium, Med Slow, Slow | Medium |
+| Release | Slow, Med Slow, Medium, Med Fast, Fast | Medium |
+| Link | Apart, Linked | Linked |
+| EQ In | Out, In | In |
+| Low Peak | 0 dB to 10 dB | 0 dB |
+| Low Freq | 11 choices: 20 Hz, 35 Hz, 50 Hz, 70 Hz, … | 70 Hz |
+| Mid Dip | -10 dB to 0 dB | 0 dB |
+| Mid Freq | 11 choices: 200 Hz, 300 Hz, 500 Hz, 700 Hz, … | 300 Hz |
+| High Peak | 0 dB to 10 dB | 0 dB |
+| High Freq | 11 choices: 1.5 kHz, 2 kHz, 3 kHz, 4 kHz, … | 12 kHz |
+| De-Ess In | Out, In | Out |
+| De-Ess | 3 kHz, 6 kHz, 9 kHz, 12 kHz, Limit | Limit |
+| De-Ess Threshold | 0 to 10 | 4.1 |
+| Transformer | Out, In | In |
+| Output | -30 dB to 12 dB | 0 dB |
+| Quality | Light, Standard | Standard |

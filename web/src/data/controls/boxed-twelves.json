@@ -1,0 +1,93 @@
+[
+ {
+  "key": "cabinet",
+  "label": "Cabinet",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0,
+  "choices": [
+   "Forward 4x12",
+   "Thick 4x12",
+   "Chug Cab",
+   "Leviathan Clean Cab",
+   "Leviathan Rust Cab",
+   "Leviathan Hot Cab",
+   "Djent Clean Cab",
+   "Djent Rhythm Cab",
+   "Djent Lead Cab",
+   "Untitled Cab",
+   "Icebox 8x10",
+   "Halfglow 8x10",
+   "Flipside 1x15"
+  ]
+ },
+ {
+  "key": "mic",
+  "label": "Mic",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "size",
+  "label": "Size",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 500.0,
+  "default": 20.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 2000.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "phase",
+  "label": "Phase",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "levelDb",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

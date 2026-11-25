@@ -1,0 +1,295 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "dB",
+  "minimum": -96.0,
+  "maximum": 0.0,
+  "default": -96.0
+ },
+ {
+  "key": "od",
+  "label": "OD",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "odDrive",
+  "label": "OD drive",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "odTone",
+  "label": "OD tone",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 70.0
+ },
+ {
+  "key": "odLevel",
+  "label": "OD level",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 53.0
+ },
+ {
+  "key": "drt",
+  "label": "DRT",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "drtDist",
+  "label": "DRT distortion",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 36.0
+ },
+ {
+  "key": "drtFilter",
+  "label": "DRT filter",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 93.0
+ },
+ {
+  "key": "drtVolume",
+  "label": "DRT volume",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 62.0
+ },
+ {
+  "key": "amp",
+  "label": "Amp",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "model",
+  "label": "Amp model",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 2.0,
+  "choices": [
+   "Clean",
+   "Rust",
+   "Hot"
+  ]
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mid",
+  "label": "Mid",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "master",
+  "label": "Master",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "depth",
+  "label": "Depth",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bright",
+  "label": "Bright",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "eq1",
+  "label": "65 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq2",
+  "label": "125 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq3",
+  "label": "250 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq4",
+  "label": "500 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq5",
+  "label": "1 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq6",
+  "label": "2 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq7",
+  "label": "4 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq8",
+  "label": "8 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "eq9",
+  "label": "16 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "cab",
+  "label": "Cab",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

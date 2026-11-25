@@ -1,0 +1,86 @@
+[
+ {
+  "key": "crossover1Hz",
+  "label": "Low split",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 1000.0,
+  "default": 200.0
+ },
+ {
+  "key": "crossover2Hz",
+  "label": "Middle split",
+  "unit": "Hz",
+  "minimum": 200.0,
+  "maximum": 8000.0,
+  "default": 2000.0
+ },
+ {
+  "key": "crossover3Hz",
+  "label": "High split",
+  "unit": "Hz",
+  "minimum": 1000.0,
+  "maximum": 16000.0,
+  "default": 8000.0
+ },
+ {
+  "key": "band1Width",
+  "label": "Low width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "band2Width",
+  "label": "Low mid width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "band3Width",
+  "label": "High mid width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "band4Width",
+  "label": "High width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "monoBelow",
+  "label": "Mono below",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "monoBelowHz",
+  "label": "Mono below",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 500.0,
+  "default": 120.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

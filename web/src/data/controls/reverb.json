@@ -1,0 +1,129 @@
+[
+ {
+  "key": "model",
+  "label": "Model",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Room",
+   "Hall",
+   "Plate",
+   "Shimmer"
+  ]
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "s",
+  "minimum": 0.2,
+  "maximum": 20.0,
+  "default": 2.5
+ },
+ {
+  "key": "size",
+  "label": "Size",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "preDelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 250.0,
+  "default": 20.0
+ },
+ {
+  "key": "damping",
+  "label": "Damping",
+  "unit": "Hz",
+  "minimum": 500.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 1000.0,
+  "default": 100.0
+ },
+ {
+  "key": "diffusion",
+  "label": "Diffusion",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.7
+ },
+ {
+  "key": "modulation",
+  "label": "Modulation",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "shimmer",
+  "label": "Shimmer",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "interval",
+  "label": "Interval",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Octave up",
+   "Fifth up",
+   "Octave down"
+  ]
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "duck",
+  "label": "Duck",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.25
+ },
+ {
+  "key": "freeze",
+  "label": "Freeze",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

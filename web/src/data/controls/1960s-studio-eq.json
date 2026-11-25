@@ -1,0 +1,78 @@
+[
+ {
+  "key": "band50",
+  "label": "50 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band130",
+  "label": "130 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band320",
+  "label": "320 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band800",
+  "label": "800 Hz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band2k",
+  "label": "2 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band5k",
+  "label": "5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "band12k",
+  "label": "12.5 kHz",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ },
+ {
+  "key": "eqIn",
+  "label": "EQ",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -8.0,
+  "maximum": 8.0,
+  "default": 0.0
+ }
+]

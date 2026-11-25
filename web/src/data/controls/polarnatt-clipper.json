@@ -1,0 +1,71 @@
+[
+ {
+  "key": "driveDb",
+  "label": "Drive",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 36.0,
+  "default": 0.0
+ },
+ {
+  "key": "ceilingDb",
+  "label": "Ceiling",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 0.0,
+  "default": 0.0
+ },
+ {
+  "key": "softness",
+  "label": "Softness",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "algorithm",
+  "label": "Algorithm",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 1.0,
+  "choices": [
+   "Hard",
+   "Soft",
+   "Sine",
+   "Diode",
+   "Tape",
+   "Valve"
+  ]
+ },
+ {
+  "key": "oversampling",
+  "label": "Oversampling",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "1x",
+   "4x",
+   "16x"
+  ]
+ }
+]

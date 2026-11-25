@@ -1,0 +1,82 @@
+[
+ {
+  "key": "dwell",
+  "label": "Dwell",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "tone",
+  "label": "Tone",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "s",
+  "minimum": 0.5,
+  "maximum": 6.0,
+  "default": 2.5
+ },
+ {
+  "key": "preDelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 250.0,
+  "default": 0.0
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.7
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "tank",
+  "label": "Tank",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Short",
+   "Long"
+  ]
+ },
+ {
+  "key": "springs",
+  "label": "Springs",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Two",
+   "Three"
+  ]
+ }
+]

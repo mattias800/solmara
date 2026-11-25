@@ -1,0 +1,46 @@
+[
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -55.0,
+  "maximum": 0.0,
+  "default": -27.0
+ },
+ {
+  "key": "ratio",
+  "label": "Compression",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 100.0,
+  "default": 4.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -20.0,
+  "maximum": 20.0,
+  "default": 0.0
+ },
+ {
+  "key": "sidechainFilter",
+  "label": "SC filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ }
+]

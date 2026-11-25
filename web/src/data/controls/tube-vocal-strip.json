@@ -1,0 +1,278 @@
+[
+ {
+  "key": "lowCut",
+  "label": "Low Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "80 Hz",
+   "120 Hz"
+  ]
+ },
+ {
+  "key": "polarity",
+  "label": "Phase",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "0",
+   "180"
+  ]
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "40 dB",
+   "45 dB",
+   "50 dB",
+   "55 dB",
+   "60 dB"
+  ]
+ },
+ {
+  "key": "compIn",
+  "label": "Comp In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "threshold",
+  "label": "Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "Fast",
+   "Med Fast",
+   "Medium",
+   "Med Slow",
+   "Slow"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "Slow",
+   "Med Slow",
+   "Medium",
+   "Med Fast",
+   "Fast"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Apart",
+   "Linked"
+  ]
+ },
+ {
+  "key": "eqIn",
+  "label": "EQ In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "lowPeak",
+  "label": "Low Peak",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0,
+  "choices": [
+   "20 Hz",
+   "35 Hz",
+   "50 Hz",
+   "70 Hz",
+   "100 Hz",
+   "150 Hz",
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz"
+  ]
+ },
+ {
+  "key": "midDip",
+  "label": "Mid Dip",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 0.0,
+  "default": 0.0
+ },
+ {
+  "key": "midFreq",
+  "label": "Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 1.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "7 kHz"
+  ]
+ },
+ {
+  "key": "highPeak",
+  "label": "High Peak",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "highFreq",
+  "label": "High Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0,
+  "choices": [
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "6.4 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "16 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "deEssIn",
+  "label": "De-Ess In",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "deEss",
+  "label": "De-Ess",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "3 kHz",
+   "6 kHz",
+   "9 kHz",
+   "12 kHz",
+   "Limit"
+  ]
+ },
+ {
+  "key": "deEssThreshold",
+  "label": "De-Ess Threshold",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.1
+ },
+ {
+  "key": "transformer",
+  "label": "Transformer",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

@@ -1,0 +1,18 @@
+[
+ {
+  "key": "target",
+  "label": "Target",
+  "unit": "LUFS",
+  "minimum": -24.0,
+  "maximum": -6.0,
+  "default": -14.0
+ },
+ {
+  "key": "tilt",
+  "label": "Tilt",
+  "unit": "dB/oct",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 0.0
+ }
+]

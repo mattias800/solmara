@@ -1,0 +1,85 @@
+[
+ {
+  "key": "meLowFreq",
+  "label": "Low Peak Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz"
+  ]
+ },
+ {
+  "key": "meLowPeak",
+  "label": "Low Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meMidFreq",
+  "label": "Dip Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "200 Hz",
+   "300 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz",
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz",
+   "7 kHz"
+  ]
+ },
+ {
+  "key": "meMidDip",
+  "label": "Dip",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meHighFreq",
+  "label": "High Peak Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "1.5 kHz",
+   "2 kHz",
+   "3 kHz",
+   "4 kHz",
+   "5 kHz"
+  ]
+ },
+ {
+  "key": "meHighPeak",
+  "label": "High Peak",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "meOutput",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ }
+]

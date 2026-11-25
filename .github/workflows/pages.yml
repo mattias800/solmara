@@ -3,7 +3,7 @@ name: Website
 on:
   push:
     branches: [main]
-    paths: [site/**, manual/**, .github/workflows/pages.yml]
+    paths: [web/**, .github/workflows/pages.yml]
   workflow_dispatch:
 
 permissions:
@@ -27,19 +27,16 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: manual/package-lock.json
-      # The manual is built with Astro Starlight and served beside the
-      # website, at /solmara/manual/.
-      - name: Build the manual
-        working-directory: manual
+          cache-dependency-path: web/package-lock.json
+      # The website and its manual, one Astro project, served at /solmara/.
+      - name: Build the website and the manual
+        working-directory: web
         run: |
           npm ci
           npm run build
-      - name: Put the manual in the site
-        run: cp -r manual/dist site/manual
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: web/dist
       - id: deployment
         uses: actions/deploy-pages@v4

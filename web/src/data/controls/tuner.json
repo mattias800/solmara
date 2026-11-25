@@ -1,0 +1,22 @@
+[
+ {
+  "key": "reference",
+  "label": "Reference",
+  "unit": "Hz",
+  "minimum": 430.0,
+  "maximum": 450.0,
+  "default": 440.0
+ },
+ {
+  "key": "mute",
+  "label": "Mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Pass",
+   "Mute"
+  ]
+ }
+]

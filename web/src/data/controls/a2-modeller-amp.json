@@ -1,0 +1,62 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "calibrate",
+  "label": "Calibrate",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "interface",
+  "label": "Interface",
+  "unit": "dBu",
+  "minimum": 0.0,
+  "maximum": 30.0,
+  "default": 12.0
+ },
+ {
+  "key": "size",
+  "label": "Size",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Lite",
+   "Full"
+  ]
+ },
+ {
+  "key": "normalize",
+  "label": "Normalize",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

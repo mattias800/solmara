@@ -1,0 +1,311 @@
+[
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Filter > Adjust",
+   "Adjust > Filter",
+   "Filter > Adjust (split)"
+  ]
+ },
+ {
+  "key": "pitchFilter",
+  "label": "Pitch range",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pitchLow",
+  "label": "Lowest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "pitchHigh",
+  "label": "Highest key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "pitchFlip",
+  "label": "Flip key range",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "velocityFilter",
+  "label": "Velocity range",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "velocityLow",
+  "label": "Lowest velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 1.0
+ },
+ {
+  "key": "velocityHigh",
+  "label": "Highest velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 127.0
+ },
+ {
+  "key": "velocityFlip",
+  "label": "Flip velocity range",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pitch",
+  "label": "Pitch",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pitchMode",
+  "label": "Pitch mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Offset",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "pitchOffset",
+  "label": "Pitch offset",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "pitchFixed",
+  "label": "Fixed key",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "octave",
+  "label": "Octave",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octaveShift",
+  "label": "Octaves",
+  "unit": "oct",
+  "minimum": -3.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "velocity",
+  "label": "Velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "velocityMode",
+  "label": "Velocity mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Offset",
+   "Fixed",
+   "Scale"
+  ]
+ },
+ {
+  "key": "velocityOffset",
+  "label": "Velocity offset",
+  "unit": "count",
+  "minimum": -127.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "velocityFixed",
+  "label": "Fixed velocity",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 127.0,
+  "default": 100.0
+ },
+ {
+  "key": "velocityScale",
+  "label": "Velocity scale",
+  "unit": "%",
+  "minimum": 1.0,
+  "maximum": 800.0,
+  "default": 100.0
+ },
+ {
+  "key": "length",
+  "label": "Note length",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lengthMode",
+  "label": "Length mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Min",
+   "Max",
+   "Fixed"
+  ]
+ },
+ {
+  "key": "lengthValue",
+  "label": "Length",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 5.0,
+  "choices": [
+   "Pulse",
+   "1/128",
+   "1/64",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "restrict",
+  "label": "Restrict poly",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "voices",
+  "label": "Voices",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 1.0
+ },
+ {
+  "key": "restrictMode",
+  "label": "Restrict mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 3.0,
+  "choices": [
+   "First Note",
+   "Low Note",
+   "High Note",
+   "Last Note"
+  ]
+ },
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "holdMode",
+  "label": "Hold mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Hold All",
+   "Latch",
+   "Chord"
+  ]
+ }
+]

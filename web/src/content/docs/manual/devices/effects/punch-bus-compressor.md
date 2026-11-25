@@ -1,0 +1,31 @@
+---
+title: "Punch Bus Compressor"
+description: "RMS bus compressor in the style of the 2000s American discrete units: punchy glue for the mix and drum buses."
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+A modelled stereo bus compressor of discrete op-amps, VCAs and an output transformer, for a mix bus or a drum bus: an RMS detector in each channel, ratios of 1.5 to infinity to 1, attacks of 0.03 to 30 ms, releases of 0.05 to 2 s on a switch or a variable one, three knees, a weighting in the detector that hears the low end less and the top more for a punchier sound, feed-forward or feedback, and a link between the two channels by a share from independent to 100 % through a filter. Modelled on the American bus compressors of the late 1990s and 2000s.
+
+[Punch Bus Compressor on the website](/solmara/effects/#punch-bus-compressor)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Threshold | -20 dB to 10 dB | -5 dB |
+| Ratio | 1.5:1, 2:1, 3:1, 4:1, 6:1, 10:1, Inf:1 | 4:1 |
+| Attack | 0.03 ms, 0.1 ms, 0.3 ms, 1 ms, 3 ms, 10 ms, 30 ms | 1 ms |
+| Release | 0.05 s, 0.1 s, 0.2 s, 0.5 s, 1 s, 2 s, Variable | 0.5 s |
+| Variable release | 0.05 s to 3 s | 0.5 s |
+| Knee | Hard, Medium, Soft | Medium |
+| Punch | Normal, Medium, Loud | Normal |
+| Type | New (feed-forward), Old (feedback) | New (feed-forward) |
+| Link | Independent, 50%, 60%, 70%, 80%, 90%, 100% | 50% |
+| Link filter | Off, Low-pass, High-pass, Band-pass | Off |
+| Make-up | Manual, Auto | Manual |
+| Gain | 0 dB to 22 dB | 0 dB |
+| Mix | 0 linear to 1 linear | 1 linear |
+| In | Out, In | In |

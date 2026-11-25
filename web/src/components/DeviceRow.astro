@@ -1,0 +1,25 @@
+---
+// A device on its family's page: its face beside what it is and what it is
+// for. Its id is its name, so other pages link to its place here.
+import { Image } from 'astro:assets';
+import type { Shown } from '../lib/devices';
+
+interface Props {
+	device: Shown;
+}
+const { device } = Astro.props;
+const summary = device.summary ? device.summary.charAt(0).toUpperCase() + device.summary.slice(1) + '.' : null;
+// The hand-written line first; the app's summary after it where it says more.
+const lines = [device.blurb, summary && summary !== device.blurb ? summary : null].filter(Boolean);
+---
+
+<article class="row" id={device.slug}>
+	<div class="shot">
+		{device.image && <Image src={device.image} widths={[480, 800, 1200]} sizes="(max-width: 760px) 92vw, 560px" alt={`${device.label}'s face`} />}
+	</div>
+	<div>
+		<p class="kind">{device.kindLabel}</p>
+		<h3>{device.label}{device.inProgress && <span class="wip">In progress</span>}</h3>
+		{lines.map((line) => <p>{line}</p>)}
+	</div>
+</article>

@@ -1,0 +1,73 @@
+[
+ {
+  "key": "scaleSteps",
+  "label": "Scale steps",
+  "unit": "steps",
+  "minimum": -14.0,
+  "maximum": 14.0,
+  "default": 0.0
+ },
+ {
+  "key": "semitones",
+  "label": "Semitones",
+  "unit": "st",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "octaves",
+  "label": "Octaves",
+  "unit": "oct",
+  "minimum": -4.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "scale",
+  "label": "Scale",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 14.0,
+  "default": 0.0,
+  "choices": [
+   "Project",
+   "Major",
+   "Minor",
+   "Dorian",
+   "Phrygian",
+   "Lydian",
+   "Mixolydian",
+   "Locrian",
+   "Harmonic minor",
+   "Melodic minor",
+   "Major pentatonic",
+   "Minor pentatonic",
+   "Blues",
+   "Whole tone",
+   "Chromatic"
+  ]
+ },
+ {
+  "key": "root",
+  "label": "Root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ }
+]

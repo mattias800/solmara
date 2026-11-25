@@ -1,0 +1,21 @@
+---
+title: "Ring Modulator"
+description: "Ring Modulator"
+---
+
+<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
+
+Multiplies the audio by a carrier, a sine, triangle, or square, for metallic and bell tones.
+
+[Ring Modulator on the website](/solmara/effects/#ring-modulator)
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Frequency | 1 Hz to 5000 Hz | 200 Hz |
+| Carrier | Sine, Triangle, Square | Sine |
+| Mix | 0 linear to 1 linear | 1 linear |
+| Output | -24 dB to 24 dB | 0 dB |

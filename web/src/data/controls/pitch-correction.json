@@ -1,0 +1,118 @@
+[
+ {
+  "key": "scale",
+  "label": "Scale",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 14.0,
+  "default": 0.0,
+  "choices": [
+   "Scale guide",
+   "Major",
+   "Minor",
+   "Dorian",
+   "Phrygian",
+   "Lydian",
+   "Mixolydian",
+   "Locrian",
+   "Harmonic minor",
+   "Melodic minor",
+   "Major pentatonic",
+   "Minor pentatonic",
+   "Blues",
+   "Whole tone",
+   "Chromatic"
+  ]
+ },
+ {
+  "key": "key",
+  "label": "Key",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "speed",
+  "label": "Retune speed",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 400.0,
+  "default": 20.0
+ },
+ {
+  "key": "humanize",
+  "label": "Humanize",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "amount",
+  "label": "Amount",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "transpose",
+  "label": "Transpose",
+  "unit": "semitones",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "formant",
+  "label": "Formant",
+  "unit": "semitones",
+  "minimum": -6.0,
+  "maximum": 6.0,
+  "default": 0.0
+ },
+ {
+  "key": "detune",
+  "label": "Detune",
+  "unit": "cents",
+  "minimum": -50.0,
+  "maximum": 50.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "range",
+  "label": "Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "High voice",
+   "Voice",
+   "Low voice"
+  ]
+ }
+]

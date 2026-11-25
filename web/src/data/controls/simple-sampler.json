@@ -1,0 +1,119 @@
+[
+ {
+  "key": "rootNote",
+  "label": "Root note",
+  "unit": "MIDI note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 60.0
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "playback",
+  "label": "Playback",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Gate",
+   "One shot"
+  ]
+ },
+ {
+  "key": "interpolation",
+  "label": "Interpolation",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Linear",
+   "Cubic",
+   "Sinc"
+  ]
+ },
+ {
+  "key": "start",
+  "label": "Sample start",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "end",
+  "label": "Sample end",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "loopStart",
+  "label": "Loop start",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "loopEnd",
+  "label": "Loop end",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "loop",
+  "label": "Loop",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Forward"
+  ]
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 0.0
+ },
+ {
+  "key": "decayMs",
+  "label": "Decay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 0.0
+ },
+ {
+  "key": "sustain",
+  "label": "Sustain",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 20000.0,
+  "default": 8.0
+ }
+]

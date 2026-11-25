@@ -1,0 +1,178 @@
+[
+ {
+  "key": "threshold",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -20.0,
+  "maximum": 10.0,
+  "default": -5.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "1.5:1",
+   "2:1",
+   "3:1",
+   "4:1",
+   "6:1",
+   "10:1",
+   "Inf:1"
+  ]
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "0.03 ms",
+   "0.1 ms",
+   "0.3 ms",
+   "1 ms",
+   "3 ms",
+   "10 ms",
+   "30 ms"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "0.05 s",
+   "0.1 s",
+   "0.2 s",
+   "0.5 s",
+   "1 s",
+   "2 s",
+   "Variable"
+  ]
+ },
+ {
+  "key": "releaseVariable",
+  "label": "Variable release",
+  "unit": "s",
+  "minimum": 0.05,
+  "maximum": 3.0,
+  "default": 0.5
+ },
+ {
+  "key": "knee",
+  "label": "Knee",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Hard",
+   "Medium",
+   "Soft"
+  ]
+ },
+ {
+  "key": "weighting",
+  "label": "Punch",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Medium",
+   "Loud"
+  ]
+ },
+ {
+  "key": "type",
+  "label": "Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "New (feed-forward)",
+   "Old (feedback)"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Link",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 1.0,
+  "choices": [
+   "Independent",
+   "50%",
+   "60%",
+   "70%",
+   "80%",
+   "90%",
+   "100%"
+  ]
+ },
+ {
+  "key": "linkFilter",
+  "label": "Link filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Low-pass",
+   "High-pass",
+   "Band-pass"
+  ]
+ },
+ {
+  "key": "autoMakeup",
+  "label": "Make-up",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Manual",
+   "Auto"
+  ]
+ },
+ {
+  "key": "makeupDb",
+  "label": "Gain",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 22.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "in",
+  "label": "In",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ }
+]

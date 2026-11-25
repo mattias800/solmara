@@ -1,0 +1,100 @@
+[
+ {
+  "key": "bright",
+  "label": "Volume 1 (bright)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "normal",
+  "label": "Volume 2 (tremolo)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "middle",
+  "label": "Middle",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "presence",
+  "label": "Presence",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "intensity",
+  "label": "Intensity",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "speed",
+  "label": "Speed",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 1.0,
+  "choices": [
+   "Channel 1 high",
+   "Channel 1 high, jumpered",
+   "Channel 1 high, straight",
+   "Channel 1 low",
+   "Channel 1 low, jumpered",
+   "Channel 1 low, straight",
+   "Channel 2 low",
+   "Channel 2 low, jumpered",
+   "Channel 2 low, straight",
+   "Channel 2 high",
+   "Channel 2 high, jumpered",
+   "Channel 2 high, straight"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Standard",
+   "Ultra"
+  ]
+ }
+]

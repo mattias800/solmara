@@ -1,0 +1,58 @@
+[
+ {
+  "key": "crush",
+  "label": "Crush",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 1.0
+ },
+ {
+  "key": "distortion",
+  "label": "Distortion",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 1.0
+ },
+ {
+  "key": "darkness",
+  "label": "Darkness",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Slow",
+   "Fast"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

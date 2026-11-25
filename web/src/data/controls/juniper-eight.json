@@ -1,0 +1,983 @@
+[
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lfoDelay",
+  "label": "LFO delay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lfoWave",
+  "label": "LFO waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Saw",
+   "Square",
+   "Random"
+  ]
+ },
+ {
+  "key": "vcoModLfo",
+  "label": "VCO mod LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcoModEnv",
+  "label": "VCO mod ENV-1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcoModDest",
+  "label": "VCO mod to",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "VCO-1",
+   "VCO-1 & 2",
+   "VCO-2"
+  ]
+ },
+ {
+  "key": "vco1CrossMod",
+  "label": "Cross mod",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco1Range",
+  "label": "VCO-1 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 3.0,
+  "choices": [
+   "64'",
+   "32'",
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "vco1Wave",
+  "label": "VCO-1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Pulse",
+   "Square"
+  ]
+ },
+ {
+  "key": "vcoSync",
+  "label": "Sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "VCO-1 to 2",
+   "VCO-2 to 1"
+  ]
+ },
+ {
+  "key": "vco2Coarse",
+  "label": "VCO-2 coarse",
+  "unit": "semitones",
+  "minimum": -12.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "vco2Fine",
+  "label": "VCO-2 fine",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 6.0
+ },
+ {
+  "key": "vco2Low",
+  "label": "VCO-2 low frequency",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "vco2Wave",
+  "label": "VCO-2 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Sine",
+   "Saw",
+   "Pulse",
+   "Noise"
+  ]
+ },
+ {
+  "key": "pwm",
+  "label": "Pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "pwmMode",
+  "label": "Pulse width by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "ENV-1",
+   "Manual",
+   "LFO"
+  ]
+ },
+ {
+  "key": "sourceMix",
+  "label": "Source mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "hpf",
+  "label": "High-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "cutoff",
+  "label": "Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "resonance",
+  "label": "Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "slope",
+  "label": "Slope",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "12 dB",
+   "24 dB"
+  ]
+ },
+ {
+  "key": "vcfEnv",
+  "label": "VCF envelope",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "vcfEnvSource",
+  "label": "VCF envelope from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "ENV-1",
+   "ENV-2"
+  ]
+ },
+ {
+  "key": "vcfLfo",
+  "label": "VCF LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "vcfKeyFollow",
+  "label": "VCF key follow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "vcaLevel",
+  "label": "VCA level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "vcaLfo",
+  "label": "VCA LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "env1Attack",
+  "label": "ENV-1 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "env1Decay",
+  "label": "ENV-1 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "env1Sustain",
+  "label": "ENV-1 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "env1Release",
+  "label": "ENV-1 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "env1KeyFollow",
+  "label": "ENV-1 key follow",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "env1Polarity",
+  "label": "ENV-1 polarity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "env2Attack",
+  "label": "ENV-2 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "env2Decay",
+  "label": "ENV-2 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "env2Sustain",
+  "label": "ENV-2 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "env2Release",
+  "label": "ENV-2 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "env2KeyFollow",
+  "label": "ENV-2 key follow",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "keyMode",
+  "label": "Key mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Whole",
+   "Dual",
+   "Split"
+  ]
+ },
+ {
+  "key": "splitKey",
+  "label": "Split point",
+  "unit": "note",
+  "minimum": 24.0,
+  "maximum": 108.0,
+  "default": 60.0
+ },
+ {
+  "key": "balance",
+  "label": "Balance",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "assign",
+  "label": "Assign mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "Solo",
+   "Unison",
+   "Poly 1",
+   "Poly 2"
+  ]
+ },
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "portamento",
+  "label": "Portamento",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "portamentoOn",
+  "label": "Portamento on",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "unisonDetune",
+  "label": "Unison detune",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 2.0
+ },
+ {
+  "key": "benderVco1",
+  "label": "Bender to VCO-1",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "benderVco2",
+  "label": "Bender to VCO-2",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "benderRange",
+  "label": "Bender VCO range",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 2.0
+ },
+ {
+  "key": "benderVcf",
+  "label": "Bender to VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "bender",
+  "label": "Bender",
+  "unit": "dial",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "modLeverVco",
+  "label": "Mod lever to VCO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "modLeverVcf",
+  "label": "Mod lever to VCF",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "modWheel",
+  "label": "Mod lever",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "arpOn",
+  "label": "Arpeggiator",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "arpMode",
+  "label": "Arpeggiator mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Up",
+   "Down",
+   "Up & down",
+   "Random"
+  ]
+ },
+ {
+  "key": "arpRange",
+  "label": "Arpeggiator range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ]
+ },
+ {
+  "key": "arpRate",
+  "label": "Arpeggiator rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "arpSync",
+  "label": "Arpeggiator clock",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Free",
+   "Tempo"
+  ]
+ },
+ {
+  "key": "masterTune",
+  "label": "Master tune",
+  "unit": "dial",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 7.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Full"
+  ]
+ },
+ {
+  "key": "lowerLfoRate",
+  "label": "Lower LFO rate",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowerLfoDelay",
+  "label": "Lower LFO delay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerLfoWave",
+  "label": "Lower LFO waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Saw",
+   "Square",
+   "Random"
+  ]
+ },
+ {
+  "key": "lowerVcoModLfo",
+  "label": "Lower VCO mod LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerVcoModEnv",
+  "label": "Lower VCO mod ENV-1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerVcoModDest",
+  "label": "Lower VCO mod to",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "VCO-1",
+   "VCO-1 & 2",
+   "VCO-2"
+  ]
+ },
+ {
+  "key": "lowerVco1CrossMod",
+  "label": "Lower Cross mod",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerVco1Range",
+  "label": "Lower VCO-1 range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 3.0,
+  "choices": [
+   "64'",
+   "32'",
+   "16'",
+   "8'",
+   "4'",
+   "2'"
+  ]
+ },
+ {
+  "key": "lowerVco1Wave",
+  "label": "Lower VCO-1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Pulse",
+   "Square"
+  ]
+ },
+ {
+  "key": "lowerVcoSync",
+  "label": "Lower Sync",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "VCO-1 to 2",
+   "VCO-2 to 1"
+  ]
+ },
+ {
+  "key": "lowerVco2Coarse",
+  "label": "Lower VCO-2 coarse",
+  "unit": "semitones",
+  "minimum": -12.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerVco2Fine",
+  "label": "Lower VCO-2 fine",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 6.0
+ },
+ {
+  "key": "lowerVco2Low",
+  "label": "Lower VCO-2 low frequency",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lowerVco2Wave",
+  "label": "Lower VCO-2 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "Sine",
+   "Saw",
+   "Pulse",
+   "Noise"
+  ]
+ },
+ {
+  "key": "lowerPwm",
+  "label": "Lower Pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerPwmMode",
+  "label": "Lower Pulse width by",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "ENV-1",
+   "Manual",
+   "LFO"
+  ]
+ },
+ {
+  "key": "lowerSourceMix",
+  "label": "Lower Source mix",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowerHpf",
+  "label": "Lower High-pass",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerCutoff",
+  "label": "Lower Cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 6.0
+ },
+ {
+  "key": "lowerResonance",
+  "label": "Lower Resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerSlope",
+  "label": "Lower Slope",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "12 dB",
+   "24 dB"
+  ]
+ },
+ {
+  "key": "lowerVcfEnv",
+  "label": "Lower VCF envelope",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "lowerVcfEnvSource",
+  "label": "Lower VCF envelope from",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "ENV-1",
+   "ENV-2"
+  ]
+ },
+ {
+  "key": "lowerVcfLfo",
+  "label": "Lower VCF LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerVcfKeyFollow",
+  "label": "Lower VCF key follow",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "lowerVcaLevel",
+  "label": "Lower VCA level",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "lowerVcaLfo",
+  "label": "Lower VCA LFO",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerEnv1Attack",
+  "label": "Lower ENV-1 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerEnv1Decay",
+  "label": "Lower ENV-1 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "lowerEnv1Sustain",
+  "label": "Lower ENV-1 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "lowerEnv1Release",
+  "label": "Lower ENV-1 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "lowerEnv1KeyFollow",
+  "label": "Lower ENV-1 key follow",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lowerEnv1Polarity",
+  "label": "Lower ENV-1 polarity",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "lowerEnv2Attack",
+  "label": "Lower ENV-2 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowerEnv2Decay",
+  "label": "Lower ENV-2 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 4.0
+ },
+ {
+  "key": "lowerEnv2Sustain",
+  "label": "Lower ENV-2 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0
+ },
+ {
+  "key": "lowerEnv2Release",
+  "label": "Lower ENV-2 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 3.0
+ },
+ {
+  "key": "lowerEnv2KeyFollow",
+  "label": "Lower ENV-2 key follow",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

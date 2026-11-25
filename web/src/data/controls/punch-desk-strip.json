@@ -1,0 +1,575 @@
+[
+ {
+  "key": "inputSelect",
+  "label": "Input",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Line",
+   "Mic"
+  ]
+ },
+ {
+  "key": "micGainDb",
+  "label": "Mic Gain",
+  "unit": "dB",
+  "minimum": 30.0,
+  "maximum": 65.0,
+  "default": 40.5
+ },
+ {
+  "key": "lineGainDb",
+  "label": "Line Gain",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "pad",
+  "label": "Pad",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "-20 dB"
+  ]
+ },
+ {
+  "key": "phase",
+  "label": "Phase",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "lowCut",
+  "label": "Low Cut",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "50 Hz"
+  ]
+ },
+ {
+  "key": "filters",
+  "label": "Filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "highPassHz",
+  "label": "High Pass",
+  "unit": "Hz",
+  "minimum": 12.0,
+  "maximum": 596.0,
+  "default": 12.0
+ },
+ {
+  "key": "lowPassHz",
+  "label": "Low Pass",
+  "unit": "Hz",
+  "minimum": 643.0,
+  "maximum": 40800.0,
+  "default": 40800.0
+ },
+ {
+  "key": "filtersToSidechain",
+  "label": "Filter to SC",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "gateThresholdDb",
+  "label": "Gate Threshold",
+  "unit": "dB",
+  "minimum": -47.0,
+  "maximum": 35.0,
+  "default": -47.0
+ },
+ {
+  "key": "gateDepthDb",
+  "label": "Depth",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 80.0,
+  "default": 80.0
+ },
+ {
+  "key": "gateFastAttack",
+  "label": "Gate Attack",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Fast"
+  ]
+ },
+ {
+  "key": "gateRelease",
+  "label": "Gate Release",
+  "unit": "s",
+  "minimum": 0.05,
+  "maximum": 3.0,
+  "default": 0.5
+ },
+ {
+  "key": "gateHold",
+  "label": "Release/Hold",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Release",
+   "Hold"
+  ]
+ },
+ {
+  "key": "gateMode",
+  "label": "Gate Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Gate",
+   "Expander"
+  ]
+ },
+ {
+  "key": "compressor",
+  "label": "Compressor",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -18.0,
+  "maximum": 13.0,
+  "default": 13.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 50.0,
+  "default": 4.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "s",
+  "minimum": 0.05,
+  "maximum": 3.0,
+  "default": 0.5
+ },
+ {
+  "key": "knee",
+  "label": "Knee",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Soft",
+   "Hard"
+  ]
+ },
+ {
+  "key": "compressorType",
+  "label": "Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Old (feedback)",
+   "New (feed-forward)"
+  ]
+ },
+ {
+  "key": "sidechainLink",
+  "label": "SC Link",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "eq",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "eqType",
+  "label": "EQ Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Four-band",
+   "Graphic"
+  ]
+ },
+ {
+  "key": "eqBeforeDynamics",
+  "label": "EQ Pre Dyn",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "eqToSidechain",
+  "label": "EQ to SC",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lowHz",
+  "label": "LF",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "30 Hz",
+   "40 Hz",
+   "50 Hz",
+   "100 Hz",
+   "200 Hz",
+   "300 Hz",
+   "400 Hz"
+  ]
+ },
+ {
+  "key": "lowGain",
+  "label": "LF Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "-12 dB",
+   "-9 dB",
+   "-6 dB",
+   "-4 dB",
+   "-2 dB",
+   "0 dB",
+   "+2 dB",
+   "+4 dB",
+   "+6 dB",
+   "+9 dB",
+   "+12 dB"
+  ]
+ },
+ {
+  "key": "lowPeak",
+  "label": "LF Shape",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Peak"
+  ]
+ },
+ {
+  "key": "lowMidHz",
+  "label": "LMF",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "75 Hz",
+   "150 Hz",
+   "180 Hz",
+   "240 Hz",
+   "500 Hz",
+   "700 Hz",
+   "1 kHz"
+  ]
+ },
+ {
+  "key": "lowMidGain",
+  "label": "LMF Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "-12 dB",
+   "-9 dB",
+   "-6 dB",
+   "-4 dB",
+   "-2 dB",
+   "0 dB",
+   "+2 dB",
+   "+4 dB",
+   "+6 dB",
+   "+9 dB",
+   "+12 dB"
+  ]
+ },
+ {
+  "key": "highMidHz",
+  "label": "HMF",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "800 Hz",
+   "1.5 kHz",
+   "3 kHz",
+   "5 kHz",
+   "8 kHz",
+   "10 kHz",
+   "12.5 kHz"
+  ]
+ },
+ {
+  "key": "highMidGain",
+  "label": "HMF Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "-12 dB",
+   "-9 dB",
+   "-6 dB",
+   "-4 dB",
+   "-2 dB",
+   "0 dB",
+   "+2 dB",
+   "+4 dB",
+   "+6 dB",
+   "+9 dB",
+   "+12 dB"
+  ]
+ },
+ {
+  "key": "highHz",
+  "label": "HF",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 5.0,
+  "choices": [
+   "2.5 kHz",
+   "5 kHz",
+   "7 kHz",
+   "10 kHz",
+   "12.5 kHz",
+   "15 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "highGain",
+  "label": "HF Gain",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0,
+  "choices": [
+   "-12 dB",
+   "-9 dB",
+   "-6 dB",
+   "-4 dB",
+   "-2 dB",
+   "0 dB",
+   "+2 dB",
+   "+4 dB",
+   "+6 dB",
+   "+9 dB",
+   "+12 dB"
+  ]
+ },
+ {
+  "key": "highPeak",
+  "label": "HF Shape",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Peak"
+  ]
+ },
+ {
+  "key": "graphic31Db",
+  "label": "31 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic63Db",
+  "label": "63 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic125Db",
+  "label": "125 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic250Db",
+  "label": "250 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic500Db",
+  "label": "500 Hz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic1kDb",
+  "label": "1 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic2kDb",
+  "label": "2 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic4kDb",
+  "label": "4 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic8kDb",
+  "label": "8 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "graphic16kDb",
+  "label": "16 kHz",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -70.0,
+  "maximum": 9.0,
+  "default": 0.0
+ }
+]

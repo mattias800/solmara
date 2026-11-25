@@ -1,0 +1,90 @@
+[
+ {
+  "key": "program",
+  "label": "Program",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 17.0,
+  "default": 0.0,
+  "choices": [
+   "Ambience",
+   "Room A",
+   "Room B",
+   "Hall A",
+   "Hall B",
+   "Plate A",
+   "Plate B",
+   "Nonlin",
+   "Reverse",
+   "Echo",
+   "Chorus",
+   "Freeze",
+   "Hall C",
+   "Room A0",
+   "Reverse 2",
+   "Delay",
+   "Image",
+   "Nonlin 1"
+  ]
+ },
+ {
+  "key": "preDelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 1200.0,
+  "default": 0.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "s",
+  "minimum": 0.05,
+  "maximum": 20.0,
+  "default": 1.0
+ },
+ {
+  "key": "low",
+  "label": "Low",
+  "unit": "linear",
+  "minimum": 0.5,
+  "maximum": 2.0,
+  "default": 1.0
+ },
+ {
+  "key": "high",
+  "label": "High",
+  "unit": "linear",
+  "minimum": 0.1,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "noise",
+  "label": "Noise",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.3
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

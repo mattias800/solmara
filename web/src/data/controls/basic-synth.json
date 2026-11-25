@@ -1,0 +1,24 @@
+[
+ {
+  "key": "waveform",
+  "label": "Waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Sine",
+   "Saw",
+   "Square",
+   "Triangle"
+  ]
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ }
+]

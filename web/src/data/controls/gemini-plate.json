@@ -1,0 +1,71 @@
+[
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "s",
+  "minimum": 0.5,
+  "maximum": 4.88,
+  "default": 2.5
+ },
+ {
+  "key": "preDelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 250.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 1000.0,
+  "default": 80.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "Hz",
+  "minimum": 1000.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "width",
+  "label": "Width",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.25
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Light",
+   "Middle",
+   "Full"
+  ]
+ }
+]

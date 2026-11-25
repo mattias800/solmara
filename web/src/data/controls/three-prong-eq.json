@@ -1,0 +1,202 @@
+[
+ {
+  "key": "lowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "50 Hz",
+   "80 Hz",
+   "100 Hz",
+   "150 Hz"
+  ]
+ },
+ {
+  "key": "lowGain",
+  "label": "Low",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowMidFreq",
+  "label": "Low Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "250 Hz",
+   "500 Hz",
+   "1 kHz",
+   "2 kHz"
+  ]
+ },
+ {
+  "key": "lowMidGain",
+  "label": "Low Mid",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "highMidFreq",
+  "label": "High Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 1.0,
+  "choices": [
+   "3 kHz",
+   "5 kHz",
+   "7 kHz",
+   "9 kHz"
+  ]
+ },
+ {
+  "key": "highMidGain",
+  "label": "High Mid",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "highFreq",
+  "label": "High Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 2.0,
+  "choices": [
+   "8 kHz",
+   "10 kHz",
+   "12 kHz",
+   "15 kHz"
+  ]
+ },
+ {
+  "key": "highGain",
+  "label": "High",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "hp25",
+  "label": "HP 25 Hz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "hp50",
+  "label": "HP 50 Hz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "hp100",
+  "label": "HP 100 Hz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lp9",
+  "label": "LP 9 kHz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lp12",
+  "label": "LP 12 kHz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "lp15",
+  "label": "LP 15 kHz",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "saturation",
+  "label": "Saturation",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "polarity",
+  "label": "Polarity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

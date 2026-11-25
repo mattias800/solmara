@@ -1,0 +1,55 @@
+[
+ {
+  "key": "pedal",
+  "label": "Pedal",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 50.0
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Pedal",
+   "Envelope",
+   "LFO"
+  ]
+ },
+ {
+  "key": "depth",
+  "label": "Depth",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 60.0
+ },
+ {
+  "key": "rate",
+  "label": "Rate",
+  "unit": "Hz",
+  "minimum": 0.05,
+  "maximum": 10.0,
+  "default": 1.5
+ },
+ {
+  "key": "sensitivity",
+  "label": "Sensitivity",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 36.0,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

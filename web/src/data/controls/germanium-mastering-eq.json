@@ -1,0 +1,231 @@
+[
+ {
+  "key": "bassShape",
+  "label": "Bass Shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Peak",
+   "Shelf"
+  ]
+ },
+ {
+  "key": "bassFreq",
+  "label": "Bass Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 4.0,
+  "choices": [
+   "35 Hz",
+   "50 Hz",
+   "70 Hz",
+   "91 Hz",
+   "150 Hz",
+   "200 Hz",
+   "300 Hz"
+  ]
+ },
+ {
+  "key": "bassGain",
+  "label": "Bass",
+  "unit": "dB",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "bassRange",
+  "label": "Bass Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "x1",
+   "Out",
+   "x1.5"
+  ]
+ },
+ {
+  "key": "mid2Freq",
+  "label": "Presence 2 Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 4.0,
+  "choices": [
+   "300 Hz",
+   "400 Hz",
+   "500 Hz",
+   "800 Hz",
+   "1.2 kHz",
+   "1.8 kHz",
+   "2.8 kHz",
+   "3.6 kHz"
+  ]
+ },
+ {
+  "key": "mid2Gain",
+  "label": "Presence 2",
+  "unit": "dB",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "mid2Range",
+  "label": "Presence 2 Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "x1",
+   "Out",
+   "x1.5"
+  ]
+ },
+ {
+  "key": "mid1Freq",
+  "label": "Presence 1 Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 4.0,
+  "choices": [
+   "800 Hz",
+   "1.2 kHz",
+   "1.8 kHz",
+   "2.8 kHz",
+   "3.6 kHz",
+   "4.2 kHz",
+   "6.5 kHz",
+   "8.1 kHz"
+  ]
+ },
+ {
+  "key": "mid1Gain",
+  "label": "Presence 1",
+  "unit": "dB",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "mid1Range",
+  "label": "Presence 1 Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "x1",
+   "Out",
+   "x1.5"
+  ]
+ },
+ {
+  "key": "trebleShape",
+  "label": "Treble Shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Peak",
+   "Shelf"
+  ]
+ },
+ {
+  "key": "trebleFreq",
+  "label": "Treble Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 4.0,
+  "choices": [
+   "3.6 kHz",
+   "4.2 kHz",
+   "6.5 kHz",
+   "8.1 kHz",
+   "10 kHz",
+   "12 kHz",
+   "16 kHz",
+   "20 kHz"
+  ]
+ },
+ {
+  "key": "trebleGain",
+  "label": "Treble",
+  "unit": "dB",
+  "minimum": -5.0,
+  "maximum": 5.0,
+  "default": 0.0
+ },
+ {
+  "key": "trebleRange",
+  "label": "Treble Range",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "x1",
+   "Out",
+   "x1.5"
+  ]
+ },
+ {
+  "key": "highPass",
+  "label": "High Pass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "20 Hz",
+   "30 Hz",
+   "40 Hz",
+   "50 Hz",
+   "60 Hz",
+   "80 Hz",
+   "100 Hz",
+   "160 Hz",
+   "200 Hz",
+   "320 Hz"
+  ]
+ },
+ {
+  "key": "lowPass",
+  "label": "Low Pass",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 10.0,
+  "choices": [
+   "2 kHz",
+   "3 kHz",
+   "5 kHz",
+   "8.1 kHz",
+   "10 kHz",
+   "12 kHz",
+   "14 kHz",
+   "18 kHz",
+   "20 kHz",
+   "30 kHz",
+   "Off"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ }
+]

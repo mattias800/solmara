@@ -1,0 +1,372 @@
+[
+ {
+  "key": "eqIn",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "compIn",
+  "label": "Compressor",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "order",
+  "label": "Order",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Comp > EQ",
+   "EQ > Comp"
+  ]
+ },
+ {
+  "key": "lowMode",
+  "label": "Low",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Boost",
+   "Out",
+   "Cut"
+  ]
+ },
+ {
+  "key": "lowType",
+  "label": "Low Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Bell"
+  ]
+ },
+ {
+  "key": "lowFreq",
+  "label": "Low Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "33 Hz",
+   "56 Hz",
+   "100 Hz",
+   "180 Hz",
+   "220 Hz",
+   "270 Hz",
+   "390 Hz"
+  ]
+ },
+ {
+  "key": "lowGain",
+  "label": "Low Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowBandwidth",
+  "label": "Low Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowMidMode",
+  "label": "Low Mid",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Boost",
+   "Out",
+   "Cut"
+  ]
+ },
+ {
+  "key": "lowMidFreq",
+  "label": "Low Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 2.0,
+  "choices": [
+   "250 Hz",
+   "330 Hz",
+   "470 Hz",
+   "560 Hz",
+   "680 Hz",
+   "820 Hz",
+   "1.2 kHz"
+  ]
+ },
+ {
+  "key": "lowMidGain",
+  "label": "Low Mid Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowMidBandwidth",
+  "label": "Low Mid Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "highMidMode",
+  "label": "High Mid",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Boost",
+   "Out",
+   "Cut"
+  ]
+ },
+ {
+  "key": "highMidFreq",
+  "label": "High Mid Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 3.0,
+  "choices": [
+   "1 kHz",
+   "1.5 kHz",
+   "1.8 kHz",
+   "2.2 kHz",
+   "2.7 kHz",
+   "3.9 kHz",
+   "5.6 kHz"
+  ]
+ },
+ {
+  "key": "highMidGain",
+  "label": "High Mid Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "highMidBandwidth",
+  "label": "High Mid Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "highMode",
+  "label": "High",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Boost",
+   "Out",
+   "Cut"
+  ]
+ },
+ {
+  "key": "highType",
+  "label": "High Type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Bell"
+  ]
+ },
+ {
+  "key": "highFreq",
+  "label": "High Freq",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 6.0,
+  "default": 4.0,
+  "choices": [
+   "3.3 kHz",
+   "4.7 kHz",
+   "6.8 kHz",
+   "8.2 kHz",
+   "10 kHz",
+   "12.5 kHz",
+   "15 kHz"
+  ]
+ },
+ {
+  "key": "highGain",
+  "label": "High Gain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "highBandwidth",
+  "label": "High Width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "27 Hz",
+   "47 Hz",
+   "82 Hz"
+  ]
+ },
+ {
+  "key": "highCut",
+  "label": "High Cut",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "8.2 kHz",
+   "12 kHz",
+   "18 kHz"
+  ]
+ },
+ {
+  "key": "output",
+  "label": "EQ Output",
+  "unit": "dB",
+  "minimum": -30.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "reduction",
+  "label": "Gain Reduction",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "gain",
+  "label": "Gain",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 33.5,
+  "default": 0.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "compLowCut",
+  "label": "Comp Low Cut",
+  "unit": "Hz",
+  "minimum": 0.0,
+  "maximum": 600.0,
+  "default": 0.0
+ },
+ {
+  "key": "compLowCutAt",
+  "label": "Low Cut On",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Input",
+   "Detector"
+  ]
+ },
+ {
+  "key": "saturation",
+  "label": "Saturation",
+  "unit": "dial",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "parallel",
+  "label": "Parallel",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "quality",
+  "label": "Quality",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Light",
+   "Standard"
+  ]
+ }
+]

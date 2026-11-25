@@ -1,0 +1,34 @@
+[
+ {
+  "key": "bits",
+  "label": "Bits",
+  "unit": "bits",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "rateHz",
+  "label": "Rate",
+  "unit": "Hz",
+  "minimum": 100.0,
+  "maximum": 48000.0,
+  "default": 48000.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

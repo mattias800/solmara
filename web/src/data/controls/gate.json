@@ -1,0 +1,78 @@
+[
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -80.0,
+  "maximum": 0.0,
+  "default": -40.0
+ },
+ {
+  "key": "rangeDb",
+  "label": "Range",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 80.0,
+  "default": 60.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 100.0,
+  "default": 5.0
+ },
+ {
+  "key": "holdMs",
+  "label": "Hold",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 1000.0,
+  "default": 50.0
+ },
+ {
+  "key": "releaseMs",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 2000.0,
+  "default": 100.0
+ },
+ {
+  "key": "hysteresisDb",
+  "label": "Hysteresis",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 3.0
+ },
+ {
+  "key": "sidechainLowCut",
+  "label": "SC low cut",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 2000.0,
+  "default": 20.0
+ },
+ {
+  "key": "sidechainHighCut",
+  "label": "SC high cut",
+  "unit": "Hz",
+  "minimum": 100.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "sidechainListen",
+  "label": "SC listen",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

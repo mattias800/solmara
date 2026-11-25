@@ -1,0 +1,22 @@
+{
+ "Piano roll": {
+  "kind": "Notes",
+  "text": "The scale shaded behind your notes, and chords suggested for the ones you pick.",
+  "oldImage": "write-piano-roll"
+ },
+ "Drum sequencer": {
+  "kind": "Steps",
+  "text": "Steps, accents, flams and swing, the way drum machines work.",
+  "oldImage": "write-drums"
+ },
+ "Tracker": {
+  "kind": "Rows",
+  "text": "Rows of notes and commands, fast from the keyboard. Audio can be sliced into a pattern.",
+  "oldImage": "write-tracker"
+ },
+ "Patterns as code": {
+  "kind": "Code",
+  "text": "A rhythm written as a line of text, heard as you type.",
+  "oldImage": "write-code"
+ }
+}

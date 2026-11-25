@@ -1,0 +1,90 @@
+[
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -50.0,
+  "maximum": 0.0,
+  "default": -20.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "2:1",
+   "4:1",
+   "10:1"
+  ]
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 5.0,
+  "default": 4.0,
+  "choices": [
+   "0.1 ms",
+   "0.3 ms",
+   "1 ms",
+   "3 ms",
+   "10 ms",
+   "30 ms"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 4.0,
+  "choices": [
+   "0.1 s",
+   "0.3 s",
+   "0.6 s",
+   "1.2 s",
+   "Auto"
+  ]
+ },
+ {
+  "key": "makeupDb",
+  "label": "Make-up",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 20.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "sidechainLowCut",
+  "label": "SC low cut",
+  "unit": "Hz",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "detector",
+  "label": "Detector",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Forward",
+   "Back"
+  ]
+ }
+]

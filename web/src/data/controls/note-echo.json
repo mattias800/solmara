@@ -1,0 +1,72 @@
+[
+ {
+  "key": "sync",
+  "label": "Tempo sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rate",
+  "label": "Step",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 9.0,
+  "choices": [
+   "1/128",
+   "1/64T",
+   "1/64",
+   "1/32T",
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "3/32",
+   "1/8",
+   "1/4T",
+   "3/16",
+   "1/4",
+   "1/2T",
+   "3/8",
+   "1/2"
+  ]
+ },
+ {
+  "key": "time",
+  "label": "Step time",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 1000.0,
+  "default": 250.0
+ },
+ {
+  "key": "repeats",
+  "label": "Repeats",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "velocity",
+  "label": "Velocity",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 200.0,
+  "default": 70.0
+ },
+ {
+  "key": "pitch",
+  "label": "Pitch",
+  "unit": "st",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ }
+]

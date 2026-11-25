@@ -1,0 +1,2487 @@
+[
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.8
+ },
+ {
+  "key": "lengthMs",
+  "label": "Length",
+  "unit": "ms",
+  "minimum": 10.0,
+  "maximum": 3000.0,
+  "default": 600.0
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "rootKey",
+  "label": "Root key",
+  "unit": "note",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 36.0
+ },
+ {
+  "key": "velocityToLevel",
+  "label": "Velocity",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.5
+ },
+ {
+  "key": "velocityToPitch",
+  "label": "Velocity to pitch",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "velocityToDrive",
+  "label": "Velocity to drive",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "randomPitch",
+  "label": "Random pitch",
+  "unit": "cents",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "randomDecay",
+  "label": "Random decay",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 0.5,
+  "default": 0.0
+ },
+ {
+  "key": "lfoRate",
+  "label": "LFO rate",
+  "unit": "Hz",
+  "minimum": 0.1,
+  "maximum": 40.0,
+  "default": 6.0
+ },
+ {
+  "key": "lfoToPitch",
+  "label": "LFO to pitch",
+  "unit": "semitones",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "driveDb",
+  "label": "Drive",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 36.0,
+  "default": 0.0
+ },
+ {
+  "key": "driveType",
+  "label": "Drive type",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Soft",
+   "Hard",
+   "Valve"
+  ]
+ },
+ {
+  "key": "tone",
+  "label": "Tone",
+  "unit": "Hz",
+  "minimum": 200.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "limiter",
+  "label": "Limiter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "limiterRelease",
+  "label": "Limiter release",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Fast",
+   "Medium",
+   "Slow"
+  ]
+ },
+ {
+  "key": "limiterLookahead",
+  "label": "Lookahead",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "1 ms",
+   "3 ms"
+  ]
+ },
+ {
+  "key": "pitchSnap",
+  "label": "Pitch snap",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Notes",
+   "Scale"
+  ]
+ },
+ {
+  "key": "morph",
+  "label": "Morph",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1Source",
+  "label": "Layer 1",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "Body",
+   "Click",
+   "Noise",
+   "Sample"
+  ]
+ },
+ {
+  "key": "l1LevelDb",
+  "label": "L1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1Mute",
+  "label": "L1 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l1Solo",
+  "label": "L1 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l1Invert",
+  "label": "L1 invert",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l1Phase",
+  "label": "L1 phase",
+  "unit": "degrees",
+  "minimum": 0.0,
+  "maximum": 360.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1Wave",
+  "label": "L1 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "l1WaveMix",
+  "label": "L1 wave mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1ClickNoise",
+  "label": "L1 click noise",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "l1Filter",
+  "label": "L1 filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Band",
+   "High"
+  ]
+ },
+ {
+  "key": "l1Cutoff",
+  "label": "L1 cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "l1Resonance",
+  "label": "L1 resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.2
+ },
+ {
+  "key": "l1Tune",
+  "label": "L1 tune",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1StartMs",
+  "label": "L1 start",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1Pan",
+  "label": "L1 pan",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1SampleFilter",
+  "label": "L1 sample filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l1Bus",
+  "label": "L1 bus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Master",
+   "Bus A",
+   "Bus B"
+  ]
+ },
+ {
+  "key": "l1Table",
+  "label": "L1 table",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Basic Shapes",
+   "Pulse Width",
+   "Harmonic Build",
+   "Odd Build",
+   "Harmonic Sweep",
+   "Drawbars",
+   "Sync Saw",
+   "Sync Sine",
+   "FM Index",
+   "FM Unison",
+   "Wavefold",
+   "Phase Resonance",
+   "Vowels",
+   "Noise Spectra",
+   "Bit Steps",
+   "From audio"
+  ]
+ },
+ {
+  "key": "l1TableMix",
+  "label": "L1 table mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1TablePosition",
+  "label": "L1 table position",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l1DecayShape",
+  "label": "L1 decay shape",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "l1FactoryClick",
+  "label": "L1 factory click",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Its sample",
+   "Felt Beater",
+   "Plastic Beater",
+   "Wood Beater",
+   "Tick",
+   "Snap",
+   "Zap",
+   "Metal",
+   "Air",
+   "Crunch",
+   "Knock"
+  ]
+ },
+ {
+  "key": "l1H1Ratio",
+  "label": "L1 H1 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 2.0
+ },
+ {
+  "key": "l1H1GainDb",
+  "label": "L1 H1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H1DecayMs",
+  "label": "L1 H1 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H2Ratio",
+  "label": "L1 H2 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "l1H2GainDb",
+  "label": "L1 H2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H2DecayMs",
+  "label": "L1 H2 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H3Ratio",
+  "label": "L1 H3 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "l1H3GainDb",
+  "label": "L1 H3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H3DecayMs",
+  "label": "L1 H3 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H4Ratio",
+  "label": "L1 H4 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 5.0
+ },
+ {
+  "key": "l1H4GainDb",
+  "label": "L1 H4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H4DecayMs",
+  "label": "L1 H4 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H5Ratio",
+  "label": "L1 H5 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 6.0
+ },
+ {
+  "key": "l1H5GainDb",
+  "label": "L1 H5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H5DecayMs",
+  "label": "L1 H5 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H6Ratio",
+  "label": "L1 H6 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 7.0
+ },
+ {
+  "key": "l1H6GainDb",
+  "label": "L1 H6 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H6DecayMs",
+  "label": "L1 H6 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H7Ratio",
+  "label": "L1 H7 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "l1H7GainDb",
+  "label": "L1 H7 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H7DecayMs",
+  "label": "L1 H7 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H8Ratio",
+  "label": "L1 H8 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 9.0
+ },
+ {
+  "key": "l1H8GainDb",
+  "label": "L1 H8 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H8DecayMs",
+  "label": "L1 H8 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l1H9Ratio",
+  "label": "L1 H9 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 10.0
+ },
+ {
+  "key": "l1H9GainDb",
+  "label": "L1 H9 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l1H9DecayMs",
+  "label": "L1 H9 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2Source",
+  "label": "Layer 2",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 2.0,
+  "choices": [
+   "Off",
+   "Body",
+   "Click",
+   "Noise",
+   "Sample"
+  ]
+ },
+ {
+  "key": "l2LevelDb",
+  "label": "L2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2Mute",
+  "label": "L2 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l2Solo",
+  "label": "L2 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l2Invert",
+  "label": "L2 invert",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l2Phase",
+  "label": "L2 phase",
+  "unit": "degrees",
+  "minimum": 0.0,
+  "maximum": 360.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2Wave",
+  "label": "L2 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "l2WaveMix",
+  "label": "L2 wave mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2ClickNoise",
+  "label": "L2 click noise",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "l2Filter",
+  "label": "L2 filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Band",
+   "High"
+  ]
+ },
+ {
+  "key": "l2Cutoff",
+  "label": "L2 cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "l2Resonance",
+  "label": "L2 resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.2
+ },
+ {
+  "key": "l2Tune",
+  "label": "L2 tune",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2StartMs",
+  "label": "L2 start",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2Pan",
+  "label": "L2 pan",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2SampleFilter",
+  "label": "L2 sample filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l2Bus",
+  "label": "L2 bus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Master",
+   "Bus A",
+   "Bus B"
+  ]
+ },
+ {
+  "key": "l2Table",
+  "label": "L2 table",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Basic Shapes",
+   "Pulse Width",
+   "Harmonic Build",
+   "Odd Build",
+   "Harmonic Sweep",
+   "Drawbars",
+   "Sync Saw",
+   "Sync Sine",
+   "FM Index",
+   "FM Unison",
+   "Wavefold",
+   "Phase Resonance",
+   "Vowels",
+   "Noise Spectra",
+   "Bit Steps",
+   "From audio"
+  ]
+ },
+ {
+  "key": "l2TableMix",
+  "label": "L2 table mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2TablePosition",
+  "label": "L2 table position",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l2DecayShape",
+  "label": "L2 decay shape",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "l2FactoryClick",
+  "label": "L2 factory click",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Its sample",
+   "Felt Beater",
+   "Plastic Beater",
+   "Wood Beater",
+   "Tick",
+   "Snap",
+   "Zap",
+   "Metal",
+   "Air",
+   "Crunch",
+   "Knock"
+  ]
+ },
+ {
+  "key": "l2H1Ratio",
+  "label": "L2 H1 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 2.0
+ },
+ {
+  "key": "l2H1GainDb",
+  "label": "L2 H1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H1DecayMs",
+  "label": "L2 H1 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H2Ratio",
+  "label": "L2 H2 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "l2H2GainDb",
+  "label": "L2 H2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H2DecayMs",
+  "label": "L2 H2 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H3Ratio",
+  "label": "L2 H3 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "l2H3GainDb",
+  "label": "L2 H3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H3DecayMs",
+  "label": "L2 H3 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H4Ratio",
+  "label": "L2 H4 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 5.0
+ },
+ {
+  "key": "l2H4GainDb",
+  "label": "L2 H4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H4DecayMs",
+  "label": "L2 H4 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H5Ratio",
+  "label": "L2 H5 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 6.0
+ },
+ {
+  "key": "l2H5GainDb",
+  "label": "L2 H5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H5DecayMs",
+  "label": "L2 H5 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H6Ratio",
+  "label": "L2 H6 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 7.0
+ },
+ {
+  "key": "l2H6GainDb",
+  "label": "L2 H6 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H6DecayMs",
+  "label": "L2 H6 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H7Ratio",
+  "label": "L2 H7 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "l2H7GainDb",
+  "label": "L2 H7 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H7DecayMs",
+  "label": "L2 H7 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H8Ratio",
+  "label": "L2 H8 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 9.0
+ },
+ {
+  "key": "l2H8GainDb",
+  "label": "L2 H8 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H8DecayMs",
+  "label": "L2 H8 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l2H9Ratio",
+  "label": "L2 H9 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 10.0
+ },
+ {
+  "key": "l2H9GainDb",
+  "label": "L2 H9 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l2H9DecayMs",
+  "label": "L2 H9 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3Source",
+  "label": "Layer 3",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Body",
+   "Click",
+   "Noise",
+   "Sample"
+  ]
+ },
+ {
+  "key": "l3LevelDb",
+  "label": "L3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3Mute",
+  "label": "L3 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l3Solo",
+  "label": "L3 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l3Invert",
+  "label": "L3 invert",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l3Phase",
+  "label": "L3 phase",
+  "unit": "degrees",
+  "minimum": 0.0,
+  "maximum": 360.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3Wave",
+  "label": "L3 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "l3WaveMix",
+  "label": "L3 wave mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3ClickNoise",
+  "label": "L3 click noise",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "l3Filter",
+  "label": "L3 filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Band",
+   "High"
+  ]
+ },
+ {
+  "key": "l3Cutoff",
+  "label": "L3 cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "l3Resonance",
+  "label": "L3 resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.2
+ },
+ {
+  "key": "l3Tune",
+  "label": "L3 tune",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3StartMs",
+  "label": "L3 start",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3Pan",
+  "label": "L3 pan",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3SampleFilter",
+  "label": "L3 sample filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l3Bus",
+  "label": "L3 bus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Master",
+   "Bus A",
+   "Bus B"
+  ]
+ },
+ {
+  "key": "l3Table",
+  "label": "L3 table",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Basic Shapes",
+   "Pulse Width",
+   "Harmonic Build",
+   "Odd Build",
+   "Harmonic Sweep",
+   "Drawbars",
+   "Sync Saw",
+   "Sync Sine",
+   "FM Index",
+   "FM Unison",
+   "Wavefold",
+   "Phase Resonance",
+   "Vowels",
+   "Noise Spectra",
+   "Bit Steps",
+   "From audio"
+  ]
+ },
+ {
+  "key": "l3TableMix",
+  "label": "L3 table mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3TablePosition",
+  "label": "L3 table position",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l3DecayShape",
+  "label": "L3 decay shape",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "l3FactoryClick",
+  "label": "L3 factory click",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Its sample",
+   "Felt Beater",
+   "Plastic Beater",
+   "Wood Beater",
+   "Tick",
+   "Snap",
+   "Zap",
+   "Metal",
+   "Air",
+   "Crunch",
+   "Knock"
+  ]
+ },
+ {
+  "key": "l3H1Ratio",
+  "label": "L3 H1 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 2.0
+ },
+ {
+  "key": "l3H1GainDb",
+  "label": "L3 H1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H1DecayMs",
+  "label": "L3 H1 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H2Ratio",
+  "label": "L3 H2 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "l3H2GainDb",
+  "label": "L3 H2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H2DecayMs",
+  "label": "L3 H2 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H3Ratio",
+  "label": "L3 H3 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "l3H3GainDb",
+  "label": "L3 H3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H3DecayMs",
+  "label": "L3 H3 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H4Ratio",
+  "label": "L3 H4 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 5.0
+ },
+ {
+  "key": "l3H4GainDb",
+  "label": "L3 H4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H4DecayMs",
+  "label": "L3 H4 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H5Ratio",
+  "label": "L3 H5 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 6.0
+ },
+ {
+  "key": "l3H5GainDb",
+  "label": "L3 H5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H5DecayMs",
+  "label": "L3 H5 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H6Ratio",
+  "label": "L3 H6 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 7.0
+ },
+ {
+  "key": "l3H6GainDb",
+  "label": "L3 H6 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H6DecayMs",
+  "label": "L3 H6 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H7Ratio",
+  "label": "L3 H7 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "l3H7GainDb",
+  "label": "L3 H7 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H7DecayMs",
+  "label": "L3 H7 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H8Ratio",
+  "label": "L3 H8 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 9.0
+ },
+ {
+  "key": "l3H8GainDb",
+  "label": "L3 H8 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H8DecayMs",
+  "label": "L3 H8 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l3H9Ratio",
+  "label": "L3 H9 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 10.0
+ },
+ {
+  "key": "l3H9GainDb",
+  "label": "L3 H9 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l3H9DecayMs",
+  "label": "L3 H9 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4Source",
+  "label": "Layer 4",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Body",
+   "Click",
+   "Noise",
+   "Sample"
+  ]
+ },
+ {
+  "key": "l4LevelDb",
+  "label": "L4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4Mute",
+  "label": "L4 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l4Solo",
+  "label": "L4 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l4Invert",
+  "label": "L4 invert",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l4Phase",
+  "label": "L4 phase",
+  "unit": "degrees",
+  "minimum": 0.0,
+  "maximum": 360.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4Wave",
+  "label": "L4 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "l4WaveMix",
+  "label": "L4 wave mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4ClickNoise",
+  "label": "L4 click noise",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "l4Filter",
+  "label": "L4 filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Band",
+   "High"
+  ]
+ },
+ {
+  "key": "l4Cutoff",
+  "label": "L4 cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "l4Resonance",
+  "label": "L4 resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.2
+ },
+ {
+  "key": "l4Tune",
+  "label": "L4 tune",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4StartMs",
+  "label": "L4 start",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4Pan",
+  "label": "L4 pan",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4SampleFilter",
+  "label": "L4 sample filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l4Bus",
+  "label": "L4 bus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Master",
+   "Bus A",
+   "Bus B"
+  ]
+ },
+ {
+  "key": "l4Table",
+  "label": "L4 table",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Basic Shapes",
+   "Pulse Width",
+   "Harmonic Build",
+   "Odd Build",
+   "Harmonic Sweep",
+   "Drawbars",
+   "Sync Saw",
+   "Sync Sine",
+   "FM Index",
+   "FM Unison",
+   "Wavefold",
+   "Phase Resonance",
+   "Vowels",
+   "Noise Spectra",
+   "Bit Steps",
+   "From audio"
+  ]
+ },
+ {
+  "key": "l4TableMix",
+  "label": "L4 table mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4TablePosition",
+  "label": "L4 table position",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l4DecayShape",
+  "label": "L4 decay shape",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "l4FactoryClick",
+  "label": "L4 factory click",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Its sample",
+   "Felt Beater",
+   "Plastic Beater",
+   "Wood Beater",
+   "Tick",
+   "Snap",
+   "Zap",
+   "Metal",
+   "Air",
+   "Crunch",
+   "Knock"
+  ]
+ },
+ {
+  "key": "l4H1Ratio",
+  "label": "L4 H1 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 2.0
+ },
+ {
+  "key": "l4H1GainDb",
+  "label": "L4 H1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H1DecayMs",
+  "label": "L4 H1 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H2Ratio",
+  "label": "L4 H2 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "l4H2GainDb",
+  "label": "L4 H2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H2DecayMs",
+  "label": "L4 H2 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H3Ratio",
+  "label": "L4 H3 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "l4H3GainDb",
+  "label": "L4 H3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H3DecayMs",
+  "label": "L4 H3 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H4Ratio",
+  "label": "L4 H4 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 5.0
+ },
+ {
+  "key": "l4H4GainDb",
+  "label": "L4 H4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H4DecayMs",
+  "label": "L4 H4 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H5Ratio",
+  "label": "L4 H5 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 6.0
+ },
+ {
+  "key": "l4H5GainDb",
+  "label": "L4 H5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H5DecayMs",
+  "label": "L4 H5 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H6Ratio",
+  "label": "L4 H6 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 7.0
+ },
+ {
+  "key": "l4H6GainDb",
+  "label": "L4 H6 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H6DecayMs",
+  "label": "L4 H6 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H7Ratio",
+  "label": "L4 H7 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "l4H7GainDb",
+  "label": "L4 H7 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H7DecayMs",
+  "label": "L4 H7 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H8Ratio",
+  "label": "L4 H8 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 9.0
+ },
+ {
+  "key": "l4H8GainDb",
+  "label": "L4 H8 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H8DecayMs",
+  "label": "L4 H8 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l4H9Ratio",
+  "label": "L4 H9 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 10.0
+ },
+ {
+  "key": "l4H9GainDb",
+  "label": "L4 H9 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l4H9DecayMs",
+  "label": "L4 H9 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5Source",
+  "label": "Layer 5",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "Body",
+   "Click",
+   "Noise",
+   "Sample"
+  ]
+ },
+ {
+  "key": "l5LevelDb",
+  "label": "L5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5Mute",
+  "label": "L5 mute",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l5Solo",
+  "label": "L5 solo",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l5Invert",
+  "label": "L5 invert",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l5Phase",
+  "label": "L5 phase",
+  "unit": "degrees",
+  "minimum": 0.0,
+  "maximum": 360.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5Wave",
+  "label": "L5 wave",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Square"
+  ]
+ },
+ {
+  "key": "l5WaveMix",
+  "label": "L5 wave mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5ClickNoise",
+  "label": "L5 click noise",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.6
+ },
+ {
+  "key": "l5Filter",
+  "label": "L5 filter",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 1.0,
+  "choices": [
+   "Low",
+   "Band",
+   "High"
+  ]
+ },
+ {
+  "key": "l5Cutoff",
+  "label": "L5 cutoff",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 6000.0
+ },
+ {
+  "key": "l5Resonance",
+  "label": "L5 resonance",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.2
+ },
+ {
+  "key": "l5Tune",
+  "label": "L5 tune",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5StartMs",
+  "label": "L5 start",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 500.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5Pan",
+  "label": "L5 pan",
+  "unit": "linear",
+  "minimum": -1.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5SampleFilter",
+  "label": "L5 sample filter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "l5Bus",
+  "label": "L5 bus",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Master",
+   "Bus A",
+   "Bus B"
+  ]
+ },
+ {
+  "key": "l5Table",
+  "label": "L5 table",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0,
+  "choices": [
+   "Basic Shapes",
+   "Pulse Width",
+   "Harmonic Build",
+   "Odd Build",
+   "Harmonic Sweep",
+   "Drawbars",
+   "Sync Saw",
+   "Sync Sine",
+   "FM Index",
+   "FM Unison",
+   "Wavefold",
+   "Phase Resonance",
+   "Vowels",
+   "Noise Spectra",
+   "Bit Steps",
+   "From audio"
+  ]
+ },
+ {
+  "key": "l5TableMix",
+  "label": "L5 table mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5TablePosition",
+  "label": "L5 table position",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "l5DecayShape",
+  "label": "L5 decay shape",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "l5FactoryClick",
+  "label": "L5 factory click",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0,
+  "choices": [
+   "Its sample",
+   "Felt Beater",
+   "Plastic Beater",
+   "Wood Beater",
+   "Tick",
+   "Snap",
+   "Zap",
+   "Metal",
+   "Air",
+   "Crunch",
+   "Knock"
+  ]
+ },
+ {
+  "key": "l5H1Ratio",
+  "label": "L5 H1 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 2.0
+ },
+ {
+  "key": "l5H1GainDb",
+  "label": "L5 H1 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H1DecayMs",
+  "label": "L5 H1 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H2Ratio",
+  "label": "L5 H2 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 3.0
+ },
+ {
+  "key": "l5H2GainDb",
+  "label": "L5 H2 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H2DecayMs",
+  "label": "L5 H2 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H3Ratio",
+  "label": "L5 H3 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "l5H3GainDb",
+  "label": "L5 H3 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H3DecayMs",
+  "label": "L5 H3 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H4Ratio",
+  "label": "L5 H4 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 5.0
+ },
+ {
+  "key": "l5H4GainDb",
+  "label": "L5 H4 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H4DecayMs",
+  "label": "L5 H4 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H5Ratio",
+  "label": "L5 H5 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 6.0
+ },
+ {
+  "key": "l5H5GainDb",
+  "label": "L5 H5 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H5DecayMs",
+  "label": "L5 H5 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H6Ratio",
+  "label": "L5 H6 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 7.0
+ },
+ {
+  "key": "l5H6GainDb",
+  "label": "L5 H6 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H6DecayMs",
+  "label": "L5 H6 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H7Ratio",
+  "label": "L5 H7 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 8.0
+ },
+ {
+  "key": "l5H7GainDb",
+  "label": "L5 H7 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H7DecayMs",
+  "label": "L5 H7 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H8Ratio",
+  "label": "L5 H8 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 9.0
+ },
+ {
+  "key": "l5H8GainDb",
+  "label": "L5 H8 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H8DecayMs",
+  "label": "L5 H8 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ },
+ {
+  "key": "l5H9Ratio",
+  "label": "L5 H9 ratio",
+  "unit": "ratio",
+  "minimum": 0.5,
+  "maximum": 16.0,
+  "default": 10.0
+ },
+ {
+  "key": "l5H9GainDb",
+  "label": "L5 H9 level",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 0.0,
+  "default": -60.0
+ },
+ {
+  "key": "l5H9DecayMs",
+  "label": "L5 H9 decay",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 3000.0,
+  "default": 150.0
+ }
+]

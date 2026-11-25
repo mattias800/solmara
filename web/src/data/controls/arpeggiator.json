@@ -1,0 +1,171 @@
+[
+ {
+  "key": "shape",
+  "label": "Shape",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 1.0,
+  "choices": [
+   "Pattern",
+   "Up",
+   "Down",
+   "Up/Down",
+   "Down/Up",
+   "Played",
+   "Chord",
+   "Random",
+   "Converge",
+   "Diverge",
+   "Up&Down",
+   "Down&Up",
+   "Conv+Div",
+   "Rnd shuffle",
+   "Rnd drift",
+   "Rnd once"
+  ]
+ },
+ {
+  "key": "rate",
+  "label": "Rate",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 4.0,
+  "choices": [
+   "1/1",
+   "1/2",
+   "1/4",
+   "1/8",
+   "1/16",
+   "1/32",
+   "1/4T",
+   "1/8T",
+   "1/16T",
+   "1/32T",
+   "1/4.",
+   "1/8.",
+   "1/16."
+  ]
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "%",
+  "minimum": 1.0,
+  "maximum": 200.0,
+  "default": 100.0
+ },
+ {
+  "key": "range",
+  "label": "Range",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "shift",
+  "label": "Shift",
+  "unit": "semitones",
+  "minimum": -48.0,
+  "maximum": 48.0,
+  "default": 12.0
+ },
+ {
+  "key": "latch",
+  "label": "Latch",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "swing",
+  "label": "Swing",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0
+ },
+ {
+  "key": "seed",
+  "label": "Seed",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 999.0,
+  "default": 1.0
+ },
+ {
+  "key": "restart",
+  "label": "Restart",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "After silence",
+   "Each note",
+   "Never"
+  ]
+ },
+ {
+  "key": "scale",
+  "label": "Scale",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 14.0,
+  "default": 0.0,
+  "choices": [
+   "Project",
+   "Major",
+   "Minor",
+   "Dorian",
+   "Phrygian",
+   "Lydian",
+   "Mixolydian",
+   "Locrian",
+   "Harmonic minor",
+   "Melodic minor",
+   "Major pentatonic",
+   "Minor pentatonic",
+   "Blues",
+   "Whole tone",
+   "Chromatic"
+  ]
+ },
+ {
+  "key": "root",
+  "label": "Root",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "slot",
+  "label": "Pattern slot",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 12.0,
+  "default": 1.0
+ }
+]

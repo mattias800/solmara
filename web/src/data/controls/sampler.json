@@ -1,0 +1,1034 @@
+[
+ {
+  "key": "volume",
+  "label": "Volume",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc0",
+  "label": "CC 0",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc1",
+  "label": "CC 1",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc2",
+  "label": "CC 2",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc3",
+  "label": "CC 3",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc4",
+  "label": "CC 4",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc5",
+  "label": "CC 5",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc6",
+  "label": "CC 6",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc7",
+  "label": "CC 7",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc8",
+  "label": "CC 8",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc9",
+  "label": "CC 9",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc10",
+  "label": "CC 10",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc11",
+  "label": "CC 11",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc12",
+  "label": "CC 12",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc13",
+  "label": "CC 13",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc14",
+  "label": "CC 14",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc15",
+  "label": "CC 15",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc16",
+  "label": "CC 16",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc17",
+  "label": "CC 17",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc18",
+  "label": "CC 18",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc19",
+  "label": "CC 19",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc20",
+  "label": "CC 20",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc21",
+  "label": "CC 21",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc22",
+  "label": "CC 22",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc23",
+  "label": "CC 23",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc24",
+  "label": "CC 24",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc25",
+  "label": "CC 25",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc26",
+  "label": "CC 26",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc27",
+  "label": "CC 27",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc28",
+  "label": "CC 28",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc29",
+  "label": "CC 29",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc30",
+  "label": "CC 30",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc31",
+  "label": "CC 31",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc32",
+  "label": "CC 32",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc33",
+  "label": "CC 33",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc34",
+  "label": "CC 34",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc35",
+  "label": "CC 35",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc36",
+  "label": "CC 36",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc37",
+  "label": "CC 37",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc38",
+  "label": "CC 38",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc39",
+  "label": "CC 39",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc40",
+  "label": "CC 40",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc41",
+  "label": "CC 41",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc42",
+  "label": "CC 42",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc43",
+  "label": "CC 43",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc44",
+  "label": "CC 44",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc45",
+  "label": "CC 45",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc46",
+  "label": "CC 46",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc47",
+  "label": "CC 47",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc48",
+  "label": "CC 48",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc49",
+  "label": "CC 49",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc50",
+  "label": "CC 50",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc51",
+  "label": "CC 51",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc52",
+  "label": "CC 52",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc53",
+  "label": "CC 53",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc54",
+  "label": "CC 54",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc55",
+  "label": "CC 55",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc56",
+  "label": "CC 56",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc57",
+  "label": "CC 57",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc58",
+  "label": "CC 58",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc59",
+  "label": "CC 59",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc60",
+  "label": "CC 60",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc61",
+  "label": "CC 61",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc62",
+  "label": "CC 62",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc63",
+  "label": "CC 63",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc64",
+  "label": "CC 64",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc65",
+  "label": "CC 65",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc66",
+  "label": "CC 66",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc67",
+  "label": "CC 67",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc68",
+  "label": "CC 68",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc69",
+  "label": "CC 69",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc70",
+  "label": "CC 70",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc71",
+  "label": "CC 71",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc72",
+  "label": "CC 72",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc73",
+  "label": "CC 73",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc74",
+  "label": "CC 74",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc75",
+  "label": "CC 75",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc76",
+  "label": "CC 76",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc77",
+  "label": "CC 77",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc78",
+  "label": "CC 78",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc79",
+  "label": "CC 79",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc80",
+  "label": "CC 80",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc81",
+  "label": "CC 81",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc82",
+  "label": "CC 82",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc83",
+  "label": "CC 83",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc84",
+  "label": "CC 84",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc85",
+  "label": "CC 85",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc86",
+  "label": "CC 86",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc87",
+  "label": "CC 87",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc88",
+  "label": "CC 88",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc89",
+  "label": "CC 89",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc90",
+  "label": "CC 90",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc91",
+  "label": "CC 91",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc92",
+  "label": "CC 92",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc93",
+  "label": "CC 93",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc94",
+  "label": "CC 94",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc95",
+  "label": "CC 95",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc96",
+  "label": "CC 96",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc97",
+  "label": "CC 97",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc98",
+  "label": "CC 98",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc99",
+  "label": "CC 99",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc100",
+  "label": "CC 100",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc101",
+  "label": "CC 101",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc102",
+  "label": "CC 102",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc103",
+  "label": "CC 103",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc104",
+  "label": "CC 104",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc105",
+  "label": "CC 105",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc106",
+  "label": "CC 106",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc107",
+  "label": "CC 107",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc108",
+  "label": "CC 108",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc109",
+  "label": "CC 109",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc110",
+  "label": "CC 110",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc111",
+  "label": "CC 111",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc112",
+  "label": "CC 112",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc113",
+  "label": "CC 113",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc114",
+  "label": "CC 114",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc115",
+  "label": "CC 115",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc116",
+  "label": "CC 116",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc117",
+  "label": "CC 117",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc118",
+  "label": "CC 118",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc119",
+  "label": "CC 119",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc120",
+  "label": "CC 120",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc121",
+  "label": "CC 121",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc122",
+  "label": "CC 122",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc123",
+  "label": "CC 123",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc124",
+  "label": "CC 124",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc125",
+  "label": "CC 125",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc126",
+  "label": "CC 126",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ },
+ {
+  "key": "cc127",
+  "label": "CC 127",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 127.0,
+  "default": 0.0
+ }
+]

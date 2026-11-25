@@ -1,0 +1,66 @@
+[
+ {
+  "key": "inputDb",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -15.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "bass",
+  "label": "Bass",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "treble",
+  "label": "Treble",
+  "unit": "dB",
+  "minimum": -10.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "source",
+  "label": "Source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Line",
+   "Mic"
+  ]
+ },
+ {
+  "key": "noise",
+  "label": "Noise",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

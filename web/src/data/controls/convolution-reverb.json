@@ -1,0 +1,66 @@
+[
+ {
+  "key": "startFrame",
+  "label": "Trim start",
+  "unit": "frames",
+  "minimum": 0.0,
+  "maximum": 1440000.0,
+  "default": 0.0
+ },
+ {
+  "key": "endFrame",
+  "label": "Trim end",
+  "unit": "frames",
+  "minimum": 0.0,
+  "maximum": 1440000.0,
+  "default": 1440000.0
+ },
+ {
+  "key": "predelayMs",
+  "label": "Pre-delay",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 1000.0,
+  "default": 0.0
+ },
+ {
+  "key": "dampingHz",
+  "label": "Damping",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 20000.0,
+  "default": 20000.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.25
+ },
+ {
+  "key": "levelDb",
+  "label": "Level",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "size",
+  "label": "Size",
+  "unit": "%",
+  "minimum": 10.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "%",
+  "minimum": 25.0,
+  "maximum": 200.0,
+  "default": 100.0
+ }
+]

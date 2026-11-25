@@ -1,0 +1,49 @@
+---
+import Site from '../../layouts/Site.astro';
+import DeviceCard from '../../components/DeviceCard.astro';
+import { instrumentFamilies, instruments } from '../../lib/devices';
+
+const families = instrumentFamilies.filter((family) => family.devices.length > 0);
+---
+
+<Site
+	title="Instruments"
+	section="instruments"
+	description={`Solmara's ${instruments.length} instruments: analogue and digital synths, keys, drum machines and samplers.`}
+	eyebrow={`${instruments.length} instruments`}
+	heading="Instruments with names, and faces of their own"
+	lede="Synths, keys, drum machines and samplers. The analogue ones are models of their circuits, held to references by measurement and by ear. Your own plugins play beside them."
+>
+	<section>
+		<div class="chips" role="group" aria-label="Show a family">
+			<button class="chip" type="button" data-show="all" aria-pressed="true">All <small>{instruments.length}</small></button>
+			{families.map((family) => (
+				<button class="chip" type="button" data-show={family.key} aria-pressed="false">
+					{family.label} <small>{family.devices.length}</small>
+				</button>
+			))}
+		</div>
+		<div class="cards">
+			{families.flatMap((family) => family.devices.map((device) => <DeviceCard device={device} family={family.key} />))}
+		</div>
+	</section>
+
+	<ul class="more">
+		<li><strong>Sample libraries.</strong> The Sampler plays libraries in SFZ, DecentSampler and SoundFont formats.</li>
+		<li><strong>Sounds to begin with.</strong> Free libraries from their makers, with their terms shown before you take them.</li>
+		<li><strong>Your own plugins.</strong> CLAP, VST3 and Audio Unit instruments play beside Solmara's own.</li>
+	</ul>
+</Site>
+
+<script>
+	// The chips show one family's cards, or all of them.
+	const chips = document.querySelectorAll<HTMLButtonElement>('.chip[data-show]');
+	const cards = document.querySelectorAll<HTMLElement>('.card[data-family]');
+	for (const chip of chips) {
+		chip.addEventListener('click', () => {
+			for (const other of chips) other.setAttribute('aria-pressed', String(other === chip));
+			const show = chip.dataset.show;
+			for (const card of cards) card.hidden = show !== 'all' && card.dataset.family !== show;
+		});
+	}
+</script>

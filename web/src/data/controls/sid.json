@@ -1,0 +1,394 @@
+[
+ {
+  "key": "model",
+  "label": "Chip model",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "6581",
+   "8580"
+  ]
+ },
+ {
+  "key": "clock",
+  "label": "Clock",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "PAL",
+   "NTSC"
+  ]
+ },
+ {
+  "key": "mode",
+  "label": "Voice mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Poly",
+   "Unison"
+  ]
+ },
+ {
+  "key": "level",
+  "label": "Level",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.8
+ },
+ {
+  "key": "cutoff",
+  "label": "Filter cutoff",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 2047.0,
+  "default": 1024.0
+ },
+ {
+  "key": "resonance",
+  "label": "Filter resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "filterMode",
+  "label": "Filter mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "Low pass",
+   "Band pass",
+   "Low + band",
+   "High pass",
+   "Notch",
+   "Band + high",
+   "All"
+  ]
+ },
+ {
+  "key": "filterRouting",
+  "label": "Filtered voices (bit mask)",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 0.0
+ },
+ {
+  "key": "voice3Off",
+  "label": "Voice 3 direct output",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "On",
+   "Off"
+  ]
+ },
+ {
+  "key": "v1Waveform",
+  "label": "Voice 1 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Pulse",
+   "Noise",
+   "Triangle + saw",
+   "Triangle + pulse",
+   "Saw + pulse",
+   "Triangle + saw + pulse"
+  ]
+ },
+ {
+  "key": "v1PulseWidth",
+  "label": "Voice 1 pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4095.0,
+  "default": 2048.0
+ },
+ {
+  "key": "v1Attack",
+  "label": "Voice 1 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "v1Decay",
+  "label": "Voice 1 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 8.0
+ },
+ {
+  "key": "v1Sustain",
+  "label": "Voice 1 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 12.0
+ },
+ {
+  "key": "v1Release",
+  "label": "Voice 1 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 5.0
+ },
+ {
+  "key": "v1Transpose",
+  "label": "Voice 1 transpose",
+  "unit": "semitones",
+  "minimum": -48.0,
+  "maximum": 48.0,
+  "default": 0.0
+ },
+ {
+  "key": "v1Detune",
+  "label": "Voice 1 detune",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "v1Sync",
+  "label": "Voice 1 oscillator sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "v1Ring",
+  "label": "Voice 1 ring modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "v2Waveform",
+  "label": "Voice 2 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Pulse",
+   "Noise",
+   "Triangle + saw",
+   "Triangle + pulse",
+   "Saw + pulse",
+   "Triangle + saw + pulse"
+  ]
+ },
+ {
+  "key": "v2PulseWidth",
+  "label": "Voice 2 pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4095.0,
+  "default": 2048.0
+ },
+ {
+  "key": "v2Attack",
+  "label": "Voice 2 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "v2Decay",
+  "label": "Voice 2 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 8.0
+ },
+ {
+  "key": "v2Sustain",
+  "label": "Voice 2 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 12.0
+ },
+ {
+  "key": "v2Release",
+  "label": "Voice 2 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 5.0
+ },
+ {
+  "key": "v2Transpose",
+  "label": "Voice 2 transpose",
+  "unit": "semitones",
+  "minimum": -48.0,
+  "maximum": 48.0,
+  "default": 0.0
+ },
+ {
+  "key": "v2Detune",
+  "label": "Voice 2 detune",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "v2Sync",
+  "label": "Voice 2 oscillator sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "v2Ring",
+  "label": "Voice 2 ring modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "v3Waveform",
+  "label": "Voice 3 waveform",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 2.0,
+  "choices": [
+   "Triangle",
+   "Saw",
+   "Pulse",
+   "Noise",
+   "Triangle + saw",
+   "Triangle + pulse",
+   "Saw + pulse",
+   "Triangle + saw + pulse"
+  ]
+ },
+ {
+  "key": "v3PulseWidth",
+  "label": "Voice 3 pulse width",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 4095.0,
+  "default": 2048.0
+ },
+ {
+  "key": "v3Attack",
+  "label": "Voice 3 attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 0.0
+ },
+ {
+  "key": "v3Decay",
+  "label": "Voice 3 decay",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 8.0
+ },
+ {
+  "key": "v3Sustain",
+  "label": "Voice 3 sustain",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 12.0
+ },
+ {
+  "key": "v3Release",
+  "label": "Voice 3 release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 15.0,
+  "default": 5.0
+ },
+ {
+  "key": "v3Transpose",
+  "label": "Voice 3 transpose",
+  "unit": "semitones",
+  "minimum": -48.0,
+  "maximum": 48.0,
+  "default": 0.0
+ },
+ {
+  "key": "v3Detune",
+  "label": "Voice 3 detune",
+  "unit": "cents",
+  "minimum": -100.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "v3Sync",
+  "label": "Voice 3 oscillator sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "v3Ring",
+  "label": "Voice 3 ring modulation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

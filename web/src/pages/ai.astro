@@ -1,0 +1,60 @@
+---
+import Site from '../layouts/Site.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Site
+	title="AI in Solmara"
+	section="ai"
+	description="Solmara's AI runs on your own computer: songs from a description, piano phrases in Composer, the stems of a mix, the notes of a recording, and a cover for your song."
+	eyebrow="AI on your own computer"
+	heading="Models that work inside the studio"
+	lede="Solmara's AI runs on your own computer, on its graphics card where it has one. Nothing you make is sent anywhere, and what a model makes lands as clips you can edit, mix and undo like any other."
+>
+	<section>
+		<div class="features">
+			<div class="feature">
+				<p class="kind">Audio</p>
+				<h3>A song from a description</h3>
+				<p>Add an AI generation clip to an audio track, describe the music, and choose its key, its voice (instrumental or sung) and how long it is. Each take is kept, to choose from and to play under the rest of your song.</p>
+			</div>
+			<div class="feature">
+				<p class="kind">Notes</p>
+				<h3>Phrases in Composer</h3>
+				<p>In a clip's Composer window, Generate writes a new piano phrase, continues the one you started, or harmonizes your melody. Safe or wild, take by take, and kept only when you say so.</p>
+			</div>
+			<div class="feature">
+				<p class="kind">Stems</p>
+				<h3>A mix, taken apart</h3>
+				<p>Split a recording into vocals, drums, bass, guitar, piano and the rest, each a clip of its own on a track of its own, to remix, sample or practise with.</p>
+			</div>
+			<div class="feature">
+				<p class="kind">Audio to notes</p>
+				<h3>The notes of a recording</h3>
+				<p>Turn an audio clip's melody, its harmony or its drums into a MIDI clip. Drag a recording onto a MIDI track and hear its notes played by that track's instrument.</p>
+			</div>
+			<div class="feature">
+				<p class="kind">Cover</p>
+				<h3>A cover for your song</h3>
+				<p>A picture made from the song's music, for its cover, on your own computer like the rest.</p>
+			</div>
+			<div class="feature">
+				<p class="kind">Drums <span class="wip">In progress</span></p>
+				<h3>Drum parts that groove</h3>
+				<p>A drum model of Solmara's own, trained to write parts with feel, from steady to busy. Still being trained and listened to.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="prose">
+		<h2>How it works</h2>
+		<p>The models run in a helper that comes with Solmara: no Python, nothing else to install. Each model is downloaded the first time you use it, from <strong>Preferences › AI</strong>, which shows its size, its source and its licence. A graphics card makes them fast; without one they run, more slowly, on the processor.</p>
+		<p>Everything a model makes is an ordinary part of your project: a take is an audio clip, a phrase is notes, a stem is a track. You edit them, mix them and undo them as you would anything you made yourself.</p>
+		<p class="callout">AI is there when you want it, and out of the way when you don't. Solmara is a whole studio without it.</p>
+
+		<h2>Models and their makers</h2>
+		<p>Song generation uses ACE-Step 1.5. Piano phrases use the Music Transformer piano models that Google released. The cover uses FLUX.2 [klein]. Their licences are shown beside each download.</p>
+		<p>An agent can drive all of these too. <a href={`${base}/agents/`}>Making music with an agent →</a></p>
+	</section>
+</Site>

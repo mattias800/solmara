@@ -1,0 +1,119 @@
+[
+ {
+  "key": "mode",
+  "label": "Playback mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "SEQ",
+   "SEQ+KEY",
+   "KEY"
+  ]
+ },
+ {
+  "key": "transpose",
+  "label": "Transpose",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "scaleVelocity",
+  "label": "Scale velocity",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "pattern",
+  "label": "Pattern",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 8.0,
+  "default": 1.0
+ },
+ {
+  "key": "mutation",
+  "label": "Play mutation",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "shuffle",
+  "label": "Local shuffle",
+  "unit": "%",
+  "minimum": 50.0,
+  "maximum": 75.0,
+  "default": 66.0
+ },
+ {
+  "key": "pitch",
+  "label": "Octave+Pitch",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "swap",
+  "label": "Swap",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 20.0
+ },
+ {
+  "key": "density",
+  "label": "Density",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "noteLength",
+  "label": "Note length",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 20.0
+ },
+ {
+  "key": "accent",
+  "label": "Velocity (accent)",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 30.0
+ },
+ {
+  "key": "shuffleSource",
+  "label": "Shuffle source",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Local",
+   "Global"
+  ]
+ }
+]

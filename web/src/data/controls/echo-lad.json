@@ -1,0 +1,192 @@
+[
+ {
+  "key": "style",
+  "label": "Style",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Studio tape",
+   "Tape echo",
+   "Oil can",
+   "Early digital"
+  ]
+ },
+ {
+  "key": "mode",
+  "label": "Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Single",
+   "Dual",
+   "Ping-pong",
+   "Rhythm"
+  ]
+ },
+ {
+  "key": "sync",
+  "label": "Sync",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "division",
+  "label": "Division",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 5.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/16.",
+   "1/8",
+   "1/4T",
+   "1/8.",
+   "1/4",
+   "1/2T",
+   "1/4.",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "time",
+  "label": "Time",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 2000.0,
+  "default": 250.0
+ },
+ {
+  "key": "division2",
+  "label": "Division 2",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 12.0,
+  "default": 7.0,
+  "choices": [
+   "1/32",
+   "1/16T",
+   "1/16",
+   "1/8T",
+   "1/16.",
+   "1/8",
+   "1/4T",
+   "1/8.",
+   "1/4",
+   "1/2T",
+   "1/4.",
+   "1/2",
+   "1/1"
+  ]
+ },
+ {
+  "key": "time2",
+  "label": "Time 2",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 2000.0,
+  "default": 375.0
+ },
+ {
+  "key": "feedback",
+  "label": "Feedback",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 125.0,
+  "default": 30.0
+ },
+ {
+  "key": "groove",
+  "label": "Groove",
+  "unit": "%",
+  "minimum": -25.0,
+  "maximum": 25.0,
+  "default": 0.0
+ },
+ {
+  "key": "feel",
+  "label": "Feel",
+  "unit": "%",
+  "minimum": -25.0,
+  "maximum": 25.0,
+  "default": 0.0
+ },
+ {
+  "key": "saturation",
+  "label": "Saturation",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowCut",
+  "label": "Low cut",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "highCut",
+  "label": "High cut",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "repeats",
+  "label": "Repeats",
+  "unit": "linear",
+  "minimum": 1.0,
+  "maximum": 16.0,
+  "default": 4.0
+ },
+ {
+  "key": "decay",
+  "label": "Decay",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 40.0,
+  "default": 6.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 35.0
+ },
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

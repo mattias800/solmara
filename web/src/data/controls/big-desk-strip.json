@@ -1,0 +1,339 @@
+[
+ {
+  "key": "inputDb",
+  "label": "Input",
+  "unit": "dB",
+  "minimum": -20.0,
+  "maximum": 20.0,
+  "default": 0.0
+ },
+ {
+  "key": "phase",
+  "label": "Phase",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Inverted"
+  ]
+ },
+ {
+  "key": "highPass",
+  "label": "High Pass",
+  "unit": "Hz",
+  "minimum": 0.0,
+  "maximum": 1000.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowPass",
+  "label": "Low Pass",
+  "unit": "Hz",
+  "minimum": 1500.0,
+  "maximum": 22000.0,
+  "default": 22000.0
+ },
+ {
+  "key": "eq",
+  "label": "EQ",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "voicing",
+  "label": "Voicing",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Later",
+   "Earlier"
+  ]
+ },
+ {
+  "key": "lowDb",
+  "label": "LF",
+  "unit": "dial",
+  "minimum": -18.0,
+  "maximum": 18.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowHz",
+  "label": "LF Freq",
+  "unit": "Hz",
+  "minimum": 30.0,
+  "maximum": 450.0,
+  "default": 200.0
+ },
+ {
+  "key": "lowBell",
+  "label": "LF Bell",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Bell"
+  ]
+ },
+ {
+  "key": "lowMidDb",
+  "label": "LMF",
+  "unit": "dial",
+  "minimum": -18.0,
+  "maximum": 18.0,
+  "default": 0.0
+ },
+ {
+  "key": "lowMidHz",
+  "label": "LMF Freq",
+  "unit": "Hz",
+  "minimum": 150.0,
+  "maximum": 2500.0,
+  "default": 1000.0
+ },
+ {
+  "key": "lowMidQ",
+  "label": "LMF Q",
+  "unit": "linear",
+  "minimum": 0.5,
+  "maximum": 3.0,
+  "default": 1.5
+ },
+ {
+  "key": "highMidDb",
+  "label": "HMF",
+  "unit": "dial",
+  "minimum": -18.0,
+  "maximum": 18.0,
+  "default": 0.0
+ },
+ {
+  "key": "highMidHz",
+  "label": "HMF Freq",
+  "unit": "Hz",
+  "minimum": 600.0,
+  "maximum": 10000.0,
+  "default": 3000.0
+ },
+ {
+  "key": "highMidQ",
+  "label": "HMF Q",
+  "unit": "linear",
+  "minimum": 0.5,
+  "maximum": 3.0,
+  "default": 1.5
+ },
+ {
+  "key": "highDb",
+  "label": "HF",
+  "unit": "dial",
+  "minimum": -18.0,
+  "maximum": 18.0,
+  "default": 0.0
+ },
+ {
+  "key": "highHz",
+  "label": "HF Freq",
+  "unit": "Hz",
+  "minimum": 1400.0,
+  "maximum": 18000.0,
+  "default": 8000.0
+ },
+ {
+  "key": "highBell",
+  "label": "HF Bell",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Shelf",
+   "Bell"
+  ]
+ },
+ {
+  "key": "compressor",
+  "label": "Compressor",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "ratio",
+  "minimum": 1.0,
+  "maximum": 40.0,
+  "default": 4.0
+ },
+ {
+  "key": "thresholdDb",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -20.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "attackMs",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 3.0,
+  "maximum": 30.0,
+  "default": 3.0
+ },
+ {
+  "key": "fastAttack",
+  "label": "Fast Attack",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "s",
+  "minimum": 0.1,
+  "maximum": 4.0,
+  "default": 0.4
+ },
+ {
+  "key": "autoMakeup",
+  "label": "Auto Make-up",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "gate",
+  "label": "Gate",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Out",
+   "In"
+  ]
+ },
+ {
+  "key": "gateMode",
+  "label": "Gate Mode",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Expander",
+   "Gate"
+  ]
+ },
+ {
+  "key": "gateThresholdDb",
+  "label": "Gate Threshold",
+  "unit": "dB",
+  "minimum": -60.0,
+  "maximum": 10.0,
+  "default": -40.0
+ },
+ {
+  "key": "gateRangeDb",
+  "label": "Range",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 60.0,
+  "default": 40.0
+ },
+ {
+  "key": "gateRelease",
+  "label": "Gate Release",
+  "unit": "s",
+  "minimum": 0.1,
+  "maximum": 4.0,
+  "default": 0.4
+ },
+ {
+  "key": "gateFastAttack",
+  "label": "Gate Fast Attack",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "order",
+  "label": "Order",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Dynamics, EQ",
+   "EQ, dynamics",
+   "Gate, EQ, comp"
+  ]
+ },
+ {
+  "key": "filtersToSidechain",
+  "label": "Filters to SC",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "eqToSidechain",
+  "label": "EQ to SC",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -40.0,
+  "maximum": 18.0,
+  "default": 0.0
+ }
+]

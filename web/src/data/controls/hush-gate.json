@@ -1,0 +1,58 @@
+[
+ {
+  "key": "threshold",
+  "label": "Threshold",
+  "unit": "dB",
+  "minimum": -100.0,
+  "maximum": 0.0,
+  "default": -55.0
+ },
+ {
+  "key": "hysteresis",
+  "label": "Hysteresis",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 24.0,
+  "default": 6.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "ms",
+  "minimum": 0.1,
+  "maximum": 100.0,
+  "default": 1.0
+ },
+ {
+  "key": "hold",
+  "label": "Hold",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 2000.0,
+  "default": 30.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "ms",
+  "minimum": 1.0,
+  "maximum": 5000.0,
+  "default": 150.0
+ },
+ {
+  "key": "range",
+  "label": "Range",
+  "unit": "dB",
+  "minimum": 0.0,
+  "maximum": 120.0,
+  "default": 90.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

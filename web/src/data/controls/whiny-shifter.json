@@ -1,0 +1,90 @@
+[
+ {
+  "key": "pedal",
+  "label": "Pedal",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "heel",
+  "label": "Heel",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "toe",
+  "label": "Toe",
+  "unit": "semitones",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 12.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 100.0
+ },
+ {
+  "key": "character",
+  "label": "Character",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Clean",
+   "Classic"
+  ]
+ },
+ {
+  "key": "glide",
+  "label": "Glide",
+  "unit": "ms",
+  "minimum": 0.0,
+  "maximum": 2000.0,
+  "default": 0.0
+ },
+ {
+  "key": "sub",
+  "label": "Sub",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "semitone",
+  "label": "Semitone",
+  "unit": "%",
+  "minimum": 0.0,
+  "maximum": 100.0,
+  "default": 0.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "latency",
+  "label": "Latency",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Tight",
+   "Wide"
+  ]
+ }
+]

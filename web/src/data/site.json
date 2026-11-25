@@ -1,0 +1,38 @@
+{
+  "_": "Hand-kept choices the device export cannot make. inProgress: devices still being built, shown with a tag. hidden: devices that are parts of others or only for testing, left off the website (the manual still lists them). mastering: the mastering suite's devices, in its order.",
+  "inProgress": ["builtin.vireo"],
+  "hidden": ["builtin.basic-synth", "builtin.ph8-part", "builtin.ph6-part", "builtin.ph9-part", "builtin.instrument-rack"],
+  "mastering": [
+    "builtin.listening-eq",
+    "builtin.parametric-eq",
+    "builtin.multiband-compressor",
+    "builtin.stereo-imager",
+    "builtin.clipper",
+    "builtin.limiter",
+    "builtin.analyzer"
+  ],
+  "instrumentFamilies": [
+    { "key": "analog", "label": "Analogue synths", "match": { "group": "Synths", "part": "Analog" } },
+    { "key": "digital", "label": "Digital synths", "match": { "group": "Synths", "part": "Digital" } },
+    { "key": "modular", "label": "Modular", "match": { "group": "Synths", "part": "Modular" } },
+    { "key": "keys", "label": "Keys", "match": { "group": "Keys" } },
+    { "key": "drums", "label": "Drums", "match": { "group": "Drums" } },
+    { "key": "samplers", "label": "Samplers", "match": { "group": "Samplers" } }
+  ],
+  "effectFamilies": [
+    { "key": "dynamics", "label": "Dynamics", "group": "Dynamics", "intro": "Compressors, limiters, gates and multiband: from glue on a bus to a loud master." },
+    { "key": "eq", "label": "EQ and filters", "group": "EQ and filters", "intro": "Equalisers to shape a sound, and filters to sweep it." },
+    { "key": "channels", "label": "Preamps and channels", "group": "Preamps and channels", "intro": "Whole channel strips and preamps, with the colour of the desks they come from." },
+    { "key": "saturation", "label": "Saturation", "group": "Saturation", "intro": "Tape, valves and clipping, from a little warmth to a lot." },
+    { "key": "modulation", "label": "Modulation", "group": "Modulation", "intro": "Chorus, phaser, flanger, tremolo, rotary speaker and ring modulation." },
+    { "key": "space", "label": "Delay and reverb", "group": "Delay and reverb", "intro": "Echoes from tape and buckets, and reverbs from plates, springs, rooms and halls." },
+    { "key": "pitch", "label": "Pitch", "group": "Pitch", "intro": "Shifting and correcting pitch." },
+    { "key": "utilities", "label": "Utilities", "group": "Utilities", "intro": "Gain, width, analysis and the other tools a mix needs." }
+  ],
+  "guitarFamilies": [
+    { "key": "amps", "label": "Guitar amps", "part": "Guitar amps" },
+    { "key": "bass", "label": "Bass amps", "part": "Bass amps" },
+    { "key": "pedals", "label": "Pedals", "part": "Pedals" },
+    { "key": "cabs", "label": "Cabinets", "part": "Cabs" }
+  ]
+}

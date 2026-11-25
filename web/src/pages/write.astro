@@ -1,0 +1,55 @@
+---
+import Site from '../layouts/Site.astro';
+import DeviceRow from '../components/DeviceRow.astro';
+import { midiDevices } from '../lib/devices';
+import writing from '../data/writing.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ways = [
+	{ name: 'Piano roll', image: 'write-piano-roll', width: 1348, height: 690 },
+	{ name: 'Drum sequencer', image: 'write-drums', width: 1348, height: 348 },
+	{ name: 'Tracker', image: 'write-tracker', width: 544, height: 352 },
+	{ name: 'Patterns as code', image: 'write-code', width: 1348, height: 188 },
+].map((way) => ({ ...way, ...(writing as Record<string, { kind: string; text: string }>)[way.name] }));
+---
+
+<Site
+	title="Writing music"
+	section="write"
+	description="Four ways to write in Solmara, in one song: piano roll, drum sequencer, tracker and patterns as code, and MIDI devices for arpeggios, chords and beats."
+	eyebrow="Writing music"
+	heading="Four ways to write, one song"
+	lede="Write notes in a piano roll, beats in a drum sequencer, rows in a tracker or patterns as code, and use them side by side in the same song."
+>
+	<section>
+		<div class="ways-shots">
+			{ways.map((way) => (
+				<article class="instrument">
+					<a class="face" href={`${base}/images/${way.image}.webp`}>
+						<img src={`${base}/images/${way.image}.webp`} width={way.width} height={way.height} loading="lazy" alt={way.name} />
+					</a>
+					<p class="kind">{way.kind}</p>
+					<h3>{way.name}</h3>
+					<p>{way.text}</p>
+				</article>
+			))}
+		</div>
+	</section>
+
+	<section class="family">
+		<h2>Composer</h2>
+		<p class="intro">
+			Double-click a clip to open it in a window of its own: its notes, its chords in a lane of their own, a palette of the
+			chords in its key, and sequences that play those chords as arpeggios and rhythms.
+			<a href={`${base}/manual/`}>The manual</a> shows how.
+		</p>
+	</section>
+
+	<section class="family" id="midi">
+		<h2>MIDI devices</h2>
+		<p class="intro">Put them before an instrument to play arpeggios, chords, bass lines and beats, or to bend the notes you play.</p>
+		<div class="rows">
+			{midiDevices.map((device) => <DeviceRow device={device} />)}
+		</div>
+	</section>
+</Site>

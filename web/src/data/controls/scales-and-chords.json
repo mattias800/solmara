@@ -1,0 +1,149 @@
+[
+ {
+  "key": "key",
+  "label": "Key",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 11.0,
+  "default": 0.0,
+  "choices": [
+   "C",
+   "C#",
+   "D",
+   "D#",
+   "E",
+   "F",
+   "F#",
+   "G",
+   "G#",
+   "A",
+   "A#",
+   "B"
+  ]
+ },
+ {
+  "key": "scale",
+  "label": "Scale",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 14.0,
+  "default": 1.0,
+  "choices": [
+   "Project",
+   "Major",
+   "Minor",
+   "Lydian",
+   "Mixolydian",
+   "Spanish",
+   "Dorian",
+   "Phrygian",
+   "Harmonic Minor",
+   "Melodic Minor",
+   "Major Pentatonic",
+   "Minor Pentatonic",
+   "Hemi Pentatonic",
+   "Chromatic",
+   "Custom"
+  ]
+ },
+ {
+  "key": "filter",
+  "label": "Filter notes",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "chords",
+  "label": "Chords",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "notes",
+  "label": "Notes",
+  "unit": "count",
+  "minimum": 1.0,
+  "maximum": 5.0,
+  "default": 3.0
+ },
+ {
+  "key": "inversion",
+  "label": "Inversion",
+  "unit": "count",
+  "minimum": 0.0,
+  "maximum": 4.0,
+  "default": 0.0
+ },
+ {
+  "key": "open",
+  "label": "Open chords",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octaveUp",
+  "label": "Add octave up",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "octaveDown",
+  "label": "Add octave down",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "color",
+  "label": "Add color",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "alter",
+  "label": "Alter",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ }
+]

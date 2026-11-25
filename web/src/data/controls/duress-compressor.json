@@ -1,0 +1,111 @@
+[
+ {
+  "key": "input",
+  "label": "Input",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "attack",
+  "label": "Attack",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "release",
+  "label": "Release",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "ratio",
+  "label": "Ratio",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 7.0,
+  "default": 3.0,
+  "choices": [
+   "1:1",
+   "2:1",
+   "3:1",
+   "4:1",
+   "6:1",
+   "10:1",
+   "20:1",
+   "Nuke"
+  ]
+ },
+ {
+  "key": "detector",
+  "label": "Detector",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 3.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "HP",
+   "Band emphasis",
+   "HP and emphasis"
+  ]
+ },
+ {
+  "key": "link",
+  "label": "Stereo link",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "audioHighPass",
+  "label": "Audio HP",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
+ },
+ {
+  "key": "distortion",
+  "label": "Distortion",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Normal",
+   "Dist 2",
+   "Dist 3"
+  ]
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ }
+]

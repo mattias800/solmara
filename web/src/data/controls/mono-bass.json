@@ -1,0 +1,18 @@
+[
+ {
+  "key": "frequency",
+  "label": "Frequency",
+  "unit": "Hz",
+  "minimum": 20.0,
+  "maximum": 500.0,
+  "default": 120.0
+ },
+ {
+  "key": "outputDb",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ }
+]

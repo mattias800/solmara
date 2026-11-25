@@ -1,0 +1,219 @@
+[
+ {
+  "key": "speed",
+  "label": "Speed",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 2.0,
+  "default": 0.0,
+  "choices": [
+   "Slow",
+   "Fast",
+   "Stop"
+  ]
+ },
+ {
+  "key": "hornSlow",
+  "label": "Horn slow",
+  "unit": "Hz",
+  "minimum": 0.2,
+  "maximum": 2.0,
+  "default": 0.65
+ },
+ {
+  "key": "hornFast",
+  "label": "Horn fast",
+  "unit": "Hz",
+  "minimum": 3.0,
+  "maximum": 9.0,
+  "default": 6.8
+ },
+ {
+  "key": "drumSlow",
+  "label": "Drum slow",
+  "unit": "Hz",
+  "minimum": 0.2,
+  "maximum": 2.0,
+  "default": 0.65
+ },
+ {
+  "key": "drumFast",
+  "label": "Drum fast",
+  "unit": "Hz",
+  "minimum": 3.0,
+  "maximum": 9.0,
+  "default": 6.8
+ },
+ {
+  "key": "hornRise",
+  "label": "Horn speeds up",
+  "unit": "s",
+  "minimum": 0.1,
+  "maximum": 5.0,
+  "default": 0.7
+ },
+ {
+  "key": "hornFall",
+  "label": "Horn slows down",
+  "unit": "s",
+  "minimum": 0.1,
+  "maximum": 5.0,
+  "default": 0.26
+ },
+ {
+  "key": "drumRise",
+  "label": "Drum speeds up",
+  "unit": "s",
+  "minimum": 0.3,
+  "maximum": 10.0,
+  "default": 0.35
+ },
+ {
+  "key": "drumFall",
+  "label": "Drum slows down",
+  "unit": "s",
+  "minimum": 0.3,
+  "maximum": 10.0,
+  "default": 0.38
+ },
+ {
+  "key": "balance",
+  "label": "Horn and drum",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "drive",
+  "label": "Drive",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "spread",
+  "label": "Horn spread",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "distance",
+  "label": "Distance",
+  "unit": "m",
+  "minimum": 0.2,
+  "maximum": 2.0,
+  "default": 0.6
+ },
+ {
+  "key": "cabinet",
+  "label": "Cabinet",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 5.0
+ },
+ {
+  "key": "mix",
+  "label": "Mix",
+  "unit": "linear",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0
+ },
+ {
+  "key": "output",
+  "label": "Output",
+  "unit": "dB",
+  "minimum": -24.0,
+  "maximum": 24.0,
+  "default": 0.0
+ },
+ {
+  "key": "tone",
+  "label": "Tone",
+  "unit": "dB",
+  "minimum": -12.0,
+  "maximum": 12.0,
+  "default": 0.0
+ },
+ {
+  "key": "drumSpread",
+  "label": "Drum spread",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 8.0
+ },
+ {
+  "key": "mics",
+  "label": "Microphones",
+  "unit": "choice",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 0.0,
+  "choices": [
+   "Reference",
+   "Wide stereo"
+  ]
+ },
+ {
+  "key": "hornLow",
+  "label": "Horn low cut",
+  "unit": "oct",
+  "minimum": -1.0,
+  "maximum": 3.0,
+  "default": 0.0
+ },
+ {
+  "key": "hornResonance",
+  "label": "Horn resonance",
+  "unit": "dial",
+  "minimum": 0.0,
+  "maximum": 10.0,
+  "default": 0.0
+ },
+ {
+  "key": "drumOpen",
+  "label": "Drum opens below",
+  "unit": "Hz",
+  "minimum": 0.0,
+  "maximum": 400.0,
+  "default": 0.0
+ },
+ {
+  "key": "hornUpRate",
+  "label": "Horn's most speed-up",
+  "unit": "Hz/s",
+  "minimum": 0.0,
+  "maximum": 40.0,
+  "default": 0.0
+ },
+ {
+  "key": "hornDownRate",
+  "label": "Horn's most slow-down",
+  "unit": "Hz/s",
+  "minimum": 0.0,
+  "maximum": 40.0,
+  "default": 0.0
+ },
+ {
+  "key": "drumUpRate",
+  "label": "Drum's most speed-up",
+  "unit": "Hz/s",
+  "minimum": 0.0,
+  "maximum": 40.0,
+  "default": 0.0
+ },
+ {
+  "key": "drumDownRate",
+  "label": "Drum's most slow-down",
+  "unit": "Hz/s",
+  "minimum": 0.0,
+  "maximum": 40.0,
+  "default": 0.0
+ }
+]
