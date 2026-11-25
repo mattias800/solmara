@@ -1,0 +1,12 @@
+{
+ "schemaVersion": 1,
+ "label": "A guitar rig",
+ "operations": [
+  {"op": "add-track", "ref": "guitar", "name": "Guitar", "kind": "audio"},
+  {"op": "set-track", "track": "$guitar", "color": "#E07A4F"},
+  {"op": "add-device", "track": "$guitar", "type": "builtin.noise-gate-pedal"},
+  {"op": "add-device", "track": "$guitar", "type": "builtin.overdrive-pedal"},
+  {"op": "add-device", "track": "$guitar", "type": "builtin.master-volume-amplifier"},
+  {"op": "add-device", "track": "$guitar", "type": "builtin.speaker-cabinet"}
+ ]
+}

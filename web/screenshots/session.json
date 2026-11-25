@@ -1,0 +1,21 @@
+{
+ "schemaVersion": 1,
+ "label": "The manual's song, in scenes",
+ "note": "Applied after manual-song.json's operations, in the same batch, so its refs are known.",
+ "operations": [
+  {"op": "add-scene", "ref": "intro", "name": "Intro"},
+  {"op": "add-scene", "ref": "versescene", "name": "Verse"},
+  {"op": "add-scene", "ref": "drop", "name": "Drop"},
+  {"op": "add-scene", "ref": "breakdown", "name": "Breakdown"},
+  {"op": "duplicate-clip", "clip": "$verse", "scene": "$intro"},
+  {"op": "duplicate-clip", "clip": "$beat", "scene": "$versescene"},
+  {"op": "duplicate-clip", "clip": "$line", "scene": "$versescene"},
+  {"op": "duplicate-clip", "clip": "$verse", "scene": "$versescene"},
+  {"op": "duplicate-clip", "clip": "$beat", "scene": "$drop"},
+  {"op": "duplicate-clip", "clip": "$line", "scene": "$drop"},
+  {"op": "duplicate-clip", "clip": "$verse", "scene": "$drop"},
+  {"op": "duplicate-clip", "clip": "$tune", "scene": "$drop"},
+  {"op": "duplicate-clip", "clip": "$verse", "scene": "$breakdown"},
+  {"op": "duplicate-clip", "clip": "$tune", "scene": "$breakdown"}
+ ]
+}

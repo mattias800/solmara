@@ -2,10 +2,14 @@
 title: Play clips live in the session
 description: Scenes and slots, launching clips and scenes, recording into a slot, and follow actions.
 ---
+import Shot from '../../../../components/Shot.astro';
+import session from '../../../../assets/manual/session.webp';
 
 Beside the arrangement, where clips have their place in time, every project has a **session**, where clips are launched while the song plays: to jam, to try ideas against each other, or to perform.
 
 Press <kbd>Tab</kbd>, or the session key in the top bar, to show it in place of the arrangement. <kbd>Tab</kbd> again goes back.
+
+<Shot src={session} alt="The session: four tracks' columns of slots, the scenes Intro, Verse, Drop and Breakdown in the Main column at the right, and the mixer under the slots." />
 
 ## Scenes and slots
 
@@ -21,19 +25,19 @@ The session is a grid. Each track has a **column**, and each **scene** is a row 
 - **Click a clip's key** to launch it. It plays round and round on its track until another clip on the track is launched, or the track is stopped.
 - **Click a scene's triangle**, in the Main column, to launch every clip in its row together. A track with an empty slot in that scene stops.
 - **The square** in an empty slot stops its track.
-- **Back to the arrangement:** the key at the right of a track's status brings it back to playing the arrangement; the key under the Main column brings every track back.
+- **Back to the arrangement:** the key with the left arrow, among the transport keys in the top bar, lights while any track plays the session; click it and every track plays the arrangement again at once. Right-click the session's title for **Stop all clips** and **Back to arrangement** too.
 
 A launch waits for the next bar by default, so everything stays in time. **Launch**, at the top right, sets how long it waits.
 
-While a track plays the session, its arrangement is silent, and its header says SESSION.
+While a track plays the session, its arrangement is silent, and its head in the session says SESSION.
 
 ## With the keys
 
-The arrows move the selected slot, or the selected scene along the Main column. <kbd>Enter</kbd> launches the selected slot's clip or scene, and then selects the next scene down, so you can step through a song scene by scene. <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> inserts a scene, and <kbd>Shift</kbd>+<kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> **captures** what every track plays now into a new scene. <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> duplicates a scene, or a clip into the next free slot down.
+The arrows move the selected slot, or the selected scene along the Main column. <kbd>Enter</kbd> launches the selected clip (or, on an empty slot, stops its track). On a scene it launches the scene and then selects the next one down, so you can step through a song scene by scene. <kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> inserts a scene, and <kbd>Shift</kbd>+<kbd>Cmd/Ctrl</kbd>+<kbd>I</kbd> **captures** what every track plays now into a new scene. <kbd>Cmd/Ctrl</kbd>+<kbd>D</kbd> duplicates a scene, or a clip into the next free slot down.
 
 ## Make clips in the session
 
-- **Double-click an empty slot** for a clip of its track's kind, a bar long.
+- **Double-click an empty slot** for a clip of its track's kind, four beats long.
 - **Drag a clip** to an empty slot (<kbd>Alt</kbd> copies it), or drop an audio file there.
 - **Drag a clip onto Session**, or press <kbd>Tab</kbd> while dragging, to carry it between the views: from the arrangement into a slot, or from a slot onto the arrangement.
 - **Record into a slot:** on an armed track, an empty slot shows a circle. Click it, and from the next launch what you play goes into a new clip there. Click again to end it; the clip plays on from there, in step.

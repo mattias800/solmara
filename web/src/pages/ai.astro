@@ -7,7 +7,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 <Site
 	title="AI in Solmara"
 	section="ai"
-	description="Solmara's AI runs on your own computer: songs from a description, piano phrases in Composer, the stems of a mix, the notes of a recording, and a cover for your song."
+	description="Solmara's AI runs on your own computer: songs from a description, piano phrases and drum parts in Composer, the stems of a mix, the notes of a recording, and a cover for your song."
 	eyebrow="AI on your own computer"
 	heading="Models that work inside the studio"
 	lede="Solmara's AI runs on your own computer, on its graphics card where it has one. Nothing you make is sent anywhere, and what a model makes lands as clips you can edit, mix and undo like any other."
@@ -40,9 +40,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 				<p>A picture made from the song's music, for its cover, on your own computer like the rest.</p>
 			</div>
 			<div class="feature">
-				<p class="kind">Drums <span class="wip">In progress</span></p>
-				<h3>Drum parts that groove</h3>
-				<p>A drum model of Solmara's own, trained to write parts with feel, from steady to busy. Still being trained and listened to.</p>
+				<p class="kind">Drums</p>
+				<h3>A drummer of its own</h3>
+				<p>The Drum Player, a drum model of Solmara's own, writes beats and fills for a drum clip in 22 genres, steady or busy, soft or hard, with the feel of a real player. Ask for a ride instead of hats, keep your first bar and let it carry on, and hear each take on your own kit before you keep it.</p>
 			</div>
 		</div>
 	</section>
@@ -54,7 +54,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 		<p class="callout">AI is there when you want it, and out of the way when you don't. Solmara is a whole studio without it.</p>
 
 		<h2>Models and their makers</h2>
-		<p>Song generation uses ACE-Step 1.5. Piano phrases use the Music Transformer piano models that Google released. The cover uses FLUX.2 [klein]. Their licences are shown beside each download.</p>
+		<p>Song generation uses ACE-Step 1.5. Piano phrases use the Music Transformer piano models that Google released. The Drum Player is a Music Transformer of our own, trained by us on drummers' recorded performances, among them Google's Groove MIDI Dataset (CC BY 4.0), and it comes with the app. The cover uses FLUX.2 [klein]. Their licences are shown beside each download.</p>
 		<p><a href={`${base}/manual/guides/ai/`}>How to use them, in the manual →</a> An agent can drive all of these too: <a href={`${base}/agents/`}>making music with an agent →</a></p>
 	</section>
 </Site>

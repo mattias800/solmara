@@ -2,12 +2,14 @@
 title: Guitar and bass
 description: Record a guitar, build a rig of pedals, amp and cabinet, play captured tones, and tune up.
 ---
+import Shot from '../../../../components/Shot.astro';
+import rig from '../../../../assets/manual/guitar-rig.webp';
 
 ## Plug in
 
 1. Choose your interface in **Preferences › Audio**, under **Audio input**.
-2. Make an **audio track** (<kbd>Cmd/Ctrl</kbd>+<kbd>T</kbd>), right-click its arm key and choose the input channel your guitar is on, the left or the right.
-3. Set the arm key's menu to **hear the input through the track** while armed, so you play through its effects.
+2. Make an **audio track** (<kbd>Cmd/Ctrl</kbd>+<kbd>T</kbd>) and right-click its arm key. Under **Takes of the input**, choose the channel your guitar is on, under **Mono, on both sides**.
+3. In the same menu, set **Hear the input through the track** to **While it is armed**, so you play through its effects.
 4. Arm the track. You now hear your guitar through whatever is in its chain.
 
 Keep the block size in **Preferences › Audio** small, so what you play is heard at once. On Windows, **Take it for Solmara alone** gives the lowest latency.
@@ -21,17 +23,19 @@ The library's **Audio effects › Guitar & bass** has its devices in the order t
 3. **A cabinet**, the miked speaker box. **Boxed Twelves** has cabinets of its own; **Cabinet IR** plays an impulse response you load.
 4. **Effects after the amp:** reverb, delay, and an EQ.
 
-The **rigs**, such as **Leviathan Rig**, **Djent Amp** and **Untitled Amp**, are a whole chain in one device: gate, drives, amps, EQ and cabinet, each part switched on and off by itself.
+<Shot src={rig} alt="A guitar track's chain: Hush Gate, Green Overdrive Pedal, British Crunch Head and Boxed Twelves, left to right." />
 
-Amp and pedal faces have a **Quality** switch: how far above the sample rate the circuit is worked out. Higher sounds smoother when driven hard and costs more processing; **Light** is the cheapest.
+The **rigs**, **Leviathan Rig**, **Djent Amp**, **Untitled Amp** and **Chug Rig**, are a whole chain in one device: gate, drives, amps, EQ and cabinet, each part switched on and off by itself.
+
+Most amps and pedals have a **Quality** switch, such as **Light** and **Standard**, or **Standard** and **Ultra**: how finely the circuit is worked out. The higher setting sounds smoother when driven hard and costs more processing.
 
 ## Captured tones from TONE3000
 
 **A2 Modeller Amp** plays tones captured with Neural Amp Modeler: an amp, a pedal or a whole rig, as someone recorded it.
 
-1. Open **View › Get content…** and choose **TONE3000**. Sign in from there.
-2. Search for gear or a sound, listen, and download the tones you like into your library.
-3. In the library, **Tones** lists them by gear, with their picture and who made them. Double-click one to play it on the track's A2 Modeller Amp.
+1. In the library, open **Tones** and click **Find tones on TONE3000…**. Sign in to TONE3000 there.
+2. Search for gear or a sound. The tones you pick are downloaded into your library.
+3. **Tones** lists them, with their picture and who made them. Double-click one to play it on the selected track's A2 Modeller Amp, or drag it to a track or a chain.
 
 A project keeps the tones it uses, so it opens and sounds the same on another computer. **Normalize** levels each tone, so switching tones does not jump in loudness.
 
@@ -45,4 +49,4 @@ A project keeps the tones it uses, so it opens and sounds the same on another co
 
 ## Bass
 
-The **Bass amps**, a flip-top combo, a 300-watt stack and a hybrid head, take a bass as the guitar amps take a guitar. **Mono Bass**, among the utilities, keeps the lows in mono.
+The **Bass amps**, **Flipside Bass Combo** (a 1960s flip-top), **Icebox Bass Stack** (300 watts into eight tens) and **Halfglow Bass Head** (a hybrid), take a bass as the guitar amps take a guitar, each with its cabinet. **Mono Bass**, among the utilities, keeps the lows in mono.

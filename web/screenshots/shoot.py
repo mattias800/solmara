@@ -1,7 +1,9 @@
 """Makes the manual's pictures from Solmara itself, so they can be made again
 whenever the editor changes.
 
-  python shoot.py BUILD_DIR
+  python shoot.py BUILD_DIR [extra]
+
+With extra, only the session, the mastering suite and the guitar rig.
 
 BUILD_DIR holds solmara and solmara-cli (solmara.exe and solmara-cli.exe on
 Windows). The demo song is built from night-drive.json in a folder of its
@@ -52,7 +54,7 @@ def mark_overview(image):
 
 
 def main() -> None:
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3) or (len(sys.argv) == 3 and sys.argv[2] != "extra"):
         sys.exit(__doc__)
     build = Path(sys.argv[1]).resolve()
     cli, app = tool(build, "solmara-cli"), tool(build, "solmara")
@@ -61,6 +63,9 @@ def main() -> None:
         env = dict(os.environ, SOLMARA_SETTINGS=str(work / "settings.json"))
         song = work / "Night Drive.daw"
         run = lambda *args: subprocess.run(args, env=env, check=True, capture_output=True)
+        if len(sys.argv) == 3:
+            extra_shots(cli, app, work, run)
+            return
         run(cli, "new", str(song), "Night Drive", "--empty")
         run(cli, "apply", str(song), str(HERE / "night-drive.json"))
         for panel in ("library", "inspector", "editor"):
@@ -125,6 +130,58 @@ def main() -> None:
         out.mkdir(parents=True, exist_ok=True)
         Image.open(window).convert("RGB").save(out / "window.webp", quality=90, method=6)
         print("Composer:", out / "window.webp")
+        extra_shots(cli, app, work, run)
+
+
+def extra_shots(cli: str, app: str, work: Path, run) -> None:
+    """The session, the mastering suite and a guitar rig, for their chapters."""
+    import json
+    manual = HERE.parent / "src" / "assets" / "manual"
+    manual.mkdir(parents=True, exist_ok=True)
+
+    def project(name: str, *batches: str) -> Path:
+        song = work / f"{name}.daw"
+        run(cli, "new", str(song), "Night Drive", "--empty")
+        operations = []
+        for batch in batches:
+            operations += json.loads((HERE / batch).read_text(encoding="utf-8"))["operations"]
+        joined = work / f"{name}.json"
+        joined.write_text(json.dumps({"schemaVersion": 1, "label": name, "operations": operations}), encoding="utf-8")
+        run(cli, "apply", str(song), str(joined))
+        return song
+
+    def shot(song: Path, name: str, *flags, crop=None, size=("1600", "950")) -> Image.Image:
+        bmp = work / f"{name}.bmp"
+        run(app, str(song), *flags, "--screenshot", str(bmp), "--screenshot-size", *size, "--screenshot-scale", str(SCALE))
+        image = Image.open(bmp).convert("RGB")
+        # Never the status line: it shows the project's path, a user's folder.
+        left, top, right, bottom = crop or (0, 0, image.width // SCALE, image.height // SCALE - 32)
+        image = image.crop((left * SCALE, top * SCALE, right * SCALE, bottom * SCALE))
+        image.save(manual / f"{name}.webp", quality=88, method=6)
+        return image
+
+    # The manual's song in four scenes, the session in place of the arrangement.
+    scenes = project("Session", "manual-song.json", "session.json")
+    for panel in ("library", "inspector"):
+        run(cli, "layout", str(scenes), panel, "off")
+    shot(scenes, "session", "--view", "session", crop=(0, 0, 1600, 650))
+
+    # The manual's song with the default mastering chain, its suite open.
+    mastered = project("Mastered", "manual-song.json")
+    run(cli, "add-mastering", str(mastered))
+    bmp = work / "suite.bmp"
+    run(app, str(mastered), "--window", "suite", "--screenshot", str(bmp), "--screenshot-size", "1600", "950",
+        "--screenshot-scale", str(SCALE))
+    window = next(work.glob("suite-device_*.bmp"))
+    Image.open(window).convert("RGB").save(manual / "mastering-suite.webp", quality=88, method=6)
+
+    # A guitar's chain: gate, overdrive, amp and cabinet.
+    rig = project("Guitar", "guitar.json")
+    for panel in ("library", "inspector"):
+        run(cli, "layout", str(rig), panel, "off")
+    # Wide enough for the whole chain; only the devices pane is kept.
+    shot(rig, "guitar-rig", "--select", "track_2", crop=(0, 664, 2350, 918), size=("2400", "950"))
+    print("The extra pictures:", manual)
 
 
 if __name__ == "__main__":

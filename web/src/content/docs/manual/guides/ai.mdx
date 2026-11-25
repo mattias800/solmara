@@ -1,6 +1,6 @@
 ---
 title: AI on your own computer
-description: Generate songs and parts, write phrases in Composer, split stems, turn audio into notes, and make a cover.
+description: Generate songs and parts, write piano phrases and drum parts in Composer, split stems, turn audio into notes, and make a cover.
 ---
 
 Solmara's AI runs on your own computer, on its graphics card where it has one. Nothing you make is sent anywhere, and everything a model makes is an ordinary part of your project: a take is an audio clip, a phrase is notes, a stem is a track.
@@ -13,7 +13,7 @@ Each model downloads the first time you use it. **Preferences › AI** lists the
 
 1. Add an **audio track**, right-click its row and choose **Create AI generation clip**. Drag it as long as the music should be; a clip made without dragging is 16 bars.
 2. The clip's panel has three columns:
-   - **What to make:** describe the music in words, and set its key, whether it is **instrumental** or **sung** (and in which language), and the quality: **Fast**, the model you chose, or **Best**.
+   - **Music:** describe the music in words, and choose the **voice**, **Instrumental** or **Vocals** (and in which language), and the **quality**: **Fast**, a take in about a minute, or **Best**, slower and more careful.
    - **Lyrics**, for a sung take: sections tagged `[Verse 1]`, `[Chorus]`, `[Bridge]`, each in a colour of its own.
    - **Takes:** every take you make, newest first.
 3. Press **Generate**. Each press makes a new take; you can keep working and playing while it does.
@@ -33,14 +33,35 @@ Each model downloads the first time you use it. **Preferences › AI** lists the
 
 In a clip's [Composer](../composer/#generate-a-phrase) window, **Generate** writes a piano phrase: a new one, a continuation of yours, or a harmony to your melody. Nothing changes your clip until you keep a take.
 
+## A drummer: the Drum Player
+
+The **Drum Player** writes drum parts: beats and fills with the timing and dynamics of a real drummer. It is a model of Solmara's own, it comes with the app, and it runs on the processor, so there is nothing to download.
+
+1. Make a MIDI clip on a drum track, 1, 2, 4 or 8 bars long, and open its Composer window. On a drum track, **Generate** starts on **Drums**; elsewhere, choose **Drums** in place of **Piano** at the left of its strip.
+2. Say what to play. Choose a **genre** (any, or one of 22, from rock, funk and jazz to Afro-Cuban and New Orleans) and the **part**, **Any**, **Beat** or **Fill**. Or type keywords, such as `funk, fill, no ride`.
+3. Press **Generate**. It writes a batch of takes, which show in the clip's lanes, one lane for each kit piece. The take plays in the clip, round its loop, on the track's own drums.
+4. Click a take to hear it, and double-click it or press <kbd>Enter</kbd> to **keep** it: its notes go into the clip as ordinary notes, one step to undo. **Keep as new clip** puts it in a clip after this one instead.
+
+The tempo, the time signature and the length come from your song and the clip. The Drum Player plays in 4/4, at a steady tempo from 20 to 300 BPM.
+
+### Shape it
+
+The **···** menu has more:
+
+- **Match a performance:** how **complex**, how **intense** and how **varied** the takes should be. It writes many ideas and keeps the ones closest to what you ask.
+- **Kit:** for each kind of kit piece (kick, snare, hi-hat, ride, crash, toms and the rest), **Allow** it, **Require** it at least once, or **Leave out** it, for a beat on the ride with no hi-hat.
+- **Opening:** a **New idea**, or keep the clip's first bar, two bars or four, and let it carry on from what you wrote.
+- **Seed:** the same seed writes the same takes again, so a good batch can be found again.
+- **Runs on:** the processor, or a graphics card for larger batches faster.
+
 ## Split a song into stems
 
 Right-click an audio clip and choose **Separate stems**. The clip shows how far it has got, and its menu can cancel it. When it is done, a group named after the clip holds an audio track for each stem (vocals, drums, bass, guitar, piano and the rest), each in a colour of its own, and the original track is muted.
 
 ## Turn audio into notes
 
-An audio clip's menu has **Convert Melody**, **Convert Harmony** and **Convert Drums to New MIDI Track**: Solmara listens to the clip and writes what it hears as a MIDI clip. Dropping an audio clip on a MIDI track does the same, heard on that track's instrument.
+An audio clip's menu has **Convert Melody to New MIDI Track**, **Convert Harmony to New MIDI Track** and **Convert Drums to New MIDI Track**: Solmara listens to the clip and writes what it hears as a MIDI clip. Dropping an audio clip on a MIDI track does the same, heard on that track's instrument.
 
 ## A cover for your song
 
-A project can have a cover, shown in the top bar and in your songs. Right-click it to make a new one from the song's music, with a few words of your own if you like.
+A project can have a cover, shown in the top bar and in your songs. Click the cover, or the mark at the top bar's left where there is none yet, and choose **Generate a cover…** (the first time, **Get the cover art model…**): it writes a scene from the song's music, which you can change or replace with words of your own, and makes takes to choose from; **Use as cover** keeps one. **Choose an image…** uses a picture of your own instead.
