@@ -1,6 +1,6 @@
 ---
-title: "Drum Sequencer"
-description: "Drum Sequencer"
+title: "Drum Grid"
+description: "Drum Grid"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Drum Sequencer"
 
 A MIDI device: plays eight channels of sixteen steps as the song plays, each a key of the instrument such as a drum rack's pad, with eight patterns to choose between. Each channel has its own length, speed, direction and slide, and each step a velocity, repeats, triplets or a flam, and a probability. The track's own notes pass through.
 
-[Drum Sequencer on the website](/solmara/write/#drum-sequencer)
+[Drum Grid on the website](/solmara/write/#drum-grid)
 
 ## Controls
 

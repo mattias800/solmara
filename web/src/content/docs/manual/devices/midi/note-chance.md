@@ -1,6 +1,6 @@
 ---
-title: "Random Tool"
-description: "Random Tool"
+title: "Note Chance"
+description: "Note Chance"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Random Tool"
 
 A MIDI device: lets notes through by a sequence of yes and no, or by chance, and by chance sets or moves their pitch, velocity and length within ranges, each with a chance of its own or one for all.
 
-[Random Tool on the website](/solmara/write/#random-tool)
+[Note Chance on the website](/solmara/write/#note-chance)
 
 ## Controls
 

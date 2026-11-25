@@ -1,6 +1,6 @@
 ---
-title: "Bassline Generator"
-description: "Bassline Generator"
+title: "Bassline Maker"
+description: "Bassline Maker"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Bassline Generator"
 
 A MIDI device: makes a bass line of an on-beat phrase and an off-beat one, chosen from busy to sparse and varied through the pattern, its intervals stretched and made minor, transposed from the keys or played as written, with eight patterns.
 
-[Bassline Generator on the website](/solmara/write/#bassline-generator)
+[Bassline Maker on the website](/solmara/write/#bassline-maker)
 
 ## Controls
 

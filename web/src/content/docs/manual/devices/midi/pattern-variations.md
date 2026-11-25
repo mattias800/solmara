@@ -1,6 +1,6 @@
 ---
-title: "Pattern Mutator"
-description: "Pattern Mutator"
+title: "Pattern Variations"
+description: "Pattern Variations"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Pattern Mutator"
 
 A MIDI device: plays a polyphonic pattern of steps, and makes variations of it at a click: notes moved by octaves and fifths or further, swapped, thinned or filled, lengthened, and accented. Eight patterns, transposed from the keys.
 
-[Pattern Mutator on the website](/solmara/write/#pattern-mutator)
+[Pattern Variations on the website](/solmara/write/#pattern-variations)
 
 ## Controls
 

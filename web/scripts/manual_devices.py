@@ -127,6 +127,13 @@ def main() -> None:
         device["origin"] = origins.get(device["id"])
     hidden = set(json.loads((DATA / "site.json").read_text(encoding="utf-8"))["hidden"])
     written = [p for p in (write(d, hidden) for d in devices) if p]
+    # A generated chapter for a device that is no longer there, or is named
+    # anew, goes; one written by hand stays, to be moved by hand.
+    slugs = {d["slug"] for d in devices}
+    for old in DOCS.rglob("*.md"):
+        if old.stem not in slugs and MARK in old.read_text(encoding="utf-8").splitlines()[:8]:
+            old.unlink()
+            print(f"removed {old.relative_to(WEB)}")
     print(f"{len(written)} chapters written, {len(devices) - len(written)} kept as written by hand")
 
 

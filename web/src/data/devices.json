@@ -16,8 +16,8 @@
  },
  {
   "id": "builtin.note-echo",
-  "slug": "note-echo",
-  "label": "Note Echo",
+  "slug": "note-repeater",
+  "label": "Note Repeater",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -27,12 +27,12 @@
   "window": false,
   "sidechain": false,
   "controls": 6,
-  "face": "note-echo"
+  "face": "note-repeater"
  },
  {
   "id": "builtin.scales-and-chords",
-  "slug": "scales-and-chords",
-  "label": "Scales & Chords",
+  "slug": "key-chords",
+  "label": "Key Chords",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -42,12 +42,12 @@
   "window": false,
   "sidechain": false,
   "controls": 11,
-  "face": "scales-and-chords"
+  "face": "key-chords"
  },
  {
   "id": "builtin.drum-sequencer",
-  "slug": "drum-sequencer",
-  "label": "Drum Sequencer",
+  "slug": "drum-grid",
+  "label": "Drum Grid",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -57,12 +57,12 @@
   "window": false,
   "sidechain": false,
   "controls": 2,
-  "face": "drum-sequencer"
+  "face": "drum-grid"
  },
  {
   "id": "builtin.dual-arpeggio",
-  "slug": "dual-arpeggio",
-  "label": "Dual Arpeggio",
+  "slug": "twin-arpeggiator",
+  "label": "Twin Arpeggiator",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -72,7 +72,7 @@
   "window": false,
   "sidechain": false,
   "controls": 31,
-  "face": "dual-arpeggio"
+  "face": "twin-arpeggiator"
  },
  {
   "id": "builtin.anchor-arpeggiator",
@@ -91,8 +91,8 @@
  },
  {
   "id": "builtin.note-tool",
-  "slug": "note-tool",
-  "label": "Note Tool",
+  "slug": "note-filter",
+  "label": "Note Filter",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -102,12 +102,12 @@
   "window": false,
   "sidechain": false,
   "controls": 28,
-  "face": "note-tool"
+  "face": "note-filter"
  },
  {
   "id": "builtin.random-tool",
-  "slug": "random-tool",
-  "label": "Random Tool",
+  "slug": "note-chance",
+  "label": "Note Chance",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -117,7 +117,7 @@
   "window": false,
   "sidechain": false,
   "controls": 29,
-  "face": "random-tool"
+  "face": "note-chance"
  },
  {
   "id": "builtin.rhythm-map",
@@ -136,8 +136,8 @@
  },
  {
   "id": "builtin.note-generator",
-  "slug": "note-generator",
-  "label": "Note Generator",
+  "slug": "euclidean-notes",
+  "label": "Euclidean Notes",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -147,12 +147,12 @@
   "window": false,
   "sidechain": false,
   "controls": 77,
-  "face": "note-generator"
+  "face": "euclidean-notes"
  },
  {
   "id": "builtin.poly-sequencer",
-  "slug": "poly-sequencer",
-  "label": "Poly Sequencer",
+  "slug": "chord-steps",
+  "label": "Chord Steps",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -162,12 +162,12 @@
   "window": false,
   "sidechain": false,
   "controls": 7,
-  "face": "poly-sequencer"
+  "face": "chord-steps"
  },
  {
   "id": "builtin.pattern-mutator",
-  "slug": "pattern-mutator",
-  "label": "Pattern Mutator",
+  "slug": "pattern-variations",
+  "label": "Pattern Variations",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -177,12 +177,12 @@
   "window": false,
   "sidechain": false,
   "controls": 12,
-  "face": "pattern-mutator"
+  "face": "pattern-variations"
  },
  {
   "id": "builtin.chord-sequencer",
-  "slug": "chord-sequencer",
-  "label": "Chord Sequencer",
+  "slug": "chord-pads",
+  "label": "Chord Pads",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -192,12 +192,12 @@
   "window": false,
   "sidechain": false,
   "controls": 103,
-  "face": "chord-sequencer"
+  "face": "chord-pads"
  },
  {
   "id": "builtin.bassline-generator",
-  "slug": "bassline-generator",
-  "label": "Bassline Generator",
+  "slug": "bassline-maker",
+  "label": "Bassline Maker",
   "kind": "midi",
   "group": null,
   "part": null,
@@ -207,7 +207,7 @@
   "window": false,
   "sidechain": false,
   "controls": 158,
-  "face": "bassline-generator"
+  "face": "bassline-maker"
  },
  {
   "id": "builtin.transpose",

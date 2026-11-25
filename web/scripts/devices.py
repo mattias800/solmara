@@ -210,6 +210,16 @@ def main() -> None:
         kept = {d["id"]: d for d in json.loads(path.read_text(encoding="utf-8"))}
         kept.update({d["id"]: d for d in devices})
         devices = list(kept.values())
+    # A face saved under a name no device has now (one renamed) goes.
+    slugs = {device["slug"] for device in devices}
+    for stale in FACES.glob("*.webp"):
+        if stale.stem not in slugs:
+            stale.unlink()
+            print(f"removed {stale.name}")
+    for stale in (DATA / "controls").glob("*.json"):
+        if stale.stem not in slugs:
+            stale.unlink()
+            print(f"removed controls/{stale.name}")
     for device in devices:
         device.setdefault("face", device["slug"] if (FACES / f"{device['slug']}.webp").exists() else None)
     DATA.mkdir(parents=True, exist_ok=True)

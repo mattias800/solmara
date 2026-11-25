@@ -1,6 +1,6 @@
 ---
-title: "Note Generator"
-description: "Note Generator"
+title: "Euclidean Notes"
+description: "Euclidean Notes"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Note Generator"
 
 A MIDI device: four lines that each play a Euclidean rhythm at a rate of their own, with pitches, velocities and lengths varied by chance about a base key, kept to a scale, frozen in a zone, and joined as chords or as one line. It plays with the song, or while a key is held, about that key.
 
-[Note Generator on the website](/solmara/write/#note-generator)
+[Euclidean Notes on the website](/solmara/write/#euclidean-notes)
 
 ## Controls
 

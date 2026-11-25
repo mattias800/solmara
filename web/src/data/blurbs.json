@@ -223,27 +223,27 @@
   "kind": "Arpeggiator",
   "text": "An arpeggio in two parts: an anchor on the chord's notes and a line that moves around it."
  },
- "Dual Arpeggio": {
+ "Twin Arpeggiator": {
   "kind": "Arpeggiator",
   "text": "Two arpeggiators side by side, each over its own range of keys."
  },
- "Chord Sequencer": {
+ "Chord Pads": {
   "kind": "Chords",
   "text": "Sixteen chords on pads, from sets in many styles or written by hand."
  },
- "Bassline Generator": {
+ "Bassline Maker": {
   "kind": "Bass lines",
   "text": "A bass line from an on-beat and an off-beat phrase, varied at a click."
  },
- "Poly Sequencer": {
+ "Chord Steps": {
   "kind": "Step sequencer",
   "text": "A polyphonic step sequencer, kept in a scale."
  },
- "Pattern Mutator": {
+ "Pattern Variations": {
   "kind": "Variations",
   "text": "Plays a pattern of steps and makes variations of it at a click."
  },
- "Note Generator": {
+ "Euclidean Notes": {
   "kind": "Generative",
   "text": "Four lines of Euclidean rhythms whose notes wander in a scale."
  },
@@ -251,23 +251,23 @@
   "kind": "Drum patterns",
   "text": "A map of rhythms: move across it and the beat changes."
  },
- "Drum Sequencer": {
+ "Drum Grid": {
   "kind": "Drum steps",
   "text": "Eight channels of sixteen steps, each a drum."
  },
- "Note Echo": {
+ "Note Repeater": {
   "kind": "Note delay",
   "text": "Repeats each note like a delay, its velocity and pitch moving as it goes."
  },
- "Scales & Chords": {
+ "Key Chords": {
   "kind": "Harmony",
   "text": "Keeps notes to a scale, and turns one note into a chord."
  },
- "Note Tool": {
+ "Note Filter": {
   "kind": "Note filter",
   "text": "Lets through the notes you want, and changes their pitch, length and velocity."
  },
- "Random Tool": {
+ "Note Chance": {
   "kind": "Chance",
   "text": "Lets notes through by chance or by a pattern, and varies them."
  },

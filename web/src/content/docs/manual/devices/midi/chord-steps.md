@@ -1,6 +1,6 @@
 ---
-title: "Poly Sequencer"
-description: "Poly Sequencer"
+title: "Chord Steps"
+description: "Chord Steps"
 ---
 
 <!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->
@@ -9,7 +9,7 @@ description: "Poly Sequencer"
 
 A MIDI device: a polyphonic step sequencer in a scale, whose notes can be boxes that play chords, repeats, arpeggios or strums, with eight patterns of four variations each that switch by themselves, a velocity lane, and transposition from the keys.
 
-[Poly Sequencer on the website](/solmara/write/#poly-sequencer)
+[Chord Steps on the website](/solmara/write/#chord-steps)
 
 ## Controls
 
