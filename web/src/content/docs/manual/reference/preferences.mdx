@@ -1,46 +1,54 @@
 ---
 title: Preferences
-description: What each tab of the Preferences window sets.
+description: What each page of the Preferences window sets.
 ---
 
-**File › Preferences…** (<kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd>) holds what belongs to your computer rather than to a project. A project keeps its own settings; these stay with you from song to song.
+**File › Preferences…** (<kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd>) holds what belongs to your computer rather than to a project. A project keeps its own settings; these stay with you from song to song. The pages are down the left in three groups, **Sound**, **Content** and **Workspace**. <kbd>Esc</kbd> closes the window.
 
-## Audio
+## Sound
 
-- **Audio output:** the device Solmara plays through, or the system's default, which it follows when that changes. The size of block asked of the device sets how quickly it responds against how hard the computer works.
-- **Take it for Solmara alone** (Windows): plays past the system's mixer, in the smallest blocks your device allows, for the lowest latency. Nothing else is heard through the device meanwhile.
-- **Render on:** how many processor cores render tracks beside the audio. The sound is the same with any number; it takes effect the next time Solmara starts.
-- **Audio input:** the device you record from, and the **offset** a recording is moved by, if your recordings sit a little late.
-- What the stream is doing: its device, rate and latency, how many blocks it has played and dropped, the level now, and a **Test tone**. If the system's own volume mixer has turned Solmara down, it says so and offers to put it back.
+### Audio
 
-## MIDI
+- **The stream's state**, at the top: what Solmara is playing through, or why no sound is going out, with its driver, rate, block size, latency and dropouts, the level now, and a **Test tone**. If the system's own volume mixer has turned Solmara down, it says so and offers to put it back.
+- **Output:** the **output device**, or the system's default, which it follows when that changes; the **sample rate**, the interface's own unless you choose one; and the **block size**, how quickly it responds against how hard the computer works. **Exclusive mode** (Windows) plays past the system's mixer, in the smallest blocks your device allows, for the lowest latency. Nothing else is heard through the device meanwhile.
+- **Input and recording:** the **input device** you record from, and the **recording offset** a recording is moved earlier by, if your recordings land a little late.
+- **Performance:** how many **render threads** render tracks beside the audio (the sound is the same with any number; it takes effect the next time Solmara starts), and whether Vintergatan plays in **Eco** while you work, about a third of the cost. Renders and exports always play High.
 
-**MIDI inputs:** which keyboards play, every one or those you tick, and the last message that came in. A keyboard plays the armed tracks, or the selected MIDI track. MIDI input is on Windows and macOS for now.
+### MIDI
 
-## Plugins
+Which keyboards play: **every input**, or **only these**, each switched on or off. The foot shows the last message that came in. A keyboard plays the armed tracks, or the selected MIDI track. MIDI input is on Windows and macOS for now.
 
-The CLAP, VST3 and Audio Unit plugins installed, each with its kind, format and maker, and the folders they are looked for in. Files that could not be read are listed with why; **Read again** tries one, **Read all again** looks anew. Plugins are read beside the editor, so Solmara opens at once and a plugin that crashes as it loads is left out and named. Here too: whether <kbd>Space</kbd> in a plugin's own window plays and stops the song.
+### Plugins
 
-## Library
+The CLAP, VST3 and Audio Unit plugins installed, found by name or maker and by kind, each with its maker, kind, format and version. Files that could not be read come first, with why; **Read again** tries one, **Read them again** all of them, and **Read all again** looks anew. Plugins are read beside the editor, so Solmara opens at once and a plugin that crashes as it loads is left out and named. Under **Behaviour**: whether a plugin in several formats is listed once, the **preferred format**, and whether <kbd>Space</kbd> in a plugin's own window plays and stops the song. Last, the folders plugins are looked for in.
 
-The folders presets are found in. Add your own, such as a shared drive. **Preview** sets whether presets play a few notes as you browse them.
+## Content
 
-## Look
+### Library
 
-The palette Solmara is drawn in: **Console**, **Midnight**, which is darker, or **Control Room**, warm with an amber accent. A click shows it at once.
+- **Presets:** the folders presets are found in. **Add folder…** adds your own, such as a shared drive.
+- **Samples:** your own folders of samples, anywhere on a disk, each a place of its own in the library.
+- **Sample libraries:** the folders sample libraries are kept in, and the one **Get content** installs new ones into.
+- **Browsing and previews:** whether imported loops follow the tempo, whether presets play a few notes as you browse them, and whether a click in the library plays what it is on.
 
-## Recovery
+### AI models
 
-How often your work is saved in the background, so it can be brought back after a crash: from every 5 seconds to every hour, or never.
+Where the models run (**Run models on**: automatically, the processor, or a graphics card), and what the computer has for them. Then a card for each kind of model, with its description, licence, size and state: **song generation**, with **Download model**, **Check model**, which checks an installed one and repairs it, and a short test; **stem separation**; **cover art**, with the size covers are made at; and the **MIDI models**. Last, the models on your disk, each with **Remove**.
 
-## AI
+## Workspace
 
-The AI models Solmara runs on your computer: each with its description, source, licence and size. **Download model** fetches one; **Check model** checks an installed one and repairs it. **Run on** chooses the processor or a graphics card for them.
+### Appearance
 
-## Names
+The palette Solmara is drawn in, each shown as a little editor in its colours: **Console**, **Midnight**, which is darker, or **Control Room**, warm with an amber accent. A click shows it at once. **Reduce motion** makes what would glide jump.
 
-Your own names for Solmara's devices, shown in place of the built-in names wherever a device appears. They belong to you, not to a project. **Import…** and **Export…** move them between computers or share a set.
+### Device names
 
-## Credits
+Your own names for Solmara's devices, shown in place of the built-in names wherever a device appears. They belong to you, not to a project. Right click a device to name it; **Import…** and **Export…** move a set between computers or share one.
 
-The sounds that come with Solmara and the people who made them, with their licences.
+### Saving & recovery
+
+How often a recovery copy of your unsaved work is kept, so it can be brought back after a crash: from every 5 seconds to every 10 minutes, or never. **Find recovery copies…** looks for them now.
+
+### About
+
+Shows the first-start tour or the welcome again at the next start, the commands scripts and agents set these preferences with, and the credits: the sounds, fonts, code and models that come with Solmara and the people who made them, with their licences.
