@@ -3,6 +3,9 @@ title: AI on your own computer
 description: Generate songs and parts, write piano phrases and drum parts in Composer, split stems, turn audio into notes, and make a cover.
 ---
 
+import Shot from '../../../../components/Shot.astro';
+import drumPlayer from '../../../../assets/manual/drum-player.webp';
+
 Solmara's AI runs on your own computer, on its graphics card where it has one. Nothing you make is sent anywhere, and everything a model makes is an ordinary part of your project: a take is an audio clip, a phrase is notes, a stem is a track.
 
 ## The models
@@ -39,8 +42,10 @@ The **Drum Player** writes drum parts: beats and fills with the timing and dynam
 
 1. Make a MIDI clip on a drum track, 1, 2, 4 or 8 bars long, and open its Composer window. On a drum track, **Generate** starts on **Drums**; elsewhere, choose **Drums** in place of **Piano** at the left of its strip.
 2. Say what to play. Choose a **genre** (any, or one of 22, from rock, funk and jazz to Afro-Cuban and New Orleans) and the **part**, **Any**, **Beat** or **Fill**. Or type keywords, such as `funk, fill, no ride`.
-3. Press **Generate**. It writes a batch of takes, which show in the clip's lanes, one lane for each kit piece. The take plays in the clip, round its loop, on the track's own drums.
-4. Click a take to hear it, and double-click it or press <kbd>Enter</kbd> to **keep** it: its notes go into the clip as ordinary notes, one step to undo. **Keep as new clip** puts it in a clip after this one instead.
+3. Press **Generate**. It writes a batch of takes into the list at the right. The chosen take shows in the clip's lanes, one lane for each kit piece.
+4. Click a take to show it, and press <kbd>Space</kbd> to hear it: it plays in the clip, round its loop, on the track's own drums. Double-click it, press **Keep in this clip** or <kbd>Enter</kbd> to keep it: its notes go into the clip as ordinary notes, one step to undo. **As new clip** puts it in a clip after this one instead.
+
+<Shot src={drumPlayer} alt="Composer's Generate on a two-bar drum clip: Drums and Funk · beat chosen in the strip, four takes in the list at the right, and Take 4's hits in the lanes Hat pedal, Kick hit, Ride bow and Snare hit." />
 
 The tempo, the time signature and the length come from your song and the clip. The Drum Player plays in 4/4, at a steady tempo from 20 to 300 BPM.
 

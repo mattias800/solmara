@@ -3,7 +3,9 @@ whenever the editor changes.
 
   python shoot.py BUILD_DIR [extra]
 
-With extra, only the session, the mastering suite and the guitar rig.
+With extra, only the session, the mastering suite, the guitar rig and the
+Drum Player. The Drum Player needs a build with the AI on (DAW_BUILD_AI),
+its model in assets/drums beside the editor or SOLMARA_DRUM_MODEL set.
 
 BUILD_DIR holds solmara and solmara-cli (solmara.exe and solmara-cli.exe on
 Windows). The demo song is built from night-drive.json in a folder of its
@@ -134,7 +136,7 @@ def main() -> None:
 
 
 def extra_shots(cli: str, app: str, work: Path, run) -> None:
-    """The session, the mastering suite and a guitar rig, for their chapters."""
+    """The session, the mastering suite, a guitar rig and the Drum Player, for their chapters."""
     import json
     manual = HERE.parent / "src" / "assets" / "manual"
     manual.mkdir(parents=True, exist_ok=True)
@@ -181,6 +183,15 @@ def extra_shots(cli: str, app: str, work: Path, run) -> None:
         run(cli, "layout", str(rig), panel, "off")
     # Wide enough for the whole chain; only the devices pane is kept.
     shot(rig, "guitar-rig", "--select", "track_2", crop=(0, 664, 2350, 918), size=("2400", "950"))
+
+    # The Drum Player's takes for a two-bar clip, written by the bundled model;
+    # the screenshot waits for them.
+    groove = project("Drums", "drum-takes.json")
+    bmp = work / "drums.bmp"
+    run(app, str(groove), "--drum-takes", "clip_1:funk beat", "--screenshot", str(bmp), "--screenshot-size", "1600", "950",
+        "--screenshot-scale", str(SCALE))
+    window = next(work.glob("drums-device_*.bmp"))
+    Image.open(window).convert("RGB").save(manual / "drum-player.webp", quality=88, method=6)
     print("The extra pictures:", manual)
 
 

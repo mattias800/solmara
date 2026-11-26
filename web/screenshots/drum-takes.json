@@ -1,0 +1,9 @@
+{
+ "schemaVersion": 1,
+ "label": "A clip for the Drum Player",
+ "operations": [
+  {"op": "set-track", "track": "track_1", "name": "Drums", "color": "#E0A84F"},
+  {"op": "add-device", "track": "track_1", "type": "builtin.ph8"},
+  {"op": "add-clip", "ref": "groove", "track": "track_1", "bar": 1, "lengthBars": 2, "name": "Groove"}
+ ]
+}
