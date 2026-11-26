@@ -6,13 +6,29 @@ sidebar:
   order: 5
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_clock from '../../../../../assets/modules/modular-clock.webp';
+import m_modular_divider from '../../../../../assets/modules/modular-divider.webp';
+import m_modular_sequencer from '../../../../../assets/modules/modular-sequencer.webp';
+import m_modular_euclidean from '../../../../../assets/modules/modular-euclidean.webp';
+import m_modular_trigger_delay from '../../../../../assets/modules/modular-trigger-delay.webp';
+import m_modular_transport from '../../../../../assets/modules/modular-transport.webp';
+import m_modular_step_sequencer from '../../../../../assets/modules/modular-step-sequencer.webp';
+import m_modular_trigger_sequencer from '../../../../../assets/modules/modular-trigger-sequencer.webp';
+import m_modular_clock_ratio from '../../../../../assets/modules/modular-clock-ratio.webp';
+import m_modular_clock_quantizer from '../../../../../assets/modules/modular-clock-quantizer.webp';
+import m_modular_ratchet from '../../../../../assets/modules/modular-ratchet.webp';
+import m_modular_shift_register from '../../../../../assets/modules/modular-shift-register.webp';
 
 What keeps time and plays in it: clocks, dividers, sequencers and the song's place.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular Clock
+
+<Shot src={m_modular_clock} alt="The Modular Clock module on the Modular's canvas, as it starts." />
 
 A clock with swing, at its own tempo or the song's, with its place in each pulse and a gate while it runs.
 
@@ -28,6 +44,8 @@ A clock with swing, at its own tempo or the song's, with its place in each pulse
 
 ## Clock Divider
 
+<Shot src={m_modular_divider} alt="The Clock Divider module on the Modular's canvas, as it starts." />
+
 A clock divided by two, three, four and eight at once, and by any number up to 64 at its main output.
 
 - **In:** Clock (clock), Reset (gate)
@@ -38,6 +56,8 @@ A clock divided by two, three, four and eight at once, and by any number up to 6
 | Division | 1 to 64 | 2 |
 
 ## Voltage Sequencer
+
+<Shot src={m_modular_sequencer} alt="The Voltage Sequencer module on the Modular's canvas, as it starts." />
 
 Eight steps of pitch, a clock stepping them and a gate at each, played to a length of steps you set.
 
@@ -51,6 +71,8 @@ Eight steps of pitch, a clock stepping them and a gate at each, played to a leng
 | Step 1–8 | -24 semitones to 24 semitones | 0 semitones, 3 semitones, 7 semitones, 10 semitones, 12 semitones, 10 semitones, 7 semitones, 3 semitones |
 
 ## Euclidean Gates
+
+<Shot src={m_modular_euclidean} alt="The Euclidean Gates module on the Modular's canvas, as it starts." />
 
 A number of hits spread as evenly as they go over a number of steps, turned round to start elsewhere, and an accent on the hits that fall every so many steps.
 
@@ -66,6 +88,8 @@ A number of hits spread as evenly as they go over a number of steps, turned roun
 
 ## Trigger Delay
 
+<Shot src={m_modular_trigger_delay} alt="The Trigger Delay module on the Modular's canvas, as it starts." />
+
 A trigger, a while later, as a pulse as long as you set.
 
 - **In:** Trigger (gate), Time (control)
@@ -78,6 +102,8 @@ A trigger, a while later, as a pulse as long as you set.
 
 ## Transport
 
+<Shot src={m_modular_transport} alt="The Transport module on the Modular's canvas, as it starts." />
+
 The song's place as signals: running, ramps over each beat, each bar and a length of bars, a pulse at each beat and bar, and the tempo.
 
 - **In:** None
@@ -89,6 +115,8 @@ The song's place as signals: running, ramps over each beat, each bar and a lengt
 | Ramp length | 1 bar to 64 bars | 4 bars |
 
 ## Step Sequencer
+
+<Shot src={m_modular_step_sequencer} alt="The Step Sequencer module on the Modular's canvas, as it starts." />
 
 Sixteen steps of pitch, each resting, playing or tied on, with accent and chance; forward, backward, ping-pong or random, clocked or read along a Phase input.
 
@@ -106,6 +134,8 @@ Sixteen steps of pitch, each resting, playing or tied on, with accent and chance
 | Step 1–16 chance | 0 to 1 | 1 |
 
 ## Trigger Sequencer
+
+<Shot src={m_modular_trigger_sequencer} alt="The Trigger Sequencer module on the Modular's canvas, as it starts." />
 
 Four tracks of sixteen steps, each off, on or accented, with a chance for each track.
 
@@ -127,6 +157,8 @@ Four tracks of sixteen steps, each off, on or accented, with a chance for each t
 
 ## Clock Ratio
 
+<Shot src={m_modular_clock_ratio} alt="The Clock Ratio module on the Modular's canvas, as it starts." />
+
 An incoming clock multiplied and divided by whole numbers, its pulses spread evenly.
 
 - **In:** Clock (clock), Reset (gate)
@@ -140,6 +172,8 @@ An incoming clock multiplied and divided by whole numbers, its pulses spread eve
 
 ## Clock Quantizer
 
+<Shot src={m_modular_clock_quantizer} alt="The Clock Quantizer module on the Modular's canvas, as it starts." />
+
 Holds each gate until the next clock, then lets it through: as a pulse, or for as long as it is held.
 
 - **In:** Gate (gate), Clock (clock)
@@ -150,6 +184,8 @@ Holds each gate until the next clock, then lets it through: as a pulse, or for a
 | Gate | Pulse, Follow | Follow |
 
 ## Ratchet
+
+<Shot src={m_modular_ratchet} alt="The Ratchet module on the Modular's canvas, as it starts." />
 
 Repeats a gate: a number of pulses at an interval, or for as long as it is held.
 
@@ -164,6 +200,8 @@ Repeats a gate: a number of pulses at an interval, or for as long as it is held.
 | Mode | Count, While held | Count |
 
 ## Shift Register
+
+<Shot src={m_modular_shift_register} alt="The Shift Register module on the Modular's canvas, as it starts." />
 
 Eight stages a clock moves a value along: its data input's, or its own last stage, changed by chance (a looping random sequence), with a weighted sum.
 

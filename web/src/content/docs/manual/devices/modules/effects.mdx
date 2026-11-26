@@ -6,13 +6,22 @@ sidebar:
   order: 6
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_delay from '../../../../../assets/modules/modular-delay.webp';
+import m_modular_chorus from '../../../../../assets/modules/modular-chorus.webp';
+import m_modular_phaser from '../../../../../assets/modules/modular-phaser.webp';
+import m_modular_frequency_shifter from '../../../../../assets/modules/modular-frequency-shifter.webp';
+import m_modular_pitch_shifter from '../../../../../assets/modules/modular-pitch-shifter.webp';
 
 Delays, choruses, phasers and pitch and frequency shifters, inside the patch.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular Delay
+
+<Shot src={m_modular_delay} alt="The Modular Delay module on the Modular's canvas, as it starts." />
 
 An echo up to two seconds long, free or a share of the beat, its time moved as fast as audio, its feedback kept in bounds.
 
@@ -28,6 +37,8 @@ An echo up to two seconds long, free or a share of the beat, its time moved as f
 | Division | 8 bars, 4 bars, 2 bars, 1 bar, 1/2, 1/2T, 1/2., 1/4, 1/4T, 1/4., 1/8, 1/8T, 1/8., 1/16, 1/16T, 1/16., 1/32, 1/32T | 1/8 |
 
 ## Chorus / Flanger
+
+<Shot src={m_modular_chorus} alt="The Chorus / Flanger module on the Modular's canvas, as it starts." />
 
 Three swept taps a third of a cycle apart (chorus) or one with feedback (flanger), spread in stereo.
 
@@ -46,6 +57,8 @@ Three swept taps a third of a cycle apart (chorus) or one with feedback (flanger
 
 ## Phaser
 
+<Shot src={m_modular_phaser} alt="The Phaser module on the Modular's canvas, as it starts." />
+
 Two to twelve swept all-pass stages with feedback, mixed with what came in.
 
 - **In:** Input (audio), Rate (control), Center (control)
@@ -62,6 +75,8 @@ Two to twelve swept all-pass stages with feedback, mixed with what came in.
 
 ## Frequency Shifter
 
+<Shot src={m_modular_frequency_shifter} alt="The Frequency Shifter module on the Modular's canvas, as it starts." />
+
 Every frequency moved by the same number of hertz, up and down at once (a Hilbert pair).
 
 - **In:** Input (audio), Shift (control)
@@ -73,6 +88,8 @@ Every frequency moved by the same number of hertz, up and down at once (a Hilber
 | Mix | 0 to 1 | 1 |
 
 ## Pitch Shifter
+
+<Shot src={m_modular_pitch_shifter} alt="The Pitch Shifter module on the Modular's canvas, as it starts." />
 
 A pitch moved by semitones and cents, or by 1 V an octave, through two crossfading taps.
 

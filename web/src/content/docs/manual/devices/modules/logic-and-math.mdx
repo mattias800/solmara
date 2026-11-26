@@ -6,7 +6,14 @@ sidebar:
   order: 7
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_logic from '../../../../../assets/modules/modular-logic.webp';
+import m_modular_comparator from '../../../../../assets/modules/modular-comparator.webp';
+import m_modular_math from '../../../../../assets/modules/modular-math.webp';
+import m_modular_latch from '../../../../../assets/modules/modular-latch.webp';
+import m_modular_counter from '../../../../../assets/modules/modular-counter.webp';
 
 Gates combined and compared, signals added and multiplied, counted and latched.
 
@@ -14,12 +21,16 @@ Every knob also has an input of its own; see [jacks](../#jacks) for what each ki
 
 ## Gate Logic
 
+<Shot src={m_modular_logic} alt="The Gate Logic module on the Modular's canvas, as it starts." />
+
 Two gates or clocks compared: AND, OR, XOR, NOT, NAND, NOR and XNOR at once.
 
 - **In:** A (gate), B (gate)
 - **Out:** And (gate), Or (gate), Xor (gate), Not (gate), Nand (gate), Nor (gate), Xnor (gate)
 
 ## Voltage Comparator
+
+<Shot src={m_modular_comparator} alt="The Voltage Comparator module on the Modular's canvas, as it starts." />
 
 A gate while a voltage is above a threshold, a margin keeping it from chattering, and a pulse as it rises past and as it falls.
 
@@ -32,6 +43,8 @@ A gate while a voltage is above a threshold, a margin keeping it from chattering
 | Hysteresis | 0 V to 5 V | 0.1 V |
 
 ## Math
+
+<Shot src={m_modular_math} alt="The Math module on the Modular's canvas, as it starts." />
 
 Two signals added, subtracted, multiplied, divided, compared, clipped or averaged, and gates for which is above.
 
@@ -46,12 +59,16 @@ Two signals added, subtracted, multiplied, divided, compared, clipped or average
 
 ## Latch
 
+<Shot src={m_modular_latch} alt="The Latch module on the Modular's canvas, as it starts." />
+
 A flip-flop: set, reset or toggled by gates, or taking its data input at each clock.
 
 - **In:** Set (gate), Reset (gate), Toggle (gate), Data (gate), Clock (clock)
 - **Out:** Output (gate), Inverted (gate)
 
 ## Counter
+
+<Shot src={m_modular_counter} alt="The Counter module on the Modular's canvas, as it starts." />
 
 Counts clocks up and down to a length, as a voltage and a pitch, with a carry pulse each time it wraps.
 

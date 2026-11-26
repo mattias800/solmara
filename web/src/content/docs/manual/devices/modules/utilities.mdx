@@ -6,13 +6,24 @@ sidebar:
   order: 9
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_attenuverter from '../../../../../assets/modules/modular-attenuverter.webp';
+import m_modular_offset from '../../../../../assets/modules/modular-offset.webp';
+import m_modular_slew from '../../../../../assets/modules/modular-slew.webp';
+import m_modular_quantizer from '../../../../../assets/modules/modular-quantizer.webp';
+import m_modular_pitch_utility from '../../../../../assets/modules/modular-pitch-utility.webp';
+import m_modular_midi_cv from '../../../../../assets/modules/modular-midi-cv.webp';
+import m_modular_voice_info from '../../../../../assets/modules/modular-voice-info.webp';
 
 Voltages set and scaled, pitches quantized and moved, and the notes as signals.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Attenuverter
+
+<Shot src={m_modular_attenuverter} alt="The Attenuverter module on the Modular's canvas, as it starts." />
 
 A signal made larger, smaller or upside down, and moved up or down: for audio or modulation.
 
@@ -26,6 +37,8 @@ A signal made larger, smaller or upside down, and moved up or down: for audio or
 
 ## Constant Voltage
 
+<Shot src={m_modular_offset} alt="The Constant Voltage module on the Modular's canvas, as it starts." />
+
 A steady voltage, set exactly: to tune, to bias, or to control.
 
 - **In:** None
@@ -36,6 +49,8 @@ A steady voltage, set exactly: to tune, to bias, or to control.
 | Voltage | -10 V to 10 V | 0 V |
 
 ## Slew Limiter
+
+<Shot src={m_modular_slew} alt="The Slew Limiter module on the Modular's canvas, as it starts." />
 
 How fast a voltage may rise and fall, each set apart: for glide, and to smooth modulation.
 
@@ -48,6 +63,8 @@ How fast a voltage may rise and fall, each set apart: for glide, and to smooth m
 | Fall | 0.01 ms to 20000 ms | 50 ms |
 
 ## Pitch Quantizer
+
+<Shot src={m_modular_quantizer} alt="The Pitch Quantizer module on the Modular's canvas, as it starts." />
 
 A pitch moved to the nearest note of a scale: one of fourteen, the song's, notes of your own, or the notes held, from a root, transposed; and a pulse each time the note changes.
 
@@ -75,6 +92,8 @@ A pitch moved to the nearest note of a scale: one of fourteen, the song's, notes
 
 ## Pitch Utility
 
+<Shot src={m_modular_pitch_utility} alt="The Pitch Utility module on the Modular's canvas, as it starts." />
+
 A pitch moved by semitones, octaves, a ratio of whole numbers and cents.
 
 - **In:** Pitch (pitch)
@@ -90,12 +109,16 @@ A pitch moved by semitones, octaves, a ratio of whole numbers and cents.
 
 ## Note to CV
 
+<Shot src={m_modular_midi_cv} alt="The Note to CV module on the Modular's canvas, as it starts." />
+
 The rack's notes as signals for each voice: pitch at 1 V an octave, gate, velocity, pressure, bend and slide.
 
 - **In:** None
 - **Out:** Pitch (pitch), Gate (gate), Velocity (control), Pressure (control), Bend (control), Slide (control)
 
 ## Voice Info
+
+<Shot src={m_modular_voice_info} alt="The Voice Info module on the Modular's canvas, as it starts." />
 
 Each voice's number and its place across the voices (to spread a unison's tuning or pan), the keys held, the lowest and highest of them, and a gate while any is.
 

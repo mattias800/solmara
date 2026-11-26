@@ -6,13 +6,24 @@ sidebar:
   order: 2
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_vca from '../../../../../assets/modules/modular-vca.webp';
+import m_modular_filter from '../../../../../assets/modules/modular-filter.webp';
+import m_modular_dual_filter from '../../../../../assets/modules/modular-dual-filter.webp';
+import m_modular_resonator from '../../../../../assets/modules/modular-resonator.webp';
+import m_modular_spectral from '../../../../../assets/modules/modular-spectral.webp';
+import m_modular_low_pass_gate from '../../../../../assets/modules/modular-low-pass-gate.webp';
+import m_modular_character_filter from '../../../../../assets/modules/modular-character-filter.webp';
 
 What shapes a sound's colour and loudness: filters, resonators and amplifiers.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular VCA
+
+<Shot src={m_modular_vca} alt="The Modular VCA module on the Modular's canvas, as it starts." />
 
 How loud each voice is, set by a control voltage, on a straight or an exponential curve.
 
@@ -27,6 +38,8 @@ How loud each voice is, set by a control voltage, on a straight or an exponentia
 
 ## Modular Multimode Filter
 
+<Shot src={m_modular_filter} alt="The Modular Multimode Filter module on the Modular's canvas, as it starts." />
+
 A state-variable filter that stays stable at any setting, its low-pass, band-pass, high-pass and notch at once, with drive.
 
 - **In:** Input (audio), Cutoff (control), Resonance (control)
@@ -40,6 +53,8 @@ A state-variable filter that stays stable at any setting, its low-pass, band-pas
 | Drive | 1 to 8 | 1 |
 
 ## Dual Multimode Filter
+
+<Shot src={m_modular_dual_filter} alt="The Dual Multimode Filter module on the Modular's canvas, as it starts." />
 
 Two state-variable filters, the second tuned apart from the first, one after the other or side by side.
 
@@ -57,6 +72,8 @@ Two state-variable filters, the second tuned apart from the first, one after the
 
 ## Modal Resonator
 
+<Shot src={m_modular_resonator} alt="The Modal Resonator module on the Modular's canvas, as it starts." />
+
 Four ringing modes at a pitch, struck by a gate or set ringing by audio, with structure, decay and brightness.
 
 - **In:** Input (audio), Pitch (pitch), Strike (gate)
@@ -72,6 +89,8 @@ Four ringing modes at a pitch, struck by a gate or set ringing by audio, with st
 
 ## Spectral Bank
 
+<Shot src={m_modular_spectral} alt="The Spectral Bank module on the Modular's canvas, as it starts." />
+
 Eight resonant bands side by side, each with its own level, all moved together in frequency.
 
 - **In:** Input (audio), Shift (control)
@@ -84,6 +103,8 @@ Eight resonant bands side by side, each with its own level, all moved together i
 | Band 1–8 | 0 to 2 | 1 |
 
 ## Coupled Low-pass Gate
+
+<Shot src={m_modular_low_pass_gate} alt="The Coupled Low-pass Gate module on the Modular's canvas, as it starts." />
 
 Loudness and a low-pass filter opened and closed together, with an attack and a decay of their own, struck by a gate or played by a control; or the amplifier alone, or the filter alone.
 
@@ -99,6 +120,8 @@ Loudness and a low-pass filter opened and closed together, with an attack and a 
 | Bias | 0 to 1 | 0 |
 
 ## Character Filter
+
+<Shot src={m_modular_character_filter} alt="The Character Filter module on the Modular's canvas, as it starts." />
 
 Every filter the app has, as Vintergatan plays them: the transistor and diode ladders, Sallen-Key, OTA, state variable, the pure filter, the hardware models' own filters, and comb, phaser, formant, ring and reverb.
 

@@ -4,9 +4,11 @@ jacks, and every knob with its range and where it starts.
 
   python scripts/manual_modules.py
 
-The pages are src/content/docs/manual/devices/modules/<group>.md and an
-overview, index.md. The words are the app's own, so a module is described
-again by changing its description in the app and exporting anew.
+The pages are src/content/docs/manual/devices/modules/<group>.mdx, each
+module with its picture from src/assets/modules (modular.py --modules) where
+there is one, and an overview, index.md. The words are the app's own, so a
+module is described again by changing its description in the app and
+exporting anew.
 """
 from __future__ import annotations
 
@@ -20,7 +22,9 @@ from manual_devices import cell, control_row
 WEB = Path(__file__).resolve().parent.parent
 DATA = WEB / "src" / "data"
 DOCS = WEB / "src" / "content" / "docs" / "manual" / "devices" / "modules"
-MARK = "<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->"
+WRITTEN = "Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page."
+MARK = f"<!-- {WRITTEN} -->"  # In Markdown; in MDX, a comment of its own.
+PICTURES = WEB / "src" / "assets" / "modules"
 GUIDE = "/solmara/manual/guides/modular/"
 
 # The groups in the order of the Modular's library, each with a line of its own.
@@ -83,24 +87,48 @@ def jacks(module: dict, direction: str) -> str:
     return ", ".join(f"{j['label']} ({KINDS.get(j['kind'], j['kind'])})" for j in found) or "None"
 
 
+def mdx(text: str) -> str:
+    """The app's words, safe in MDX, where braces and angle brackets are code."""
+    return text.replace("{", "&#123;").replace("}", "&#125;").replace("<", "&lt;")
+
+
+def picture_name(module: dict) -> str:
+    return module["id"].removeprefix("builtin.")
+
+
+def variable(module: dict) -> str:
+    return "m_" + re.sub(r"[^a-z0-9]", "_", picture_name(module))
+
+
 def section(module: dict) -> list[str]:
-    lines = [f"## {module['label']}", ""]
+    lines = [f"## {mdx(module['label'])}", ""]
+    if (PICTURES / f"{picture_name(module)}.webp").exists():
+        alt = f"The {module['label']} module on the Modular's canvas, as it starts."
+        lines += [f"<Shot src={{{variable(module)}}} alt={json.dumps(alt)} />", ""]
     if module.get("summary"):
-        lines += [module["summary"], ""]
+        lines += [mdx(module["summary"]), ""]
     if module["jacks"]:
-        lines += [f"- **In:** {jacks(module, 'input')}", f"- **Out:** {jacks(module, 'output')}", ""]
+        lines += [f"- **In:** {mdx(jacks(module, 'input'))}", f"- **Out:** {mdx(jacks(module, 'output'))}", ""]
     else:
         lines += ["No jacks.", ""]
     if module["knobs"]:
         lines += ["| Knob | Range | Starts at |", "| --- | --- | --- |"]
-        lines += [f"| {cell(a)} | {cell(b)} | {cell(c)} |" for a, b, c in knob_rows(module["knobs"])]
+        lines += [f"| {mdx(cell(a))} | {mdx(cell(b))} | {mdx(cell(c))} |" for a, b, c in knob_rows(module["knobs"])]
         lines.append("")
     return lines
 
 
-def front(title: str, description: str, label: str, order: int) -> list[str]:
+def front(title: str, description: str, label: str, order: int, comment: str = MARK) -> list[str]:
     return ["---", f"title: {json.dumps(title)}", f"description: {json.dumps(description)}",
-            "sidebar:", f"  label: {json.dumps(label)}", f"  order: {order}", "---", "", MARK, ""]
+            "sidebar:", f"  label: {json.dumps(label)}", f"  order: {order}", "---", "", comment, ""]
+
+
+def imports(members: list[dict]) -> list[str]:
+    lines = ["import Shot from '../../../../../components/Shot.astro';"]
+    for module in members:
+        if (PICTURES / f"{picture_name(module)}.webp").exists():
+            lines.append(f"import {variable(module)} from '../../../../../assets/modules/{picture_name(module)}.webp';")
+    return lines + [""]
 
 
 def main() -> None:
@@ -110,8 +138,8 @@ def main() -> None:
     if unknown:
         raise SystemExit(f"Groups the script does not know: {', '.join(sorted(unknown))}")
     DOCS.mkdir(parents=True, exist_ok=True)
-    for old in DOCS.glob("*.md"):
-        if MARK in old.read_text(encoding="utf-8"):
+    for old in [*DOCS.glob("*.md"), *DOCS.glob("*.mdx")]:
+        if WRITTEN in old.read_text(encoding="utf-8"):
             old.unlink()
     overview = front("Modular modules", f"The Modular's {len(modules)} modules, group by group: what each does, its jacks and its knobs.",
                      "Overview", 0)
@@ -144,11 +172,11 @@ def main() -> None:
             continue
         page = slug(part)
         overview.append(f"- **[{part}](./{page}/)**: " + ", ".join(m["label"] for m in members) + ".")
-        lines = front(f"Modules: {part}", line, part, order)
+        lines = front(f"Modules: {part}", line, part, order, "{/* " + WRITTEN + " */}") + imports(members)
         lines += [line, "", f"Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.", ""]
         for module in members:
             lines += section(module)
-        (DOCS / f"{page}.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+        (DOCS / f"{page}.mdx").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     (DOCS / "index.md").write_text("\n".join(overview).rstrip() + "\n", encoding="utf-8")
     print(f"{len(modules)} modules on {len(GROUPS)} pages in {DOCS.relative_to(WEB)}")
 

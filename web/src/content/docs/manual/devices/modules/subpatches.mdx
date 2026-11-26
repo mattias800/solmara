@@ -6,13 +6,18 @@ sidebar:
   order: 11
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_subpatch from '../../../../../assets/modules/modular-subpatch.webp';
 
 Modules of your own, made of other modules.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Subpatch
+
+<Shot src={m_modular_subpatch} alt="The Subpatch module on the Modular's canvas, as it starts." />
 
 Modules and cables of its own, as one module: its jacks are the Subpatch Inputs and Outputs inside it. Cmd/Ctrl+G makes one of the modules selected; double-click it to open it.
 

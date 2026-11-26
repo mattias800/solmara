@@ -6,13 +6,22 @@ sidebar:
   order: 10
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_readout from '../../../../../assets/modules/modular-readout.webp';
+import m_modular_xy from '../../../../../assets/modules/modular-xy.webp';
+import m_modular_spectrum from '../../../../../assets/modules/modular-spectrum.webp';
+import m_modular_label from '../../../../../assets/modules/modular-label.webp';
+import m_modular_scope from '../../../../../assets/modules/modular-scope.webp';
 
 What a signal is doing, shown as it plays, and notes on the patch.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Value Readout
+
+<Shot src={m_modular_readout} alt="The Value Readout module on the Modular's canvas, as it starts." />
 
 Four signals' values as numbers, a pitch as its note and frequency, passed through unchanged.
 
@@ -21,12 +30,16 @@ Four signals' values as numbers, a pitch as its note and frequency, passed throu
 
 ## XY Scope
 
+<Shot src={m_modular_xy} alt="The XY Scope module on the Modular's canvas, as it starts." />
+
 Two signals drawn against each other: a Lissajous figure of two oscillators, a stereo pair's width.
 
 - **In:** X (audio), Y (audio)
 - **Out:** None
 
 ## Spectrum
+
+<Shot src={m_modular_spectrum} alt="The Spectrum module on the Modular's canvas, as it starts." />
 
 The frequencies in a signal as it plays, passed through unchanged.
 
@@ -35,11 +48,15 @@ The frequencies in a signal as it plays, passed through unchanged.
 
 ## Label
 
+<Shot src={m_modular_label} alt="The Label module on the Modular's canvas, as it starts." />
+
 A note on the patch, as large as you write it: no jacks, no sound.
 
 No jacks.
 
 ## Signal Monitor
+
+<Shot src={m_modular_scope} alt="The Signal Monitor module on the Modular's canvas, as it starts." />
 
 A signal passed through unchanged, its value on the meters and there for agents to read.
 

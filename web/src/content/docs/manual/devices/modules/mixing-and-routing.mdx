@@ -6,13 +6,26 @@ sidebar:
   order: 8
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_mixer from '../../../../../assets/modules/modular-mixer.webp';
+import m_modular_switch from '../../../../../assets/modules/modular-switch.webp';
+import m_modular_router from '../../../../../assets/modules/modular-router.webp';
+import m_modular_mid_side from '../../../../../assets/modules/modular-mid-side.webp';
+import m_modular_crossover from '../../../../../assets/modules/modular-crossover.webp';
+import m_modular_mixer8 from '../../../../../assets/modules/modular-mixer8.webp';
+import m_modular_crossfade from '../../../../../assets/modules/modular-crossfade.webp';
+import m_modular_pan from '../../../../../assets/modules/modular-pan.webp';
+import m_modular_multiple from '../../../../../assets/modules/modular-multiple.webp';
 
 Signals mixed, panned, faded, switched, split and sent.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular Mixer
+
+<Shot src={m_modular_mixer} alt="The Modular Mixer module on the Modular's canvas, as it starts." />
 
 Four inputs, audio or control, each with its own level, which can turn it upside down, mixed for each voice.
 
@@ -29,6 +42,8 @@ Four inputs, audio or control, each with its own level, which can turn it upside
 
 ## Sequential Switch
 
+<Shot src={m_modular_switch} alt="The Sequential Switch module on the Modular's canvas, as it starts." />
+
 One of four signals let through, chosen by a knob or the next at each clock.
 
 - **In:** A (control), B (control), C (control), D (control), Clock (clock), Reset (gate)
@@ -40,6 +55,8 @@ One of four signals let through, chosen by a knob or the next at each clock.
 
 ## Router
 
+<Shot src={m_modular_router} alt="The Router module on the Modular's canvas, as it starts." />
+
 One input sent to one of four outputs, chosen by a knob or stepped by a clock, faded across in 5 ms.
 
 - **In:** Input (audio), Clock (clock), Reset (gate)
@@ -50,6 +67,8 @@ One input sent to one of four outputs, chosen by a knob or stepped by a clock, f
 | Position | A, B, C, D | A |
 
 ## Mid/Side
+
+<Shot src={m_modular_mid_side} alt="The Mid/Side module on the Modular's canvas, as it starts." />
 
 Left and right as mid and side and back: the side's width, the mid's level, and mid and side to mix in.
 
@@ -63,6 +82,8 @@ Left and right as mid and side and back: the side's width, the mid's level, and 
 
 ## Crossover
 
+<Shot src={m_modular_crossover} alt="The Crossover module on the Modular's canvas, as it starts." />
+
 Three bands, low, mid and high, at two splits (Linkwitz-Riley, 24 dB an octave), adding up to what came in.
 
 - **In:** Input (audio)
@@ -74,6 +95,8 @@ Three bands, low, mid and high, at two splits (Linkwitz-Riley, 24 dB an octave),
 | High split | 200 Hz to 18000 Hz | 2500 Hz |
 
 ## Stereo Mixer
+
+<Shot src={m_modular_mixer8} alt="The Stereo Mixer module on the Modular's canvas, as it starts." />
 
 Eight inputs, each with a level and a pan, to a stereo pair and a mono sum.
 
@@ -88,6 +111,8 @@ Eight inputs, each with a level and a pan, to a stereo pair and a mono sum.
 
 ## Voltage Crossfader
 
+<Shot src={m_modular_crossfade} alt="The Voltage Crossfader module on the Modular's canvas, as it starts." />
+
 Two signals faded into each other for each voice, in a straight line or at equal power.
 
 - **In:** A (audio), B (audio), CV (control)
@@ -100,6 +125,8 @@ Two signals faded into each other for each voice, in a straight line or at equal
 
 ## Voltage Panner
 
+<Shot src={m_modular_pan} alt="The Voltage Panner module on the Modular's canvas, as it starts." />
+
 A signal, or each voice, panned into stereo, as loud wherever it is.
 
 - **In:** Input (audio), CV (control)
@@ -110,6 +137,8 @@ A signal, or each voice, panned into stereo, as loud wherever it is.
 | Pan | -1 to 1 | 0 |
 
 ## Buffered Multiple
+
+<Shot src={m_modular_multiple} alt="The Buffered Multiple module on the Modular's canvas, as it starts." />
 
 One signal at four outputs, unchanged, its voices kept.
 

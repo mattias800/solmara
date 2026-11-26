@@ -6,13 +6,22 @@ sidebar:
   order: 3
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_wavefolder from '../../../../../assets/modules/modular-wavefolder.webp';
+import m_modular_ring from '../../../../../assets/modules/modular-ring.webp';
+import m_modular_saturation from '../../../../../assets/modules/modular-saturation.webp';
+import m_modular_shaper from '../../../../../assets/modules/modular-shaper.webp';
+import m_modular_rectifier from '../../../../../assets/modules/modular-rectifier.webp';
 
 What bends a wave into another: folding, saturation, multiplying and rectifying.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Wavefolder
+
+<Shot src={m_modular_wavefolder} alt="The Wavefolder module on the Modular's canvas, as it starts." />
 
 A wave folded back on itself again and again, for bright overtones, off centre by its symmetry, the fold moved as fast as audio.
 
@@ -27,6 +36,8 @@ A wave folded back on itself again and again, for bright overtones, off centre b
 
 ## Ring Modulator
 
+<Shot src={m_modular_ring} alt="The Ring Modulator module on the Modular's canvas, as it starts." />
+
 Two signals multiplied: a ring modulator's sound, and amplitude modulation.
 
 - **In:** A (audio), B (audio)
@@ -37,6 +48,8 @@ Two signals multiplied: a ring modulator's sound, and amplitude modulation.
 | Level | 0 to 2 | 1 |
 
 ## Voltage Saturator
+
+<Shot src={m_modular_saturation} alt="The Voltage Saturator module on the Modular's canvas, as it starts." />
 
 Smooth saturation, driven harder or softer, lopsided by its bias, mixed with what came in.
 
@@ -50,6 +63,8 @@ Smooth saturation, driven harder or softer, lopsided by its bias, mixed with wha
 | Mix | 0 to 1 | 1 |
 
 ## Shaper
+
+<Shot src={m_modular_shaper} alt="The Shaper module on the Modular's canvas, as it starts." />
 
 Chebyshev harmonics of an order, a diode's lopsided curve, a hard clip, fewer bits, or steps of a voltage.
 
@@ -65,6 +80,8 @@ Chebyshev harmonics of an order, a diode's lopsided curve, a hard clip, fewer bi
 | Level | 0 to 2 | 1 |
 
 ## Voltage Rectifier
+
+<Shot src={m_modular_rectifier} alt="The Voltage Rectifier module on the Modular's canvas, as it starts." />
 
 A signal's negative half turned up or cut off, the signal upside down, and the lower and the higher of it and a second.
 

@@ -6,13 +6,26 @@ sidebar:
   order: 1
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_oscillator from '../../../../../assets/modules/modular-oscillator.webp';
+import m_modular_complex_oscillator from '../../../../../assets/modules/modular-complex-oscillator.webp';
+import m_modular_wavetable from '../../../../../assets/modules/modular-wavetable.webp';
+import m_modular_noise from '../../../../../assets/modules/modular-noise.webp';
+import m_modular_granular from '../../../../../assets/modules/modular-granular.webp';
+import m_modular_character_oscillator from '../../../../../assets/modules/modular-character-oscillator.webp';
+import m_modular_wavetable_oscillator from '../../../../../assets/modules/modular-wavetable-oscillator.webp';
+import m_modular_sample_oscillator from '../../../../../assets/modules/modular-sample-oscillator.webp';
+import m_modular_multisample from '../../../../../assets/modules/modular-multisample.webp';
 
 What makes a sound: oscillators, samples, grains and noise.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular Oscillator
+
+<Shot src={m_modular_oscillator} alt="The Modular Oscillator module on the Modular's canvas, as it starts." />
 
 Sine, triangle, saw and pulse at once, free of aliasing, with the pulse's width, exponential and linear FM, and hard sync.
 
@@ -30,6 +43,8 @@ Sine, triangle, saw and pulse at once, free of aliasing, with the pulse's width,
 
 ## Complex Oscillator
 
+<Shot src={m_modular_complex_oscillator} alt="The Complex Oscillator module on the Modular's canvas, as it starts." />
+
 Two oscillators, one modulating the other's frequency through zero and its phase, then folded; the modulator has an output of its own.
 
 - **In:** Pitch (pitch), FM (control), Timbre (control), Sync (gate)
@@ -46,6 +61,8 @@ Two oscillators, one modulating the other's frequency through zero and its phase
 
 ## Morph Oscillator
 
+<Shot src={m_modular_wavetable} alt="The Morph Oscillator module on the Modular's canvas, as it starts." />
+
 One wave that morphs smoothly from sine to triangle to saw to square, the morph moved as fast as audio.
 
 - **In:** Pitch (pitch), Morph (control), FM (control)
@@ -60,6 +77,8 @@ One wave that morphs smoothly from sine to triangle to saw to square, the morph 
 
 ## Noise and Random
 
+<Shot src={m_modular_noise} alt="The Noise and Random module on the Modular's canvas, as it starts." />
+
 White and pink noise, and a random voltage that wanders smoothly, the same each time from its seed.
 
 - **In:** Reset (gate)
@@ -72,6 +91,8 @@ White and pink noise, and a random voltage that wanders smoothly, the same each 
 | Level | 0 to 2 | 1 |
 
 ## Grain Texture
+
+<Shot src={m_modular_granular} alt="The Grain Texture module on the Modular's canvas, as it starts." />
 
 What comes in, cut into grains, four overlapping for each voice, with their size, density, position and pitch, and a freeze.
 
@@ -90,6 +111,8 @@ What comes in, cut into grains, four overlapping for each voice, with their size
 
 ## Character Oscillator
 
+<Shot src={m_modular_character_oscillator} alt="The Character Oscillator module on the Modular's canvas, as it starts." />
+
 Every analog oscillator the app has, as Vintergatan plays them: the pure one, and Titan 303's, Shy One's, June Bloom's, Promise Bloom's, Mini Moonbeam's and the Two-Filter Mono's own cores.
 
 - **In:** Pitch (pitch), FM (control), Sync (gate)
@@ -105,6 +128,8 @@ Every analog oscillator the app has, as Vintergatan plays them: the pure one, an
 | Level | 0 to 2 | 1 |
 
 ## Wavetable Oscillator
+
+<Shot src={m_modular_wavetable_oscillator} alt="The Wavetable Oscillator module on the Modular's canvas, as it starts." />
 
 Vintergatan's wavetable oscillator: the factory tables, or one made of the audio in its slot, read by position, band-limited, through its twenty warps, a second warp and a spectral morph; the FM, AM and ring warps take the Other input.
 
@@ -128,6 +153,8 @@ Vintergatan's wavetable oscillator: the factory tables, or one made of the audio
 | Morph amount | 0 to 1 | 0 |
 
 ## Sample Oscillator
+
+<Shot src={m_modular_sample_oscillator} alt="The Sample Oscillator module on the Modular's canvas, as it starts." />
 
 Vintergatan's sample, granular and spectral oscillators on the audio in its slot: played from its start at each gate, once, looped, back and forth, reversed or held; as grains scattered about a position; or taken apart into its partials and put together again, its speed apart from its pitch, through a spectral morph.
 
@@ -161,6 +188,8 @@ Vintergatan's sample, granular and spectral oscillators on the audio in its slot
 | Root key | 0 to 127 | 60 |
 
 ## Multisample Oscillator
+
+<Shot src={m_modular_multisample} alt="The Multisample Oscillator module on the Modular's canvas, as it starts." />
 
 Vintergatan's multisample oscillator: a sample library (SFZ, DecentSampler, SoundFont or Sampler instrument) across the keys, each gate playing the zone its pitch and velocity fall in from that zone's own root.
 

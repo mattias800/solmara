@@ -6,13 +6,25 @@ sidebar:
   order: 4
 ---
 
-<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+{/* Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import m_modular_lfo from '../../../../../assets/modules/modular-lfo.webp';
+import m_modular_envelope from '../../../../../assets/modules/modular-envelope.webp';
+import m_modular_function from '../../../../../assets/modules/modular-function.webp';
+import m_modular_random from '../../../../../assets/modules/modular-random.webp';
+import m_modular_sample_hold from '../../../../../assets/modules/modular-sample-hold.webp';
+import m_modular_follower from '../../../../../assets/modules/modular-follower.webp';
+import m_modular_bernoulli from '../../../../../assets/modules/modular-bernoulli.webp';
+import m_modular_phasor from '../../../../../assets/modules/modular-phasor.webp';
 
 What moves things: envelopes, LFOs, random voltages and followers.
 
 Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
 
 ## Modular LFO
+
+<Shot src={m_modular_lfo} alt="The Modular LFO module on the Modular's canvas, as it starts." />
 
 A slow wave for modulation: sine, triangle, ramp and pulse at once, around zero or above it, free or locked to the tempo (eight bars to a thirty-second, triplets and dotted), restarted by a gate or read along a Phase input.
 
@@ -31,6 +43,8 @@ A slow wave for modulation: sine, triangle, ramp and pulse at once, around zero 
 
 ## Modular ADSR
 
+<Shot src={m_modular_envelope} alt="The Modular ADSR module on the Modular's canvas, as it starts." />
+
 Attack, decay, sustain and release for each voice while its gate is held, started again by a trigger, the same upside down, and a pulse at its end.
 
 - **In:** Gate (gate), Trigger (gate)
@@ -46,6 +60,8 @@ Attack, decay, sustain and release for each voice while its gate is held, starte
 
 ## Slope Function
 
+<Shot src={m_modular_function} alt="The Slope Function module on the Modular's canvas, as it starts." />
+
 A rise and a fall at each trigger, or round and round as an LFO, with a curve, and pulses at the end of the rise and of the fall.
 
 - **In:** Trigger (gate), Cycle (gate), Rate (control)
@@ -59,6 +75,8 @@ A rise and a fall at each trigger, or round and round as an LFO, with a curve, a
 | Curve | -4 to 4 | 0 |
 
 ## Stepped Random
+
+<Shot src={m_modular_random} alt="The Stepped Random module on the Modular's canvas, as it starts." />
 
 A new random voltage at each clock or at its own rate, by a chance, the same each time from its seed, gliding to it or jumping.
 
@@ -75,6 +93,8 @@ A new random voltage at each clock or at its own rate, by a chance, the same eac
 
 ## Sample and Hold
 
+<Shot src={m_modular_sample_hold} alt="The Sample and Hold module on the Modular's canvas, as it starts." />
+
 A voltage taken at each clock and held, or followed while the clock is high and held when it falls.
 
 - **In:** Input (control), Clock (clock)
@@ -85,6 +105,8 @@ A voltage taken at each clock and held, or followed while the clock is high and 
 | Mode | Sample, Track | Sample |
 
 ## Envelope Follower
+
+<Shot src={m_modular_follower} alt="The Envelope Follower module on the Modular's canvas, as it starts." />
 
 How loud a signal is, as a voltage that follows it with its own attack and release, and a gate while it is above a threshold.
 
@@ -100,6 +122,8 @@ How loud a signal is, as a voltage that follows it with its own attack and relea
 
 ## Probability Gates
 
+<Shot src={m_modular_bernoulli} alt="The Probability Gates module on the Modular's canvas, as it starts." />
+
 Each trigger sent to one output or the other by a chance, the same each time from its seed.
 
 - **In:** Clock (clock), Probability (control)
@@ -111,6 +135,8 @@ Each trigger sent to one output or the other by a chance, the same each time fro
 | Seed | 1 to 1000000 | 1 |
 
 ## Phasor
+
+<Shot src={m_modular_phasor} alt="The Phasor module on the Modular's canvas, as it starts." />
 
 A ramp from 0 to 10 V, free or locked to the tempo, to drive oscillators, LFOs and sequencers in step.
 
