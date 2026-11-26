@@ -20,6 +20,8 @@
 .module-group h3 { margin: 0 0 10px; font-size: 22px; font-weight: 600; }
 .module-group h3 small { font: 400 12px "Geist Mono", monospace; color: var(--faint); margin-left: 6px; }
 .module-group ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+.module-group li a { color: inherit; text-decoration: none; }
+.module-group li a:hover { color: var(--text, inherit); text-decoration: underline; }
 
 /* The presets of other instruments a device opens. */
 .opens { font-size: 14px !important; color: var(--gold) !important; }

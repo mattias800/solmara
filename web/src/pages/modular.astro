@@ -11,6 +11,9 @@ const order = ['Sources', 'Filters and amps', 'Shapers', 'Modulation', 'Sequenci
 const groups = order
 	.map((part) => ({ part, modules: modules.filter((module) => module.part === part) }))
 	.filter((group) => group.modules.length > 0);
+// Where a module is in the manual's reference: its group's page, at its heading.
+const page = (part: string) => `${base}/manual/devices/modules/${part.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/`;
+const heading = (label: string) => label.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s/g, '-');
 ---
 
 <Site
@@ -57,13 +60,13 @@ const groups = order
 
 	<section class="family">
 		<h2>The modules</h2>
-		<p class="intro">{modules.length} modules in {groups.length} groups. Any of Solmara's instruments and effects can stand in the rack too, patched like a module. <a href={`${base}/manual/guides/modular/`}>Patching, in the manual →</a></p>
+		<p class="intro">{modules.length} modules in {groups.length} groups. Any of Solmara's instruments and effects can stand in the rack too, patched like a module. <a href={`${base}/manual/guides/modular/`}>Patching, in the manual →</a> <a href={`${base}/manual/devices/modules/`}>Every module's jacks and knobs →</a></p>
 		<div class="module-groups">
 			{groups.map((group) => (
 				<div class="module-group">
 					<h3>{group.part} <small>{group.modules.length}</small></h3>
 					<ul>
-						{group.modules.map((module) => <li title={module.summary ?? undefined}>{module.label}</li>)}
+						{group.modules.map((module) => <li title={module.summary ?? undefined}><a href={`${page(group.part)}#${heading(module.label)}`}>{module.label}</a></li>)}
 					</ul>
 				</div>
 			))}

@@ -1,0 +1,87 @@
+---
+title: "Modules: Effects"
+description: "Delays, choruses, phasers and pitch and frequency shifters, inside the patch."
+sidebar:
+  label: "Effects"
+  order: 6
+---
+
+<!-- Written by scripts/manual_modules.py from the app; edit the app's words or the script, not this page. -->
+
+Delays, choruses, phasers and pitch and frequency shifters, inside the patch.
+
+Every knob also has an input of its own; see [jacks](../#jacks) for what each kind carries.
+
+## Modular Delay
+
+An echo up to two seconds long, free or a share of the beat, its time moved as fast as audio, its feedback kept in bounds.
+
+- **In:** Input (audio), Time (control), Feedback (control)
+- **Out:** Output (audio), Wet (audio)
+
+| Knob | Range | Starts at |
+| --- | --- | --- |
+| Time | 0.02 ms to 2000 ms | 250 ms |
+| Feedback | -0.99 to 0.99 | 0.3 |
+| Mix | 0 to 1 | 0.5 |
+| Sync | Free, Tempo | Free |
+| Division | 8 bars, 4 bars, 2 bars, 1 bar, 1/2, 1/2T, 1/2., 1/4, 1/4T, 1/4., 1/8, 1/8T, 1/8., 1/16, 1/16T, 1/16., 1/32, 1/32T | 1/8 |
+
+## Chorus / Flanger
+
+Three swept taps a third of a cycle apart (chorus) or one with feedback (flanger), spread in stereo.
+
+- **In:** Input (audio), Rate (control)
+- **Out:** Left (audio), Right (audio), Output (audio)
+
+| Knob | Range | Starts at |
+| --- | --- | --- |
+| Type | Chorus, Flanger | Chorus |
+| Rate | 0.01 Hz to 10 Hz | 0.5 Hz |
+| Depth | 0 to 1 | 0.5 |
+| Delay | 0.5 ms to 40 ms | 12 ms |
+| Feedback | -0.95 to 0.95 | 0 |
+| Spread | 0 to 1 | 0.5 |
+| Mix | 0 to 1 | 0.5 |
+
+## Phaser
+
+Two to twelve swept all-pass stages with feedback, mixed with what came in.
+
+- **In:** Input (audio), Rate (control), Center (control)
+- **Out:** Output (audio)
+
+| Knob | Range | Starts at |
+| --- | --- | --- |
+| Stages | 2, 4, 6, 8, 10, 12 | 4 |
+| Rate | 0.01 Hz to 10 Hz | 0.3 Hz |
+| Depth | 0 to 1 | 0.7 |
+| Center | 50 Hz to 5000 Hz | 600 Hz |
+| Feedback | -0.95 to 0.95 | 0.4 |
+| Mix | 0 to 1 | 0.5 |
+
+## Frequency Shifter
+
+Every frequency moved by the same number of hertz, up and down at once (a Hilbert pair).
+
+- **In:** Input (audio), Shift (control)
+- **Out:** Up (audio), Down (audio), Output (audio)
+
+| Knob | Range | Starts at |
+| --- | --- | --- |
+| Shift | -5000 Hz to 5000 Hz | 0 Hz |
+| Mix | 0 to 1 | 1 |
+
+## Pitch Shifter
+
+A pitch moved by semitones and cents, or by 1 V an octave, through two crossfading taps.
+
+- **In:** Input (audio), Pitch (pitch)
+- **Out:** Output (audio)
+
+| Knob | Range | Starts at |
+| --- | --- | --- |
+| Shift | -24 semitones to 24 semitones | 0 semitones |
+| Fine | -100 cents to 100 cents | 0 cents |
+| Window | 10 ms to 200 ms | 60 ms |
+| Mix | 0 to 1 | 1 |

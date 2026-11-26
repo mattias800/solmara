@@ -4,451 +4,6343 @@
    "id": "builtin.modular-oscillator",
    "label": "Modular Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Sine, triangle, saw and pulse at once, free of aliasing, with the pulse's width, exponential and linear FM, and hard sync.",
+   "knobs": [
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "Wave",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 2.0,
+     "choices": [
+      "Sine",
+      "Triangle",
+      "Saw",
+      "Pulse"
+     ]
+    },
+    {
+     "label": "Pulse width",
+     "unit": "",
+     "minimum": 0.02,
+     "maximum": 0.98,
+     "default": 0.5
+    },
+    {
+     "label": "FM depth",
+     "unit": "",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Linear FM",
+     "unit": "Hz/V",
+     "minimum": -2000.0,
+     "maximum": 2000.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "FM",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Sync",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Sine",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Triangle",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Saw",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Pulse",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-complex-oscillator",
    "label": "Complex Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Two oscillators, one modulating the other's frequency through zero and its phase, then folded; the modulator has an output of its own.",
+   "knobs": [
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "Ratio",
+     "unit": "",
+     "minimum": 0.125,
+     "maximum": 16.0,
+     "default": 2.0
+    },
+    {
+     "label": "FM index",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 20.0,
+     "default": 0.0
+    },
+    {
+     "label": "Fold",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 8.0,
+     "default": 1.0
+    },
+    {
+     "label": "Phase index",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 8.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "FM",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Timbre",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Sync",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Modulator",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-wavetable",
    "label": "Morph Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "One wave that morphs smoothly from sine to triangle to saw to square, the morph moved as fast as audio.",
+   "knobs": [
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "Morph",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0
+    },
+    {
+     "label": "FM depth",
+     "unit": "",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Morph",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "FM",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-lfo",
    "label": "Modular LFO",
    "part": "Modulation",
-   "summary": null
+   "summary": "A slow wave for modulation: sine, triangle, ramp and pulse at once, around zero or above it, free or locked to the tempo (eight bars to a thirty-second, triplets and dotted), restarted by a gate or read along a Phase input.",
+   "knobs": [
+    {
+     "label": "Rate",
+     "unit": "Hz",
+     "minimum": 0.001,
+     "maximum": 100.0,
+     "default": 1.0
+    },
+    {
+     "label": "Wave",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 2.0,
+     "choices": [
+      "Sine",
+      "Triangle",
+      "Saw",
+      "Pulse"
+     ]
+    },
+    {
+     "label": "Unipolar",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Bipolar",
+      "Unipolar"
+     ]
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Sync",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Free",
+      "Tempo"
+     ]
+    },
+    {
+     "label": "Division",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 17.0,
+     "default": 7.0,
+     "choices": [
+      "8 bars",
+      "4 bars",
+      "2 bars",
+      "1 bar",
+      "1/2",
+      "1/2T",
+      "1/2.",
+      "1/4",
+      "1/4T",
+      "1/4.",
+      "1/8",
+      "1/8T",
+      "1/8.",
+      "1/16",
+      "1/16T",
+      "1/16.",
+      "1/32",
+      "1/32T"
+     ]
+    },
+    {
+     "label": "Phase",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Phase",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Sine",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Triangle",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Saw",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Pulse",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-envelope",
    "label": "Modular ADSR",
    "part": "Modulation",
-   "summary": null
+   "summary": "Attack, decay, sustain and release for each voice while its gate is held, started again by a trigger, the same upside down, and a pulse at its end.",
+   "knobs": [
+    {
+     "label": "Attack",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 10000.0,
+     "default": 10.0
+    },
+    {
+     "label": "Decay",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 10000.0,
+     "default": 150.0
+    },
+    {
+     "label": "Sustain",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.65
+    },
+    {
+     "label": "Release",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 20000.0,
+     "default": 250.0
+    },
+    {
+     "label": "Curve",
+     "unit": "",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Gate",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Trigger",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Inverted",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "End",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-function",
    "label": "Slope Function",
    "part": "Modulation",
-   "summary": null
+   "summary": "A rise and a fall at each trigger, or round and round as an LFO, with a curve, and pulses at the end of the rise and of the fall.",
+   "knobs": [
+    {
+     "label": "Rise",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 20000.0,
+     "default": 100.0
+    },
+    {
+     "label": "Fall",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 20000.0,
+     "default": 250.0
+    },
+    {
+     "label": "Cycle",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Curve",
+     "unit": "",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Trigger",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Cycle",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Rise End",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "End",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-vca",
    "label": "Modular VCA",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "How loud each voice is, set by a control voltage, on a straight or an exponential curve.",
+   "knobs": [
+    {
+     "label": "Gain",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Bias",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Response",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Linear",
+      "Exponential"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "CV",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-filter",
    "label": "Modular Multimode Filter",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "A state-variable filter that stays stable at any setting, its low-pass, band-pass, high-pass and notch at once, with drive.",
+   "knobs": [
+    {
+     "label": "Cutoff",
+     "unit": "Hz",
+     "minimum": 10.0,
+     "maximum": 20000.0,
+     "default": 1000.0
+    },
+    {
+     "label": "Resonance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 0.999,
+     "default": 0.1
+    },
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "Low-pass",
+      "Band-pass",
+      "High-pass",
+      "Notch"
+     ]
+    },
+    {
+     "label": "Drive",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 8.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Cutoff",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Resonance",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Low",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Band",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "High",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Notch",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-dual-filter",
    "label": "Dual Multimode Filter",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "Two state-variable filters, the second tuned apart from the first, one after the other or side by side.",
+   "knobs": [
+    {
+     "label": "Cutoff",
+     "unit": "Hz",
+     "minimum": 10.0,
+     "maximum": 20000.0,
+     "default": 1000.0
+    },
+    {
+     "label": "Resonance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 0.999,
+     "default": 0.1
+    },
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "Low-pass",
+      "Band-pass",
+      "High-pass",
+      "Notch"
+     ]
+    },
+    {
+     "label": "Drive",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 8.0,
+     "default": 1.0
+    },
+    {
+     "label": "B tuning",
+     "unit": "oct",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 1.0
+    },
+    {
+     "label": "Routing",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Serial",
+      "Parallel"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Cutoff",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Cutoff B",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "A",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "B",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-mixer",
    "label": "Modular Mixer",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "Four inputs, audio or control, each with its own level, which can turn it upside down, mixed for each voice.",
+   "knobs": [
+    {
+     "label": "A",
+     "unit": " ",
+     "minimum": -2.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "B",
+     "unit": " ",
+     "minimum": -2.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "C",
+     "unit": " ",
+     "minimum": -2.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "D",
+     "unit": " ",
+     "minimum": -2.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "C",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "D",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-attenuverter",
    "label": "Attenuverter",
    "part": "Utilities",
-   "summary": null
+   "summary": "A signal made larger, smaller or upside down, and moved up or down: for audio or modulation.",
+   "knobs": [
+    {
+     "label": "Gain",
+     "unit": "",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 1.0
+    },
+    {
+     "label": "Offset",
+     "unit": "V",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-offset",
    "label": "Constant Voltage",
    "part": "Utilities",
-   "summary": null
+   "summary": "A steady voltage, set exactly: to tune, to bias, or to control.",
+   "knobs": [
+    {
+     "label": "Voltage",
+     "unit": "V",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-noise",
    "label": "Noise and Random",
    "part": "Sources",
-   "summary": null
+   "summary": "White and pink noise, and a random voltage that wanders smoothly, the same each time from its seed.",
+   "knobs": [
+    {
+     "label": "Random rate",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 100.0,
+     "default": 1.0
+    },
+    {
+     "label": "Seed",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 1000000.0,
+     "default": 1.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "White",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Pink",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Random",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-random",
    "label": "Stepped Random",
    "part": "Modulation",
-   "summary": null
+   "summary": "A new random voltage at each clock or at its own rate, by a chance, the same each time from its seed, gliding to it or jumping.",
+   "knobs": [
+    {
+     "label": "Rate",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 100.0,
+     "default": 2.0
+    },
+    {
+     "label": "Probability",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Slew",
+     "unit": "ms",
+     "minimum": 0.0,
+     "maximum": 5000.0,
+     "default": 0.0
+    },
+    {
+     "label": "Seed",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 1000000.0,
+     "default": 1.0
+    },
+    {
+     "label": "Range",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Unipolar",
+      "Bipolar"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-sample-hold",
    "label": "Sample and Hold",
    "part": "Modulation",
-   "summary": null
+   "summary": "A voltage taken at each clock and held, or followed while the clock is high and held when it falls.",
+   "knobs": [
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Sample",
+      "Track"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-slew",
    "label": "Slew Limiter",
    "part": "Utilities",
-   "summary": null
+   "summary": "How fast a voltage may rise and fall, each set apart: for glide, and to smooth modulation.",
+   "knobs": [
+    {
+     "label": "Rise",
+     "unit": "ms",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 50.0
+    },
+    {
+     "label": "Fall",
+     "unit": "ms",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 50.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-quantizer",
    "label": "Pitch Quantizer",
    "part": "Utilities",
-   "summary": null
+   "summary": "A pitch moved to the nearest note of a scale: one of fourteen, the song's, notes of your own, or the notes held, from a root, transposed; and a pulse each time the note changes.",
+   "knobs": [
+    {
+     "label": "Root",
+     "unit": "st",
+     "minimum": 0.0,
+     "maximum": 11.0,
+     "default": 0.0
+    },
+    {
+     "label": "Scale",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 16.0,
+     "default": 0.0,
+     "choices": [
+      "Chromatic",
+      "Major",
+      "Minor",
+      "Major pentatonic",
+      "Minor pentatonic",
+      "Dorian",
+      "Phrygian",
+      "Lydian",
+      "Mixolydian",
+      "Locrian",
+      "Harmonic minor",
+      "Melodic minor",
+      "Blues",
+      "Whole tone",
+      "Song's scale",
+      "Custom",
+      "Notes held"
+     ]
+    },
+    {
+     "label": "Transpose",
+     "unit": "st",
+     "minimum": -48.0,
+     "maximum": 48.0,
+     "default": 0.0
+    },
+    {
+     "label": "Octave",
+     "unit": "",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 0.0
+    },
+    {
+     "label": "C",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "C#",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "D",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "D#",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "E",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "F",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "F#",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "G",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "G#",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "A",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "A#",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "B",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Transpose",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Changed",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-clock",
    "label": "Modular Clock",
    "part": "Sequencing",
-   "summary": null
+   "summary": "A clock with swing, at its own tempo or the song's, with its place in each pulse and a gate while it runs.",
+   "knobs": [
+    {
+     "label": "Tempo",
+     "unit": "BPM",
+     "minimum": 1.0,
+     "maximum": 999.0,
+     "default": 120.0
+    },
+    {
+     "label": "Pulses per beat",
+     "unit": "",
+     "minimum": 0.125,
+     "maximum": 32.0,
+     "default": 4.0
+    },
+    {
+     "label": "Sync",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Free",
+      "Transport"
+     ]
+    },
+    {
+     "label": "Swing",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 0.75,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Clock",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Phase",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Run",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-divider",
    "label": "Clock Divider",
    "part": "Sequencing",
-   "summary": null
+   "summary": "A clock divided by two, three, four and eight at once, and by any number up to 64 at its main output.",
+   "knobs": [
+    {
+     "label": "Division",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 64.0,
+     "default": 2.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Div 2",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Div 3",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Div 4",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Div 8",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "clock"
+    }
+   ]
   },
   {
    "id": "builtin.modular-sequencer",
    "label": "Voltage Sequencer",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Eight steps of pitch, a clock stepping them and a gate at each, played to a length of steps you set.",
+   "knobs": [
+    {
+     "label": "Steps",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 8.0,
+     "default": 8.0
+    },
+    {
+     "label": "Gate length",
+     "unit": "",
+     "minimum": 0.01,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Step 1",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 2",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 3.0
+    },
+    {
+     "label": "Step 3",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 7.0
+    },
+    {
+     "label": "Step 4",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 10.0
+    },
+    {
+     "label": "Step 5",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 12.0
+    },
+    {
+     "label": "Step 6",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 10.0
+    },
+    {
+     "label": "Step 7",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 7.0
+    },
+    {
+     "label": "Step 8",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 3.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Transpose",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Step",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-euclidean",
    "label": "Euclidean Gates",
    "part": "Sequencing",
-   "summary": null
+   "summary": "A number of hits spread as evenly as they go over a number of steps, turned round to start elsewhere, and an accent on the hits that fall every so many steps.",
+   "knobs": [
+    {
+     "label": "Steps",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 32.0,
+     "default": 16.0
+    },
+    {
+     "label": "Hits",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 32.0,
+     "default": 5.0
+    },
+    {
+     "label": "Rotate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 31.0,
+     "default": 0.0
+    },
+    {
+     "label": "Accent every",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 4.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-logic",
    "label": "Gate Logic",
    "part": "Logic and math",
-   "summary": null
+   "summary": "Two gates or clocks compared: AND, OR, XOR, NOT, NAND, NOR and XNOR at once.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "And",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Or",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Xor",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Not",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Nand",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Nor",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Xnor",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-comparator",
    "label": "Voltage Comparator",
    "part": "Logic and math",
-   "summary": null
+   "summary": "A gate while a voltage is above a threshold, a margin keeping it from chattering, and a pulse as it rises past and as it falls.",
+   "knobs": [
+    {
+     "label": "Threshold",
+     "unit": "V",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Hysteresis",
+     "unit": "V",
+     "minimum": 0.0,
+     "maximum": 5.0,
+     "default": 0.1
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Threshold",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Rise",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Fall",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-switch",
    "label": "Sequential Switch",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "One of four signals let through, chosen by a knob or the next at each clock.",
+   "knobs": [
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "C",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "D",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-router",
    "label": "Router",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "One input sent to one of four outputs, chosen by a knob or stepped by a clock, faded across in 5 ms.",
+   "knobs": [
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "A",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "B",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "C",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "D",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-mid-side",
    "label": "Mid/Side",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "Left and right as mid and side and back: the side's width, the mid's level, and mid and side to mix in.",
+   "knobs": [
+    {
+     "label": "Width",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Mid level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Left",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Mid in",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Side in",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Mid",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Side",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-crossover",
    "label": "Crossover",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "Three bands, low, mid and high, at two splits (Linkwitz-Riley, 24 dB an octave), adding up to what came in.",
+   "knobs": [
+    {
+     "label": "Low split",
+     "unit": "Hz",
+     "minimum": 20.0,
+     "maximum": 2000.0,
+     "default": 200.0
+    },
+    {
+     "label": "High split",
+     "unit": "Hz",
+     "minimum": 200.0,
+     "maximum": 18000.0,
+     "default": 2500.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Low",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Mid",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "High",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-mixer8",
    "label": "Stereo Mixer",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "Eight inputs, each with a level and a pan, to a stereo pair and a mono sum.",
+   "knobs": [
+    {
+     "label": "Level 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 1",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 2",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 3",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 4",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 5",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 6",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 7",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pan 8",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Master",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "In 1",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 2",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 3",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 4",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 5",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 6",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 7",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "In 8",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-readout",
    "label": "Value Readout",
    "part": "Displays",
-   "summary": null
+   "summary": "Four signals' values as numbers, a pitch as its note and frequency, passed through unchanged.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "C",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "D",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "A",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "C",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "D",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-xy",
    "label": "XY Scope",
    "part": "Displays",
-   "summary": null
+   "summary": "Two signals drawn against each other: a Lissajous figure of two oscillators, a stereo pair's width.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "X",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Y",
+     "direction": "input",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-spectrum",
    "label": "Spectrum",
    "part": "Displays",
-   "summary": null
+   "summary": "The frequencies in a signal as it plays, passed through unchanged.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-label",
    "label": "Label",
    "part": "Displays",
-   "summary": null
+   "summary": "A note on the patch, as large as you write it: no jacks, no sound.",
+   "knobs": [],
+   "jacks": []
   },
   {
    "id": "builtin.modular-crossfade",
    "label": "Voltage Crossfader",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "Two signals faded into each other for each voice, in a straight line or at equal power.",
+   "knobs": [
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Law",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Linear",
+      "Equal power"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "CV",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-pan",
    "label": "Voltage Panner",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "A signal, or each voice, panned into stereo, as loud wherever it is.",
+   "knobs": [
+    {
+     "label": "Pan",
+     "unit": "",
+     "minimum": -1.0,
+     "maximum": 1.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "CV",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-wavefolder",
    "label": "Wavefolder",
    "part": "Shapers",
-   "summary": null
+   "summary": "A wave folded back on itself again and again, for bright overtones, off centre by its symmetry, the fold moved as fast as audio.",
+   "knobs": [
+    {
+     "label": "Fold",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 2.0
+    },
+    {
+     "label": "Symmetry",
+     "unit": "V",
+     "minimum": -5.0,
+     "maximum": 5.0,
+     "default": 0.0
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Fold",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-ring",
    "label": "Ring Modulator",
    "part": "Shapers",
-   "summary": null
+   "summary": "Two signals multiplied: a ring modulator's sound, and amplitude modulation.",
+   "knobs": [
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Ring",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "AM",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-saturation",
    "label": "Voltage Saturator",
    "part": "Shapers",
-   "summary": null
+   "summary": "Smooth saturation, driven harder or softer, lopsided by its bias, mixed with what came in.",
+   "knobs": [
+    {
+     "label": "Drive",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 32.0,
+     "default": 2.0
+    },
+    {
+     "label": "Bias",
+     "unit": "V",
+     "minimum": -5.0,
+     "maximum": 5.0,
+     "default": 0.0
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Drive",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-shaper",
    "label": "Shaper",
    "part": "Shapers",
-   "summary": null
+   "summary": "Chebyshev harmonics of an order, a diode's lopsided curve, a hard clip, fewer bits, or steps of a voltage.",
+   "knobs": [
+    {
+     "label": "Type",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 4.0,
+     "default": 0.0,
+     "choices": [
+      "Chebyshev",
+      "Diode",
+      "Hard clip",
+      "Bit crush",
+      "Level steps"
+     ]
+    },
+    {
+     "label": "Drive",
+     "unit": "dB",
+     "minimum": 0.0,
+     "maximum": 36.0,
+     "default": 0.0
+    },
+    {
+     "label": "Amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Drive",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Amount",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-pitch-utility",
    "label": "Pitch Utility",
    "part": "Utilities",
-   "summary": null
+   "summary": "A pitch moved by semitones, octaves, a ratio of whole numbers and cents.",
+   "knobs": [
+    {
+     "label": "Transpose",
+     "unit": "st",
+     "minimum": -48.0,
+     "maximum": 48.0,
+     "default": 0.0
+    },
+    {
+     "label": "Octave",
+     "unit": "",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 0.0
+    },
+    {
+     "label": "Ratio over",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 1.0
+    },
+    {
+     "label": "Ratio under",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 1.0
+    },
+    {
+     "label": "Fine",
+     "unit": "cents",
+     "minimum": -100.0,
+     "maximum": 100.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    }
+   ]
   },
   {
    "id": "builtin.modular-delay",
    "label": "Modular Delay",
    "part": "Effects",
-   "summary": null
+   "summary": "An echo up to two seconds long, free or a share of the beat, its time moved as fast as audio, its feedback kept in bounds.",
+   "knobs": [
+    {
+     "label": "Time",
+     "unit": "ms",
+     "minimum": 0.02,
+     "maximum": 2000.0,
+     "default": 250.0
+    },
+    {
+     "label": "Feedback",
+     "unit": "",
+     "minimum": -0.99,
+     "maximum": 0.99,
+     "default": 0.3
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Sync",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Free",
+      "Tempo"
+     ]
+    },
+    {
+     "label": "Division",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 17.0,
+     "default": 10.0,
+     "choices": [
+      "8 bars",
+      "4 bars",
+      "2 bars",
+      "1 bar",
+      "1/2",
+      "1/2T",
+      "1/2.",
+      "1/4",
+      "1/4T",
+      "1/4.",
+      "1/8",
+      "1/8T",
+      "1/8.",
+      "1/16",
+      "1/16T",
+      "1/16.",
+      "1/32",
+      "1/32T"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Time",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Feedback",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Wet",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-chorus",
    "label": "Chorus / Flanger",
    "part": "Effects",
-   "summary": null
+   "summary": "Three swept taps a third of a cycle apart (chorus) or one with feedback (flanger), spread in stereo.",
+   "knobs": [
+    {
+     "label": "Type",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Chorus",
+      "Flanger"
+     ]
+    },
+    {
+     "label": "Rate",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 10.0,
+     "default": 0.5
+    },
+    {
+     "label": "Depth",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Delay",
+     "unit": "ms",
+     "minimum": 0.5,
+     "maximum": 40.0,
+     "default": 12.0
+    },
+    {
+     "label": "Feedback",
+     "unit": "",
+     "minimum": -0.95,
+     "maximum": 0.95,
+     "default": 0.0
+    },
+    {
+     "label": "Spread",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-phaser",
    "label": "Phaser",
    "part": "Effects",
-   "summary": null
+   "summary": "Two to twelve swept all-pass stages with feedback, mixed with what came in.",
+   "knobs": [
+    {
+     "label": "Stages",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 5.0,
+     "default": 1.0,
+     "choices": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+     ]
+    },
+    {
+     "label": "Rate",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 10.0,
+     "default": 0.3
+    },
+    {
+     "label": "Depth",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.7
+    },
+    {
+     "label": "Center",
+     "unit": "Hz",
+     "minimum": 50.0,
+     "maximum": 5000.0,
+     "default": 600.0
+    },
+    {
+     "label": "Feedback",
+     "unit": "",
+     "minimum": -0.95,
+     "maximum": 0.95,
+     "default": 0.4
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Center",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-frequency-shifter",
    "label": "Frequency Shifter",
    "part": "Effects",
-   "summary": null
+   "summary": "Every frequency moved by the same number of hertz, up and down at once (a Hilbert pair).",
+   "knobs": [
+    {
+     "label": "Shift",
+     "unit": "Hz",
+     "minimum": -5000.0,
+     "maximum": 5000.0,
+     "default": 0.0
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Shift",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Up",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Down",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-pitch-shifter",
    "label": "Pitch Shifter",
    "part": "Effects",
-   "summary": null
+   "summary": "A pitch moved by semitones and cents, or by 1 V an octave, through two crossfading taps.",
+   "knobs": [
+    {
+     "label": "Shift",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Fine",
+     "unit": "cents",
+     "minimum": -100.0,
+     "maximum": 100.0,
+     "default": 0.0
+    },
+    {
+     "label": "Window",
+     "unit": "ms",
+     "minimum": 10.0,
+     "maximum": 200.0,
+     "default": 60.0
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-resonator",
    "label": "Modal Resonator",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "Four ringing modes at a pitch, struck by a gate or set ringing by audio, with structure, decay and brightness.",
+   "knobs": [
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "Decay",
+     "unit": "s",
+     "minimum": 0.01,
+     "maximum": 20.0,
+     "default": 1.5
+    },
+    {
+     "label": "Structure",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.2
+    },
+    {
+     "label": "Brightness",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Strike",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Odd",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Even",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-granular",
    "label": "Grain Texture",
    "part": "Sources",
-   "summary": null
+   "summary": "What comes in, cut into grains, four overlapping for each voice, with their size, density, position and pitch, and a freeze.",
+   "knobs": [
+    {
+     "label": "Grain size",
+     "unit": "ms",
+     "minimum": 5.0,
+     "maximum": 500.0,
+     "default": 100.0
+    },
+    {
+     "label": "Density",
+     "unit": "Hz",
+     "minimum": 0.1,
+     "maximum": 100.0,
+     "default": 20.0
+    },
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.4
+    },
+    {
+     "label": "Pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Texture",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.3
+    },
+    {
+     "label": "Freeze",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Position",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Freeze",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-spectral",
    "label": "Spectral Bank",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "Eight resonant bands side by side, each with its own level, all moved together in frequency.",
+   "knobs": [
+    {
+     "label": "Shift",
+     "unit": "oct",
+     "minimum": -4.0,
+     "maximum": 4.0,
+     "default": 0.0
+    },
+    {
+     "label": "Resonance",
+     "unit": "",
+     "minimum": 0.01,
+     "maximum": 0.99,
+     "default": 0.6
+    },
+    {
+     "label": "Band 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Band 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Shift",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Odd",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Even",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-follower",
    "label": "Envelope Follower",
    "part": "Modulation",
-   "summary": null
+   "summary": "How loud a signal is, as a voltage that follows it with its own attack and release, and a gate while it is above a threshold.",
+   "knobs": [
+    {
+     "label": "Attack",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 1000.0,
+     "default": 5.0
+    },
+    {
+     "label": "Release",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 5000.0,
+     "default": 100.0
+    },
+    {
+     "label": "Gain",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 8.0,
+     "default": 1.0
+    },
+    {
+     "label": "Gate threshold",
+     "unit": "V",
+     "minimum": 0.0,
+     "maximum": 10.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Envelope",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-rectifier",
    "label": "Voltage Rectifier",
    "part": "Shapers",
-   "summary": null
+   "summary": "A signal's negative half turned up or cut off, the signal upside down, and the lower and the higher of it and a second.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Full",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Half",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Inverted",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Minimum",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Maximum",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-multiple",
    "label": "Buffered Multiple",
    "part": "Mixing and routing",
-   "summary": null
+   "summary": "One signal at four outputs, unchanged, its voices kept.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "A",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "C",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "D",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-bernoulli",
    "label": "Probability Gates",
    "part": "Modulation",
-   "summary": null
+   "summary": "Each trigger sent to one output or the other by a chance, the same each time from its seed.",
+   "knobs": [
+    {
+     "label": "Probability",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Seed",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 1000000.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Probability",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "A",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "B",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-trigger-delay",
    "label": "Trigger Delay",
    "part": "Sequencing",
-   "summary": null
+   "summary": "A trigger, a while later, as a pulse as long as you set.",
+   "knobs": [
+    {
+     "label": "Delay",
+     "unit": "ms",
+     "minimum": 0.0,
+     "maximum": 10000.0,
+     "default": 100.0
+    },
+    {
+     "label": "Width",
+     "unit": "ms",
+     "minimum": 0.02,
+     "maximum": 10000.0,
+     "default": 10.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Trigger",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Time",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-transport",
    "label": "Transport",
    "part": "Sequencing",
-   "summary": null
+   "summary": "The song's place as signals: running, ramps over each beat, each bar and a length of bars, a pulse at each beat and bar, and the tempo.",
+   "knobs": [
+    {
+     "label": "Beats a bar",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 4.0
+    },
+    {
+     "label": "Ramp length",
+     "unit": "bars",
+     "minimum": 1.0,
+     "maximum": 64.0,
+     "default": 4.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Running",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Beat phase",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Bar phase",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Ramp",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Beat",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Bar",
+     "direction": "output",
+     "kind": "clock"
+    },
+    {
+     "label": "Tempo",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-phasor",
    "label": "Phasor",
    "part": "Modulation",
-   "summary": null
+   "summary": "A ramp from 0 to 10 V, free or locked to the tempo, to drive oscillators, LFOs and sequencers in step.",
+   "knobs": [
+    {
+     "label": "Rate",
+     "unit": "Hz",
+     "minimum": 0.001,
+     "maximum": 1000.0,
+     "default": 1.0
+    },
+    {
+     "label": "Sync",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Free",
+      "Tempo"
+     ]
+    },
+    {
+     "label": "Division",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 17.0,
+     "default": 3.0,
+     "choices": [
+      "8 bars",
+      "4 bars",
+      "2 bars",
+      "1 bar",
+      "1/2",
+      "1/2T",
+      "1/2.",
+      "1/4",
+      "1/4T",
+      "1/4.",
+      "1/8",
+      "1/8T",
+      "1/8.",
+      "1/16",
+      "1/16T",
+      "1/16.",
+      "1/32",
+      "1/32T"
+     ]
+    },
+    {
+     "label": "Phase",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Rate",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Phase",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Wrap",
+     "direction": "output",
+     "kind": "clock"
+    }
+   ]
   },
   {
    "id": "builtin.modular-step-sequencer",
    "label": "Step Sequencer",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Sixteen steps of pitch, each resting, playing or tied on, with accent and chance; forward, backward, ping-pong or random, clocked or read along a Phase input.",
+   "knobs": [
+    {
+     "label": "Steps",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 16.0
+    },
+    {
+     "label": "Direction",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "Forward",
+      "Backward",
+      "Ping-pong",
+      "Random"
+     ]
+    },
+    {
+     "label": "Gate length",
+     "unit": "",
+     "minimum": 0.01,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Step 1 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 1 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 1 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 1 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 2 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 2 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 2 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 2 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 3 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 3 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 3 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 3 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 4 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 4 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 4 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 4 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 5 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 5 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 5 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 5 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 6 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 6 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 6 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 6 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 7 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 7 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 7 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 7 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 8 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 8 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 8 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 8 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 9 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 9 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 9 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 9 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 10 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 10 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 10 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 10 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 11 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 11 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 11 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 11 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 12 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 12 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 12 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 12 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 13 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 13 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 13 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 13 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 14 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 14 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 14 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 14 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 15 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 15 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 15 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 15 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Step 16 pitch",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Step 16 gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0,
+     "choices": [
+      "Rest",
+      "Play",
+      "Tie"
+     ]
+    },
+    {
+     "label": "Step 16 accent",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On"
+     ]
+    },
+    {
+     "label": "Step 16 chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Transpose",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Phase",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Velocity",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Step",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "End",
+     "direction": "output",
+     "kind": "clock"
+    }
+   ]
   },
   {
    "id": "builtin.modular-trigger-sequencer",
    "label": "Trigger Sequencer",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Four tracks of sixteen steps, each off, on or accented, with a chance for each track.",
+   "knobs": [
+    {
+     "label": "Steps",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 16.0
+    },
+    {
+     "label": "Gate length",
+     "unit": "",
+     "minimum": 0.01,
+     "maximum": 1.0,
+     "default": 0.25
+    },
+    {
+     "label": "Track A chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Track B chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Track C chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Track D chance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Track A step 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 9",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 10",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 11",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 12",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 13",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 14",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 15",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track A step 16",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 9",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 10",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 11",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 12",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 13",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 14",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 15",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track B step 16",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 9",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 10",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 11",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 12",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 13",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 14",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 15",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track C step 16",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 1",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 2",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 3",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 4",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 5",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 6",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 7",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 8",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 9",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 10",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 11",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 12",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 13",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 14",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 15",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    },
+    {
+     "label": "Track D step 16",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Off",
+      "On",
+      "Accent"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Gate A",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Gate B",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Gate C",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Gate D",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent A",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent B",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent C",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Accent D",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-clock-ratio",
    "label": "Clock Ratio",
    "part": "Sequencing",
-   "summary": null
+   "summary": "An incoming clock multiplied and divided by whole numbers, its pulses spread evenly.",
+   "knobs": [
+    {
+     "label": "Multiply",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 2.0
+    },
+    {
+     "label": "Divide",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 1.0
+    },
+    {
+     "label": "Pulse width",
+     "unit": "",
+     "minimum": 0.05,
+     "maximum": 0.95,
+     "default": 0.5
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "clock"
+    }
+   ]
   },
   {
    "id": "builtin.modular-clock-quantizer",
    "label": "Clock Quantizer",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Holds each gate until the next clock, then lets it through: as a pulse, or for as long as it is held.",
+   "knobs": [
+    {
+     "label": "Gate",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0,
+     "choices": [
+      "Pulse",
+      "Follow"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Gate",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-math",
    "label": "Math",
    "part": "Logic and math",
-   "summary": null
+   "summary": "Two signals added, subtracted, multiplied, divided, compared, clipped or averaged, and gates for which is above.",
+   "knobs": [
+    {
+     "label": "Operation",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 8.0,
+     "default": 0.0,
+     "choices": [
+      "A + B",
+      "A - B",
+      "A x B",
+      "A / B",
+      "Minimum",
+      "Maximum",
+      "Difference",
+      "Clip A to B",
+      "Average"
+     ]
+    },
+    {
+     "label": "B",
+     "unit": "V",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Gain",
+     "unit": "",
+     "minimum": -2.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "A",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "B",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "A above B",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "A below B",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-latch",
    "label": "Latch",
    "part": "Logic and math",
-   "summary": null
+   "summary": "A flip-flop: set, reset or toggled by gates, or taking its data input at each clock.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Set",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Toggle",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Data",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Inverted",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-counter",
    "label": "Counter",
    "part": "Logic and math",
-   "summary": null
+   "summary": "Counts clocks up and down to a length, as a voltage and a pitch, with a carry pulse each time it wraps.",
+   "knobs": [
+    {
+     "label": "Length",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 64.0,
+     "default": 8.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Up",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Down",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Reset",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Value",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Carry",
+     "direction": "output",
+     "kind": "clock"
+    }
+   ]
   },
   {
    "id": "builtin.modular-ratchet",
    "label": "Ratchet",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Repeats a gate: a number of pulses at an interval, or for as long as it is held.",
+   "knobs": [
+    {
+     "label": "Repeats",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 16.0,
+     "default": 4.0
+    },
+    {
+     "label": "Interval",
+     "unit": "ms",
+     "minimum": 5.0,
+     "maximum": 2000.0,
+     "default": 100.0
+    },
+    {
+     "label": "Pulse width",
+     "unit": "",
+     "minimum": 0.05,
+     "maximum": 0.95,
+     "default": 0.5
+    },
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0,
+     "choices": [
+      "Count",
+      "While held"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Gate",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-shift-register",
    "label": "Shift Register",
    "part": "Sequencing",
-   "summary": null
+   "summary": "Eight stages a clock moves a value along: its data input's, or its own last stage, changed by chance (a looping random sequence), with a weighted sum.",
+   "knobs": [
+    {
+     "label": "Change",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Loop length",
+     "unit": "",
+     "minimum": 1.0,
+     "maximum": 8.0,
+     "default": 8.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Clock",
+     "direction": "input",
+     "kind": "clock"
+    },
+    {
+     "label": "Data",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 1",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 2",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 3",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 4",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 5",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 6",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 7",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Out 8",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Sum",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-midi-cv",
    "label": "Note to CV",
    "part": "Utilities",
-   "summary": null
+   "summary": "The rack's notes as signals for each voice: pitch at 1 V an octave, gate, velocity, pressure, bend and slide.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Gate",
+     "direction": "output",
+     "kind": "gate"
+    },
+    {
+     "label": "Velocity",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Pressure",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Bend",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Slide",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-voice-info",
    "label": "Voice Info",
    "part": "Utilities",
-   "summary": null
+   "summary": "Each voice's number and its place across the voices (to spread a unison's tuning or pan), the keys held, the lowest and highest of them, and a gate while any is.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Voice",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Spread",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Keys held",
+     "direction": "output",
+     "kind": "cv"
+    },
+    {
+     "label": "Lowest key",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Highest key",
+     "direction": "output",
+     "kind": "pitch"
+    },
+    {
+     "label": "Any key",
+     "direction": "output",
+     "kind": "gate"
+    }
+   ]
   },
   {
    "id": "builtin.modular-scope",
    "label": "Signal Monitor",
    "part": "Displays",
-   "summary": null
+   "summary": "A signal passed through unchanged, its value on the meters and there for agents to read.",
+   "knobs": [],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-low-pass-gate",
    "label": "Coupled Low-pass Gate",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "Loudness and a low-pass filter opened and closed together, with an attack and a decay of their own, struck by a gate or played by a control; or the amplifier alone, or the filter alone.",
+   "knobs": [
+    {
+     "label": "Response attack",
+     "unit": "ms",
+     "minimum": 0.05,
+     "maximum": 100.0,
+     "default": 1.0
+    },
+    {
+     "label": "Response decay",
+     "unit": "ms",
+     "minimum": 1.0,
+     "maximum": 4000.0,
+     "default": 100.0
+    },
+    {
+     "label": "Open cutoff",
+     "unit": "Hz",
+     "minimum": 20.0,
+     "maximum": 20000.0,
+     "default": 12000.0
+    },
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Coupled",
+      "VCA",
+      "Low-pass"
+     ]
+    },
+    {
+     "label": "Bias",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Audio",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Control",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Strike",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Audio",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Response",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-character-oscillator",
    "label": "Character Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Every analog oscillator the app has, as Vintergatan plays them: the pure one, and Titan 303's, Shy One's, June Bloom's, Promise Bloom's, Mini Moonbeam's and the Two-Filter Mono's own cores.",
+   "knobs": [
+    {
+     "label": "Character",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 6.0,
+     "default": 0.0,
+     "choices": [
+      "Pure",
+      "Scream",
+      "Shy",
+      "June",
+      "Promise",
+      "Moonbeam",
+      "Two-Filter"
+     ]
+    },
+    {
+     "label": "Wave",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 0.0,
+     "choices": [
+      "Saw",
+      "Pulse",
+      "Triangle",
+      "Sine"
+     ]
+    },
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "Pulse width",
+     "unit": "",
+     "minimum": 0.05,
+     "maximum": 0.95,
+     "default": 0.5
+    },
+    {
+     "label": "FM depth",
+     "unit": "",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "FM",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Sync",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-character-filter",
    "label": "Character Filter",
    "part": "Filters and amps",
-   "summary": null
+   "summary": "Every filter the app has, as Vintergatan plays them: the transistor and diode ladders, Sallen-Key, OTA, state variable, the pure filter, the hardware models' own filters, and comb, phaser, formant, ring and reverb.",
+   "knobs": [
+    {
+     "label": "Circuit",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 15.0,
+     "default": 0.0,
+     "choices": [
+      "Transistor ladder",
+      "Diode ladder",
+      "Sallen-Key",
+      "OTA cascade",
+      "State variable",
+      "Pure",
+      "Scream ladder",
+      "June OTA",
+      "Promise OTA",
+      "Shy OTA",
+      "Two-Filter pair",
+      "Comb",
+      "Phaser",
+      "Formant",
+      "Ring",
+      "Reverb"
+     ]
+    },
+    {
+     "label": "Type",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 13.0,
+     "default": 0.0,
+     "choices": [
+      "Low 24",
+      "Low 12",
+      "Band 24",
+      "Band 12",
+      "High 24",
+      "High 12",
+      "Notch 24",
+      "Notch 12",
+      "Peak 24",
+      "Peak 12",
+      "All-pass 24",
+      "All-pass 12",
+      "Morph 24",
+      "Morph 12"
+     ]
+    },
+    {
+     "label": "Cutoff",
+     "unit": "Hz",
+     "minimum": 20.0,
+     "maximum": 20000.0,
+     "default": 1000.0
+    },
+    {
+     "label": "Resonance",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.2
+    },
+    {
+     "label": "Drive",
+     "unit": "dB",
+     "minimum": 0.0,
+     "maximum": 36.0,
+     "default": 0.0
+    },
+    {
+     "label": "Morph",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0
+    },
+    {
+     "label": "Mix",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Cutoff",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Resonance",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-wavetable-oscillator",
    "label": "Wavetable Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Vintergatan's wavetable oscillator: the factory tables, or one made of the audio in its slot, read by position, band-limited, through its twenty warps, a second warp and a spectral morph; the FM, AM and ring warps take the Other input.",
+   "knobs": [
+    {
+     "label": "Table",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 15.0,
+     "default": 0.0,
+     "choices": [
+      "Basic Shapes",
+      "Pulse Width",
+      "Harmonic Build",
+      "Odd Build",
+      "Harmonic Sweep",
+      "Drawbars",
+      "Sync Saw",
+      "Sync Sine",
+      "FM Index",
+      "FM Unison",
+      "Wavefold",
+      "Phase Resonance",
+      "Vowels",
+      "Noise Spectra",
+      "Bit Steps",
+      "From audio"
+     ]
+    },
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Warp",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 19.0,
+     "default": 0.0,
+     "choices": [
+      "None",
+      "FM",
+      "Classic",
+      "Modern",
+      "Sync",
+      "Bend +",
+      "Bend -",
+      "Bend +/-",
+      "Pulse width",
+      "Mirror",
+      "Quantize",
+      "Remap",
+      "FM from another",
+      "AM from another",
+      "Ring from another",
+      "Squeeze",
+      "Formant",
+      "Low pass",
+      "High pass",
+      "Saturate"
+     ]
+    },
+    {
+     "label": "Warp amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Warp second",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Second warp",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 16.0,
+     "default": 0.0,
+     "choices": [
+      "None",
+      "Sync",
+      "Bend +",
+      "Bend -",
+      "Bend +/-",
+      "Pulse width",
+      "Mirror",
+      "Quantize",
+      "Remap",
+      "FM from another",
+      "AM from another",
+      "Ring from another",
+      "Squeeze",
+      "Formant",
+      "Low pass",
+      "High pass",
+      "Saturate"
+     ]
+    },
+    {
+     "label": "Second amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Frequency",
+     "unit": "Hz",
+     "minimum": 0.01,
+     "maximum": 20000.0,
+     "default": 261.625565
+    },
+    {
+     "label": "FM depth",
+     "unit": "",
+     "minimum": -10.0,
+     "maximum": 10.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Table from audio",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Cycles",
+      "Pitch splice",
+      "Vocode"
+     ]
+    },
+    {
+     "label": "Spectral morph",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 14.0,
+     "default": 0.0,
+     "choices": [
+      "None",
+      "Vocode",
+      "Formant scale",
+      "Harmonic stretch",
+      "Inharmonic scale",
+      "Smear",
+      "Random amplitudes",
+      "Low pass",
+      "High pass",
+      "Phase disperse",
+      "Shepard tone",
+      "Time skew",
+      "Even/odd",
+      "Comb",
+      "Gate"
+     ]
+    },
+    {
+     "label": "Morph amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "FM",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Position",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Other",
+     "direction": "input",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-sample-oscillator",
    "label": "Sample Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Vintergatan's sample, granular and spectral oscillators on the audio in its slot: played from its start at each gate, once, looped, back and forth, reversed or held; as grains scattered about a position; or taken apart into its partials and put together again, its speed apart from its pitch, through a spectral morph.",
+   "knobs": [
+    {
+     "label": "Mode",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Sample",
+      "Granular",
+      "Spectral"
+     ]
+    },
+    {
+     "label": "Play",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 4.0,
+     "default": 0.0,
+     "choices": [
+      "Once",
+      "Loop",
+      "Back and forth",
+      "Reverse",
+      "Hold"
+     ]
+    },
+    {
+     "label": "Start",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "End",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Loop start",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Loop end",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Loop fade",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 0.5,
+     "default": 0.0
+    },
+    {
+     "label": "Position",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.5
+    },
+    {
+     "label": "Scan",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 4.0,
+     "default": 0.0
+    },
+    {
+     "label": "Grain size",
+     "unit": "ms",
+     "minimum": 5.0,
+     "maximum": 500.0,
+     "default": 80.0
+    },
+    {
+     "label": "Density",
+     "unit": "/s",
+     "minimum": 1.0,
+     "maximum": 200.0,
+     "default": 20.0
+    },
+    {
+     "label": "Spray",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.05
+    },
+    {
+     "label": "Pitch spray",
+     "unit": "st",
+     "minimum": 0.0,
+     "maximum": 12.0,
+     "default": 0.0
+    },
+    {
+     "label": "Window",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 0.0,
+     "choices": [
+      "Smooth",
+      "Triangle",
+      "Sharp"
+     ]
+    },
+    {
+     "label": "Window amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 1.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    },
+    {
+     "label": "Speed",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 4.0,
+     "default": 1.0
+    },
+    {
+     "label": "Timbre",
+     "unit": "st",
+     "minimum": -24.0,
+     "maximum": 24.0,
+     "default": 0.0
+    },
+    {
+     "label": "Lowest frequency",
+     "unit": "Hz",
+     "minimum": 20.0,
+     "maximum": 20000.0,
+     "default": 20.0
+    },
+    {
+     "label": "Highest frequency",
+     "unit": "Hz",
+     "minimum": 20.0,
+     "maximum": 20000.0,
+     "default": 20000.0
+    },
+    {
+     "label": "Spectral morph",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 14.0,
+     "default": 0.0,
+     "choices": [
+      "None",
+      "Vocode",
+      "Formant scale",
+      "Harmonic stretch",
+      "Inharmonic scale",
+      "Smear",
+      "Random amplitudes",
+      "Low pass",
+      "High pass",
+      "Phase disperse",
+      "Shepard tone",
+      "Time skew",
+      "Even/odd",
+      "Comb",
+      "Gate"
+     ]
+    },
+    {
+     "label": "Morph amount",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 1.0,
+     "default": 0.0
+    },
+    {
+     "label": "Root key",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 127.0,
+     "default": 60.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Gate",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Position",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-multisample",
    "label": "Multisample Oscillator",
    "part": "Sources",
-   "summary": null
+   "summary": "Vintergatan's multisample oscillator: a sample library (SFZ, DecentSampler, SoundFont or Sampler instrument) across the keys, each gate playing the zone its pitch and velocity fall in from that zone's own root.",
+   "knobs": [
+    {
+     "label": "Transpose",
+     "unit": "st",
+     "minimum": -48.0,
+     "maximum": 48.0,
+     "default": 0.0
+    },
+    {
+     "label": "Level",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 2.0,
+     "default": 1.0
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Pitch",
+     "direction": "input",
+     "kind": "pitch"
+    },
+    {
+     "label": "Gate",
+     "direction": "input",
+     "kind": "gate"
+    },
+    {
+     "label": "Velocity",
+     "direction": "input",
+     "kind": "cv"
+    },
+    {
+     "label": "Left",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Right",
+     "direction": "output",
+     "kind": "audio"
+    },
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "audio"
+    }
+   ]
   },
   {
    "id": "builtin.modular-subpatch",
    "label": "Subpatch",
    "part": "Subpatches",
-   "summary": null
+   "summary": "Modules and cables of its own, as one module: its jacks are the Subpatch Inputs and Outputs inside it. Cmd/Ctrl+G makes one of the modules selected; double-click it to open it.",
+   "knobs": [],
+   "jacks": []
   },
   {
    "id": "builtin.modular-input",
    "label": "Subpatch Input",
    "part": "Subpatches",
-   "summary": null
+   "summary": "A jack of the subpatch it is in: what is patched into that jack from outside comes out of it here.",
+   "knobs": [
+    {
+     "label": "Kind",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 1.0,
+     "choices": [
+      "Audio",
+      "CV",
+      "Gate",
+      "Pitch"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Output",
+     "direction": "output",
+     "kind": "cv"
+    }
+   ]
   },
   {
    "id": "builtin.modular-output",
    "label": "Subpatch Output",
    "part": "Subpatches",
-   "summary": null
+   "summary": "A jack of the subpatch it is in: what is patched into it here goes out of that jack.",
+   "knobs": [
+    {
+     "label": "Kind",
+     "unit": "",
+     "minimum": 0.0,
+     "maximum": 3.0,
+     "default": 1.0,
+     "choices": [
+      "Audio",
+      "CV",
+      "Gate",
+      "Pitch"
+     ]
+    }
+   ],
+   "jacks": [
+    {
+     "label": "Input",
+     "direction": "input",
+     "kind": "cv"
+    }
+   ]
   }
  ],
  "patches": 65

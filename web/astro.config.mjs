@@ -116,6 +116,7 @@ export default defineConfig({
 						{ label: 'Effects', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/effects' } }] },
 						{ label: 'Guitar and bass', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/guitar' } }] },
 						{ label: 'MIDI devices', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/midi' } }] },
+						{ label: 'Modular modules', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/modules' } }] },
 					],
 				},
 				{ label: '← The Solmara website', link: '/' },
