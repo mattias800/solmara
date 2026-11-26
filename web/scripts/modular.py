@@ -26,8 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from devices import App, DATA, SCALE, WEB, check_words  # noqa: E402
 
 
-PLACE = ("180", "140")  # On the canvas: right of From track, below To track.
-EDGE = 4  # Points from the canvas's edge, where a module is cut off.
+PLACE = ("180", "8")  # On the canvas: right of From track, left of To track, at the top.
 
 
 def module_pictures(app: App, types: list[str]) -> None:
@@ -49,13 +48,14 @@ def module_pictures(app: App, types: list[str]) -> None:
         kept = json.loads(anchors.read_text(encoding="utf-8"))["anchors"]
         name, window = f"module:{module.removeprefix('device_')}", f"device:{rack.removeprefix('device_')}"
         found = next((a for a in kept if a["name"] == name and a["window"] == window), None)
+        whole = next((a for a in kept if a["name"] == name + ".whole" and a["window"] == window), None)
         if not found:
             missing.append(type_id)
             continue
         image = Image.open(shot.with_name(f"{shot.stem}-{rack}.bmp")).convert("RGB")
         x, y, w, h = found["rect"]
-        if x + w >= image.width / SCALE - EDGE or y + h >= image.height / SCALE - EDGE:
-            cut.append(type_id)  # It runs past the window: cut short.
+        if whole and [round(v) for v in whole["rect"]] != [round(v) for v in found["rect"]]:
+            cut.append(type_id)  # The canvas shows less than all of it.
         image.crop((round(x * SCALE), round(y * SCALE), round((x + w) * SCALE), round((y + h) * SCALE))).save(
             out / f"{type_id.removeprefix('builtin.')}.webp", quality=90, method=6)
         print(f"  {type_id}: {w:.0f} x {h:.0f}", flush=True)
