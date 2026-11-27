@@ -359,7 +359,7 @@
  },
  {
   "key": "noiseColor",
-  "label": "Noise colour",
+  "label": "Noise color",
   "unit": "dial",
   "minimum": 0.0,
   "maximum": 10.0,

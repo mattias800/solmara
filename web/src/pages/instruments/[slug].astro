@@ -80,7 +80,7 @@ const facts = [
 	<div class="device-body">
 		<div>
 			<h2>What it is</h2>
-			{device.modelledOn && <p class="origin"><span>Modelled on</span> {device.modelledOn}.</p>}
+			{device.modeledOn && <p class="origin"><span>Modeled on</span> {device.modeledOn}.</p>}
 			{device.description ? <p>{device.description}</p> : <p>{device.blurb}</p>}
 			{device.inProgress && (
 				<p class="callout">{device.label} is still being built: what it does and how it looks may change before it is done.</p>

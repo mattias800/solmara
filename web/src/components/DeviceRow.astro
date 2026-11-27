@@ -12,7 +12,7 @@ const { device } = Astro.props;
 const summary = device.summary ? device.summary.charAt(0).toUpperCase() + device.summary.slice(1) + '.' : null;
 // The hand-written line, then what an emulation is modeled on; a design of
 // our own says more of itself from the app's summary where it has one.
-const more = device.modelledOn ? null : summary && summary !== device.blurb ? summary : null;
+const more = device.modeledOn ? null : summary && summary !== device.blurb ? summary : null;
 ---
 
 <article class="row" id={device.slug} data-origin={device.origin}>
@@ -26,7 +26,7 @@ const more = device.modelledOn ? null : summary && summary !== device.blurb ? su
 		{more && <p>{more}</p>}
 		{device.opens && <p class="opens">{device.opens}</p>}
 		{device.origin !== 'unsaid' && <p class:list={['origin', device.origin]}>
-			<span>{originLabel(device.origin)}</span>{device.modelledOn && <>, modeled on {device.modelledOn}.</>}
+			<span>{originLabel(device.origin)}</span>{device.modeledOn && <>, modeled on {device.modeledOn}.</>}
 		</p>}
 	</div>
 </article>

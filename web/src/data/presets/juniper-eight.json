@@ -2,7 +2,7 @@
  {
   "name": "Glide Sync Bass",
   "category": "Bass",
-  "description": "After Attack Magazine's low analogue bass on an eight-voice polysynth template: played solo with a long glide, VCO-1 at 16', VCO-2's pulse a little detuned and synced, its width moved by the LFO, the low-pass near 4 with a little resonance and ENV-2 on it, the level held. From the article: the glide, the feet, the pulse, the sync, the detune, the LFO on the width, the cutoff, the resonance, ENV-2 on the filter and the level's envelope; estimated: their conversion to the panel and the envelope's amount."
+  "description": "After Attack Magazine's low analog bass on an eight-voice polysynth template: played solo with a long glide, VCO-1 at 16', VCO-2's pulse a little detuned and synced, its width moved by the LFO, the low-pass near 4 with a little resonance and ENV-2 on it, the level held. From the article: the glide, the feet, the pulse, the sync, the detune, the LFO on the width, the cutoff, the resonance, ENV-2 on the filter and the level's envelope; estimated: their conversion to the panel and the envelope's amount."
  },
  {
   "name": "Growl Bass",
@@ -17,7 +17,7 @@
  {
   "name": "Pedal Bass",
   "category": "Bass",
-  "description": "After Nick Magnus's analogue basses in Sound On Sound, whose bass-pedal sound is saws set some seven cents either side with a sine under them: here two saws at 16' fourteen cents apart through a low, warm filter. From the article: the saws and their spread; estimated: the rest. Its sine is left out: the instrument has two oscillators."
+  "description": "After Nick Magnus's analog basses in Sound On Sound, whose bass-pedal sound is saws set some seven cents either side with a sine under them: here two saws at 16' fourteen cents apart through a low, warm filter. From the article: the saws and their spread; estimated: the rest. Its sine is left out: the instrument has two oscillators."
  },
  {
   "name": "Pluck Bass",
@@ -52,7 +52,7 @@
  {
   "name": "Unison Bass",
   "category": "Bass",
-  "description": "After Nick Magnus's analogue basses in Sound On Sound, where the eight-voice polysynth's bass is a unison stack of widely detuned voices: every voice on one key, spread wide, through a four-pole the envelope snaps open. The idea is the article's; the values are estimated."
+  "description": "After Nick Magnus's analog basses in Sound On Sound, where the eight-voice polysynth's bass is a unison stack of widely detuned voices: every voice on one key, spread wide, through a four-pole the envelope snaps open. The idea is the article's; the values are estimated."
  },
  {
   "name": "Unison Sync Bass",
@@ -152,7 +152,7 @@
  {
   "name": "Soft Horns",
   "category": "Brass",
-  "description": "After Nick Magnus's analogue brass in Sound On Sound: the French horn as the brass made slower in attack and decay, with less of the envelope, more sustain and longer releases; here VCO-1's triangle under VCO-2's saw through a closed filter. The idea is the article's; every value is estimated."
+  "description": "After Nick Magnus's analog brass in Sound On Sound: the French horn as the brass made slower in attack and decay, with less of the envelope, more sustain and longer releases; here VCO-1's triangle under VCO-2's saw through a closed filter. The idea is the article's; every value is estimated."
  },
  {
   "name": "Swell Brass",
@@ -557,7 +557,7 @@
  {
   "name": "Octave Brass Layer",
   "category": "Split",
-  "description": "After Nick Magnus's analogue brass in Sound On Sound, where a big-band section is the brass with a second layer an octave up: dual, the synth brass on the upper patch and the lower an octave over it, a little quicker and quieter. The layering is the article's; the values are estimated."
+  "description": "After Nick Magnus's analog brass in Sound On Sound, where a big-band section is the brass with a second layer an octave up: dual, the synth brass on the upper patch and the lower an octave over it, a little quicker and quieter. The layering is the article's; the values are estimated."
  },
  {
   "name": "Organ and Bass",

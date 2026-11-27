@@ -15,7 +15,7 @@ the source tree it was built from (BUILD_DIR/../../library), or DIR. It writes:
   src/assets/devices/chain/<slug>.webp  a device with a window: its card in the chain
 
 The app runs with settings of its own, so nothing of this computer's shows
-(a device's nickname names the hardware it is modelled on). Every text taken
+(a device's nickname names the hardware it is modeled on). Every text taken
 from the app is checked against makers' and models' names, which the public
 site never carries; a hit stops the export and names it.
 """
@@ -40,7 +40,7 @@ CHAINS = FACES / "chain"
 # pixels, and shown at their size in points: sharp, and never enlarged.
 SCALE = 2
 
-# Makers and models of the gear and plugins Solmara's devices are modelled
+# Makers and models of the gear and plugins Solmara's devices are modeled
 # on or measured against. None of them may appear on the public site.
 FORBIDDEN = [
     r"\broland\b(?! schmidt)", r"\bmoog\b", r"\bkorg\b", r"\byamaha\b", r"sequential circuits", r"\bprophet\b", r"\boberheim\b",
@@ -67,7 +67,7 @@ FORBIDDEN = [
 EXACT = [r"\bSequential\b(?! [Ss]witch)", r"\bARP\b",r"\bEMS\b", r"\bAPI\b", r"\bSSL\b", r"\bUAD\b", r"\bEMT\b", r"\bWaves\b", r"\bVital\b",
          r"\bVirus\b", r"\bE-mu\b", r"\bE-MU\b", r"\bRAT\b", r"\bBoss\b", r"\bBOSS\b", r"\bVox\b(?! Pad)", r"\bVOX\b"]
 # Nor does a device say it was made after another company's software: what
-# it is modelled on is the gear, never a plugin or another DAW's device.
+# it is modeled on is the gear, never a plugin or another DAW's device.
 FORBIDDEN += [r"\bplug-?ins?\b(?! (?:you|of your own))", r"another DAW"]
 FORBIDDEN_RE = re.compile("|".join(FORBIDDEN), re.IGNORECASE)
 EXACT_RE = re.compile("|".join(EXACT))
@@ -164,7 +164,7 @@ def save_face(image: Image.Image, name: str, folder: Path = FACES) -> None:
 
 def without_title(image: Image.Image) -> Image.Image:
     """A window's picture from below its title bar: the rows as the bar's
-    colour at the window's left edge, down to its edge."""
+    color at the window's left edge, down to its edge."""
     rgb = image.convert("RGB")
     bar = rgb.getpixel((4, 2))
     top = 0

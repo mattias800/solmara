@@ -32,7 +32,7 @@
  {
   "name": "Forward, Cap",
   "category": "Cabinet",
-  "description": "The forward 4x12 with the microphone toward the cone's centre: the top falls off higher, and more of 4 to 6 kHz comes through. For a dark amplifier, or a lead that has to be heard."
+  "description": "The forward 4x12 with the microphone toward the cone's center: the top falls off higher, and more of 4 to 6 kHz comes through. For a dark amplifier, or a lead that has to be heard."
  },
  {
   "name": "Forward, Edge",
@@ -82,12 +82,12 @@
  {
   "name": "Thick, Cap",
   "category": "Cabinet",
-  "description": "The thick 4x12 with the microphone toward the cone's centre, which gives its dark top some of its edge back."
+  "description": "The thick 4x12 with the microphone toward the cone's center, which gives its dark top some of its edge back."
  },
  {
   "name": "Thick, In a Mix",
   "category": "Cabinet",
-  "description": "The thick 4x12 with a low cut at 100 Hz and a high cut at 9 kHz, and the microphone a little toward the centre: what two rhythm guitars need of it beside a bass and cymbals."
+  "description": "The thick 4x12 with a low cut at 100 Hz and a high cut at 9 kHz, and the microphone a little toward the center: what two rhythm guitars need of it beside a bass and cymbals."
  },
  {
   "name": "Untitled Cab",

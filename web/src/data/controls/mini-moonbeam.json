@@ -292,8 +292,8 @@
   ]
  },
  {
-  "key": "noiseColour",
-  "label": "Noise colour",
+  "key": "noiseColor",
+  "label": "Noise color",
   "unit": "choice",
   "minimum": 0.0,
   "maximum": 1.0,

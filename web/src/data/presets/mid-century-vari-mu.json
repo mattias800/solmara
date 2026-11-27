@@ -17,10 +17,10 @@
  {
   "name": "Master, Middle and Side",
   "category": "Dynamics",
-  "description": "The matrix on: the middle and the sides are compressed each by itself, so a loud centre does not pull the width down with it. The fifth place."
+  "description": "The matrix on: the middle and the sides are compressed each by itself, so a loud center does not pull the width down with it. The fifth place."
  },
  {
-  "name": "Master, Program Leveller",
+  "name": "Master, Program Leveler",
   "category": "Dynamics",
   "description": "The sixth place: a single peak is let go in a third of a second, many in ten, and a long loud passage in twenty-five, so a whole song is brought nearer one level, a few dB at the most."
  },
@@ -32,7 +32,7 @@
  {
   "name": "Parallel Crush",
   "category": "Dynamics",
-  "description": "The input at its top and the threshold at the end of its dial, the valves well down and driven, and the mix at 40 %: the crushed and coloured drums under the drums as they were, in one device."
+  "description": "The input at its top and the threshold at the end of its dial, the valves well down and driven, and the mix at 40 %: the crushed and colored drums under the drums as they were, in one device."
  },
  {
   "name": "Vocal, Smooth",

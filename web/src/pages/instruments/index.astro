@@ -6,7 +6,7 @@ import { byOrigin, familyOf, instrumentFamilies, instruments } from '../../lib/d
 const families = instrumentFamilies.filter((family) => family.devices.length > 0);
 const intros: Record<string, string> = {
 	own: 'Instruments of Solmara’s own design: the wavetable synth, the modular, the samplers and the drum tools.',
-	analogue: 'Synths, keys and drum machines modeled on analog instruments, circuit by circuit, and held to references by measurement and by ear.',
+	analog: 'Synths, keys and drum machines modeled on analog instruments, circuit by circuit, and held to references by measurement and by ear.',
 	digital: 'Synths modeled on digital instruments, from the early FM and phase-distortion keyboards to the virtual-analog synths of the 1990s and 2000s.',
 };
 const parts = byOrigin(instruments);

@@ -34,7 +34,7 @@ export interface Shown extends Device {
 	/** A design of Solmara's own, or an emulation of other gear or software. */
 	origin: Origin;
 	/** For an emulation, what it is modeled on, never by its maker's or its model's name. */
-	modelledOn: string | null;
+	modeledOn: string | null;
 	/** The presets of other instruments it opens (interoperability, where products are named). */
 	opens: string | null;
 }
@@ -42,11 +42,11 @@ export interface Shown extends Device {
 // 'unsaid' for a device whose origin the website does not tell: the MIDI
 // players, which follow another DAW's functions closely and are neither
 // called our own nor said to be modeled on software.
-export type Origin = 'own' | 'analogue' | 'digital' | 'unsaid';
+export type Origin = 'own' | 'analog' | 'digital' | 'unsaid';
 /** The three parts every family's devices are shown in, in this order. */
 export const originParts: { key: Origin; label: string; short: string }[] = [
 	{ key: 'own', label: 'Our own designs', short: 'Our own design' },
-	{ key: 'analogue', label: 'Emulations of analog gear', short: 'Analog emulation' },
+	{ key: 'analog', label: 'Emulations of analog gear', short: 'Analog emulation' },
 	{ key: 'digital', label: 'Emulations of digital gear', short: 'Digital emulation' },
 ];
 export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)?.short ?? '';
@@ -57,7 +57,7 @@ export const byOrigin = (list: Shown[]) =>
 const faces = import.meta.glob<{ default: ImageMetadata }>('../assets/devices/*.webp', { eager: true });
 const handWritten = blurbs as Record<string, { kind: string | null; text: string | null }>;
 const opens = opensData as unknown as Record<string, { text: string }>;
-const emulations = origins.emulations as Record<string, { circuit: 'analogue' | 'digital'; modelledOn: string }>;
+const emulations = origins.emulations as Record<string, { circuit: 'analog' | 'digital'; modeledOn: string }>;
 
 const sentence = (text: string) => text.charAt(0).toUpperCase() + text.slice(1) + (/[.!?]$/.test(text) ? '' : '.');
 /** The first sentence of the app's longer description, for a device with no shorter words. */
@@ -78,7 +78,7 @@ function shown(device: Device): Shown {
 		inProgress: site.inProgress.includes(device.id),
 		image: device.face ? (faces[`../assets/devices/${device.face}.webp`]?.default ?? null) : null,
 		origin: device.kind === 'midi' ? 'unsaid' : (emulations[device.id]?.circuit ?? 'own'),
-		modelledOn: emulations[device.id]?.modelledOn ?? null,
+		modeledOn: emulations[device.id]?.modeledOn ?? null,
 		opens: opens[device.id]?.text ?? null,
 	};
 }

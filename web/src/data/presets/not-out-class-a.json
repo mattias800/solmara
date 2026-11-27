@@ -32,11 +32,11 @@
  {
   "name": "Drive Only",
   "category": "Saturation",
-  "description": "The equaliser out and the gain at +20, with the trim back by 20 dB: nothing but the amplifiers and the transformers, driven so that the loud parts of a track come up against the output stage and its lows thicken. Turn the trim to taste."
+  "description": "The equalizer out and the gain at +20, with the trim back by 20 dB: nothing but the amplifiers and the transformers, driven so that the loud parts of a track come up against the output stage and its lows thicken. Turn the trim to taste."
  },
  {
   "name": "Gentle Glue",
   "category": "Saturation",
-  "description": "The gain at +10 with the trim back by as much and the equaliser in with a touch of air and a little low shelf at 35 Hz: the transformers' colour on a whole mix, with a loud low note given a little more of it."
+  "description": "The gain at +10 with the trim back by as much and the equalizer in with a touch of air and a little low shelf at 35 Hz: the transformers' color on a whole mix, with a loud low note given a little more of it."
  }
 ]

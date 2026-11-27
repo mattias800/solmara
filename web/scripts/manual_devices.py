@@ -194,8 +194,8 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     lines += imports + [""]
     origin = device.get("origin")
     if origin:
-        kind = "an analog" if origin["circuit"] == "analogue" else "a digital"
-        lines += [f"**An emulation of {kind} original,** modeled on {origin['modelledOn']}.", ""]
+        kind = "an analog" if origin["circuit"] == "analog" else "a digital"
+        lines += [f"**An emulation of {kind} original,** modeled on {origin['modeledOn']}.", ""]
     elif device.get("kind") != "midi":  # The players' origin is not told.
         lines += ["**A design of Solmara's own.**", ""]
     if (GUIDES / f"{device['slug']}.md").exists():
@@ -239,7 +239,7 @@ def check_site_words() -> None:
             # Vintergatan opens Serum's and Vital's presets: interoperability.
             hits += [hit for hit in found if not (name == "Vintergatan" and ("'Serum'" in hit or "'Vital'" in hit))]
     for type_id, origin in json.loads((DATA / "origins.json").read_text(encoding="utf-8"))["emulations"].items():
-        export.check_words(f"{type_id} modelledOn", origin["modelledOn"], hits)
+        export.check_words(f"{type_id} modeledOn", origin["modeledOn"], hits)
     if hits:
         raise SystemExit("Makers' or models' names in the website's words:\n  " + "\n  ".join(hits))
 

@@ -67,7 +67,7 @@
  {
   "name": "Oscillator Wall",
   "category": "Drone",
-  "description": "A small take on a YouTuber's thousand-oscillator megadrone, as a MusicRadar interview tells it: twelve plain buzzing saws and pulses heaped onto five chord tones, each a few cents off its neighbour so the wall beats and shimmers, a slow random drift under them, through a slowly breathing low-pass."
+  "description": "A small take on a YouTuber's thousand-oscillator megadrone, as a MusicRadar interview tells it: twelve plain buzzing saws and pulses heaped onto five chord tones, each a few cents off its neighbor so the wall beats and shimmers, a slow random drift under them, through a slowly breathing low-pass."
  },
  {
   "name": "Slow FM Drone",
@@ -222,7 +222,7 @@
  {
   "name": "Waveguide Reed",
   "category": "Lead",
-  "description": "After Sound On Sound's 1997 piece on Ron Berry's acoustic modelling on an analogue modular: a reed as a loop that plays itself, a delay half the note's period fed back inverted through a soft limiter (the reed's give) and a low-pass. The breath's pressure, with a little noise and a slow tremolo in it, both blows it and holds the loop's gain past where it sounds, so it speaks while the key is held and stops when let go."
+  "description": "After Sound On Sound's 1997 piece on Ron Berry's acoustic modeling on an analog modular: a reed as a loop that plays itself, a delay half the note's period fed back inverted through a soft limiter (the reed's give) and a low-pass. The breath's pressure, with a little noise and a slow tremolo in it, both blows it and holds the loop's gain past where it sounds, so it speaks while the key is held and stops when let go."
  },
  {
   "name": "Chorus Saw Pad",

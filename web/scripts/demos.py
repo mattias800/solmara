@@ -1,7 +1,7 @@
 """Renders the instruments' sound demos for their pages, from the app's
 factory presets: two presets of different kinds each, each playing a phrase
 that suits its kind (a bass line for a bass, chords for a pad, a melody for
-a lead), four bars at 120 BPM in A minor, levelled to one loudness.
+a lead), four bars at 120 BPM in A minor, leveled to one loudness.
 
   python scripts/demos.py BUILD_DIR [--only SLUG,...]
 

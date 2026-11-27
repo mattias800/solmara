@@ -292,7 +292,7 @@
  {
   "name": "Sync Sweep Drone",
   "category": "FX",
-  "description": "Two saws, the synced one swept up and down slowly by LFO 1 through the pitch: a drone that keeps changing colour."
+  "description": "Two saws, the synced one swept up and down slowly by LFO 1 through the pitch: a drone that keeps changing color."
  },
  {
   "name": "Wind",

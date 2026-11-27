@@ -122,7 +122,7 @@
  {
   "name": "Arena Stab",
   "category": "Chord",
-  "description": "After Computer Music's walkthrough for the famous rock-anthem stab on a software analogue: oscillator 1's saw a little detuned, oscillator 2's saw an octave up and quieter, four poles with some resonance, the envelope given a shove, a hint of attack, a decay past half way to a sustain under half. From the walkthrough: the waves, the octave, the mix, the slope, the envelope's shape; estimated: every amount on this panel. Its chorus is left out: the instrument has none."
+  "description": "After Computer Music's walkthrough for the famous rock-anthem stab on a software analog: oscillator 1's saw a little detuned, oscillator 2's saw an octave up and quieter, four poles with some resonance, the envelope given a shove, a hint of attack, a decay past half way to a sustain under half. From the walkthrough: the waves, the octave, the mix, the slope, the envelope's shape; estimated: every amount on this panel. Its chorus is left out: the instrument has none."
  },
  {
   "name": "Deep Chord",
@@ -352,7 +352,7 @@
  {
   "name": "Random Sequence",
   "category": "Sequence",
-  "description": "Short saw notes, the filter's cutoff stepped to a new place by the LFO's sample and hold about every sixteenth, so no two notes of the run share a colour."
+  "description": "Short saw notes, the filter's cutoff stepped to a new place by the LFO's sample and hold about every sixteenth, so no two notes of the run share a color."
  },
  {
   "name": "Resonant Sequence",

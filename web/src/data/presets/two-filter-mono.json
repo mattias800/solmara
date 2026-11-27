@@ -372,7 +372,7 @@
  {
   "name": "Random Steps",
   "category": "Sequence",
-  "description": "Noise sampled by the MG's square into the low-pass: each step of a held note lands on a new random colour."
+  "description": "Noise sampled by the MG's square into the low-pass: each step of a held note lands on a new random color."
  },
  {
   "name": "Ring Sequence",

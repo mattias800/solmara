@@ -15,6 +15,10 @@ const movedRedirects = Object.fromEntries(
 		]),
 	),
 );
+// Pages whose device was renamed to US spelling (27 November 2026).
+const renamedRedirects = {
+	'/manual/devices/guitar-amps/a2-modeller-amp/': '/solmara/manual/devices/guitar-amps/a2-modeler-amp/',
+};
 const deviceGroup = (label, folder) => ({
 	label,
 	collapsed: true,
@@ -28,7 +32,7 @@ export default defineConfig({
 	site: 'https://mattias800.github.io',
 	base: '/solmara',
 	trailingSlash: 'always',
-	redirects: movedRedirects,
+	redirects: { ...movedRedirects, ...renamedRedirects },
 	integrations: [
 		starlight({
 			title: 'Solmara manual',

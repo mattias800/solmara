@@ -1,4 +1,4 @@
-/* Where a device comes from: our own designs, emulations of analogue gear,
+/* Where a device comes from: our own designs, emulations of analog gear,
    emulations of digital gear (25 November 2026). */
 .part-title { margin: 48px 0 28px; font-size: 24px; font-weight: 600; color: var(--soft); display: flex; align-items: baseline; gap: 10px; }
 .part-title::after { content: ""; flex: 1; border-top: 1px solid var(--line); transform: translateY(-6px); }
@@ -7,7 +7,7 @@
 .origin { font-size: 14px !important; color: var(--muted); }
 .origin span { color: var(--soft); font-weight: 500; }
 .origin.own span { color: var(--gold); }
-.card .modelled { font-size: 13px; color: var(--faint); }
+.card .modeled { font-size: 13px; color: var(--faint); }
 
 /* The instruments' index, in its three parts. */
 .instrument-part { padding-top: 56px; }

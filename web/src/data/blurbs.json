@@ -4,7 +4,7 @@
   "text": "The Milky Way. From soft pads to heavy bass, with wavetables to draw and shape and modulation you drag onto any knob."
  },
  "Norrsken": {
-  "kind": "Virtual analogue synth",
+  "kind": "Virtual analog synth",
   "text": "The northern lights. A bright, immediate synth for leads, stabs and pads, with a face made to be played."
  },
  "Mini Moonbeam": {
@@ -85,7 +85,7 @@
  },
  "Metal District Pedal": {
   "kind": "Distortion",
-  "text": "High gain with an equaliser of its own, from scooped to a wall of mids."
+  "text": "High gain with an equalizer of its own, from scooped to a wall of mids."
  },
  "Lift Pedal": {
   "kind": "Clean boost",
@@ -140,7 +140,7 @@
   "text": "A lamp and a photocell, pulsing like an old amplifier's tremolo."
  },
  "Leveltron Opto": {
-  "kind": "Optical leveller",
+  "kind": "Optical leveler",
   "text": "A lamp and a photocell turn the level down, smooth and slow, through a valve amplifier."
  },
  "Danish Blue Compressor": {
@@ -164,7 +164,7 @@
   "text": "Compression and valve heat in one, for drums, bass and buses."
  },
  "Push-Pull EQ": {
-  "kind": "Passive equaliser",
+  "kind": "Passive equalizer",
   "text": "Boost and cut the same band at once, through a valve make-up amplifier."
  },
  "Not Out Class A": {
@@ -192,7 +192,7 @@
   "text": "A transistor ladder low-pass filter for any track."
  },
  "Filter": {
-  "kind": "Analogue filters",
+  "kind": "Analog filters",
   "text": "Ladders, a diode ladder and more, with an LFO and an envelope follower."
  },
  "Low Orbit Echo": {
@@ -209,7 +209,7 @@
  },
  "1978 Digital Hall": {
   "kind": "Digital hall",
-  "text": "A hall reverb of the late 1970s, modelled as its algorithm."
+  "text": "A hall reverb of the late 1970s, modeled as its algorithm."
  },
  "1976 Digital Reverb": {
   "kind": "Early digital reverb",

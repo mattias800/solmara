@@ -257,7 +257,7 @@
  {
   "name": "Triplet Pump Bass",
   "category": "Bass",
-  "description": "After Harry Jackson's synthwave bass for Syntorial: a saw and a square an octave down, each three voices lightly detuned, a sine under them, through a resonant analogue low-pass and a second gentler one, a falling LFO in eighth-note triplets pumping both, then a soft clip and a chorus. From the page: the octaves, cents (-11 and +9), the three voices at 15 % and 18 %, the resonances (48 % and 31 %), the 1/8T ramp down restarted at each note on both cutoffs, the clip's 6 dB at 24 %, the chorus; estimated: the cutoffs in hertz. Macro 1 (Pump) deepens the LFO; Macro 2 (Cutoff) opens both filters."
+  "description": "After Harry Jackson's synthwave bass for Syntorial: a saw and a square an octave down, each three voices lightly detuned, a sine under them, through a resonant analog low-pass and a second gentler one, a falling LFO in eighth-note triplets pumping both, then a soft clip and a chorus. From the page: the octaves, cents (-11 and +9), the three voices at 15 % and 18 %, the resonances (48 % and 31 %), the 1/8T ramp down restarted at each note on both cutoffs, the clip's 6 dB at 24 %, the chorus; estimated: the cutoffs in hertz. Macro 1 (Pump) deepens the LFO; Macro 2 (Cutoff) opens both filters."
  },
  {
   "name": "Triplet Wobble",
@@ -317,7 +317,7 @@
  {
   "name": "Cinematic Swell Brass",
   "category": "Brass",
-  "description": "After Syntorial's recipe for a slow, cinematic synth brass: a saw two voices five cents apart spread full, squeezed by its warp at 76 %, through an analogue low-pass near 331 Hz with some resonance and drive that a slow envelope opens by a third, a perlin-like random LFO in quarters drifting the tuning, a reverb, and the wheel opening the filter, taming the resonance and widening the reverb. From the page: all of it, the amp's 120 ms and 629 ms, the envelope's 709/1080/82 %/2110, the reverb's 39 % at 2.3 s; estimated: our units. Macro 1 (Swell), the page's wheel, does what it does; Macro 2 (Drift) deepens the tuning's drift."
+  "description": "After Syntorial's recipe for a slow, cinematic synth brass: a saw two voices five cents apart spread full, squeezed by its warp at 76 %, through an analog low-pass near 331 Hz with some resonance and drive that a slow envelope opens by a third, a perlin-like random LFO in quarters drifting the tuning, a reverb, and the wheel opening the filter, taming the resonance and widening the reverb. From the page: all of it, the amp's 120 ms and 629 ms, the envelope's 709/1080/82 %/2110, the reverb's 39 % at 2.3 s; estimated: our units. Macro 1 (Swell), the page's wheel, does what it does; Macro 2 (Drift) deepens the tuning's drift."
  },
  {
   "name": "Rasp Brass",
@@ -382,7 +382,7 @@
  {
   "name": "Old School House Stab",
   "category": "Chord",
-  "description": "After Attack Magazine's old-school house chords: three oscillators at the root, a minor third and a fifth, so one key plays the chord, each a pair of voices spread five cents, through a 24 dB low-pass shut and plucked open by a fast envelope, a reverb and a chorus. From the page: the intervals, the full levels and tables, the two voices and their spread, the closed cutoff and the envelope near 2 o'clock; estimated: the decay (300 ms). Macro 1 (Colour) moves the chord to the darker 0, 5, 8 the page offers; Macro 2 (Pluck) deepens the envelope; Macro 3 (Space) widens the reverb."
+  "description": "After Attack Magazine's old-school house chords: three oscillators at the root, a minor third and a fifth, so one key plays the chord, each a pair of voices spread five cents, through a 24 dB low-pass shut and plucked open by a fast envelope, a reverb and a chorus. From the page: the intervals, the full levels and tables, the two voices and their spread, the closed cutoff and the envelope near 2 o'clock; estimated: the decay (300 ms). Macro 1 (Color) moves the chord to the darker 0, 5, 8 the page offers; Macro 2 (Pluck) deepens the envelope; Macro 3 (Space) widens the reverb."
  },
  {
   "name": "Pulsing Table Chords",
@@ -497,7 +497,7 @@
  {
   "name": "Brass Stab",
   "category": "Keys",
-  "description": "A Sallen-Key that swells open, as analogue brass does."
+  "description": "A Sallen-Key that swells open, as analog brass does."
  },
  {
   "name": "Crushed Lo-fi Keys",
@@ -712,7 +712,7 @@
  {
   "name": "Tech Trance Lead",
   "category": "Lead",
-  "description": "After Syntorial's recipe for a driving tech-trance lead: one saw sixteen voices deep, detuned 43 % with its inner voices drawn in, through a 12 dB analogue low-pass near 260 Hz that a triangle LFO in half notes sweeps, compressed hard, with a cut near 940 Hz, a lift above 3.4 kHz and a reverb. From the page: the voices, the detune and its power, the blend, the filter's cutoff, 10 % resonance and 12 % drive, the amp's 12/305/93 %/90, the LFO's 72 % to the cutoff, the EQ, the reverb's 37 % at 0.83 s; estimated: the turn into our units. Macro 1 (Motion) deepens the sweep; Macro 2 (Rate) doubles it toward quarters; Macro 3 (Space) widens the reverb."
+  "description": "After Syntorial's recipe for a driving tech-trance lead: one saw sixteen voices deep, detuned 43 % with its inner voices drawn in, through a 12 dB analog low-pass near 260 Hz that a triangle LFO in half notes sweeps, compressed hard, with a cut near 940 Hz, a lift above 3.4 kHz and a reverb. From the page: the voices, the detune and its power, the blend, the filter's cutoff, 10 % resonance and 12 % drive, the amp's 12/305/93 %/90, the LFO's 72 % to the cutoff, the EQ, the reverb's 37 % at 0.83 s; estimated: the turn into our units. Macro 1 (Motion) deepens the sweep; Macro 2 (Rate) doubles it toward quarters; Macro 3 (Space) widens the reverb."
  },
  {
   "name": "Unison Saw Lead",
@@ -747,7 +747,7 @@
  {
   "name": "Dark Warm Pad",
   "category": "Pad",
-  "description": "After Syntorial's recipe for a dark, warm pad: a saw and a medium pulse, seven voices each at 12 % detune spread full, through a nearly shut analogue low-pass, a slow two-bar triangle and a fast flutter on the cutoff, a low cut and a dip near 262 Hz, a reverb. From the page: the levels (43 %, 54 %), voices and detune, the cutoff near 121 Hz with 4 % resonance, the amp's 219/711/90 %/372 ms, the two LFOs (15 % and 24 %), the EQ, the reverb's 45 % at 1.5 s; estimated: the cutoff raised to 320 Hz with a little key tracking to keep it heard, our detune. Macro 1 (Bright) opens the filter and deepens the flutter; Macro 2 (Space) widens the reverb."
+  "description": "After Syntorial's recipe for a dark, warm pad: a saw and a medium pulse, seven voices each at 12 % detune spread full, through a nearly shut analog low-pass, a slow two-bar triangle and a fast flutter on the cutoff, a low cut and a dip near 262 Hz, a reverb. From the page: the levels (43 %, 54 %), voices and detune, the cutoff near 121 Hz with 4 % resonance, the amp's 219/711/90 %/372 ms, the two LFOs (15 % and 24 %), the EQ, the reverb's 45 % at 1.5 s; estimated: the cutoff raised to 320 Hz with a little key tracking to keep it heard, our detune. Macro 1 (Bright) opens the filter and deepens the flutter; Macro 2 (Space) widens the reverb."
  },
  {
   "name": "Dreamy Eighties Pad",

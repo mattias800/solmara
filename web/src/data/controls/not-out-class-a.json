@@ -88,7 +88,7 @@
   ]
  },
  {
-  "key": "equaliser",
+  "key": "equalizer",
   "label": "EQ",
   "unit": "switch",
   "minimum": 0.0,

@@ -1936,7 +1936,7 @@
  },
  {
   "key": "noiseColor",
-  "label": "Noise colour",
+  "label": "Noise color",
   "unit": "choice",
   "minimum": 0.0,
   "maximum": 3.0,

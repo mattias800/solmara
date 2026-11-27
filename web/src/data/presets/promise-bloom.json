@@ -362,7 +362,7 @@
  {
   "name": "Sync Pulse Lead",
   "category": "Lead",
-  "description": "A's pulse synced to B, the wheel's LFO sweeping A's pitch slowly so the sync partial moves as a note holds: a lead that changes colour on long notes."
+  "description": "A's pulse synced to B, the wheel's LFO sweeping A's pitch slowly so the sync partial moves as a note holds: a lead that changes color on long notes."
  },
  {
   "name": "Sync Scream",
@@ -447,7 +447,7 @@
  {
   "name": "Sync Pad",
   "category": "Pad",
-  "description": "A synced to B, the slow filter envelope pulling A's pitch through Poly-Mod as the chord swells: a pad whose colour shifts as it opens."
+  "description": "A synced to B, the slow filter envelope pulling A's pitch through Poly-Mod as the chord swells: a pad whose color shifts as it opens."
  },
  {
   "name": "Tide Pad",

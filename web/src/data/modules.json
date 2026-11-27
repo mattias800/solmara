@@ -2246,7 +2246,7 @@
    "id": "builtin.modular-wavefolder",
    "label": "Wavefolder",
    "part": "Shapers",
-   "summary": "A wave folded back on itself again and again, for bright overtones, off centre by its symmetry, the fold moved as fast as audio.",
+   "summary": "A wave folded back on itself again and again, for bright overtones, off center by its symmetry, the fold moved as fast as audio.",
    "knobs": [
     {
      "label": "Fold",

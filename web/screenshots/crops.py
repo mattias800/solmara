@@ -51,18 +51,18 @@ clip_top, clip_bottom = (197 - top) * scale, (248 - top) * scale
 middle = (clip_top + clip_bottom) // 2
 white, gold, soft = (235, 230, 220), (220, 192, 138), (201, 194, 180)
 grab = 10 * scale
-for y0, y1, colour in ((clip_top, middle, white), (middle, clip_bottom, gold)):
-    draw.rectangle((edge_x - grab, y0, edge_x, y1), outline=colour, width=scale)
+for y0, y1, color in ((clip_top, middle, white), (middle, clip_bottom, gold)):
+    draw.rectangle((edge_x - grab, y0, edge_x, y1), outline=color, width=scale)
 label_x = edge.width + 18 * scale
 # The upper half's words stand above its line and the lower half's below
 # theirs, so the two never meet.
-for y, name, line, colour, above in (
+for y, name, line, color, above in (
     ((clip_top + middle) // 2, "Upper half", "longer or shorter", white, True),
     ((middle + clip_bottom) // 2, "Lower half", "loops it", gold, False),
 ):
-    draw.line((edge_x + 3 * scale, y, label_x + 150 * scale, y), fill=colour, width=scale)
+    draw.line((edge_x + 3 * scale, y, label_x + 150 * scale, y), fill=color, width=scale)
     first = y - 34 * scale if above else y + 3 * scale
-    draw.text((label_x, first), name, font=title, fill=colour)
+    draw.text((label_x, first), name, font=title, fill=color)
     draw.text((label_x, first + 17 * scale), line, font=small, fill=soft)
 canvas.save(out / "clip-edge.webp", quality=90)
 print("written to", out)

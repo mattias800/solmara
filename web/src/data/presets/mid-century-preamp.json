@@ -17,7 +17,7 @@
  {
   "name": "Iron Only",
   "category": "Saturation",
-  "description": "The valves out and the transformer in: nothing above 200 Hz is touched, and a low note is given a third harmonic, 55 dB under a tone of 60 Hz at -12 dBFS and 24 dB under one at full scale. For a kick or a bass that wants weight and no colour above it, at a third of the processing."
+  "description": "The valves out and the transformer in: nothing above 200 Hz is touched, and a low note is given a third harmonic, 55 dB under a tone of 60 Hz at -12 dBFS and 24 dB under one at full scale. For a kick or a bass that wants weight and no color above it, at a third of the processing."
  },
  {
   "name": "Mix Bus Sheen",
@@ -27,7 +27,7 @@
  {
   "name": "Odd Bite",
   "category": "Saturation",
-  "description": "The bias turned up, toward the second valve's grid conducting, and the drive at 75: under the knee the second harmonic falls away and the third leads, 46 dB under a tone at -12 dBFS with the second 2 dB under that. A drier, more forward colour, for a synth or a guitar that even harmonics make too sweet."
+  "description": "The bias turned up, toward the second valve's grid conducting, and the drive at 75: under the knee the second harmonic falls away and the third leads, 46 dB under a tone at -12 dBFS with the second 2 dB under that. A drier, more forward color, for a synth or a guitar that even harmonics make too sweet."
  },
  {
   "name": "Parallel Smash",

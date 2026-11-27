@@ -12,7 +12,7 @@
     "builtin.analyzer"
   ],
   "instrumentFamilies": [
-    { "key": "analog", "label": "Analogue synths", "match": { "group": "Synths", "part": "Analog" } },
+    { "key": "analog", "label": "Analog synths", "match": { "group": "Synths", "part": "Analog" } },
     { "key": "digital", "label": "Digital synths", "match": { "group": "Synths", "part": "Digital" } },
     { "key": "modular", "label": "Modular", "match": { "group": "Synths", "part": "Modular" } },
     { "key": "keys", "label": "Keys", "match": { "group": "Keys" } },
@@ -21,8 +21,8 @@
   ],
   "effectFamilies": [
     { "key": "dynamics", "label": "Dynamics", "group": "Dynamics", "intro": "Compressors, limiters, gates and multiband: from glue on a bus to a loud master." },
-    { "key": "eq", "label": "EQ and filters", "group": "EQ and filters", "intro": "Equalisers to shape a sound, and filters to sweep it." },
-    { "key": "channels", "label": "Preamps and channels", "group": "Preamps and channels", "intro": "Whole channel strips and preamps, with the colour of the desks they come from." },
+    { "key": "eq", "label": "EQ and filters", "group": "EQ and filters", "intro": "Equalizers to shape a sound, and filters to sweep it." },
+    { "key": "channels", "label": "Preamps and channels", "group": "Preamps and channels", "intro": "Whole channel strips and preamps, with the color of the desks they come from." },
     { "key": "saturation", "label": "Saturation", "group": "Saturation", "intro": "Tape, valves and clipping, from a little warmth to a lot." },
     { "key": "modulation", "label": "Modulation", "group": "Modulation", "intro": "Chorus, phaser, flanger, tremolo, rotary speaker and ring modulation." },
     { "key": "space", "label": "Delay and reverb", "group": "Delay and reverb", "intro": "Echoes from tape and buckets, and reverbs from plates, springs, rooms and halls." },
