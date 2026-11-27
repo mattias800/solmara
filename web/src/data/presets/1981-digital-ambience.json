@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Bright Plate",
+  "category": "Reverb",
+  "description": "The first plate at 1.8 seconds with the highs ringing as long as the middle: a bright plate for vocals and snares."
+ },
+ {
+  "name": "Drum Ambience",
+  "category": "Reverb",
+  "description": "The ambience program at under a second: a dense burst of early reflections and a short quiet tail. Puts a dry kit in a room without washing it out."
+ },
+ {
+  "name": "Frozen Pad",
+  "category": "Reverb",
+  "description": "Freeze: what goes in hangs in the loop for as long as it plays. Under a pad or a drone."
+ },
+ {
+  "name": "Gated Kick",
+  "category": "Reverb",
+  "description": "Nonlin short and dark, at 150 ms with the highs cut: a kick that grows without a tail."
+ },
+ {
+  "name": "Gated Snare",
+  "category": "Reverb",
+  "description": "The gated Nonlin program at 300 ms: a wall of reflections that holds and then stops dead. The big snare of the 1980s."
+ },
+ {
+  "name": "Reverse Swell",
+  "category": "Reverb",
+  "description": "The reverse program at 400 ms: reflections that swell towards their end and stop, after a snare or a vocal word."
+ },
+ {
+  "name": "Tight Room",
+  "category": "Reverb",
+  "description": "The first room at under a second, its highs a little short: drums and guitars in a small live room."
+ },
+ {
+  "name": "Vocal Hall",
+  "category": "Reverb",
+  "description": "The second hall at 2.5 seconds, 40 ms of pre-delay, the bass a little long: a vocal's hall."
+ }
+]

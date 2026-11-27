@@ -1,0 +1,63 @@
+---
+title: "Solvind EQ"
+description: "Listening EQ: what hides is tamed, what is hidden brought up."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/solvind-eq.webp';
+
+**A design of Solmara's own.**
+
+An equaliser that listens, the mastering family's: many times a second it works out which bands of what passes hide the bands about them, on a model of hearing, and turns those down and the hidden ones up, so a master or a bus is clearer and more even without a fixed curve. Recover and Tame set how far each way, Bias how the spectrum is split between them, Brighten whether the unmasking leans to the highs or the lows, Boost the balance of a louder or quieter playback, and two limits where it acts; the loudness is held, so it is not heard louder. 21 ms late, which the renderer takes out.
+
+[Solvind EQ on the website](/solmara/effects/#solvind-eq)
+
+## In the device chain
+
+Solvind EQ on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Solvind EQ in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+12 factory presets come with Solvind EQ. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bus
+
+- **Bus Clarity**: On a bus of many parts, such as drums or keys: the parts that hide each other drawn apart, a little each way.
+
+### Mastering
+
+- **All the Way**: Recover and Tame at their tops: as far as it goes, to hear what it does on a mix; usually too much to keep.
+- **Bright and Clear**: Both ways at their middle with the unmasking leaning to the highs: what is hidden in the top comes out first, for a dark mix.
+- **Clear Master**: Both ways past their middle: a mix whose parts sit on each other comes apart into its parts, at the loudness it came in at.
+- **Gentle Balance**: A light hand each way: what is hidden comes up a little and what hides it goes down a little, so a master opens without anyone hearing an equaliser. Where to start.
+- **Late Night**: Nothing unmasked, Boost down 8 dB: the leaner bass and forward middle of a mix played quietly.
+- **Lift the Detail**: Mostly bringing up, with more of the spectrum given to it: the quiet parts that the loud ones hide, a reverb's tail, a shaker under the drums, the breath of a voice, come forward, and little is taken from the rest.
+- **Played Loud**: Nothing unmasked, Boost up 8 dB: the fuller bass and lighter middle of a mix played louder, at the same loudness.
+- **Tame Resonances**: Tame with Bias down, so only what stands well out of the rest is turned down: ringing peaks and resonances, and little else.
+- **Tame the Mud**: Mostly turning down, kept between 80 and 600 Hz: a low middle that covers what is above it is held back where it does, and the rest is left alone.
+- **Warm and Even**: The unmasking leaning to the lows, with a little Boost: for a harsh, bright mix, the manual's own advice.
+
+### Vocal
+
+- **De-ess**: Tame alone between 4.5 and 10 kHz, Bias down: an s that covers the rest of the voice is turned down where it does, and nothing outside the range is touched.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Recover | 0% to 200% | 50% |
+| Tame | 0% to 200% | 50% |
+| Bias | -100% to 100% | 0% |
+| Brighten | -100% to 100% | 0% |
+| Hold loudness | Off, On | On |
+| Output | -12 dB to 12 dB | 0 dB |
+| Boost | -50 dB to 50 dB | 0 dB |
+| Low limit | 20 Hz to 20000 Hz | 20 Hz |
+| High limit | 20 Hz to 20000 Hz | 20000 Hz |

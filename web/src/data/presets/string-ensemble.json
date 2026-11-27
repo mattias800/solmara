@@ -1,0 +1,87 @@
+[
+ {
+  "name": "Contrabass Line",
+  "category": "Bass",
+  "description": "The bass section alone, contrabass and cello, short and dry for a line."
+ },
+ {
+  "name": "Brass Ensemble",
+  "category": "Brass",
+  "description": "Trumpet and horn through the ensemble, a quick swell."
+ },
+ {
+  "name": "Horns and Strings",
+  "category": "Brass",
+  "description": "The horn tab over the viola and the cello, a medium swell: a soft horn section doubled by strings, for held chords."
+ },
+ {
+  "name": "Trumpet Line",
+  "category": "Brass",
+  "description": "The trumpet tab alone with a quick swell and a little delayed vibrato: a bright, buzzing line for a melody."
+ },
+ {
+  "name": "Choir and Strings",
+  "category": "Choir",
+  "description": "The choir over violin and viola and the cello below, a slow swell and a long release: a lush pad for a ballad's chorus."
+ },
+ {
+  "name": "Slow Choir",
+  "category": "Choir",
+  "description": "The choir over the viola, swelling slowly, a touch of vibrato."
+ },
+ {
+  "name": "Classic Strings",
+  "category": "Pads",
+  "description": "The string machine pad: violin and viola, a long swell and release, the ensemble wide."
+ },
+ {
+  "name": "Dry Divider",
+  "category": "Pads",
+  "description": "The ensemble off: the machine's raw divider saws, bright and still, nearer an organ than strings."
+ },
+ {
+  "name": "Full Orchestra",
+  "category": "Pads",
+  "description": "Every string at once, contrabass and cello under violin and viola, swelling in."
+ },
+ {
+  "name": "Init",
+  "category": "Pads",
+  "description": "Violin and viola over the cello, a slow swell, the ensemble on in stereo."
+ },
+ {
+  "name": "Mono Ensemble",
+  "category": "Pads",
+  "description": "The ensemble's mono output: the chorus's movement without its width, as the early machines gave it."
+ },
+ {
+  "name": "Space Wash",
+  "category": "Pads",
+  "description": "The longest swell and release with the whole section: a slow wash of strings for space rock and ambient."
+ },
+ {
+  "name": "Tremolo Pad",
+  "category": "Pads",
+  "description": "Violin and viola through a square-wave tremolo at a medium speed: a pad that pulses in time."
+ },
+ {
+  "name": "Disco Strings",
+  "category": "Strings",
+  "description": "Violin and viola with almost no swell and a short release, the ensemble wide: the quick, bright string stabs and runs of a disco record."
+ },
+ {
+  "name": "Vibrato Strings",
+  "category": "Strings",
+  "description": "Violin and viola with a vibrato that waits a moment after the first key and fades in: held chords that come alive."
+ },
+ {
+  "name": "Viola Section",
+  "category": "Strings",
+  "description": "The viola alone through the ensemble: darker and warmer than the violins, for chords in the middle."
+ },
+ {
+  "name": "Violins High",
+  "category": "Strings",
+  "description": "The violin alone, an octave over the viola, with a medium swell: a thin, high line over a band."
+ }
+]

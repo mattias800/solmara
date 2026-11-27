@@ -1,0 +1,306 @@
+---
+title: "Juniper Eight"
+description: "Eight-voice polysynth in the style of the early-1980s Japanese flagships: brass, pads, sync leads and split or layered patches."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/juniper-eight.webp';
+import window from '../../../../../assets/devices/juniper-eight.webp';
+
+**An emulation of an analogue original,** modelled on the early-1980s Japanese eight-voice flagship polysynth, two oscillators a voice, split or layered.
+
+A modelled eight-voice polysynth of the early 1980s, built from its circuit and held to a reference by measurement: each voice two oscillators, the first with its triangle, saw, pulse and square and cross-modulation from the second, the second with its sine, saw, pulse and noise, sync either way, a source mix into a high-pass and a four-pole low-pass switchable to two poles that sings at full resonance, and an amplifier, on two envelopes that follow the keys if asked. An LFO with its delay to the oscillators, the pulse width, the filter and the amplifier. An upper and a lower patch, played whole, dual or split; solo, unison and two poly modes; hold, portamento and an arpeggiator.
+
+[Juniper Eight on the website](/solmara/instruments/juniper-eight/)
+
+## In the device chain
+
+Juniper Eight on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Juniper Eight in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Juniper Eight's window, as it starts." /></a>
+
+
+## Presets
+
+124 factory presets come with Juniper Eight. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Glide Sync Bass**: After Attack Magazine's low analogue bass on an eight-voice polysynth template: played solo with a long glide, VCO-1 at 16', VCO-2's pulse a little detuned and synced, its width moved by the LFO, the low-pass near 4 with a little resonance and ENV-2 on it, the level held. From the article: the glide, the feet, the pulse, the sync, the detune, the LFO on the width, the cutoff, the resonance, ENV-2 on the filter and the level's envelope; estimated: their conversion to the panel and the envelope's amount.
+- **Growl Bass**: VCO-2 swinging VCO-1's pitch at audio rate, deep enough to lift VCO-1 from 32' to 16' where the key plays, heard through a resonant filter: a growling, gritty bass.
+- **Octave Dance Bass**: A saw at 8' over a pulse at 16', a resonant filter plucked short at each note: the bouncing octave bass of 1980s dance music, played as low and high eighths.
+- **Pedal Bass**: After Nick Magnus's analogue basses in Sound On Sound, whose bass-pedal sound is saws set some seven cents either side with a sine under them: here two saws at 16' fourteen cents apart through a low, warm filter. From the article: the saws and their spread; estimated: the rest. Its sine is left out: the instrument has two oscillators.
+- **Pluck Bass**: A pulse over a saw an octave under it, a resonant four-pole struck open, the level dying under the key: a short, plucked bass.
+- **Round Bass**: VCO-1's square at 16' and VCO-2's saw an octave under the keys into a resonant filter the envelope snaps open at each note, played solo.
+- **Rubber Bass**: A pulse over a saw an octave under it through the two-pole, high in resonance and snapped by its envelope, gliding from note to note: a round, rubbery bass.
+- **Sub Bass**: VCO-1's triangle at 16' and VCO-2's sine an octave down, the filter low: a deep sub that is felt more than heard.
+- **Sync Bass**: VCO-2 reset by VCO-1 at 16' and thrown up by the envelope at each note: a snarling, vocal bass.
+- **Synth-Pop Bass**: VCO-1's narrow pulse at 8' over a saw an octave under it, a quick bright pluck settling half way: the driving bass of a synth-pop single.
+- **Unison Bass**: After Nick Magnus's analogue basses in Sound On Sound, where the eight-voice polysynth's bass is a unison stack of widely detuned voices: every voice on one key, spread wide, through a four-pole the envelope snaps open. The idea is the article's; the values are estimated.
+- **Unison Sync Bass**: Every voice on one key, each VCO-2 reset by its VCO-1 and swept by the envelope: a huge, tearing bass.
+- **Upright Bass**: Read off the maker's 1981 factory patch sheet for the original's upright bass, every setting measured off the sheet's drawing to about half a step. VCO-1's triangle at 16' with VCO-2's pulse at 8' synced to it and blipped up by ENV-1, a closed four-pole opened a little by ENV-2, both envelopes shorter higher up: a plucked double bass.
+
+### Bell
+
+- **Carillon**: After the maker's sound-design article on bells and mallets for a 1985 polysynth of theirs: VCO-2 cross-modulating VCO-1, the filter low with the keys following it well, a long fall. From the article: the low cutoff, the key follow and the fall; estimated: the cross-modulation, the envelope on the filter and the interval, an octave and a fifth less a quarter of a semitone, where the cross-modulation's rise in pitch puts the bell's strongest partials on the key and its octave.
+- **Cross Bell**: VCO-1's triangle with VCO-2's sine an octave and a fifth up swinging its pitch at audio rate: clangorous partials over a soft strike that rings out.
+- **Cross Chime**: Read off the maker's 1981 factory patch sheet for the original's chime, every setting measured off the sheet's drawing to about half a step. VCO-1's triangle at 4' cross-modulated by VCO-2's saw an octave up, the four-pole shut at its foot and resonant, opened wholly by ENV-1 and following the keys fully: a bright chime that rings on.
+- **Digital Chime**: After the maker's sound-design article on bells and mallets for a 1985 polysynth of theirs: VCO-1's square at 8' cross-modulated by VCO-2's pulse at 4' three semitones up, the filter near 6.5 struck by a very short ENV-1 at full amount, the level falling over a few seconds. From the article: the waves, feet and interval, the cross-modulation, the cutoff, ENV-1's amount and the envelopes' shapes; estimated: the cross-modulation's depth and the times on this panel.
+- **Glass Chime**: VCO-2 reset by VCO-1 two octaves up, its pitch swept down by a quick envelope, ringing out: a glassy, high chime.
+- **Music Box**: VCO-1's triangle at 4' with VCO-2's sine two octaves over it, struck and dying fast, higher notes faster: a small music box.
+- **Steel Pan**: After the maker's sound-design article on bells and mallets for a 1985 polysynth of theirs: VCO-2 half a semitone off VCO-1, the filter at its foot with a large ENV-1 striking it open, a fall of a second or two. From the article: the detune, the shut filter, the envelope's amount and the fall; estimated: the cross-modulation and its conversion to the panel.
+- **Toy Mallet**: After the maker's sound-design article on bells and mallets for a 1985 polysynth of theirs: the chime with VCO-2 at 2', six semitones and a third up, and a shorter fall. From the article: the interval and the fall; estimated: the cross-modulation and the filter.
+- **Tubular Bell**: After the maker's sound-design article on bells and mallets for a 1985 polysynth of theirs: VCO-2's square nine and a half semitones up, reset by VCO-1 and heard alone, the filter near 7.5 struck by a quick ENV-1 at full amount, the keys following a little, the level falling over a few seconds. From the article: the waves, the interval, the sync, the mix, the cutoff, ENV-1's amount and the envelopes' shapes; estimated: the conversion of the times to this panel.
+- **Vibraphone**: After Paul McGeechan's vibraphone patch for the instrument in Electronics & Music Maker's Patchwork (1984): VCO-1's triangle at 8' and VCO-2's pulse, the cutoff and resonance just over their first marks, the two envelopes' decays a little apart, the LFO let in late on the filter. From the text: the waves, the feet, where the cutoff and resonance stand and the delayed LFO on the filter; estimated: every other value, since its chart could not be read.
+- **Xylophone**: Read off the maker's 1981 factory patch sheet for the original's xylophone, every setting measured off the sheet's drawing to about half a step. VCO-1's triangle and VCO-2's pulse at 2' synced to it, both pitches blipped by ENV-1, the two-pole struck open by ENV-1 and following the keys, the level falling fast, the higher keys faster.
+
+### Brass
+
+- **Brass Stab**: After Francesco Preve's sound-design article for the maker's software model of the original, on the maker's site: two saws a few cents apart, ENV-2 throwing the filter wide (amount about 7) from 3.4 with a quick attack and full sustain, and a hair of ENV-1 on VCO-1's pitch for a blip at the front. From the article: the saws, the detune, the cutoff, the envelope amount and ENV-2's times; estimated: the conversion of its scale to the panel's, and the blip's direction (here it rises; the article's falls, by an inverted ENV-1). Its echo is left out: the instrument has none.
+- **Fanfare Brass**: The saws behind a filter thrown wide at once and settling bright, the keys opening it further up: hard, brassy blasts for a fanfare.
+- **High Brass**: Read off the maker's 1981 factory patch sheet for the original's high brass, every setting measured off the sheet's drawing to about half a step. Two saws at 8', VCO-2 a little sharp, the four-pole half shut with the whole of ENV-1 rising over a third of a second and falling to under half: trumpets over the low brass.
+- **Horn Section**: A pulse and a saw apart by a few cents behind a filter that the first envelope swells open over a quarter of a second and lets settle, the level following a little behind: a section of horns.
+- **Low Brass**: Read off the maker's 1981 factory patch sheet for the original's low brass, every setting measured off the sheet's drawing to about half a step. Two saws at 16', VCO-2 a little sharp and a little louder, through the four-pole half shut with the whole of ENV-1 swelling it open: the instrument's own low brass.
+- **Random Brass**: Read off the maker's 1981 factory patch sheet for the original's sample-and-hold brass, every setting measured off the sheet's drawing to about half a step. The low brass with resonance, its cutoff stepped at random by the LFO's random wave once its delay has passed: brass that bubbles as it holds, from 1980s progressive rock.
+- **Soft Horns**: After Nick Magnus's analogue brass in Sound On Sound: the French horn as the brass made slower in attack and decay, with less of the envelope, more sustain and longer releases; here VCO-1's triangle under VCO-2's saw through a closed filter. The idea is the article's; every value is estimated.
+- **Swell Brass**: After Gordon Reid's brass patch for a classic monosynth in Sound On Sound's Synth Secrets: one saw at 4' behind a filter shut to its foot, a large envelope opening it over some 600 ms and falling over 800 ms to half, the keys following fully, the level rising in 100 ms. From the article: the saw at 4', the shut filter, the envelope's amount, times and sustain, the full key follow and the level's attack; estimated: the conversion of each to this panel and the little resonance.
+- **Sync Brass**: VCO-2 reset by VCO-1, the first envelope throwing its pitch up a little at each chord and falling back, under the brass's filter: brass with a hard, metallic bite.
+- **Synth Brass**: Read off the maker's 1981 factory patch sheet for the original's synth brass, every setting measured off the sheet's drawing to about half a step. Two saws at 16', VCO-2 a little sharp, through the two-pole shut low with some resonance and the whole of ENV-1 on it, opening in a few tens of milliseconds and falling back to a fifth, the level falling to some 60 %: the classic polysynth brass.
+
+### Chord
+
+- **Dance Stab**: A saw and a pulse an octave up, a bright resonant filter snapped shut in a tenth of a second: the off-beat stab of the 1980s dance floor.
+- **Detuned Stab**: The saws far apart with VCO-2 a fifth up and a little flat, a resonant two-pole and a quick fall: a sour, wide rave stab.
+- **Funk Pulse Chord**: Both pulses narrowed and swept by the first envelope as the filter snaps open: a tight, quacking funk comp.
+- **Inverted Funk Chord**: Read off the maker's 1981 factory patch sheet for the original's funk patch, every setting measured off the sheet's drawing to about half a step. A saw at 16' and one at 8' through the four-pole open and at full resonance, the inverted ENV-1 pulling it down at each chord and letting it back, a little LFO on it: a juicy, quacking funk comp.
+- **Poly Stab**: The saws through a resonant four-pole that the envelope flicks open, a short level: chords that punch and get out of the way.
+- **Pop Chord**: A pulse and a saw a few cents apart, a quick bright attack settling to a steady chord: the synth-pop rhythm part.
+- **Resonant Chord**: The two-pole high in resonance, the envelope sweeping it down through each chord: a vocal, wah-like comp.
+
+### FX
+
+- **Gong**: Read off the maker's 1981 factory patch sheet for the original's gong, every setting measured off the sheet's drawing to about half a step. Every voice on one key, VCO-1's pulse, its width swept by ENV-1, cross-modulated by VCO-2's sine five semitones up, the resonant four-pole pulled down by the inverted ENV-1, the level held and a long release: a struck gong.
+- **Laser Zap**: Both oscillators thrown three octaves up by the first envelope and falling within a moment: a laser zap.
+- **Random Spheres**: Read off the maker's 1981 factory patch sheet for the original's last patch, a cosmic effect, every setting measured off the sheet's drawing to about half a step. VCO-1's saw at 16' cross-modulated by VCO-2's pulse at its low range, its pitch stepped widely at random by the LFO, through the open four-pole with ENV-2 on it and a release that never ends: the music of the spheres.
+- **Ratchet Drone**: VCO-2 at its low range, a few hertz the keys do not move, swinging VCO-1's pitch: a held note that rattles and pulses like a machine.
+- **Space Drone**: VCO-1 at 32' and a detuned saw under a closed, resonant filter the LFO drifts open: a dark, slow drone for space.
+- **Unison Fifth Drone**: After the maker's article on six of their classic instruments: a saw and a pulse a fifth apart in unison, the width moved by the LFO at full, the two-pole half open with little resonance and the keys following, ENV-1 sweeping it slowly, the LFO let in late, a slow, sustained level. From the article: the waves, the fifth, the unison, the width's source, the slope, the cutoff, the key follow, the sweep and the LFO's delay; estimated: every value.
+- **Wind**: VCO-2's noise alone through a resonant filter the slow LFO sweeps up and down: wind across an open plain.
+
+### Init
+
+- **Init**: Both oscillators' saws, the second a few cents sharp, through the four-pole low-pass half open with its first envelope on the cutoff: where a sound is begun.
+
+### Keys
+
+- **Clav Keys**: Read off the maker's 1981 factory patch sheet for the original's electric clavichord, every setting measured off the sheet's drawing to about half a step. Two narrow pulses at 16' through the four-pole open and following the keys fully, the inverted ENV-1 closing it over each note, the level struck and falling to nothing: a funky comp, like an electric clavichord's.
+- **Mellow Tines**: Read off the maker's 1981 factory patch sheet for the original's mellow electric piano, every setting measured off the sheet's drawing to about half a step; estimated: VCO-2's interval, which the drawing leaves between 4' and 2', and the tremolo's depth, a step of four on the hardware. VCO-1's pulse with VCO-2's sine an octave and a sixth up, through a resonant four-pole at rest, the level struck and falling to a little, a tremolo on it, the higher keys shorter.
+- **Poly Keys**: A pulse and a saw an octave up, the filter struck open and falling, the level decaying under a held key: a bright comping keyboard.
+- **Soft Blip Keys**: Read off the maker's 1981 factory patch sheet for the original's mellow blip, every setting measured off the sheet's drawing to about half a step. Two saws at 8', VCO-2 blipped up by a short ENV-1, through the four-pole shut low with ENV-2 opening it as slowly as the level rises, the keys following fully: soft, round keys with a pitch blip at the front.
+- **Square Organ**: VCO-1's square under VCO-2's sine an octave up, the filter open and still, the level on and off with the key: a simple combo organ.
+- **Synth Piano**: VCO-1's triangle and a saw, struck bright and falling away like a piano string, the keys shortening the higher notes.
+- **Tine Keys**: VCO-1's triangle touched at audio rate by VCO-2's sine two octaves up, a struck bright edge fading to a pure tone: an electric piano's tines.
+
+### Lead
+
+- **Breathy Unison Lead**: After Syntorial's recipe for the lead of a 1984 synth-pop single credited to the original: a saw in unison spread some twelve cents, noise beside it at some 40 %, the low-pass near 7.5 with a little resonance, a slow vibrato of some 28 cents, full sustain and a release near a second. From the recipe: the saw, the unison and its spread, the noise, the cutoff, the resonance, the vibrato and the level's times; estimated: their conversion to the panel.
+- **Chip Unison Lead**: After Reverb Machine's breakdown of a 2010 film score's chiptune lead on an emulation of the instrument: a square in unison, a little spread, the filter wide open. From the breakdown: the square, the unison and the open filter; estimated: the spread and the envelopes.
+- **Cross-Mod Lead**: VCO-2's sine an octave down swinging VCO-1's pitch both ways at audio rate, VCO-1 heard alone through a resonant filter: a gritty, buzzing lead with a growl under it.
+- **Fifths Lead**: Read off the maker's 1981 factory patch sheet for the original's fifths patch, for a lead or a bass, every setting measured off the sheet's drawing to about half a step. Two pulses at 16' a fifth apart, their width swung by the LFO, through the two-pole shut low, high in resonance and opened wholly by ENV-1, the keys following fully. VCO-2's fine is set to play the fifth in tune.
+- **Fusion Poly Lead**: Read off the maker's 1981 factory patch sheet for the original's jazz-fusion lead, every setting measured off the sheet's drawing to about half a step. Two pulses at 16', their width swept by ENV-1, through the four-pole shut low and opened wholly by ENV-1, falling to a high sustain, played poly so a line can hold its chords; the bender bends the filter more than the pitch, as the sheet says.
+- **Fuzz Lead**: After Gordon Reid's fuzz-guitar patch in Sound On Sound's Synth Secrets: a narrow pulse beside a saw, the width following the envelope as each note dies down, played solo. From the article: the pulse and the saw, and the width on the envelope; estimated: every value.
+- **Glide Saw Lead**: Two saws played solo with a long portamento between the notes and a filter the envelope pushes open: the classic gliding analog lead.
+- **Negative Sync**: Read off the maker's 1981 factory patch sheet for the original's first patch, a sync lead with ENV-1 turned over, every setting measured off the sheet's drawing to about half a step; estimated: the assign mode, unison as the sheet suggests for a lead. VCO-2's pulse at 4' reset by VCO-1's at 16', a slow LFO let in late swinging it widely, the four-pole open and resonant and pulled down by the inverted ENV-1 at each note: a surging, vocal lead.
+- **New Wave Sync**: Read off the maker's 1981 factory patch sheet for the original's sync patch named for a 1979 new-wave single, every setting measured off the sheet's drawing to about half a step. Every voice on one key, VCO-2's pulse at 16' alone, reset by VCO-1's square and thrown far up by a long ENV-1, through the two-pole with ENV-2 on it, the level falling slowly under a held key: the bright, sweeping sync riff of new wave.
+- **Octave Unison Riff**: After Reverb Machine's breakdown of a 2010 film score's riff on an emulation of the instrument: every voice in unison, two saws an octave apart with the lower louder, a middling resonance and a decay of some ten seconds. From the breakdown: the unison, the octave and the balance, the resonance and the decay; estimated: the cutoff, the envelope's amount and their conversion to the panel.
+- **Pulse Glide Lead**: After Syntorial's recipe for a famous 1980s film-theme lead credited to the original: a narrow pulse played solo with a touch of portamento, its width moved by the LFO at some 2 Hz, two oscillators four cents apart, the filter open near 8.5, a quick attack and a short release. From the recipe: the pulse, its width moved by the LFO and how much, the detune, the cutoff and the level's times; estimated: their conversion to the panel and the glide. Its echo is left out.
+- **Soft Sine Lead**: VCO-1's triangle and VCO-2's sine, a vibrato that waits before it starts: a soft, flute-like solo voice.
+- **Sync Lead**: Read off the maker's 1981 factory patch sheet for the original's sync lead, every setting measured off the sheet's drawing to about half a step. Every voice on one key, two saws at 16', VCO-2 reset by VCO-1 and thrown up by ENV-1 deeply and falling back, the two-pole open with some resonance and following the keys fully: the tearing sync lead.
+- **Sync Sweep Lead**: Read off the maker's 1981 factory patch sheet for the original's sync sweep, every setting measured off the sheet's drawing to about half a step; estimated: VCO-2's interval, which the drawing leaves between five and six semitones. Every voice on one key, VCO-2's pulse reset by VCO-1's saw at 16' and swung widely by a slow LFO let in late and by ENV-1, the LFO moving the width and the resonant four-pole too: a wailing lead that never sits still. The bender sweeps VCO-2 alone, as the sheet says.
+- **Unison Lead**: Every voice on one key, the saws spread apart, a little glide and a resonant filter: a huge, thick lead.
+- **Wah Lead**: The two-pole high in resonance, swept up by the envelope at each note and falling back: a vocal, wah-wah lead.
+
+### Pad
+
+- **Choir Pad**: VCO-1's triangle and VCO-2's sine, slightly apart, through the high-pass and a resonant two-pole between them, with a delayed vibrato: soft voices singing 'ooh'.
+- **Dark Pad**: VCO-1's square at 16' under VCO-2's saw, the four-pole nearly shut: a deep, dark bed that sits under everything.
+- **Hollow Pad**: After Francesco Preve's sound-design article for the maker's software model of the original, on the maker's site: VCO-1's square and VCO-2's pulse ten cents apart, the LFO moving the width a little, ENV-1 holding VCO-1 a shade sharp, the filter open near 7.3, a slow attack of ENV-2 and a long release. From the article: the waves, the detune, ENV-1's shape and its small pull on VCO-1, the width's source, the cutoff and ENV-2's times; estimated: their conversion to the panel, the LFO's rate and the filter's envelope, left off.
+- **Night Pad**: The saws behind a closed filter that a slow LFO drifts, the attack and the release both several seconds long: a slow, distant pad for film and ambient music.
+- **Pulse Swell Pad**: After Syntorial's recipe for the keys of a 2016 television theme credited to the original: a thin pulse at 4', two oscillators apart, a resonant band of some 900 Hz that follows the keys fully and a slow LFO on it, swelling in over five seconds and cut off short. From the recipe: the pulse at 4', the band's corner and resonance, the key follow, the LFO on the cutoff and the level's times; estimated: the band made of the high-pass and the low-pass, and their conversion to the panel.
+- **PWM Pad**: Both oscillators' pulses, their width swung by the slow LFO, through a soft filter: a shimmering, moving pad.
+- **Rising Pad**: The filter shut at each chord and opened by an envelope that takes seconds to arrive: a pad that rises out of the dark as it is held.
+- **Slow Strings**: VCO-1's pulse, its width swung by the LFO, under VCO-2's saw a little sharp, slow to swell and slow to let go.
+- **Smooth Pad**: After Francesco Preve's sound-design article for the maker's software model of the original, on the maker's site: both saws, even in the mix and a few cents apart, the filter well open with a little of ENV-2 on it, ENV-2 slow in at about 4 and out at about 5. From the article: the saws, the mix, the detune, the cutoff, the envelope's source and amount and its times; estimated: their conversion to the panel.
+- **Sweep Pad**: The saws through a resonant filter that the slow LFO sweeps up and down: a pad that breathes in and out.
+- **Verse Pad**: After MusicRadar's walkthrough of the synths of a famous 1983 pop album: two detuned saws through a low-pass near 650 Hz, a little LFO on one oscillator for a chorus-like drift. From the article: the saws, the cutoff and the LFO on one oscillator; estimated: the detune, the LFO's rate and depth and the envelopes.
+- **Warm Pad**: Two saws apart by some fifteen cents behind a closed four-pole, slow in and slow out: a warm, wide bed.
+
+### Percussion
+
+- **Synth Cowbell**: After Gordon Reid's cowbell in Sound On Sound's Synth Secrets: two square-ish tones some 6.3 semitones apart through a band near 2.6 kHz, with a short fall. From the article: the two tones and their ratio, the band's place and the short envelope; estimated: the band made of the high-pass and the two-pole, and every value on this panel.
+- **Timpani**: After Gordon Reid's timpani in Sound On Sound's Synth Secrets: tones near a fifth apart, struck with no attack and falling as long when let go as when held, a darker strike under it. From the article: the fifth and the envelope's shape; estimated: the rest. Its other partials and its ring-modulated layer are left out: the instrument has two oscillators.
+
+### Pluck
+
+- **Anthem Pluck**: After Francesco Preve's sound-design article for the maker's software model of the original, on the maker's site, on the pluck of a famous 1983 rock anthem: two saws a few cents apart through a filter open near 7.3 with a little of ENV-1, both envelopes falling to nothing over half a second or so. From the article: the saws, the detune, the cutoff, ENV-1's amount and both envelopes' times; estimated: their conversion to the panel.
+- **Inverted Pluck**: Read off the maker's 1981 factory patch sheet for the original's pluck with ENV-1 turned over, every setting measured off the sheet's drawing to about half a step. VCO-1's pulse at 16' with VCO-2's sine under it, the width moved by ENV-1, the four-pole open and resonant, pulled down by the inverted ENV-1 a quarter of a second into each note and let back as it decays: a plucked wah against a bright, held tone.
+- **Jazz Guitar**: After Gordon Reid's jazz-guitar patch in Sound On Sound's Synth Secrets: a pulse of some 25 %, the filter and the level on one envelope, no attack, a decay near 6.5 and a sustain near 4. From the article: the pulse and the envelope; estimated: the filter and its conversion to the panel.
+- **Koto Pluck**: A narrow pulse through the two-pole high in resonance, snapped open and ringing down: a koto-like plucked string.
+- **Picked Guitar**: After Gordon Reid's electric-guitar patch in Sound On Sound's Synth Secrets: a pulse louder than a saw beside it, both envelopes falling to nothing, the filter's sooner than the level's. From the article: the pulse and the saw and their balance, the envelopes' shapes; estimated: every value on this panel.
+- **Pizzicato**: The ensemble's saws plucked short through a soft filter: plucked strings.
+- **Pop Pulse Pluck**: After Syntorial's recipe for the pluck of a 1982 synth-pop single thought to be the original: a pulse, two oscillators three cents apart, a low cutoff the keys follow half way, a quick filter envelope of some 100 ms and a level falling in some 230 ms. From the recipe: the pulse, the detune, the key follow, the envelopes' shapes and times; estimated: the cutoff and the envelope's amount on this panel. Its echo is left out.
+- **Resonant Unison Pluck**: After Reverb Machine's breakdown of a 2010 film score's pluck on an emulation of the instrument: unison, the low-pass near 100 Hz high in resonance with a little envelope, a decay of some four seconds. From the breakdown: the unison, the cutoff, the resonance, the small envelope and the decay; estimated: their conversion to the panel.
+- **Synth Pluck**: Two saws, the filter struck open by the envelope and shut again within a moment: the plain synth pluck.
+
+### Sequence
+
+- **Arpeggio Bass**: The arpeggiator up an octave in sixteenths through a low chord, each step a short pulse bass: a driving sequenced bassline from held chords.
+- **Falling Arpeggio**: The arpeggiator down three octaves in sixteenths, each step a bright saw pluck.
+- **Random Arpeggio**: The arpeggiator picking the chord's notes at random over two octaves in sixteenths, each a soft, bell-like ping: a twinkling texture.
+- **Rising Arpeggio**: The arpeggiator up and down three octaves through the keys held, each note a square and a saw an octave over it, plucked bright.
+- **Soft Arpeggio**: The arpeggiator up and down two octaves in eighths, each step a soft triangle with a gentle release: a calm, lilting pattern for a ballad.
+- **Sweeping Arpeggio**: The arpeggiator up two octaves in sixteenths through the two-pole high in resonance, a slow LFO sweeping the cutoff under it: a sequence that opens and closes.
+- **Sync Arpeggio**: The arpeggiator up two octaves in sixteenths, each step VCO-2 reset by VCO-1 and swept down by the envelope: a zapping, metallic sequence.
+- **Synth-Pop Arpeggio**: The arpeggiator up two octaves in sixteenths with the song, each step a pulse plucked through a resonant filter: the chiming arpeggio of early 1980s synth-pop.
+- **Synthwave Arpeggio**: After MusicRadar's walkthrough of an arpeggio in the original's style on an emulation of the instrument: the arpeggiator up and down, VCO-1's pulse a little narrow, VCO-2's saw an octave up and quieter, the filter near 300 Hz with a little resonance, ENV-1 short with a little sustain, a hair of slow LFO on VCO-2. From the article: the mode, the waves, the width, the octave, the mix, the cutoff, the envelope's shape and the LFO; estimated: the range, the rate in time with the song and their conversion to the panel.
+- **Triplet Arpeggio**: The arpeggiator up and down two octaves in eighth-note triplets, each step a square plucked bright.
+
+### Split
+
+- **Arpeggio and Strings**: Split at G under middle C: the arpeggiator runs the bass notes up two octaves in sixteenths as plucks, the string ensemble held over them.
+- **Bass and Brass**: One of the factory setups listed on the maker's 1981 patch sheets for the original: the upright bass under the split and the synth brass over it, each read off its sheet (the panel's settings were measured off the sheet's drawing, to about half a step; estimated: the split point, at G under middle C).
+- **Bass and Pad**: Split at G under middle C: the warm pad over it and a round square bass under it.
+- **Bass and Strings**: Split at G under middle C: the strings over it and a plucked bass under it, each patch on four voices.
+- **Brass over Strings**: Dual: both patches on every key, the synth brass's swell over the strings' slow bed.
+- **Lead over Bass**: Split at G under middle C: a bright sync lead over it and a plucked bass under it, for playing a line and its bass at once.
+- **Octave Brass Layer**: After Nick Magnus's analogue brass in Sound On Sound, where a big-band section is the brass with a second layer an octave up: dual, the synth brass on the upper patch and the lower an octave over it, a little quicker and quieter. The layering is the article's; the values are estimated.
+- **Organ and Bass**: Split at G under middle C: a square-and-octave organ over it, gated, and a round bass under it.
+- **Pluck and Pad**: Dual: a bright pluck strikes each chord and dies away while a slow pad swells in under it.
+- **Strings and Bell**: Dual: the string ensemble with a gently cross-modulated chime struck on each key, ringing over the bow. Deeper, the cross-modulation would raise the chime a semitone over the strings.
+- **Strings and Tines**: A dual pairing suggested on the maker's 1981 factory patch sheet for the low strings: the low strings over the mellow electric piano on every key, each read off its sheet (the settings were measured off the drawings, to about half a step; estimated: the balance).
+
+### Strings
+
+- **Bright Strings**: After Francesco Preve's sound-design article for the maker's software model of the original, on the maker's site: VCO-1 at 4' and VCO-2's pulse an octave over the keys, six cents sharp, the width set a little by hand, the high-pass near 3 and the low-pass open near 8.4, ENV-2 bowing in slowly and letting go slowly. From the article: the feet, the waves, the detune, the width, both filters and ENV-2's times; estimated: their conversion to the panel. Its chorus is left out: the instrument has none.
+- **Chamber Strings**: After Nick Magnus's string patches in Sound On Sound, where the eight-voice polysynth's strings are two saws with a fast vibrato of some 8 Hz on one: VCO-2 shaken by the LFO through the two-pole with a touch of resonance and a gentle bow. From the article: the two saws and the vibrato's rate and target; estimated: the rest.
+- **High Strings**: Read off the maker's 1981 factory patch sheet for the original's high strings, every setting measured off the sheet's drawing to about half a step. A saw and a pulse at 4', VCO-2 a little sharp, the LFO swinging the width and VCO-1's pitch, through the two-pole well open with some of ENV-2: the violins over the low strings.
+- **Low Strings**: Read off the maker's 1981 factory patch sheet for the original's low strings, its best-known string sound, every setting measured off the sheet's drawing to about half a step; estimated: VCO-1's vibrato, drawn near 1.5 and set at 1 here, where the model's depth law is steeper at its foot. A saw and a pulse at 16', VCO-2 a little sharp, the LFO swinging the width and VCO-1's pitch, through the two-pole open with ENV-1 on it, both envelopes slow and shorter higher up.
+- **Mellow Strings**: Read off the maker's 1981 factory patch sheet for the original's mellow strings, every setting measured off the sheet's drawing to about half a step; estimated: VCO-1's vibrato, drawn near 2 and set at 1.2 here, where the model's depth law is steeper at its foot. A saw and a pulse at 8', the LFO swinging the width and VCO-1's pitch, through the two-pole open and still: a soft section.
+- **PWM Strings**: After Gordon Reid's string-machine patch on a Japanese polysynth in Sound On Sound's Synth Secrets: both oscillators' pulses swept from square to thin by the LFO, close in pitch, VCO-2 an octave down, the filter half shut with no envelope and some key follow, the level a slow trapezoid. From the article: the pulses and their sweep, the octave, the filter and the trapezoid; estimated: the values. Its random LFO on VCO-1 is left out: the instrument has one LFO, here on the width.
+- **Solo Violin**: After Gordon Reid's bowed-string patch in Sound On Sound's Synth Secrets: a saw at 4' with the low-pass lowered and the high-pass raised, a slow bow, a vibrato of some 6 Hz that waits before it comes in, and a glide just off its foot, played solo. From the article: the saw at 4', the two filters' directions, the attack, the delayed vibrato and the glide; estimated: the values. Its formants are left out: the instrument has no band filters.
+- **String Ensemble**: After Gordon Reid's string patch on a later eight-voice polysynth in Sound On Sound's Synth Secrets: two saws at 8', VCO-2 four cents flat, a light LFO on VCO-1, the low-pass near 4.7 with a little of ENV-1 and the keys following, ENV-1 at 1.5/0/9.9/3.9 and ENV-2 at 4.5/0/9.9/5.4, and a second copy layered detuned: here the lower patch in dual, eight cents the other way. From the article: the waves, the detune, the filter, both envelopes and the layer; estimated: the LFO's rate and depth on this panel, the layer's detune. Its chorus is left out.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| LFO rate | 0 to 10 | 5 |
+| LFO delay | 0 to 10 | 0 |
+| LFO waveform | Sine, Saw, Square, Random | Sine |
+| VCO mod LFO | 0 to 10 | 0 |
+| VCO mod ENV-1 | 0 to 10 | 0 |
+| VCO mod to | VCO-1, VCO-1 & 2, VCO-2 | VCO-1 & 2 |
+| Cross mod | 0 to 10 | 0 |
+| VCO-1 range | 64', 32', 16', 8', 4', 2' | 8' |
+| VCO-1 waveform | Triangle, Saw, Pulse, Square | Saw |
+| Sync | Off, VCO-1 to 2, VCO-2 to 1 | Off |
+| VCO-2 coarse | -12 semitones to 24 semitones | 0 semitones |
+| VCO-2 fine | -100 cents to 100 cents | 6 cents |
+| VCO-2 low frequency | Off, On | Off |
+| VCO-2 waveform | Sine, Saw, Pulse, Noise | Saw |
+| Pulse width | 0 to 10 | 0 |
+| Pulse width by | ENV-1, Manual, LFO | Manual |
+| Source mix | 0 to 10 | 5 |
+| High-pass | 0 to 10 | 0 |
+| Cutoff | 0 to 10 | 6 |
+| Resonance | 0 to 10 | 0 |
+| Slope | 12 dB, 24 dB | 24 dB |
+| VCF envelope | 0 to 10 | 3 |
+| VCF envelope from | ENV-1, ENV-2 | ENV-1 |
+| VCF LFO | 0 to 10 | 0 |
+| VCF key follow | 0 to 10 | 3 |
+| VCA level | 0 to 10 | 10 |
+| VCA LFO | 0 to 10 | 0 |
+| ENV-1 attack | 0 to 10 | 0 |
+| ENV-1 decay | 0 to 10 | 4 |
+| ENV-1 sustain | 0 to 10 | 3 |
+| ENV-1 release | 0 to 10 | 3 |
+| ENV-1 key follow | Off, On | Off |
+| ENV-1 polarity | Normal, Inverted | Normal |
+| ENV-2 attack | 0 to 10 | 0 |
+| ENV-2 decay | 0 to 10 | 4 |
+| ENV-2 sustain | 0 to 10 | 10 |
+| ENV-2 release | 0 to 10 | 3 |
+| ENV-2 key follow | Off, On | Off |
+| Key mode | Whole, Dual, Split | Whole |
+| Split point | 24 to 108 | 60 |
+| Balance | -5 to 5 | 0 |
+| Assign mode | Solo, Unison, Poly 1, Poly 2 | Poly 1 |
+| Hold | Off, On | Off |
+| Portamento | 0 to 10 | 0 |
+| Portamento on | Off, On | Off |
+| Unison detune | 0 to 10 | 2 |
+| Bender to VCO-1 | Off, On | On |
+| Bender to VCO-2 | Off, On | On |
+| Bender VCO range | 0 semitones to 24 semitones | 2 semitones |
+| Bender to VCF | 0 to 10 | 0 |
+| Bender | -1 to 1 | 0 |
+| Mod lever to VCO | 0 to 10 | 3 |
+| Mod lever to VCF | 0 to 10 | 0 |
+| Mod lever | 0 to 1 | 0 |
+| Arpeggiator | Off, On | Off |
+| Arpeggiator mode | Up, Down, Up & down, Random | Up |
+| Arpeggiator range | 1, 2, 3, 4 | 1 |
+| Arpeggiator rate | 0 to 10 | 5 |
+| Arpeggiator clock | Free, Tempo | Free |
+| Master tune | -5 to 5 | 0 |
+| Volume | 0 to 10 | 7 |
+| Quality | Light, Full | Full |
+| Lower LFO rate | 0 to 10 | 5 |
+| Lower LFO delay | 0 to 10 | 0 |
+| Lower LFO waveform | Sine, Saw, Square, Random | Sine |
+| Lower VCO mod LFO | 0 to 10 | 0 |
+| Lower VCO mod ENV-1 | 0 to 10 | 0 |
+| Lower VCO mod to | VCO-1, VCO-1 & 2, VCO-2 | VCO-1 & 2 |
+| Lower Cross mod | 0 to 10 | 0 |
+| Lower VCO-1 range | 64', 32', 16', 8', 4', 2' | 8' |
+| Lower VCO-1 waveform | Triangle, Saw, Pulse, Square | Saw |
+| Lower Sync | Off, VCO-1 to 2, VCO-2 to 1 | Off |
+| Lower VCO-2 coarse | -12 semitones to 24 semitones | 0 semitones |
+| Lower VCO-2 fine | -100 cents to 100 cents | 6 cents |
+| Lower VCO-2 low frequency | Off, On | Off |
+| Lower VCO-2 waveform | Sine, Saw, Pulse, Noise | Saw |
+| Lower Pulse width | 0 to 10 | 0 |
+| Lower Pulse width by | ENV-1, Manual, LFO | Manual |
+| Lower Source mix | 0 to 10 | 5 |
+| Lower High-pass | 0 to 10 | 0 |
+| Lower Cutoff | 0 to 10 | 6 |
+| Lower Resonance | 0 to 10 | 0 |
+| Lower Slope | 12 dB, 24 dB | 24 dB |
+| Lower VCF envelope | 0 to 10 | 3 |
+| Lower VCF envelope from | ENV-1, ENV-2 | ENV-1 |
+| Lower VCF LFO | 0 to 10 | 0 |
+| Lower VCF key follow | 0 to 10 | 3 |
+| Lower VCA level | 0 to 10 | 10 |
+| Lower VCA LFO | 0 to 10 | 0 |
+| Lower ENV-1 attack | 0 to 10 | 0 |
+| Lower ENV-1 decay | 0 to 10 | 4 |
+| Lower ENV-1 sustain | 0 to 10 | 3 |
+| Lower ENV-1 release | 0 to 10 | 3 |
+| Lower ENV-1 key follow | Off, On | Off |
+| Lower ENV-1 polarity | Normal, Inverted | Normal |
+| Lower ENV-2 attack | 0 to 10 | 0 |
+| Lower ENV-2 decay | 0 to 10 | 4 |
+| Lower ENV-2 sustain | 0 to 10 | 10 |
+| Lower ENV-2 release | 0 to 10 | 3 |
+| Lower ENV-2 key follow | Off, On | Off |

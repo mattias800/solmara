@@ -1,0 +1,38 @@
+---
+title: "Tube Leveling Amp"
+description: "Valve leveling amplifier in the style of the 1990s American racks: smooth one-knob leveling whose release follows the program, a saturation knob, for vocals, bass and buses."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/tube-leveling-amp.webp';
+
+**An emulation of an analogue original,** modelled on the 1990s American valve leveling amplifier.
+
+A modelled American valve leveling amplifier of the 1990s: one knob sets how much and how hard, its ratio growing with the reduction; three attacks and releases, the slower ones following the program; a valve after the cell whose headroom the saturation knob moves, a low cut on the input or the detector, a parallel mix. At four times the sample rate.
+
+[Tube Leveling Amp on the website](/solmara/effects/#tube-leveling-amp)
+
+## In the device chain
+
+Tube Leveling Amp on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Tube Leveling Amp in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Gain Reduction | 0 to 10 | 0 |
+| Gain | -80 dB to 33.5 dB | 0 dB |
+| Attack | Fast, Medium, Slow | Medium |
+| Release | Fast, Medium, Slow | Medium |
+| Low Cut | 0 Hz to 600 Hz | 0 Hz |
+| Low Cut On | Input, Detector | Detector |
+| Saturation | -10 to 10 | 0 |
+| Parallel | 0% to 100% | 0% |
+| Quality | Light, Standard | Standard |

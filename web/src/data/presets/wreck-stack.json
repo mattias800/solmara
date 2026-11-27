@@ -1,0 +1,57 @@
+[
+ {
+  "name": "Clean, Bright",
+  "category": "Amp",
+  "description": "The clean channel in Modern with the gain at a third and the treble and presence up: a clear top for picked notes and funk chords, with the speaker's load left on the lows. Its peaks stand high over its level, as a clean guitar's do. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Clean, Pushed",
+  "category": "Amp",
+  "description": "The clean channel in Vintage with the gain past its middle: a full, loose crunch with its lows kept, where the lead channel would be tight and bright. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Clean, Warm",
+  "category": "Amp",
+  "description": "The clean channel in Raw with the gain under its middle and the master at its top: full lows and a soft top that stays clean under chords and rounds off when a string is hit hard. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Crunch, Raw",
+  "category": "Amp",
+  "description": "Raw, with the gain under its middle: chords that are gritty played softly and break up when they are hit. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Edge of Breakup",
+  "category": "Amp",
+  "description": "Raw, with the gain low and the master up: clean when played softly and gritty when dug into. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Full Gain",
+  "category": "Amp",
+  "description": "Modern, with the gain nearly at its top and the presence held back: the most lows and the least top of the modern ones, and a soft note comes out as loud as a hard one. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Lead, Singing",
+  "category": "Amp",
+  "description": "Vintage, with the gain and the mid well up and the presence at its top, for single notes: one played softly comes out as loud as one played hard. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Scooped Rhythm",
+  "category": "Amp",
+  "description": "Modern, with the mid at 0 and the bass and treble up: some 5 dB less around 500 Hz, for heavy chords under a band. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Thick and Dark",
+  "category": "Amp",
+  "description": "Vintage, with the treble down and the presence at its middle: full lows and a soft top, for slow, heavy chords. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Tight Rhythm",
+  "category": "Amp",
+  "description": "Modern, with the gain past its middle and the bass held back: some 3 dB less under 100 Hz than with the knobs at noon, for fast, muted playing. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Vintage Rhythm",
+  "category": "Amp",
+  "description": "Vintage, where the power stage's feedback evens the lows and the top out, with the presence at its top to let the highs through: more middle and less boom than modern. Put a cabinet after it, such as Boxed Twelves."
+ }
+]

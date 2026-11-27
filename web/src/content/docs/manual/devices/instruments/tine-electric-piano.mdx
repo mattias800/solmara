@@ -1,0 +1,68 @@
+---
+title: "Tine Electric Piano"
+description: "Tine electric piano in the style of the 1970s American suitcase pianos: bell-like ballads to barking funk, with stereo tremolo."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/tine-electric-piano.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s American tine electric piano in its suitcase cabinet, with its stereo vibrato.
+
+A modelled tine electric piano of the 1970s, built from how it makes its sound and held to a reference by measurement: a felt hammer strikes a steel tine on its tone bar, which rings as a few modes in front of an electromagnetic pickup whose flux bends what it hears, a bell when played softly and a bark when played hard; a damper on each key, the sustain pedal, and the key's and the damper's knock. The stage model's passive output, or the suitcase model's preamp, bass and treble, stereo tremolo, amplifier and speakers. 32 tines sound at once.
+
+[Tine Electric Piano on the website](/solmara/instruments/tine-electric-piano/)
+
+## In the device chain
+
+Tine Electric Piano on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Tine Electric Piano in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+20 factory presets come with Tine Electric Piano. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Ballad Bell**: The tines near the poles and the pickups set back, so it rings as a soft bell under a gentle touch and brightens only when struck hard: for ballads and slow chords.
+- **Bright Pop**: Hard tips, the pickups a little close and the tone wide open: a clear, cutting stage piano for a pop chorus.
+- **Dark Room**: The suitcase's treble all the way down and its bass up, felt-soft hammers: a muffled piano heard through a wall.
+- **Driven Suitcase**: The preamp pushed and the pickups close: the suitcase breaking up on hard chords, with a slow tremolo.
+- **Fast Pan**: The suitcase's tremolo fast and deep: each chord thrown from speaker to speaker.
+- **Funk Bark**: The pickups close and the tines off the poles, with hard hammers: it growls when you dig in and stays round when you play softly.
+- **Funk Staccato**: Hard hammers, the dampers tight and the keys' knock up: short, percussive funk chords that bite.
+- **Gospel Bark**: The pickups close, the bark nearly full and the bass boosted: a big stage piano that roars on hard chords.
+- **Hard Tips**: The hammers at their hardest, the pickups halfway and the dampers set light: a glassy strike whose chords ring on after the keys let go.
+- **Init Stage**: The stage as it comes: the harp straight out of its passive output, no bass boost.
+- **Init Suitcase**: The suitcase as it comes: the harp through the preamp, flat, the tremolo still, the speakers.
+- **Jazz Mellow**: The stage with soft tips and the tone rolled back a little, the bass boosted: round and warm, for comping close voicings.
+- **Lo-Fi Dusty**: The treble rolled off, the keys and dampers loud and a lazy tremolo: a worn, dusty piano for a beat.
+- **Long Ring**: The dampers set light, so each chord rings on after the keys let go, the tines near their poles: an open, sustaining bell.
+- **Neo Soul**: The pickups a little close and the bark up, the bass full and a slow tremolo: warm chords that growl when played harder.
+- **Rock Overdrive**: The suitcase's preamp driven hard, the hardest hammers and the pickups close: a distorted piano for a rock band.
+- **Seventies Stage**: The pickups set halfway, the hammers medium and the bass boosted a little: the full, even stage piano of a seventies soul record.
+- **Slow Swirl**: A slow, deep tremolo and medium hammers: held chords that drift across the speakers.
+- **Soft Ballad**: Medium-soft hammers and a touch of bark through the suitcase, the bass up and a slow, shallow tremolo: warm chords under a singer.
+- **Suitcase Vibrato**: The suitcase's stereo vibrato at a medium speed, panning each chord across the two speakers.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Model | Stage, Suitcase | Suitcase |
+| Pickup position | 0 to 10 | 6 |
+| Bark | 0 to 10 | 6.2 |
+| Hammer hardness | 0 to 10 | 4.5 |
+| Damper | 0 to 10 | 9.66 |
+| Key noise | 0 to 10 | 3 |
+| Damper noise | 0 to 10 | 3 |
+| Volume | 0 to 10 | 7 |
+| Bass | 0 to 10 | 5 |
+| Treble | 0 to 10 | 5 |
+| Drive | 0 to 10 | 3 |
+| Tremolo rate | 0 to 10 | 5 |
+| Tremolo depth | 0 to 10 | 0 |
+| Tune (cents) | -50 to 50 | 0 |

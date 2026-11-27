@@ -1,0 +1,39 @@
+---
+title: "Pitch Correction"
+description: "Pitch correction: tunes a voice to the scale, natural or hard."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/pitch-correction.webp';
+
+**A design of Solmara's own.**
+
+Corrects a voice's pitch as it plays: the pitch is heard every 5 ms and moved to the nearest note of the project's scale guide, or of a scale chosen here. The retune speed is how fast it gets there: at 0 the voice jumps from note to note and its vibrato is gone, the effect known from records; at 50 to 100 ms it sounds sung in tune, its scoops and vibrato kept. Humanize retunes a held note more slowly, amount corrects part of the way, transpose and formant move the voice and its vowels' colour, and detune aims at another tuning than A 440. The voice is made again a period at a time (TD-PSOLA), which keeps its tone; where no pitch is heard it passes as it came. For one voice at a time: a vocal, a lead, a bass line. It plays 30 to 60 ms late, by its range, which the mix makes up for.
+
+[Pitch Correction on the website](/solmara/effects/#pitch-correction)
+
+## In the device chain
+
+Pitch Correction on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Pitch Correction in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Scale | 15 choices: Scale guide, Major, Minor, Dorian, … | Scale guide |
+| Key | 12 choices: C, C#, D, D#, … | C |
+| Retune speed | 0 ms to 400 ms | 20 ms |
+| Humanize | 0% to 100% | 0% |
+| Amount | 0% to 100% | 100% |
+| Transpose | -12 semitones to 12 semitones | 0 semitones |
+| Formant | -6 semitones to 6 semitones | 0 semitones |
+| Detune | -50 cents to 50 cents | 0 cents |
+| Mix | 0% to 100% | 100% |
+| Range | High voice, Voice, Low voice | Voice |

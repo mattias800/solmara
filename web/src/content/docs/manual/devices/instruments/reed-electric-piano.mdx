@@ -1,0 +1,64 @@
+---
+title: "Reed Electric Piano"
+description: "Reed electric piano in the style of the 1960s American classroom pianos: bell-like and nasal, barking when played hard, with tremolo."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/reed-electric-piano.webp';
+
+**An emulation of an analogue original,** modelled on the 1960s American reed electric piano of classrooms and soul records.
+
+A modelled reed electric piano of the late 1960s and the 1970s, built from its physics: a felt hammer strikes a steel reed tuned by the solder at its tip, which rings in its three bending modes, far from harmonic, the harder the strike the brighter. Each reed swings through the slot of a charged comb, a capacitor whose bell-shaped law turns a hard-struck key's swing into its bark. A preamp that clips softly and unevenly, the instrument's tremolo through a lamp and a photoresistor, a tone, and its small speakers or the line out. Dampers on all but the top keys, the sustain pedal (CC 64), and the keys' thump.
+
+[Reed Electric Piano on the website](/solmara/instruments/reed-electric-piano/)
+
+## In the device chain
+
+Reed Electric Piano on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Reed Electric Piano in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+18 factory presets come with Reed Electric Piano. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Ballad Tremolo**: The instrument's own tremolo at its usual rate, soft felt, played softly through its speakers.
+- **Barking Stage**: Reeds close to the pickup and hard felt: soft keys round, hard keys growl.
+- **Distant Felt**: Soft, short and wobbling: a worn instrument in the next room.
+- **Even Touch**: Every strike at the same level; the bite still follows the touch.
+- **Fast Throb**: A deep, quick tremolo, as from a speeded-up oscillator.
+- **Felt Soft**: Mellow and even: soft felt, the reeds far from the pickup, the tone down.
+- **Glassy Top**: The tone at its top over firm felt: a glassy, ringing upper end.
+- **Gritty Line**: The line out with the pickup at its nearest and hard felt, for an amplifier to push.
+- **Hard Hammers**: The hardest felt: every key bites, even played softly.
+- **Init**: The instrument as it comes: its own speakers, the tremolo off, the voicing at its default.
+- **Knocky Keys**: The keys' thump turned up under soft felt: the mechanism heard.
+- **Line Out Dry**: The preamp's line out with no key noise and softer felt, round, for an amplifier or effects after it.
+- **Long Ring**: Reeds that ring long and soft dampers, for held chords.
+- **Muted Line**: The line out with the darkest felt and tone: a muffled, close sound.
+- **Pop Bark**: Near pickup, firm felt and a light, quick tremolo: the pop record sound.
+- **Short Plucks**: Reeds that die quickly and dampers that bite: short, percussive notes.
+- **Slow Wobble**: A slow, deep swell of the tremolo under dark felt.
+- **Wide Dynamics**: Velocity's reach at its widest: a whisper to a shout.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Volume | 0 to 10 | 7 |
+| Tremolo depth | 0 to 10 | 0 |
+| Tremolo rate | 1 Hz to 15 Hz | 6.1 Hz |
+| Tone | 0 to 10 | 5.8 |
+| Hardness | 0 to 10 | 4.2 |
+| Bark | 0 to 10 | 5.8 |
+| Dynamics | 0 to 10 | 2.72 |
+| Decay | 0 to 10 | 5 |
+| Damper | 0 to 10 | 5 |
+| Key noise | 0 to 10 | 3 |
+| Output | Line, Speakers | Speakers |
+| Tuning | -100 cents to 100 cents | 0 cents |

@@ -1,0 +1,44 @@
+---
+title: "Saucer Fuzz"
+description: "Two-transistor fuzz in the style of the late-1960s British round fuzzes, germanium or silicon: thick fuzz that cleans up."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/saucer-fuzz.webp';
+
+**An emulation of an analogue original,** modelled on the late-1960s British round two-transistor fuzz.
+
+A two-transistor fuzz for guitar, germanium or silicon: two transistors in common emitter fed back on each other, clipping hard and lopsided into a thick, buzzing sustain that cleans up as the guitar is turned down. Germanium is rounder and darker with a thinner bass at full fuzz; silicon has more gain and a brighter, more even edge. Fuzz, volume, the transistors, and an output; light or full quality. Modelled on the round fuzz pedal of the late 1960s and fitted to a model of it.
+
+[Saucer Fuzz on the website](/solmara/guitar/#saucer-fuzz)
+
+## In the device chain
+
+Saucer Fuzz on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Saucer Fuzz in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+5 factory presets come with Saucer Fuzz. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Cleans Up**: Germanium with the fuzz part way: dig in for fuzz, play softly or turn the guitar down for a rough crunch.
+- **Fuzz Bass**: Germanium at full quality on a bass: fuzz on the notes, less folding back from the highs.
+- **Silicon Grit**: Silicon at half: a gritty rhythm fuzz that keeps the chords apart.
+- **Silicon Lead**: Silicon, full up: more gain and a brighter, more even edge for a singing lead.
+- **Sixties Wall**: Germanium, the fuzz full up: the thick, lopsided buzz of the late sixties, its bass thinned a little.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Fuzz | 0 to 100 | 100 |
+| Volume | 0 to 100 | 50 |
+| Transistors | Germanium, Silicon | Germanium |
+| Output | -24 dB to 24 dB | 0 dB |
+| Quality | Light, Full | Light |

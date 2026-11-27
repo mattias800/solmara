@@ -1,0 +1,52 @@
+[
+ {
+  "name": "Dotted Answers",
+  "category": "Players",
+  "description": "Two dotted-eighth answers, each a fifth higher."
+ },
+ {
+  "name": "Falling Octaves",
+  "category": "Players",
+  "description": "Three eighth-note echoes falling an octave each time."
+ },
+ {
+  "name": "Major Seventh",
+  "category": "Players",
+  "description": "A close major seventh on every key."
+ },
+ {
+  "name": "Minor Ninth",
+  "category": "Players",
+  "description": "A parallel minor ninth: root, minor third, fifth, seventh and ninth."
+ },
+ {
+  "name": "Open Fifths",
+  "category": "Players",
+  "description": "Root, fifth and octave, leaving room for a melody's thirds."
+ },
+ {
+  "name": "Quiet Sixteenths",
+  "category": "Players",
+  "description": "Four soft sixteenth echoes behind short keys."
+ },
+ {
+  "name": "Rising Minor Strum",
+  "category": "Players",
+  "description": "A minor seventh strummed gently from low to high."
+ },
+ {
+  "name": "Suspended Seconds",
+  "category": "Players",
+  "description": "A stack of seconds and fifths, without a third."
+ },
+ {
+  "name": "Suspended Strum",
+  "category": "Players",
+  "description": "An open suspended chord spread across a short strum."
+ },
+ {
+  "name": "Triplet Climb",
+  "category": "Players",
+  "description": "Triplet echoes climbing in minor thirds."
+ }
+]

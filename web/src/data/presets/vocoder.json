@@ -1,0 +1,57 @@
+[
+ {
+  "name": "Choir Pad",
+  "category": "Vocoder",
+  "description": "Forty bands rise gently and linger for three seconds. Choose a sustained synth track as the external carrier."
+ },
+ {
+  "name": "Formant Down",
+  "category": "Vocoder",
+  "description": "The voice is its own carrier, rebuilt with the synthesis bands seven semitones lower."
+ },
+ {
+  "name": "Formant Up",
+  "category": "Vocoder",
+  "description": "The voice is its own carrier, rebuilt with the synthesis bands seven semitones higher."
+ },
+ {
+  "name": "Gated Vowels",
+  "category": "Vocoder",
+  "description": "A noise carrier holds each vowel for an eighth note, following the project's tempo map."
+ },
+ {
+  "name": "Robot Voice",
+  "category": "Vocoder",
+  "description": "Sixteen bands for a classic talking synth. Choose a synth track as the external carrier; until a source is chosen, the vocoder is silent."
+ },
+ {
+  "name": "Scrambled Speech",
+  "category": "Vocoder",
+  "description": "The voice drives a fixed scrambled patch of sixteen synthesis bands, turning familiar words into a texture."
+ },
+ {
+  "name": "Singing Saw",
+  "category": "Vocoder",
+  "description": "A saw follows one clear voice between 80 and 1000 Hz, keeping its last note through pauses."
+ },
+ {
+  "name": "Telephone Talker",
+  "category": "Vocoder",
+  "description": "Eight bands from 300 Hz to 3.4 kHz remake the voice with a narrow, telephone-like range."
+ },
+ {
+  "name": "Tuned Robot",
+  "category": "Vocoder",
+  "description": "A pitch-tracked pulse snaps to the project's scale before its glide: the voice sings its notes."
+ },
+ {
+  "name": "Whisper",
+  "category": "Vocoder",
+  "description": "Dense noise follows the voice in twenty-four bands: a pitched voice becomes a whisper, with a little of its own highs keeping the consonants clear."
+ },
+ {
+  "name": "Wide Choir",
+  "category": "Vocoder",
+  "description": "A synth carrier lingers for a second, with alternating bands hard left and right. Choose its external source track before playing."
+ }
+]

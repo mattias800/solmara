@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Crashing Tank",
+  "category": "Reverb",
+  "description": "The dwell all but full: the drive amplifier clips on every loud note and the tank crashes and splashes, as when an amplifier is kicked. For a dramatic hit, or to automate up for one bar."
+ },
+ {
+  "name": "Dub Spring",
+  "category": "Reverb",
+  "description": "A long, dark tank held back 60 ms, all wet, for a return track: send a snare or a skank chord to it in bursts and let it boing."
+ },
+ {
+  "name": "Keys Spring",
+  "category": "Reverb",
+  "description": "Three springs, wide and a little bright, at a moderate dwell: an electric piano or an organ in a room of coils."
+ },
+ {
+  "name": "Short Tank Slap",
+  "category": "Reverb",
+  "description": "The short tank with two springs and a short decay: a tight, metallic bounce behind a snare or a percussive part."
+ },
+ {
+  "name": "Studio Spring Send",
+  "category": "Reverb",
+  "description": "The long tank alone with the dwell at its middle, for a return track: the springs as a studio unit was used, clean unless a loud hit drives it."
+ },
+ {
+  "name": "Subtle Amp Spring",
+  "category": "Reverb",
+  "description": "The short tank turned low behind a clean or crunchy amplifier, as most amplifiers' reverb knob is left: a little space and a little bounce, not heard as an effect."
+ },
+ {
+  "name": "Surf Drip",
+  "category": "Reverb",
+  "description": "The long tank with three springs, the dwell well up and the tone bright: every picked note drips and a hard one crashes the springs. For surf and twang guitar, on the amplifier's clean channel."
+ },
+ {
+  "name": "Vocal Spring",
+  "category": "Reverb",
+  "description": "Two springs, darker, held back 25 ms so the words come first: the boxy, bouncing reverb of 1960s records behind a voice."
+ }
+]

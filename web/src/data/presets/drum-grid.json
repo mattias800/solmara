@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Clave Conversation",
+  "category": "Players",
+  "description": "A clave-shaped rim against a sparse kick and tom reply."
+ },
+ {
+  "name": "Electro Corners",
+  "category": "Players",
+  "description": "An angular electro beat with a rim answering the snare."
+ },
+ {
+  "name": "Four on the Floor",
+  "category": "Players",
+  "description": "A steady kick, claps on two and four and offbeat open hats."
+ },
+ {
+  "name": "Garage Skips",
+  "category": "Players",
+  "description": "A shuffled two-step kick and a backbeat with a hat answer."
+ },
+ {
+  "name": "Half Time Dust",
+  "category": "Players",
+  "description": "A half-time snare, sparse kick and rolling hats."
+ },
+ {
+  "name": "Late Night Break",
+  "category": "Players",
+  "description": "A syncopated break with soft snare ghosts."
+ },
+ {
+  "name": "Pocket Backbeat",
+  "category": "Players",
+  "description": "A restrained rock pocket with a pickup into the fourth beat."
+ },
+ {
+  "name": "Soft Shuffle",
+  "category": "Players",
+  "description": "A relaxed shuffle with soft notes between the backbeats."
+ }
+]

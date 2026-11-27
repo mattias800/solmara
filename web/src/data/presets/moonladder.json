@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Hot Input",
+  "category": "Filter",
+  "description": "Drive near its top: the input pair is pushed deep into its curve, thick and buzzing on the second and third harmonics, and the output turned down to match."
+ },
+ {
+  "name": "Open Warmth",
+  "category": "Filter",
+  "description": "Wide open, the input pair driven a little: nothing taken away, a touch of second harmonic and the couplings' gentle low cut. For a synth or a drum bus that wants the ladder's colour without its filtering."
+ },
+ {
+  "name": "Round Bass",
+  "category": "Filter",
+  "description": "Cutoff low, no emphasis: the four poles roll off the top of a bass line at 24 dB an octave and leave its body."
+ },
+ {
+  "name": "Singing Corner",
+  "category": "Filter",
+  "description": "Emphasis at the top: the ladder sings a sine at its corner once something starts it, and a note through it is pulled and beaten against. Turn the cutoff to play it."
+ },
+ {
+  "name": "Squelch",
+  "category": "Filter",
+  "description": "Emphasis high and cutoff in the low middle: the corner peaks hard and the bass thins under it, the vowel of a plucked monosynth bass. Move the cutoff for the sweep."
+ },
+ {
+  "name": "Telephone Dark",
+  "category": "Filter",
+  "description": "Cutoff near the bottom of its travel: only the lows pass, as from a room away."
+ },
+ {
+  "name": "Thin Brass",
+  "category": "Filter",
+  "description": "The corner in the upper middle with moderate emphasis: the bass thinned a little and a peak near 500 Hz, a brassy edge for a saw."
+ },
+ {
+  "name": "Vocal Peak",
+  "category": "Filter",
+  "description": "The corner a little above 1 kHz, emphasis at six: a narrow peak that gives a lead line a voice."
+ }
+]

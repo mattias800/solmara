@@ -1,0 +1,63 @@
+---
+title: "1978 Digital Hall"
+description: "1970s digital hall reverb: lush, dark halls and plates for vocals and snares."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/1978-digital-hall.webp';
+
+**An emulation of a digital original,** modelled on the late-1970s American digital reverb whose halls and plates were on every record of the 1980s.
+
+A digital hall reverb of the late 1970s, modelled as its algorithm: a network of delays and diffusers that recirculate at a low sample rate between steep converter filters, so the tail is dark above 8 kHz and grainy far down, with its delays wandering slowly so it never rings. Nine programs: two small halls, a large hall, a chamber, a room, three plates, and a chorus. Bass and mid decay times split at a crossover, a treble decay, depth (how far back the sound sits), pre-delay, diffusion, wander and chorus for the delays' motion, the converters' hiss, mix, and output. Edits never stop the tail.
+
+[1978 Digital Hall on the website](/solmara/effects/#1978-digital-hall)
+
+## In the device chain
+
+1978 Digital Hall on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="1978 Digital Hall in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+11 factory presets come with 1978 Digital Hall. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Modulation
+
+- **Chorus Wash**: The chorus program: a short cluster of wandering delays rather than a reverb. Widens and thickens a guitar or a synth.
+
+### Reverb
+
+- **Chamber**: The chamber: dense at once and warm, with no gap before it. For drums and guitars that want a room around them.
+- **Constant Plate**: The constant plate: the same time at every frequency, short and dense. A plate that stays out of the way.
+- **Eighties Snare Hall**: The small hall with a short middle and long lows, sent loud: the big snare of the mid-1980s.
+- **Infinite Pad**: The large hall at sixteen seconds in the middle and longer below, its delays wandering slowly: a wash that hangs under a pad or a drone.
+- **Large Hall**: The large hall: a bigger loop, a slower build, and a long dark tail for pads, ballads, and orchestral parts.
+- **Percussion Plate**: The percussion plate: diffused hard so a snare or a clap blooms at once into a smooth wash.
+- **Room**: The room: under two seconds, its top falling early. Puts drums and percussion in a space without washing them.
+- **Small Hall A**: The first small hall as the unit loads it: three seconds in the bass, two in the middle, dark above 6.6 kHz. The digital hall of 1980s records, for vocals, strings, and a mix's send.
+- **Small Hall B**: The second small hall: its treble shorter and its diffusion lower, so the tail is darker and its first echoes more distinct.
+- **Vocal Plate**: The vocal plate: bright to the converters' edge and even across the bands, with no gap; the plate sound for a lead vocal.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Program | 9 choices: Small Hall A, Small Hall B, Large Hall, Chamber, … | Small Hall A |
+| Bass | 0.6 s to 70 s | 3 s |
+| Mid | 0.6 s to 70 s | 2 s |
+| Crossover | 100 Hz to 10900 Hz | 540 Hz |
+| Treble | 100 Hz to 10900 Hz | 6600 Hz |
+| Depth | 0 to 71 | 23 |
+| Pre-delay | 0 ms to 300 ms | 24 ms |
+| Diffusion | 0 to 63 | 28 |
+| Wander | 0 to 15 | 2 |
+| Chorus | 0 to 15 | 1 |
+| Noise | Off, On | Off |
+| Mix | 0% to 100% | 30% |
+| Output | -24 dB to 24 dB | 0 dB |

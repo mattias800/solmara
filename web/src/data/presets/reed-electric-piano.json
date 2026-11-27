@@ -1,0 +1,92 @@
+[
+ {
+  "name": "Ballad Tremolo",
+  "category": "Keys",
+  "description": "The instrument's own tremolo at its usual rate, soft felt, played softly through its speakers."
+ },
+ {
+  "name": "Barking Stage",
+  "category": "Keys",
+  "description": "Reeds close to the pickup and hard felt: soft keys round, hard keys growl."
+ },
+ {
+  "name": "Distant Felt",
+  "category": "Keys",
+  "description": "Soft, short and wobbling: a worn instrument in the next room."
+ },
+ {
+  "name": "Even Touch",
+  "category": "Keys",
+  "description": "Every strike at the same level; the bite still follows the touch."
+ },
+ {
+  "name": "Fast Throb",
+  "category": "Keys",
+  "description": "A deep, quick tremolo, as from a speeded-up oscillator."
+ },
+ {
+  "name": "Felt Soft",
+  "category": "Keys",
+  "description": "Mellow and even: soft felt, the reeds far from the pickup, the tone down."
+ },
+ {
+  "name": "Glassy Top",
+  "category": "Keys",
+  "description": "The tone at its top over firm felt: a glassy, ringing upper end."
+ },
+ {
+  "name": "Gritty Line",
+  "category": "Keys",
+  "description": "The line out with the pickup at its nearest and hard felt, for an amplifier to push."
+ },
+ {
+  "name": "Hard Hammers",
+  "category": "Keys",
+  "description": "The hardest felt: every key bites, even played softly."
+ },
+ {
+  "name": "Init",
+  "category": "Keys",
+  "description": "The instrument as it comes: its own speakers, the tremolo off, the voicing at its default."
+ },
+ {
+  "name": "Knocky Keys",
+  "category": "Keys",
+  "description": "The keys' thump turned up under soft felt: the mechanism heard."
+ },
+ {
+  "name": "Line Out Dry",
+  "category": "Keys",
+  "description": "The preamp's line out with no key noise and softer felt, round, for an amplifier or effects after it."
+ },
+ {
+  "name": "Long Ring",
+  "category": "Keys",
+  "description": "Reeds that ring long and soft dampers, for held chords."
+ },
+ {
+  "name": "Muted Line",
+  "category": "Keys",
+  "description": "The line out with the darkest felt and tone: a muffled, close sound."
+ },
+ {
+  "name": "Pop Bark",
+  "category": "Keys",
+  "description": "Near pickup, firm felt and a light, quick tremolo: the pop record sound."
+ },
+ {
+  "name": "Short Plucks",
+  "category": "Keys",
+  "description": "Reeds that die quickly and dampers that bite: short, percussive notes."
+ },
+ {
+  "name": "Slow Wobble",
+  "category": "Keys",
+  "description": "A slow, deep swell of the tremolo under dark felt."
+ },
+ {
+  "name": "Wide Dynamics",
+  "category": "Keys",
+  "description": "Velocity's reach at its widest: a whisper to a shout."
+ }
+]

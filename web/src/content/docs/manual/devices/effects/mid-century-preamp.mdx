@@ -1,0 +1,54 @@
+---
+title: "Mid-Century Preamp"
+description: "Valve mic preamp in the style of the mid-century studio preamps: warmth and drive for any track."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/mid-century-preamp.webp';
+
+**An emulation of an analogue original,** modelled on the mid-century American valve microphone preamp.
+
+A modelled valve saturator for any track: two triode stages and an output transformer. The second stage adds a second harmonic that grows with the level and flattens one side of the wave when it is driven hard; the first joins in when the gain switch is up; the transformer's core fills on low notes and thickens them. Gain switch, drive, bias, which moves the balance of even and odd harmonics, a tone before the valves and one after, mix, and output, with switches for the valves, the transformer, and an automatic gain that keeps a tone at -12 dBFS as loud as it went in wherever the drive stands, and a quality switch for how far above the sample rate the circuits are solved. In stereo, each channel through its own circuits. Modelled on the valve line amplifier in each channel of an American recording console of the 1960s, with the output transformer of a valve microphone preamplifier.
+
+[Mid-Century Preamp on the website](/solmara/effects/#mid-century-preamp)
+
+## In the device chain
+
+Mid-Century Preamp on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Mid-Century Preamp in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+9 factory presets come with Mid-Century Preamp. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bass Iron**: The tone before the valves turned down, so that the lows drive them 3 dB harder and the highs 3 dB less, and the drive at 68: a bass's low notes get a second and a third harmonic 46 dB under them at -12 dBFS, which is what is heard of them on a small speaker, and the transformer's core adds to the lowest.
+- **Console Line**: The stage as a new one stands: the gain at 0 and the drive at 60, where it gives what it takes. A second harmonic 52 dB under a tone at -12 dBFS and 23 dB under one at full scale, where the top of the wave begins to flatten. Leave it on a track that sounds too clean.
+- **Drum Bus Push**: The drive at 75, some 8 dB into the second valve: the hits of a drum bus are flattened on one side and come out 6 dB lower, and what lies under them is left alone. The second harmonic of a tone at -12 dBFS is 41 dB under it.
+- **Iron Only**: The valves out and the transformer in: nothing above 200 Hz is touched, and a low note is given a third harmonic, 55 dB under a tone of 60 Hz at -12 dBFS and 24 dB under one at full scale. For a kick or a bass that wants weight and no colour above it, at a third of the processing.
+- **Mix Bus Sheen**: The gain at -5 and the drive at 66, a dB under where the stage gives what it takes, with its first valve given less, the tone a touch darker before the valves and brighter after: a mix's peaks stay under the knee, and what is added is a second harmonic 55 dB under a tone at -12 dBFS, 36 under one at full scale, and the core's weight on the lowest notes.
+- **Odd Bite**: The bias turned up, toward the second valve's grid conducting, and the drive at 75: under the knee the second harmonic falls away and the third leads, 46 dB under a tone at -12 dBFS with the second 2 dB under that. A drier, more forward colour, for a synth or a guitar that even harmonics make too sweet.
+- **Parallel Smash**: The gain at +10 and the drive at 80, so that both valve stages clip, mixed in at 40 % beside the drums as they came: the crushed signal fills in between the hits and the hits keep their front. For a drum bus or a room microphone.
+- **Vocal Edge**: The gain at +5, the drive at 70, and the tone brighter into the valves and darker after them: the highs of a voice are driven harder than its body and then put back, so the grit sits on the consonants. Every harmonic of a tone at -12 dBFS up to the fifth is within 10 dB of the second, at 30 to 40 dB under it.
+- **Vocal Warmth**: The bias turned down, toward the second valve shutting, and the drive just under where it stands: the second harmonic of a tone at -12 dBFS comes up from 52 to 36 dB under it and the third stays 12 dB under that. Even harmonics on a voice, which thicken it without an edge.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Gain | -10 dB, -5 dB, 0 dB, +5 dB, +10 dB | 0 dB |
+| Drive | 0 to 100 | 60 |
+| Bias | -100 to 100 | 0 |
+| Tone Before | -100 to 100 | 0 |
+| Tone After | -100 to 100 | 0 |
+| Valves | Off, On | On |
+| Transformer | Out, In | In |
+| Auto Gain | Off, On | On |
+| Mix | 0% to 100% | 100% |
+| Output | -24 dB to 24 dB | 0 dB |
+| Quality | Standard, Ultra | Standard |

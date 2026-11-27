@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Classic Crunch",
+  "category": "Amp",
+  "description": "The head's crunch: the preamp just past its middle and the middle up, for open chords and riffs. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Clean, Low Input",
+  "category": "Amp",
+  "description": "The low input, which passes the input valve by, with the preamp and the master at their tops: clean played softly, a little hair when dug into, and some 10 dB quieter than the others. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Cranked Master",
+  "category": "Amp",
+  "description": "The preamp at its middle and the master far up, so the power stage clips too and squeezes the chords. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Dark Blues",
+  "category": "Amp",
+  "description": "A light crunch with the treble and the presence down: a warm, round top for blues. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Edge of Breakup",
+  "category": "Amp",
+  "description": "The high input with the preamp low: chords that clean up with the guitar's volume and bite when hit hard. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Hot Lead",
+  "category": "Amp",
+  "description": "The preamp at its top and the middle well up, for single notes that sustain. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Rock Rhythm",
+  "category": "Amp",
+  "description": "More preamp than the crunch and a little less bass: tight power chords. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Scooped Eighties",
+  "category": "Amp",
+  "description": "The preamp high, the bass and treble up and the middle down: the scooped rhythm of the decade. Put a cabinet after it, such as Boxed Twelves."
+ }
+]

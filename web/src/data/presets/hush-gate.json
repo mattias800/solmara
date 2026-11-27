@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Hum Only",
+  "category": "Gate",
+  "description": "Turns the hum and hiss down 20 dB between notes rather than shutting them: the rests stay alive."
+ },
+ {
+  "name": "Natural Decay",
+  "category": "Gate",
+  "description": "Lets a held chord ring down before it closes, slowly, the way the string dies away."
+ },
+ {
+  "name": "Stutter",
+  "category": "Gate",
+  "description": "A high threshold and no hold: only the loudest attacks get through, chopped short."
+ },
+ {
+  "name": "Tight Metal",
+  "category": "Gate",
+  "description": "Shuts fast between palm-muted chugs: a short hold and release, so the rests between notes are silent."
+ }
+]

@@ -1,0 +1,267 @@
+---
+title: "Cosine Zone"
+description: "Phase-distortion synth in the style of the mid-1980s Japanese home keyboards: glassy pads, resonant sweeps, bright basses and bells."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/cosine-zone.webp';
+import window from '../../../../../assets/devices/cosine-zone.webp';
+
+**An emulation of a digital original,** modelled on the mid-1980s Japanese home keyboards that made their sound by phase distortion.
+
+A modelled phase-distortion synth of the mid-1980s Japanese home keyboards, held to a reference by measurement: two lines, each a cosine read through a bent phase (saw, square, pulse, double sine, saw-pulse and three resonance waves, one or two in alternate cycles), with 8-step envelopes on its pitch, its bend (DCW) and its level (DCA), key follow, ring and noise modulation, line detune, vibrato, portamento and the DAC's colour. Eight voices, four with both lines.
+
+[Cosine Zone on the website](/solmara/instruments/cosine-zone/)
+
+## In the device chain
+
+Cosine Zone on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Cosine Zone in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Cosine Zone's window, as it starts." /></a>
+
+
+## Presets
+
+63 factory presets come with Cosine Zone. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Deep Sub**: A cosine with only a click of the saw at each key, doubled in phase for weight, short to let go: a deep, clean sub bass.
+- **Fretless Bass**: The saw-pulse with its bend rising a moment after each note, the singing 'mwah' of a fretless string, gliding between notes, a slow, late vibrato on the long ones.
+- **Phase Bass**: The saw doubled, its bend struck nearly wide open and falling in a blink to a dark, round body, the bend smaller up the keys: the instrument's own classic bass, a filter-like pluck with no filter.
+- **Pulse Bass**: Line 1's pulse and its copy an octave down, the bend opening and settling: a solid, woody bass.
+- **Reso Bass**: The first resonance wave doubled, its peak dropped through the partials at each key: a resonant, squelching bass.
+- **Rolling Bass**: After MusicRadar's walkthrough of a dark, detuned bass on a software copy of the instrument: a pulse and a double sine in turn on line 1 (an octave under the key) under line 2's square, both bent only a little, a click of pitch at each key, a fast, shallow vibrato and a glide. The waves, the bend, the pitch's click, the vibrato and the glide are the walkthrough's; the detune is half its 63 cents, so that the pair stays in tune.
+- **Slap Bass**: After Phil South's slap bass in Sound On Sound's 1987 programmer's guide (part 2): the double sine on line 1 with line 2 three octaves, ten notes and 54 fine steps up, on its fifteenth harmonic, ringing against it, so the slap's bright, odd partials fall on the harmonics. The detune and ring are the article's; the envelopes, which it only describes, are estimated: a short pop over a body that holds.
+- **Squelch Bass**: The second resonance wave doubled, its peak struck high and dropped twice in quick succession, a double squelch at each key, gliding between notes: a rubbery acid line.
+- **Wah Bass**: The third resonance wave, its peak swept up and back down at each key: a vocal, wah-like bass.
+
+### Bell
+
+- **Digital Bell**: The double sine on line 1 and a cosine two octaves and a fifth up on line 2, both struck and ringing long: a clean, digital bell.
+- **Gong**: Line 2 a tritone and a few cents over line 1 rings against it, and line 1's bend blooms open after the strike before it fades, as a gong's shimmer swells after the hit: a low, long gong.
+- **Music Box**: A cosine with a glint of the saw at the pluck, line 2 three octaves up gone in a moment, each note short and ringing a little, high up: a music box's comb.
+- **Ring Bell**: Line 2 an octave and a fifth over line 1 ringing against it, both cosines barely bent, struck and left to fade: a metallic, ringing bell.
+- **Tubular Chime**: Line 2 two octaves and a minor third up rings against a cosine on line 1, so the strike carries partials between the harmonics, as a struck tube's do; they die first, the fundamental rings on: a tubular chime.
+
+### Brass
+
+- **Brass Section**: A saw on line 1 and the saw-pulse an octave down on line 2, each bend swelling at its own pace, a little blat of pitch at each key, the vibrato late: trumpets and trombones together.
+- **Brass Stab**: Two saws a few cents apart, the bend snapped open and quickly half shut, a hard blat of pitch, gone as soon as the key is: short, punchy brass hits.
+- **Saw Brass**: Line 1's saw and its copy detuned, the bend swelling open over the attack and settling, a touch of delayed vibrato: a digital brass section.
+- **Soft Horns**: The saw opened only a third of the way, slowly, swelling in and settling back a little, its copy a few cents off, a gentle vibrato: mellow French horns.
+- **Sweep Brass**: After Phil South's 1987 programmer's guide in Sound On Sound (part 1), which counts the saw-pulse among the brassiest waves: that wave, its bend sweeping slowly open over half a second and back down, doubled wide; the sweep and the detune are our own. A slow-swelling eighties synth brass.
+
+### FX
+
+- **Laser Drop**: The second resonance wave's peak held high while the pitch envelope throws each note five octaves up and drops it onto the key in about a tenth of a second: a laser shot.
+- **Noise Crash**: Line 1 silent and line 2 three octaves up, wide open and thrown at random by the noise modulation, struck and fading over a few seconds: a metallic noise crash.
+- **Noise Wash**: Line 2's speed thrown at random by the noise modulation, both lines slow to swell and slow to go: a hissing, wind-like wash.
+- **Release Arpeggio**: The key plays its note; let go, the pitch envelope's steps climb a major third, a fifth and an octave while the note dies away, the top note sagging a little as it fades: each chord ends in a rising arpeggio.
+- **Ring Zap**: Line 2 ringing against line 1, its pitch thrown up by the DCO's envelope and falling: a metallic zap.
+- **Step Sequence**: The second resonance wave with its bend's eight steps used as a sequencer: struck high and falling, again and again, four plucks of the peak at each key before it settles, as if one note played a pattern.
+- **Stutter Gate**: The level's eight steps strike the chord three times, about an eighth note apart at 120 BPM: struck and cut to nearly nothing, struck again and let fall away to nearly nothing, then struck a third time and held: a stuttering, gated chord from one key press.
+
+### Keys
+
+- **Funk Keys**: The narrow pulse snapped wide open and closing at once, the level gone quickly under the key, a quick flick of pitch at the strike: a picked, funky keyboard for short chords.
+- **Glass Piano**: The double sine on line 1 and its copy a few cents sharp, the bend struck open and falling to a soft glow: a glassy electric piano.
+- **Hammer Piano**: After Phil South's hammered piano in Sound On Sound's 1987 programmer's guide (part 2): a pulse and a saw in turn on line 1, a square and a saw on line 2, line 1's bend closing fast up the keys and line 2's barely, a hair of detune. The waves, key follows and detune are the article's; its envelopes are drawings, so the sharp peak falling to a long, low sustain is estimated.
+- **Reed Keys**: The pulse struck with a short, nasal bark that settles to a near-sine, its copy some 20 cents sharp so that the pair beats like a slow tremolo: a reed electric piano.
+- **Soft Keys**: The square barely bent, struck a little brighter, the level falling slowly under the key: a round, mellow keyboard for comping.
+- **Tine Piano**: A soft saw body on line 1 and line 2's double sine two octaves up struck hard and gone in a moment: an electric piano with a bright tine at the front.
+
+### Lead
+
+- **Digital Flute**: A near-pure cosine with a chiff of brightness as it speaks, and line 2 two octaves up thrown at random by the noise modulation, held quiet, for the breath; a vibrato after a moment: a breathy flute.
+- **Fifth Lead**: A square on line 1 and a saw a fifth over it on line 2, both bent half open and gliding together: a parallel-fifths solo line.
+- **Saw Lead**: The saw nearly wide open and its copy some 15 cents sharp, a bite at the front of each note, gliding, the vibrato late: a bright, fat solo saw.
+- **Square Lead**: The square half bent, gliding between notes, its vibrato coming in after a moment: a hollow solo voice.
+- **Sync Lead**: The second resonance wave and its copy detuned, the peak held high, gliding: a sharp lead that sounds like a synced oscillator.
+- **Vowel Lead**: The first resonance wave, its peak rising from low to high and settling between at each note, a 'wow' like a voice opening its mouth, gliding, the vibrato late: a talking lead.
+
+### Mallet
+
+- **Glass Mallet**: The double sine struck bright and closing at once, the level gone in under a second: a glassy mallet.
+- **Marimba**: A cosine on line 1 and line 2 two octaves up, its fourth harmonic as a tuned bar's, gone first, a knock of pitch at the strike: a warm wooden marimba.
+- **Steel Drum**: Line 2 an octave over line 1 ringing against it, which puts the 1st and 3rd harmonics around the strike, the saw's bend snapping shut: a bright steel pan.
+- **Vibes**: A cosine struck with a little brightness, its copy some 7 cents sharp so the pair beats like a slow motor, ringing while held and damped when let go: a vibraphone.
+
+### Organ
+
+- **Click Organ**: A cosine-bright organ on line 1, line 2 an octave and a fifth up struck and gone at each key: an organ with its percussion on.
+- **Pipe Organ**: A bright saw principal on line 1 that speaks with a breath of extra brightness, line 2 a near-pure cosine an octave and a fifth up as a mixture stop, both slow to speak and dying away into the room: a church organ.
+- **Reed Organ**: The pulse held half open and nasal, its copy a few cents off so it breathes, swelling in and letting go softly: a pumped reed organ.
+- **Square Organ**: Line 1's square and line 2's an octave up, both held still and gated: a hollow combo organ.
+
+### Pad
+
+- **Bell Pad**: A warm saw pad on line 1 under line 2's double sine two octaves up, struck at each chord and ringing away while the pad holds: a bell over strings.
+- **Breath Pad**: A soft square on line 1 and line 2 an octave up thrown at random by the noise modulation, held low under it, so the chord carries a breath of air: an airy, breathy pad.
+- **Choir Pad**: The third resonance wave with its peak held low, near the fifth harmonic, where it sounds like a sung vowel, its copy some 13 cents sharp, slow in and out with vibrato: a soft 'ooh' choir.
+- **Reso Sweep Pad**: Both lines on the resonance waves, their peaks rising slowly and falling back over the held chord: a pad whose resonance sweeps through the partials.
+- **Step Pad**: The double sine's bend and level each climbing and falling through several steps while the chord is held: a pad that pulses and evolves in stages.
+- **Vox Pad**: The double sine at its resonance-like corner alternating with the cosine an octave down, slow in, with vibrato: a hollow, sung pad.
+- **Warm Pad**: The saw and its copy apart by a few cents, barely bent, slow in and slower out, with a gentle vibrato: a soft, warm pad.
+
+### Pluck
+
+- **Harp**: A soft saw on line 1, its bend plucked half open and closing slowly, and a cosine an octave up on line 2; both ring a while: a concert harp for arpeggios.
+- **Koto**: The saw-pulse struck bright with the pitch falling a semitone onto the note, as a player's press on the string lets go, then a long, thinning ring: a plucked koto string.
+- **Reso Pluck**: The second resonance wave, its peak struck high and falling through the partials: a twanging, resonant pluck.
+- **Saw Pluck**: Line 1's saw and its copy detuned, the bend snapped open and falling with the level: a bright pluck.
+- **Woody Pluck**: After MusicRadar's walkthrough of a classic woody sound on a software copy of the instrument: line 1's squares in both slots with a flick of pitch and a bend gone in some 11 ms, under a mellow square on line 2 that rings a little longer, no sustain anywhere. The waves, the line mode and the step times are the walkthrough's; the levels are estimated.
+
+### Strings
+
+- **Digital Strings**: The saw-pulse wave on line 1 and its copy detuned, half bent, slow in and out, with vibrato: a thin, bright string section.
+- **Ensemble Strings**: A saw on line 1 and another an octave up on line 2, a few cents off it, both half bent and held still, slow in and out with a light vibrato: a wide string section, violins over violas.
+- **Pizzicato**: Two saws a little apart, each plucked half open and closing at once, the level gone in a moment: a section's plucked strings.
+- **Slow Strings**: The saw and its copy apart by some 17 cents, both the level and the bend swelling in over a second and a half and fading as slowly: lush, slow strings for long chords.
+- **Solo Cello**: The saw with a bite of brightness as the bow digs in, swelling into each note, gliding a little between them, its vibrato coming in after a moment: a solo cello line.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Line select | 1, 2, 1+1', 1+2' | 1 |
+| Octave | -1, 0, +1 | 0 |
+| Detune octave | -3 to 3 | 0 |
+| Detune note | -11 semitones to 11 semitones | 0 semitones |
+| Detune fine | -60 to 60 | 0 |
+| Modulation | Off, Ring, Noise | Off |
+| Vibrato wave | Triangle, Saw up, Saw down, Square | Triangle |
+| Vibrato delay | 0 to 99 | 0 |
+| Vibrato rate | 0 to 99 | 50 |
+| Vibrato depth | 0 to 99 | 0 |
+| Portamento | Off, On | Off |
+| Portamento time | 0 to 99 | 30 |
+| Bend range | 0 semitones to 12 semitones | 2 semitones |
+| DAC | Off, On | On |
+| Volume | -40 dB to 6 dB | 0 dB |
+| L1 wave | Saw, Square, Pulse, Double sine, Saw-pulse, Resonance I, Resonance II, Resonance III | Saw |
+| L1 second wave | 9 choices: None, Saw, Square, Pulse, … | None |
+| L1 DCW key follow | 0 to 9 | 0 |
+| L1 DCA key follow | 0 to 9 | 0 |
+| L1 dco rate 1 | 0 to 99 | 50 |
+| L1 dco rate 2 | 0 to 99 | 50 |
+| L1 dco rate 3 | 0 to 99 | 50 |
+| L1 dco rate 4 | 0 to 99 | 50 |
+| L1 dco rate 5 | 0 to 99 | 50 |
+| L1 dco rate 6 | 0 to 99 | 50 |
+| L1 dco rate 7 | 0 to 99 | 50 |
+| L1 dco rate 8 | 0 to 99 | 50 |
+| L1 dco level 1 | 0 to 99 | 0 |
+| L1 dco level 2 | 0 to 99 | 0 |
+| L1 dco level 3 | 0 to 99 | 0 |
+| L1 dco level 4 | 0 to 99 | 0 |
+| L1 dco level 5 | 0 to 99 | 0 |
+| L1 dco level 6 | 0 to 99 | 0 |
+| L1 dco level 7 | 0 to 99 | 0 |
+| L1 dco level 8 | 0 to 99 | 0 |
+| L1 dco sustain step | 0 to 7 | 0 |
+| L1 dco end step | 1 to 8 | 1 |
+| L1 dcw rate 1 | 0 to 99 | 80 |
+| L1 dcw rate 2 | 0 to 99 | 45 |
+| L1 dcw rate 3 | 0 to 99 | 55 |
+| L1 dcw rate 4 | 0 to 99 | 50 |
+| L1 dcw rate 5 | 0 to 99 | 50 |
+| L1 dcw rate 6 | 0 to 99 | 50 |
+| L1 dcw rate 7 | 0 to 99 | 50 |
+| L1 dcw rate 8 | 0 to 99 | 50 |
+| L1 dcw level 1 | 0 to 99 | 75 |
+| L1 dcw level 2 | 0 to 99 | 35 |
+| L1 dcw level 3 | 0 to 99 | 0 |
+| L1 dcw level 4 | 0 to 99 | 0 |
+| L1 dcw level 5 | 0 to 99 | 0 |
+| L1 dcw level 6 | 0 to 99 | 0 |
+| L1 dcw level 7 | 0 to 99 | 0 |
+| L1 dcw level 8 | 0 to 99 | 0 |
+| L1 dcw sustain step | 0 to 7 | 2 |
+| L1 dcw end step | 1 to 8 | 3 |
+| L1 dca rate 1 | 0 to 99 | 99 |
+| L1 dca rate 2 | 0 to 99 | 60 |
+| L1 dca rate 3 | 0 to 99 | 50 |
+| L1 dca rate 4 | 0 to 99 | 50 |
+| L1 dca rate 5 | 0 to 99 | 50 |
+| L1 dca rate 6 | 0 to 99 | 50 |
+| L1 dca rate 7 | 0 to 99 | 50 |
+| L1 dca rate 8 | 0 to 99 | 50 |
+| L1 dca level 1 | 0 to 99 | 99 |
+| L1 dca level 2 | 0 to 99 | 0 |
+| L1 dca level 3 | 0 to 99 | 0 |
+| L1 dca level 4 | 0 to 99 | 0 |
+| L1 dca level 5 | 0 to 99 | 0 |
+| L1 dca level 6 | 0 to 99 | 0 |
+| L1 dca level 7 | 0 to 99 | 0 |
+| L1 dca level 8 | 0 to 99 | 0 |
+| L1 dca sustain step | 0 to 7 | 1 |
+| L1 dca end step | 1 to 8 | 2 |
+| L2 wave | Saw, Square, Pulse, Double sine, Saw-pulse, Resonance I, Resonance II, Resonance III | Saw |
+| L2 second wave | 9 choices: None, Saw, Square, Pulse, … | None |
+| L2 DCW key follow | 0 to 9 | 0 |
+| L2 DCA key follow | 0 to 9 | 0 |
+| L2 dco rate 1 | 0 to 99 | 50 |
+| L2 dco rate 2 | 0 to 99 | 50 |
+| L2 dco rate 3 | 0 to 99 | 50 |
+| L2 dco rate 4 | 0 to 99 | 50 |
+| L2 dco rate 5 | 0 to 99 | 50 |
+| L2 dco rate 6 | 0 to 99 | 50 |
+| L2 dco rate 7 | 0 to 99 | 50 |
+| L2 dco rate 8 | 0 to 99 | 50 |
+| L2 dco level 1 | 0 to 99 | 0 |
+| L2 dco level 2 | 0 to 99 | 0 |
+| L2 dco level 3 | 0 to 99 | 0 |
+| L2 dco level 4 | 0 to 99 | 0 |
+| L2 dco level 5 | 0 to 99 | 0 |
+| L2 dco level 6 | 0 to 99 | 0 |
+| L2 dco level 7 | 0 to 99 | 0 |
+| L2 dco level 8 | 0 to 99 | 0 |
+| L2 dco sustain step | 0 to 7 | 0 |
+| L2 dco end step | 1 to 8 | 1 |
+| L2 dcw rate 1 | 0 to 99 | 80 |
+| L2 dcw rate 2 | 0 to 99 | 45 |
+| L2 dcw rate 3 | 0 to 99 | 55 |
+| L2 dcw rate 4 | 0 to 99 | 50 |
+| L2 dcw rate 5 | 0 to 99 | 50 |
+| L2 dcw rate 6 | 0 to 99 | 50 |
+| L2 dcw rate 7 | 0 to 99 | 50 |
+| L2 dcw rate 8 | 0 to 99 | 50 |
+| L2 dcw level 1 | 0 to 99 | 75 |
+| L2 dcw level 2 | 0 to 99 | 35 |
+| L2 dcw level 3 | 0 to 99 | 0 |
+| L2 dcw level 4 | 0 to 99 | 0 |
+| L2 dcw level 5 | 0 to 99 | 0 |
+| L2 dcw level 6 | 0 to 99 | 0 |
+| L2 dcw level 7 | 0 to 99 | 0 |
+| L2 dcw level 8 | 0 to 99 | 0 |
+| L2 dcw sustain step | 0 to 7 | 2 |
+| L2 dcw end step | 1 to 8 | 3 |
+| L2 dca rate 1 | 0 to 99 | 99 |
+| L2 dca rate 2 | 0 to 99 | 60 |
+| L2 dca rate 3 | 0 to 99 | 50 |
+| L2 dca rate 4 | 0 to 99 | 50 |
+| L2 dca rate 5 | 0 to 99 | 50 |
+| L2 dca rate 6 | 0 to 99 | 50 |
+| L2 dca rate 7 | 0 to 99 | 50 |
+| L2 dca rate 8 | 0 to 99 | 50 |
+| L2 dca level 1 | 0 to 99 | 99 |
+| L2 dca level 2 | 0 to 99 | 0 |
+| L2 dca level 3 | 0 to 99 | 0 |
+| L2 dca level 4 | 0 to 99 | 0 |
+| L2 dca level 5 | 0 to 99 | 0 |
+| L2 dca level 6 | 0 to 99 | 0 |
+| L2 dca level 7 | 0 to 99 | 0 |
+| L2 dca level 8 | 0 to 99 | 0 |
+| L2 dca sustain step | 0 to 7 | 1 |
+| L2 dca end step | 1 to 8 | 2 |

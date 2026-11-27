@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Bass and Flecks",
+  "category": "Players",
+  "description": "A low pulse under a quieter high line."
+ },
+ {
+  "name": "Dorian Stream",
+  "category": "Players",
+  "description": "A Dorian line with small variations of touch and length."
+ },
+ {
+  "name": "Four Line Canopy",
+  "category": "Players",
+  "description": "Four sparse lines form an evolving minor-key canopy."
+ },
+ {
+  "name": "Frozen Bells",
+  "category": "Players",
+  "description": "Two octaves of pentatonic bells, their first cycle frozen."
+ },
+ {
+  "name": "Held Key Clouds",
+  "category": "Players",
+  "description": "A held key starts a gentle, shifting minor-pentatonic cloud."
+ },
+ {
+  "name": "Low Note Garden",
+  "category": "Players",
+  "description": "Two lines compete for one voice; the lower notes win."
+ },
+ {
+  "name": "Shuffled Copper",
+  "category": "Players",
+  "description": "A shuffling line about the base key, with a little extra density."
+ },
+ {
+  "name": "Three Against Four",
+  "category": "Players",
+  "description": "Two interlocking Euclidean lines, a fifth apart."
+ }
+]

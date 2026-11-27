@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Bass Hold",
+  "category": "Dynamics",
+  "description": "Holds a bass DI in place, note to note."
+ },
+ {
+  "name": "Bright Limit",
+  "category": "Dynamics",
+  "description": "The limit setting with the HF emphasis up: loud passages held down, sibilants first."
+ },
+ {
+  "name": "Drum Bus Squeeze",
+  "category": "Dynamics",
+  "description": "Pulls a drum bus together; the room comes up between hits."
+ },
+ {
+  "name": "Guitar Even",
+  "category": "Dynamics",
+  "description": "Evens out a strummed acoustic guitar a few dB."
+ },
+ {
+  "name": "Vocal Grip",
+  "category": "Dynamics",
+  "description": "Catches a voice's loud syllables quickly and holds the line even."
+ }
+]

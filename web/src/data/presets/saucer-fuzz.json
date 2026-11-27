@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Cleans Up",
+  "category": "Fuzz",
+  "description": "Germanium with the fuzz part way: dig in for fuzz, play softly or turn the guitar down for a rough crunch."
+ },
+ {
+  "name": "Fuzz Bass",
+  "category": "Fuzz",
+  "description": "Germanium at full quality on a bass: fuzz on the notes, less folding back from the highs."
+ },
+ {
+  "name": "Silicon Grit",
+  "category": "Fuzz",
+  "description": "Silicon at half: a gritty rhythm fuzz that keeps the chords apart."
+ },
+ {
+  "name": "Silicon Lead",
+  "category": "Fuzz",
+  "description": "Silicon, full up: more gain and a brighter, more even edge for a singing lead."
+ },
+ {
+  "name": "Sixties Wall",
+  "category": "Fuzz",
+  "description": "Germanium, the fuzz full up: the thick, lopsided buzz of the late sixties, its bass thinned a little."
+ }
+]

@@ -1,0 +1,322 @@
+[
+ {
+  "name": "Click Forward",
+  "category": "Bass drum",
+  "description": "The tone up, so the strike's click comes through a mix."
+ },
+ {
+  "name": "Endless Drop",
+  "category": "Bass drum",
+  "description": "Decay and sweep at their ends, the tone low: a boom whose pitch is still falling as it fades."
+ },
+ {
+  "name": "Long Boom",
+  "category": "Bass drum",
+  "description": "The decay most of the way up: a tail that rings for seconds under a beat, with the click kept back."
+ },
+ {
+  "name": "Machine Kick",
+  "category": "Bass drum",
+  "description": "Tone, decay, and sweep at the middle: the machine's own kick, a short snap of pitch and a boom that sighs down to 47 Hz."
+ },
+ {
+  "name": "Round Sub",
+  "category": "Bass drum",
+  "description": "The tone at its darkest and a longer decay: all body, no click."
+ },
+ {
+  "name": "Short Thud",
+  "category": "Bass drum",
+  "description": "The decay well down: a thud with no tail, for a busy pattern."
+ },
+ {
+  "name": "Sighing Drop",
+  "category": "Bass drum",
+  "description": "The sweep past the machine's: the pitch sighs down over most of a second."
+ },
+ {
+  "name": "Tight Punch",
+  "category": "Bass drum",
+  "description": "A shorter decay, a quicker sigh, and a little more click."
+ },
+ {
+  "name": "Long Claves",
+  "category": "Claves",
+  "description": "The claves left ringing, their pitch held clear."
+ },
+ {
+  "name": "Low Claves",
+  "category": "Claves",
+  "description": "The claves tuned down, nearer a woodblock."
+ },
+ {
+  "name": "Machine Claves",
+  "category": "Claves",
+  "description": "The claves at the middle of every knob: the upper shell ringing high."
+ },
+ {
+  "name": "Woodblock Tick",
+  "category": "Claves",
+  "description": "The claves tuned up and cut short: a tick for fast patterns."
+ },
+ {
+  "name": "Dark Hat",
+  "category": "Closed hat",
+  "description": "The closed hat with its band and high-pass moved down: duller, nearer a shaker."
+ },
+ {
+  "name": "Loose Hat",
+  "category": "Closed hat",
+  "description": "The closed hat let ring a little, between closed and open."
+ },
+ {
+  "name": "Machine Closed Hat",
+  "category": "Closed hat",
+  "description": "The closed hat as the machine has it: a short, bright tick of six square waves."
+ },
+ {
+  "name": "Sizzle Hat",
+  "category": "Closed hat",
+  "description": "The closed hat with its band and high-pass moved up: thin and bright."
+ },
+ {
+  "name": "Tight Hat",
+  "category": "Closed hat",
+  "description": "The closed hat cut to a click, for fast patterns."
+ },
+ {
+  "name": "Agogo",
+  "category": "Cowbell",
+  "description": "The cowbell tuned up and shortened, nearer an agogo bell."
+ },
+ {
+  "name": "Choked Bell",
+  "category": "Cowbell",
+  "description": "The cowbell at its shortest: a clank."
+ },
+ {
+  "name": "Clank",
+  "category": "Cowbell",
+  "description": "The cowbell at the top of its tune and cut short."
+ },
+ {
+  "name": "Deep Bell",
+  "category": "Cowbell",
+  "description": "The cowbell an octave down, ringing long."
+ },
+ {
+  "name": "High Cowbell",
+  "category": "Cowbell",
+  "description": "The cowbell tuned up a little."
+ },
+ {
+  "name": "Low Cowbell",
+  "category": "Cowbell",
+  "description": "The cowbell tuned down a little."
+ },
+ {
+  "name": "Machine Cowbell",
+  "category": "Cowbell",
+  "description": "The cowbell as the machine has it: two square waves, a sharp start and a long ring."
+ },
+ {
+  "name": "Short Cowbell",
+  "category": "Cowbell",
+  "description": "The cowbell cut short."
+ },
+ {
+  "name": "Bright Cymbal",
+  "category": "Cymbal",
+  "description": "The cymbal with its bright band turned up."
+ },
+ {
+  "name": "Dark Cymbal",
+  "category": "Cymbal",
+  "description": "The cymbal with its bright band turned down: all ring and little splash."
+ },
+ {
+  "name": "Long Crash",
+  "category": "Cymbal",
+  "description": "The cymbal at its longest and a little brighter."
+ },
+ {
+  "name": "Low Cymbal",
+  "category": "Cymbal",
+  "description": "The cymbal with its bands at their lowest, ringing long."
+ },
+ {
+  "name": "Machine Cymbal",
+  "category": "Cymbal",
+  "description": "The cymbal as the machine has it: a bright splash that rings on lower."
+ },
+ {
+  "name": "Short Cymbal",
+  "category": "Cymbal",
+  "description": "The cymbal at its shortest."
+ },
+ {
+  "name": "Splash",
+  "category": "Cymbal",
+  "description": "The cymbal brightened, raised, and cut short."
+ },
+ {
+  "name": "Wash",
+  "category": "Cymbal",
+  "description": "The cymbal darkened and lowered, ringing long, nearer a ride's wash."
+ },
+ {
+  "name": "Bright Clap",
+  "category": "Hand clap",
+  "description": "The clap with its band moved up: sharper and nearer."
+ },
+ {
+  "name": "Dark Clap",
+  "category": "Hand clap",
+  "description": "The clap with its band moved down: thicker and further off."
+ },
+ {
+  "name": "Machine Hand Clap",
+  "category": "Hand clap",
+  "description": "The hand clap at the middle of its tone: three quick slaps and the reverberation after."
+ },
+ {
+  "name": "Thin Clap",
+  "category": "Hand clap",
+  "description": "The clap at the top of its tone, for a light backbeat."
+ },
+ {
+  "name": "Bongo Tap",
+  "category": "High conga",
+  "description": "The high conga tuned up and cut short."
+ },
+ {
+  "name": "High Conga",
+  "category": "High conga",
+  "description": "The high conga."
+ },
+ {
+  "name": "Machine High Tom",
+  "category": "High tom",
+  "description": "The high tom at the middle of every knob."
+ },
+ {
+  "name": "Low Conga",
+  "category": "Low conga",
+  "description": "The low conga: the low tom's circuit with its capacitors switched out, higher and without the noise."
+ },
+ {
+  "name": "Deep Floor Tom",
+  "category": "Low tom",
+  "description": "The low tom tuned down, its decay drawn out, and more of its tail."
+ },
+ {
+  "name": "Machine Low Tom",
+  "category": "Low tom",
+  "description": "The low tom at the middle of every knob, with its tail of pink noise."
+ },
+ {
+  "name": "Bright Shaker",
+  "category": "Maracas",
+  "description": "The maracas brightened to an airy hiss."
+ },
+ {
+  "name": "Machine Maracas",
+  "category": "Maracas",
+  "description": "The maracas at the middle of their tone: a short hiss that swells and stops."
+ },
+ {
+  "name": "Muffled Maracas",
+  "category": "Maracas",
+  "description": "The maracas at the bottom of their tone."
+ },
+ {
+  "name": "Soft Shaker",
+  "category": "Maracas",
+  "description": "The maracas darkened, for a shaker that sits back."
+ },
+ {
+  "name": "Mid Conga",
+  "category": "Mid conga",
+  "description": "The mid conga."
+ },
+ {
+  "name": "Machine Mid Tom",
+  "category": "Mid tom",
+  "description": "The mid tom at the middle of every knob."
+ },
+ {
+  "name": "Long Open Hat",
+  "category": "Open hat",
+  "description": "The open hat at its longest, a wash under the beat."
+ },
+ {
+  "name": "Machine Open Hat",
+  "category": "Open hat",
+  "description": "The open hat as the machine has it: the same metal, left to ring."
+ },
+ {
+  "name": "Short Open Hat",
+  "category": "Open hat",
+  "description": "The open hat shortened to a quick hiss."
+ },
+ {
+  "name": "High Rim",
+  "category": "Rim shot",
+  "description": "The rim shot tuned to its top."
+ },
+ {
+  "name": "Machine Rim Shot",
+  "category": "Rim shot",
+  "description": "The rim shot at the middle of every knob: both shells clipped into a bright knock."
+ },
+ {
+  "name": "Ringing Rim",
+  "category": "Rim shot",
+  "description": "The rim shot let ring, its lower shell sounding on under the knock."
+ },
+ {
+  "name": "Tight Rim",
+  "category": "Rim shot",
+  "description": "The rim shot cut short, all knock and no ring."
+ },
+ {
+  "name": "Crack",
+  "category": "Snare drum",
+  "description": "The tone toward the upper shell and more snappy: a short, bright crack."
+ },
+ {
+  "name": "Fat Body",
+  "category": "Snare drum",
+  "description": "The tone toward the lower shell and the snappy down: more drum than snares."
+ },
+ {
+  "name": "Long Hiss",
+  "category": "Snare drum",
+  "description": "Snappy and decay at their tops, the tone bright: a wash of noise past the machine's."
+ },
+ {
+  "name": "Machine Snare",
+  "category": "Snare drum",
+  "description": "Tone, snappy, and decay at the middle: the machine's own snare, two shells and a burst of noise."
+ },
+ {
+  "name": "Ringing Shells",
+  "category": "Snare drum",
+  "description": "The snappy all but off: the two shells alone, a pitched knock."
+ },
+ {
+  "name": "Soft Brush",
+  "category": "Snare drum",
+  "description": "The snappy low and the decay long: a quiet hiss for ballads."
+ },
+ {
+  "name": "Tight Snap",
+  "category": "Snare drum",
+  "description": "The decay down: a short snap for a busy pattern."
+ },
+ {
+  "name": "Wire Rattle",
+  "category": "Snare drum",
+  "description": "Snappy near its top and the decay drawn out: the snares ring on after the shells."
+ }
+]

@@ -1,0 +1,57 @@
+---
+title: "Low Orbit Echo"
+description: "Tape echo with spring reverb in the style of the 1970s Japanese tape echoes: dub and swirling repeats."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/low-orbit-echo.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s Japanese tape echo with three playback heads and a spring reverb.
+
+A modelled tape echo: a loop of tape that never stops, one record head, and three playback heads at fixed distances along it, with a spring reverb beside it. A twelve-position selector chooses which heads play and whether the springs do. The repeat rate is the motor's speed, so turning it bends the pitch of every echo still on the tape, and it can be set from the project's tempo instead. Intensity feeds the heads back to the record head: each pass is recorded again, so repeats darken and compress, and past about 70 with one head they grow until the tape saturates and the machine sings by itself; more heads sing sooner, all three by about 53. Bass and treble on the echoes, echo and reverb volume, input level, wow, flutter, hiss, and the dry signal passed beside it with no delay. The tape is the tape machine's model of hysteresis. Modelled on the Japanese tape echo of the middle 1970s with three heads and a spring tank, the echo of dub and of space rock.
+
+[Low Orbit Echo on the website](/solmara/effects/#low-orbit-echo)
+
+## In the device chain
+
+Low Orbit Echo on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Low Orbit Echo in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Low Orbit Echo. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dub Runaway**: The second and third heads together, slow, with the intensity past the point where each pass comes back louder than the last: a stab grows into a howl that the tape holds and darkens. Ride the intensity and the repeat rate by hand or by automation; turning the rate bends the pitch of everything on the tape.
+- **Hot Input Grit**: The input turned up so that the record amplifier and the tape are driven: the repeats come back compressed and thick with third harmonic, the first two heads and the springs behind them.
+- **Quarter Repeats**: The second head alone, synced so that it plays a quarter note after the note, with a few repeats each darker than the last. A delay throw for a vocal that keeps the song's time.
+- **Slapback**: The first head alone with the motor near its fastest: one repeat some 75 ms behind, a little darker than the voice or guitar it follows, and no feedback. The rockabilly double.
+- **Space Wash**: All three heads and the springs at a slow rate, the treble down, and the intensity at 45: with three heads feeding back, each pass is some 3 dB under the last, so the repeats pile up into a dark wash that takes seconds to die away. Past about 52 with all three heads in, the machine sings.
+- **Spring Only**: The last position of the selector: no heads, only the springs, at a level that sits behind a guitar. They ring for about three seconds and pass from some 250 Hz to 4 kHz, the boing of a spring tank.
+- **Three-Head Rhythm**: All three heads and the springs, the motor set from the project's tempo so that the first head plays an eighth after the note: the second and third fall at 1.9 and 2.75 times that, the galloping pattern of the machine, with a little of the springs behind it.
+- **Worn Machine**: A loop that has run for years: wow and flutter near their tops, the capstan's wobble deep, hiss over the repeats, and the third head with the springs. Held notes waver and the repeats smear. The same wobble every time it is rendered.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Mode | 12 choices: 1: Head 1, 2: Head 2, 3: Head 3, 4: Heads 2+3, … | 1: Head 1 |
+| Repeat rate | 0 to 100 | 50 |
+| Sync | Off, On | Off |
+| Division | 13 choices: 1/32, 1/16T, 1/16, 1/8T, … | 1/8 |
+| Intensity | 0 to 100 | 30 |
+| Bass | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Echo volume | 0 to 100 | 50 |
+| Reverb volume | 0 to 100 | 50 |
+| Input | 0 to 100 | 50 |
+| Dry | 0% to 100% | 100% |
+| Wow | 0 to 100 | 20 |
+| Flutter | 0 to 100 | 20 |
+| Hiss | 0 to 100 | 0 |
+| Output | -24 dB to 12 dB | 0 dB |

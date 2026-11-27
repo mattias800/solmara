@@ -1,0 +1,43 @@
+---
+title: "Leveltron Opto"
+description: "Valve opto leveler in the style of the 1960s American broadcast levelers: smooth, slow levelling for vocals and bass."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/leveltron-opto.webp';
+
+**An emulation of an analogue original,** modelled on the 1960s American valve optical leveler, the studio's vocal compressor.
+
+A modelled optical levelling amplifier: a valve amplifier whose input a photoresistor turns down as a light driven by the audio brightens. Two knobs, how much it turns down and how loud it comes out, a switch from compressing to limiting, and an emphasis that has it level the highs more; threshold, ratio, attack, and release are not set but come of the light and the cell. Modelled on the two-knob valve leveller of the 1960s that studios put on vocals and bass: slow, smooth, and forgiving. It takes far more processing than the compressor.
+
+[Leveltron Opto on the website](/solmara/effects/#leveltron-opto)
+
+## In the device chain
+
+Leveltron Opto on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Leveltron Opto in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+4 factory presets come with Leveltron Opto. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Drive Only**: No levelling: the amplifier alone, driven a little.
+- **Gentle Vocal**: Evens a voice out a few dB, slowly.
+- **Hard Limit**: The limit setting, turned well up: loud passages are held down.
+- **Steady Bass**: Holds a bass in place; the emphasis keeps its lowest notes from setting it off alone.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Peak reduction | 0 to 100 | 0 |
+| Gain | 0 to 100 | 24 |
+| Mode | Compress, Limit | Compress |
+| Emphasis | 0 to 100 | 0 |
+| Quality | Standard, Ultra | Standard |

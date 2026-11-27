@@ -1,0 +1,47 @@
+---
+title: "Moonladder"
+description: "Transistor ladder filter in the style of the late-1960s American modular filters: a warm 24 dB low-pass that sings."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/moonladder.webp';
+
+**An emulation of an analogue original,** modelled on the four-pole transistor ladder filter of the late-1960s American modular and portable synths.
+
+A modelled transistor ladder low-pass filter, the one in the classic American three-oscillator portable monosynth of the early 1970s, as an effect: an input pair, four transistor pairs stacked over it with a capacitor across each, an output amplifier, and the emphasis fed from the output back to the input pair. Its four poles fall 24 dB an octave; emphasis thins the bass, peaks the corner, and near the top of its travel sings by itself; drive pushes the input pair into its curve, warm and thick on the second harmonic. Cutoff from -5 to 5 as the instrument's panel has it, emphasis and drive from 0 to 10, an output, and a light quality at about half the processing.
+
+[Moonladder on the website](/solmara/effects/#moonladder)
+
+## In the device chain
+
+Moonladder on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Moonladder in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Moonladder. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Hot Input**: Drive near its top: the input pair is pushed deep into its curve, thick and buzzing on the second and third harmonics, and the output turned down to match.
+- **Open Warmth**: Wide open, the input pair driven a little: nothing taken away, a touch of second harmonic and the couplings' gentle low cut. For a synth or a drum bus that wants the ladder's colour without its filtering.
+- **Round Bass**: Cutoff low, no emphasis: the four poles roll off the top of a bass line at 24 dB an octave and leave its body.
+- **Singing Corner**: Emphasis at the top: the ladder sings a sine at its corner once something starts it, and a note through it is pulled and beaten against. Turn the cutoff to play it.
+- **Squelch**: Emphasis high and cutoff in the low middle: the corner peaks hard and the bass thins under it, the vowel of a plucked monosynth bass. Move the cutoff for the sweep.
+- **Telephone Dark**: Cutoff near the bottom of its travel: only the lows pass, as from a room away.
+- **Thin Brass**: The corner in the upper middle with moderate emphasis: the bass thinned a little and a peak near 500 Hz, a brassy edge for a saw.
+- **Vocal Peak**: The corner a little above 1 kHz, emphasis at six: a narrow peak that gives a lead line a voice.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Cutoff | -5 to 5 | 5 |
+| Emphasis | 0 to 10 | 0 |
+| Drive | 0 to 10 | 0.698 |
+| Output | -24 dB to 12 dB | 0 dB |
+| Quality | Light, Full | Full |

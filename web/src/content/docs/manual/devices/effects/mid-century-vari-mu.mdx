@@ -1,0 +1,52 @@
+---
+title: "Mid-Century Vari-Mu"
+description: "Variable-mu valve compressor in the style of the late-1950s American broadcast limiters: slow, gentle glue for masters and buses."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/mid-century-vari-mu.webp';
+
+**An emulation of an analogue original,** modelled on the late-1950s American variable-mu valve limiter, a rack of twenty valves.
+
+A modelled variable-mu valve compressor, for masters and drum buses: a push-pull pair of remote-cutoff valves between an input and an output transformer, whose gain falls smoothly as the sidechain takes their grids further under their cathodes. The ratio is no switch's: it grows with the reduction, from a gentle slope at the knee to a limiter's well over it. An input knob in dB that drives the valves and sets the threshold with the threshold knob, a time constant switch of six places, four fixed and two automatic that let a short peak go quickly and a long passage slowly, the sidechain's bias trimmer, an output knob, a mix, a balance trimmer for the pair, a high-pass in the sidechain, a link between the two channels, a matrix that compresses their middle and side, and a sidechain from another track. The gain cell is a circuit solved part by part; the timing network is the circuit's, solved exactly. Modelled on the large American valve limiter of the late 1950s, two channels of it in one unit.
+
+[Mid-Century Vari-Mu on the website](/solmara/effects/#mid-century-vari-mu)
+
+## In the device chain
+
+Mid-Century Vari-Mu on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Mid-Century Vari-Mu in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Mid-Century Vari-Mu. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Drum Bus, Glue**: The second place, 0.8 s of release, and some 4 dB on the hits: the kit is held together and its room comes up between them.
+- **Drum Bus, Pump**: The first place, the fastest, and the threshold high: the reduction rises with every hit and lets go before the next, so the kit breathes in time.
+- **Master, Gentle**: The fifth place, automatic, and the threshold low on its dial: a dB or two on the loudest passages, let go over seconds, so the mix is held without being heard to move. The last device on the master.
+- **Master, Middle and Side**: The matrix on: the middle and the sides are compressed each by itself, so a loud centre does not pull the width down with it. The fifth place.
+- **Master, Program Leveller**: The sixth place: a single peak is let go in a third of a second, many in ten, and a long loud passage in twenty-five, so a whole song is brought nearer one level, a few dB at the most.
+- **Mix Bus, Warm Glue**: The input 6 dB up, so the valves add their third harmonic, the threshold low, and the sidechain's filter in, so the low end does not pump the rest. The sixth place.
+- **Parallel Crush**: The input at its top and the threshold at the end of its dial, the valves well down and driven, and the mix at 40 %: the crushed and coloured drums under the drums as they were, in one device.
+- **Vocal, Smooth**: The third place and the bias trimmer toward its top, which begins the reduction sooner and more gently: a voice is brought forward and evened out with no edge to it.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input | -20 dB to 0 dB | -10 dB |
+| Threshold | 0 to 10 | 5 |
+| Time Constant | 1, 2, 3, 4, 5, 6 | 2 |
+| DC Threshold | 0 to 10 | 8.6 |
+| Output | -20 dB to 20 dB | 0 dB |
+| Mix | 0% to 100% | 100% |
+| Balance | -10 to 10 | 0 |
+| SC Filter | Off, On | Off |
+| Link | Off, On | On |
+| Matrix | Left-Right, Mid-Side | Left-Right |

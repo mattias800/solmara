@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus Image",
+  "category": "Bus",
+  "description": "The kick and the snare kept in the middle, the cymbals and the room as wide as the overheads gave them, a little wider at the top."
+ },
+ {
+  "name": "Narrow Guitars",
+  "category": "Bus",
+  "description": "A pair of guitars drawn in so they leave room at the edges for the rest, their top left as it was."
+ },
+ {
+  "name": "Stereo Repair",
+  "category": "Bus",
+  "description": "For a recording whose lows go out of phase between the sides: below 250 Hz made mono, the rest a little narrower."
+ },
+ {
+  "name": "Wide Pads",
+  "category": "Bus",
+  "description": "Pads and keys spread wide above the low middle, their lows kept narrow so they do not muddy the middle."
+ },
+ {
+  "name": "Focused Middle",
+  "category": "Mastering",
+  "description": "The low middle drawn in toward the middle, where the voice and the snare live, and the top left wide: more focus, the same space."
+ },
+ {
+  "name": "Mono Check",
+  "category": "Mastering",
+  "description": "Everything mono, for listening to how a mix holds up on one speaker; switch it off again before export."
+ },
+ {
+  "name": "Mono Lows",
+  "category": "Mastering",
+  "description": "What every master wants and nothing else: the lows in mono below 120 Hz, so a kick and a bass sit in the middle and a club's system and a vinyl cut take them, everything above as it came."
+ },
+ {
+  "name": "Wider Top",
+  "category": "Mastering",
+  "description": "The top opened a little and the upper middle a touch, the lows mono: a master that breathes wider without its middle going hollow."
+ }
+]

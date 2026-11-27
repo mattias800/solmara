@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Bar Swell",
+  "category": "Modulation",
+  "description": "Up and down again over a bar: slow movement for a pad."
+ },
+ {
+  "name": "Eighth Gate",
+  "category": "Modulation",
+  "description": "Open for one sixteenth, shut for the next: a held pad chopped into a pulse."
+ },
+ {
+  "name": "Eighth Pump",
+  "category": "Modulation",
+  "description": "A short duck every eighth note, not quite all the way down: a bass or a chord that bounces."
+ },
+ {
+  "name": "Filter Pump",
+  "category": "Modulation",
+  "description": "The duck on the volume, and a low pass that opens with each beat and closes after it: pumping and breathing."
+ },
+ {
+  "name": "Long Duck",
+  "category": "Modulation",
+  "description": "A deeper, slower breath on each beat, the sound coming back only just before the next: the house pump."
+ },
+ {
+  "name": "Note Duck",
+  "category": "Modulation",
+  "description": "The duck starts with each note the track plays rather than on the grid, as a kick's own sidechain would."
+ },
+ {
+  "name": "Offbeat Pump",
+  "category": "Modulation",
+  "description": "The duck moved half a beat on, so the sound comes up on the beat and dips on the offbeat."
+ },
+ {
+  "name": "Quarter Duck",
+  "category": "Modulation",
+  "description": "The duck a sidechained compressor gives under a four-to-the-floor kick: down on each beat, held a moment, and back up quickly. On a pad, a bass or a whole bus."
+ },
+ {
+  "name": "Trance Gate",
+  "category": "Modulation",
+  "description": "Every sixteenth cut short, the trance gate on a supersaw."
+ }
+]

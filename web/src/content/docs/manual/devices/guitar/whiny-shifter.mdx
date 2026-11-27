@@ -1,0 +1,50 @@
+---
+title: "Whiny Shifter"
+description: "Pitch-shift pedal in the style of the 1990s expression-pedal shifters: octaves, dive bombs and drop tunings."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/whiny-shifter.webp';
+
+**An emulation of a digital original,** modelled on the 1990s pitch-shifting expression pedal.
+
+A pitch-shift pedal for guitar: an expression pedal sweeps the shift between a heel and a toe interval, up to two octaves either way, for octave leads, dive bombs, harmonies and detuned doubling, and drops a tuning without retuning. Polyphonic and 10 ms late whatever the interval, or 16 ms to join low chords; a classic character glitches as the early digital pedals did. Pedal, heel, toe, mix, character, glide, an octave-down and a semitone-up layer, an output, and the latency.
+
+[Whiny Shifter on the website](/solmara/guitar/#whiny-shifter)
+
+## In the device chain
+
+Whiny Shifter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Whiny Shifter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+6 factory presets come with Whiny Shifter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Detune Doubler**: Twelve cents up mixed with the dry signal at the heel and the toe alike: a thickening, chorus-like double.
+- **Dive Bomb**: Heel at unison, toe two octaves down, with a little glide: stomp it for a dive like a tremolo arm's.
+- **Fifth Harmony**: A fifth above, mixed with the dry signal: parallel harmony from the toe, unison at the heel.
+- **Octave Down**: Heel at unison, toe an octave down: a bass line under a riff, or a low tuning without retuning.
+- **Octave Up Lead**: Heel at unison, toe an octave up: rock the pedal for the classic screaming octave sweep.
+- **Two Octaves Up**: Heel at unison, toe two octaves up, for the shrieking top of a solo.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Pedal | 0 to 100 | 0 |
+| Heel | -24 semitones to 24 semitones | 0 semitones |
+| Toe | -24 semitones to 24 semitones | 12 semitones |
+| Mix | 0% to 100% | 100% |
+| Character | Clean, Classic | Clean |
+| Glide | 0 ms to 2000 ms | 0 ms |
+| Sub | 0% to 100% | 0% |
+| Semitone | 0% to 100% | 0% |
+| Output | -24 dB to 24 dB | 0 dB |
+| Latency | Tight, Wide | Tight |

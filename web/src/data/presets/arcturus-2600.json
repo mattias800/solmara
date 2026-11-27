@@ -1,0 +1,207 @@
+[
+ {
+  "name": "Glide Bass",
+  "category": "Bass",
+  "description": "VCO-1's saw (through the ring modulator, its second input off) and VCO-3's a little apart, gliding: a fat, sliding bass."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "VCO-3's saw through a resonant filter struck open and falling to nothing: a plucked, twanging bass."
+ },
+ {
+  "name": "Ring Bass",
+  "category": "Bass",
+  "description": "VCO-1's saw ringing against VCO-2's sine a fifth up, under its square: a hollow, metallic bass."
+ },
+ {
+  "name": "Rubber Bass",
+  "category": "Bass",
+  "description": "The square through a resonant filter that follows the keys, struck hard and closing onto the note itself: a rubbery, squelching bass."
+ },
+ {
+  "name": "Square Bass",
+  "category": "Bass",
+  "description": "VCO-1's square, the one ADSR on both the filter and the amplifier, each note falling a little as it is held: a round, plain bass, the panel's own way."
+ },
+ {
+  "name": "Sub Bass",
+  "category": "Bass",
+  "description": "VCO-1's square with VCO-2's pulse an octave under it, the filter low and barely moving: a deep, solid sub."
+ },
+ {
+  "name": "Sync Bass",
+  "category": "Bass",
+  "description": "VCO-2 synced to VCO-1 a fifth up, the ADSR sweeping its pitch down as it falls: a tearing sync bass."
+ },
+ {
+  "name": "Thump Bass",
+  "category": "Bass",
+  "description": "The square with a burst of noise as the filter opens and shuts: a bass with a thump at each note."
+ },
+ {
+  "name": "Ring Bell",
+  "category": "Bell",
+  "description": "VCO-1's saw fully ringed against VCO-2 an octave and a fifth up and a little sharp, struck and left to fade: a struck metal bell that rings on the key."
+ },
+ {
+  "name": "Brass",
+  "category": "Brass",
+  "description": "Two saws, the filter opening as the attack swells in: a single brass voice."
+ },
+ {
+  "name": "Space Drone",
+  "category": "Drone",
+  "description": "All three oscillators slowly apart, VCO-3 an octave down, a resonant filter, a slow swell and the spring: a long drone in space."
+ },
+ {
+  "name": "Duo Brass",
+  "category": "Duo",
+  "description": "Two voices of brass, the lowest and the highest of each chord, swelling in together."
+ },
+ {
+  "name": "Duo Lead",
+  "category": "Duo",
+  "description": "The keyboard's two voices: the lower key on VCO-1's square, the upper on VCO-2's pulse, so a held interval plays both."
+ },
+ {
+  "name": "Falling Tone",
+  "category": "FX",
+  "description": "VCO-1 thrown three octaves up and falling slowly back while the key is held: a bomb's whistle."
+ },
+ {
+  "name": "Laser",
+  "category": "FX",
+  "description": "The ADSR striking VCO-1's pitch three octaves up and dropping at once: a laser shot at each key."
+ },
+ {
+  "name": "Siren",
+  "category": "FX",
+  "description": "VCO-3 in the low range as a slow LFO, its saw sweeping VCO-1 up over and over: an alarm siren."
+ },
+ {
+  "name": "Surf",
+  "category": "FX",
+  "description": "White noise swelling in over a second and dying away slowly through the spring: a wave on a beach."
+ },
+ {
+  "name": "Thunder",
+  "category": "FX",
+  "description": "Dark noise struck through a low filter and rumbling away into the spring: a thunderclap."
+ },
+ {
+  "name": "Trill",
+  "category": "FX",
+  "description": "VCO-3's pulse at a few hertz flicking VCO-1 up a tone and back: a trill under a held key."
+ },
+ {
+  "name": "Wind",
+  "category": "FX",
+  "description": "Pink noise through a resonant filter swept slowly by VCO-3's saw, swelling in: wind."
+ },
+ {
+  "name": "Init",
+  "category": "Init",
+  "description": "The panel as it comes: VCO-1's square through the filter half open, the ADSR on the filter and the amplifier."
+ },
+ {
+  "name": "Classic Lead",
+  "category": "Lead",
+  "description": "All three oscillators a little apart through a filter that follows the keys, the vibrato coming in after a moment: the instrument's own singing lead."
+ },
+ {
+  "name": "Glide Lead",
+  "category": "Lead",
+  "description": "Two saws a few cents apart sliding from note to note, a slow vibrato: a smooth portamento lead."
+ },
+ {
+  "name": "Octave Lead",
+  "category": "Lead",
+  "description": "The square under VCO-2's narrow pulse an octave up: a hollow, reedy lead in octaves."
+ },
+ {
+  "name": "Ring Lead",
+  "category": "Lead",
+  "description": "VCO-1's saw ringing against VCO-2 an octave and a fifth up: a clangorous, bell-edged lead."
+ },
+ {
+  "name": "Screaming Lead",
+  "category": "Lead",
+  "description": "The square and VCO-3's saw through a filter near singing, a little of the spring: a screaming solo voice."
+ },
+ {
+  "name": "Sync Lead",
+  "category": "Lead",
+  "description": "VCO-2 synced to VCO-1 an octave up, the ADSR sweeping it down at each note: a bright, tearing sync lead."
+ },
+ {
+  "name": "Whistle",
+  "category": "Lead",
+  "description": "No oscillator at all: the filter singing at middle C and following the keys, a touch of vibrato: a pure, whistled line."
+ },
+ {
+  "name": "Closed Hat",
+  "category": "Percussion",
+  "description": "Bright noise through the filter at its top, a short decay: a closed hi-hat."
+ },
+ {
+  "name": "Kick",
+  "category": "Percussion",
+  "description": "The filter singing low with nothing through it, the ADSR striking it a few octaves up and letting it fall: a round, deep kick."
+ },
+ {
+  "name": "Metal Hit",
+  "category": "Percussion",
+  "description": "Two oscillators an out-of-tune tritone apart through the ring modulator, struck and gone: a clanging metal hit."
+ },
+ {
+  "name": "Snare",
+  "category": "Percussion",
+  "description": "White noise through the filter opened by a short strike: a dry, bright snare."
+ },
+ {
+  "name": "Tom",
+  "category": "Percussion",
+  "description": "The sung filter higher, struck less far and following the keys an octave an octave: a tom tuned as it is played."
+ },
+ {
+  "name": "Zap Drum",
+  "category": "Percussion",
+  "description": "The sung filter struck four octaves up and dropping fast: an electronic zap of a drum."
+ },
+ {
+  "name": "Spring Pluck",
+  "category": "Pluck",
+  "description": "A short square pluck thrown into the spring at both sides: the tank's own splash after every note."
+ },
+ {
+  "name": "Bubbles",
+  "category": "Sample & Hold",
+  "description": "Random steps into the filter singing with nothing through it, the spring after it: bubbles rising in water."
+ },
+ {
+  "name": "Computer Chatter",
+  "category": "Sample & Hold",
+  "description": "The noise sampled twelve times a second, two octaves deep into VCO-1's pitch: a film computer thinking aloud."
+ },
+ {
+  "name": "Random Burble",
+  "category": "Sample & Hold",
+  "description": "The noise sampled ten times a second into the filter's third input, a resonant square under it: the classic burbling random filter."
+ },
+ {
+  "name": "Random Steps",
+  "category": "Sample & Hold",
+  "description": "The noise sampled five times a second into VCO-1's and VCO-2's pitch: random notes stepping under a held key."
+ },
+ {
+  "name": "Robot Talk",
+  "category": "Sample & Hold",
+  "description": "Random steps in VCO-1's pitch rung against VCO-2's sine, with a little resonance: a small robot chattering."
+ },
+ {
+  "name": "Staircase",
+  "category": "Sample & Hold",
+  "description": "VCO-3's slow saw sampled by a fast clock into the filter: its sweep climbs as a staircase, over and over."
+ }
+]

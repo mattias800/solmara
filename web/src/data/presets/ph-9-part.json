@@ -1,0 +1,242 @@
+[
+ {
+  "name": "Big Sweep",
+  "category": "Bass drum",
+  "description": "A long, deep fall of pitch from high above."
+ },
+ {
+  "name": "Deep Kick",
+  "category": "Bass drum",
+  "description": "Lower and longer."
+ },
+ {
+  "name": "High Kick",
+  "category": "Bass drum",
+  "description": "Its pitch settled higher."
+ },
+ {
+  "name": "Long Kick",
+  "category": "Bass drum",
+  "description": "The kick let ring."
+ },
+ {
+  "name": "Machine Kick",
+  "category": "Bass drum",
+  "description": "The later machine's kick as it has it: a click, a fast fall of pitch, and a long round boom."
+ },
+ {
+  "name": "Punch Kick",
+  "category": "Bass drum",
+  "description": "More click and a shorter boom."
+ },
+ {
+  "name": "Short Kick",
+  "category": "Bass drum",
+  "description": "The kick cut short."
+ },
+ {
+  "name": "Soft Kick",
+  "category": "Bass drum",
+  "description": "The kick with its attack at nothing."
+ },
+ {
+  "name": "Machine Closed Hat",
+  "category": "Closed hat",
+  "description": "The later machine's closed hat as it has it: a bright, quick tick."
+ },
+ {
+  "name": "Tight Hat",
+  "category": "Closed hat",
+  "description": "The closed hat at its shortest."
+ },
+ {
+  "name": "Dark Crash",
+  "category": "Crash",
+  "description": "The crash played slower: lower and longer."
+ },
+ {
+  "name": "Machine Crash",
+  "category": "Crash",
+  "description": "The later machine's crash as it has it."
+ },
+ {
+  "name": "Big Clap",
+  "category": "Hand clap",
+  "description": "A little lower, with a long room."
+ },
+ {
+  "name": "Bright Clap",
+  "category": "Hand clap",
+  "description": "Its noise's band moved up."
+ },
+ {
+  "name": "Dark Clap",
+  "category": "Hand clap",
+  "description": "Its noise's band moved down."
+ },
+ {
+  "name": "Dry Clap",
+  "category": "Hand clap",
+  "description": "The clap with the least of its room."
+ },
+ {
+  "name": "Machine Clap",
+  "category": "Hand clap",
+  "description": "The later machine's clap as it has it: three quick claps and a short room."
+ },
+ {
+  "name": "Room Clap",
+  "category": "Hand clap",
+  "description": "The clap with the most of its room."
+ },
+ {
+  "name": "Snap",
+  "category": "Hand clap",
+  "description": "A dry, bright snap."
+ },
+ {
+  "name": "Thin Clap",
+  "category": "Hand clap",
+  "description": "High and dry."
+ },
+ {
+  "name": "Machine High Tom",
+  "category": "High tom",
+  "description": "The later machine's high tom as it has it."
+ },
+ {
+  "name": "Short High Tom",
+  "category": "High tom",
+  "description": "The high tom cut short."
+ },
+ {
+  "name": "Zap Tom",
+  "category": "High tom",
+  "description": "The high tom falling far and fast."
+ },
+ {
+  "name": "Long Low Tom",
+  "category": "Low tom",
+  "description": "The low tom let ring."
+ },
+ {
+  "name": "Machine Low Tom",
+  "category": "Low tom",
+  "description": "The later machine's low tom as it has it."
+ },
+ {
+  "name": "Flat Tom",
+  "category": "Mid tom",
+  "description": "The mid tom with no fall of pitch."
+ },
+ {
+  "name": "Machine Mid Tom",
+  "category": "Mid tom",
+  "description": "The later machine's mid tom as it has it."
+ },
+ {
+  "name": "Noisy Tom",
+  "category": "Mid tom",
+  "description": "The mid tom with more noise in its start."
+ },
+ {
+  "name": "Long Open Hat",
+  "category": "Open hat",
+  "description": "The open hat let ring."
+ },
+ {
+  "name": "Machine Open Hat",
+  "category": "Open hat",
+  "description": "The later machine's open hat as it has it: a wash that falls away."
+ },
+ {
+  "name": "Bright Ride",
+  "category": "Ride",
+  "description": "The ride played faster: higher and shorter."
+ },
+ {
+  "name": "Machine Ride",
+  "category": "Ride",
+  "description": "The later machine's ride as it has it."
+ },
+ {
+  "name": "Block",
+  "category": "Rim shot",
+  "description": "Lower and longer, nearer a wood block."
+ },
+ {
+  "name": "High Rim",
+  "category": "Rim shot",
+  "description": "Tuned up."
+ },
+ {
+  "name": "Low Rim",
+  "category": "Rim shot",
+  "description": "Tuned down."
+ },
+ {
+  "name": "Machine Rim Shot",
+  "category": "Rim shot",
+  "description": "The later machine's rim shot as it has it: a short, hard knock."
+ },
+ {
+  "name": "Ringing Rim",
+  "category": "Rim shot",
+  "description": "Its resonators let ring."
+ },
+ {
+  "name": "Short Rim",
+  "category": "Rim shot",
+  "description": "Shorter still."
+ },
+ {
+  "name": "Tick Rim",
+  "category": "Rim shot",
+  "description": "As high and short as it goes."
+ },
+ {
+  "name": "Wood Rim",
+  "category": "Rim shot",
+  "description": "Low and ringing."
+ },
+ {
+  "name": "Body Snare",
+  "category": "Snare drum",
+  "description": "Mostly shell, rung longer."
+ },
+ {
+  "name": "High Snare",
+  "category": "Snare drum",
+  "description": "The shells tuned up."
+ },
+ {
+  "name": "Long Snare",
+  "category": "Snare drum",
+  "description": "The noise let ring."
+ },
+ {
+  "name": "Low Snare",
+  "category": "Snare drum",
+  "description": "The shells tuned down."
+ },
+ {
+  "name": "Machine Snare",
+  "category": "Snare drum",
+  "description": "The later machine's snare as it has it: two shells and a bright noise."
+ },
+ {
+  "name": "Noise Snare",
+  "category": "Snare drum",
+  "description": "All noise, the shell barely there."
+ },
+ {
+  "name": "Snappy Snare",
+  "category": "Snare drum",
+  "description": "More of the bright noise."
+ },
+ {
+  "name": "Tight Snare",
+  "category": "Snare drum",
+  "description": "Short noise and a short shell."
+ }
+]

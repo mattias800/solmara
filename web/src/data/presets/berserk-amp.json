@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Clean Calm",
+  "category": "Amp",
+  "description": "The clean channel at calm, the gain past its middle: clean and bright, breaking up only when played hard."
+ },
+ {
+  "name": "Clean Rage Crunch",
+  "category": "Amp",
+  "description": "The clean channel at rage: the gain of a crunch amp, and the top lifted before it."
+ },
+ {
+  "name": "Fierce Rhythm",
+  "category": "Amp",
+  "description": "The high channel at fierce, the depth held back: the lows cut before the gain, for tight palm mutes on a low-tuned guitar."
+ },
+ {
+  "name": "High Calm",
+  "category": "Amp",
+  "description": "The high channel at calm with the gain and every tone knob at noon: thick and dark, the lows kept, saturated from a quarter of the gain."
+ },
+ {
+  "name": "Insane Chug",
+  "category": "Amp",
+  "description": "The insane channel at fierce with the gain low: one more stage and the lows cut before it, for fast, muted chugs."
+ },
+ {
+  "name": "Rage Lead",
+  "category": "Amp",
+  "description": "The high channel at rage, the gain past its middle and the middle up: the most gain of the high channel, for long notes."
+ }
+]

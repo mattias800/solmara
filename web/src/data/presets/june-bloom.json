@@ -1,0 +1,502 @@
+[
+ {
+  "name": "Bloom Bass",
+  "category": "Bass",
+  "description": "The amplifier on its gate and a slow attack on the envelope, so each note starts at once and its filter opens after: a bass that blooms as it is held."
+ },
+ {
+  "name": "Felt Bass",
+  "category": "Bass",
+  "description": "The sub-oscillator alone at 4 feet, an octave under the key, through a closed filter with no resonance: near a sine, a soft, round bass."
+ },
+ {
+  "name": "Glide Bass",
+  "category": "Bass",
+  "description": "A saw and a square in POLY 2 with the glide at 3.5, so a line whose keys touch slides from note to note, the filter held half open."
+ },
+ {
+  "name": "Grit Bass",
+  "category": "Bass",
+  "description": "A saw with noise mixed under it into a resonant filter: the noise rasps at each note's start, a gritty edge on a firm bass."
+ },
+ {
+  "name": "Hollow Bass",
+  "category": "Bass",
+  "description": "A narrow pulse with little sub through a half-shut filter: a hollow, nasal bass that leaves room under it."
+ },
+ {
+  "name": "Organ Bass",
+  "category": "Bass",
+  "description": "A square and a full sub, the amplifier on its gate so each key starts and stops at once, the filter steady: an organ's pedal bass."
+ },
+ {
+  "name": "Ping Bass",
+  "category": "Bass",
+  "description": "A square and its sub through a resonant filter that pings at each note and settles: a bright, plucked bass."
+ },
+ {
+  "name": "Punch Bass",
+  "category": "Bass",
+  "description": "A saw and a square in 8 feet with the sub, the filter opened well at each note and let settle: a bright, punchy bass that cuts."
+ },
+ {
+  "name": "Round Bass",
+  "category": "Bass",
+  "description": "A saw and the sub-oscillator an octave down at 16 feet, the filter snapped open at each note and falling back: a round, punchy bass with no chorus."
+ },
+ {
+  "name": "Rubber Bass",
+  "category": "Bass",
+  "description": "A square and its sub through a filter with some resonance, opened hard at each note and closed in a beat: a bouncy, rubbery bass."
+ },
+ {
+  "name": "Snap Bass",
+  "category": "Bass",
+  "description": "A saw and the full sub under a filter thrown open and shut in a few tens of milliseconds, falling to a low hold: a snapping, percussive bass."
+ },
+ {
+  "name": "Square Bass",
+  "category": "Bass",
+  "description": "A plain square and its sub through a filter left mostly open, the envelope barely moving it: an even, hollow bass that sits still."
+ },
+ {
+  "name": "Squelch Bass",
+  "category": "Bass",
+  "description": "A saw and its sub into a resonant filter that the envelope snaps open and lets fall, gliding between keys that touch: a squelchy line."
+ },
+ {
+  "name": "Sub Floor",
+  "category": "Bass",
+  "description": "A square at 16 feet and the sub-oscillator under it, the filter nearly shut: a deep, steady bass that is mostly felt, lifted further by the high-pass's bass position."
+ },
+ {
+  "name": "Thumb Bass",
+  "category": "Bass",
+  "description": "A saw at 16 feet, the filter nearly shut and flicked open for an instant: a short, dark thump under each note."
+ },
+ {
+  "name": "Velvet Bass",
+  "category": "Bass",
+  "description": "The pulse, its width swept slowly by the LFO, and the sub under it, the chorus on I: a soft, moving bass that spreads a little in stereo."
+ },
+ {
+  "name": "Wah Bass",
+  "category": "Bass",
+  "description": "The envelope turned upside down: each note starts with the filter pulled shut and opens as it decays, a backwards wah."
+ },
+ {
+  "name": "Wide Bass",
+  "category": "Bass",
+  "description": "A saw and a pulse the LFO sweeps, the chorus on II: a fat, wide bass for a sparse track."
+ },
+ {
+  "name": "Brass Section",
+  "category": "Brass",
+  "description": "Saws behind a filter the envelope opens with a short swell and lets settle half shut: a section of horns, the chorus on I."
+ },
+ {
+  "name": "Brass Stab",
+  "category": "Brass",
+  "description": "Saws whose filter leaps open and falls back fast, the note short: brass hits for off-beats."
+ },
+ {
+  "name": "Bright Brass",
+  "category": "Brass",
+  "description": "A saw with a quicker swell and a filter that opens further and stays brighter, no chorus: a brash, forward brass."
+ },
+ {
+  "name": "Low Brass",
+  "category": "Brass",
+  "description": "A saw an octave down with a full sub, the filter swelling open: trombones and tubas under a section."
+ },
+ {
+  "name": "Pulse Brass",
+  "category": "Brass",
+  "description": "A pulse a little narrower than square, swelling open, the chorus on II: a reedy brass with a wide edge."
+ },
+ {
+  "name": "Soft Horns",
+  "category": "Brass",
+  "description": "A saw and a square with a slower swell, the filter opening only part way, the chorus on I: mellow horns."
+ },
+ {
+  "name": "Swell Brass",
+  "category": "Brass",
+  "description": "Saws whose filter opens over most of a second as the note swells: brass that crescendos into each chord."
+ },
+ {
+  "name": "Big Stab",
+  "category": "Chord",
+  "description": "A saw, a pulse and the sub, the filter opened hard, the chorus on II: a big, wide chord hit."
+ },
+ {
+  "name": "Bright Stab",
+  "category": "Chord",
+  "description": "A saw and a pulse with the bass cut hard and a quick decay, the chorus on II: a bright, thin chord hit."
+ },
+ {
+  "name": "Dark Stab",
+  "category": "Chord",
+  "description": "A saw behind a closed, resonant filter that opens for a moment: a dark, dubby chord."
+ },
+ {
+  "name": "Detuned Chord",
+  "category": "Chord",
+  "description": "A pulse swept quickly by the LFO and a saw, the chorus on II: a chord that sounds detuned, with a medium decay."
+ },
+ {
+  "name": "Filter Chord",
+  "category": "Chord",
+  "description": "A saw and a square through a singing filter that sweeps down after each chord: a dub chord with a tail of resonance."
+ },
+ {
+  "name": "Organ Stab",
+  "category": "Chord",
+  "description": "A square and a strong sub with a short decay and the filter open, the chorus on I: an organ chord for off-beats in a dance track."
+ },
+ {
+  "name": "Snap Chord",
+  "category": "Chord",
+  "description": "The amplifier on its gate with the filter struck open at each chord: a chord that starts with a click and a wah and holds as long as the keys."
+ },
+ {
+  "name": "Soft Chord",
+  "category": "Chord",
+  "description": "A saw with a slight swell and a gentle filter, the chorus on II: soft, sustained chords that are neither pad nor stab."
+ },
+ {
+  "name": "Bubbles",
+  "category": "FX",
+  "description": "A little noise into a filter at the edge of singing that the LFO moves fast through its range: bubbling, gurgling water."
+ },
+ {
+  "name": "Hover",
+  "category": "FX",
+  "description": "A saw under a singing filter, the LFO moving both the filter and the pitch: a hovering, otherworldly drone."
+ },
+ {
+  "name": "Laser Zap",
+  "category": "FX",
+  "description": "A saw and a pulse under a singing filter that the envelope throws from the top to the bottom in a quarter of a second: a zap at each key."
+ },
+ {
+  "name": "Noise Surf",
+  "category": "FX",
+  "description": "Noise alone through a resonant filter the LFO sweeps slowly up and down, rising and falling like surf, the fast chorus on I+II."
+ },
+ {
+  "name": "Resonant Sweep",
+  "category": "FX",
+  "description": "A saw and the sub-oscillator into the filter near singing, the envelope sweeping its corner up through the harmonics in a second and slowly back down."
+ },
+ {
+  "name": "Riser",
+  "category": "FX",
+  "description": "Noise and a saw whose filter the envelope opens over two seconds while it swells: a riser into a drop."
+ },
+ {
+  "name": "Rumble",
+  "category": "FX",
+  "description": "Noise at the bottom of the filter, rising slowly and falling away over seconds, the bass lifted: distant thunder."
+ },
+ {
+  "name": "Warble",
+  "category": "FX",
+  "description": "A square with the LFO on the pitch at full and fast: a warbling, alarm-like tone."
+ },
+ {
+  "name": "Bell Keys",
+  "category": "Keys",
+  "description": "A narrow pulse under a filter near singing that the envelope pings at each key: a glassy, bell-like tone that rings away."
+ },
+ {
+  "name": "Funk Keys",
+  "category": "Keys",
+  "description": "A narrow pulse through a resonant filter flicked open and shut, the bass cut and no chorus: a percussive, clucking keyboard."
+ },
+ {
+  "name": "Gate Organ",
+  "category": "Keys",
+  "description": "A square and the sub with the amplifier on its gate, the filter open and steady, the chorus on I+II as a spinning speaker: an organ."
+ },
+ {
+  "name": "Music Box Keys",
+  "category": "Keys",
+  "description": "A pulse at 4 feet, the bass cut hard, each note short and dying away: a small, tinkling keyboard."
+ },
+ {
+  "name": "Poly Keys",
+  "category": "Keys",
+  "description": "A saw and a pulse through a filter that the envelope opens at each key and lets settle, the bass taken off by the high-pass: chords that sit above a bass line."
+ },
+ {
+  "name": "Reed Organ",
+  "category": "Keys",
+  "description": "A saw and a narrow pulse on the amplifier's gate, the filter part open, the chorus on II: a reedy, harmonium-like organ."
+ },
+ {
+  "name": "Soft Tine Keys",
+  "category": "Keys",
+  "description": "A near-square through a low filter the envelope opens a little at each key, dying away slowly, the chorus on I: a soft electric piano."
+ },
+ {
+  "name": "Warm Keys",
+  "category": "Keys",
+  "description": "A saw through a closing filter with a long decay and some of it held, the chorus on II: warm chords for ballads."
+ },
+ {
+  "name": "Breath Lead",
+  "category": "Lead",
+  "description": "A square with noise under it through a soft filter, a slow attack and a delayed vibrato: a breathy, flute-like lead."
+ },
+ {
+  "name": "Breathy Saw Lead",
+  "category": "Lead",
+  "description": "A saw with noise blown through it and a gentle filter, the chorus on II: an airy lead with a soft edge."
+ },
+ {
+  "name": "Bright Poly Lead",
+  "category": "Lead",
+  "description": "A saw and a pulse in POLY 1, so each note's release rings under the next, the filter open and the chorus on I: a bright lead that can play chords."
+ },
+ {
+  "name": "Click Lead",
+  "category": "Lead",
+  "description": "The amplifier on its gate, the filter swept by the envelope at each key: every note speaks with a quick wah and stops the moment it is let go."
+ },
+ {
+  "name": "Ensemble Lead",
+  "category": "Lead",
+  "description": "A saw and a pulse the LFO sweeps, under the chorus on I+II, whose fast, shallow sweep is the same in both sides: a thick lead with a quick shimmer, gliding a little."
+ },
+ {
+  "name": "Glide Lead",
+  "category": "Lead",
+  "description": "A saw and a pulse in POLY 2, so that a line played a key at a time glides from note to note, with vibrato coming in after each held note."
+ },
+ {
+  "name": "Growl Lead",
+  "category": "Lead",
+  "description": "A saw and its sub, an octave below the usual lead, through a resonant filter the envelope opens: a growling lead that glides."
+ },
+ {
+  "name": "Nasal Lead",
+  "category": "Lead",
+  "description": "A narrow pulse into a filter with high resonance that sits still, the bass taken off: a nasal, reedy lead."
+ },
+ {
+  "name": "Pluck Lead",
+  "category": "Lead",
+  "description": "A saw and a square through a resonant filter that falls to half-shut within a beat: a plucked lead whose held notes stay soft."
+ },
+ {
+  "name": "PWM Lead",
+  "category": "Lead",
+  "description": "The pulse alone, its width swept fast and deep by the LFO, through the chorus on II: a lead that shimmers as it holds."
+ },
+ {
+  "name": "Saw Lead",
+  "category": "Lead",
+  "description": "A saw over its sub in POLY 2, the filter wide open and no chorus: a plain, dry, bright lead that cuts."
+ },
+ {
+  "name": "Sine Whistle",
+  "category": "Lead",
+  "description": "No oscillator: the filter at full resonance sings a near sine at its corner, the keys playing it an octave an octave, with a slow vibrato."
+ },
+ {
+  "name": "Singing Lead",
+  "category": "Lead",
+  "description": "A saw under a filter near singing that follows the keys closely, the envelope lifting it at each note: a lead with a vowel in it."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "A square in POLY 2 through a filter left open, the vibrato rising in after a moment: a clear, woody lead."
+ },
+ {
+  "name": "Thin Pulse Lead",
+  "category": "Lead",
+  "description": "A narrow pulse, bright and reedy, with the bass cut by the high-pass and the chorus on I: a thin lead that sits on top of a mix."
+ },
+ {
+  "name": "Tremble Lead",
+  "category": "Lead",
+  "description": "A square with a wide vibrato from the first moment: a wobbling lead for a playful line."
+ },
+ {
+  "name": "Airy Pad",
+  "category": "Pad",
+  "description": "A narrow pulse with noise over it, the bass cut away by the high-pass and the filter open, the chorus on II: a pad that is mostly air."
+ },
+ {
+  "name": "Breath Pad",
+  "category": "Pad",
+  "description": "A saw with plenty of noise through a low filter: a hushed pad, as of breath across the chord."
+ },
+ {
+  "name": "Bright Pad",
+  "category": "Pad",
+  "description": "A saw and a pulse with the filter wide open and the bass trimmed, the chorus on II: a bright pad for the top of a mix."
+ },
+ {
+  "name": "Dark Pad",
+  "category": "Pad",
+  "description": "A saw and its sub behind a filter nearly closed, the chorus on II: a dark, deep pad, more felt than heard."
+ },
+ {
+  "name": "Deep Pad",
+  "category": "Pad",
+  "description": "A saw an octave down with a strong sub, the filter low and the bass lifted: a pad that carries the bottom of a chord."
+ },
+ {
+  "name": "Hollow Pad",
+  "category": "Pad",
+  "description": "A plain square, the bass taken off by the high-pass, the chorus on I: a hollow, clarinet-coloured pad."
+ },
+ {
+  "name": "Night Pad",
+  "category": "Pad",
+  "description": "The envelope turned upside down on a slow attack, so the filter closes as the pad swells in and opens again as it lets go: a pad that darkens as it holds."
+ },
+ {
+  "name": "PWM Pad",
+  "category": "Pad",
+  "description": "The pulse alone, its width swept by the LFO, under the chorus on I: a slow, shimmering pad."
+ },
+ {
+  "name": "Shimmer Pad",
+  "category": "Pad",
+  "description": "A pulse whose width the LFO moves quickly, the high-pass cutting the bass and the chorus on II: a glittering, restless pad."
+ },
+ {
+  "name": "Slow Sweep Pad",
+  "category": "Pad",
+  "description": "A saw under a resonant filter the LFO moves slowly up and down: a pad that breathes over a bar or two."
+ },
+ {
+  "name": "Swell Pad",
+  "category": "Pad",
+  "description": "A saw and a pulse that swell in over a second and more, the envelope opening the filter as they come: a pad that grows into each chord."
+ },
+ {
+  "name": "Vowel Pad",
+  "category": "Pad",
+  "description": "A square through a resonant filter that barely follows the keys, so a vowel-like peak stays put across the chord, the fast chorus on I+II and a little vibrato: a soft choir."
+ },
+ {
+  "name": "Warm Pad",
+  "category": "Pad",
+  "description": "A saw and a slowly swept pulse through a half-closed filter, the chorus on II: a warm bed that fills the middle."
+ },
+ {
+  "name": "Brush Pluck",
+  "category": "Pluck",
+  "description": "A saw with noise through a filter that opens and closes quickly: a pluck with a brushed, breathy attack."
+ },
+ {
+  "name": "Glass Pluck",
+  "category": "Pluck",
+  "description": "A saw and a narrow pulse into a resonant filter that the envelope flicks open and lets fall to nothing within half a second, the chorus on II."
+ },
+ {
+  "name": "Harp Pluck",
+  "category": "Pluck",
+  "description": "A pulse whose notes ring a long while, the bass trimmed and the chorus on II: a harp-like pluck for arpeggios."
+ },
+ {
+  "name": "Mallet Pluck",
+  "category": "Pluck",
+  "description": "A square and its sub through a closed, slightly resonant filter struck open: a wooden mallet."
+ },
+ {
+  "name": "Pizzicato Pluck",
+  "category": "Pluck",
+  "description": "Saws with a very short note, the chorus on II: plucked strings."
+ },
+ {
+  "name": "Soft Pluck",
+  "category": "Pluck",
+  "description": "A saw through a low filter opened gently at each note, ringing out slowly, the chorus on II: a soft, warm pluck."
+ },
+ {
+  "name": "Twang Pluck",
+  "category": "Pluck",
+  "description": "A narrow pulse with a resonant filter snapped shut in an instant, no chorus: a twanging, koto-like pluck."
+ },
+ {
+  "name": "Bubble Sequence",
+  "category": "Sequence",
+  "description": "A square into a filter near singing, plucked open and shut: a round, bubbling sequence."
+ },
+ {
+  "name": "Chug Sequence",
+  "category": "Sequence",
+  "description": "A saw and its sub on the amplifier's gate, the filter flicked at each note: a chugging, driving sequence that starts and stops with the keys."
+ },
+ {
+  "name": "Dark Sequence",
+  "category": "Sequence",
+  "description": "A saw an octave down, the filter low and touched open at each step: a dark, pulsing sequence for the bottom of a track."
+ },
+ {
+  "name": "Pulse Sequence",
+  "category": "Sequence",
+  "description": "A narrow pulse with no sub, the bass trimmed, through a resonant filter struck open at each note and closed in a moment, no chorus: a thin, ticking sequence."
+ },
+ {
+  "name": "Saw Arp",
+  "category": "Sequence",
+  "description": "A saw with a short, bright envelope and a little of it held, the chorus on II: a wide arpeggio."
+ },
+ {
+  "name": "Slide Sequence",
+  "category": "Sequence",
+  "description": "A saw in POLY 2 with a short glide and a resonant filter: each step slides into the next, a liquid line."
+ },
+ {
+  "name": "Sparkle Arp",
+  "category": "Sequence",
+  "description": "A narrow pulse at 4 feet with the bass cut hard and a quick decay, the chorus on I: a glittering arpeggio above everything."
+ },
+ {
+  "name": "Bright Strings",
+  "category": "Strings",
+  "description": "A saw and a lightly swept pulse with the bass cut and the filter open, the chorus on II: bright strings that sit high."
+ },
+ {
+  "name": "Chamber Strings",
+  "category": "Strings",
+  "description": "The pulse alone, its width moved gently by the LFO, a soft filter and the chorus on I: thinner, more intimate strings."
+ },
+ {
+  "name": "Ensemble Strings",
+  "category": "Strings",
+  "description": "Saws under the chorus on II, a gentle filter and a vibrato that rises late: a big string ensemble, darker and slower to speak than Silk Strings."
+ },
+ {
+  "name": "High Strings",
+  "category": "Strings",
+  "description": "Saws at 4 feet with the bass cut hard and the filter open, the chorus on II: high, airy strings."
+ },
+ {
+  "name": "Low Strings",
+  "category": "Strings",
+  "description": "Saws an octave down through a darker filter, the chorus on II: a low section under a melody."
+ },
+ {
+  "name": "Silk Strings",
+  "category": "Strings",
+  "description": "Saws through a half-open filter that follows the keys, slow to swell and slow to let go, spread by the chorus on II: the string sound the instrument is known for."
+ },
+ {
+  "name": "Slow Strings",
+  "category": "Strings",
+  "description": "Saws that take two seconds to swell and as long to fade, the filter opening as they come: strings for long chords."
+ },
+ {
+  "name": "Staccato Strings",
+  "category": "Strings",
+  "description": "Saws with a quick swell and a short decay, the chorus on II: string stabs and short bowed chords."
+ }
+]

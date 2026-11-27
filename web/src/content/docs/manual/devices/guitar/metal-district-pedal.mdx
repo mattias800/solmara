@@ -1,0 +1,50 @@
+---
+title: "Metal District Pedal"
+description: "High-gain distortion pedal in the style of the early-1990s Japanese metal pedals: scooped, saturated metal."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/metal-district-pedal.webp';
+
+**An emulation of an analogue original,** modelled on the early-1990s Japanese high-gain metal pedal with its three-band EQ.
+
+A modelled high-gain distortion pedal with an equaliser of its own: a resonant stage lifts the upper middle round 1 kHz before a gain stage and two diodes to ground clip it hard, a second resonant stage lifts the lows round 100 Hz and the top round 5 kHz after, and then an active equaliser with a high, a low, and a middle of 15 dB either way whose frequency is swept from some 180 Hz to 6 kHz. Dist, level, high, low, middle, and middle frequency, a hiss knob for the circuit's own noise, and a quality switch for how far above the sample rate the circuits are solved. It is made to be played into a clean amplifier, and with its middle cut it is the scooped sound of 1990s metal. Modelled on the orange and black distortion pedal of the early 1990s, named for a zone of metal, with its two concentric equaliser knobs.
+
+[Metal District Pedal on the website](/solmara/guitar/#metal-district-pedal)
+
+## In the device chain
+
+Metal District Pedal on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Metal District Pedal in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Metal District Pedal. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Doom Wall**: Everything for weight: the dist at its top, the low lifted all the way, the high down, and the middle lifted low, near 300 Hz. Slow, heavy chords.
+- **Fizzy Bedroom**: The dist at its top and the high all the way up: the buzzing top the pedal is mocked for, kept as it is. A cabinet or a high cut after it tames it.
+- **Flat Noon**: Every knob at its middle: the circuit's own voicing, the upper middle lifted before the clipping and the lows and the top lifted after it.
+- **Hiss and All**: The flat setting with the dist up and the pedal's own hiss turned on, for a part that should sound like a pedal on a floor.
+- **Low Gain Crunch**: The dist low, the equaliser near flat: chords that clip when they are hit and clean up a little as they fade, with the middle a touch forward.
+- **Mid-Forward Lead**: The middle lifted near 1.2 kHz and the dist well up, for single notes that sit in front of a band and sustain.
+- **Scooped Classic**: The sound the pedal is known for: the dist well up, the low and the high lifted, and the middle cut hard near 500 Hz. Chugging rhythm with the body taken out of the middle; into a clean amplifier or a cabinet.
+- **Tight Modern**: The dist high, the lows held back and the upper middle lifted near 2 kHz: palm-muted riffs that stay tight on a low string.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Dist | 0 to 100 | 50 |
+| Level | 0 to 100 | 50 |
+| High | 0 to 100 | 50 |
+| Low | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Mid freq | 0 to 100 | 50 |
+| Hiss | 0 to 100 | 0 |
+| Quality | Standard, Ultra | Standard |

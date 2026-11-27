@@ -1,0 +1,42 @@
+[
+ {
+  "name": "House Balcony",
+  "category": "Players",
+  "description": "Four house chords, ready for a short piano sound."
+ },
+ {
+  "name": "Jazz After Hours",
+  "category": "Players",
+  "description": "A compact four-bar jazz accompaniment."
+ },
+ {
+  "name": "Lydian Morning",
+  "category": "Players",
+  "description": "Bright, suspended harmony for a wide pad."
+ },
+ {
+  "name": "Minor Evening",
+  "category": "Players",
+  "description": "A minor-key chord bed for slow melodies."
+ },
+ {
+  "name": "Nordic Air",
+  "category": "Players",
+  "description": "A modal progression with room above its bass."
+ },
+ {
+  "name": "Open Pop",
+  "category": "Players",
+  "description": "A four-bar major-key pad progression."
+ },
+ {
+  "name": "Soul Lanterns",
+  "category": "Players",
+  "description": "Warm extended chords for electric keys."
+ },
+ {
+  "name": "Still Water Pads",
+  "category": "Players",
+  "description": "A quiet progression of spacious ambient chords."
+ }
+]

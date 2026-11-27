@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Even Percussion",
+  "category": "Players",
+  "description": "Every note at a steady velocity and a short trigger length."
+ },
+ {
+  "name": "Four Voice Chords",
+  "category": "Players",
+  "description": "Four voices, retaining the most recently played chord tones."
+ },
+ {
+  "name": "Left Hand Bass",
+  "category": "Players",
+  "description": "Only the lower keyboard, moved down an octave and kept monophonic."
+ },
+ {
+  "name": "Low Octave Split",
+  "category": "Players",
+  "description": "The lower hand drops an octave while the upper hand passes through."
+ },
+ {
+  "name": "Quiet Keys Only",
+  "category": "Players",
+  "description": "Keep softly played notes and give them a useful dynamic range."
+ },
+ {
+  "name": "Right Hand Bell",
+  "category": "Players",
+  "description": "Only middle C and above, lifted an octave."
+ },
+ {
+  "name": "Soft Electric Keys",
+  "category": "Players",
+  "description": "A gentle velocity curve that keeps the loudest keys restrained."
+ },
+ {
+  "name": "Staccato Eighths",
+  "category": "Players",
+  "description": "Long notes end after an eighth; short notes keep their articulation."
+ }
+]

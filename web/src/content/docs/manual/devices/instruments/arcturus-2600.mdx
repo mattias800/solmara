@@ -1,0 +1,192 @@
+---
+title: "Arcturus 2600"
+description: "Semi-modular monosynth in the style of the early-1970s American studio synths: sample-and-hold bleeps, resonant basses, ring-modulated bells, sync leads and effects patched on the panel."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/arcturus-2600.webp';
+import window from '../../../../../assets/devices/arcturus-2600.webp';
+
+**An emulation of an analogue original,** modelled on the early-1970s American semi-modular studio synth, its modules patched on the panel and played from a duophonic keyboard.
+
+A modelled semi-modular monosynth of the early 1970s, built from its circuit and held to a reference by measurement, its normalled routing the default patch: three oscillators (saws, a square, a triangle, a sine and pulses, sync and frequency modulation between them), noise with its colour, a ring modulator, a four-pole low-pass to singing, an ADSR and an AR, an amplifier with linear and exponential inputs, a mixer with pan and spring reverb, a sample-and-hold on its clock, an envelope follower and a lag. The common patch cords are panel choices. One voice, or two on the keyboard's lower and upper keys; portamento and delayed vibrato.
+
+[Arcturus 2600 on the website](/solmara/instruments/arcturus-2600/)
+
+## In the device chain
+
+Arcturus 2600 on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Arcturus 2600 in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Arcturus 2600's window, as it starts." /></a>
+
+
+## Presets
+
+41 factory presets come with Arcturus 2600. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Glide Bass**: VCO-1's saw (through the ring modulator, its second input off) and VCO-3's a little apart, gliding: a fat, sliding bass.
+- **Pluck Bass**: VCO-3's saw through a resonant filter struck open and falling to nothing: a plucked, twanging bass.
+- **Ring Bass**: VCO-1's saw ringing against VCO-2's sine a fifth up, under its square: a hollow, metallic bass.
+- **Rubber Bass**: The square through a resonant filter that follows the keys, struck hard and closing onto the note itself: a rubbery, squelching bass.
+- **Square Bass**: VCO-1's square, the one ADSR on both the filter and the amplifier, each note falling a little as it is held: a round, plain bass, the panel's own way.
+- **Sub Bass**: VCO-1's square with VCO-2's pulse an octave under it, the filter low and barely moving: a deep, solid sub.
+- **Sync Bass**: VCO-2 synced to VCO-1 a fifth up, the ADSR sweeping its pitch down as it falls: a tearing sync bass.
+- **Thump Bass**: The square with a burst of noise as the filter opens and shuts: a bass with a thump at each note.
+
+### Bell
+
+- **Ring Bell**: VCO-1's saw fully ringed against VCO-2 an octave and a fifth up and a little sharp, struck and left to fade: a struck metal bell that rings on the key.
+
+### Brass
+
+- **Brass**: Two saws, the filter opening as the attack swells in: a single brass voice.
+
+### Drone
+
+- **Space Drone**: All three oscillators slowly apart, VCO-3 an octave down, a resonant filter, a slow swell and the spring: a long drone in space.
+
+### Duo
+
+- **Duo Brass**: Two voices of brass, the lowest and the highest of each chord, swelling in together.
+- **Duo Lead**: The keyboard's two voices: the lower key on VCO-1's square, the upper on VCO-2's pulse, so a held interval plays both.
+
+### FX
+
+- **Falling Tone**: VCO-1 thrown three octaves up and falling slowly back while the key is held: a bomb's whistle.
+- **Laser**: The ADSR striking VCO-1's pitch three octaves up and dropping at once: a laser shot at each key.
+- **Siren**: VCO-3 in the low range as a slow LFO, its saw sweeping VCO-1 up over and over: an alarm siren.
+- **Surf**: White noise swelling in over a second and dying away slowly through the spring: a wave on a beach.
+- **Thunder**: Dark noise struck through a low filter and rumbling away into the spring: a thunderclap.
+- **Trill**: VCO-3's pulse at a few hertz flicking VCO-1 up a tone and back: a trill under a held key.
+- **Wind**: Pink noise through a resonant filter swept slowly by VCO-3's saw, swelling in: wind.
+
+### Init
+
+- **Init**: The panel as it comes: VCO-1's square through the filter half open, the ADSR on the filter and the amplifier.
+
+### Lead
+
+- **Classic Lead**: All three oscillators a little apart through a filter that follows the keys, the vibrato coming in after a moment: the instrument's own singing lead.
+- **Glide Lead**: Two saws a few cents apart sliding from note to note, a slow vibrato: a smooth portamento lead.
+- **Octave Lead**: The square under VCO-2's narrow pulse an octave up: a hollow, reedy lead in octaves.
+- **Ring Lead**: VCO-1's saw ringing against VCO-2 an octave and a fifth up: a clangorous, bell-edged lead.
+- **Screaming Lead**: The square and VCO-3's saw through a filter near singing, a little of the spring: a screaming solo voice.
+- **Sync Lead**: VCO-2 synced to VCO-1 an octave up, the ADSR sweeping it down at each note: a bright, tearing sync lead.
+- **Whistle**: No oscillator at all: the filter singing at middle C and following the keys, a touch of vibrato: a pure, whistled line.
+
+### Percussion
+
+- **Closed Hat**: Bright noise through the filter at its top, a short decay: a closed hi-hat.
+- **Kick**: The filter singing low with nothing through it, the ADSR striking it a few octaves up and letting it fall: a round, deep kick.
+- **Metal Hit**: Two oscillators an out-of-tune tritone apart through the ring modulator, struck and gone: a clanging metal hit.
+- **Snare**: White noise through the filter opened by a short strike: a dry, bright snare.
+- **Tom**: The sung filter higher, struck less far and following the keys an octave an octave: a tom tuned as it is played.
+- **Zap Drum**: The sung filter struck four octaves up and dropping fast: an electronic zap of a drum.
+
+### Pluck
+
+- **Spring Pluck**: A short square pluck thrown into the spring at both sides: the tank's own splash after every note.
+
+### Sample & Hold
+
+- **Bubbles**: Random steps into the filter singing with nothing through it, the spring after it: bubbles rising in water.
+- **Computer Chatter**: The noise sampled twelve times a second, two octaves deep into VCO-1's pitch: a film computer thinking aloud.
+- **Random Burble**: The noise sampled ten times a second into the filter's third input, a resonant square under it: the classic burbling random filter.
+- **Random Steps**: The noise sampled five times a second into VCO-1's and VCO-2's pitch: random notes stepping under a held key.
+- **Robot Talk**: Random steps in VCO-1's pitch rung against VCO-2's sine, with a little resonance: a small robot chattering.
+- **Staircase**: VCO-3's slow saw sampled by a fast clock into the filter: its sweep climbs as a staircase, over and over.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| VCO-1 range | Low, -2 oct, -1 oct, Normal, +1 oct | Normal |
+| VCO-1 coarse | -24 semitones to 24 semitones | 0 semitones |
+| VCO-1 fine | -1 to 1 | 0 |
+| VCO-1 keyboard | 0 to 10 | 10 |
+| VCO-1 S&H | 0 to 10 | 0 |
+| VCO-1 ADSR | 0 to 10 | 0 |
+| VCO-1 FM | 0 to 10 | 0 |
+| VCO-1 FM from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| VCO-1 sync to VCO-2 | Off, On | Off |
+| VCO-2 range | Low, -2 oct, -1 oct, Normal, +1 oct | Normal |
+| VCO-2 coarse | -24 semitones to 24 semitones | 0 semitones |
+| VCO-2 fine | -1 to 1 | 0 |
+| VCO-2 keyboard | 0 to 10 | 10 |
+| VCO-2 S&H | 0 to 10 | 0 |
+| VCO-2 ADSR | 0 to 10 | 0 |
+| VCO-2 FM | 0 to 10 | 0 |
+| VCO-2 FM from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| VCO-2 pulse width | 0 to 10 | 5 |
+| VCO-2 PWM | 0 to 10 | 0 |
+| VCO-2 sync to VCO-1 | Off, On | Off |
+| VCO-3 range | Low, -2 oct, -1 oct, Normal, +1 oct | Normal |
+| VCO-3 coarse | -24 semitones to 24 semitones | 0 semitones |
+| VCO-3 fine | -1 to 1 | 0 |
+| VCO-3 keyboard | 0 to 10 | 10 |
+| VCO-3 noise | 0 to 10 | 0 |
+| VCO-3 ADSR | 0 to 10 | 0 |
+| VCO-3 FM | 0 to 10 | 0 |
+| VCO-3 FM from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| VCO-3 pulse width | 0 to 10 | 5 |
+| VCO-3 sync to VCO-1 | Off, On | Off |
+| Ring mod input 1 | 0 to 10 | 0 |
+| Ring mod input 2 | 0 to 10 | 0 |
+| Ring mod coupling | Audio, DC | Audio |
+| Noise colour | 0 to 10 | 10 |
+| Noise level | 0 to 10 | 10 |
+| S&H input | 0 to 10 | 0 |
+| S&H clock rate | 0 to 10 | 5 |
+| S&H from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| VCF frequency | 0 to 10 | 5 |
+| VCF fine | -1 to 1 | 0 |
+| VCF resonance | 0 to 10 | 0 |
+| VCF ring mod | 0 to 10 | 0 |
+| VCF input 1 from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| VCF VCO-1 square | 0 to 10 | 5 |
+| VCF VCO-2 pulse | 0 to 10 | 0 |
+| VCF VCO-3 saw | 0 to 10 | 0 |
+| VCF noise | 0 to 10 | 0 |
+| VCF keyboard | 0 to 10 | 0 |
+| VCF ADSR | 0 to 10 | 3 |
+| VCF FM | 0 to 10 | 0 |
+| VCF FM from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| ADSR attack | 0 to 10 | 0 |
+| ADSR decay | 0 to 10 | 4 |
+| ADSR sustain | 0 to 10 | 10 |
+| ADSR release | 0 to 10 | 3 |
+| AR attack | 0 to 10 | 0 |
+| AR release | 0 to 10 | 3 |
+| Envelope trigger | S&H clock, Keyboard | Keyboard |
+| VCA VCF | 0 to 10 | 10 |
+| VCA ring mod | 0 to 10 | 0 |
+| VCA AR (linear) | 0 to 10 | 0 |
+| VCA ADSR (exp) | 0 to 10 | 10 |
+| Mixer VCF | 0 to 10 | 0 |
+| Mixer VCA | 0 to 10 | 8 |
+| Pan | -1 to 1 | 0 |
+| Reverb left | 0 to 10 | 0 |
+| Reverb right | 0 to 10 | 0 |
+| Envelope follower input | 0 to 10 | 0 |
+| Envelope follower from | 17 choices: Normal, VCO-1 saw, VCO-1 square, VCO-2 saw, … | Normal |
+| Lag | 0 to 10 | 0 |
+| Portamento | 0 to 10 | 0 |
+| Vibrato speed | 0 to 10 | 5 |
+| Vibrato depth | 0 to 10 | 0 |
+| Vibrato delay | 0 to 10 | 0 |
+| Keyboard | One voice, Two voices | One voice |
+| Master tune | -1 to 1 | 0 |
+| Volume | 0 to 10 | 6 |
+| Quality | Light, Full | Full |

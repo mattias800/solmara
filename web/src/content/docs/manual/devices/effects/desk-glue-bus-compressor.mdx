@@ -1,0 +1,50 @@
+---
+title: "Desk Glue Bus Compressor"
+description: "VCA bus compressor in the style of the 1980s British large-format consoles: glue for the mix and drum buses."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/desk-glue-bus-compressor.webp';
+
+**An emulation of an analogue original,** modelled on the bus compressor of the 1980s British large-format consoles.
+
+A modelled bus compressor built on a voltage-controlled amplifier, for gluing a mix bus or a drum bus: a threshold, ratios of 2, 4, and 10 to 1, an attack of 0.1 to 30 ms and a release of 0.1 to 1.2 s on switches, with an automatic release that lets a short peak go quickly and a long passage slowly, and a make-up gain. One peak detector serves both channels, so the stereo image holds still. Its timing is the circuit's network of a diode, resistances, and capacitors, solved exactly. With a high-pass in the sidechain, a mix of the compressed with what went in, a switch for where the detector listens, ahead of the gain element or behind it, and a sidechain from another track. Modelled on the stereo compressor in the centre section of a large British mixing console of the 1980s.
+
+[Desk Glue Bus Compressor on the website](/solmara/effects/#desk-glue-bus-compressor)
+
+## In the device chain
+
+Desk Glue Bus Compressor on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Desk Glue Bus Compressor in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Desk Glue Bus Compressor. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Drum Bus, Punch**: 4 to 1 with the slowest attack and the fastest release: each hit's front passes before it takes hold, and it lets go before the next, so the drums come out harder.
+- **Drum Bus, Tight**: 4 to 1 at 3 ms and 0.3 s, with the lows out of the sidechain: the kit is held in one place, the room is brought up a little, and the kick does not pump the cymbals.
+- **Drum Room, Breathing**: 10 to 1 with the detector behind the gain element, as the console's own is, which takes hold sooner the higher the ratio, at 1 ms and the fastest release: a room microphone pumps and breathes between the hits.
+- **Ducked by the Kick**: 4 to 1, the fastest attack, and 0.3 s of release, for a sidechain: set it to the kick's track, and a bass or a pad is pushed down each time the kick hits and swells back between.
+- **Master, Touch**: 2 to 1, the slowest attack, the automatic release, and a high threshold: it works only on the loudest moments, a dB at the most. The last device on the master.
+- **Mix, Glue**: 2 to 1 with the slowest attack and the automatic release: the whole mix is held together by a dB or two, the fronts of the hits pass, and a loud passage is let go slowly. Lower the threshold until the meter moves 1 to 3 dB.
+- **Mix, Low End Free**: The glue with a high-pass of 120 Hz in the sidechain, so the kick and the bass do not pull the rest of the mix down with them, and a faster attack of 10 ms.
+- **Parallel Smash**: 10 to 1 with both switches at their fastest and the threshold low, everything flattened, and the mix at 40 %: the crushed drums under the drums as they were, in one device.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Threshold | -50 dB to 0 dB | -20 dB |
+| Ratio | 2:1, 4:1, 10:1 | 4:1 |
+| Attack | 0.1 ms, 0.3 ms, 1 ms, 3 ms, 10 ms, 30 ms | 10 ms |
+| Release | 0.1 s, 0.3 s, 0.6 s, 1.2 s, Auto | Auto |
+| Make-up | 0 dB to 20 dB | 0 dB |
+| Mix | 0% to 100% | 100% |
+| SC low cut | 0 Hz to 500 Hz | 0 Hz |
+| Detector | Forward, Back | Forward |

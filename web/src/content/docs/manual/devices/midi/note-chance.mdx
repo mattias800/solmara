@@ -1,0 +1,69 @@
+---
+title: "Note Chance"
+description: "Note Chance"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/note-chance.webp';
+
+A MIDI device: lets notes through by a sequence of yes and no, or by chance, and by chance sets or moves their pitch, velocity and length within ranges, each with a chance of its own or one for all.
+
+[Note Chance on the website](/solmara/write/#note-chance)
+
+## In the device chain
+
+Note Chance on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Note Chance in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Note Chance. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Chord Conversation**: Alternate whole held chords rather than their individual notes.
+- **Every Other Key**: Alternate played notes, keeping pitch and touch unchanged.
+- **Human Touch**: Small velocity changes on every key.
+- **Linked Surprises**: Occasional higher, softer, shorter notes; all three changes happen together.
+- **Octave Sparks**: One note in four jumps up an octave.
+- **Short or Long**: Notes choose between a sixteenth and a quarter.
+- **Sparse Reply**: About two thirds of the notes pass, with a little variation of touch.
+- **Three Note Answer**: Three notes through, then one rest.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Conditional | Off, On | Off |
+| Steps | 2 to 8 | 4 |
+| Reset | Reset on Play, Reset 1 sec, Reset 5 sec, No Reset | Reset on Play |
+| Chord | Off, On | Off |
+| Probability | Off, On | Off |
+| Pass chance | 0% to 100% | 50% |
+| Random pitch | Off, On | Off |
+| Pitch mode | Set To, Octaves +/-, Octaves +, Semitones +/-, Between | Between |
+| Set key | 0 to 127 | 60 |
+| Octaves | 1 to 8 | 1 |
+| Semitones | 1 to 127 | 7 |
+| Lowest key | 0 to 127 | 48 |
+| Highest key | 0 to 127 | 72 |
+| Pitch chance | 0% to 100% | 50% |
+| Random velocity | Off, On | Off |
+| Velocity mode | Set To, Offset +/-, Between | Offset +/- |
+| Set velocity | 1 to 127 | 100 |
+| Velocity offset | 1 to 127 | 20 |
+| Lowest velocity | 1 to 127 | 40 |
+| Highest velocity | 1 to 127 | 110 |
+| Velocity chance | 0% to 100% | 50% |
+| Random length | Off, On | Off |
+| Length mode | Set To, Between | Set To |
+| Set length | 13 choices: Pulse, 1/128, 1/64, 1/32, … | 1/16 |
+| Shortest | 13 choices: Pulse, 1/128, 1/64, 1/32, … | 1/32 |
+| Longest | 13 choices: Pulse, 1/128, 1/64, 1/32, … | 1/4 |
+| Length chance | 0% to 100% | 50% |
+| Sync chance | Off, On | Off |
+| Shared chance | 0% to 100% | 50% |

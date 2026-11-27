@@ -1,0 +1,63 @@
+---
+title: "Electric Clavichord"
+description: "Electric clavichord in the style of the 1970s German funk keyboards: nasal and percussive, with its pickup and tone switches and mute."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/electric-clavichord.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s German electric clavichord of funk.
+
+A modelled electric clavichord of the 1960s and 1970s, built from its physics and held to a reference by measurement: a rubber tangent strikes each steel string and holds it against an anvil while the key is down, the harder the brighter, and the string rings between the tangent and the bridge, a little stiff, its upper partials sharp. Let go, the string is its whole length in the yarn, and sounds its release's thunk a little lower as the yarn takes it down. Two electromagnetic pickups under the strings and their two rocker switches, one pickup or the other or both in and out of phase; the four tone switches, filters that add; the mute slider. 24 strings sound at once.
+
+[Electric Clavichord on the website](/solmara/instruments/electric-clavichord/)
+
+## In the device chain
+
+Electric Clavichord on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Electric Clavichord in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+15 factory presets come with Electric Clavichord. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bridge Pickup Bite**: The second pickup alone with the brilliant switch: hard, wiry and close.
+- **Brilliant Only**: The brilliant switch alone on the first pickup: a thin, piercing tone that cuts through any band.
+- **Even Rhythm**: The dynamics low so every note lands at the same level, treble and medium down: an even rhythm part that sits in a mix as if compressed.
+- **Funk Both Pickups**: Both pickups at the D position, brilliant and treble down: the full, biting rhythm sound.
+- **Half Mute Funk**: Both pickups at D, the mute halfway and the dynamics wide: a tight, popping rhythm where the ghost notes all but disappear.
+- **Hard Snap**: The hardest tangents, the keys' knock up and only brilliant and treble down: every note a snap.
+- **Init**: The instrument as its reference's patch loads: the first pickup, all four tone switches down, no mute.
+- **Muted Staccato**: The mute slider most of the way on and the yarn quick: short, plucked, woody notes.
+- **Out of Phase Wah**: Both pickups at B and D, out of phase, through the treble and medium switches: a hollow, vocal tone, as if a wah were parked halfway.
+- **Pizzicato**: The mute well on, the soft and medium switches and softish tangents: plucked, woody notes like pizzicato strings.
+- **Reggae Chop**: Both pickups at D, treble and medium down, the mute half on and the yarn quick: short, dry chops on the offbeat.
+- **Ringing Harp**: No mute, the strings and the release ringing long and soft tangents: picked notes that hang like a harp's.
+- **Rock Rhythm**: Both pickups at D and every switch down, the strings left to ring long: a full, bright rhythm sound for a rock band.
+- **Soft Mellow**: The soft and medium switches alone, a softer tangent: round, for chords under a band.
+- **Thin Both Pickups**: Both pickups at the B and D positions: the low strings thin out and the sound turns nasal and hollow.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Volume | 0 to 10 | 7 |
+| Pickup A/B | A, B | A |
+| Pickup C/D | C, D | C |
+| Brilliant | Off, On | On |
+| Treble | Off, On | On |
+| Medium | Off, On | On |
+| Soft | Off, On | On |
+| Mute | 0 to 10 | 0 |
+| Dynamics | 0 to 10 | 6.16 |
+| Hardness | 0 to 10 | 7.7 |
+| Decay | 0 to 10 | 6.87 |
+| Release | 0 to 10 | 6.26 |
+| Key noise | 0 to 10 | 3 |
+| Tuning | -100 cents to 100 cents | 0 cents |

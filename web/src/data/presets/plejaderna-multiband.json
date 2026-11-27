@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus Punch",
+  "category": "Bus",
+  "description": "The kick's band held with a slow attack so its front stays and its body is tight, the snare's band lifted a little where it cracks."
+ },
+ {
+  "name": "Parallel Squash",
+  "category": "Bus",
+  "description": "Every band crushed at 6 to 1, fast, and half of it under what came in: the quiet details come up while the hits keep their shape."
+ },
+ {
+  "name": "Vocal Even",
+  "category": "Bus",
+  "description": "A vocal held even through its body, its sibilance band quick and firm so the S sounds do not jump out."
+ },
+ {
+  "name": "Air Lift",
+  "category": "Mastering",
+  "description": "The top band lifted where it already sings, an upward expander at 0.7 to 1: air that rises with the music rather than a fixed shelf."
+ },
+ {
+  "name": "De-Harsh Top",
+  "category": "Mastering",
+  "description": "Only the top and the upper middle turned down when they get sharp, quickly, and let go as quickly: cymbals and a bright voice softened only when they bite."
+ },
+ {
+  "name": "Gentle Master Glue",
+  "category": "Mastering",
+  "description": "A light hold on every band of a master, a dB or two each at 1.5 to 1 with slow times, so the parts move together without anyone hearing a compressor."
+ },
+ {
+  "name": "Loud Master Bands",
+  "category": "Mastering",
+  "description": "Every band held harder, at 2.5 to 1, the lows slow and the highs quick, with a little gain back: a dense, even master before the limiter."
+ },
+ {
+  "name": "Tame the Lows",
+  "category": "Mastering",
+  "description": "The low end held steady under the rest: the bottom band at 3 to 1 with a slow attack so a kick's front gets through, the others left alone."
+ }
+]

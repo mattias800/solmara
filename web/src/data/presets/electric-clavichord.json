@@ -1,0 +1,77 @@
+[
+ {
+  "name": "Bridge Pickup Bite",
+  "category": "Keys",
+  "description": "The second pickup alone with the brilliant switch: hard, wiry and close."
+ },
+ {
+  "name": "Brilliant Only",
+  "category": "Keys",
+  "description": "The brilliant switch alone on the first pickup: a thin, piercing tone that cuts through any band."
+ },
+ {
+  "name": "Even Rhythm",
+  "category": "Keys",
+  "description": "The dynamics low so every note lands at the same level, treble and medium down: an even rhythm part that sits in a mix as if compressed."
+ },
+ {
+  "name": "Funk Both Pickups",
+  "category": "Keys",
+  "description": "Both pickups at the D position, brilliant and treble down: the full, biting rhythm sound."
+ },
+ {
+  "name": "Half Mute Funk",
+  "category": "Keys",
+  "description": "Both pickups at D, the mute halfway and the dynamics wide: a tight, popping rhythm where the ghost notes all but disappear."
+ },
+ {
+  "name": "Hard Snap",
+  "category": "Keys",
+  "description": "The hardest tangents, the keys' knock up and only brilliant and treble down: every note a snap."
+ },
+ {
+  "name": "Init",
+  "category": "Keys",
+  "description": "The instrument as its reference's patch loads: the first pickup, all four tone switches down, no mute."
+ },
+ {
+  "name": "Muted Staccato",
+  "category": "Keys",
+  "description": "The mute slider most of the way on and the yarn quick: short, plucked, woody notes."
+ },
+ {
+  "name": "Out of Phase Wah",
+  "category": "Keys",
+  "description": "Both pickups at B and D, out of phase, through the treble and medium switches: a hollow, vocal tone, as if a wah were parked halfway."
+ },
+ {
+  "name": "Pizzicato",
+  "category": "Keys",
+  "description": "The mute well on, the soft and medium switches and softish tangents: plucked, woody notes like pizzicato strings."
+ },
+ {
+  "name": "Reggae Chop",
+  "category": "Keys",
+  "description": "Both pickups at D, treble and medium down, the mute half on and the yarn quick: short, dry chops on the offbeat."
+ },
+ {
+  "name": "Ringing Harp",
+  "category": "Keys",
+  "description": "No mute, the strings and the release ringing long and soft tangents: picked notes that hang like a harp's."
+ },
+ {
+  "name": "Rock Rhythm",
+  "category": "Keys",
+  "description": "Both pickups at D and every switch down, the strings left to ring long: a full, bright rhythm sound for a rock band."
+ },
+ {
+  "name": "Soft Mellow",
+  "category": "Keys",
+  "description": "The soft and medium switches alone, a softer tangent: round, for chords under a band."
+ },
+ {
+  "name": "Thin Both Pickups",
+  "category": "Keys",
+  "description": "Both pickups at the B and D positions: the low strings thin out and the sound turns nasal and hollow."
+ }
+]

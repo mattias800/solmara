@@ -1,0 +1,47 @@
+---
+title: "Quack Filter"
+description: "Envelope filter in the style of the 1970s auto-wahs, through a ladder that each note opens: funk quack."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/quack-filter.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s auto-wahs, through a transistor ladder filter.
+
+A modelled envelope filter, the auto-wah, for funk guitar, clav, bass, and synths: the four-pole transistor ladder of the classic monosynth, whose corner an envelope follower moves up by how loud the input is, so that each note opens the filter as it starts and lets it close as it dies away. Cutoff, resonance, and drive are the ladder's; amount sets how far a note opens it; the mode is slow, a swell that lingers, or fast, a snap that falls back; and a mix against the dry signal. Modelled on the low-pass effect boxes built on the synthesizer's filter.
+
+[Quack Filter on the website](/solmara/guitar/#quack-filter)
+
+## In the device chain
+
+Quack Filter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Quack Filter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+5 factory presets come with Quack Filter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bass Burp**: Lower still, with a little drive into the ladder: a bass line that burps on every note.
+- **Clav Snap**: Higher and tighter, half the dry signal under it: a clav's snap made bigger.
+- **Funk Quack**: Low and resonant, opened fast by each pick: the quack of a seventies rhythm guitar.
+- **Singing Ladder**: The resonance near singing and the amount full: a squelch that follows every note's loudness.
+- **Slow Bloom**: The slow follower: each chord swells open and lingers, for an electric piano or a pad.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Cutoff | 0 to 100 | 35 |
+| Resonance | 0 to 100 | 50 |
+| Drive | 0 to 100 | 6.977 |
+| Amount | 0 to 100 | 60 |
+| Mode | Slow, Fast | Fast |
+| Mix | 0 to 100 | 100 |
+| Output | -24 dB to 12 dB | 0 dB |
+| Quality | Light, Full | Light |

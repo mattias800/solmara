@@ -1,0 +1,392 @@
+[
+ {
+  "name": "Classic Bass",
+  "category": "Bass",
+  "description": "Two saws and a square an octave apart into a closed ladder that the filter contour snaps open at each note: the bass the instrument is known for."
+ },
+ {
+  "name": "Fifth Bass",
+  "category": "Bass",
+  "description": "Two saws with the third a fifth up, through a half-open ladder: a bass that plays power chords."
+ },
+ {
+  "name": "Funk Bass",
+  "category": "Bass",
+  "description": "A saw and a square with the emphasis up, the contour snapping the filter and falling back fast: a quacking funk bass."
+ },
+ {
+  "name": "Glide Bass",
+  "category": "Bass",
+  "description": "Two saws and a square, gliding where the notes touch, the filter struck only on the first: a sliding bass."
+ },
+ {
+  "name": "Growl Bass",
+  "category": "Bass",
+  "description": "Three saws spread wide at 16 feet, beating fast, under a ladder with some emphasis: a growling bass."
+ },
+ {
+  "name": "Octave Bass",
+  "category": "Bass",
+  "description": "Saws at 32 and 16 feet with a square at 8, each a little apart, the ladder lifted by the contour: a full bass that spans three octaves."
+ },
+ {
+  "name": "Overdriven Bass",
+  "category": "Bass",
+  "description": "All three saws at full into the mixer's soft limit, overdriving the ladder: a thick, gritty bass."
+ },
+ {
+  "name": "Picked Bass",
+  "category": "Bass",
+  "description": "A saw and a burst of white noise in the strike, the contour quick: a bass with a pick's click."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "A short, round pluck: the filter and the loudness both fall to nothing within a fifth of a second, and a key let go is cut at once."
+ },
+ {
+  "name": "Reed Bass",
+  "category": "Bass",
+  "description": "A narrow and a wide pulse at 16 feet beating slowly, the ladder half open: a buzzing, reedy bass."
+ },
+ {
+  "name": "Round Bass",
+  "category": "Bass",
+  "description": "Three saws, the third an octave down, under a low ladder with the contour lifting each note a little: a warm, round bass that holds."
+ },
+ {
+  "name": "Rubber Bass",
+  "category": "Bass",
+  "description": "A narrow pulse and a saw with the emphasis up, the contour bouncing the corner at each note: an elastic bass."
+ },
+ {
+  "name": "Shark Bass",
+  "category": "Bass",
+  "description": "The shark-tooth wave on the first two oscillators, a saw under them, the ladder half open: a buzzy, nasal bass."
+ },
+ {
+  "name": "Soft Bass",
+  "category": "Bass",
+  "description": "Triangle and saw under a dark ladder with a slower contour: a soft bass for ballads."
+ },
+ {
+  "name": "Square Bass",
+  "category": "Bass",
+  "description": "Squares at 16 and 32 feet through a half-shut ladder: a hollow, woody bass."
+ },
+ {
+  "name": "Squelch Bass",
+  "category": "Bass",
+  "description": "One saw into the ladder with its emphasis high: each note's contour sweeps the singing corner down through it."
+ },
+ {
+  "name": "Sub Bass",
+  "category": "Bass",
+  "description": "Triangles at 8 and 4 feet, played low, through a ladder that rounds them: a deep, clean sub."
+ },
+ {
+  "name": "Thump Bass",
+  "category": "Bass",
+  "description": "A square and a triangle under a nearly closed ladder, the contour flicking it once: a short, dark thump."
+ },
+ {
+  "name": "Tight Acid Bass",
+  "category": "Bass",
+  "description": "One square into the ladder with high emphasis, gliding where the notes touch: an acid line that whistles."
+ },
+ {
+  "name": "Touch Bass",
+  "category": "Bass",
+  "description": "Two saws and a square with velocity on, so a hard note is loud and a soft one falls back: a bass that follows the hands."
+ },
+ {
+  "name": "Trill Bass",
+  "category": "Bass",
+  "description": "Oscillator 3's slow square, through the wheel, trills the pitch of two saws a little: a bass that warbles."
+ },
+ {
+  "name": "Wide Pulse Bass",
+  "category": "Bass",
+  "description": "Two wide pulses at 16 and 32 feet, the ladder opened by the contour: a nasal, reedy bass."
+ },
+ {
+  "name": "Wobble",
+  "category": "Bass",
+  "description": "Oscillator 3 at the LO range moving the cutoff through the wheel, slowly, under two saws an octave down."
+ },
+ {
+  "name": "Zap Bass",
+  "category": "Bass",
+  "description": "The contour at full amount over a closed ladder, decaying fast with high emphasis: a bass that zaps at each note."
+ },
+ {
+  "name": "Brass Stab",
+  "category": "Brass",
+  "description": "Three saws whose filter opens and shuts within a beat: a short, punchy horn hit."
+ },
+ {
+  "name": "Brass Swell",
+  "category": "Brass",
+  "description": "Saws behind a filter that opens slowly with each note and settles a little shut: a horn section's breath."
+ },
+ {
+  "name": "Bright Brass",
+  "category": "Brass",
+  "description": "Three saws whose ladder opens fast and settles bright, a quick swell: a solo trumpet's bite."
+ },
+ {
+  "name": "Poly Brass",
+  "category": "Brass",
+  "description": "Five voices, each two saws and a third an octave down, swelling into each chord: a brass section, which the hardware cannot play."
+ },
+ {
+  "name": "Solo Horn",
+  "category": "Brass",
+  "description": "A saw and a triangle under a ladder that swells part way open: a mellow, rounded horn."
+ },
+ {
+  "name": "Beating Drone",
+  "category": "FX",
+  "description": "Three saws at 32, 16 and 16 feet a little apart, slowly beating under a low, singing ladder: a dark, uneasy drone."
+ },
+ {
+  "name": "Laser",
+  "category": "FX",
+  "description": "The contour, with the third oscillator's reverse saw at LO swinging the pitch hard through the wheel: a ray gun firing."
+ },
+ {
+  "name": "Noise Riser",
+  "category": "FX",
+  "description": "White noise and a saw whose ladder opens over seconds, the emphasis up: a build-up for a drop."
+ },
+ {
+  "name": "Random Bleeps",
+  "category": "FX",
+  "description": "Noise as the modulation source, through the wheel to the pitch and the ladder: a computer chattering."
+ },
+ {
+  "name": "Siren",
+  "category": "FX",
+  "description": "The third oscillator's triangle at LO, slow, swinging two squares' pitch through the wheel: a wailing siren."
+ },
+ {
+  "name": "Wind",
+  "category": "FX",
+  "description": "Pink noise through a singing ladder, the third oscillator's slow triangle sweeping it through the wheel: gusting wind."
+ },
+ {
+  "name": "Clav",
+  "category": "Keys",
+  "description": "A narrow pulse and a square with the emphasis up, struck and snapped shut: a clav for funk."
+ },
+ {
+  "name": "Poly Keys",
+  "category": "Keys",
+  "description": "Six voices of triangle and square struck and fading, the ladder closing over them: a soft electric piano."
+ },
+ {
+  "name": "Poly Organ",
+  "category": "Keys",
+  "description": "Six voices of squares at 8 and 4 feet and a triangle at 2, with no contour: an organ that starts and stops with the keys."
+ },
+ {
+  "name": "Brass Lead",
+  "category": "Lead",
+  "description": "Saws whose filter swells in at each note, following the keys: a lead that speaks like a trumpet."
+ },
+ {
+  "name": "Chime Lead",
+  "category": "Lead",
+  "description": "A saw with triangles two and three octaves up, the ladder open: a lead with a chime over it."
+ },
+ {
+  "name": "Cross Mod Lead",
+  "category": "Lead",
+  "description": "Oscillator 3 an octave and a fifth up and silent, swinging the others' pitch at audio rate: a bright, glassy lead."
+ },
+ {
+  "name": "Fat Lead",
+  "category": "Lead",
+  "description": "Three saws a few cents apart, the filter following the keyboard, with a short glide between legato notes."
+ },
+ {
+  "name": "Fifth Lead",
+  "category": "Lead",
+  "description": "Saws a fifth apart, the third an octave down: a lead that plays in parallel fifths."
+ },
+ {
+  "name": "Flute Lead",
+  "category": "Lead",
+  "description": "A triangle with pink noise under it, a soft swell and the third oscillator's slow vibrato on the wheel: a breathy flute."
+ },
+ {
+  "name": "Low Mono Lead",
+  "category": "Lead",
+  "description": "Three saws, one an octave down, under a warm ladder with emphasis: a round lead for low melodies."
+ },
+ {
+  "name": "Metal Growl",
+  "category": "Lead",
+  "description": "Oscillator 3 a fifth above, at audio rate, swinging the other two's pitch through the wheel: an inharmonic, clangorous growl with no sync."
+ },
+ {
+  "name": "Noise Lead",
+  "category": "Lead",
+  "description": "A saw with a lot of white noise through a ladder that sings a little: an airy, breathy lead."
+ },
+ {
+  "name": "Octave Lead",
+  "category": "Lead",
+  "description": "Saws an octave apart and a square two octaves up: a bright, organ-tinged lead."
+ },
+ {
+  "name": "Pulse Lead",
+  "category": "Lead",
+  "description": "Two narrow pulses a few cents apart, the ladder open: a thin, nasal lead."
+ },
+ {
+  "name": "Sharp Lead",
+  "category": "Lead",
+  "description": "Two shark-tooth waves and a narrow pulse, the ladder wide: a lead with a hard, cutting edge."
+ },
+ {
+  "name": "Singing Ladder",
+  "category": "Lead",
+  "description": "No oscillators: the ladder at full emphasis sings a sine at its corner, a breath of pink noise starting it, and the keyboard plays the corner an octave an octave."
+ },
+ {
+  "name": "Slow Glide Lead",
+  "category": "Lead",
+  "description": "Two saws and a triangle with a long glide, so every interval slides: a lead for slow, expressive lines."
+ },
+ {
+  "name": "Snarl Lead",
+  "category": "Lead",
+  "description": "Oscillator 3 an octave down, on the keyboard and silent, shaking the ladder's corner at audio rate through the wheel: a lead with a snarl in it."
+ },
+ {
+  "name": "Soaring Lead",
+  "category": "Lead",
+  "description": "Three saws, one an octave up, the ladder open and following the keys, a slow glide: a lead that soars over a band."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "Two squares an octave apart, the ladder half open: a hollow, clarinet-like lead."
+ },
+ {
+  "name": "Sync-Free Scream",
+  "category": "Lead",
+  "description": "Three saws hard into the mixer and the ladder near singing, the contour sweeping it: a screaming, overdriven lead."
+ },
+ {
+  "name": "Third Lead",
+  "category": "Lead",
+  "description": "Saws a major third apart, the third oscillator an octave down: a lead that sounds a chord on every note."
+ },
+ {
+  "name": "Trill Lead",
+  "category": "Lead",
+  "description": "Oscillator 3's square, off the keyboard, through the wheel: each held note trills a step up and back."
+ },
+ {
+  "name": "Vibrato Lead",
+  "category": "Lead",
+  "description": "A square and a saw, oscillator 3 off the keyboard at the LO range as a slow triangle: the wheel brings in vibrato."
+ },
+ {
+  "name": "Wah Lead",
+  "category": "Lead",
+  "description": "Two saws through a resonant ladder that the contour throws open and lets fall at each note: a lead that says wah."
+ },
+ {
+  "name": "Whistle Lead",
+  "category": "Lead",
+  "description": "A triangle alone, rounded further by the ladder, gliding: a pure, whistled line."
+ },
+ {
+  "name": "Wide Detune Lead",
+  "category": "Lead",
+  "description": "Three saws spread a quarter tone, beating fast, a short glide: a thick, chorused lead."
+ },
+ {
+  "name": "Dark Poly Pad",
+  "category": "Pad",
+  "description": "Six voices of triangles and saws under a low ladder, slow in and out: a dark bed for chords."
+ },
+ {
+  "name": "Drift Pad",
+  "category": "Pad",
+  "description": "Six voices of saws with the drift up, each voice wandering in pitch: a pad that breathes like old circuits."
+ },
+ {
+  "name": "Poly Pad",
+  "category": "Pad",
+  "description": "Six voices, each three saws through its own ladder, slow to swell and slow to let go: chords, which the hardware cannot play."
+ },
+ {
+  "name": "Poly Strings",
+  "category": "Pad",
+  "description": "Six voices of saws a little apart, slow to bow in and out, the ladder fairly open: a string section, which the hardware cannot play."
+ },
+ {
+  "name": "Wheel Sweep Pad",
+  "category": "Pad",
+  "description": "Six voices whose ladders the third oscillator's slow triangle sweeps through the wheel: a pad that rises and falls."
+ },
+ {
+  "name": "Ladder Tom",
+  "category": "Percussion",
+  "description": "The singing ladder with a breath of noise, the contour falling a little: a tuned tom that follows the keys, singing the key played."
+ },
+ {
+  "name": "Noise Hat",
+  "category": "Percussion",
+  "description": "White noise with the ladder wide open and the emphasis up, so only its top comes through, in a short tick."
+ },
+ {
+  "name": "Noise Snare",
+  "category": "Percussion",
+  "description": "White noise alone through a half-open ladder, the loudness falling to nothing in a tenth of a second."
+ },
+ {
+  "name": "Pizzicato",
+  "category": "Pluck",
+  "description": "A triangle and a saw, a soft strike that falls away fast: a plucked string."
+ },
+ {
+  "name": "Pluck Lead",
+  "category": "Pluck",
+  "description": "Two saws whose ladder is snapped open and falls back to nothing within a beat: a bright, plucked line."
+ },
+ {
+  "name": "Poly Pluck",
+  "category": "Pluck",
+  "description": "Six voices of saw and square, each struck and ringing a moment: plucked chords and arpeggios."
+ },
+ {
+  "name": "Resonant Pluck",
+  "category": "Pluck",
+  "description": "One saw with high emphasis, the contour sweeping the corner down: a chirping pluck."
+ },
+ {
+  "name": "Deep Sequence",
+  "category": "Sequence",
+  "description": "Saws at 16 and 32 feet, the ladder low and flicked: a dark, rolling sequence under a track."
+ },
+ {
+  "name": "Glide Sequence",
+  "category": "Sequence",
+  "description": "A square with high emphasis and a fast glide, the contour clicking at each step: a sliding, squelchy sequence."
+ },
+ {
+  "name": "Ladder Sequence",
+  "category": "Sequence",
+  "description": "A saw and a square, the contour clicking the resonant ladder at each step: tight, squelching sixteenths."
+ },
+ {
+  "name": "Pulse Sequence",
+  "category": "Sequence",
+  "description": "Two narrow pulses, short and bright: sixteenths that tick along."
+ }
+]

@@ -1,0 +1,42 @@
+[
+ {
+  "name": "A Minor Ninths",
+  "category": "Players",
+  "description": "Close minor ninths for a soft electric piano."
+ },
+ {
+  "name": "C Major Open",
+  "category": "Players",
+  "description": "Open major triads with a bass octave."
+ },
+ {
+  "name": "D Dorian Nights",
+  "category": "Players",
+  "description": "Dorian sevenths with the ninth above them."
+ },
+ {
+  "name": "D Pentatonic Melody",
+  "category": "Players",
+  "description": "A single line kept to D minor pentatonic."
+ },
+ {
+  "name": "E Harmonic Minor",
+  "category": "Players",
+  "description": "Harmonic-minor triads, opened for a string pad."
+ },
+ {
+  "name": "F Lydian Light",
+  "category": "Players",
+  "description": "Airy Lydian triads with colour and an upper octave."
+ },
+ {
+  "name": "G Dominant Colours",
+  "category": "Players",
+  "description": "Mixolydian sevenths, voiced in first inversion."
+ },
+ {
+  "name": "Whole Tone Glass",
+  "category": "Players",
+  "description": "A custom whole-tone collection with wide, ambiguous chords."
+ }
+]

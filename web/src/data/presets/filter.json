@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Acid Ladder",
+  "category": "Filter",
+  "description": "A diode ladder that opens as the audio gets loud."
+ },
+ {
+  "name": "Auto-Wah",
+  "category": "Filter",
+  "description": "A resonant band-pass that follows the playing."
+ },
+ {
+  "name": "Comb Shimmer",
+  "category": "Filter",
+  "description": "A comb tuned to 440 Hz and its multiples, swept slowly an octave either way."
+ },
+ {
+  "name": "Dark Warmth",
+  "category": "Filter",
+  "description": "A gentle ladder low-pass with a little drive."
+ },
+ {
+  "name": "Phaser Swirl",
+  "category": "Filter",
+  "description": "The phaser's notches swept round 1 kHz, fed back for a deeper swirl."
+ },
+ {
+  "name": "Screaming Highpass",
+  "category": "Filter",
+  "description": "A driven Sallen-Key high-pass on the edge."
+ },
+ {
+  "name": "Synced Wobble",
+  "category": "Filter",
+  "description": "A transistor ladder swept on eighth notes."
+ },
+ {
+  "name": "Talking Vowels",
+  "category": "Filter",
+  "description": "A formant filter on the vowel e, its formants raised by the playing."
+ },
+ {
+  "name": "Telephone",
+  "category": "Filter",
+  "description": "A narrow band of the mids, as through a phone."
+ }
+]

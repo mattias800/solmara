@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Bass Weight",
+  "category": "Dynamics",
+  "description": "A bass held steady and thickened: moderate compression, the valve at its knee for the second and third harmonics that carry a low note on small speakers, and the warm voice."
+ },
+ {
+  "name": "Drum Bus Thicken",
+  "category": "Dynamics",
+  "description": "The kind's own use: a drum bus squeezed by a few dB with the valve driven into its knee, so the hits fatten and the room comes up between them. The fat voice lifts the kick and the cymbals' air a little."
+ },
+ {
+  "name": "Light Glue",
+  "category": "Dynamics",
+  "description": "Slow and light, with the valve nearly clean and no tone curve: it holds a bus together and adds little of its own."
+ },
+ {
+  "name": "Mix Bus Warmth",
+  "category": "Dynamics",
+  "description": "For a whole mix: a decibel or two of slow compression and the valve barely bent, with the warm voice taking the edge off the top."
+ },
+ {
+  "name": "Parallel Blow",
+  "category": "Dynamics",
+  "description": "Crushed hard and fast, the valve well past its knee, and a third of it mixed under what went in: the hits keep their front and the body between them swells."
+ },
+ {
+  "name": "Room Crush",
+  "category": "Dynamics",
+  "description": "Everything at once for a room microphone: limited, driven, and brightened, the tails pulled up to the hits. Half of it under the dry room."
+ },
+ {
+  "name": "Snare Bite",
+  "category": "Dynamics",
+  "description": "A slow attack lets each hit's crack through before it takes hold, a quick release lets go before the next, and the valve adds bite on the top."
+ },
+ {
+  "name": "Vocal Glow",
+  "category": "Dynamics",
+  "description": "A light, slowish squeeze and a little valve: the voice sits forward and a touch brighter without sounding compressed."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Classic Crunch",
+  "category": "Distortion",
+  "description": "The distortion half way, the filter a little closed: the gritty crunch of a late-seventies rock rhythm."
+ },
+ {
+  "name": "Dark Lead",
+  "category": "Distortion",
+  "description": "Full distortion with the filter well closed: a smooth, dark lead that sustains."
+ },
+ {
+  "name": "Edge of Breakup",
+  "category": "Distortion",
+  "description": "The distortion low: a mild, open overdrive that pushes an amplifier."
+ },
+ {
+  "name": "Fuzzed Bass",
+  "category": "Distortion",
+  "description": "On a bass at full quality: grit on the notes, the filter keeping the top civil."
+ },
+ {
+  "name": "Grunge Wall",
+  "category": "Distortion",
+  "description": "Most of the distortion, the filter open: thick, raw and loud."
+ }
+]

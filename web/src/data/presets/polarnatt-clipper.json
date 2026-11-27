@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus Crack",
+  "category": "Bus",
+  "description": "The tallest drum hits shaved off on a bus, hard and quick, so the bus can come up without its peaks."
+ },
+ {
+  "name": "No Latency",
+  "category": "Bus",
+  "description": "For recording and playing in: once the rate, so it adds no latency, a soft edge a dB under full scale to catch what would clip."
+ },
+ {
+  "name": "Snare Tame",
+  "category": "Bus",
+  "description": "A snare's crack rounded by a diode pair's corner: its peak down six dB, its body left."
+ },
+ {
+  "name": "Tape Round",
+  "category": "Bus",
+  "description": "Tape's long, gentle approach to the ceiling over a broad knee: peaks rounded rather than cut, with a little density, and the output down to match."
+ },
+ {
+  "name": "Valve Warmth",
+  "category": "Bus",
+  "description": "A valve's lopsided curve, driven, half of it under what came in: even harmonics that thicken a bus or a bass."
+ },
+ {
+  "name": "Loud Master Front",
+  "category": "Mastering",
+  "description": "A modern loud master's trick: a hard edge a dB under full scale, four dB into it, at sixteen times so the edge stays clean; the limiter after it then has little left to do."
+ },
+ {
+  "name": "Peaks Off the Master",
+  "category": "Mastering",
+  "description": "Before Himlavalv on a master: two dB into a soft edge just under full scale, so the sharpest drum peaks are taken off here and the limiter after it works less and pumps less."
+ },
+ {
+  "name": "Transparent Edge",
+  "category": "Mastering",
+  "description": "The gentlest clipping for a master: the sine curve, which comes to the ceiling flat, a broad knee, and sixteen times the rate, so next to nothing folds back."
+ }
+]

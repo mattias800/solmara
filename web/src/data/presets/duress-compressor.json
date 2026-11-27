@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Bass, Dist 2",
+  "category": "Dynamics",
+  "description": "4 to 1 with Dist 2: a second harmonic that grows with the reduction, warmth on the loud notes."
+ },
+ {
+  "name": "Drums, Dist 3",
+  "category": "Dynamics",
+  "description": "6 to 1, a quick attack and release, and Dist 3: the clipping stage driven hard, a snare's crack with a third harmonic's grit on it."
+ },
+ {
+  "name": "Opto, Smooth",
+  "category": "Dynamics",
+  "description": "10 to 1, the soft optical kind, a slower attack and release: guitars and keys levelled without the fronts lost."
+ },
+ {
+  "name": "Room, Nuke",
+  "category": "Dynamics",
+  "description": "Nuke at the fastest attack, the detector's high-pass in: room microphones flattened so the room swells up between the hits. Blend it in under the kit."
+ },
+ {
+  "name": "Vocal, De-Ess",
+  "category": "Dynamics",
+  "description": "6 to 1 with the band emphasis: the detector hears the esses loudest, so it turns them down most."
+ },
+ {
+  "name": "Vocal, Rock",
+  "category": "Dynamics",
+  "description": "3 to 1 with the detector's high-pass in, a medium attack and release: a lead vocal held level and brought forward. Turn the input up until the meter moves 4 to 8 dB on the loud lines."
+ }
+]

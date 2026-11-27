@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus, Glue",
+  "category": "Dynamics",
+  "description": "The second place, 0.8 s of release, and some 4 dB on the hits: the kit is held together and its room comes up between them."
+ },
+ {
+  "name": "Drum Bus, Pump",
+  "category": "Dynamics",
+  "description": "The first place, the fastest, and the threshold high: the reduction rises with every hit and lets go before the next, so the kit breathes in time."
+ },
+ {
+  "name": "Master, Gentle",
+  "category": "Dynamics",
+  "description": "The fifth place, automatic, and the threshold low on its dial: a dB or two on the loudest passages, let go over seconds, so the mix is held without being heard to move. The last device on the master."
+ },
+ {
+  "name": "Master, Middle and Side",
+  "category": "Dynamics",
+  "description": "The matrix on: the middle and the sides are compressed each by itself, so a loud centre does not pull the width down with it. The fifth place."
+ },
+ {
+  "name": "Master, Program Leveller",
+  "category": "Dynamics",
+  "description": "The sixth place: a single peak is let go in a third of a second, many in ten, and a long loud passage in twenty-five, so a whole song is brought nearer one level, a few dB at the most."
+ },
+ {
+  "name": "Mix Bus, Warm Glue",
+  "category": "Dynamics",
+  "description": "The input 6 dB up, so the valves add their third harmonic, the threshold low, and the sidechain's filter in, so the low end does not pump the rest. The sixth place."
+ },
+ {
+  "name": "Parallel Crush",
+  "category": "Dynamics",
+  "description": "The input at its top and the threshold at the end of its dial, the valves well down and driven, and the mix at 40 %: the crushed and coloured drums under the drums as they were, in one device."
+ },
+ {
+  "name": "Vocal, Smooth",
+  "category": "Dynamics",
+  "description": "The third place and the bias trimmer toward its top, which begins the reduction sooner and more gently: a voice is brought forward and evened out with no edge to it."
+ }
+]

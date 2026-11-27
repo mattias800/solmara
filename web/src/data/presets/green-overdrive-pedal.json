@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Bright Boost",
+  "category": "Drive",
+  "description": "The tight boost with the tone well up: some 3 dB more from 700 Hz upward, for a dark guitar or an amplifier with the treble held back. Put it before the amplifier."
+ },
+ {
+  "name": "Dark and Thick",
+  "category": "Drive",
+  "description": "The drive past its middle and the tone all the way down: the hump moves down to 530 Hz and 5 dB comes off between 1.5 and 3 kHz, for a smooth, woolly overdrive under a voice."
+ },
+ {
+  "name": "Full Drive",
+  "category": "Drive",
+  "description": "The drive at its top and the tone just under its middle: as much as the pedal clips, 28 dB up at 800 Hz on a quiet signal and held to a diode's drop on a loud one."
+ },
+ {
+  "name": "Gentle Push",
+  "category": "Drive",
+  "description": "The drive off and the level at three quarters: 12 dB in the middle and nothing at 80 Hz, enough to tip an amplifier on the edge of breaking up over it when the strings are hit."
+ },
+ {
+  "name": "Low Crunch",
+  "category": "Drive",
+  "description": "The drive a third up: chords that are nearly clean played softly and gritty when dug into, with the lows left clean under them."
+ },
+ {
+  "name": "Noon",
+  "category": "Drive",
+  "description": "The drive and the tone at their middle: the pedal's own overdrive, soft clipping with the middle 18 dB up and the top rolled off above it."
+ },
+ {
+  "name": "Singing Lead",
+  "category": "Drive",
+  "description": "The drive well up and the tone a little past its middle, for single notes: a note played softly comes out nearly as loud as one played hard, and cuts through in the middle."
+ },
+ {
+  "name": "Tight Boost",
+  "category": "Drive",
+  "description": "The drive nearly off and the level at its top, as the pedal is used before a high-gain amplifier: 16 dB more at 800 Hz and under 4 at 80, so the amplifier is driven harder in the middle and hardly harder in the lows, which tightens muted rhythm playing. Put it before the amplifier."
+ }
+]

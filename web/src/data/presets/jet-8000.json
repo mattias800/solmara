@@ -1,0 +1,1032 @@
+[
+ {
+  "name": "Acid Distortion Bass",
+  "category": "Bass",
+  "description": "A saw through the resonant 24 dB low-pass and the distortion, sliding between legato notes."
+ },
+ {
+  "name": "Acid Pulse Bass",
+  "category": "Bass",
+  "description": "A square through the resonant 24 dB low-pass, its envelope snapping shut, sliding between legato notes; accents open it further, and the ribbon turns the resonance up."
+ },
+ {
+  "name": "Chip Bass",
+  "category": "Bass",
+  "description": "A triangle an octave down, nothing more: the bass of a game console."
+ },
+ {
+  "name": "Click Bass",
+  "category": "Bass",
+  "description": "A saw an octave down with a burst of noise on each attack from the filter's quick envelope: a tight bass with a click."
+ },
+ {
+  "name": "Cross-Mod Bass",
+  "category": "Bass",
+  "description": "A triangle two octaves down, cross-modulated by a saw an octave above it, so its punch comes from the modulation rather than the filter; a short envelope on the cross-modulation depth makes each note bark."
+ },
+ {
+  "name": "Detuned Saw Bass",
+  "category": "Bass",
+  "description": "Two saws an octave down, one a few cents sharp, the filter snapping open on each note and closing to a warm body; harder notes snap brighter."
+ },
+ {
+  "name": "Distortion Bass",
+  "category": "Bass",
+  "description": "A saw an octave down through the Multi Effects' distortion, the filter snapping open: a dirty bass."
+ },
+ {
+  "name": "Dual Sub Bass",
+  "category": "Bass",
+  "description": "Dual: a plucked saw bass on the Upper part over a triangle sub two octaves down on the Lower."
+ },
+ {
+  "name": "Feedback Growl Bass",
+  "category": "Bass",
+  "description": "The feedback oscillator an octave down, its tone moved by a slow LFO so held notes growl and turn; a quick filter envelope for the attack, mono."
+ },
+ {
+  "name": "Fifth Bass",
+  "category": "Bass",
+  "description": "A saw an octave down with a saw a fifth above it: a heavy bass with a power chord in it."
+ },
+ {
+  "name": "Glide Sync Bass",
+  "category": "Bass",
+  "description": "A saw synced to a saw a little above it, sliding between legato notes, the filter's envelope giving each a bite."
+ },
+ {
+  "name": "Hard Saw Bass",
+  "category": "Bass",
+  "description": "Seven saws two octaves down, barely detuned, the filter opening with each note: a hard, full bass."
+ },
+ {
+  "name": "Hollow Pulse Bass",
+  "category": "Bass",
+  "description": "A wide pulse an octave down, the filter half open, no envelope: a hollow, steady bass."
+ },
+ {
+  "name": "Hoover Bass",
+  "category": "Bass",
+  "description": "Seven saws detuned wide two octaves down, dipping into pitch on each note: the rave hoover as a bass."
+ },
+ {
+  "name": "House Organ Bass",
+  "category": "Bass",
+  "description": "A square with another an octave up, short and dry: the organ bass of early house."
+ },
+ {
+  "name": "Legato Delay Bass",
+  "category": "Bass",
+  "description": "After the Sound-Creating Tips in the synth's owner's manual: a resonant saw two octaves down, its filter opened by the envelope, legato, doubled by a very short, full echo."
+ },
+ {
+  "name": "Neuro Bass",
+  "category": "Bass",
+  "description": "The feedback oscillator an octave down through the distortion, a quick filter envelope: snarling."
+ },
+ {
+  "name": "Octave Glide Bass",
+  "category": "Bass",
+  "description": "After the Sound-Creating Tips in the synth's owner's manual: two saws an octave apart two octaves down, a slow glide between legato notes, the bass lifted."
+ },
+ {
+  "name": "Plucked Pulse Bass",
+  "category": "Bass",
+  "description": "A narrow pulse an octave down, plucked short with no sustain: a bass for fast lines."
+ },
+ {
+  "name": "Psy Bass",
+  "category": "Bass",
+  "description": "A saw two octaves down, a very short filter and amp envelope: the tight sixteenth bass of psytrance."
+ },
+ {
+  "name": "Pulse Pluck Bass",
+  "category": "Bass",
+  "description": "A wide pulse an octave down with no sustain and a short resonant snap: a round plucked bass."
+ },
+ {
+  "name": "Pulse Width Bass",
+  "category": "Bass",
+  "description": "A pulse an octave down whose width drifts slowly, through the 24 dB low-pass and a quick envelope: round and moving."
+ },
+ {
+  "name": "Reese Bass",
+  "category": "Bass",
+  "description": "Seven saws two octaves down, slightly detuned so they beat slowly against each other, through a closed 24 dB low-pass: the drum and bass Reese."
+ },
+ {
+  "name": "Ribbon Bend Bass",
+  "category": "Bass",
+  "description": "A saw synced to a saw: the ribbon pushes the synced one up, from a round bass to a screaming one."
+ },
+ {
+  "name": "Ring Growl Bass",
+  "category": "Bass",
+  "description": "A saw an octave down with a triangle an octave above it ring-modulated in beside it: a growl on top of the bass."
+ },
+ {
+  "name": "Rolling Saw Octave Bass",
+  "category": "Bass",
+  "description": "After Airwave Music's video on remaking a classic trance bassline: a saw stack over a saw an octave down, no resonance, a quick envelope decay, mono."
+ },
+ {
+  "name": "Square Sub",
+  "category": "Bass",
+  "description": "A square two octaves down, the filter low enough to round it: the weight under a track."
+ },
+ {
+  "name": "Sub Triangle",
+  "category": "Bass",
+  "description": "A triangle two octaves down with the filter closed far enough to leave nearly a sine: the bass under a mix, not in front of it."
+ },
+ {
+  "name": "Sync Pluck Bass",
+  "category": "Bass",
+  "description": "A saw synced to a saw, its pitch envelope sweeping the synced one down fast, so each note starts with a vowel-like snap and falls into a round bass."
+ },
+ {
+  "name": "Synthwave Bass",
+  "category": "Bass",
+  "description": "A saw an octave down, short and bright, made for running eighth notes."
+ },
+ {
+  "name": "Triangle Mod Bass",
+  "category": "Bass",
+  "description": "Triangle modulation an octave down, its hollow, slightly metallic tone shaped by a short envelope."
+ },
+ {
+  "name": "Unison Saw Bass",
+  "category": "Bass",
+  "description": "A saw stacked in Unison an octave down, spread just wide enough to be thick, through a quick envelope."
+ },
+ {
+  "name": "Velocity Bass",
+  "category": "Bass",
+  "description": "A saw an octave down whose filter the velocity opens: soft notes round, hard ones snarl."
+ },
+ {
+  "name": "Wah Bass",
+  "category": "Bass",
+  "description": "A saw through a resonant band-pass that the envelope sweeps up and back on every note: a wah bass."
+ },
+ {
+  "name": "Wobble Reese",
+  "category": "Bass",
+  "description": "The Reese's detuned saws with the filter swung open and shut by a tempo-locked LFO in eighth triplets."
+ },
+ {
+  "name": "Cross-Mod Bell",
+  "category": "Bell",
+  "description": "A triangle cross-modulated by another at an inharmonic interval, struck and dying away like a bell; harder strikes ring brighter."
+ },
+ {
+  "name": "Crystal Bell",
+  "category": "Bell",
+  "description": "A triangle cross-modulated by a triangle two octaves above it, struck and ringing long, bright on top."
+ },
+ {
+  "name": "Glass Chime",
+  "category": "Bell",
+  "description": "Triangles two octaves apart, the upper a little louder, a slow swell into a long ring: glass struck softly."
+ },
+ {
+  "name": "Music Box",
+  "category": "Bell",
+  "description": "A triangle two octaves up, struck short with a long ring: a small music box."
+ },
+ {
+  "name": "Shimmer Bells",
+  "category": "Bell",
+  "description": "Triangles two octaves apart, struck softly into a long echo that keeps them shimmering."
+ },
+ {
+  "name": "Vibraphone",
+  "category": "Bell",
+  "description": "A triangle struck with a short click and a long ring, its level pulsing like a vibraphone's fan."
+ },
+ {
+  "name": "Brass Stab",
+  "category": "Brass",
+  "description": "Two saws an octave apart, the filter jumping open and falling back fast: a short brass hit for chords."
+ },
+ {
+  "name": "Pitch-Kissed Brass",
+  "category": "Brass",
+  "description": "After the Sound-Creating Tips in the synth's owner's manual: two saws, the second kissed sharp by a short pitch envelope, the filter and amp swelling like brass, a little cross-modulation and chorus."
+ },
+ {
+  "name": "Retro Brass",
+  "category": "Brass",
+  "description": "Two saws an octave apart, the filter rising after the attack and settling: the 80s synth brass."
+ },
+ {
+  "name": "Soft Horns",
+  "category": "Brass",
+  "description": "Two saws a few cents apart, the filter easing open over a slow attack: warm, distant horns."
+ },
+ {
+  "name": "Split Bass & Brass",
+  "category": "Brass",
+  "description": "Split at the B below middle C: a saw bass under the split, swelling saw brass above it."
+ },
+ {
+  "name": "Swell Brass",
+  "category": "Brass",
+  "description": "Two saws an octave apart whose filter swells open after the attack, the harder the note the brighter, a little chorus: a brass section's crescendo on every chord."
+ },
+ {
+  "name": "Alarm",
+  "category": "FX",
+  "description": "A square whose pitch a square LFO flips between two notes: an alarm."
+ },
+ {
+  "name": "Bubbles",
+  "category": "FX",
+  "description": "A resonant filter jumped to a new place every sixteenth by the sample-and-hold: bubbling water."
+ },
+ {
+  "name": "Dub Siren",
+  "category": "FX",
+  "description": "A square swung up and down by a fast triangle LFO into a long, feeding-back echo: the sound system siren."
+ },
+ {
+  "name": "Falling Sweep",
+  "category": "FX",
+  "description": "A saw starting high and sliding down slowly through the pitch envelope, a flanger on it: a long fall."
+ },
+ {
+  "name": "Feedback Wind",
+  "category": "FX",
+  "description": "The feedback oscillator at its edge, its tone wandering on a slow random LFO through a resonant band-pass: wind through wires."
+ },
+ {
+  "name": "Laser Zap",
+  "category": "FX",
+  "description": "A saw thrown high by the pitch envelope and dropping in an instant: the laser of an old arcade."
+ },
+ {
+  "name": "Noise Riser",
+  "category": "FX",
+  "description": "White noise over a little saw through a resonant band-pass, its filter and level climbing slowly over the whole held note."
+ },
+ {
+  "name": "Random Bleeps",
+  "category": "FX",
+  "description": "A plucked saw whose pitch the LFO's sample-and-hold jumps to a new place every sixteenth of the song: computer chatter."
+ },
+ {
+  "name": "Rising Laser",
+  "category": "FX",
+  "description": "A saw starting low and shooting up through the pitch envelope's attack: a laser charging."
+ },
+ {
+  "name": "Siren",
+  "category": "FX",
+  "description": "A square whose pitch a slow triangle LFO swings up and down a long way: a siren."
+ },
+ {
+  "name": "Space Drone",
+  "category": "FX",
+  "description": "Synced saws swept very slowly by the LFO, under the jet phaser and a long echo: a drone in orbit."
+ },
+ {
+  "name": "Sync Sweep Drone",
+  "category": "FX",
+  "description": "Two saws, the synced one swept up and down slowly by LFO 1 through the pitch: a drone that keeps changing colour."
+ },
+ {
+  "name": "Wind",
+  "category": "FX",
+  "description": "White noise through a resonant band-pass a slow random LFO moves: wind."
+ },
+ {
+  "name": "Digital Piano",
+  "category": "Keys",
+  "description": "Triangle modulation with a ring-modulated octave in it, struck and decaying: a bright digital piano."
+ },
+ {
+  "name": "Dual Organ & Brass",
+  "category": "Keys",
+  "description": "Dual: a square organ on the Upper part with saw brass swelling in under it on the Lower."
+ },
+ {
+  "name": "Feedback Organ",
+  "category": "Keys",
+  "description": "The feedback oscillator held back to a reedy tone, on and off at once, through the fast chorus."
+ },
+ {
+  "name": "House Piano Stab",
+  "category": "Keys",
+  "description": "Triangle modulation's bright tone struck short with a ring-modulated octave: the piano chord of a house track."
+ },
+ {
+  "name": "Mallet Keys",
+  "category": "Keys",
+  "description": "A triangle struck short with a click of the filter envelope: a wooden mallet."
+ },
+ {
+  "name": "Marimba",
+  "category": "Keys",
+  "description": "A triangle with a quiet octave above it, struck with a click and a short ring: a marimba."
+ },
+ {
+  "name": "Pulse Clav",
+  "category": "Keys",
+  "description": "A narrow pulse through a band-pass, plucked short, the strike opening the filter: funk keys."
+ },
+ {
+  "name": "Pulse Electric Piano",
+  "category": "Keys",
+  "description": "A wide pulse with a soft attack of the filter, decaying, panned slowly from side to side."
+ },
+ {
+  "name": "Pulse Harpsichord",
+  "category": "Keys",
+  "description": "A narrow pulse with another an octave up, plucked short and bright: a harpsichord's two choirs."
+ },
+ {
+  "name": "Ribbon Wah Keys",
+  "category": "Keys",
+  "description": "A pulse clav through a resonant band-pass that the ribbon sweeps like a wah pedal."
+ },
+ {
+  "name": "Ring Tine Keys",
+  "category": "Keys",
+  "description": "Two triangles two octaves apart, ring-modulated into a tine's bite at the strike and fading to a soft tone, with a tremolo the ribbon brings in."
+ },
+ {
+  "name": "Rotary Organ",
+  "category": "Keys",
+  "description": "A square and a saw an octave apart, on and off at once, through the twist effect turning like a speaker."
+ },
+ {
+  "name": "Saw Organ",
+  "category": "Keys",
+  "description": "A saw and a saw an octave up, on and off at once, through the fast chorus: a bright, buzzing organ."
+ },
+ {
+  "name": "Split Bass & Piano",
+  "category": "Keys",
+  "description": "Split at the B below middle C: a round pulse bass under the split, a bright digital piano above it."
+ },
+ {
+  "name": "Square Organ",
+  "category": "Keys",
+  "description": "A square and a square an octave up, sounding at once and stopping at once, through the fast chorus: a compact combo organ."
+ },
+ {
+  "name": "Supersaw Keys",
+  "category": "Keys",
+  "description": "Seven saws struck and decaying to a low sustain: keys for big chords."
+ },
+ {
+  "name": "Sync Organ",
+  "category": "Keys",
+  "description": "A saw synced to a saw an octave and a half above, on and off at once: a bright, vocal organ."
+ },
+ {
+  "name": "Tremolo Keys",
+  "category": "Keys",
+  "description": "Two triangles two octaves apart, ring-modulated for a tine's bite, panning side to side under the auto pan."
+ },
+ {
+  "name": "Triangle Mod Keys",
+  "category": "Keys",
+  "description": "Triangle modulation's thin, bright tone under a quick filter envelope, sustaining a little: keys between a toy piano and a vibraphone."
+ },
+ {
+  "name": "Velocity Layer Keys",
+  "category": "Keys",
+  "description": "Triangles two octaves apart, ring-modulated: soft notes are mellow tines, hard ones bark brightly, and louder."
+ },
+ {
+  "name": "Anthem Superstring",
+  "category": "Lead",
+  "description": "After AtomicA Sounds' video on the synth's history and the classic trance sound: the seven saws alone at full mix, the bass and treble lifted, chorus on, quick to speak and to stop; a short panning echo widens it, standing in for the video's long reverb."
+ },
+ {
+  "name": "Breath Flute",
+  "category": "Lead",
+  "description": "A soft triangle with a breath of noise, the attack easing in, a vibrato that waits before it starts, a short room of echo."
+ },
+ {
+  "name": "Chip Lead",
+  "category": "Lead",
+  "description": "A narrow pulse with nothing filtered away and a quick vibrato that waits a moment: an 8-bit lead."
+ },
+ {
+  "name": "Clarinet",
+  "category": "Lead",
+  "description": "A square through a low-pass that follows the keys, the attack easing in, a delayed vibrato: a clarinet."
+ },
+ {
+  "name": "Detuned Square Lead",
+  "category": "Lead",
+  "description": "Two squares a few cents apart, beating gently, through an open 24 dB low-pass: a fat, round lead."
+ },
+ {
+  "name": "Distortion Lead",
+  "category": "Lead",
+  "description": "Two saws a few cents apart through the Multi Effects' distortion, mono with a quick glide: a lead that growls when played hard."
+ },
+ {
+  "name": "Dual Detuned Stack",
+  "category": "Lead",
+  "description": "Dual: the same two-saw lead on both parts, Part Detune pulling them apart and the panning echo spreading them: one lead as wide as two."
+ },
+ {
+  "name": "Dual Layer Saw Lead",
+  "category": "Lead",
+  "description": "After Dash Glitch's second video on a free emulation of the synth: both parts as tight saw stacks at full mix, one an octave up and quieter, a plucked filter envelope that opens with velocity, treble up, chorus on both and a dotted echo."
+ },
+ {
+  "name": "Dual Octave Lead",
+  "category": "Lead",
+  "description": "Dual: a saw lead on the Upper part over a square an octave down on the Lower, both gliding."
+ },
+ {
+  "name": "Dual Sub Lead",
+  "category": "Lead",
+  "description": "Dual: a square lead on the Upper part over a triangle two octaves down on the Lower, both mono."
+ },
+ {
+  "name": "Euro Octave Lead",
+  "category": "Lead",
+  "description": "Seven saws with a saw an octave above them, bright and wide, plucked open by the filter: the 90s dance lead."
+ },
+ {
+  "name": "Feedback Howl",
+  "category": "Lead",
+  "description": "The feedback oscillator alone, mono and gliding, a vibrato that fades in on long notes and a dotted echo. The ribbon drives the feedback harder and opens the filter."
+ },
+ {
+  "name": "Fifth Lead",
+  "category": "Lead",
+  "description": "A saw with another a fifth above it, mono: every note a power chord."
+ },
+ {
+  "name": "Gated Trance Lead",
+  "category": "Lead",
+  "description": "Seven saws chopped in sixteenths by a square LFO on the amplifier, locked to the song: a gated lead."
+ },
+ {
+  "name": "Glide Triangle Lead",
+  "category": "Lead",
+  "description": "A triangle two octaves of glide wide, mono and legato: a pure, singing line with nothing but its slide."
+ },
+ {
+  "name": "Goa Glide Saws",
+  "category": "Lead",
+  "description": "After Dash Glitch's video on a free emulation of the synth: a lightly detuned saw stack with a saw an octave up, mono and gliding, through a resonant high-pass a slow LFO moves, and the slow chorus."
+ },
+ {
+  "name": "Hard Lead",
+  "category": "Lead",
+  "description": "Seven saws through the distortion with a pitch envelope kicking each note: a hardstyle lead."
+ },
+ {
+  "name": "High-Pass Saw Lead",
+  "category": "Lead",
+  "description": "A saw through the resonant high-pass, so it cuts through a mix without filling it, a quick glide."
+ },
+ {
+  "name": "Jet Phase Lead",
+  "category": "Lead",
+  "description": "Seven saws through the jet phaser, its sweep riding every held note."
+ },
+ {
+  "name": "Lever Vibrato Lead",
+  "category": "Lead",
+  "description": "Two saws a few cents apart, mono with a quick glide; the modulation lever brings in LFO 2's vibrato, and the filter opens with the strike."
+ },
+ {
+  "name": "Metal Cross Lead",
+  "category": "Lead",
+  "description": "A triangle cross-modulated by a pulse an octave above, bright and clangy, harder the harder it is played; the ribbon brings the modulation from glassy to snarling."
+ },
+ {
+  "name": "Neon Lead",
+  "category": "Lead",
+  "description": "A square with a saw a few cents off, chorus and a long echo: a lead from a night drive."
+ },
+ {
+  "name": "Oboe",
+  "category": "Lead",
+  "description": "A narrow pulse through a band-pass, a quick attack and a delayed vibrato: a reedy oboe."
+ },
+ {
+  "name": "Ocarina",
+  "category": "Lead",
+  "description": "The feedback oscillator held back to a soft, hollow tone, an easy attack and a slow vibrato that comes in on held notes."
+ },
+ {
+  "name": "Octave Square Lead",
+  "category": "Lead",
+  "description": "A square with a narrower pulse an octave above it, gliding mono, a touch of delayed vibrato: an old computer game's lead, grown up."
+ },
+ {
+  "name": "Pitch-Swoop Saw Lead",
+  "category": "Lead",
+  "description": "After Dash Glitch's second video on a free emulation of the synth: a wide saw stack an octave down, each note thrown sharp by the pitch envelope and swooping back into pitch, chorus and a dotted echo spreading it."
+ },
+ {
+  "name": "Pulse Width Solo",
+  "category": "Lead",
+  "description": "A pulse whose width the first LFO sweeps, a saw a few cents above it, the 24 dB low-pass opening on each note and settling. A gentle glide; the ribbon brings in vibrato."
+ },
+ {
+  "name": "Rave Hoover",
+  "category": "Lead",
+  "description": "Seven saws detuned wide, stacked in Unison, dipping into pitch on each note through a slow glide and a slow flanger. The early-90s rave stab and lead in one."
+ },
+ {
+  "name": "Remix Main Lead",
+  "category": "Lead",
+  "description": "After NiamorH's notes on remaking a trance remix on the synth: one saw stack through the 24 dB low-pass, its envelope snapping open and falling back fast, a little resonance, chorus and a short eighth-note echo."
+ },
+ {
+  "name": "Ribbon Sweep Lead",
+  "category": "Lead",
+  "description": "Two saws behind a resonant 24 dB low-pass held half shut: the ribbon opens it all the way and turns the resonance up as it goes."
+ },
+ {
+  "name": "Ring Octave Lead",
+  "category": "Lead",
+  "description": "A saw ring-modulated by a triangle an octave above it, hard and hollow at once, mono; the ribbon mixes the dry saw back in."
+ },
+ {
+  "name": "Stream Seven-Saw Lead",
+  "category": "Lead",
+  "description": "After a Vulture Culture livestream on the synth: the seven saws at a middling detune with the mix high, a long sustain and release, chorus and a long dotted-eighth echo panning across."
+ },
+ {
+  "name": "Sync Scream",
+  "category": "Lead",
+  "description": "Two saws, the second synced to the first and thrown an octave and a half up by the pitch envelope, so every note opens with a tearing sweep. Mono; the ribbon pushes the sweep further."
+ },
+ {
+  "name": "Talking Lead",
+  "category": "Lead",
+  "description": "A saw through a resonant band-pass that a tempo-locked LFO swings in quarter notes: a lead that talks in time."
+ },
+ {
+  "name": "Trance Pluck Lead",
+  "category": "Lead",
+  "description": "Seven saws whose filter snaps open and falls to a middling sustain, so a fast line plucks and a held note sings, under a long dotted echo."
+ },
+ {
+  "name": "Triangle Mod Lead",
+  "category": "Lead",
+  "description": "Triangle modulation's bright tone as a mono lead, a slow vibrato coming in and a dotted echo."
+ },
+ {
+  "name": "Twist Lead",
+  "category": "Lead",
+  "description": "A pulse whose width the LFO moves, through the Multi Effects' twist: a lead that seems to turn in place."
+ },
+ {
+  "name": "Unison Feedback Lead",
+  "category": "Lead",
+  "description": "The feedback oscillator stacked in Unison, mono with a glide: one huge, rough voice."
+ },
+ {
+  "name": "Unison Pulse Lead",
+  "category": "Lead",
+  "description": "A pulse whose width the LFO sweeps, stacked in Unison and spread wide: one note as thick as a section."
+ },
+ {
+  "name": "Whistle",
+  "category": "Lead",
+  "description": "A triangle two octaves up with a quick vibrato and a little glide: someone whistling."
+ },
+ {
+  "name": "Auto-Pan Shimmer",
+  "category": "Pad",
+  "description": "Two pulses an octave apart, slowly swelling, swept from side to side by the auto pan under a long echo."
+ },
+ {
+  "name": "Breathing Band Pad",
+  "category": "Pad",
+  "description": "Filtered noise ringing near a pitch, beside a soft saw, through the band-pass a slow LFO moves up and down: a pad that breathes."
+ },
+ {
+  "name": "Cold Pad",
+  "category": "Pad",
+  "description": "A narrow pulse through the high-pass, its width drifting, slowly in: thin and cold."
+ },
+ {
+  "name": "Cross-Mod Pad",
+  "category": "Pad",
+  "description": "A triangle gently cross-modulated by a triangle an octave above it, swelling in: a pad with a metallic edge that the ribbon sharpens."
+ },
+ {
+  "name": "Dark Drone Pad",
+  "category": "Pad",
+  "description": "Seven saws an octave down through a nearly closed 24 dB low-pass with a little resonance: a dark bed."
+ },
+ {
+  "name": "Deep House Pad",
+  "category": "Pad",
+  "description": "A wide pulse with a saw a few cents off through a soft low-pass, a slow bow and a little echo."
+ },
+ {
+  "name": "Distant Choir",
+  "category": "Pad",
+  "description": "Seven saws through a band-pass a slow LFO moves between vowels, far back behind a long echo."
+ },
+ {
+  "name": "Dual Bell & Strings",
+  "category": "Pad",
+  "description": "Dual: a struck triangle bell on the Upper part over pulse-width strings bowed in on the Lower."
+ },
+ {
+  "name": "Dual Glass Ambience",
+  "category": "Pad",
+  "description": "Dual: ringing noise tones on the Upper part over slow triangle pads on the Lower, both into long echoes."
+ },
+ {
+  "name": "Dual Octave Saws",
+  "category": "Pad",
+  "description": "Dual: seven saws on the Upper part and seven an octave down on the Lower, slightly detuned between them."
+ },
+ {
+  "name": "Dual Pluck & Pad",
+  "category": "Pad",
+  "description": "Dual: a plucked saw on the Upper part over a slow pad on the Lower: every chord struck and then held."
+ },
+ {
+  "name": "Dual Strings & Choir",
+  "category": "Pad",
+  "description": "Dual: pulse-width strings on the Upper part over a band-pass saw choir on the Lower, both bowed in slowly."
+ },
+ {
+  "name": "Feedback Pad",
+  "category": "Pad",
+  "description": "The feedback oscillator swelling in, its tone drifting on a slow LFO, under the slow phaser."
+ },
+ {
+  "name": "Flange Pad",
+  "category": "Pad",
+  "description": "Two saws through the deep flanger, its sweep turning a held chord into a slow jet."
+ },
+ {
+  "name": "Glacier Pad",
+  "category": "Pad",
+  "description": "The noise ringing as a pure tone under triangles two octaves apart, very slow in and out, a long echo."
+ },
+ {
+  "name": "High-Pass Sweep Pad",
+  "category": "Pad",
+  "description": "After the Sound-Creating Tips in the synth's owner's manual: the seven saws through the high-pass, shut and opening as its slow envelope falls, a long echo at full and the chorus just short of it."
+ },
+ {
+  "name": "Jet Phase Pad",
+  "category": "Pad",
+  "description": "Seven saws through the jet phaser, swelling in: the sound of a jet passing overhead in slow motion."
+ },
+ {
+  "name": "Layered Saw & Sine Pad",
+  "category": "Pad",
+  "description": "Dual: seven saws swelling in on the Upper part over a soft triangle an octave down on the Lower, the two slightly apart in time."
+ },
+ {
+  "name": "Liquid Pad",
+  "category": "Pad",
+  "description": "A triangle with a quiet saw an octave up under a slow filter LFO and a long echo: the soft bed of liquid drum and bass."
+ },
+ {
+  "name": "Night Drive Pad",
+  "category": "Pad",
+  "description": "A pulse whose width sweeps slowly, through the slow flanger, swelling in: the pad under a neon skyline."
+ },
+ {
+  "name": "Noise Sine Choir",
+  "category": "Pad",
+  "description": "The filtered noise ringing as a pure tone over soft seven saws, slowly in and out: an airy choir."
+ },
+ {
+  "name": "Noise Sweep Pad",
+  "category": "Pad",
+  "description": "White noise under two saws through a band-pass a slow LFO sweeps: air moving through a pad."
+ },
+ {
+  "name": "Phase Drift Pad",
+  "category": "Pad",
+  "description": "A wide pulse and a triangle under the slow phaser, the pulse's width drifting on its own LFO, the filter closing slowly while a chord is held."
+ },
+ {
+  "name": "Pulse Sweep Pad",
+  "category": "Pad",
+  "description": "A pulse whose width sweeps slowly under a filter that the LFO opens on another slow cycle."
+ },
+ {
+  "name": "Ribbon Morph Pad",
+  "category": "Pad",
+  "description": "Seven saws with a triangle an octave above: the ribbon crossfades between them, opens the filter and slows the chorus's swirl into a flange."
+ },
+ {
+  "name": "Ring Glass Pad",
+  "category": "Pad",
+  "description": "Two triangles an octave apart, ring-modulated into a glassy shimmer on the note's third harmonic, swelling slowly through a clear chorus and a long echo; the ribbon opens the filter."
+ },
+ {
+  "name": "Slow Bloom",
+  "category": "Pad",
+  "description": "Seven saws whose filter opens over many seconds while a chord is held: a sound that blooms."
+ },
+ {
+  "name": "Slow Wah Pad",
+  "category": "Pad",
+  "description": "A saw and a pulse through a resonant 24 dB low-pass that a slow LFO opens and closes over several bars."
+ },
+ {
+  "name": "Split Pad & Bell",
+  "category": "Pad",
+  "description": "Split at middle C: a warm saw pad under the split, struck triangle bells above it."
+ },
+ {
+  "name": "Supersaw Atmosphere",
+  "category": "Pad",
+  "description": "Seven saws wide apart through the high-pass, rising slowly out of nothing into a long echo."
+ },
+ {
+  "name": "Tempo Gate Pad",
+  "category": "Pad",
+  "description": "A seven-saw pad chopped in eighth notes by a square LFO on the amplifier, locked to the song's tempo."
+ },
+ {
+  "name": "Tremolo Pad",
+  "category": "Pad",
+  "description": "Two saws whose level a slow LFO pulses, swelling in: a pad that breathes in long waves."
+ },
+ {
+  "name": "Triangle Mod Pad",
+  "category": "Pad",
+  "description": "Triangle modulation's bright, glassy tone, swelling slowly, a slow LFO moving the modulation."
+ },
+ {
+  "name": "Twist Pad",
+  "category": "Pad",
+  "description": "Two saws through the Multi Effects' twist, slowly in and out: a pad that never sits still."
+ },
+ {
+  "name": "Underwater",
+  "category": "Pad",
+  "description": "Two saws far under a closed low-pass with a slow LFO moving it, the pitch drifting a little: underwater."
+ },
+ {
+  "name": "Unison Triangle Pad",
+  "category": "Pad",
+  "description": "A triangle stacked in Unison and spread, swelling in slowly: soft, wide and hollow."
+ },
+ {
+  "name": "Uplifting Supersaw Pad",
+  "category": "Pad",
+  "description": "Seven saws at full mix with a saw an octave above, swelling in under the slow chorus and a long echo: the breakdown chord."
+ },
+ {
+  "name": "Velvet Pad",
+  "category": "Pad",
+  "description": "A triangle and a saw an octave up, the saw quiet, through a soft low-pass, slowly in and slowly out."
+ },
+ {
+  "name": "Vowel Saw Choir",
+  "category": "Pad",
+  "description": "Seven saws, lightly detuned, through a resonant band-pass so they sing like an open vowel; the ribbon moves the vowel."
+ },
+ {
+  "name": "Warm Analog Pad",
+  "category": "Pad",
+  "description": "Two saws a few cents apart through a soft 24 dB low-pass, swelling and fading slowly: the plain warm pad."
+ },
+ {
+  "name": "Chip Noise Snare",
+  "category": "Percussion",
+  "description": "White noise through the high-pass, cut short: an 8-bit snare."
+ },
+ {
+  "name": "Noise Hat",
+  "category": "Percussion",
+  "description": "White noise through the high-pass, cut off almost at once: a closed hi-hat."
+ },
+ {
+  "name": "Noise Snare",
+  "category": "Percussion",
+  "description": "A triangle body thrown down by the pitch envelope under a burst of white noise through the band-pass."
+ },
+ {
+  "name": "Pitch Drop Kick",
+  "category": "Percussion",
+  "description": "A triangle two octaves down, thrown high by the pitch envelope and dropping fast into a short thump."
+ },
+ {
+  "name": "Pitch Tom",
+  "category": "Percussion",
+  "description": "A triangle an octave down whose pitch falls through a short envelope: a tom that follows the keys."
+ },
+ {
+  "name": "Pulse Rim",
+  "category": "Percussion",
+  "description": "A narrow pulse two octaves up, struck and gone: a rimshot's click."
+ },
+ {
+  "name": "Shaker",
+  "category": "Percussion",
+  "description": "White noise through the high-pass, a short swell and a short fall: a shaker."
+ },
+ {
+  "name": "Zap Kick",
+  "category": "Percussion",
+  "description": "A square two octaves down, its pitch falling from very high in an instant: an electro kick's zap."
+ },
+ {
+  "name": "Band-Pass Pluck",
+  "category": "Pluck",
+  "description": "Two saws through a resonant band-pass, plucked short: nasal and bright."
+ },
+ {
+  "name": "Big Room Stab",
+  "category": "Pluck",
+  "description": "Seven saws wide apart with a saw an octave below, cut short: the festival stab."
+ },
+ {
+  "name": "Distortion Pluck",
+  "category": "Pluck",
+  "description": "A saw plucked short through the Multi Effects' distortion and an eighth-note echo."
+ },
+ {
+  "name": "Dub Chord",
+  "category": "Pluck",
+  "description": "Two saws through a soft band-pass, cut short into a long, darkening echo: the dub techno chord."
+ },
+ {
+  "name": "Harp Pluck",
+  "category": "Pluck",
+  "description": "A triangle and a saw an octave up, the saw quiet, plucked with a medium ring: a soft harp."
+ },
+ {
+  "name": "High-Pass Pluck",
+  "category": "Pluck",
+  "description": "Seven saws through the high-pass, plucked short with a quick filter envelope and a dotted echo: thin and bright, made to sit above a mix."
+ },
+ {
+  "name": "Koto Pluck",
+  "category": "Pluck",
+  "description": "A narrow pulse struck with a small upward bend that settles at once: a plucked string from the East."
+ },
+ {
+  "name": "Melody Ring Pluck",
+  "category": "Pluck",
+  "description": "After a trance melody sheet for the synth shared by ariki1 on Vintage Synth Explorer: a saw stack ring-modulated with a synced pulse, plucked by both envelopes, the treble up, chorus and a short echo."
+ },
+ {
+  "name": "Minimal Blip",
+  "category": "Pluck",
+  "description": "A triangle struck very short: a blip for minimal techno."
+ },
+ {
+  "name": "Noise Sine Pluck",
+  "category": "Pluck",
+  "description": "The filtered noise turned up until it rings as a pure tone, plucked short, with a short panning echo."
+ },
+ {
+  "name": "Ring Pluck",
+  "category": "Pluck",
+  "description": "A saw ring-modulated by a triangle an octave above it, plucked short: bright and metallic."
+ },
+ {
+  "name": "Sitar Pluck",
+  "category": "Pluck",
+  "description": "A narrow pulse struck with a small bend down into the note and a buzzing band-pass: a sitar."
+ },
+ {
+  "name": "Split Sub & Pluck",
+  "category": "Pluck",
+  "description": "Split at middle C: a triangle sub under the split, a seven-saw pluck into a dotted echo above it."
+ },
+ {
+  "name": "Square Echo Pluck",
+  "category": "Pluck",
+  "description": "A square plucked short into an eighth-note echo that keeps going: a sequence from one note."
+ },
+ {
+  "name": "Steel Drum",
+  "category": "Pluck",
+  "description": "A triangle cross-modulated by another an octave above it, struck short: a steel pan."
+ },
+ {
+  "name": "Supersaw Pluck",
+  "category": "Pluck",
+  "description": "Seven saws cut short by both envelopes, a little resonance on the filter's snap and a dotted echo."
+ },
+ {
+  "name": "Sync Stab",
+  "category": "Pluck",
+  "description": "Synced saws, the synced one a fifth up, cut short by both envelopes: a bright chord stab."
+ },
+ {
+  "name": "Techno Stab",
+  "category": "Pluck",
+  "description": "A saw and a pulse through a resonant low-pass snapping shut: the stab of a warehouse record."
+ },
+ {
+  "name": "Accent Pulse Sequence",
+  "category": "Sequence",
+  "description": "The arpeggiator on its accented sixteenth pattern, up and down, over a short pulse whose filter the accents open; an eighth-note echo."
+ },
+ {
+  "name": "Arcade Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator up three octaves in sixteenths on a narrow pulse: an arcade machine's fanfare."
+ },
+ {
+  "name": "Chip Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator in thirty-seconds over one octave on a square: a chord the way a game console played one."
+ },
+ {
+  "name": "Falling Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator walking down two octaves in eighths, a bell-like triangle pair cross-modulated a little."
+ },
+ {
+  "name": "Organ Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator up and down two octaves in eighths on the square organ."
+ },
+ {
+  "name": "Random Arp Pluck",
+  "category": "Sequence",
+  "description": "The arpeggiator picking the held notes at random in sixteenths over two octaves, a short saw pluck."
+ },
+ {
+  "name": "Sixteenth Saw Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator up two octaves in sixteenths at the song's tempo, over plucked seven saws and a dotted echo. Hold a chord."
+ },
+ {
+  "name": "Split Acid & Stab",
+  "category": "Sequence",
+  "description": "Split at middle C: an acid bass sliding under the split, a resonant stab above it."
+ },
+ {
+  "name": "Split Arp & Pad",
+  "category": "Sequence",
+  "description": "Split at middle C: the arpeggiator runs the keys below it up and down in sixteenths on a plucked pulse, while the keys above play a soft pad."
+ },
+ {
+  "name": "Split Bass Arp",
+  "category": "Sequence",
+  "description": "Split at middle C: the arpeggiator runs the keys below it in sixteenths as a plucked bass, while the keys above play a saw lead."
+ },
+ {
+  "name": "Thirty-Second Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator in thirty-second notes over three octaves of a plucked pulse: a fast shimmer from a held chord."
+ },
+ {
+  "name": "Triplet Arp",
+  "category": "Sequence",
+  "description": "The arpeggiator up and down in sixteenth triplets, a seven-saw pluck rolling over the beat."
+ },
+ {
+  "name": "Chamber Strings",
+  "category": "Strings",
+  "description": "Two saws a few cents apart through a soft low-pass, a medium bow and the slow chorus: a small section."
+ },
+ {
+  "name": "High-Pass Strings",
+  "category": "Strings",
+  "description": "Seven saws through the high-pass, bowed in: the strings' airy top without their body."
+ },
+ {
+  "name": "Octave Ensemble",
+  "category": "Strings",
+  "description": "Seven saws with a saw an octave below them, bowed in slowly through the slow chorus: a full ensemble."
+ },
+ {
+  "name": "Pulse Width Strings",
+  "category": "Strings",
+  "description": "A pulse whose width a slow LFO sweeps, with a saw a few cents off, bowed in and out slowly through the slow chorus: the string machine sound."
+ },
+ {
+  "name": "Seven-Saw Strings",
+  "category": "Strings",
+  "description": "After the Sound-Creating Tips in the synth's owner's manual: the seven saws at full mix, bowed in slowly, the echo at full and the chorus just short of it, so it keeps its body in mono."
+ },
+ {
+  "name": "Split Bass & Strings",
+  "category": "Strings",
+  "description": "Split at the B below middle C: a mono saw bass under the split, slow pulse-width strings above it."
+ },
+ {
+  "name": "Synth Pizzicato",
+  "category": "Strings",
+  "description": "Two saws plucked short with a fast filter decay: strings played with the fingers."
+ },
+ {
+  "name": "Native Neutral",
+  "category": "Synth",
+  "description": "Ten-voice Native engine with a neutral supported patch for real-time playback and automation."
+ }
+]

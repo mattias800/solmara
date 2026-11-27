@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Bus Clarity",
+  "category": "Bus",
+  "description": "On a bus of many parts, such as drums or keys: the parts that hide each other drawn apart, a little each way."
+ },
+ {
+  "name": "All the Way",
+  "category": "Mastering",
+  "description": "Recover and Tame at their tops: as far as it goes, to hear what it does on a mix; usually too much to keep."
+ },
+ {
+  "name": "Bright and Clear",
+  "category": "Mastering",
+  "description": "Both ways at their middle with the unmasking leaning to the highs: what is hidden in the top comes out first, for a dark mix."
+ },
+ {
+  "name": "Clear Master",
+  "category": "Mastering",
+  "description": "Both ways past their middle: a mix whose parts sit on each other comes apart into its parts, at the loudness it came in at."
+ },
+ {
+  "name": "Gentle Balance",
+  "category": "Mastering",
+  "description": "A light hand each way: what is hidden comes up a little and what hides it goes down a little, so a master opens without anyone hearing an equaliser. Where to start."
+ },
+ {
+  "name": "Late Night",
+  "category": "Mastering",
+  "description": "Nothing unmasked, Boost down 8 dB: the leaner bass and forward middle of a mix played quietly."
+ },
+ {
+  "name": "Lift the Detail",
+  "category": "Mastering",
+  "description": "Mostly bringing up, with more of the spectrum given to it: the quiet parts that the loud ones hide, a reverb's tail, a shaker under the drums, the breath of a voice, come forward, and little is taken from the rest."
+ },
+ {
+  "name": "Played Loud",
+  "category": "Mastering",
+  "description": "Nothing unmasked, Boost up 8 dB: the fuller bass and lighter middle of a mix played louder, at the same loudness."
+ },
+ {
+  "name": "Tame Resonances",
+  "category": "Mastering",
+  "description": "Tame with Bias down, so only what stands well out of the rest is turned down: ringing peaks and resonances, and little else."
+ },
+ {
+  "name": "Tame the Mud",
+  "category": "Mastering",
+  "description": "Mostly turning down, kept between 80 and 600 Hz: a low middle that covers what is above it is held back where it does, and the rest is left alone."
+ },
+ {
+  "name": "Warm and Even",
+  "category": "Mastering",
+  "description": "The unmasking leaning to the lows, with a little Boost: for a harsh, bright mix, the manual's own advice."
+ },
+ {
+  "name": "De-ess",
+  "category": "Vocal",
+  "description": "Tame alone between 4.5 and 10 kHz, Bias down: an s that covers the rest of the voice is turned down where it does, and nothing outside the range is touched."
+ }
+]

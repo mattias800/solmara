@@ -1,0 +1,51 @@
+---
+title: "Key Chords"
+description: "Key Chords"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/key-chords.webp';
+
+A MIDI device: keeps each note to a key and scale, moving one outside it to the nearest scale note or silencing it, and can play each as a chord of the scale, of one to five notes stacked in its thirds, inverted or opened, with an octave above or below and a colour on top.
+
+[Key Chords on the website](/solmara/write/#key-chords)
+
+## In the device chain
+
+Key Chords on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Key Chords in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Key Chords. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **A Minor Ninths**: Close minor ninths for a soft electric piano.
+- **C Major Open**: Open major triads with a bass octave.
+- **D Dorian Nights**: Dorian sevenths with the ninth above them.
+- **D Pentatonic Melody**: A single line kept to D minor pentatonic.
+- **E Harmonic Minor**: Harmonic-minor triads, opened for a string pad.
+- **F Lydian Light**: Airy Lydian triads with colour and an upper octave.
+- **G Dominant Colours**: Mixolydian sevenths, voiced in first inversion.
+- **Whole Tone Glass**: A custom whole-tone collection with wide, ambiguous chords.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Key | 12 choices: C, C#, D, D#, … | C |
+| Scale | 15 choices: Project, Major, Minor, Lydian, … | Major |
+| Filter notes | Off, On | Off |
+| Chords | Off, On | On |
+| Notes | 1 to 5 | 3 |
+| Inversion | 0 to 4 | 0 |
+| Open chords | Off, On | Off |
+| Add octave up | Off, On | Off |
+| Add octave down | Off, On | Off |
+| Add color | Off, On | Off |
+| Alter | Off, On | Off |

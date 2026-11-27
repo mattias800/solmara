@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Broken Windows",
+  "category": "Players",
+  "description": "A busy break with snare ghosts and moving hats."
+ },
+ {
+  "name": "Clave Room",
+  "category": "Players",
+  "description": "Clave and hat patterns over a restrained low end."
+ },
+ {
+  "name": "Dub Space",
+  "category": "Players",
+  "description": "Sparse one-drop drums and a quiet rim mirror."
+ },
+ {
+  "name": "Floor Between",
+  "category": "Players",
+  "description": "Four-on-the-floor with a quiet open-hat mirror."
+ },
+ {
+  "name": "Garage Map",
+  "category": "Players",
+  "description": "A swung floor beat with a syncopated kick."
+ },
+ {
+  "name": "Half Time Air",
+  "category": "Players",
+  "description": "Half-time drums, a sparse kick and rolling hats."
+ },
+ {
+  "name": "Locked Backbeat",
+  "category": "Players",
+  "description": "The snare stays plain while the other drums move to a busier place."
+ },
+ {
+  "name": "Plain Pocket",
+  "category": "Players",
+  "description": "A sparse rock pocket with a little hat movement."
+ }
+]

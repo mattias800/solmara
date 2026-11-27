@@ -1,0 +1,37 @@
+[
+ {
+  "name": "Bass, Growl",
+  "category": "EQ",
+  "description": "A bass's growl at 700 Hz, for a line that disappears under the mix."
+ },
+ {
+  "name": "Guitar, Forward",
+  "category": "EQ",
+  "description": "Electric or acoustic guitar brought forward: a lift at 1 kHz and bite at 2 kHz."
+ },
+ {
+  "name": "Kick, Beater",
+  "category": "EQ",
+  "description": "The kick's boxiness at 300 Hz down and its beater at 3 kHz forward."
+ },
+ {
+  "name": "Mix, Gentle Scoop",
+  "category": "EQ",
+  "description": "A shallow dip at 500 Hz with a touch of presence: the middle of a busy mix cleared."
+ },
+ {
+  "name": "Snare, Crack",
+  "category": "EQ",
+  "description": "The cardboard at 700 Hz out and the crack at 4 kHz up."
+ },
+ {
+  "name": "Vocal, Body and Presence",
+  "category": "EQ",
+  "description": "A little chest at 200 Hz, the box at 500 Hz taken out, and presence at 3 kHz."
+ },
+ {
+  "name": "Vocal, Less Nasal",
+  "category": "EQ",
+  "description": "A dip at 1 kHz for a voice that sounds pinched or nasal."
+ }
+]

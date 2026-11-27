@@ -1,0 +1,51 @@
+---
+title: "Blower Box"
+description: "Valve character compressor: one-knob thickening for drums and bass."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/blower-box.webp';
+
+**An emulation of an analogue original,** modelled on the one-knob valve character compressors made for thickening drums and bass.
+
+A valve character compressor, for thickening drums, bass, and buses with compression and valve saturation working together: one compress knob that lowers the threshold, steepens the ratio, and brings its own make-up, an attack and a release that scale a detector of two parts, a fast one for hits and a slow one that holds a long loud passage down, and a valve gain stage after it, a triode solved as a circuit, that the saturation knob drives harder without making it louder: second harmonics first, then third as it clips, with its grid drawing current on peaks. A character knob and a voice switch, fat, warm, or bright, for a tone curve after the valve; a mix of what went in for parallel compression, an output, and the automatic make-up on a switch. No one unit: it is the middle of its kind, the one-knob valve compressors and the valve saturation of mixer preamps.
+
+[Blower Box on the website](/solmara/effects/#blower-box)
+
+## In the device chain
+
+Blower Box on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Blower Box in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Blower Box. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bass Weight**: A bass held steady and thickened: moderate compression, the valve at its knee for the second and third harmonics that carry a low note on small speakers, and the warm voice.
+- **Drum Bus Thicken**: The kind's own use: a drum bus squeezed by a few dB with the valve driven into its knee, so the hits fatten and the room comes up between them. The fat voice lifts the kick and the cymbals' air a little.
+- **Light Glue**: Slow and light, with the valve nearly clean and no tone curve: it holds a bus together and adds little of its own.
+- **Mix Bus Warmth**: For a whole mix: a decibel or two of slow compression and the valve barely bent, with the warm voice taking the edge off the top.
+- **Parallel Blow**: Crushed hard and fast, the valve well past its knee, and a third of it mixed under what went in: the hits keep their front and the body between them swells.
+- **Room Crush**: Everything at once for a room microphone: limited, driven, and brightened, the tails pulled up to the hits. Half of it under the dry room.
+- **Snare Bite**: A slow attack lets each hit's crack through before it takes hold, a quick release lets go before the next, and the valve adds bite on the top.
+- **Vocal Glow**: A light, slowish squeeze and a little valve: the voice sits forward and a touch brighter without sounding compressed.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Compress | 0 to 10 | 3 |
+| Attack | 0 to 10 | 5 |
+| Release | 0 to 10 | 5 |
+| Saturation | 0 to 10 | 3 |
+| Character | 0 to 10 | 0 |
+| Voice | Fat, Warm, Bright | Fat |
+| Mix | 0% to 100% | 100% |
+| Output | -20 dB to 20 dB | 0 dB |
+| Auto gain | Off, On | On |

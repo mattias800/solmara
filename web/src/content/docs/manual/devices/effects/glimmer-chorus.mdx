@@ -1,0 +1,52 @@
+---
+title: "Glimmer Chorus"
+description: "Ensemble chorus: up to eight voices, swept, with feedback."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/glimmer-chorus.webp';
+
+**A design of Solmara's own.**
+
+An ensemble chorus: one to four pairs of voices between two delay times, swept by a slow sine and spread across the stereo field, with feedback through a band of the wet sound, from a gentle widening to a ringing, flanging shimmer. Its rate can follow the song's tempo.
+
+[Glimmer Chorus on the website](/solmara/effects/#glimmer-chorus)
+
+## In the device chain
+
+Glimmer Chorus on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Glimmer Chorus in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+5 factory presets come with Glimmer Chorus. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bass Safe**: Width above 250 Hz only: the low end stays where it was, the top spreads.
+- **Ringing Ensemble**: Three pairs fed back hard through a band in the middle: the voices ring, near a flanger, for leads that sing.
+- **Subtle Doubler**: One pair, a little behind and barely moving: a second take beside the first, for a voice or a guitar.
+- **Tempo Swirl**: Two pairs swept once a bar, deep, so the width breathes with the song.
+- **Wide Shimmer**: Four pairs of voices between 7 and 16 ms, swept slowly and spread wide: a pad or a pluck made broad and alive.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Rate | 0.01 Hz to 10 Hz | 0.6 Hz |
+| Sync | Off, On | Off |
+| Division | 13 choices: 1/32, 1/16T, 1/16, 1/8T, … | 1/2 |
+| Depth | 0% to 100% | 50% |
+| Delay 1 | 0.5 ms to 40 ms | 7 ms |
+| Delay 2 | 0.5 ms to 40 ms | 14 ms |
+| Voice pairs | 1 to 4 | 2 |
+| Feedback | -0.95 to 0.95 | 0 |
+| Low cut | 20 Hz to 2000 Hz | 20 Hz |
+| High cut | 500 Hz to 20000 Hz | 20000 Hz |
+| Width | 0% to 100% | 100% |
+| Mix | 0% to 100% | 50% |
+| Output | -24 dB to 24 dB | 0 dB |

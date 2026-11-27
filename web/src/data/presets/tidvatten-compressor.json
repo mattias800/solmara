@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus Smash",
+  "category": "Bus",
+  "description": "Drums squashed fast, the hits pushed down hard and the room between them lifted, at a little over half its depth."
+ },
+ {
+  "name": "Vocal Up Front",
+  "category": "Bus",
+  "description": "A voice's body held even and its quiet words lifted, its top pushed only gently: closer, steadier, never harsh."
+ },
+ {
+  "name": "Air and Detail",
+  "category": "Sound design",
+  "description": "Mostly lifting, and mostly in the top: breaths, noise and the tails of notes brought up, the hits hardly touched."
+ },
+ {
+  "name": "All the Way",
+  "category": "Sound design",
+  "description": "Every band pushed down and lifted at full depth: the loud and the quiet brought to one level in each band, the dense, bright, in-your-face sound of a synth or a drop run through it."
+ },
+ {
+  "name": "Bass Thickener",
+  "category": "Sound design",
+  "description": "A bass held to one level from its lows to its growl, the top left alone: every note as loud as the next, its harmonics brought forward."
+ },
+ {
+  "name": "Half Tide",
+  "category": "Sound design",
+  "description": "The same at half its depth, under what came in: more detail and sheen without losing the hits' shape."
+ },
+ {
+  "name": "Lift Only",
+  "category": "Sound design",
+  "description": "Nothing pushed down, only the quiet lifted, at half its depth: tails, reverb and sustain brought up under the notes, the attacks as they were."
+ },
+ {
+  "name": "Pad Glow",
+  "category": "Sound design",
+  "description": "Slow and soft: a pad's movement evened out over a long time, its quiet parts glowing up between the chords."
+ }
+]

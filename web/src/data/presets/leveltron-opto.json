@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Drive Only",
+  "category": "Dynamics",
+  "description": "No levelling: the amplifier alone, driven a little."
+ },
+ {
+  "name": "Gentle Vocal",
+  "category": "Dynamics",
+  "description": "Evens a voice out a few dB, slowly."
+ },
+ {
+  "name": "Hard Limit",
+  "category": "Dynamics",
+  "description": "The limit setting, turned well up: loud passages are held down."
+ },
+ {
+  "name": "Steady Bass",
+  "category": "Dynamics",
+  "description": "Holds a bass in place; the emphasis keeps its lowest notes from setting it off alone."
+ }
+]

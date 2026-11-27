@@ -1,0 +1,47 @@
+---
+title: "Echo Lad"
+description: "Multi-style echo in the style of the 2000s studio echo boxes: tape, oil can and early digital delays in one."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/echo-lad.webp';
+
+**An emulation of an analogue original,** modelled on the classic tape, oil-can and bucket-brigade echoes, as the 2000s studio echo boxes gather them.
+
+A modelled multi-style echo, for vocals, guitars, keys, synths and drums: one echo with a choice of four machines to play through. Studio tape, a two-track machine used for slap and echo, soft and steady; tape echo, the single-head 1960s tape echo with its preamp, dark and wavering; oil can, the 1960s drum-in-oil echo, narrow, uneven and wavering; early digital, the 1980s rack delay, clean to its converters' rails. Single, Dual, Ping-pong and Rhythm feels, Groove and Feel to swing and push the repeats, saturation into the machine, low and high cuts in the loop, and a time that glides as a tape transport does, synced to the tempo or free.
+
+[Echo Lad on the website](/solmara/effects/#echo-lad)
+
+## In the device chain
+
+Echo Lad on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Echo Lad in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Style | Studio tape, Tape echo, Oil can, Early digital | Studio tape |
+| Mode | Single, Dual, Ping-pong, Rhythm | Single |
+| Sync | Off, On | On |
+| Division | 13 choices: 1/32, 1/16T, 1/16, 1/8T, … | 1/8 |
+| Time | 1 ms to 2000 ms | 250 ms |
+| Division 2 | 13 choices: 1/32, 1/16T, 1/16, 1/8T, … | 1/8. |
+| Time 2 | 1 ms to 2000 ms | 375 ms |
+| Feedback | 0% to 125% | 30% |
+| Groove | -25% to 25% | 0% |
+| Feel | -25% to 25% | 0% |
+| Saturation | 0 dB to 24 dB | 0 dB |
+| Low cut | 0% to 100% | 0% |
+| High cut | 0% to 100% | 0% |
+| Repeats | 1 to 16 | 4 |
+| Decay | 0 dB to 40 dB | 6 dB |
+| Mix | 0% to 100% | 35% |
+| Input | -24 dB to 24 dB | 0 dB |
+| Output | -24 dB to 24 dB | 0 dB |

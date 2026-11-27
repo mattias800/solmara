@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Always On",
+  "category": "Boost",
+  "description": "A few decibels over unity, left on: a little more level and sparkle into the amplifier."
+ },
+ {
+  "name": "Hot Stage",
+  "category": "Boost",
+  "description": "Full up with the output turned down: the transistor's own lopsided clipping, heard at a sensible level."
+ },
+ {
+  "name": "Push the Amp",
+  "category": "Boost",
+  "description": "Full up: the stage starts to flatten on hard notes, and the amplifier after it breaks up sooner."
+ },
+ {
+  "name": "Solo Lift",
+  "category": "Boost",
+  "description": "Some 12 dB up for a solo, still clean on a guitar played normally."
+ }
+]

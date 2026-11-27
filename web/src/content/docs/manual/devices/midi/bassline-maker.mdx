@@ -1,0 +1,198 @@
+---
+title: "Bassline Maker"
+description: "Bassline Maker"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/bassline-maker.webp';
+
+A MIDI device: makes a bass line of an on-beat phrase and an off-beat one, chosen from busy to sparse and varied through the pattern, its intervals stretched and made minor, transposed from the keys or played as written, with eight patterns.
+
+[Bassline Maker on the website](/solmara/write/#bassline-maker)
+
+## In the device chain
+
+Bassline Maker on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Bassline Maker in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Bassline Maker. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dub Roots**: Long low roots with very few offbeat notes.
+- **Funk Thread**: A busy, short line with minor colour and a changing offbeat phrase.
+- **Key Played Bass**: A held key supplies the root of a short, responsive bass phrase.
+- **Longer Conversation**: A two-bar phrase whose second half grows busier.
+- **Minor Garage**: A shuffled minor line leaning on its offbeats.
+- **Octave Floor**: A steady root and octave pulse for a dance track.
+- **Root Pocket**: A sparse, short root line with a small offbeat reply.
+- **Tied Corners**: A hand-drawn line with two slides and a wide reply.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Pattern | 1 to 8 | 1 |
+| Playback mode | SEQ, SEQ+KEY, KEY | SEQ |
+| MIDI pitch | Off, On | Off |
+| MIDI velocity | Off, On | Off |
+| Octave | -2 to 2 | 0 |
+| Shuffle source | Local, Global | Local |
+| Pattern 1 root note | 0 to 127 | 48 |
+| Pattern 1 steps | 16 to 64 | 16 |
+| Pattern 1 shift | -32 to 32 | 0 |
+| Pattern 1 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 1 shuffle | 50% to 75% | 50% |
+| Pattern 1 on-beat bank | A, B | A |
+| Pattern 1 on-beat phrase | 1 to 64 | 24 |
+| Pattern 1 on-beat velocity | 0% to 100% | 100% |
+| Pattern 1 on-beat note length | 0% to 100% | 40% |
+| Pattern 1 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 1 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 1 off-beat bank | A, B | A |
+| Pattern 1 off-beat phrase | 1 to 64 | 12 |
+| Pattern 1 off-beat velocity | 0% to 100% | 80% |
+| Pattern 1 off-beat note length | 0% to 100% | 30% |
+| Pattern 1 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 1 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 1 note range | -2 to 2 | 0 |
+| Pattern 1 minorness | 0 to 4 | 0 |
+| Pattern 2 root note | 0 to 127 | 48 |
+| Pattern 2 steps | 16 to 64 | 16 |
+| Pattern 2 shift | -32 to 32 | 0 |
+| Pattern 2 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 2 shuffle | 50% to 75% | 50% |
+| Pattern 2 on-beat bank | A, B | A |
+| Pattern 2 on-beat phrase | 1 to 64 | 24 |
+| Pattern 2 on-beat velocity | 0% to 100% | 100% |
+| Pattern 2 on-beat note length | 0% to 100% | 40% |
+| Pattern 2 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 2 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 2 off-beat bank | A, B | A |
+| Pattern 2 off-beat phrase | 1 to 64 | 12 |
+| Pattern 2 off-beat velocity | 0% to 100% | 80% |
+| Pattern 2 off-beat note length | 0% to 100% | 30% |
+| Pattern 2 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 2 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 2 note range | -2 to 2 | 0 |
+| Pattern 2 minorness | 0 to 4 | 0 |
+| Pattern 3 root note | 0 to 127 | 48 |
+| Pattern 3 steps | 16 to 64 | 16 |
+| Pattern 3 shift | -32 to 32 | 0 |
+| Pattern 3 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 3 shuffle | 50% to 75% | 50% |
+| Pattern 3 on-beat bank | A, B | A |
+| Pattern 3 on-beat phrase | 1 to 64 | 24 |
+| Pattern 3 on-beat velocity | 0% to 100% | 100% |
+| Pattern 3 on-beat note length | 0% to 100% | 40% |
+| Pattern 3 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 3 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 3 off-beat bank | A, B | A |
+| Pattern 3 off-beat phrase | 1 to 64 | 12 |
+| Pattern 3 off-beat velocity | 0% to 100% | 80% |
+| Pattern 3 off-beat note length | 0% to 100% | 30% |
+| Pattern 3 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 3 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 3 note range | -2 to 2 | 0 |
+| Pattern 3 minorness | 0 to 4 | 0 |
+| Pattern 4 root note | 0 to 127 | 48 |
+| Pattern 4 steps | 16 to 64 | 16 |
+| Pattern 4 shift | -32 to 32 | 0 |
+| Pattern 4 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 4 shuffle | 50% to 75% | 50% |
+| Pattern 4 on-beat bank | A, B | A |
+| Pattern 4 on-beat phrase | 1 to 64 | 24 |
+| Pattern 4 on-beat velocity | 0% to 100% | 100% |
+| Pattern 4 on-beat note length | 0% to 100% | 40% |
+| Pattern 4 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 4 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 4 off-beat bank | A, B | A |
+| Pattern 4 off-beat phrase | 1 to 64 | 12 |
+| Pattern 4 off-beat velocity | 0% to 100% | 80% |
+| Pattern 4 off-beat note length | 0% to 100% | 30% |
+| Pattern 4 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 4 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 4 note range | -2 to 2 | 0 |
+| Pattern 4 minorness | 0 to 4 | 0 |
+| Pattern 5 root note | 0 to 127 | 48 |
+| Pattern 5 steps | 16 to 64 | 16 |
+| Pattern 5 shift | -32 to 32 | 0 |
+| Pattern 5 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 5 shuffle | 50% to 75% | 50% |
+| Pattern 5 on-beat bank | A, B | A |
+| Pattern 5 on-beat phrase | 1 to 64 | 24 |
+| Pattern 5 on-beat velocity | 0% to 100% | 100% |
+| Pattern 5 on-beat note length | 0% to 100% | 40% |
+| Pattern 5 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 5 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 5 off-beat bank | A, B | A |
+| Pattern 5 off-beat phrase | 1 to 64 | 12 |
+| Pattern 5 off-beat velocity | 0% to 100% | 80% |
+| Pattern 5 off-beat note length | 0% to 100% | 30% |
+| Pattern 5 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 5 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 5 note range | -2 to 2 | 0 |
+| Pattern 5 minorness | 0 to 4 | 0 |
+| Pattern 6 root note | 0 to 127 | 48 |
+| Pattern 6 steps | 16 to 64 | 16 |
+| Pattern 6 shift | -32 to 32 | 0 |
+| Pattern 6 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 6 shuffle | 50% to 75% | 50% |
+| Pattern 6 on-beat bank | A, B | A |
+| Pattern 6 on-beat phrase | 1 to 64 | 24 |
+| Pattern 6 on-beat velocity | 0% to 100% | 100% |
+| Pattern 6 on-beat note length | 0% to 100% | 40% |
+| Pattern 6 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 6 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 6 off-beat bank | A, B | A |
+| Pattern 6 off-beat phrase | 1 to 64 | 12 |
+| Pattern 6 off-beat velocity | 0% to 100% | 80% |
+| Pattern 6 off-beat note length | 0% to 100% | 30% |
+| Pattern 6 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 6 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 6 note range | -2 to 2 | 0 |
+| Pattern 6 minorness | 0 to 4 | 0 |
+| Pattern 7 root note | 0 to 127 | 48 |
+| Pattern 7 steps | 16 to 64 | 16 |
+| Pattern 7 shift | -32 to 32 | 0 |
+| Pattern 7 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 7 shuffle | 50% to 75% | 50% |
+| Pattern 7 on-beat bank | A, B | A |
+| Pattern 7 on-beat phrase | 1 to 64 | 24 |
+| Pattern 7 on-beat velocity | 0% to 100% | 100% |
+| Pattern 7 on-beat note length | 0% to 100% | 40% |
+| Pattern 7 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 7 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 7 off-beat bank | A, B | A |
+| Pattern 7 off-beat phrase | 1 to 64 | 12 |
+| Pattern 7 off-beat velocity | 0% to 100% | 80% |
+| Pattern 7 off-beat note length | 0% to 100% | 30% |
+| Pattern 7 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 7 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 7 note range | -2 to 2 | 0 |
+| Pattern 7 minorness | 0 to 4 | 0 |
+| Pattern 8 root note | 0 to 127 | 48 |
+| Pattern 8 steps | 16 to 64 | 16 |
+| Pattern 8 shift | -32 to 32 | 0 |
+| Pattern 8 rate | 11 choices: 1/1, 1/2, 1/4, 3/16, … | 1/16 |
+| Pattern 8 shuffle | 50% to 75% | 50% |
+| Pattern 8 on-beat bank | A, B | A |
+| Pattern 8 on-beat phrase | 1 to 64 | 24 |
+| Pattern 8 on-beat velocity | 0% to 100% | 100% |
+| Pattern 8 on-beat note length | 0% to 100% | 40% |
+| Pattern 8 on-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Square |
+| Pattern 8 on-beat variator amount | -100% to 100% | 0% |
+| Pattern 8 off-beat bank | A, B | A |
+| Pattern 8 off-beat phrase | 1 to 64 | 12 |
+| Pattern 8 off-beat velocity | 0% to 100% | 80% |
+| Pattern 8 off-beat note length | 0% to 100% | 30% |
+| Pattern 8 off-beat variator shape | 18 choices: Square, Pulse, Ramp, Square x2, … | Pulse |
+| Pattern 8 off-beat variator amount | -100% to 100% | 0% |
+| Pattern 8 note range | -2 to 2 | 0 |
+| Pattern 8 minorness | 0 to 4 | 0 |

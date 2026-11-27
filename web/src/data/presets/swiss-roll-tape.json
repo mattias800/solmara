@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Clean Fifteen",
+  "category": "Tape",
+  "description": "The machine as it is lined up: 15 inches a second on studio tape, the bias as set, a healthy transport, no hiss. A bump of 3 dB near 32 Hz, a third harmonic about 45 dB under a loud passage, and peaks rounded by a decibel or so. The place to start."
+ },
+ {
+  "name": "Drum Smack",
+  "category": "Tape",
+  "description": "Drums recorded hot at 15: the drive 9 dB up on the hottest tape, so the tape takes the tops off the hits and thickens them with third harmonic, with the output turned back down. The cymbals are held back more than the kick."
+ },
+ {
+  "name": "Mix Bus Thirty",
+  "category": "Tape",
+  "description": "A whole mix at 30 inches a second on the oldest, cleanest tape, driven 3 dB: the top stays open to 20 kHz, the low end gets its rise around 55 Hz, and the loudest peaks are rounded. Wow and flutter are off, so the two channels stay exactly in step."
+ },
+ {
+  "name": "Parallel Crush",
+  "category": "Tape",
+  "description": "The tape driven 18 dB, far past where it is clean, mixed half and half with the signal as it came: the crushed copy fills in under the clean hits. Wow and flutter are off so that the two stay in step and do not comb."
+ },
+ {
+  "name": "Round Bass",
+  "category": "Tape",
+  "description": "Bass at 30 inches a second, where the head's bump sits near 55 Hz and is 4 dB tall, with its knob turned up for more of it, and the drive 6 dB up for harmonics that carry the notes on small speakers."
+ },
+ {
+  "name": "Slow and Dark",
+  "category": "Tape",
+  "description": "7.5 inches a second with the bias turned up: the top falls from 5 kHz, loud highs are held back hard, and the bump sits down at 20 Hz. A little hiss. For keys and guitars that are too bright and too clean."
+ },
+ {
+  "name": "Underbiased Bite",
+  "category": "Tape",
+  "description": "The bias turned down: several dB more above 8 kHz and far more distortion in the middle, even on quiet notes. The edge of a machine set up for brightness and not for cleanliness."
+ },
+ {
+  "name": "Worn Out Deck",
+  "category": "Tape",
+  "description": "A machine that has not been serviced: wow and flutter near their tops, so held notes waver by some tenths of a percent and the two channels drift against each other, hiss 10 dB over the machine's own, the slow speed, and the tape driven. Lo-fi, and the same wobble every time it is rendered."
+ }
+]

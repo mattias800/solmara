@@ -1,0 +1,50 @@
+---
+title: "1981 Digital Ambience"
+description: "1980s digital reverb: tight ambience, gated nonlinear and reverse drums."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/1981-digital-ambience.webp';
+
+**An emulation of a digital original,** modelled on the early-1980s British digital reverb of ambience, gated and reversed drums.
+
+A digital reverb of the early 1980s, modelled as its algorithm and known for its programs: the short, dense ambience that puts a drum in a room, rooms, halls, and plates, the gated nonlinear program whose sound holds and then stops, a reverse that swells and stops, echoes, a chorus, and a freeze. A tapped early field and a recirculating loop at a clock of its own between steep converter filters. Pre-delay, decay with low and high multipliers, the converters' hiss, mix, and output. Edits never stop the tail.
+
+[1981 Digital Ambience on the website](/solmara/effects/#1981-digital-ambience)
+
+## In the device chain
+
+1981 Digital Ambience on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="1981 Digital Ambience in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with 1981 Digital Ambience. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bright Plate**: The first plate at 1.8 seconds with the highs ringing as long as the middle: a bright plate for vocals and snares.
+- **Drum Ambience**: The ambience program at under a second: a dense burst of early reflections and a short quiet tail. Puts a dry kit in a room without washing it out.
+- **Frozen Pad**: Freeze: what goes in hangs in the loop for as long as it plays. Under a pad or a drone.
+- **Gated Kick**: Nonlin short and dark, at 150 ms with the highs cut: a kick that grows without a tail.
+- **Gated Snare**: The gated Nonlin program at 300 ms: a wall of reflections that holds and then stops dead. The big snare of the 1980s.
+- **Reverse Swell**: The reverse program at 400 ms: reflections that swell towards their end and stop, after a snare or a vocal word.
+- **Tight Room**: The first room at under a second, its highs a little short: drums and guitars in a small live room.
+- **Vocal Hall**: The second hall at 2.5 seconds, 40 ms of pre-delay, the bass a little long: a vocal's hall.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Program | 18 choices: Ambience, Room A, Room B, Hall A, … | Ambience |
+| Pre-delay | 0 ms to 1200 ms | 0 ms |
+| Decay | 0.05 s to 20 s | 1 s |
+| Low | 0.5 to 2 | 1 |
+| High | 10% to 100% | 60% |
+| Noise | Off, On | Off |
+| Mix | 0% to 100% | 30% |
+| Output | -24 dB to 24 dB | 0 dB |

@@ -1,0 +1,46 @@
+---
+title: "Danish Blue Compressor"
+description: "Valve opto compressor in the style of the 1980s Danish studio units: transparent control for mixes and mastering."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/danish-blue-compressor.webp';
+
+**An emulation of an analogue original,** modelled on the 1980s Danish valve optical compressor of mixing and mastering rooms.
+
+A modelled optical compressor with a valve make-up amplifier: a photoresistor lit by the sidechain turns the audio down ahead of the amplifier. Threshold, ratio, attack, release, and gain, with fixed, manual, or combined timing, and a switch that takes the valves out for a clean amplifier at a fraction of the processing. Modelled on the blue-faced Danish valve opto compressor of the 1980s, a usual choice on vocals, bass, and a mix bus for gain reduction that is hard to hear.
+
+[Danish Blue Compressor on the website](/solmara/effects/#danish-blue-compressor)
+
+## In the device chain
+
+Danish Blue Compressor on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Danish Blue Compressor in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+4 factory presets come with Danish Blue Compressor. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bass, Steady**: Keeps a bass in place: a firmer ratio, slow to take hold and slow to let go.
+- **Drum Bus, Fast**: The fixed timing: quick on each hit and gone before the next.
+- **Mix, Fixed and Manual**: The combined timing: a short peak is let go at once, and a long passage by the release knob.
+- **Vocal, Gentle**: Holds a voice a little, taking hold and letting go at an easy pace.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Threshold | 0 to 100 | 0 |
+| Ratio | 0 to 100 | 50 |
+| Attack | 0 to 100 | 50 |
+| Release | 0 to 100 | 50 |
+| Gain | 0 to 100 | 33.33 |
+| Mode | Fixed, Manual, Combined | Manual |
+| Valves | Off, On | On |
+| Quality | Standard, Ultra | Standard |

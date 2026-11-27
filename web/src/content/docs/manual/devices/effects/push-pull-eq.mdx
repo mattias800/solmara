@@ -1,0 +1,52 @@
+---
+title: "Push-Pull EQ"
+description: "Passive valve EQ in the style of the 1950s American program equalisers: broad lows and silky highs."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/push-pull-eq.webp';
+
+**An emulation of an analogue original,** modelled on the 1950s American passive valve program equaliser that boosts and cuts one band at once.
+
+A modelled passive program equaliser with a valve make-up amplifier: a low shelf that boosts and cuts at once, a peak in the highs with a bandwidth knob, and a high cut, all in one network of pots, capacitors, and a coil, whose sections lean on each other. A switch takes the valves and the transformers out for a clean amplifier at a fraction of the processing. Modelled on the passive valve program equaliser of the 1950s, known for boosting and cutting the lows at once, a lift with a dip above it, for kicks and basses, and for a broad, smooth high boost.
+
+[Push-Pull EQ on the website](/solmara/effects/#push-pull-eq)
+
+## In the device chain
+
+Push-Pull EQ on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Push-Pull EQ in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Push-Pull EQ. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Acoustic Guitar, Sparkle**: A peak at 8 kHz for the strings, and less of the body under it.
+- **Bass, Round Bottom**: Boost and cut at once at 100 Hz, which fills a bass out and clears the low mids, with the top taken down a little.
+- **Dark and Warm**: The high cut from 10 kHz and a little more below: takes the edge off something bright or thin.
+- **Kick, Lift and Dip**: The low boost and cut at once at 60 Hz: weight under the kick, a dip above it, and a little click at 4 kHz.
+- **Master, Both Ends**: A little more at the very bottom and the very top, and the middle left alone.
+- **Mix, Broad Top**: The widest peak at 10 kHz, a couple of dB: a whole mix a little brighter, with no edge to it.
+- **Sub Weight**: Boost and cut at once at 30 Hz: the very bottom lifted, and what lies just above it held back.
+- **Vocal, Air**: A broad lift at 12 kHz that opens a voice up, with the lows eased off.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Low Frequency | 20 Hz, 30 Hz, 60 Hz, 100 Hz | 30 Hz |
+| Low Boost | 0 to 100 | 0 |
+| Low Atten | 0 to 100 | 0 |
+| High Frequency | 3 kHz, 4 kHz, 5 kHz, 8 kHz, 10 kHz, 12 kHz, 16 kHz | 8 kHz |
+| High Boost | 0 to 100 | 0 |
+| Bandwidth | 0 to 100 | 0 |
+| Atten Frequency | 5 kHz, 10 kHz, 20 kHz | 10 kHz |
+| High Atten | 0 to 100 | 0 |
+| Valves | Off, On | On |
+| Quality | Standard, Ultra | Standard |

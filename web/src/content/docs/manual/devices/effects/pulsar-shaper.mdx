@@ -1,0 +1,54 @@
+---
+title: "Pulsar Shaper"
+description: "Volume shaper: a drawn duck in time with the song, as a sidechain pumps."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/pulsar-shaper.webp';
+
+**A design of Solmara's own.**
+
+A volume curve drawn over a stretch of the song, from a sixteenth to two bars, that turns a track down and up again in time: the pumping of a sidechained compressor under a kick, with no sidechain, or gates and swells. A second curve can move a filter's cutoff in the same time. Each cycle starts on the song's grid or with each note; ready shapes start it, and its curves are drawn.
+
+[Pulsar Shaper on the website](/solmara/effects/#pulsar-shaper)
+
+## In the device chain
+
+Pulsar Shaper on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Pulsar Shaper in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+9 factory presets come with Pulsar Shaper. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bar Swell**: Up and down again over a bar: slow movement for a pad.
+- **Eighth Gate**: Open for one sixteenth, shut for the next: a held pad chopped into a pulse.
+- **Eighth Pump**: A short duck every eighth note, not quite all the way down: a bass or a chord that bounces.
+- **Filter Pump**: The duck on the volume, and a low pass that opens with each beat and closes after it: pumping and breathing.
+- **Long Duck**: A deeper, slower breath on each beat, the sound coming back only just before the next: the house pump.
+- **Note Duck**: The duck starts with each note the track plays rather than on the grid, as a kick's own sidechain would.
+- **Offbeat Pump**: The duck moved half a beat on, so the sound comes up on the beat and dips on the offbeat.
+- **Quarter Duck**: The duck a sidechained compressor gives under a four-to-the-floor kick: down on each beat, held a moment, and back up quickly. On a pad, a bass or a whole bus.
+- **Trance Gate**: Every sixteenth cut short, the trance gate on a supersaw.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Depth | 0% to 100% | 100% |
+| Length | 1/16, 1/8, 1/4, 1/2, 1 bar, 2 bars | 1/4 |
+| Swing | 0% to 100% | 0% |
+| Smooth | 0 ms to 20 ms | 2 ms |
+| Offset | 0% to 100% | 0% |
+| Restart on | Beat, Note | Beat |
+| Moves | Volume, Filter, Both | Volume |
+| Filter | Low pass, High pass | Low pass |
+| Cutoff low | 20 Hz to 20000 Hz | 300 Hz |
+| Cutoff high | 20 Hz to 20000 Hz | 8000 Hz |
+| Resonance | 0% to 100% | 30% |

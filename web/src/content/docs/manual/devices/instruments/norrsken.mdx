@@ -1,0 +1,240 @@
+---
+title: "Norrsken"
+description: "Virtual-analogue polysynth in the style of the late-1990s Scandinavian keyboards: leads, sync sweeps, and morphing pads."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/norrsken.webp';
+import window from '../../../../../assets/devices/norrsken.webp';
+
+**An emulation of a digital original,** modelled on the late-1990s Scandinavian virtual-analogue keyboard in its red case, with morphs on every knob.
+
+A modelled twenty-voice virtual-analogue synthesizer from Stockholm, of the turn of the century: its digital engine held to a reference by measurement and blind listening: two oscillators with sync, linear FM and ring modulation, a filter of five types with distortion, three envelopes, two LFOs (the second an arpeggiator or an echo), velocity and wheel morphs on every knob, unison, and the wheel, the stick, aftertouch and a pedal as the hardware takes them. Imports the hardware's documented SysEx programs.
+
+[Norrsken on the website](/solmara/instruments/norrsken/)
+
+## In the device chain
+
+Norrsken on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Norrsken in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Norrsken's window, as it starts." /></a>
+
+
+## Presets
+
+84 factory presets come with Norrsken. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Djuphav**: The deep sea: a sine with a quiet triangle an octave above it, the octave shift taking it down one more. Play a slow line under everything. Push the wheel to morph the triangle louder for a little more edge on small speakers.
+- **Draug**: A restless dead: two saws a little out of tune, beating slowly, through the distortion and a 24 dB low-pass that LFO 2 moves. Hold long notes at the bottom. Push the wheel to morph the beating faster and the filter open.
+- **Fenris**: The bound wolf: at rest a dark sub. Push the wheel to morph it loose: the cutoff and resonance rise, the pulse below growls into the saw by FM, and LFO 1 starts to wobble the filter in eighth notes, in time with the song. Play long notes at the bottom and ride the wheel.
+- **Granit**: Granite: four saws in unison on every key, an octave apart, spread wide through a 24 dB low-pass with a firm envelope. Play a line at the bottom. Strike harder to morph the envelope deeper; the wheel opens the filter.
+- **Gruva**: A mine: two pulses whose widths LFO 1 sweeps, through the notch and low-pass, which carves a hollow out of them. Play a line at the bottom. Push the wheel to morph the sweep quicker and the filter open.
+- **Hammare**: A hammer: a pulse and a saw an octave down. Soft notes are round and dark, hard ones bright and biting, the morph opening the cutoff, the envelope and the resonance with the strike. Play a line at the bottom and dig in; the wheel opens the filter.
+- **Irrbloss**: A will-o'-the-wisp: one saw through a 24 dB low-pass at the edge of whistling, its envelope following the strike, the distortion on, gliding only where notes overlap. Play a line at the bottom, slurring some notes. Strike harder to morph the filter brighter and the glide longer; the wheel opens the filter.
+- **Kolsvart**: Pitch black: oscillator 2 synced and swept down by the mod envelope at each note, through a 24 dB low-pass. Play a line at the bottom. Strike harder to morph the sweep wider; the wheel raises the synced oscillator for a growl.
+- **Malm**: Ore: a sine and its ring modulation with a narrow pulse an octave up, through a low-pass that snaps shut. Play a line at the bottom. Strike harder to morph the pulse narrower and the filter brighter; the wheel moves the pulse's pitch for clangorous bends.
+- **Skridsko**: A skate: a pulse with a saw an octave up, gliding wherever notes overlap, through a resonant low-pass. Play a line at the bottom, its notes touching. Strike harder to morph the glide longer; the wheel opens the filter.
+- **Smide**: Forged iron: a sine frequency-modulated by a triangle at its own pitch, the mod envelope striking a burst of FM at each note that the hammer leaves ringing. Play a line at the bottom. Strike harder to morph the burst brighter; the wheel adds FM.
+- **Torv**: Peat: a saw and a square an octave down, plucked through a 12 dB low-pass that closes fast, its envelope following the strike. Play a line at the bottom. Strike harder to morph it ringing longer; the wheel opens the filter.
+
+### Bell
+
+- **Glasharmonika**: A glass harmonica: a sine frequency-modulated six times up, swelling in, held with a gentle tremolo. Play slow chords. The wheel adds FM.
+- **Isklocka**: An ice bell: a sine ring-modulated by a triangle that ignores the keys, held at one pitch, so every key rings a different metal; LFO 1 wavers it. Strike notes across the keyboard. Push the wheel to morph the fixed partner higher.
+- **Klang**: A struck bell: a sine frequency-modulated by a square about three times up. Strike softly for a pure chime; strike hard to morph in a deep, metallic FM and more level. The wheel brings in vibrato.
+- **Kyrkklocka**: A church bell: a sine frequency-modulated at an inharmonic three and a half times its pitch, an octave down, the FM fading as it rings. Strike single notes and let them ring. Push the wheel to morph the strike harder and the ring longer.
+- **Speldosa**: A music box: a sine ring-modulated by a triangle two octaves up, an octave above the keys, short and sweet. Play a melody. Push the wheel to morph the ring louder.
+
+### Brass
+
+- **Bronslur**: A bronze lur that cuts: oscillator 2 synced, its pitch lifted and let fall by the mod envelope, in unison pairs through a swelling low-pass. Play chords. Strike harder to morph the sync's rise wider; the wheel opens the filter.
+- **Fanfar**: A fanfare stab: a saw and a pulse in unison pairs, a quick filter envelope. Play short chords on and off the beat. Strike harder to morph it brighter; the wheel brings in vibrato.
+- **Lur**: After the Bronze Age lurs: two saws whose filter swells open a moment after the note, as breath does. Play chords and press into them, which opens the filter further. Strike harder to morph a quicker, brighter blow; the wheel brings in vibrato.
+- **Vallhorn**: A herding horn: a saw with a triangle, a slow, soft swell of the filter and a little vibrato. Play chords or a slow line in the middle. Push the wheel to morph it: blow harder, brighter and quicker.
+
+### FX
+
+- **Blixtnedslag**: A lightning strike: oscillator 2 synced and dropped three octaves by a fast mod envelope, a zap. Hit short notes. Strike harder to morph the zap longer; the wheel opens the filter.
+- **Kortvag**: Shortwave: a sine frequency-modulated by noise, the FM jumping on LFO 1's random steps and LFO 2 bending the pitch: a radio between stations. Hold notes. Push the wheel to morph the static heavier.
+- **Meteor**: A meteor: LFO 1's falling saw drops both oscillators five octaves over each bar, in time with the song. Hold a note. Push the wheel to morph the fall deeper.
+- **Mistlur**: A foghorn: a saw and a narrow pulse two octaves down, swelling through the distortion and a 24 dB low-pass, a slow waver from LFO 1. Hold a low note. Push the wheel to morph it brighter.
+- **Rymdskepp**: A spaceship: a sine ring-modulated by a square held at one high pitch whatever the key, both wobbling fast on LFO 1, thinned by the 24 dB high-pass. Hold notes. Push the wheel to morph the wobble faster and wider.
+- **Uppvaknande**: An awakening: oscillator 2 synced and lifted three octaves over six seconds by the mod envelope's slow attack, the filter opening with it, in unison pairs. Hold one note through a build. Push the wheel to morph the rise higher.
+
+### Keys
+
+- **Brasa**: Embers: a triangle and a pulse through the distortion, a reedy electric piano with a tremolo from LFO 2. Comp chords. Strike harder to morph in the pulse's bark, more level and a brighter filter; the wheel brings in vibrato.
+- **Hovdans**: A court dance: a narrow pulse and a saw an octave up through the 24 dB high-pass, plucked and ringing: a small harpsichord. Play a part in the middle. Push the wheel to morph the pulse wider, as a lute stop softens it.
+- **Klockljung**: Bell heather: an electric piano of a sine frequency-modulated by a triangle at its pitch, the FM struck by the mod envelope and dying away, a gentle tremolo from LFO 2. Comp chords in the middle. Strike harder to morph in the tine's bark and more level; the wheel brings in vibrato.
+- **Lykta**: A lantern: a saw and a pulse through a 24 dB low-pass with a soft envelope, each note to the other side. Comp chords. Strike harder to morph it brighter and louder; the wheel brings in vibrato.
+- **Psalm**: A small organ: a square with a square an octave up, gated, a faint vibrato. Play chords. Push the wheel to morph the upper square up to the twelfth, as a drawbar does.
+- **Spinnrock**: A spinning wheel: a narrow pulse through a resonant low-pass that snaps open and shut with the strike. Comp short chords. Strike harder to morph it louder and the pulse fuller; the wheel opens the filter.
+
+### Lead
+
+- **Blixt**: Lightning: oscillator 2 synced to oscillator 1 and swept down from high by the mod envelope at each strike, played legato with a short glide. Play a line up high. Strike harder to morph the sweep wider; the wheel brings in vibrato.
+- **Dubbelnatur**: Two natures in one: soft notes are a mellow triangle, hard ones a bright, resonant saw, the morph crossing the oscillators' balance and opening the filter with the strike. Play legato and vary the touch. The wheel brings in vibrato.
+- **Ekolod**: A sounding line: a pulse lead whose every note comes back five times on LFO 2's echo, in eighth notes, each softer and to the other side. Play short notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato.
+- **Glidflykt**: Glide flight: two saws an octave apart, mono, gliding only between notes played legato (automatic portamento), through a resonant low-pass. Play a line low in the middle, slurring where it should glide. Strike harder to morph the glide longer; the wheel brings in vibrato.
+- **Isbrytare**: An icebreaker: a saw frequency-modulated by a triangle at its own pitch, a burst of FM from the mod envelope at each note, through the distortion and a resonant low-pass. Play a hard line low in the middle. Strike harder to morph in more FM; the wheel adds FM too.
+- **Kulning**: After the high herding call: a hollow pulse with an octave above it, mono with a little glide. Play a line up high and press into the long notes, which brings in the vibrato; the wheel deepens it too. Strike harder to morph it brighter.
+- **Ljungeld**: A heath fire: a saw and a pulse an octave down, driven through the distortion into a screaming resonant 24 dB low-pass. Play a mono line in the middle. Strike harder to morph the scream sharper; the wheel opens the filter.
+- **Ringdans**: A sine ring-modulated by a saw an octave up, the saw wobbling a little on LFO 1: a hollow, metallic line. Play legato up high. Push the wheel to morph the ring's partner up a fifth and both oscillators higher with it, into a clangorous dance.
+- **Spelpipa**: A folk pipe: a triangle with breath from oscillator 2's noise, soft at the start of each note. Play a melody up high; press into the long notes for vibrato. Strike harder to morph more breath in.
+- **Valkyria**: A square with oscillator 2 synced at its own pitch, so the sync is silent at rest: a plain, hollow lead. Push the wheel to morph oscillator 2 up two octaves and the filter open: the sync tears through, a Valkyrie riding in. Play legato up high.
+- **Vargyl**: A wolf's howl: four voices in unison on every key, saws an octave apart, spread wide and played legato, a short bite from the filter's envelope. Play a line high in the middle. Strike harder to morph it brighter; the wheel brings in vibrato.
+
+### Pad
+
+- **Drivis**: A pulse and a saw that drift like ice floes: the pulse's width wanders on LFO 1's smooth random and LFO 2 bends both slowly in pitch. Hold chords. Push the wheel to morph the drift wider.
+- **Gryningsljus**: Two saws whose 24 dB low-pass opens over three seconds, as dawn comes up, and stays open. Hold each chord and wait. Strike harder to morph the dawn quicker and brighter; the wheel brings in vibrato.
+- **Isljus**: A saw and a triangle an octave up through the 24 dB high-pass, which follows the keys and drifts slowly on LFO 2: a thin, high light with no body. Hold chords up high. Push the wheel to morph the body back in as the high-pass falls.
+- **Korona**: A sine frequency-modulated by a triangle an octave up, the FM wandering on LFO 1's smooth random: a shimmering corona round each note. Hold chords. Push the wheel to morph the FM deeper and the wandering faster.
+- **Natthymn**: A saw and a pulse through a resonant band-pass that sings like a vowel, a slow vibrato from LFO 2: a night hymn. Hold chords in the middle. Strike harder to morph the vowel open, from oo towards ah; the wheel opens the filter.
+- **Nattvandring**: Unison in poly: two detuned voices on every key, one to each side, each a saw with a saw an octave up, through a slowly opening low-pass. A wide, lush pad for long walks at night. Push the wheel to morph it brighter; the pedal opens the filter.
+- **Polarvind**: A saw with high noise beside it through a resonant band-pass that LFO 2 sweeps slowly: a pad with the polar wind in it. Hold chords. Push the wheel to morph the wind over the saw and the band-pass narrower.
+- **Rimfrost**: Two pulses, the second an octave up, their widths swept slowly by LFO 1: a glassy, shimmering pad. Strike harder to morph it brighter and quicker to speak; the wheel deepens the sweep.
+- **Sammet**: Velvet: a saw and a square an octave up. Play softly for a dark, slow swell; strike hard to morph it bright, resonant and quick. The wheel brings in vibrato.
+- **Skymningsdis**: A saw and a pulse an octave down through a resonant 24 dB low-pass that LFO 1's smooth random wanders over: dusk haze that never sits still. Hold long chords. Push the wheel to morph the drift faster, deeper and more resonant.
+- **Sommarnatt**: Two saws through the 24 dB low-pass, swelling in slowly, each new voice to the other side. Hold chords low in the middle. Push the wheel to morph the summer night into day: the cutoff, the resonance and the filter's envelope rise together and the attack quickens, the amber arcs on the face showing how far. The pedal opens the filter.
+- **Tundra**: Oscillator 2 synced to oscillator 1, its pitch swept slowly up and down by LFO 1: a hard, glassy pad whose overtones wander. Hold open chords. Strike harder to morph the sync higher; the wheel opens the filter.
+- **Vinterhav**: Two saws through the notch and low-pass, the notch swept up and down by LFO 1 like a slow phaser: a winter sea rolling under the chord. Hold chords. Push the wheel to morph the swell quicker and the notch deeper.
+
+### Pluck
+
+- **Droppe**: A drop: two triangles an octave apart, plucked through a soft low-pass, each note to the other side. Pick through chords up high. Strike harder to morph it louder, brighter and ringing longer; the wheel brings in vibrato.
+- **Eko**: An echo: a square pluck whose every note comes back six times in triplet eighths, in time with the song, each softer and to the other side. Play a few notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato.
+- **Gnista**: A spark: oscillator 2 synced and swept down by the mod envelope at each pick, short and bright. Pick through chords up high. Strike harder to morph the sweep wider and the pick louder; the wheel raises the synced oscillator.
+- **Harpa**: A harp: a triangle and a saw an octave up. Pick softly for a dull, short note; strike hard to morph it bright, louder and ringing long. The wheel brings in vibrato.
+- **Istapp**: An icicle: a sine frequency-modulated by a triangle two octaves up, a burst of FM from the mod envelope at each pick. Pick through chords up high. Strike harder to morph the burst brighter and louder; the wheel adds FM.
+- **Kantele**: A plucked zither: a saw and a narrow pulse, bright at the pick, as bright as it is struck, and closing, ringing on. Pick through chords in the middle. Push the wheel to morph the strings ringing longer and brighter.
+- **Regn**: Rain: a saw with a little noise through a ringing band-pass that the envelope flicks open. Pick through chords up high. Strike harder to morph each drop brighter; the wheel opens the filter.
+- **Ringla**: A ring: a sine ring-modulated by a triangle two octaves up, the sine beside it, plucked short. Pick through chords up high. Push the wheel to morph the ring louder over the sine.
+
+### Sequence
+
+- **Ekon**: Echoes: a short pulse for sequences, every note answered three times in eighth notes, in time with the song, softer and to the other side. Play a sixteenth-note line firmly, as softer notes echo softer. The wheel brings in vibrato.
+- **Flimmer**: A flicker: held chords chopped into sixteenths by LFO 2's tremolo, in time with the song. Hold chords. Push the wheel to morph the chop shallower and the chord brighter.
+- **Karusell**: A carousel: LFO 2's arpeggiator runs up the held chord over three octaves in sixteenths, in time with the song, each step to the other side. Hold chords in the middle. Push the wheel to morph the steps brighter and more resonant.
+- **Klockverk**: Clockwork: the arpeggiator ticks up the held chord in sixteenths through a ringing band-pass, and the strike sets its range: a soft chord stays in its octave, a hard one climbs four, the morph moving LFO 2's amount. Hold chords and vary the touch; the wheel opens the filter.
+- **Maskin**: A machine: a mono saw and pulse through a resonant 24 dB low-pass, LFO 1 sweeping the cutoff over each bar in time with the song. Play a sixteenth-note line. Strike harder to morph the envelope deeper; the wheel opens the filter.
+- **Pendel**: A pendulum: the arpeggiator swings up and down the held chord over four octaves in eighth notes, a triangle and a pulse a few cents apart. Hold chords low down. Push the wheel to morph the range in, down to two octaves.
+- **Vattenfall**: A waterfall: the arpeggiator runs down the held chord over two octaves in eighth-note triplets, each step a synced pluck swept by the mod envelope. Hold chords. Push the wheel to morph the sweep wider.
+
+### Strings
+
+- **Fjord Strings**: Two saws far apart in tune, a quick shiver of pitch from LFO 2 for the ensemble, each voice to the other side. Play string parts in the middle. Strike harder to morph the bow quicker and brighter; the wheel or the pedal brings in vibrato.
+- **Spelman**: A folk fiddler's solo line: a saw and a narrow pulse through a resonant low-pass, played legato with a little glide. Play a melody low down; press into a key to bring in its vibrato. Strike harder to morph the bow brighter.
+- **Vinterljus**: Two pulses an octave apart, their widths swept by LFO 1: a string machine in winter light. Hold chords and voice the top line. Push the wheel to morph the sweep quicker and the tone brighter.
+
+### Texture
+
+- **Djupfryst**: Deep frozen: a saw ring-modulated by a triangle held at one low pitch whatever the key, the triangle drifting on LFO 1's smooth random, through a resonant 24 dB low-pass. Hold low notes. Push the wheel to morph the filter open and the drift wider.
+- **Evighetsmaskin**: A perpetual motion machine: the arpeggiator's hold keeps the chord running after the keys are let go, up and down three octaves in sixteenths, until the next chord takes its place. Strike a chord and let go. Push the wheel to morph the steps brighter.
+- **Gnistregn**: A shower of sparks: a saw and a square through a ringing band-pass that LFO 1's random steps jump about in sixteenths, in time with the song. Hold chords. Push the wheel to morph the jumps wider.
+- **Havsbrus**: The sea's roar: noise through a low-pass, LFO 2 rolling its level in and out like waves and LFO 1 the filter with them. Hold a note or a chord. Push the wheel to morph the waves quicker.
+- **Iskristall**: Ice crystals: the arpeggiator picks notes of the chord at random over three octaves, in sixteenths, each a short FM chime, and its hold keeps them falling after the keys are let go. Strike a chord and let go. Push the wheel to morph the chimes brighter.
+- **Polarljus**: Polar light: a sine frequency-modulated a little off a twelfth, so it beats slowly, the FM wandering on LFO 1's smooth random. Hold one chord and let it move. Push the wheel to morph the shimmer deeper and quicker.
+- **Trollskog**: A troll forest: a sine ring-modulated a little over an octave up, the partner wandering on LFO 1's smooth random, every note answered by eight echoes. Play a few notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato.
+- **Vidd**: Wide open country: two saws a fifth apart, in unison pairs spread wide, through the notch and low-pass that LFO 1 sweeps slowly, phasing. Hold one low note. Push the wheel to morph the swell deeper.
+- **Vindkast**: A gust: noise alone through a resonant band-pass that follows the keys, LFO 1's smooth random blowing it about, so each key whistles its own wind. Hold notes or chords. Push the wheel to morph the gusts stronger and the whistle sharper.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Osc 2 pitch | -60 st to 60 st | 0 st |
+| Osc 2 fine | -64 to 63 | 0 |
+| Oscillator balance | -64 to 63 | -64 |
+| Cutoff | 0 to 127 | 100 |
+| Resonance | 0 to 127 | 0 |
+| Filter envelope amount | 0 to 127 | 0 |
+| Pulse width | 0 to 127 | 0 |
+| FM / ring tune | 0 to 127 | 0 |
+| Filter attack | 0 to 127 | 0 |
+| Filter decay | 0 to 127 | 64 |
+| Filter sustain | 0 to 127 | 0 |
+| Filter release | 0 to 127 | 32 |
+| Amp attack | 0 to 127 | 0 |
+| Amp decay | 0 to 127 | 64 |
+| Amp sustain | 0 to 127 | 127 |
+| Amp release | 0 to 127 | 16 |
+| Portamento | 0 to 127 | 0 |
+| Program gain | 0 to 127 | 100 |
+| Mod attack | 0 to 127 | 0 |
+| Mod decay | 0 to 127 | 64 |
+| Mod envelope amount | -64 to 63 | 0 |
+| LFO 1 rate | 0 to 127 | 64 |
+| LFO 1 amount | 0 to 127 | 0 |
+| LFO 2 rate | 0 to 127 | 64 |
+| LFO 2 amount / arp range | 0 to 127 | 0 |
+| Pitch morph | -128 to 127 | 0 |
+| Fine morph | -128 to 127 | 0 |
+| Balance morph | -128 to 127 | 0 |
+| Cutoff morph | -128 to 127 | 0 |
+| Resonance morph | -128 to 127 | 0 |
+| Filter amount morph | -128 to 127 | 0 |
+| Width morph | -128 to 127 | 0 |
+| FM morph | -128 to 127 | 0 |
+| Filter attack morph | -128 to 127 | 0 |
+| Filter decay morph | -128 to 127 | 0 |
+| Filter sustain morph | -128 to 127 | 0 |
+| Filter release morph | -128 to 127 | 0 |
+| Amp attack morph | -128 to 127 | 0 |
+| Amp decay morph | -128 to 127 | 0 |
+| Amp sustain morph | -128 to 127 | 0 |
+| Amp release morph | -128 to 127 | 0 |
+| Portamento morph | -128 to 127 | 0 |
+| Gain morph | -128 to 127 | 0 |
+| Mod attack morph | -128 to 127 | 0 |
+| Mod decay morph | -128 to 127 | 0 |
+| Mod amount morph | -128 to 127 | 0 |
+| LFO 1 rate morph | -128 to 127 | 0 |
+| LFO 1 amount morph | -128 to 127 | 0 |
+| LFO 2 rate morph | -128 to 127 | 0 |
+| LFO 2 amount morph | -128 to 127 | 0 |
+| Osc 1 waveform | Pulse, Saw, Triangle, Sine | Saw |
+| Osc 2 waveform | Pulse, Saw, Triangle, Noise | Saw |
+| Oscillator sync | Off, On | Off |
+| Ring modulation | Off, On | Off |
+| Filter distortion | Off, On | Off |
+| Filter type | LP 12, LP 24, HP 24, Band-pass, Notch + LP | LP 12 |
+| Osc 2 keyboard tracking | Off, On | On |
+| Filter keyboard tracking | Off, One third, Two thirds, Full | Off |
+| LFO 1 waveform | Random, Saw, Triangle, Square, Smooth random | Triangle |
+| LFO 1 destination | Pulse width, Filter, Pitch 2, Pitch 1+2, FM | Pitch 1+2 |
+| Voice mode | Poly, Legato, Mono | Poly |
+| Wheel destination | Filter, FM, Pitch 2, LFO 1 amount, Morph | Morph |
+| Unison | Off, On | Off |
+| Mod envelope destination | Pitch 2, FM, Pulse width, Off | Off |
+| Automatic portamento | Off, On | Off |
+| Filter envelope velocity | Off, On | Off |
+| Octave shift | -2, -1, 0, +1, +2 | 0 |
+| LFO 2 / arpeggiator | 9 choices: Arp down, Arp up, Arp up/down, Amp, … | Off |
+| Unison detune | 0 to 8 | 2 |
+| Output mode | Auto stereo, Mono, Alternate voices | Auto stereo |
+| LFO 1 clock sync | Off, 2/1, 1/1, 1/2, 1/4, 1/8, 1/8 triplet, 1/16 | Off |
+| LFO 2 clock sync | Off, 2/1, 1/1, 1/2, 1/4, 1/8, 1/8 triplet, 1/16 | Off |
+| Modulation wheel | 0% to 100% | 0% |
+| Pitch stick | -1 to 1 | 0 |
+| Pitch bend range | 0 st to 48 st | 2 st |
+| Master tuning | -99 cents to 99 cents | 0 cents |
+| Aftertouch | 0% to 100% | 0% |
+| Aftertouch amount | Off, 1, 2, 3, 4, 5, 6, 7 | Off |
+| Aftertouch destination | LFO 1 amount, LFO 2 amount, Filter, FM, Osc 2 pitch | LFO 1 amount |
+| Expression pedal | 0% to 100% | 0% |
+| Expression amount | Off, 1, 2, 3, 4, 5, 6, 7 | Off |
+| Expression destination | LFO 1 amount, LFO 2 amount, Filter, FM, Osc 2 pitch | LFO 1 amount |
+| Arpeggiator hold | Off, On | Off |

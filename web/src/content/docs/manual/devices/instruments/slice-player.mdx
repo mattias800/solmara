@@ -1,0 +1,48 @@
+---
+title: "Slice Player"
+description: "Slice Player"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/slice-player.webp';
+import window from '../../../../../assets/devices/slice-player.webp';
+
+**A design of Solmara's own.**
+
+A loop cut into parts at its hits, each part on a key with its own pitch, level, pan, decay and reverse, named by what it sounds like; it writes a drum pattern that plays the loop, to remix it in the drum editor. A filter with an LFO, poly or choke voices, and a held tail for slower tempos.
+
+[Slice Player on the website](/solmara/instruments/slice-player/)
+
+## In the device chain
+
+Slice Player on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Slice Player in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Slice Player's window, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Level | 0% to 100% | 90% |
+| Velocity | 0% to 100% | 30% |
+| Pitch | -24 semitones to 24 semitones | 0 semitones |
+| Voices | Poly, Choke | Choke |
+| Gap | Decay, Stretch, Off | Decay |
+| Filter | Low-pass, Band-pass, High-pass | Low-pass |
+| Cutoff | 20 Hz to 20000 Hz | 20000 Hz |
+| Resonance | 0% to 100% | 0% |
+| Attack | 0 ms to 500 ms | 0 ms |
+| Release | 1 ms to 2000 ms | 40 ms |
+| LFO rate | 0.05 Hz to 20 Hz | 1 Hz |
+| LFO to cutoff | 0% to 100% | 0% |

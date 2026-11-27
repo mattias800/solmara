@@ -1,0 +1,412 @@
+[
+ {
+  "name": "Drive Bass",
+  "category": "Bass",
+  "description": "Saws a few cents apart behind a four-pole that each note opens for a moment, the level falling back a little: the driving eighth-note bass of night-drive synthwave."
+ },
+ {
+  "name": "Grit Bass",
+  "category": "Bass",
+  "description": "Oscillator 1 alone, roughened at audio rate by oscillator 2 an octave over it and unheard, through a four-pole struck open, the level falling back: a gritty, buzzing, plucked bass."
+ },
+ {
+  "name": "Hard Unison Bass",
+  "category": "Bass",
+  "description": "Every voice on one key, saws and a pulse spread wide, a resonant four-pole snapped open and settling half way: a huge, biting unison bass."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "A narrow pulse and a saw in unison, a resonant four-pole struck open, the level gone within a beat: a short, plucked bass."
+ },
+ {
+  "name": "Round Sub",
+  "category": "Bass",
+  "description": "One square at 16' through a closed two-pole that rounds it nearly to a sine, held: a deep, round sub-bass."
+ },
+ {
+  "name": "Rubber Bass",
+  "category": "Bass",
+  "description": "A pulse and a saw in unison through the two-pole, high in resonance, its envelope snapping the peak down at each note, gliding: a round, squelching bass."
+ },
+ {
+  "name": "Saw Bass",
+  "category": "Bass",
+  "description": "Saws at 16' and 8', snapped open with a little resonance and settling low, held as long as the key: the plain, punchy polysynth bass."
+ },
+ {
+  "name": "Sync Growl Bass",
+  "category": "Bass",
+  "description": "Oscillator 2 reset by oscillator 1 and tuned an octave and a major third over it, beside oscillator 1's saw at 16', a resonant filter held half open: a growling, nasal sync bass."
+ },
+ {
+  "name": "Unison Bass",
+  "category": "Bass",
+  "description": "Every voice on one key, the oscillators at 16' and 4' and spread, through a nearly closed four-pole, full and held: a massive, dark sub-bass."
+ },
+ {
+  "name": "Cross-Mod Bell",
+  "category": "Bell",
+  "description": "Oscillator 1 at 2' swung at audio rate by oscillator 2 a fifth over it, heard alone, struck and ringing on long after the key: a clangorous bell up high."
+ },
+ {
+  "name": "Music Box",
+  "category": "Bell",
+  "description": "A square at 2' and a whisper of cross-modulation from oscillator 2 two octaves up, struck and gone quickly: a tinkling music box."
+ },
+ {
+  "name": "Sync Bell",
+  "category": "Bell",
+  "description": "Oscillator 2 reset by oscillator 1 and tuned two octaves and a major third over it, over oscillator 1's saw at half its level, the filter falling slowly from bright: a glassy bell, its third ringing over the key."
+ },
+ {
+  "name": "Tubular Chime",
+  "category": "Bell",
+  "description": "Oscillator 1 swung at audio rate by oscillator 2 an octave and a tritone over it, unheard, the filter open, struck and ringing for seconds: an inharmonic tubular chime."
+ },
+ {
+  "name": "Brass Stab",
+  "category": "Brass",
+  "description": "The saws and a breath of noise behind a filter snapped open and shut, the level gone within a beat: short, spitting brass hits."
+ },
+ {
+  "name": "Fanfare Brass",
+  "category": "Brass",
+  "description": "The saws behind a filter thrown wide open at once and held bright, the keys cut off as they lift: hard brass blasts for a fanfare."
+ },
+ {
+  "name": "Fifths Brass",
+  "category": "Brass",
+  "description": "Oscillator 2 a fifth over oscillator 1, both saws, the filter swelled open and held: every key a power chord, a broad, open brass for parallel lines."
+ },
+ {
+  "name": "Film Brass",
+  "category": "Brass",
+  "description": "Saws at 16' and 8' behind a dark four-pole that the envelope pushes open over a second and a half while the level swells in, a slow vibrato on top: horns rising under a film score."
+ },
+ {
+  "name": "Low Brass",
+  "category": "Brass",
+  "description": "Oscillator 1 at 16' and oscillator 2 two octaves over it behind a dark four-pole that opens slowly, a slow attack and a wide, wavering vibrato: low horns and trombones under the band."
+ },
+ {
+  "name": "Rasp Brass",
+  "category": "Brass",
+  "description": "Oscillator 1's saw and pulse together beside oscillator 2's pulse, the resonance up a little and the envelope snapping the filter wide at once: reedy, rasping trumpets that cut through a mix."
+ },
+ {
+  "name": "Section Brass",
+  "category": "Brass",
+  "description": "Both saws in unison a few cents apart behind the four-pole, its envelope opening it over a fifth of a second and settling half way, the level close behind: the big polysynth brass section of the early 1980s, every voice of a chord leaning in together."
+ },
+ {
+  "name": "Soft Brass",
+  "category": "Brass",
+  "description": "Two saws an octave and a few cents apart behind a low four-pole that the envelope swells open over half a second and lets settle: a mellow horn section that leans into each chord."
+ },
+ {
+  "name": "Velvet Brass",
+  "category": "Brass",
+  "description": "The saws through the two-pole with some resonance, the envelope rounding each note in and the level slow to speak: soft, muted horns with a vocal edge."
+ },
+ {
+  "name": "Wide Brass",
+  "category": "Brass",
+  "description": "The two saws a quarter of a semitone apart, beating against each other, a slow filter swell to a bright sustain and a long release: a thick, chorus-like brass wall."
+ },
+ {
+  "name": "Anthem Chord",
+  "category": "Chord",
+  "description": "After Syntorial's preset recipe for the famous rock-anthem brass chord: saws a few cents apart, the filter high with a quarter of its resonance, the level struck and dying away over seconds with no sustain, gone quickly when the keys lift. From the recipe: the saws and their spread, the cutoff and the resonance, the level's long decay, no sustain and short release; estimated: the four-pole's cutoff on this panel and the little filter envelope that brightens the strike."
+ },
+ {
+  "name": "Arena Stab",
+  "category": "Chord",
+  "description": "After Computer Music's walkthrough for the famous rock-anthem stab on a software analogue: oscillator 1's saw a little detuned, oscillator 2's saw an octave up and quieter, four poles with some resonance, the envelope given a shove, a hint of attack, a decay past half way to a sustain under half. From the walkthrough: the waves, the octave, the mix, the slope, the envelope's shape; estimated: every amount on this panel. Its chorus is left out: the instrument has none."
+ },
+ {
+  "name": "Deep Chord",
+  "category": "Chord",
+  "description": "The saws through the two-pole shut low and resonant, the envelope plucking it open for a moment, the level falling to a third and lingering: dark, dubby chords for deep house and techno."
+ },
+ {
+  "name": "Fifth Stab",
+  "category": "Chord",
+  "description": "Oscillator 2 an octave and a fifth over oscillator 1, the four-pole resonant and closing over a beat: each key a hollow, ringing stab, every chord a stack of fifths, for rave and electro."
+ },
+ {
+  "name": "House Chord",
+  "category": "Chord",
+  "description": "After Attack Magazine's old-school house chord on a modular software synthesizer: a saw and a square ten cents apart through four poles a quarter open with a quarter of the resonance, the whole envelope struck and gone with no sustain, a longer release on the level, and the LFO at half notes on the square's width. From the article: the waves, the detune, the slope, the cutoff, the resonance, the envelope's shape and the LFO's target; estimated: the amounts on this panel. Its distortion and effects are left out."
+ },
+ {
+  "name": "Pop Stab",
+  "category": "Chord",
+  "description": "A saw and a pulse with oscillator 2's saw an octave over them, the filter thrown open and closing fast, the level gone within a beat: bright, short 1980s pop stabs."
+ },
+ {
+  "name": "Synthwave Chord",
+  "category": "Chord",
+  "description": "Saws a sixth of a semitone apart, a slow pulse-width swing on oscillator 1's pulse beside them, the filter falling gently from a bright strike, the chords ringing a second after the keys: the warm, thick chords of night-drive synthwave."
+ },
+ {
+  "name": "Alien Drone",
+  "category": "FX",
+  "description": "Every voice on one key, oscillator 1 alone, swung hard at audio rate by oscillator 2 a fifth over it and unheard, the LFO slowly bending oscillator 2 and with it the clangour: an alien, shifting drone."
+ },
+ {
+  "name": "Computer Chatter",
+  "category": "FX",
+  "description": "The LFO's sample and hold stepping both oscillators' pitch at random several times a second, a little cross-modulation and a resonant two-pole: a computer's chattering read-out."
+ },
+ {
+  "name": "Random Bleeps",
+  "category": "FX",
+  "description": "The two-pole at the edge of ringing, its cutoff stepped at random by the LFO's sample and hold: the computer's bubbling chatter, left to ring on."
+ },
+ {
+  "name": "Rotor",
+  "category": "FX",
+  "description": "Noise and a low saw chopped by the LFO's square on the level a dozen times a second, through a dark filter: a helicopter's rotor passing over."
+ },
+ {
+  "name": "Siren",
+  "category": "FX",
+  "description": "A square, the LFO's slow sine sweeping both oscillators some three semitones up and down: a wailing siren."
+ },
+ {
+  "name": "Wind",
+  "category": "FX",
+  "description": "Noise alone through the two-pole high in resonance, the LFO's slow sine sweeping its peak, slow to rise and to fall: wind howling past."
+ },
+ {
+  "name": "Funk Keys",
+  "category": "Keys",
+  "description": "A pulse through the two-pole, resonant and snapped open at each key, the level gone almost at once: clucking, percussive funk comping."
+ },
+ {
+  "name": "Mellow Keys",
+  "category": "Keys",
+  "description": "One saw through the two-pole nearly shut, a soft strike and a long fading ring, a trace of vibrato: a round, mellow keyboard close to an electric piano."
+ },
+ {
+  "name": "Metal Keys",
+  "category": "Keys",
+  "description": "Cross-modulation from oscillator 2 three octaves up, a dark filter, struck and dying quickly under the key but ringing on after it: clanking, gamelan-like keys."
+ },
+ {
+  "name": "Poly Keys",
+  "category": "Keys",
+  "description": "A pulse and a saw two octaves up, the filter struck open and falling, the level decaying under a held key: a comping keyboard."
+ },
+ {
+  "name": "Sync Keys",
+  "category": "Keys",
+  "description": "Oscillator 2 reset by oscillator 1 and tuned an octave and a major sixth over it, beside oscillator 1's saw, the filter falling from a bright strike: a glassy, vocal comping sound."
+ },
+ {
+  "name": "Synth Piano",
+  "category": "Keys",
+  "description": "A saw and a pulse in unison, the filter struck bright and closing as the level dies under a held key, the keys opening it higher up: a synthesizer's piano for ballads and pop."
+ },
+ {
+  "name": "Breath Lead",
+  "category": "Lead",
+  "description": "A square and noise through a soft two-pole, slow to speak, the vibrato wavering wide: a breathy, flute-like solo voice, low in the middle."
+ },
+ {
+  "name": "Fifth Lead",
+  "category": "Lead",
+  "description": "Oscillator 2 a fifth over oscillator 1, gliding between notes, a little resonance and a filter that settles after the strike: a parallel-fifths solo voice."
+ },
+ {
+  "name": "Glide Saw Lead",
+  "category": "Lead",
+  "description": "Saws a seventh of a semitone apart, a glide carrying each note into the next, the filter opened and settling bright: a sliding, singing saw lead."
+ },
+ {
+  "name": "Night Drive Lead",
+  "category": "Lead",
+  "description": "After Reverb Machine's remake of a synthwave track on a software model of the original's predecessor: a saw and a square layered, one slow LFO a little under a hertz moving both their pitch a little and the pulse's width a lot, and a long release. From the article: the waves, the LFO's rate and its two targets, the long release; estimated: the depths on this panel and the filter. Its echo and reverb are left out."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "Squares an octave apart through a soft two-pole, a quick glide and a steady vibrato: a hollow, woody solo lead."
+ },
+ {
+  "name": "Sync Lead",
+  "category": "Lead",
+  "description": "Oscillator 2 alone, reset by oscillator 1, the LFO sweeping its pitch slowly up and down under the sync through an open filter: the tearing, vocal sync lead."
+ },
+ {
+  "name": "Talking Lead",
+  "category": "Lead",
+  "description": "One saw through the two-pole high in resonance, the LFO's sine opening and closing it twice a second: a wah-wah lead that talks as it is held."
+ },
+ {
+  "name": "Unison Lead",
+  "category": "Lead",
+  "description": "Every voice on one key, the saws an octave apart and spread, gliding, a resonant filter struck open that sinks back as the note is held: a huge, wah-like lead."
+ },
+ {
+  "name": "Unison Sync Lead",
+  "category": "Lead",
+  "description": "Every voice on one key, oscillator 2 reset by oscillator 1 and tuned an octave and a fourth over it, both heard, the filter open: a fat, screaming sync lead with a fast vibrato."
+ },
+ {
+  "name": "Combo Fifths",
+  "category": "Organ",
+  "description": "A square at 8' and a quieter saw an octave and a fifth over it, gated by the key through an open filter: a reedy combo organ with a fifth drawn in."
+ },
+ {
+  "name": "Percussion Organ",
+  "category": "Organ",
+  "description": "Squares at 8' and 2', the filter struck bright and falling back to a mellow hold, the level gated: an organ with its percussion on, a click and a ping at each chord."
+ },
+ {
+  "name": "Tremolo Organ",
+  "category": "Organ",
+  "description": "Square waves at 8' and 2' through an open filter, gated on and off with the key, their level pulsed by the LFO: a hollow combo organ with its tremolo on."
+ },
+ {
+  "name": "Breathing Pad",
+  "category": "Pad",
+  "description": "Saws an eighth of a semitone apart, the LFO's slow sine swinging the filter alone up and down over some four seconds: a soft pad that breathes in and out under a held chord."
+ },
+ {
+  "name": "Cross-Mod Pad",
+  "category": "Pad",
+  "description": "Oscillator 1 swung at audio rate by oscillator 2 two octaves over it, a little of which is heard, through a resonant four-pole that opens slowly and that the LFO sweeps up and down over some five seconds: an eerie, glassy pad whose metal shimmers and turns."
+ },
+ {
+  "name": "Hollow Pad",
+  "category": "Pad",
+  "description": "Squares an octave apart through the two-pole nearly closed, very slow in and long out: a hollow, flute-like pad without a saw's buzz."
+ },
+ {
+  "name": "Night Drive Pad",
+  "category": "Pad",
+  "description": "A saw and a pulse whose width the LFO swings slowly, oscillator 2's saw a sixth of a semitone off, the filter warm and open: the lush, slightly seasick pad of night-drive synthwave."
+ },
+ {
+  "name": "PWM Pad",
+  "category": "Pad",
+  "description": "Both oscillators' pulses, at 4' and 2', their widths swung by the LFO, through an open filter: a bright, shimmering pad voiced over the band."
+ },
+ {
+  "name": "Resonant Sweep",
+  "category": "Pad",
+  "description": "The two-pole filter high in resonance, its cutoff swung slowly up and down by the LFO under the saws, quick to speak: the open, vocal sweep of the twelve-decibel slope."
+ },
+ {
+  "name": "Rising Swell",
+  "category": "Pad",
+  "description": "Saws at 4' and 2' and a wash of noise through the two-pole, closed and resonant, the level and the filter each opening over seconds as a chord is held: a high pad that rises out of the dark like wind."
+ },
+ {
+  "name": "Sweep Pad",
+  "category": "Pad",
+  "description": "Saws in unison through a four-pole shut to its foot and resonant, the envelope opening it wide over a second and a half as the chord is held and closing it slowly after: the classic slow filter-sweep pad, dark to bright and back."
+ },
+ {
+  "name": "Vowel Pad",
+  "category": "Pad",
+  "description": "Saws and a breath of noise through the two-pole at a strong, still resonant peak that follows the keys, a slight vibrato over a slow attack: an 'ah' that every chord sings through, a synthetic choir."
+ },
+ {
+  "name": "Warm Pad",
+  "category": "Pad",
+  "description": "Two saws at 16' and 8', in tune, behind a nearly closed four-pole, perfectly still, slow in and slower out: a deep, warm bed under everything."
+ },
+ {
+  "name": "Harp Pluck",
+  "category": "Pluck",
+  "description": "One saw an octave over a soft square, through the two-pole, struck open and left to ring a long while after the key: a plucked harp, up high."
+ },
+ {
+  "name": "Muted Pluck",
+  "category": "Pluck",
+  "description": "A saw over a square, the four-pole barely opened by a short envelope, the level choked: a dull, palm-muted pluck that sits low in the mix."
+ },
+ {
+  "name": "Night Pluck",
+  "category": "Pluck",
+  "description": "After Reverb Machine's remake of a synthwave track on a software model of the original's predecessor: two saws sixteen cents apart, the filter shut low with three fifths of its resonance and most of the envelope on it, opened in some 30 ms and closed in some 220. From the article: the saws, the detune, the cutoff, the resonance, the envelope's amount and times; estimated: the level's shape, and the conversion to this panel. Its echo is left out: the instrument has none."
+ },
+ {
+  "name": "Pizzicato",
+  "category": "Pluck",
+  "description": "The saws a few cents apart, the filter flicked open and shut, the level gone in a fifth of a second: plucked strings."
+ },
+ {
+  "name": "Squelch Pluck",
+  "category": "Pluck",
+  "description": "A saw through the two-pole high in resonance, its peak swept down from the top at each key: a squelching, rubbery pluck for basslines an octave up."
+ },
+ {
+  "name": "Night Arp",
+  "category": "Sequence",
+  "description": "A pulse and a saw an octave over it, the four-pole resonant and plucked open at each sixteenth, the notes ringing just past their length: a running synthwave arpeggio."
+ },
+ {
+  "name": "Random Sequence",
+  "category": "Sequence",
+  "description": "Short saw notes, the filter's cutoff stepped to a new place by the LFO's sample and hold about every sixteenth, so no two notes of the run share a colour."
+ },
+ {
+  "name": "Resonant Sequence",
+  "category": "Sequence",
+  "description": "Saws through the two-pole close to ringing, its peak dropping fast from high at each note: a chirping, electro sequence line."
+ },
+ {
+  "name": "Bass and Brass",
+  "category": "Split",
+  "description": "Split at F under middle C: the section brass over it and the saw bass under it, four voices each."
+ },
+ {
+  "name": "Bass and Pad",
+  "category": "Split",
+  "description": "Split at G under middle C: the dark warm pad over it and the plucked bass under it, each on four voices."
+ },
+ {
+  "name": "Brass over Strings",
+  "category": "Split",
+  "description": "Both patches on every key: the section brass speaks at once while the film strings swell in under it and hold the chord after the brass has let go."
+ },
+ {
+  "name": "Pluck over Pad",
+  "category": "Split",
+  "description": "Both patches on every key: a bright pulse plucked an octave up rings out at the strike while the warm pad swells in under it and stays."
+ },
+ {
+  "name": "Ensemble Strings",
+  "category": "Strings",
+  "description": "After Sound On Sound's Synth Secrets on string sounds: two saws a few cents apart, the filter fairly open and following the keys a little, a rapid but smooth attack and a gentle release, and a square LFO nudging oscillator 2's pitch for the ensemble's movement. From the article: the saws, the small detune, the open filter, the attack and release, the square LFO on the second oscillator; estimated: every amount on this panel."
+ },
+ {
+  "name": "Film Strings",
+  "category": "Strings",
+  "description": "Saws through the two-pole, rising over a second and dying away over a second and a half, with a gentle vibrato: soft, slow strings for a film's long chords."
+ },
+ {
+  "name": "Low Strings",
+  "category": "Strings",
+  "description": "Saws at 16' and 8' through a dark four-pole, slow to bow and to let go: cellos and basses voiced under the band."
+ },
+ {
+  "name": "Lush Strings",
+  "category": "Strings",
+  "description": "Saws a fifth of a semitone apart, beating slowly, a filter that blooms over half a second, a long release and a vibrato at a violinist's rate: a lush string section for ballads."
+ },
+ {
+  "name": "Poly Strings",
+  "category": "Strings",
+  "description": "Two saws an octave and a few cents apart through the open two-pole, a soft attack and release and a gentle vibrato: a bright string section."
+ },
+ {
+  "name": "PWM Strings",
+  "category": "Strings",
+  "description": "Both pulses, their widths swung by the LFO about once a second, oscillator 2 a tenth of a semitone off, through an open four-pole: the shimmering, chorus-like strings of a pulse-width ensemble."
+ }
+]

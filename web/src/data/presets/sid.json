@@ -1,0 +1,162 @@
+[
+ {
+  "name": "Arp Pluck",
+  "category": "Arpeggio",
+  "description": "For a fast arpeggio on three voices: saws through the older chip's band-pass at high resonance, each step struck and falling away within a quarter of a second to a faint held level, so the steps bubble."
+ },
+ {
+  "name": "Octave Arp",
+  "category": "Arpeggio",
+  "description": "For a fast arpeggio: put the Arpeggiator before it, or play the steps. A square on the key, a pulse an octave up and a quieter triangle an octave under, instant and fully held, cut within 24 ms of each release, so thirty-second steps stay apart as the trackers' chord arpeggios do. The chip has no arpeggio of its own."
+ },
+ {
+  "name": "Filter Bass",
+  "category": "Bass",
+  "description": "Unison saws through the shared resonant low-pass, with an octave below."
+ },
+ {
+  "name": "Growl Bass",
+  "category": "Bass",
+  "description": "The older chip's darker filter, low-pass and band-pass together at high resonance, over a saw-and-pulse combined wave, a saw and a saw an octave under, a few cents apart: a growling, vowel-like bass."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "A saw and a square an octave under it, through the low-pass, both dying away while held, and a triangle an octave under that holds a little longer: a plucked, rounded bass for quick lines."
+ },
+ {
+  "name": "Pulse Bass",
+  "category": "Bass",
+  "description": "The chip tune's workhorse bass: a narrow pulse on the key and a square an octave under it, falling fast from the strike to a low held level, with a triangle under both for weight, and cut short on release."
+ },
+ {
+  "name": "Sync Bass",
+  "category": "Bass",
+  "description": "Voice 1's saw an octave and a major third over the key, reset by voice 3 (silent) on it: a hard-sync bass with a fixed, biting formant, and a triangle an octave under for its root."
+ },
+ {
+  "name": "Triangle Sub Bass",
+  "category": "Bass",
+  "description": "A triangle on the key, full and held, with a little of its octave and a pulse that clicks for 50 ms at each strike, so a deep note still speaks."
+ },
+ {
+  "name": "Chip Xylophone",
+  "category": "Bell",
+  "description": "After the same user's guide's table, whose xylophone is a triangle struck at once, decaying at 9 with no sustain (taken: the wave and the envelope); ours are playing it an octave up and letting it ring on release. Three notes at once."
+ },
+ {
+  "name": "Ring Chime",
+  "category": "Bell",
+  "description": "Triangle voices ring against each other at unequal intervals, with a falling envelope."
+ },
+ {
+  "name": "Struck Ring Bell",
+  "category": "Bell",
+  "description": "A clang and a tone: voice 1's triangle ring-modulated by voice 3, silent, at an unrelated interval, which dies in a quarter of a second, over a plain triangle on the key that rings on for a second and a half."
+ },
+ {
+  "name": "Major Chord",
+  "category": "Chord",
+  "description": "Each key a major triad, the three voices as its root, third and fifth, pulses of three widths, struck and falling fast to a low held level: a bright chord stab on one key, sounded together, not stepped as an arpeggio."
+ },
+ {
+  "name": "Minor Chord",
+  "category": "Chord",
+  "description": "Each key a minor triad of saws through the low-pass, swelling in over 56 ms, held and fading over a fifth of a second: a dark, soft chord for one finger."
+ },
+ {
+  "name": "Low Blast",
+  "category": "FX",
+  "description": "The game explosion: noise clocked three octaves under the key, through the older chip's low-pass, struck and dying away over a few seconds."
+ },
+ {
+  "name": "Machine Drone",
+  "category": "FX",
+  "description": "Each voice modulating the next: voice 1's saw a fifth over the key and synced to voice 3's pulse a fourth under it, voice 2's triangle ring-modulated by voice 1, all through the older chip's band-pass at full resonance. A gnarled, grinding tone that swells in and holds."
+ },
+ {
+  "name": "Calliope",
+  "category": "Keys",
+  "description": "After the same user's guide's table, whose organ and calliope are a triangle held at full level (taken: the wave and the full sustain); ours is the release of 24 ms that ends a key without a click. A pure, fluty organ for three notes."
+ },
+ {
+  "name": "Chip Harpsichord",
+  "category": "Keys",
+  "description": "After the same user's guide's table, whose harpsichord is a saw struck at once, decaying at 9 with no sustain (taken: the wave and the envelope); ours are the short release and the low-pass on the newer chip, high enough only to take the edge off the top. Three notes at once."
+ },
+ {
+  "name": "Chip Piano",
+  "category": "Keys",
+  "description": "After the instrument table in the home computer's own user's guide, whose piano is a very narrow pulse (a width of 255 of 4095) struck at once and decaying at 9 with no sustain (taken: the wave, the width and the envelope); the release of 114 ms is ours. Three notes at once."
+ },
+ {
+  "name": "Square Start",
+  "category": "Keys",
+  "description": "Three chip voices with square waves and a short release. Play up to three notes."
+ },
+ {
+  "name": "Breathy Triangle Lead",
+  "category": "Lead",
+  "description": "After the instrument table in the home computer's own user's guide, whose flute is a triangle with an attack of 6 (taken: the wave and the attack); ours are the sustain, a quiet triangle an octave up, and a breath of high noise through the band-pass on voice 3."
+ },
+ {
+  "name": "Combined Wave Lead",
+  "category": "Lead",
+  "description": "The chip's own combined waves: saw and pulse on the key, and triangle and pulse on it and an octave up, eased in over 38 ms. Each pair plays only where both waves are high, which gives a thin, reedy, nasal tone no single wave has."
+ },
+ {
+  "name": "Narrow Lead",
+  "category": "Lead",
+  "description": "Three narrow pulses in unison, the upper voices lightly detuned."
+ },
+ {
+  "name": "Ring Lead",
+  "category": "Lead",
+  "description": "Voice 1's triangle ring-modulated by voice 3, silent, an octave up and 3 cents sharp, over a plain triangle on the key: a hollow, glassy lead whose ring partials beat slowly against the plain one."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "The full, hollow solo voice of a chip tune: a square on the key, a narrower pulse an octave over it a few cents sharp, and a triangle an octave under, all three struck by each key and falling quickly from the strike to a lower held level, so a fast line keeps its accents."
+ },
+ {
+  "name": "Sync Lead",
+  "category": "Lead",
+  "description": "Hard sync: voice 1's saw runs two octaves and a third over the key and is reset by voice 3, silent, on the key, so it plays the key with a tearing, vocal brightness; a quiet triangle on the key under it for body. The sync stands still, as nothing here sweeps voice 1."
+ },
+ {
+  "name": "Beating Pulse Pad",
+  "category": "Pad",
+  "description": "Two pulses 16 cents apart on one key, a triangle an octave under: as they drift through each other the sum moves as a pulse-width sweep does. The chip's widths stand still; the movement is the detune. One note at a time."
+ },
+ {
+  "name": "Dark Saw Pad",
+  "category": "Pad",
+  "description": "Saws through the older chip's low-pass, set low, swelling in slowly and fading long: a dark, round chord of three notes."
+ },
+ {
+  "name": "Pulse Pad",
+  "category": "Pad",
+  "description": "Three pulses of three widths, one to a note, each a few cents from the next, swelling in over half a second through the low-pass and fading over a second and a half: a soft chord of three notes whose common partials beat gently."
+ },
+ {
+  "name": "Noise Snare",
+  "category": "Percussion",
+  "description": "Noise an octave up, decaying at 5, with a triangle body an octave under the key that is gone sooner, and a second noise through the band-pass for the snap."
+ },
+ {
+  "name": "Noise Tick",
+  "category": "Percussion",
+  "description": "Clocked noise on each voice, with no sustain and a short decay."
+ },
+ {
+  "name": "Open Hat",
+  "category": "Percussion",
+  "description": "High noise, two octaves over the key, through the high-pass, ringing for about a quarter of a second."
+ },
+ {
+  "name": "Thump Kick",
+  "category": "Percussion",
+  "description": "A kick from what the chip has: a triangle two octaves under the key with a short decay, a square there that is gone in 50 ms for the punch, and a 6 ms tick of noise. There is no pitch drop, as nothing here can sweep a pitch; play it low for a thump, higher for a tom."
+ }
+]

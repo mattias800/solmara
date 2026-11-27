@@ -1,0 +1,47 @@
+---
+title: "Chord Steps"
+description: "Chord Steps"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chord-steps.webp';
+
+A MIDI device: a polyphonic step sequencer in a scale, whose notes can be boxes that play chords, repeats, arpeggios or strums, with eight patterns of four variations each that switch by themselves, a velocity lane, and transposition from the keys.
+
+[Chord Steps on the website](/solmara/write/#chord-steps)
+
+## In the device chain
+
+Chord Steps on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Chord Steps in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Chord Steps. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dorian Chord Walk**: A complete pattern of dorian chord walk.
+- **Four Bar Arcs**: A complete pattern of four bar arcs.
+- **Held Key Jet-8000**: A complete pattern of held key jet.
+- **Legato Footsteps**: A complete pattern of legato footsteps.
+- **Minor Bell Steps**: A complete pattern of minor bell steps.
+- **Offbeat Stabs**: A complete pattern of offbeat stabs.
+- **Repeated Fifths**: A complete pattern of repeated fifths.
+- **Wide Lydian Strums**: A complete pattern of wide lydian strums.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Play mode | Seq, Key | Seq |
+| MIDI transpose | Off, On, On latch | Off |
+| Pattern | 1 to 8 | 1 |
+| Variation | I, II, III, IV | I |
+| Auto switch | Off, Next, Random, I-II, III-IV, I-I-I-II | Off |
+| Shuffle | 50% to 75% | 66% |
+| Shuffle source | Local, Global | Local |

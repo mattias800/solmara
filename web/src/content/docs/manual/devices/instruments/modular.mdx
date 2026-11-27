@@ -1,0 +1,155 @@
+---
+title: "Modular"
+description: "Modular"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/modular.webp';
+import window from '../../../../../assets/devices/modular.webp';
+
+**A design of Solmara's own.**
+
+A modular synth that plays the track's notes: patch sample-rate oscillators, filters, envelopes, sequencers, utilities, effects and ordinary devices with polyphonic voltage cables.
+
+[Modular on the website](/solmara/modular/)
+
+## In the device chain
+
+Modular on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Modular in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Modular's window, as it starts." /></a>
+
+
+## Presets
+
+65 factory presets come with Modular. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Acid Line**: A squelching acid line: the bass box's own saw core through the screaming diode ladder, resonance high, the envelope's sweep deeper the harder a key is struck. Notes that touch slide into each other. Macro 1 opens the cutoff.
+- **Folded Sine Bass**: A sine an octave down through the wavefolder, its envelope driving the folds from four to one: a bass that growls at the strike and settles to a pure sub. Macro 1 adds folds.
+- **Key-Tracked Wobble Bass**: After the wobble bass in a complex oscillator's manual: its modulator turned down to a slow wobble an eighth of the key's pitch, still following the key, so the wobble doubles in speed with each octave; it moves the carrier's folds rather than its pitch, through a low-pass.
+- **Ladder Bass**: The classic mono bass: two saws a few cents apart and a square an octave under them, through the transistor ladder at 24 dB, its envelope opening it from 120 Hz for a quarter of a second. Macro 1 adds resonance.
+- **Reese Bass**: Two saws a third of a semitone apart beating slowly against each other, low-passed at 700 Hz and spread by the chorus: the dark, moving bass of drum and bass. Macro 1 opens the filter.
+- **Sub Pulse Bass**: A round pulse at 30 percent over a sine an octave below it, through the state-variable low-pass with a little bite at the front: a bass that holds the floor under a mix.
+- **Through-Zero FM Bass**: The complex oscillator's carrier modulated through zero by its modulator at the same pitch, the index falling from bright to round in a fifth of a second: the struck, woody bass of linear FM. Velocity adds index. Macro 1 lifts it.
+
+### Bell
+
+- **Glass Bell**: A bell from through-zero FM at an inharmonic ratio of 3.5, the index falling slower than the tone so the clang mellows as it rings for three seconds, with a quiet echo.
+- **Struck Bell**: After Gordon Reid's Synth Secrets on synthesizing bells: three sines at twice, three and a little over four times the key, so the ear hears the key itself between them, each dying at its own rate, one warbling; under them a hum of two sines an octave down beating slowly, and the clapper's brief FM burst on top.
+
+### Drone
+
+- **Cross-FM Storm**: After Chris Meyer's Learning Modular lesson on patching exponential FM, pushed as it suggests: two oscillators a fourth apart, each frequency-modulating the other at audio rate, the depth of the return breathing on a twenty-second triangle, and their ring product mixed in, through a diode ladder swept just as slowly. Plays on its own while the transport runs.
+- **Drifting Drone**: A continuous folded sine with slow filter and stereo movement. This patch sounds without held notes or the transport; bypass or mute to stop it.
+- **Feedback Loop Drone**: From a feedback-patch thread on a software modular's user forum: audio running round a ring of filter, reverb, filter and reverb back to the first, held in by a soft limiter and a DC blocker; its own level, followed, moves the filters, and its own audio, sampled at a clock it makes from itself, picks their pitches through a quantizer.
+- **Filter Cross-FM**: From the patch suggestions in a shift-register chaos instrument's build manual: two filters made into sine oscillators by feeding each one's band-pass back into its input, and each one's high-pass patched into the other's cutoff, so they frequency-modulate each other with no oscillator at all.
+- **Oscillator Wall**: A small take on a YouTuber's thousand-oscillator megadrone, as a MusicRadar interview tells it: twelve plain buzzing saws and pulses heaped onto five chord tones, each a few cents off its neighbour so the wall beats and shimmers, a slow random drift under them, through a slowly breathing low-pass.
+- **Slow FM Drone**: After Rob Redman's MusicRadar walkthrough of an ambient modular drone: an FM voice held on one low note, a slow function (eight seconds up, three down) sweeping its FM and, offset, its folds, a very slow LFO on the low-pass, a long wet reverb and light saturation after.
+
+### Drums
+
+- **Burst Clap**: A hand clap after Steve Howell's 1984 Electronics & Music Maker series on synthetic percussion: band-passed noise struck four times 10 ms apart, here by a ratchet, as several hands never quite together, then a tail that dies over a fifth of a second.
+- **Gate-Bent Kick**: The analog bass drum from a complex oscillator's manual: the note's own gate, softened as it falls, bends a sine up by linear FM and strikes the low-pass gate at once, so the drop in pitch and the decay are one gesture.
+- **Noise Snare**: A snare from Synth Secrets' snare article: two sines near 180 and 330 Hz for the shell, falling a little at the strike and gone in a tenth of a second, and white noise high-passed at 1.8 kHz for the wires, lasting twice as long.
+- **Ringing Filter Kick**: Gordon Reid's self-oscillating filter kick from Synth Secrets' practical bass drums: the filter at full resonance with its cutoff at the bottom, an envelope sweeping it down three octaves (decay equal to release, no sustain), pinged by a pulse that, with the amplifier's instant attack, makes the click.
+- **Sine Kick**: The analog kick from Synth Secrets' bass drum article: a sine at 48 Hz thrown three octaves up at the strike by an envelope that falls in 40 ms, its level dying over half a second, a little saturation for punch.
+- **Six-Square Hats**: The analog machine's metallic hats as Gordon Reid's Synth Secrets on cymbals and Werner, Abel and Smith's 2014 circuit study take them apart: six square waves at unrelated pitches from 205 to 800 Hz summed into a clangorous cloud, through band-passes near 3.4 and 7.1 kHz, the upper band shorter, and a high-pass, closed in 50 ms. Macro 1 opens the hat.
+- **Tuned Tom**: An analog tom that follows the key, so a run down the keyboard plays a fill: a sine two octaves below the key, swooping down onto it over 120 ms, with a breath of low noise for the skin.
+
+### Generative
+
+- **Airport Loops**: After Reverb Machine's study of the first ambient record made for an airport: seven single notes (C, a high F, D flat, a low A flat, E flat, a low F and A flat) each swelling and fading on a cycle of its own, from 17.8 to 31.8 seconds, so they drift into chords that never come round the same way twice, into a soft reverb. Plays on its own while the transport runs.
+- **Arabesque Canon**: The arabesque generator, as Kim Bjorn and Chris Meyer's Patch & Tweak tells its story: a chain of sample-and-holds on one clock, each passing its voltage to the next, every stage playing its own oscillator, so a random tune is echoed by a second voice two steps later and an octave down and a third four steps later and an octave up, in C major. Plays on its own while the transport runs.
+- **Coin-Toss Hats**: The hat split from a dual Bernoulli gate's manual: every sixteenth of the song's clock tossed as a coin, three in four to the closed hat and the rest to the open one, both on one high-passed noise.
+- **Euclidean Timelines**: After Godfried Toussaint's paper on the Euclidean algorithm in traditional rhythms: the tresillo (three hits spread over eight), the cinquillo (five over eight, turned) and seven over sixteen, each pinging a resonant filter at its own pitch, low, middle and high, from one clock at sixteenths.
+- **Krell Drift**: After Todd Barton's video on building the self-playing Krell patch, as Nichanan Kesonpat's synth notes set it down: two function generators that strike themselves again at the end of each cycle, where two random voltages choose the next cycle's length and the next pitch, quantized and kept to a narrow range, each opening its own filter and amplifier; random within bounds, under a small reverb and a long echo. Plays on its own while the transport runs.
+- **Logistic Chaos Melody**: The chaos patch from a modular maker's published patch examples: the logistic map x = k(x - x squared) worked out in voltages by math modules, a sample-and-hold keeping x and taking the next at each eighth of the song, so the melody never quite repeats; quantized to a minor pentatonic and struck through a low-pass gate. Macro 1 moves k from the edge of chaos (3.6) to its heart (4). Plays on its own while the transport runs.
+- **Looping Random Melody**: After Sound On Sound's 2018 review of a looping random shift-register sequencer: eight random voltages going round at each eighth, so the melody loops, and now and then one is changed for a new one, so it slips a note at a time; their weighted sum, quantized to a major pentatonic, is the pitch, and a pulse whenever the first stage stands above a threshold makes a rhythm that drifts with it. Macro 1 lets it change faster. Plays on its own while the transport runs.
+- **Phase Drift**: The phasing of the 1960s tape-phasing pieces, after Synthtopia's write-up of a modular realization: two voices play the same twelve-note figure (ours, not the piece's) from two free clocks, one a half percent faster, so the parts slide apart a step at a time and lock again, left against right. Plays on its own while the transport runs.
+- **Probability Hats**: A seeded probability gate selects clock pulses to shape filtered noise. Plays on its own while the transport runs; Macro 1 raises the chance of a hit.
+- **Random Noise Bounce**: After Steve Howell's 1984 Electronics & Music Maker series on synthetic percussion: noise through two resonant low-passes whose cutoff a sample-and-hold rolls again at each sixteenth, one swept the other way, so each hit lands left or right; the same random voltage fires the envelope only when it crosses a threshold, so the rhythm is random too.
+- **Rungler Chaos**: After the build manual of a 2020 chaos instrument around a rungler: two oscillators, one clocking a shift register that takes the other's pulse as its data, the register's stepped sum thrown back onto both their pitches and the filter, and the filter fed by a comparator of the two triangles. Slow, it plays patterns that almost repeat; Macro 1 opens the filter. Plays on its own while the transport runs.
+- **Stumbling Random**: Three patch ideas from a random-voltage module's manual at once: a clock of its own at 150 BPM, out of step with the song, whose speed a stepped random jostles so it stumbles; a pitch that chases each new random step and overshoots it, as a lag that rings would; and that oscillator ring-modulated with a second one wandering on the smooth random, for the tones between them, struck by the stumbling clock. Plays on its own while the transport runs.
+- **West Coast Noodle**: From the basic random sequencing patch in a random-voltage module's manual: the song's clock strikes a low-pass gate on every eighth while a stepped random, quantized to a major pentatonic, moves the complex oscillator's pitch, and, as Patch & Tweak suggests, each note samples its own fold. Plays on its own while the transport runs.
+
+### Keys
+
+- **Electric Tines**: An electric piano from two through-zero FM pairs: one at the key's own ratio for the body, its index falling over a second, and one fourteen times up for the tine's bright knock, gone in 40 ms. Velocity lifts both.
+- **First Patch**: A complete polyphonic subtractive patch: pitch, gate, oscillator, filter, envelope and VCA. Open the rack to trace each cable.
+- **Modal Keys**: Gates strike a four-mode resonator. A gentle delay catches its changing overtones; Macro 1 changes the structure.
+
+### Lead
+
+- **Breathy Flute**: After Gordon Reid's Synth Secrets on simple flutes: a quiet triangle with a little white noise, the filter opening faster than the amplifier so a breathy chiff leads each note, its cutoff following the key by two-thirds, and an unsteady breath of noise sampled six times a second and slewed onto the brightness.
+- **Folded Voice**: A complex oscillator through a reflective wavefolder, opened by a short envelope. Macro 1 pushes the folding amount.
+- **Pulse Width Lead**: A pulse whose width an LFO sweeps from narrow to square at 5 Hz, a slow vibrato that comes in after the note starts, and glide between notes that touch.
+- **Ring Bell Lead**: Two sines two and a half times apart through the ring modulator, which leaves only their sum and difference, at one and a half and three and a half times the key: a hollow, clanging lead between a bell and a voice, the dry sine under it for its pitch.
+- **Sync Sweep Lead**: A saw hard-synced to a master at the key's pitch, its own pitch thrown three octaves up at the strike and falling back over half a second: the tearing sync lead. Macro 1 holds it higher.
+- **Talking Lead**: A bright pulse through the formant filter, an LFO a little under 1 Hz moving it from one vowel to the next while the envelope opens it: a lead that talks. Macro 1 picks the vowel by hand.
+- **Waveguide Reed**: After Sound On Sound's 1997 piece on Ron Berry's acoustic modelling on an analogue modular: a reed as a loop that plays itself, a delay half the note's period fed back inverted through a soft limiter (the reed's give) and a low-pass. The breath's pressure, with a little noise and a slow tremolo in it, both blows it and holds the loop's gain past where it sounds, so it speaks while the key is held and stops when let go.
+
+### Pad
+
+- **Chorus Saw Pad**: Two saws seven cents either side of the key through the Sallen-Key low-pass, a slow triangle breathing its cutoff, swelling in over most of a second and spread wide by the chorus. Macro 1 brightens it.
+- **Grain Shimmer Pad**: A soft triangle fed into the live grain buffer, which plays it back an octave up in overlapping grains of a fifth of a second; both into a long echo that feeds back on itself, so the octave rises like a shimmer behind the chord. Macro 1 freezes the grains.
+- **Vowel Table Pad**: The vowels table read by a position that drifts on a slow sine, one voice a little behind the other in pitch, so the pad sings through its vowels as it is held; a long echo behind it. Macro 1 moves it along the table by hand.
+
+### Percussion
+
+- **Bouncing Ball**: The bouncing ball from Peter Speer's function-generator tutorial and Perfect Circuit's two-LFO tip: a slow one-shot fall sets the speed of a cycling function, so its bounces come faster and faster while they fade with it, each one striking a small wooden resonator at the key's pitch. Hold a key to drop the ball.
+- **FM Ping Bongo**: After the patch ideas in a dual low-pass gate's manual: a two-operator FM pair at a ratio of 1.5 through a low-pass gate struck by the note, each strike adding a burst of FM index that dies with it, and letting the key go mutes it mid-ring, as a hand damps the head. It rings on the key played.
+- **Timpani**: After Gordon Reid's Synth Secrets on timpani: four sines an octave below the key at 1, 1.5, 1.98 and 2.44 times its pitch, loud as 5 to 4 to 3 to 1, each dying at its own share of the principal's two seconds, struck by two saws at 100 and 87 Hz ring-modulated and high-passed for the stick.
+- **Two-Tone Cowbell**: Gordon Reid's cowbell from Synth Secrets: two triangles at 587 and 845 Hz, more of the upper, through a band-pass at 2.64 kHz with a little resonance; a short loud impact with a breath of pink noise in it, then a longer tail.
+- **West Coast Bongo**: The West Coast bongo as Chris Meyer's Learning Modular glossary and a low-pass-gate maker's guide to low-pass gates describe it: a wavefolded sine through a low-pass gate struck by each note, so it is brightest as it is loudest and both fall together in a sixth of a second; the gate's own fall eases the folds too.
+
+### Pluck
+
+- **Folded Harp**: A triangle folded by an envelope that falls in a quarter of a second, so each note starts rich and rings out pure, through a slow chorus: a harp from the West Coast school of timbre.
+- **Karplus-Strong Pluck**: A plucked string as Synthtopia's introduction to Karplus-Strong synthesis on a modular explains it: a 4 ms burst of noise into a delay one period long, fed back through a low-pass, so the burst rings at the key's pitch and darkens as it dies. As a thread on a software modular's user forum warns, the loop's filter flattens the note; here the delay follows the key and is set short by what the filter adds.
+- **Pinged Marimba**: A filter pinged as the Synth DIY wiki and Signal Flux's percussion building blocks describe: resonance just short of oscillating, a 1.5 ms pulse into its input, so it rings at its cutoff, which follows the key; harder notes strike harder.
+- **Resonant Pluck**: A saw through the state-variable low-pass at high resonance, its envelope snapping it from four octaves above the key down to the note in a sixth of a second, the amplifier dying away in half a second.
+
+### Sequence
+
+- **Berlin School**: The 1970s Berlin sequence: sixteen steps of octaves, fifths and sevenths running at sixteenths while a key is held (the key sets the root), a saw through the transistor ladder that each accent opens further, and a dotted echo. Macro 1 opens the filter.
+- **Clockwork Steps**: A transport-synchronized voltage sequence through Solmara's ordinary Transpose device, with a shaped filter and gated amplifier. Plays on its own while the transport runs.
+- **Rack Beat**: A whole beat from the rack's own drum circuits: the trigger sequencer's four tracks at sixteenths strike a sine kick, a noise snare and closed hats, with off-beat open hats that sometimes skip. Plays on its own while the transport runs.
+- **Ratchet Run**: An eight-step run of a minor chord's notes at sixteenths from the held key, every fourth step rolled into three quick repeats by the ratchet, through a resonant low-pass pluck. Plays while a key is held.
+- **Sample and Hold Bleeps**: The film computer's bleeps: noise sampled at each sixteenth and quantized to a minor pentatonic over two octaves from the held key, a sine struck short by each step, echoing. Plays while a key is held; Macro 1 widens the range.
+
+### Strings
+
+- **Bowed Resonator**: A bowed string as Gordon Reid's Synth Secrets on bowed strings and a modal synthesizer's manual describe it: a continuous friction of band-passed noise, its pressure wavering, swelled in over 400 ms into a harmonic resonator at the key's pitch that rings for four seconds, through a gentle chorus.
+- **Bowed Saw Strings**: Gordon Reid's subtractive violin from Synth Secrets: a saw an octave up, a touch of portamento and a vibrato that fades in after the bow starts, then a resonant high-pass at 700 Hz and a fixed bank of band-passes standing in for the wooden body.
+- **Phaser Strings**: The string machine: a saw and a pulse an octave apart, high-passed so it stays light, through a six-stage phaser turning once every three seconds and a three-tap chorus. A third of a second to swell, nearly a second to die away.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Voices | 1 to 16 | 8 |
+| Output | -60 dB to 12 dB | -6 dB |
+| Mix | 0 to 1 | 1 |
+| Legato | Retrigger, Legato | Retrigger |
+| Glide | 0 ms to 2000 ms | 0 ms |
+| Macro 1 | 0 to 1 | 0 |
+| Macro 2 | 0 to 1 | 0 |
+| Macro 3 | 0 to 1 | 0 |
+| Macro 4 | 0 to 1 | 0 |
+| Macro 5 | 0 to 1 | 0 |
+| Macro 6 | 0 to 1 | 0 |
+| Macro 7 | 0 to 1 | 0 |
+| Macro 8 | 0 to 1 | 0 |
+| Macro 9 | 0 to 1 | 0 |

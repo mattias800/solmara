@@ -1,0 +1,52 @@
+---
+title: "Pattern Variations"
+description: "Pattern Variations"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/pattern-variations.webp';
+
+A MIDI device: plays a polyphonic pattern of steps, and makes variations of it at a click: notes moved by octaves and fifths or further, swapped, thinned or filled, lengthened, and accented. Eight patterns, transposed from the keys.
+
+[Pattern Variations on the website](/solmara/write/#pattern-variations)
+
+## In the device chain
+
+Pattern Variations on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Pattern Variations in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Pattern Variations. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Broken Fifths**: An original seed pattern for broken fifths.
+- **Held Minor Phrase**: An original seed pattern for held minor phrase.
+- **Legato Acid Steps**: An original seed pattern for legato acid steps.
+- **Minor Ninth Pulses**: An original seed pattern for minor ninth pulses.
+- **Quiet Sixteenths**: An original seed pattern for quiet sixteenths.
+- **Root and Reply**: An original seed pattern for root and reply.
+- **Skewed Seven**: An original seed pattern for skewed seven.
+- **Soft Chord Ostinato**: An original seed pattern for soft chord ostinato.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Playback mode | SEQ, SEQ+KEY, KEY | SEQ |
+| Transpose | Off, On | Off |
+| Scale velocity | Off, On | Off |
+| Pattern | 1 to 8 | 1 |
+| Play mutation | Off, On | Off |
+| Local shuffle | 50% to 75% | 66% |
+| Octave+Pitch | 0% to 100% | 30% |
+| Swap | 0% to 100% | 20% |
+| Density | 0% to 100% | 30% |
+| Note length | 0% to 100% | 20% |
+| Velocity (accent) | 0% to 100% | 30% |
+| Shuffle source | Local, Global | Local |

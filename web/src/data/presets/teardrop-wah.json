@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Clav Quack",
+  "category": "Wah",
+  "description": "The envelope on a clav or an electric piano, kept quick and sensitive."
+ },
+ {
+  "name": "Funk Auto-Wah",
+  "category": "Wah",
+  "description": "The envelope moves it from the heel: each strum opens it and lets it fall back."
+ },
+ {
+  "name": "Parked Honk",
+  "category": "Wah",
+  "description": "Parked three quarters open: the nasal, cutting honk of a lead with the wah left on."
+ },
+ {
+  "name": "Rock Pedal",
+  "category": "Wah",
+  "description": "The pedal by itself, half way: automate it, or map an expression pedal to it, and rock it."
+ },
+ {
+  "name": "Slow Sweep",
+  "category": "Wah",
+  "description": "The oscillator rocks it slowly over most of its travel, for a chord left ringing."
+ }
+]

@@ -1,12 +1,15 @@
-"""Writes the manual's reference chapter for each device, from what
-scripts/devices.py exported: what it is, and every control with its range
+"""Writes the manual's chapter for each device, from what scripts/devices.py
+exported and the words written for it: what it is, its pictures in the
+chain and in its window, the guide to it, and every control with its range
 and where it starts.
 
   python scripts/manual_devices.py
 
-A chapter is src/content/docs/manual/devices/<family>/<slug>.md. One that a
-person has written (without the generated mark on its first lines) is left
-alone, so a chapter can be taken over by hand and keep its words.
+A chapter is src/content/docs/manual/devices/<family>/<slug>.mdx. Its guide
+is written by hand in src/data/manual/<slug>.md: Markdown that may say
+{{chain}} and {{window}} where those pictures go (otherwise they come after
+its first paragraphs, under headings of their own). A chapter that a person
+has taken over (without the generated mark on its first lines) is left alone.
 """
 from __future__ import annotations
 
@@ -16,7 +19,10 @@ from pathlib import Path
 WEB = Path(__file__).resolve().parent.parent
 DATA = WEB / "src" / "data"
 DOCS = WEB / "src" / "content" / "docs" / "manual" / "devices"
-MARK = "<!-- Written by scripts/manual_devices.py from the app; edit the script, or remove this line to write it by hand. -->"
+GUIDES = DATA / "manual"
+FACES = WEB / "src" / "assets" / "devices"
+MARK_WORDS = "Written by scripts/manual_devices.py"
+MARK = "{/* " + MARK_WORDS + " from the app and src/data/manual; edit those, or remove this line to write it by hand. */}"
 FAMILIES = {"instrument": "instruments", "effect": "effects", "midi": "midi"}
 
 
@@ -31,8 +37,15 @@ def number(value: float) -> str:
     return "0" if text == "-0" else text
 
 
+# Units that are the control's kind rather than what its number counts.
+PLAIN = {"dial", "ratio", "steps", "step", "choice", "switch", "raw", "count", "integer", "position", "drawbar", "width",
+         "key", "note", "MIDI note", "velocity"}
+
+
 def with_unit(value: float, unit: str | None) -> str:
-    if not unit or unit in ("dial", "ratio", "steps"):
+    if unit == "linear":
+        return number(value)
+    if not unit or unit in PLAIN:
         return number(value)
     space = "" if unit in ("%",) else " "
     return f"{number(value)}{space}{unit}"
@@ -47,19 +60,99 @@ def control_row(control: dict) -> tuple[str, str, str]:
         start = choices[index] if 0 <= index < len(choices) else number(default)
         return control["label"], span, start
     unit = control.get("unit")
+    if unit == "linear" and control.get("minimum", 0) >= 0 and control.get("maximum", 1) == 1:
+        unit, control = "%", {**control, "minimum": control.get("minimum", 0) * 100, "maximum": 100,
+                              "default": default * 100}
+        default = control["default"]
     span = f"{with_unit(control.get('minimum', 0), unit)} to {with_unit(control.get('maximum', 1), unit)}"
     return control["label"], span, with_unit(default, unit)
 
 
 def cell(text: str) -> str:
-    return text.replace("|", "\\|").replace("\n", " ")
+    return mdx(text.replace("|", "\\|").replace("\n", " "))
+
+
+def mdx(text: str) -> str:
+    """The app's words as MDX reads them: its braces and angle brackets as text."""
+    return text.replace("{", "&#123;").replace("}", "&#125;").replace("<", "&lt;")
+
+
+def generated(path: Path) -> bool:
+    return any(MARK_WORDS in line for line in path.read_text(encoding="utf-8").splitlines()[:8])
+
+
+def pictures(device: dict) -> tuple[list[str], dict[str, list[str]]]:
+    """The imports, and each picture as the page shows it."""
+    slug, label = device["slug"], device["label"]
+    up = "../../../../../assets/devices/"
+    imports, shown = ["import Shot from '../../../../../components/Shot.astro';"], {}
+    chain = FACES / "chain" / f"{slug}.webp"
+    if chain.exists() or (not device["window"] and (FACES / f"{slug}.webp").exists()):
+        imports.append(f"import chain from '{up}{'chain/' if chain.exists() else ''}{slug}.webp';")
+        shown["chain"] = [f'<a href={{chain.src}} title="The picture at its full size"><Shot src={{chain}} '
+                          f'alt="{label} in a track\'s device chain, as it starts." /></a>']
+    if device["window"] and (FACES / f"{slug}.webp").exists():
+        imports.append(f"import window from '{up}{slug}.webp';")
+        shown["window"] = [f'<a href={{window.src}} title="The picture at its full size"><Shot src={{window}} '
+                           f'alt="{label}\'s window, as it starts." /></a>']
+    return imports, shown
+
+
+def preset_list(device: dict) -> list[str]:
+    """Its factory presets by category, each with what it is."""
+    path = DATA / "presets" / f"{device['slug']}.json"
+    presets = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    if not presets:
+        return []
+    count = "One factory preset comes" if len(presets) == 1 else f"{len(presets)} factory presets come"
+    lines = ["## Presets", "",
+             f"{count} with {device['label']}. Click the device's name to browse them, and try one while the song "
+             f"plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).", ""]
+    categories: dict[str, list[dict]] = {}
+    for preset in presets:
+        categories.setdefault(preset.get("category") or "Other", []).append(preset)
+    for category, members in categories.items():
+        if len(categories) > 1:
+            lines += [f"### {mdx(category)}", ""]
+        for preset in members:
+            about = preset.get("description")
+            lines.append(f"- **{mdx(preset['name'])}**" + (f": {mdx(about)}" if about else ""))
+        lines.append("")
+    return lines
+
+
+def guide(device: dict, shown: dict[str, list[str]]) -> list[str]:
+    """The guide written for the device, with its pictures placed."""
+    path = GUIDES / f"{device['slug']}.md"
+    text = path.read_text(encoding="utf-8").strip("\n") if path.exists() else ""
+    lines = text.splitlines() if text else []
+    headed = {
+        "chain": ["## In the device chain", "", f"{device['label']} on a track, as it starts."],
+        "window": ["## Its window", "", "The window opens from the key in the device's header, or with "
+                   "**Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus."],
+    }
+    loose: list[str] = []
+    for name in ("chain", "window"):
+        marker = "{{" + name + "}}"
+        if name not in shown:
+            lines = [line for line in lines if line.strip() != marker]
+        elif any(line.strip() == marker for line in lines):
+            lines = [x for line in lines for x in (shown[name] if line.strip() == marker else [line])]
+        else:
+            loose += headed[name] + [""] + shown[name] + [""]
+    if loose:  # After the guide's opening paragraphs, before its first heading.
+        at = next((i for i, line in enumerate(lines) if line.startswith("## ")), len(lines))
+        lines = lines[:at] + ([""] if at else []) + loose + lines[at:]
+    return lines + ([""] if lines else [])
 
 
 def write(device: dict, site_hidden: set[str]) -> Path | None:
     folder = DOCS / family(device)
-    path = folder / f"{device['slug']}.md"
-    if path.exists() and MARK not in path.read_text(encoding="utf-8").splitlines()[:8]:
+    path, old = folder / f"{device['slug']}.mdx", folder / f"{device['slug']}.md"
+    if any(p.exists() and not generated(p) for p in (path, old)):
         return None  # Written by hand.
+    if old.exists():
+        old.unlink()
     controls = json.loads((DATA / "controls" / f"{device['slug']}.json").read_text(encoding="utf-8"))
     summary = device.get("summary") or ""
     lede = (summary[:1].upper() + summary[1:] + ".") if summary else ""
@@ -72,22 +165,28 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
         MARK,
         "",
     ]
+    imports, shown = pictures(device)
+    lines += imports + [""]
     origin = device.get("origin")
     if origin:
         kind = "an analogue" if origin["circuit"] == "analogue" else "a digital"
         lines += [f"**An emulation of {kind} original,** modelled on {origin['modelledOn']}.", ""]
     elif device.get("kind") != "midi":  # The players' origin is not told.
         lines += ["**A design of Solmara's own.**", ""]
-    if device.get("description"):
-        lines += [device["description"], ""]
+    if (GUIDES / f"{device['slug']}.md").exists():
+        pass  # Its guide opens with what it is, in a player's words.
+    elif device.get("description"):
+        lines += [mdx(device["description"]), ""]
     elif lede:
-        lines += [lede, ""]
+        lines += [mdx(lede), ""]
     if device["id"] not in site_hidden:
         place = {"instruments": f"/solmara/instruments/{device['slug']}/", "guitar": f"/solmara/guitar/#{device['slug']}",
                  "midi": f"/solmara/write/#{device['slug']}"}.get(family(device), f"/solmara/effects/#{device['slug']}")
         if device["id"] == "builtin.modular":
             place = "/solmara/modular/"
         lines += [f"[{device['label']} on the website]({place})", ""]
+    lines += guide(device, shown)
+    lines += preset_list(device)
     if controls:
         lines += [
             "## Controls",
@@ -130,8 +229,8 @@ def main() -> None:
     # A generated chapter for a device that is no longer there, or is named
     # anew, goes; one written by hand stays, to be moved by hand.
     slugs = {d["slug"] for d in devices}
-    for old in DOCS.rglob("*.md"):
-        if old.stem not in slugs and MARK in old.read_text(encoding="utf-8").splitlines()[:8]:
+    for old in [*DOCS.rglob("*.md"), *DOCS.rglob("*.mdx")]:
+        if old.stem not in slugs and generated(old):
             old.unlink()
             print(f"removed {old.relative_to(WEB)}")
     print(f"{len(written)} chapters written, {len(devices) - len(written)} kept as written by hand")

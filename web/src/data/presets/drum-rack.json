@@ -1,0 +1,117 @@
+[
+ {
+  "name": "Boom Bap Kit",
+  "category": "Drums",
+  "description": "A round kick through a crushed sampler and valve drive, the later machine's body-heavy snare hit hot onto tape, dark hats and a woody rim, played with a lazy swing: the sampled breaks of 1990s New York hip-hop."
+ },
+ {
+  "name": "Chicago House Kit",
+  "category": "Drums",
+  "description": "A booming, driven house kick under the later machine's clap and snare, its closed and open hats ringing on the off-beats, a ride, a cowbell and a bright shaker: the warehouse parties of the mid-1980s."
+ },
+ {
+  "name": "Chip Kit",
+  "category": "Drums",
+  "description": "The two-part synth's eight-bit drums: a square kick dropping from very high, a short noise snare and hat, a pulse rim and a falling tom: the drums of a home computer's game music."
+ },
+ {
+  "name": "Deep House Kit",
+  "category": "Drums",
+  "description": "A round, gentle house kick, the classic machine's fat snare and dark clap, a ringing rim, dark hats, a soft shaker and two congas: late-night house that grooves more than it hits."
+ },
+ {
+  "name": "Detroit Techno Kit",
+  "category": "Drums",
+  "description": "A punchy techno kick thrown down from high, the later machine's tight snare and dry clap, tight hats, a bright ride and its toms: lean, driving, made for the loop."
+ },
+ {
+  "name": "Disco Kit",
+  "category": "Drums",
+  "description": "The later machine's deep kick, its low-tuned snare through a short, bright plate, open hats on the off-beats, a tambourine, the classic machine's high cowbell and conga, and the later machine's falling tom for the fills: a dance floor of the late 1970s."
+ },
+ {
+  "name": "Drum and Bass Kit",
+  "category": "Drums",
+  "description": "A short, rolling kick, the later machine's high, cracking snare blooming into a short dense room, a ride and tight hats over a shaker: the two-step of drum and bass at 174 beats a minute."
+ },
+ {
+  "name": "Electro Kit",
+  "category": "Drums",
+  "description": "The classic machine as electro has it: a short boom, snare and clap together, hats in sixteenths, the cowbell, a conga, claves and the two-filter monosynth's zap: robots and breakdancers."
+ },
+ {
+  "name": "Gated Eighties Kit",
+  "category": "Drums",
+  "description": "A punchy machine kick, the later machine's snare and toms through a gated room that holds and stops dead, a clap beside the snare and the smaller machine's crisp hats: the huge, cut-off drums of 1980s pop."
+ },
+ {
+  "name": "Hardcore Kit",
+  "category": "Drums",
+  "description": "The kick overdriven until it roars, the later machine's noisy snare clipped hard by a compressor's distortion stage, its big clap, hats and a crash: fast, loud and distorted, for 180 beats a minute."
+ },
+ {
+  "name": "Jazz Brush Kit",
+  "category": "Drums",
+  "description": "A felt-struck, tuned-up kick, the classic machine's soft brush snare and a cross-stick rim, the smaller machine's ride leading and its hat on the pedal, played in swung triplets: a trio at a quiet club."
+ },
+ {
+  "name": "Latin Percussion Kit",
+  "category": "Drums",
+  "description": "Hand percussion from the classic and smaller machines: three congas, two bongos, a cowbell and an agogo, claves, a wood block, maracas and a shaker, over a low drum and a timbale's ringing shells: a salsa groove on the clave."
+ },
+ {
+  "name": "Lo-Fi Kit",
+  "category": "Drums",
+  "description": "The smaller machine's soft, pillowy kick and body snare, loose hats, a wood block for a rim and muffled maracas, every pad through a sampler of ten bits at 12 kHz, swung hard: beats to study to."
+ },
+ {
+  "name": "Minimal Kit",
+  "category": "Drums",
+  "description": "A short, ticking kick, the classic machine's tight rim, wood block and bongo, the smaller machine's tick hat and a thin clap: small sounds for a sparse, clicking groove."
+ },
+ {
+  "name": "Modular Kit",
+  "category": "Drums",
+  "description": "Every pad patched on the modular: a sine kick thrown up at the strike, a snare of two sines and filtered noise, a clap of noise bursts, six square waves for the hats, a tuned tom and a two-tone cowbell, each after the textbook articles on synthesizing drums."
+ },
+ {
+  "name": "PH-6 Kit",
+  "category": "Drums",
+  "description": "The smaller machine's seven voices on their General MIDI keys, each at its own sound, balanced as the machine has them; the hats cut each other."
+ },
+ {
+  "name": "PH-8 Kit",
+  "category": "Drums",
+  "description": "The machine's sixteen voices on their General MIDI keys, each at its own sound, balanced as the machine has them; the hats cut each other."
+ },
+ {
+  "name": "PH-9 Kit",
+  "category": "Drums",
+  "description": "The later machine's eleven voices on their General MIDI keys, each at its own sound, balanced as the machine has them; the hats cut each other."
+ },
+ {
+  "name": "Psytrance Kit",
+  "category": "Drums",
+  "description": "A short, tight kick with a zap on its front, a clap and the classic machine's snapping snare, sizzling hats with the open hat on the off-beat, and the semi-modular's ring-modulated metal hit for the fills: a kit that leaves room for a rolling bass."
+ },
+ {
+  "name": "Rock Kit",
+  "category": "Drums",
+  "description": "A struck skin for a kick, the later machine's body snare in a small, dark room, its hats, ride and crash, and three toms for the fills: a synthesized band kit, solid rather than real."
+ },
+ {
+  "name": "Trap Kit",
+  "category": "Drums",
+  "description": "A long sub kick falling two octaves into its note and saturated, the later machine's snappy snare under a bright clap, a snap on the rim pad, and the classic machine's tight hats for the rolls: the half-time southern trap of the 2010s."
+ },
+ {
+  "name": "UK Garage Kit",
+  "category": "Drums",
+  "description": "The later machine's punchy kick and thin clap, the classic machine's short, bright crack of a snare, a high rim for the skips, the classic machine's tight hats and a bright shaker, played with a shuffle: the broken, two-step groove of late-1990s London."
+ },
+ {
+  "name": "Warehouse Techno Kit",
+  "category": "Drums",
+  "description": "A techno kick through valve drive, a noisy snare under a big clap, the classic machine's thin, sizzling hats and long open hat, and its cowbell clanking: the hard, dark end of techno."
+ }
+]

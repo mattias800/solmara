@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Bright Channel Chime",
+  "category": "Amp",
+  "description": "The bright channel alone with its volume low, where its capacitor lifts the top most: a chiming clean. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Cranked Lead",
+  "category": "Amp",
+  "description": "The bright volume at its top, the normal one at a third and the middle up: singing single notes from the power stage. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Edge of Breakup",
+  "category": "Amp",
+  "description": "Jumpered with both volumes low: clean played softly, gritty when hit, cleaning up with the guitar's volume. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Everything on Ten",
+  "category": "Amp",
+  "description": "Every knob at its top, jumpered: the preamp and the power stage both clipping, as the head was played in big rooms. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Jumpered Crunch",
+  "category": "Amp",
+  "description": "Jumpered, both volumes past half way: the classic open crunch of the late 1960s, the bright channel's bite on the normal one's lows. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Low Input Rhythm",
+  "category": "Amp",
+  "description": "The bright channel's low jack jumpered to the normal one's: half the level in, so the volumes can go up for the power stage's grind with the preamp kept tidy. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Normal Channel Warmth",
+  "category": "Amp",
+  "description": "The normal channel alone, well up: a darker, rounder crunch for blues and for neck pickups. Put a cabinet after it, such as Boxed Twelves."
+ },
+ {
+  "name": "Scooped Jumper",
+  "category": "Amp",
+  "description": "Jumpered, the bass and treble up and the middle down: a wide, loud rhythm sound. Put a cabinet after it, such as Boxed Twelves."
+ }
+]

@@ -1,0 +1,39 @@
+---
+title: "Tuner"
+description: "Chromatic tuner: the note and cents of a held string."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/tuner.webp';
+
+**A design of Solmara's own.**
+
+A chromatic tuner for guitar, bass, and anything that holds a note: it shows the note it hears and how many cents sharp or flat, against a reference for A4, and passes the audio as it came or mutes it while tuning, as a tuner pedal does. It reads a steady string to within half a cent from a dropped low D up. Agents read it with the tuner command.
+
+[Tuner on the website](/solmara/guitar/#tuner)
+
+## In the device chain
+
+Tuner on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Tuner in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+3 factory presets come with Tuner. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **A at 432**: A at 432 Hz, for playing along with a recording or an instrument tuned so.
+- **Tune Live**: The audio passes as it came, so the tuner can stay on while playing.
+- **Tune Silent**: Muted while tuning, against A at 440 Hz, as a tuner pedal on the board.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Reference | 430 Hz to 450 Hz | 440 Hz |
+| Mute | Pass, Mute | Pass |

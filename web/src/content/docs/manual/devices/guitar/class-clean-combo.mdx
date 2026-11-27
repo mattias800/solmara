@@ -1,0 +1,53 @@
+---
+title: "Class Clean Combo"
+description: "Clean combo in the style of the late-1960s American twin-speaker amps: big cleans that break up late."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/class-clean-combo.webp';
+
+**An emulation of an analogue original,** modelled on the late-1960s American twin-speaker clean combo with reverb and vibrato.
+
+A modelled American clean guitar combo of two channels, without its speakers or reverb: in each channel an input valve that drives a passive treble, middle, and bass stack straight from its plate, a volume with a bright switch, and a second valve; the vibrato channel has a third after a large divider, more gain, and an optical tremolo. A long-tailed phase inverter and four beam tetrodes in fixed bias with a strong feedback loop give a big, clean power stage that breaks up late, on two speakers' load. Volume, treble, middle, and bass, bright, the channel and the high or low input, the tremolo with its speed and intensity, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the 100-watt two-speaker combo with the black panel of the mid-1960s, the clean sound of country, soul, and session guitar, built from its published drawing.
+
+[Class Clean Combo on the website](/solmara/guitar/#class-clean-combo)
+
+## In the device chain
+
+Class Clean Combo on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Class Clean Combo in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Class Clean Combo. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bright Sparkle**: The bright switch on at a low volume, where it gives the most, the treble up and the middle down: glassy chords and arpeggios.
+- **Country Snap**: The treble high, the middle scooped, and the bright switch on, for picked single notes and double stops that snap; the loudest of the clean ones, with its peaks just under where the power stage clips.
+- **Cranked Combo**: The volume near its top: the power stage clips, round and compressed, under a preamp that is still nearly clean. The loudest: its peaks are the power stage flat out.
+- **Edge of Breakup**: The volume past half way, where the power stage starts to round off the hardest notes: clean played softly, a little hair when dug into.
+- **Normal Channel Jangle**: The normal channel, two stages and some 8 dB less gain than the other, with the bright switch on: open strummed chords that stay clean however hard they are hit.
+- **Pedal Platform**: The low input, 6 dB down, with the volume under half and the stack flat: a clean stage for pedals in front that keeps their sound and its own headroom.
+- **Studio Clean**: The vibrato channel with the volume a quarter up and the stack near noon: the clean, wide sound the combo is known for, loud and with the power stage far from clipping. Put a cabinet after it, such as Boxed Twelves.
+- **Warm Jazz**: The normal channel with the treble down, the middle and the bass up: a round, dark clean for a neck pickup.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Volume | 0 to 100 | 30 |
+| Treble | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Bright | Off, On | Off |
+| Channel | Normal, Vibrato | Vibrato |
+| Input | High, Low | High |
+| Tremolo | Off, On | Off |
+| Speed | 0 to 100 | 50 |
+| Intensity | 0 to 100 | 50 |
+| Quality | Standard, Ultra | Standard |

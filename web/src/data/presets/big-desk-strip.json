@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Acoustic, Clear",
+  "category": "Channel",
+  "description": "The earlier voicing, whose bands keep their width as they rise: the high-pass at 80 Hz, the low middle cut gently at 200 Hz, the high middle up wide at 5 kHz, and a high shelf for sparkle."
+ },
+ {
+  "name": "Bass, Even",
+  "category": "Channel",
+  "description": "A low shelf up a little at 80 Hz, the low middle cut at 250 Hz where a bass gets muddy, the high middle up at 1.2 kHz for the strings, and the compressor at 4 to 1 with a slow release so the notes come out even."
+ },
+ {
+  "name": "Drum Bus, Sidechain",
+  "category": "Channel",
+  "description": "The high-pass at 150 Hz moved into the compressor's sidechain, so the kick does not pump the kit, and the compressor at 3 to 1 with a slower attack for punch; the bands lift the low end and the top."
+ },
+ {
+  "name": "Electric, Bite",
+  "category": "Channel",
+  "description": "Both filters closing in, at 100 Hz and 9 kHz, the high middle up and narrow at 2 kHz for bite, and a little cut at 500 Hz, so a distorted guitar sits under a vocal."
+ },
+ {
+  "name": "Kick, Knock",
+  "category": "Channel",
+  "description": "The low band as a bell at 60 Hz for weight, a narrow cut at 400 Hz for the box, the high middle up at 3 kHz for the beater, and the gate shutting the kick's spill between hits with a quick release."
+ },
+ {
+  "name": "Room, Squash",
+  "category": "Channel",
+  "description": "The compressor as a limiter, its threshold low and its release quick, on drum room microphones: the room pumps and the tails come up. Low and high shelves lift what the squash dulls."
+ },
+ {
+  "name": "Snare, Crack",
+  "category": "Channel",
+  "description": "The high-pass at 100 Hz, the low middle up at 220 Hz for body, the high middle up at 5 kHz for crack, the expander taking the spill down by 12 dB, and the compressor fast and firm."
+ },
+ {
+  "name": "Vocal, Up Front",
+  "category": "Channel",
+  "description": "The high-pass at 90 Hz, the low middle cut a little and wide at 300 Hz against boxiness, the high middle up at 3.5 kHz, a high shelf for air, and the compressor at 4 to 1 after the equaliser with the fast attack, so the lifted consonants are held too. The automatic make-up keeps the level."
+ }
+]

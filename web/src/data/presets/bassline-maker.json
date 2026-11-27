@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Dub Roots",
+  "category": "Players",
+  "description": "Long low roots with very few offbeat notes."
+ },
+ {
+  "name": "Funk Thread",
+  "category": "Players",
+  "description": "A busy, short line with minor colour and a changing offbeat phrase."
+ },
+ {
+  "name": "Key Played Bass",
+  "category": "Players",
+  "description": "A held key supplies the root of a short, responsive bass phrase."
+ },
+ {
+  "name": "Longer Conversation",
+  "category": "Players",
+  "description": "A two-bar phrase whose second half grows busier."
+ },
+ {
+  "name": "Minor Garage",
+  "category": "Players",
+  "description": "A shuffled minor line leaning on its offbeats."
+ },
+ {
+  "name": "Octave Floor",
+  "category": "Players",
+  "description": "A steady root and octave pulse for a dance track."
+ },
+ {
+  "name": "Root Pocket",
+  "category": "Players",
+  "description": "A sparse, short root line with a small offbeat reply."
+ },
+ {
+  "name": "Tied Corners",
+  "category": "Players",
+  "description": "A hand-drawn line with two slides and a wide reply."
+ }
+]

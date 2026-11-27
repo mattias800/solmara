@@ -1,0 +1,60 @@
+---
+title: "Filter"
+description: "Filter"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/filter.webp';
+
+**A design of Solmara's own.**
+
+A modelled analogue filter: a transistor ladder, a squelchy diode ladder, a screaming Sallen-Key, a polished OTA cascade, or a smooth state variable, driven into saturation and ringing at high resonance, as low-, band-, or high-pass, with an LFO and an envelope follower to move its cutoff. The follower listens to the filter's input or another track by sidechain.
+
+[Filter on the website](/solmara/effects/#filter)
+
+## In the device chain
+
+Filter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Filter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+9 factory presets come with Filter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Acid Ladder**: A diode ladder that opens as the audio gets loud.
+- **Auto-Wah**: A resonant band-pass that follows the playing.
+- **Comb Shimmer**: A comb tuned to 440 Hz and its multiples, swept slowly an octave either way.
+- **Dark Warmth**: A gentle ladder low-pass with a little drive.
+- **Phaser Swirl**: The phaser's notches swept round 1 kHz, fed back for a deeper swirl.
+- **Screaming Highpass**: A driven Sallen-Key high-pass on the edge.
+- **Synced Wobble**: A transistor ladder swept on eighth notes.
+- **Talking Vowels**: A formant filter on the vowel e, its formants raised by the playing.
+- **Telephone**: A narrow band of the mids, as through a phone.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Model | Transistor ladder, Diode ladder, Sallen-Key, OTA cascade, State variable, Comb, Phaser, Formant | Transistor ladder |
+| Type | Low 24, Low 12, Band 24, Band 12, High 24, High 12 | Low 24 |
+| Cutoff | 20 Hz to 20000 Hz | 2000 Hz |
+| Resonance | 0% to 100% | 30% |
+| Drive | 0 dB to 36 dB | 0 dB |
+| LFO depth | 0 octaves to 4 octaves | 0 octaves |
+| LFO rate | 0.05 Hz to 20 Hz | 1 Hz |
+| LFO sync | Off, On | Off |
+| LFO division | 13 choices: 1/32, 1/16T, 1/16, 1/8T, … | 1/4 |
+| LFO shape | Sine, Triangle, Saw up, Saw down, Square, Random | Sine |
+| LFO spread | 0% to 100% | 0% |
+| Follow | -4 octaves to 4 octaves | 0 octaves |
+| Follow attack | 0.1 ms to 500 ms | 10 ms |
+| Follow release | 5 ms to 2000 ms | 200 ms |
+| Mix | 0% to 100% | 100% |
+| Output | -24 dB to 24 dB | 0 dB |
+| Morph | 0 to 2 | 0 |

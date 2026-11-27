@@ -1,0 +1,43 @@
+---
+title: "Reverb"
+description: "Reverb"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/reverb.webp';
+
+**A design of Solmara's own.**
+
+A space to ring in: room, hall, plate, or a shimmer whose tail climbs in pitch, with pre-delay, damping, a size to sweep, a freeze, and ducking, by its own input or by a sidechain.
+
+[Reverb on the website](/solmara/effects/#reverb)
+
+## In the device chain
+
+Reverb on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Reverb in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Model | Room, Hall, Plate, Shimmer | Hall |
+| Decay | 0.2 s to 20 s | 2.5 s |
+| Size | 0% to 100% | 50% |
+| Pre-delay | 0 ms to 250 ms | 20 ms |
+| Damping | 500 Hz to 20000 Hz | 6000 Hz |
+| Low cut | 20 Hz to 1000 Hz | 100 Hz |
+| Diffusion | 0% to 100% | 70% |
+| Modulation | 0% to 100% | 30% |
+| Shimmer | 0% to 100% | 50% |
+| Interval | Octave up, Fifth up, Octave down | Octave up |
+| Width | 0% to 100% | 100% |
+| Duck | 0% to 100% | 0% |
+| Mix | 0% to 100% | 25% |
+| Freeze | Off, On | Off |

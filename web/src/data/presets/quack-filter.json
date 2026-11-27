@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Bass Burp",
+  "category": "Envelope Filter",
+  "description": "Lower still, with a little drive into the ladder: a bass line that burps on every note."
+ },
+ {
+  "name": "Clav Snap",
+  "category": "Envelope Filter",
+  "description": "Higher and tighter, half the dry signal under it: a clav's snap made bigger."
+ },
+ {
+  "name": "Funk Quack",
+  "category": "Envelope Filter",
+  "description": "Low and resonant, opened fast by each pick: the quack of a seventies rhythm guitar."
+ },
+ {
+  "name": "Singing Ladder",
+  "category": "Envelope Filter",
+  "description": "The resonance near singing and the amount full: a squelch that follows every note's loudness."
+ },
+ {
+  "name": "Slow Bloom",
+  "category": "Envelope Filter",
+  "description": "The slow follower: each chord swells open and lingers, for an electric piano or a pad."
+ }
+]

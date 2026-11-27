@@ -1,0 +1,42 @@
+---
+title: "Drum Grid"
+description: "Drum Grid"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/drum-grid.webp';
+
+A MIDI device: plays eight channels of sixteen steps as the song plays, each a key of the instrument such as a drum rack's pad, with eight patterns to choose between. Each channel has its own length, speed, direction and slide, and each step a velocity, repeats, triplets or a flam, and a probability. The track's own notes pass through.
+
+[Drum Grid on the website](/solmara/write/#drum-grid)
+
+## In the device chain
+
+Drum Grid on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Drum Grid in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Drum Grid. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Clave Conversation**: A clave-shaped rim against a sparse kick and tom reply.
+- **Electro Corners**: An angular electro beat with a rim answering the snare.
+- **Four on the Floor**: A steady kick, claps on two and four and offbeat open hats.
+- **Garage Skips**: A shuffled two-step kick and a backbeat with a hat answer.
+- **Half Time Dust**: A half-time snare, sparse kick and rolling hats.
+- **Late Night Break**: A syncopated break with soft snare ghosts.
+- **Pocket Backbeat**: A restrained rock pocket with a pickup into the fourth beat.
+- **Soft Shuffle**: A relaxed shuffle with soft notes between the backbeats.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Pattern | 1 to 8 | 1 |
+| Shuffle source | Local, Global | Local |

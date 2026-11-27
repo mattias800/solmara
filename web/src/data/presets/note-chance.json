@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Chord Conversation",
+  "category": "Players",
+  "description": "Alternate whole held chords rather than their individual notes."
+ },
+ {
+  "name": "Every Other Key",
+  "category": "Players",
+  "description": "Alternate played notes, keeping pitch and touch unchanged."
+ },
+ {
+  "name": "Human Touch",
+  "category": "Players",
+  "description": "Small velocity changes on every key."
+ },
+ {
+  "name": "Linked Surprises",
+  "category": "Players",
+  "description": "Occasional higher, softer, shorter notes; all three changes happen together."
+ },
+ {
+  "name": "Octave Sparks",
+  "category": "Players",
+  "description": "One note in four jumps up an octave."
+ },
+ {
+  "name": "Short or Long",
+  "category": "Players",
+  "description": "Notes choose between a sixteenth and a quarter."
+ },
+ {
+  "name": "Sparse Reply",
+  "category": "Players",
+  "description": "About two thirds of the notes pass, with a little variation of touch."
+ },
+ {
+  "name": "Three Note Answer",
+  "category": "Players",
+  "description": "Three notes through, then one rest."
+ }
+]

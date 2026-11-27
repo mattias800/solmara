@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Detune Doubler",
+  "category": "Pitch",
+  "description": "Twelve cents up mixed with the dry signal at the heel and the toe alike: a thickening, chorus-like double."
+ },
+ {
+  "name": "Dive Bomb",
+  "category": "Pitch",
+  "description": "Heel at unison, toe two octaves down, with a little glide: stomp it for a dive like a tremolo arm's."
+ },
+ {
+  "name": "Fifth Harmony",
+  "category": "Pitch",
+  "description": "A fifth above, mixed with the dry signal: parallel harmony from the toe, unison at the heel."
+ },
+ {
+  "name": "Octave Down",
+  "category": "Pitch",
+  "description": "Heel at unison, toe an octave down: a bass line under a riff, or a low tuning without retuning."
+ },
+ {
+  "name": "Octave Up Lead",
+  "category": "Pitch",
+  "description": "Heel at unison, toe an octave up: rock the pedal for the classic screaming octave sweep."
+ },
+ {
+  "name": "Two Octaves Up",
+  "category": "Pitch",
+  "description": "Heel at unison, toe two octaves up, for the shrieking top of a solo."
+ }
+]

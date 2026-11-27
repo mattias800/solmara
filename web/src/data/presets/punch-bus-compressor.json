@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Drum Bus, Old School",
+  "category": "Dynamics",
+  "description": "Old: the detector hears the VCA's output, as the older units did, so 10 to 1 behaves like some 2 to 1 and the release breathes. Thick, smooth drums."
+ },
+ {
+  "name": "Drum Bus, Slam",
+  "category": "Dynamics",
+  "description": "4 to 1, 10 ms to let each hit's front through and a 0.1 s release that pumps with the beat, with the Loud weighting so the kick does not duck the cymbals. Blend it back with the mix for parallel slam."
+ },
+ {
+  "name": "Mix, Glue",
+  "category": "Dynamics",
+  "description": "2 to 1 with a soft knee, the slowest attack and a half-second release, both channels linked: a mix held together by a dB or two. Turn the threshold down until the meter moves 1 to 3 dB."
+ },
+ {
+  "name": "Mix, Punch",
+  "category": "Dynamics",
+  "description": "3 to 1, medium knee and the Loud weighting: the detector hears the low end less and the top more, so the kick and the bass pass with their weight while the mix is held together. The maker's own \"little more punch\"."
+ },
+ {
+  "name": "Parallel Smash",
+  "category": "Dynamics",
+  "description": "Infinity to 1 at the fastest attack and release, half wet: the room and the sustain jump up between the hits under the untouched drums."
+ },
+ {
+  "name": "Stereo Keys, Wide",
+  "category": "Dynamics",
+  "description": "4 to 1 with the link at 50 % through its high-pass: each side keeps its own level, only sudden peaks pull the other side down, so a wide stereo source stays wide."
+ }
+]

@@ -1,0 +1,50 @@
+---
+title: "British Jumper Head"
+description: "Jumpered valve head in the style of the late-1960s British 100-watt amps: loud, open classic rock."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/british-jumper-head.webp';
+
+**An emulation of an analogue original,** modelled on the late-1960s British 100-watt valve head, its two channels jumpered.
+
+A modelled British guitar head of two channels and no master volume, without a cabinet: four input jacks, a high and a low for a normal channel and a bright one, into the two halves of the input valve; a volume for each, the bright one with a large capacitor that lifts the top the more the lower it is turned; the two mixed into a second stage coupled to a cathode follower, a passive tone stack whose knobs lean on each other, and four European output pentodes in push-pull on a speaker's load, with the presence in the power stage's feedback loop. With no master the volumes drive the power stage as well, and turned up it is the power stage that distorts. Bright and normal volumes, bass, middle, treble, presence, which jack the guitar is in and whether a jumper joins the channels, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt lead head of the late 1960s with its clear front panel, the loud, open crunch of that era's rock, cleaner than a master-volume head at the same settings.
+
+[British Jumper Head on the website](/solmara/guitar/#british-jumper-head)
+
+## In the device chain
+
+British Jumper Head on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="British Jumper Head in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with British Jumper Head. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Bright Channel Chime**: The bright channel alone with its volume low, where its capacitor lifts the top most: a chiming clean. Put a cabinet after it, such as Boxed Twelves.
+- **Cranked Lead**: The bright volume at its top, the normal one at a third and the middle up: singing single notes from the power stage. Put a cabinet after it, such as Boxed Twelves.
+- **Edge of Breakup**: Jumpered with both volumes low: clean played softly, gritty when hit, cleaning up with the guitar's volume. Put a cabinet after it, such as Boxed Twelves.
+- **Everything on Ten**: Every knob at its top, jumpered: the preamp and the power stage both clipping, as the head was played in big rooms. Put a cabinet after it, such as Boxed Twelves.
+- **Jumpered Crunch**: Jumpered, both volumes past half way: the classic open crunch of the late 1960s, the bright channel's bite on the normal one's lows. Put a cabinet after it, such as Boxed Twelves.
+- **Low Input Rhythm**: The bright channel's low jack jumpered to the normal one's: half the level in, so the volumes can go up for the power stage's grind with the preamp kept tidy. Put a cabinet after it, such as Boxed Twelves.
+- **Normal Channel Warmth**: The normal channel alone, well up: a darker, rounder crunch for blues and for neck pickups. Put a cabinet after it, such as Boxed Twelves.
+- **Scooped Jumper**: Jumpered, the bass and treble up and the middle down: a wide, loud rhythm sound. Put a cabinet after it, such as Boxed Twelves.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Bright volume | 0 to 100 | 50 |
+| Normal volume | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Input | 12 choices: Bright high, Bright high, jumpered, Bright high, straight, Bright low, … | Bright high, jumpered |
+| Quality | Standard, Ultra | Standard |

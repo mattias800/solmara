@@ -1,0 +1,71 @@
+---
+title: "Twin Arpeggiator"
+description: "Twin Arpeggiator"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/twin-arpeggiator.webp';
+
+A MIDI device: two arpeggiators side by side, each over the held notes in its own range of keys, up, down, up and down or at random over one to four octaves, or as a pattern of up to four notes a step, with a velocity lane, a gate, and a hold. Notes outside both ranges pass through.
+
+[Twin Arpeggiator on the website](/solmara/write/#twin-arpeggiator)
+
+## In the device chain
+
+Twin Arpeggiator on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Twin Arpeggiator in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Twin Arpeggiator. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Crossed Diagonals**: Two grids moving in opposite directions, an octave apart.
+- **Falling Eighths**: A descending eighth-note figure.
+- **Octave Weave**: Up and down over two octaves, with short gates.
+- **Porcelain Steps**: A short ascending figure with alternating strong and light steps.
+- **Pulsing Chord**: The four held notes in short chord pulses.
+- **Shuffled Lanterns**: A swung sixteen-step figure with a changing velocity lane.
+- **Two Hands**: A low left-hand pattern and a higher, slower right hand.
+- **Uneven Walk**: A seven-step cycle over a slower repeated upper figure.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Hold | Off, On | Off |
+| Shuffle | 50% to 75% | 62% |
+| Arp 1 | Off, On | On |
+| Arp 1 lowest key | 0 to 127 | 0 |
+| Arp 1 highest key | 0 to 127 | 127 |
+| Arp 1 rate | 21 choices: 1/64, 1/32T, 1/32, 1/16T, … | 1/16 |
+| Arp 1 octaves | 1 to 4 | 1 |
+| Arp 1 repeat | Off, On | Off |
+| Arp 1 direction | Up, Down, Up+Down, Random | Up |
+| Arp 1 steps | Off, On | Off |
+| Arp 1 length | 1 to 16 | 4 |
+| Arp 1 pattern | Off, On | Off |
+| Arp 1 velocity lane | Off, On | Off |
+| Arp 1 shift | -16 to 16 | 0 |
+| Arp 1 transpose | -24 st to 24 st | 0 st |
+| Arp 1 gate | 25% to 400% | 100% |
+| Arp 2 | Off, On | Off |
+| Arp 2 lowest key | 0 to 127 | 0 |
+| Arp 2 highest key | 0 to 127 | 127 |
+| Arp 2 rate | 21 choices: 1/64, 1/32T, 1/32, 1/16T, … | 1/16 |
+| Arp 2 octaves | 1 to 4 | 1 |
+| Arp 2 repeat | Off, On | Off |
+| Arp 2 direction | Up, Down, Up+Down, Random | Up |
+| Arp 2 steps | Off, On | Off |
+| Arp 2 length | 1 to 16 | 4 |
+| Arp 2 pattern | Off, On | Off |
+| Arp 2 velocity lane | Off, On | Off |
+| Arp 2 shift | -16 to 16 | 0 |
+| Arp 2 transpose | -24 st to 24 st | 0 st |
+| Arp 2 gate | 25% to 400% | 100% |
+| Shuffle source | Local, Global | Local |

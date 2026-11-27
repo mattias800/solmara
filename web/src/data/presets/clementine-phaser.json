@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Block Swoosh",
+  "category": "Phaser",
+  "description": "The later pedal, its feedback resistor in, at a moderate rate: peaks beside the notches give the sweep a vowel. The lead sound of the late 1970s rock records."
+ },
+ {
+  "name": "Electric Piano Shimmer",
+  "category": "Phaser",
+  "description": "Slow, at three quarters of the circuit's swing, the stages a little under the input: the gentle movement a tine piano was given in the 1970s."
+ },
+ {
+  "name": "Rotary Wobble",
+  "category": "Phaser",
+  "description": "The knob turned up past three o'clock: a fast warble for electric pianos and organs, standing in for a rotating speaker."
+ },
+ {
+  "name": "Slow Swirl",
+  "category": "Phaser",
+  "description": "The earlier pedal with its knob low: the two notches climb and fall every two seconds, quick through the lows and lingering above. Clean or crunchy guitar, rhythm parts, the funk of the 1970s."
+ },
+ {
+  "name": "Still Notch",
+  "category": "Phaser",
+  "description": "The oscillator held still at the middle of the sweep with the feedback in: two fixed notches and their peaks, a comb-like colour to sit a part in a mix."
+ },
+ {
+  "name": "Vibrato Stages",
+  "category": "Phaser",
+  "description": "The stages alone, without the input: no notches, only the phase moving, heard as a vibrato. The modification players made to the pedal to turn it into one."
+ }
+]

@@ -1,0 +1,108 @@
+---
+title: "PH-6 Part"
+description: "The PH-6 one channel at a time: kick, snare, toms, cymbal and hats."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/ph-6-part.webp';
+
+**An emulation of an analogue original,** modelled on one voice of the early-1980s Japanese small analogue drum machine.
+
+One channel of the PH-6 alone, for a pad of a drum rack: the tabs on its face choose which, the bass drum, snare, low and high toms, cymbal and hats, each keeping its own knobs; any key strikes it.
+
+## In the device chain
+
+PH-6 Part on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="PH-6 Part in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+32 factory presets come with PH-6 Part. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass drum
+
+- **Click Kick**: The kick at its shortest and highest, mostly click.
+- **High Kick**: The kick tuned up, nearer a tom.
+- **Low Kick**: The kick tuned down.
+- **Machine Kick**: The smaller machine's kick as it has it: a short, round thump with a click on top.
+- **Pillow Kick**: The kick soft and long, no click.
+- **Ringing Thump**: The kick left to ring, deeper and longer.
+- **Short Thump**: The kick cut short: a dry thump for busy patterns.
+- **Soft Kick**: The kick with its click rounded off.
+
+### Closed hat
+
+- **Loose Hat**: The closed hat let ring.
+- **Machine Closed Hat**: The smaller machine's closed hat as it has it: a quick, bright tick.
+- **Tick Hat**: The closed hat at its shortest.
+
+### Cymbal
+
+- **Dark Ride**: The cymbal's slow band alone, long, nearer a ride's swell.
+- **Machine Cymbal**: The smaller machine's cymbal as it has it: a bright splash over a slower ring.
+
+### High tom
+
+- **Low Bongo**: The high tom tuned up and cut short, nearer a bongo.
+- **Machine High Tom**: The smaller machine's high tom as it has it.
+- **Rack Tom**: The high tom tuned up and left to ring.
+- **Short High Tom**: The high tom cut short.
+
+### Low tom
+
+- **Deep Tom**: The low tom at the bottom of its tune.
+- **Floor Tom**: The low tom tuned down and left to ring.
+- **Machine Low Tom**: The smaller machine's low tom as it has it: it starts high and falls to its pitch.
+- **Short Low Tom**: The low tom cut short.
+
+### Open hat
+
+- **Long Open Hat**: The open hat at its longest.
+- **Machine Open Hat**: The smaller machine's open hat as it has it: a hiss that holds and stops.
+- **Short Open Hat**: The open hat cut short.
+
+### Snare drum
+
+- **Body Snare**: The snare mostly shell, its noise turned down.
+- **High Snare**: The snare tuned up, nearer a piccolo.
+- **Low Snare**: The snare tuned down.
+- **Machine Snare**: The smaller machine's snare as it has it: a light shell and a short burst of noise.
+- **Noise Burst**: The snare almost all noise, ringing long.
+- **Snappy Snare**: The snare with its noise brought up.
+- **Tight Snare**: The snare's noise cut short.
+- **Washy Snare**: The snare's noise left to hiss on.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Part | Bass drum, Snare drum, Low tom, High tom, Cymbal, Open hat, Closed hat | Bass drum |
+| Bass drum tune | 0 to 100 | 50 |
+| Bass drum decay | 0 to 100 | 50 |
+| Bass drum attack | 0 to 100 | 100 |
+| Bass drum level | 0 to 100 | 50 |
+| Snare drum tune | 0 to 100 | 50 |
+| Snare drum tone | 0 to 100 | 50 |
+| Snare drum snappy | 0 to 100 | 50 |
+| Snare drum level | 0 to 100 | 50 |
+| Low tom tune | 0 to 100 | 50 |
+| Low tom decay | 0 to 100 | 50 |
+| Low tom level | 0 to 100 | 50 |
+| High tom tune | 0 to 100 | 50 |
+| High tom decay | 0 to 100 | 50 |
+| High tom level | 0 to 100 | 50 |
+| Cymbal tone | 0 to 100 | 50 |
+| Cymbal decay | 0 to 100 | 50 |
+| Cymbal level | 0 to 100 | 50 |
+| Open hat tone | 0 to 100 | 50 |
+| Open hat decay | 0 to 100 | 50 |
+| Open hat level | 0 to 100 | 50 |
+| Closed hat tone | 0 to 100 | 50 |
+| Closed hat decay | 0 to 100 | 50 |
+| Closed hat level | 0 to 100 | 50 |

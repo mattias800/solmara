@@ -1,0 +1,162 @@
+[
+ {
+  "name": "Click Kick",
+  "category": "Bass drum",
+  "description": "The kick at its shortest and highest, mostly click."
+ },
+ {
+  "name": "High Kick",
+  "category": "Bass drum",
+  "description": "The kick tuned up, nearer a tom."
+ },
+ {
+  "name": "Low Kick",
+  "category": "Bass drum",
+  "description": "The kick tuned down."
+ },
+ {
+  "name": "Machine Kick",
+  "category": "Bass drum",
+  "description": "The smaller machine's kick as it has it: a short, round thump with a click on top."
+ },
+ {
+  "name": "Pillow Kick",
+  "category": "Bass drum",
+  "description": "The kick soft and long, no click."
+ },
+ {
+  "name": "Ringing Thump",
+  "category": "Bass drum",
+  "description": "The kick left to ring, deeper and longer."
+ },
+ {
+  "name": "Short Thump",
+  "category": "Bass drum",
+  "description": "The kick cut short: a dry thump for busy patterns."
+ },
+ {
+  "name": "Soft Kick",
+  "category": "Bass drum",
+  "description": "The kick with its click rounded off."
+ },
+ {
+  "name": "Loose Hat",
+  "category": "Closed hat",
+  "description": "The closed hat let ring."
+ },
+ {
+  "name": "Machine Closed Hat",
+  "category": "Closed hat",
+  "description": "The smaller machine's closed hat as it has it: a quick, bright tick."
+ },
+ {
+  "name": "Tick Hat",
+  "category": "Closed hat",
+  "description": "The closed hat at its shortest."
+ },
+ {
+  "name": "Dark Ride",
+  "category": "Cymbal",
+  "description": "The cymbal's slow band alone, long, nearer a ride's swell."
+ },
+ {
+  "name": "Machine Cymbal",
+  "category": "Cymbal",
+  "description": "The smaller machine's cymbal as it has it: a bright splash over a slower ring."
+ },
+ {
+  "name": "Low Bongo",
+  "category": "High tom",
+  "description": "The high tom tuned up and cut short, nearer a bongo."
+ },
+ {
+  "name": "Machine High Tom",
+  "category": "High tom",
+  "description": "The smaller machine's high tom as it has it."
+ },
+ {
+  "name": "Rack Tom",
+  "category": "High tom",
+  "description": "The high tom tuned up and left to ring."
+ },
+ {
+  "name": "Short High Tom",
+  "category": "High tom",
+  "description": "The high tom cut short."
+ },
+ {
+  "name": "Deep Tom",
+  "category": "Low tom",
+  "description": "The low tom at the bottom of its tune."
+ },
+ {
+  "name": "Floor Tom",
+  "category": "Low tom",
+  "description": "The low tom tuned down and left to ring."
+ },
+ {
+  "name": "Machine Low Tom",
+  "category": "Low tom",
+  "description": "The smaller machine's low tom as it has it: it starts high and falls to its pitch."
+ },
+ {
+  "name": "Short Low Tom",
+  "category": "Low tom",
+  "description": "The low tom cut short."
+ },
+ {
+  "name": "Long Open Hat",
+  "category": "Open hat",
+  "description": "The open hat at its longest."
+ },
+ {
+  "name": "Machine Open Hat",
+  "category": "Open hat",
+  "description": "The smaller machine's open hat as it has it: a hiss that holds and stops."
+ },
+ {
+  "name": "Short Open Hat",
+  "category": "Open hat",
+  "description": "The open hat cut short."
+ },
+ {
+  "name": "Body Snare",
+  "category": "Snare drum",
+  "description": "The snare mostly shell, its noise turned down."
+ },
+ {
+  "name": "High Snare",
+  "category": "Snare drum",
+  "description": "The snare tuned up, nearer a piccolo."
+ },
+ {
+  "name": "Low Snare",
+  "category": "Snare drum",
+  "description": "The snare tuned down."
+ },
+ {
+  "name": "Machine Snare",
+  "category": "Snare drum",
+  "description": "The smaller machine's snare as it has it: a light shell and a short burst of noise."
+ },
+ {
+  "name": "Noise Burst",
+  "category": "Snare drum",
+  "description": "The snare almost all noise, ringing long."
+ },
+ {
+  "name": "Snappy Snare",
+  "category": "Snare drum",
+  "description": "The snare with its noise brought up."
+ },
+ {
+  "name": "Tight Snare",
+  "category": "Snare drum",
+  "description": "The snare's noise cut short."
+ },
+ {
+  "name": "Washy Snare",
+  "category": "Snare drum",
+  "description": "The snare's noise left to hiss on."
+ }
+]

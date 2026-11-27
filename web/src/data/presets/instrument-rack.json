@@ -1,0 +1,102 @@
+[
+ {
+  "name": "Ballad Organ Rotary",
+  "category": "Keys",
+  "description": "The organ's Ballad Jazz, 88 8000 000 with soft, slow percussion, the scanner off and the rotary turning slowly: late-night chords that breathe."
+ },
+ {
+  "name": "Bell Tines",
+  "category": "Keys",
+  "description": "The tine piano's Seventies Stage with the FM synth's Glass Bell 10 dB under it: the bright, glassy attack of the layered electric pianos of the 1980s ballad, the tines' warmth under it."
+ },
+ {
+  "name": "Felt Piano and Pad",
+  "category": "Keys",
+  "description": "The reed piano's Felt Soft over the five-voice synth's Warm Pad 8 dB down: a mellow, close piano with a slow analogue pad blooming behind each chord."
+ },
+ {
+  "name": "Gospel Organ and Piano",
+  "category": "Keys",
+  "description": "The organ's Soul Comping, 68 8600 000 with the third's percussion, through the rotary turning slowly, and the tine piano's Gospel Bark 5 dB under it: the church band's organ and piano on one keyboard."
+ },
+ {
+  "name": "Gospel Organ Rotary",
+  "category": "Keys",
+  "description": "Every drawbar out, as the organ's Full Gospel, the scanner off and the rotary at speed: the choir's organ in full cry."
+ },
+ {
+  "name": "Jazz Organ Rotary",
+  "category": "Keys",
+  "description": "The organ's Jazz Trio registration, 83 8000 000 with the third's percussion, into the rotary cabinet turning slowly."
+ },
+ {
+  "name": "Rock Organ Rotary",
+  "category": "Keys",
+  "description": "The organ's Rock Drive, 88 8800 000 with the preamp pushed, into the rotary's amplifier driven hard and the rotors fast: the growl of a rock band's organ."
+ },
+ {
+  "name": "Tines and Strings",
+  "category": "Keys",
+  "description": "The tine piano's Soft Ballad with the string machine's Classic Strings swelling in some 6 dB under it: the piano speaks first and the strings hold the chord after it."
+ },
+ {
+  "name": "Octave Lead Stack",
+  "category": "Lead",
+  "description": "The three-oscillator monosynth's Fat Lead with the semi-modular's Sync Lead an octave over it, 4 dB under: a fat lead with a sync edge riding on top."
+ },
+ {
+  "name": "Trance Lead Stack",
+  "category": "Lead",
+  "description": "The flagship synth's Anthem Supersaw Lead and the two-part synth's Anthem Superstring just under it, panned a little apart: two big saw stacks as one wide trance lead."
+ },
+ {
+  "name": "Keyboard Orchestra",
+  "category": "Orchestral",
+  "description": "Three zones: the string machine's Contrabass Line under C3, the dual-channel synth's Bowed Strings from C3 to B4, and the FM synth's Flute Lead from C5 up: bass, harmony and melody of a small orchestra under two hands."
+ },
+ {
+  "name": "Strings and Horns",
+  "category": "Orchestral",
+  "description": "The string machine's Full Orchestra with the eight-voice synth's Soft Brass 6 dB under it: horns that swell inside a whole string section."
+ },
+ {
+  "name": "Strings into Brass",
+  "category": "Orchestral",
+  "description": "The string machine's Classic Strings on every key, and the dual-channel synth's Cosmos Brass joining only as a key is struck hard, faded in over 30 steps of velocity: play softly for strings, dig in for horns."
+ },
+ {
+  "name": "Pluck over Pad",
+  "category": "Pad",
+  "description": "The eight-voice synth's Synth Pluck on top of the Warm Analog Pad 4 dB under it: each chord picked bright and dying away while the pad swells up and holds it."
+ },
+ {
+  "name": "Vibes over Velvet",
+  "category": "Pad",
+  "description": "The FM synth's Vibraphone struck over the Nordic synth's Sammet, a velvet pad: a mallet's ring on top of a dark, soft bed."
+ },
+ {
+  "name": "Acid Bass and Lead",
+  "category": "Split",
+  "description": "Split at C3: the acid bass synth's Classic Squelch in the left hand, the two-part synth's Euro Octave Lead in the right: a squelching line under a rave lead."
+ },
+ {
+  "name": "Funk Bass and Clav",
+  "category": "Split",
+  "description": "Split at C3: the three-oscillator monosynth's Funk Bass in the left hand, the electric clavichord's Funk Both Pickups in the right: bass and rhythm keys of a funk band."
+ },
+ {
+  "name": "Organ with Left-Hand Bass",
+  "category": "Split",
+  "description": "Split at C3: the three-oscillator monosynth's Round Bass in the left hand, the tonewheel organ's Blues Shuffle, 88 8000 008 with the drive, through the rotary turning slowly in the right: the organist's own bass line under a bluesy right hand."
+ },
+ {
+  "name": "Synthwave Split",
+  "category": "Split",
+  "description": "Split at C3: the two-part synth's Synthwave Bass in the left hand, the flagship synth's Dreamy Eighties Pad in the right: a driving eighth-note bass under a wide 1980s pad."
+ },
+ {
+  "name": "Upright and Tines",
+  "category": "Split",
+  "description": "Split at C3: the FM synth's Upright Bass in the left hand, the tine piano's Jazz Mellow in the right with its bass boost taken back from 7 to 3, so the piano leaves the low end to the bass: a jazz trio's bass and piano under two hands."
+ }
+]

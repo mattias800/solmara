@@ -1,0 +1,46 @@
+---
+title: "Clementine Phaser"
+description: "Four-stage phaser in the style of the 1970s one-knob phaser pedals: a swirling sweep."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/clementine-phaser.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s American one-knob four-stage phaser pedal.
+
+A modelled four-stage phaser of the one-knob pedal kind, for guitars, electric pianos, and synths: four all-pass stages, each an operational amplifier whose corner a junction field-effect transistor sets, the four gates swept together by a relaxation oscillator through the bias network, and the input summed with the fourth stage, which puts two notches in the sound that sweep up and down. The transistors' resistance goes as their gate's volts, so the sweep is not even in octaves: it passes quickly through the lows and lingers in the upper middle, and their square law adds a little even distortion on loud notes. A rate knob, as the pedal has, a depth and a mix beside it, and a switch between the earlier version and the later one, whose feedback resistor raises peaks beside the notches. Modelled on the orange phaser pedal of the mid-1970s.
+
+[Clementine Phaser on the website](/solmara/effects/#clementine-phaser)
+
+## In the device chain
+
+Clementine Phaser on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Clementine Phaser in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+6 factory presets come with Clementine Phaser. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Block Swoosh**: The later pedal, its feedback resistor in, at a moderate rate: peaks beside the notches give the sweep a vowel. The lead sound of the late 1970s rock records.
+- **Electric Piano Shimmer**: Slow, at three quarters of the circuit's swing, the stages a little under the input: the gentle movement a tine piano was given in the 1970s.
+- **Rotary Wobble**: The knob turned up past three o'clock: a fast warble for electric pianos and organs, standing in for a rotating speaker.
+- **Slow Swirl**: The earlier pedal with its knob low: the two notches climb and fall every two seconds, quick through the lows and lingering above. Clean or crunchy guitar, rhythm parts, the funk of the 1970s.
+- **Still Notch**: The oscillator held still at the middle of the sweep with the feedback in: two fixed notches and their peaks, a comb-like colour to sit a part in a mix.
+- **Vibrato Stages**: The stages alone, without the input: no notches, only the phase moving, heard as a vibrato. The modification players made to the pedal to turn it into one.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Rate | 0 to 100 | 40 |
+| Depth | 0 to 100 | 100 |
+| Mix | 0 to 100 | 50 |
+| Version | Script, Block | Script |
+| Output | -24 dB to 12 dB | 0 dB |
+| Bias | 0 to 100 | 50 |

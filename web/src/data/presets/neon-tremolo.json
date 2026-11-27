@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Fast Stutter",
+  "category": "Tremolo",
+  "description": "The speed knob near its top with the intensity full: as fast as the cell can follow, which is why it is shallower than slower settings."
+ },
+ {
+  "name": "Gentle Shimmer",
+  "category": "Tremolo",
+  "description": "A low intensity: the lamp burns dimly and the level dips by a couple of decibels once a swing. A movement felt more than heard."
+ },
+ {
+  "name": "Slow Pulse",
+  "category": "Tremolo",
+  "description": "The speed knob at its bottom, some 3.7 Hz, and fairly deep, for chords left to ring."
+ },
+ {
+  "name": "Surf Throb",
+  "category": "Tremolo",
+  "description": "Deep and choppy at some 5 Hz: the throb of the surf records, the level falling fast as the lamp flashes and climbing back slowly."
+ },
+ {
+  "name": "Swamp Shuffle",
+  "category": "Tremolo",
+  "description": "Slow, under a shuffle, the intensity at three quarters: the tremolo of the swamp-blues and roots records."
+ },
+ {
+  "name": "Tine Piano Throb",
+  "category": "Tremolo",
+  "description": "A tine piano through an amplifier's tremolo, at a medium speed and moderate depth."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Bright Fuzz",
+  "category": "Fuzz",
+  "description": "The tone well over to the treble: a cutting fuzz that sits on top of a band."
+ },
+ {
+  "name": "Doom Bass",
+  "category": "Fuzz",
+  "description": "The tone dark, for bass or tuned-down riffs: all low end and grind, at full quality."
+ },
+ {
+  "name": "Gritty Rhythm",
+  "category": "Fuzz",
+  "description": "The sustain low: a rough, open fuzz that keeps chords apart."
+ },
+ {
+  "name": "Singing Lead",
+  "category": "Fuzz",
+  "description": "Full sustain, the tone a little bright: a note that sings and hangs."
+ },
+ {
+  "name": "Wall of Fuzz",
+  "category": "Fuzz",
+  "description": "The sustain up and the tone at noon: the thick, smooth wall with the scooped middle."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Drum Whoosh",
+  "category": "Flanger",
+  "description": "The shortest delays and back, with a little regeneration, for a drum bus that whooshes."
+ },
+ {
+  "name": "Fast Warble",
+  "category": "Flanger",
+  "description": "A quick, shallow sweep: a warble that sits between a flanger and a vibrato."
+ },
+ {
+  "name": "Gentle Swirl",
+  "category": "Flanger",
+  "description": "A narrow, slow sweep at the long end with no regeneration, nearer a chorus than a jet."
+ },
+ {
+  "name": "Jet Sweep",
+  "category": "Flanger",
+  "description": "The whole sweep, slowly, with the regeneration up: the jet plane taking off and landing."
+ },
+ {
+  "name": "Metal Ring",
+  "category": "Flanger",
+  "description": "Held still with the regeneration full: a fixed comb that rings like a pipe, on drums or a riff."
+ }
+]

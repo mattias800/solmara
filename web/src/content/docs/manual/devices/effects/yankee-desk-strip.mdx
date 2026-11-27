@@ -1,0 +1,59 @@
+---
+title: "Yankee Desk Strip"
+description: "Discrete console channel in the style of the American desks: proportional-Q stepped EQ, VCA compressor, op-amp drive."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/yankee-desk-strip.webp';
+
+**An emulation of an analogue original,** modelled on the American discrete console channel with its proportional-Q equaliser.
+
+A modelled channel of the American discrete consoles: a high-pass and a low-pass on pots that can go into the compressor's sidechain, a four-band equaliser of stepped switches whose bands narrow as they rise (the outer bands a shelf, a bell or a cut, a range that halves or quarters every step), a VCA compressor with feedback or feed-forward detection, a hard or soft knee and a parallel share, and the discrete op-amp output stage driven into its rails, its character setting how readily the highs clip. At two or four times the sample rate, as late at both.
+
+[Yankee Desk Strip on the website](/solmara/effects/#yankee-desk-strip)
+
+## In the device chain
+
+Yankee Desk Strip on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Yankee Desk Strip in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input | -20 dB to 18 dB | 0 dB |
+| Phase | Normal, Inverted | Normal |
+| High-Pass | 20 Hz to 600 Hz | 20 Hz |
+| Low-Pass | 500 Hz to 20000 Hz | 20000 Hz |
+| Filters to Comp | Off, On | Off |
+| EQ | Out, In | In |
+| EQ Position | Before Comp, After Comp | Before Comp |
+| EQ Range | x1, x0.5, x0.25 | x1 |
+| Low Type | Shelf, Bell, Cut | Shelf |
+| Low Freq | 30 Hz, 40 Hz, 50 Hz, 100 Hz, 200 Hz, 300 Hz, 400 Hz | 100 Hz |
+| Low | -12 dB to 12 dB | 0 dB |
+| Low-Mid Freq | 75 Hz, 150 Hz, 180 Hz, 240 Hz, 500 Hz, 700 Hz, 1 kHz | 240 Hz |
+| Low-Mid | -12 dB to 12 dB | 0 dB |
+| High-Mid Freq | 800 Hz, 1.5 kHz, 3 kHz, 5 kHz, 8 kHz, 10 kHz, 12.5 kHz | 5 kHz |
+| High-Mid | -12 dB to 12 dB | 0 dB |
+| High Type | Shelf, Bell, Cut | Shelf |
+| High Freq | 2.5 kHz, 5 kHz, 7 kHz, 10 kHz, 12.5 kHz, 15 kHz, 20 kHz | 10 kHz |
+| High | -12 dB to 12 dB | 0 dB |
+| Comp | Out, In | Out |
+| Ratio | 1 to 100 | 4 |
+| Threshold | -20 dBu to 10 dBu | 0 dBu |
+| Attack | 1 ms to 25 ms | 25 ms |
+| Release | 0.3 s to 3 s | 1.3 s |
+| Knee | Soft, Hard | Soft |
+| Comp Type | Old (Feedback), New (Feed-Forward) | Old (Feedback) |
+| Parallel | 0% to 100% | 0% |
+| Drive | 0 to 10 | 0 |
+| Character | -10 to 10 | 0 |
+| Output | -24 dB to 15 dB | 0 dB |
+| Quality | Light, Standard | Standard |

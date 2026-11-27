@@ -1,0 +1,57 @@
+[
+ {
+  "name": "Chorus Wash",
+  "category": "Modulation",
+  "description": "The chorus program: a short cluster of wandering delays rather than a reverb. Widens and thickens a guitar or a synth."
+ },
+ {
+  "name": "Chamber",
+  "category": "Reverb",
+  "description": "The chamber: dense at once and warm, with no gap before it. For drums and guitars that want a room around them."
+ },
+ {
+  "name": "Constant Plate",
+  "category": "Reverb",
+  "description": "The constant plate: the same time at every frequency, short and dense. A plate that stays out of the way."
+ },
+ {
+  "name": "Eighties Snare Hall",
+  "category": "Reverb",
+  "description": "The small hall with a short middle and long lows, sent loud: the big snare of the mid-1980s."
+ },
+ {
+  "name": "Infinite Pad",
+  "category": "Reverb",
+  "description": "The large hall at sixteen seconds in the middle and longer below, its delays wandering slowly: a wash that hangs under a pad or a drone."
+ },
+ {
+  "name": "Large Hall",
+  "category": "Reverb",
+  "description": "The large hall: a bigger loop, a slower build, and a long dark tail for pads, ballads, and orchestral parts."
+ },
+ {
+  "name": "Percussion Plate",
+  "category": "Reverb",
+  "description": "The percussion plate: diffused hard so a snare or a clap blooms at once into a smooth wash."
+ },
+ {
+  "name": "Room",
+  "category": "Reverb",
+  "description": "The room: under two seconds, its top falling early. Puts drums and percussion in a space without washing them."
+ },
+ {
+  "name": "Small Hall A",
+  "category": "Reverb",
+  "description": "The first small hall as the unit loads it: three seconds in the bass, two in the middle, dark above 6.6 kHz. The digital hall of 1980s records, for vocals, strings, and a mix's send."
+ },
+ {
+  "name": "Small Hall B",
+  "category": "Reverb",
+  "description": "The second small hall: its treble shorter and its diffusion lower, so the tail is darker and its first echoes more distinct."
+ },
+ {
+  "name": "Vocal Plate",
+  "category": "Reverb",
+  "description": "The vocal plate: bright to the converters' edge and even across the bands, with no gap; the plate sound for a lead vocal."
+ }
+]

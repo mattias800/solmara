@@ -1,0 +1,87 @@
+---
+title: "String Ensemble"
+description: "String ensemble in the style of the 1970s string machines: lush string pads and swelling brass, thickened by the ensemble chorus."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/string-ensemble.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s string machines, their bass and upper sections through a rich ensemble.
+
+A modelled string ensemble keyboard of the 1970s, fitted to a reference by measurement: a divide-down organ, every key always running from one master clock, keyed through its own crescendo and sustain; violin, viola, trumpet and horn on every key and contrabass and cello on the lower keys, each register a fixed filter; and the ensemble, three bucket-brigade lines swept by a slow and a fast oscillator, in mono or stereo. A choir register and an LFO for vibrato and tremolo, which its reference adds.
+
+[String Ensemble on the website](/solmara/instruments/string-ensemble/)
+
+## In the device chain
+
+String Ensemble on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="String Ensemble in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+17 factory presets come with String Ensemble. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bass
+
+- **Contrabass Line**: The bass section alone, contrabass and cello, short and dry for a line.
+
+### Brass
+
+- **Brass Ensemble**: Trumpet and horn through the ensemble, a quick swell.
+- **Horns and Strings**: The horn tab over the viola and the cello, a medium swell: a soft horn section doubled by strings, for held chords.
+- **Trumpet Line**: The trumpet tab alone with a quick swell and a little delayed vibrato: a bright, buzzing line for a melody.
+
+### Choir
+
+- **Choir and Strings**: The choir over violin and viola and the cello below, a slow swell and a long release: a lush pad for a ballad's chorus.
+- **Slow Choir**: The choir over the viola, swelling slowly, a touch of vibrato.
+
+### Pads
+
+- **Classic Strings**: The string machine pad: violin and viola, a long swell and release, the ensemble wide.
+- **Dry Divider**: The ensemble off: the machine's raw divider saws, bright and still, nearer an organ than strings.
+- **Full Orchestra**: Every string at once, contrabass and cello under violin and viola, swelling in.
+- **Init**: Violin and viola over the cello, a slow swell, the ensemble on in stereo.
+- **Mono Ensemble**: The ensemble's mono output: the chorus's movement without its width, as the early machines gave it.
+- **Space Wash**: The longest swell and release with the whole section: a slow wash of strings for space rock and ambient.
+- **Tremolo Pad**: Violin and viola through a square-wave tremolo at a medium speed: a pad that pulses in time.
+
+### Strings
+
+- **Disco Strings**: Violin and viola with almost no swell and a short release, the ensemble wide: the quick, bright string stabs and runs of a disco record.
+- **Vibrato Strings**: Violin and viola with a vibrato that waits a moment after the first key and fades in: held chords that come alive.
+- **Viola Section**: The viola alone through the ensemble: darker and warmer than the violins, for chords in the middle.
+- **Violins High**: The violin alone, an octave over the viola, with a medium swell: a thin, high line over a band.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Contrabass | Off, On | Off |
+| Cello | Off, On | On |
+| Bass sustain | 0 to 10 | 3.8 |
+| Bass volume | 0 to 10 | 5 |
+| Viola | Off, On | On |
+| Violin | Off, On | On |
+| Trumpet | Off, On | Off |
+| Horn | Off, On | Off |
+| Choir | Off, On | Off |
+| Upper sustain | 0 to 10 | 5 |
+| Upper volume | 0 to 10 | 7 |
+| Crescendo | 0 to 10 | 4.5 |
+| Ensemble | Off, On | On |
+| Ensemble output | Mono, Stereo | Stereo |
+| LFO rate | 0 to 10 | 6 |
+| LFO wave | Random, Square, Saw down, Saw up, Triangle | Triangle |
+| LFO delay | 0 to 10 | 0 |
+| LFO fade | 0 to 10 | 0 |
+| Vibrato | 0 to 10 | 0 |
+| Tremolo | 0 to 10 | 0 |
+| Volume | 0 to 10 | 5 |
+| Tuning | -100 cents to 100 cents | 0 cents |

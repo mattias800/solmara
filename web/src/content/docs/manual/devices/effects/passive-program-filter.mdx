@@ -1,0 +1,43 @@
+---
+title: "Passive Program Filter"
+description: "Passive high- and low-cut filter in the style of the 1950s American program filters: stepped LC sections for rumble, hiss and telephone effects."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/passive-program-filter.webp';
+
+**An emulation of an analogue original,** modelled on the 1950s American passive high- and low-cut program filter.
+
+A modelled passive high- and low-cut filter with no amplifier: a low cut from 50 Hz to 2 kHz and a high cut from 1.5 to 15 kHz, each a coil and capacitor section on a stepped switch, the two loading each other, and a key to throw it in and out. Modelled on the American program filters of the 1950s and 1960s, for rumble and hiss, a thinned or telephone-like voice, or a dark, distant effect.
+
+[Passive Program Filter on the website](/solmara/effects/#passive-program-filter)
+
+## In the device chain
+
+Passive Program Filter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Passive Program Filter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+6 factory presets come with Passive Program Filter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dark and Distant**: A 5 kHz high cut: pushes a part back and darkens it.
+- **Rumble and Hiss**: 50 Hz and 12 kHz: takes rumble and hiss away and leaves the program.
+- **Small Radio**: 1 kHz to 4 kHz: a tinny little radio speaker.
+- **Telephone**: 500 Hz to 3 kHz: a voice down a telephone line.
+- **Thin Out**: A 250 Hz low cut: clears the low end out of a part that does not need it.
+- **Vocal Cleanup**: 100 Hz and 15 kHz: takes handling noise and air hiss off a voice.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Low Cut | 11 choices: Off, 50 Hz, 80 Hz, 100 Hz, … | Off |
+| High Cut | 11 choices: 1.5 kHz, 2 kHz, 3 kHz, 4 kHz, … | Off |
+| In | Out, In | In |

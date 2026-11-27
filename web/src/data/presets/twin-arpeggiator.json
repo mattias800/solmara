@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Crossed Diagonals",
+  "category": "Players",
+  "description": "Two grids moving in opposite directions, an octave apart."
+ },
+ {
+  "name": "Falling Eighths",
+  "category": "Players",
+  "description": "A descending eighth-note figure."
+ },
+ {
+  "name": "Octave Weave",
+  "category": "Players",
+  "description": "Up and down over two octaves, with short gates."
+ },
+ {
+  "name": "Porcelain Steps",
+  "category": "Players",
+  "description": "A short ascending figure with alternating strong and light steps."
+ },
+ {
+  "name": "Pulsing Chord",
+  "category": "Players",
+  "description": "The four held notes in short chord pulses."
+ },
+ {
+  "name": "Shuffled Lanterns",
+  "category": "Players",
+  "description": "A swung sixteen-step figure with a changing velocity lane."
+ },
+ {
+  "name": "Two Hands",
+  "category": "Players",
+  "description": "A low left-hand pattern and a higher, slower right hand."
+ },
+ {
+  "name": "Uneven Walk",
+  "category": "Players",
+  "description": "A seven-step cycle over a slower repeated upper figure."
+ }
+]

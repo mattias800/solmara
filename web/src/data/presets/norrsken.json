@@ -1,0 +1,422 @@
+[
+ {
+  "name": "Djuphav",
+  "category": "Bass",
+  "description": "The deep sea: a sine with a quiet triangle an octave above it, the octave shift taking it down one more. Play a slow line under everything. Push the wheel to morph the triangle louder for a little more edge on small speakers."
+ },
+ {
+  "name": "Draug",
+  "category": "Bass",
+  "description": "A restless dead: two saws a little out of tune, beating slowly, through the distortion and a 24 dB low-pass that LFO 2 moves. Hold long notes at the bottom. Push the wheel to morph the beating faster and the filter open."
+ },
+ {
+  "name": "Fenris",
+  "category": "Bass",
+  "description": "The bound wolf: at rest a dark sub. Push the wheel to morph it loose: the cutoff and resonance rise, the pulse below growls into the saw by FM, and LFO 1 starts to wobble the filter in eighth notes, in time with the song. Play long notes at the bottom and ride the wheel."
+ },
+ {
+  "name": "Granit",
+  "category": "Bass",
+  "description": "Granite: four saws in unison on every key, an octave apart, spread wide through a 24 dB low-pass with a firm envelope. Play a line at the bottom. Strike harder to morph the envelope deeper; the wheel opens the filter."
+ },
+ {
+  "name": "Gruva",
+  "category": "Bass",
+  "description": "A mine: two pulses whose widths LFO 1 sweeps, through the notch and low-pass, which carves a hollow out of them. Play a line at the bottom. Push the wheel to morph the sweep quicker and the filter open."
+ },
+ {
+  "name": "Hammare",
+  "category": "Bass",
+  "description": "A hammer: a pulse and a saw an octave down. Soft notes are round and dark, hard ones bright and biting, the morph opening the cutoff, the envelope and the resonance with the strike. Play a line at the bottom and dig in; the wheel opens the filter."
+ },
+ {
+  "name": "Irrbloss",
+  "category": "Bass",
+  "description": "A will-o'-the-wisp: one saw through a 24 dB low-pass at the edge of whistling, its envelope following the strike, the distortion on, gliding only where notes overlap. Play a line at the bottom, slurring some notes. Strike harder to morph the filter brighter and the glide longer; the wheel opens the filter."
+ },
+ {
+  "name": "Kolsvart",
+  "category": "Bass",
+  "description": "Pitch black: oscillator 2 synced and swept down by the mod envelope at each note, through a 24 dB low-pass. Play a line at the bottom. Strike harder to morph the sweep wider; the wheel raises the synced oscillator for a growl."
+ },
+ {
+  "name": "Malm",
+  "category": "Bass",
+  "description": "Ore: a sine and its ring modulation with a narrow pulse an octave up, through a low-pass that snaps shut. Play a line at the bottom. Strike harder to morph the pulse narrower and the filter brighter; the wheel moves the pulse's pitch for clangorous bends."
+ },
+ {
+  "name": "Skridsko",
+  "category": "Bass",
+  "description": "A skate: a pulse with a saw an octave up, gliding wherever notes overlap, through a resonant low-pass. Play a line at the bottom, its notes touching. Strike harder to morph the glide longer; the wheel opens the filter."
+ },
+ {
+  "name": "Smide",
+  "category": "Bass",
+  "description": "Forged iron: a sine frequency-modulated by a triangle at its own pitch, the mod envelope striking a burst of FM at each note that the hammer leaves ringing. Play a line at the bottom. Strike harder to morph the burst brighter; the wheel adds FM."
+ },
+ {
+  "name": "Torv",
+  "category": "Bass",
+  "description": "Peat: a saw and a square an octave down, plucked through a 12 dB low-pass that closes fast, its envelope following the strike. Play a line at the bottom. Strike harder to morph it ringing longer; the wheel opens the filter."
+ },
+ {
+  "name": "Glasharmonika",
+  "category": "Bell",
+  "description": "A glass harmonica: a sine frequency-modulated six times up, swelling in, held with a gentle tremolo. Play slow chords. The wheel adds FM."
+ },
+ {
+  "name": "Isklocka",
+  "category": "Bell",
+  "description": "An ice bell: a sine ring-modulated by a triangle that ignores the keys, held at one pitch, so every key rings a different metal; LFO 1 wavers it. Strike notes across the keyboard. Push the wheel to morph the fixed partner higher."
+ },
+ {
+  "name": "Klang",
+  "category": "Bell",
+  "description": "A struck bell: a sine frequency-modulated by a square about three times up. Strike softly for a pure chime; strike hard to morph in a deep, metallic FM and more level. The wheel brings in vibrato."
+ },
+ {
+  "name": "Kyrkklocka",
+  "category": "Bell",
+  "description": "A church bell: a sine frequency-modulated at an inharmonic three and a half times its pitch, an octave down, the FM fading as it rings. Strike single notes and let them ring. Push the wheel to morph the strike harder and the ring longer."
+ },
+ {
+  "name": "Speldosa",
+  "category": "Bell",
+  "description": "A music box: a sine ring-modulated by a triangle two octaves up, an octave above the keys, short and sweet. Play a melody. Push the wheel to morph the ring louder."
+ },
+ {
+  "name": "Bronslur",
+  "category": "Brass",
+  "description": "A bronze lur that cuts: oscillator 2 synced, its pitch lifted and let fall by the mod envelope, in unison pairs through a swelling low-pass. Play chords. Strike harder to morph the sync's rise wider; the wheel opens the filter."
+ },
+ {
+  "name": "Fanfar",
+  "category": "Brass",
+  "description": "A fanfare stab: a saw and a pulse in unison pairs, a quick filter envelope. Play short chords on and off the beat. Strike harder to morph it brighter; the wheel brings in vibrato."
+ },
+ {
+  "name": "Lur",
+  "category": "Brass",
+  "description": "After the Bronze Age lurs: two saws whose filter swells open a moment after the note, as breath does. Play chords and press into them, which opens the filter further. Strike harder to morph a quicker, brighter blow; the wheel brings in vibrato."
+ },
+ {
+  "name": "Vallhorn",
+  "category": "Brass",
+  "description": "A herding horn: a saw with a triangle, a slow, soft swell of the filter and a little vibrato. Play chords or a slow line in the middle. Push the wheel to morph it: blow harder, brighter and quicker."
+ },
+ {
+  "name": "Blixtnedslag",
+  "category": "FX",
+  "description": "A lightning strike: oscillator 2 synced and dropped three octaves by a fast mod envelope, a zap. Hit short notes. Strike harder to morph the zap longer; the wheel opens the filter."
+ },
+ {
+  "name": "Kortvag",
+  "category": "FX",
+  "description": "Shortwave: a sine frequency-modulated by noise, the FM jumping on LFO 1's random steps and LFO 2 bending the pitch: a radio between stations. Hold notes. Push the wheel to morph the static heavier."
+ },
+ {
+  "name": "Meteor",
+  "category": "FX",
+  "description": "A meteor: LFO 1's falling saw drops both oscillators five octaves over each bar, in time with the song. Hold a note. Push the wheel to morph the fall deeper."
+ },
+ {
+  "name": "Mistlur",
+  "category": "FX",
+  "description": "A foghorn: a saw and a narrow pulse two octaves down, swelling through the distortion and a 24 dB low-pass, a slow waver from LFO 1. Hold a low note. Push the wheel to morph it brighter."
+ },
+ {
+  "name": "Rymdskepp",
+  "category": "FX",
+  "description": "A spaceship: a sine ring-modulated by a square held at one high pitch whatever the key, both wobbling fast on LFO 1, thinned by the 24 dB high-pass. Hold notes. Push the wheel to morph the wobble faster and wider."
+ },
+ {
+  "name": "Uppvaknande",
+  "category": "FX",
+  "description": "An awakening: oscillator 2 synced and lifted three octaves over six seconds by the mod envelope's slow attack, the filter opening with it, in unison pairs. Hold one note through a build. Push the wheel to morph the rise higher."
+ },
+ {
+  "name": "Brasa",
+  "category": "Keys",
+  "description": "Embers: a triangle and a pulse through the distortion, a reedy electric piano with a tremolo from LFO 2. Comp chords. Strike harder to morph in the pulse's bark, more level and a brighter filter; the wheel brings in vibrato."
+ },
+ {
+  "name": "Hovdans",
+  "category": "Keys",
+  "description": "A court dance: a narrow pulse and a saw an octave up through the 24 dB high-pass, plucked and ringing: a small harpsichord. Play a part in the middle. Push the wheel to morph the pulse wider, as a lute stop softens it."
+ },
+ {
+  "name": "Klockljung",
+  "category": "Keys",
+  "description": "Bell heather: an electric piano of a sine frequency-modulated by a triangle at its pitch, the FM struck by the mod envelope and dying away, a gentle tremolo from LFO 2. Comp chords in the middle. Strike harder to morph in the tine's bark and more level; the wheel brings in vibrato."
+ },
+ {
+  "name": "Lykta",
+  "category": "Keys",
+  "description": "A lantern: a saw and a pulse through a 24 dB low-pass with a soft envelope, each note to the other side. Comp chords. Strike harder to morph it brighter and louder; the wheel brings in vibrato."
+ },
+ {
+  "name": "Psalm",
+  "category": "Keys",
+  "description": "A small organ: a square with a square an octave up, gated, a faint vibrato. Play chords. Push the wheel to morph the upper square up to the twelfth, as a drawbar does."
+ },
+ {
+  "name": "Spinnrock",
+  "category": "Keys",
+  "description": "A spinning wheel: a narrow pulse through a resonant low-pass that snaps open and shut with the strike. Comp short chords. Strike harder to morph it louder and the pulse fuller; the wheel opens the filter."
+ },
+ {
+  "name": "Blixt",
+  "category": "Lead",
+  "description": "Lightning: oscillator 2 synced to oscillator 1 and swept down from high by the mod envelope at each strike, played legato with a short glide. Play a line up high. Strike harder to morph the sweep wider; the wheel brings in vibrato."
+ },
+ {
+  "name": "Dubbelnatur",
+  "category": "Lead",
+  "description": "Two natures in one: soft notes are a mellow triangle, hard ones a bright, resonant saw, the morph crossing the oscillators' balance and opening the filter with the strike. Play legato and vary the touch. The wheel brings in vibrato."
+ },
+ {
+  "name": "Ekolod",
+  "category": "Lead",
+  "description": "A sounding line: a pulse lead whose every note comes back five times on LFO 2's echo, in eighth notes, each softer and to the other side. Play short notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato."
+ },
+ {
+  "name": "Glidflykt",
+  "category": "Lead",
+  "description": "Glide flight: two saws an octave apart, mono, gliding only between notes played legato (automatic portamento), through a resonant low-pass. Play a line low in the middle, slurring where it should glide. Strike harder to morph the glide longer; the wheel brings in vibrato."
+ },
+ {
+  "name": "Isbrytare",
+  "category": "Lead",
+  "description": "An icebreaker: a saw frequency-modulated by a triangle at its own pitch, a burst of FM from the mod envelope at each note, through the distortion and a resonant low-pass. Play a hard line low in the middle. Strike harder to morph in more FM; the wheel adds FM too."
+ },
+ {
+  "name": "Kulning",
+  "category": "Lead",
+  "description": "After the high herding call: a hollow pulse with an octave above it, mono with a little glide. Play a line up high and press into the long notes, which brings in the vibrato; the wheel deepens it too. Strike harder to morph it brighter."
+ },
+ {
+  "name": "Ljungeld",
+  "category": "Lead",
+  "description": "A heath fire: a saw and a pulse an octave down, driven through the distortion into a screaming resonant 24 dB low-pass. Play a mono line in the middle. Strike harder to morph the scream sharper; the wheel opens the filter."
+ },
+ {
+  "name": "Ringdans",
+  "category": "Lead",
+  "description": "A sine ring-modulated by a saw an octave up, the saw wobbling a little on LFO 1: a hollow, metallic line. Play legato up high. Push the wheel to morph the ring's partner up a fifth and both oscillators higher with it, into a clangorous dance."
+ },
+ {
+  "name": "Spelpipa",
+  "category": "Lead",
+  "description": "A folk pipe: a triangle with breath from oscillator 2's noise, soft at the start of each note. Play a melody up high; press into the long notes for vibrato. Strike harder to morph more breath in."
+ },
+ {
+  "name": "Valkyria",
+  "category": "Lead",
+  "description": "A square with oscillator 2 synced at its own pitch, so the sync is silent at rest: a plain, hollow lead. Push the wheel to morph oscillator 2 up two octaves and the filter open: the sync tears through, a Valkyrie riding in. Play legato up high."
+ },
+ {
+  "name": "Vargyl",
+  "category": "Lead",
+  "description": "A wolf's howl: four voices in unison on every key, saws an octave apart, spread wide and played legato, a short bite from the filter's envelope. Play a line high in the middle. Strike harder to morph it brighter; the wheel brings in vibrato."
+ },
+ {
+  "name": "Drivis",
+  "category": "Pad",
+  "description": "A pulse and a saw that drift like ice floes: the pulse's width wanders on LFO 1's smooth random and LFO 2 bends both slowly in pitch. Hold chords. Push the wheel to morph the drift wider."
+ },
+ {
+  "name": "Gryningsljus",
+  "category": "Pad",
+  "description": "Two saws whose 24 dB low-pass opens over three seconds, as dawn comes up, and stays open. Hold each chord and wait. Strike harder to morph the dawn quicker and brighter; the wheel brings in vibrato."
+ },
+ {
+  "name": "Isljus",
+  "category": "Pad",
+  "description": "A saw and a triangle an octave up through the 24 dB high-pass, which follows the keys and drifts slowly on LFO 2: a thin, high light with no body. Hold chords up high. Push the wheel to morph the body back in as the high-pass falls."
+ },
+ {
+  "name": "Korona",
+  "category": "Pad",
+  "description": "A sine frequency-modulated by a triangle an octave up, the FM wandering on LFO 1's smooth random: a shimmering corona round each note. Hold chords. Push the wheel to morph the FM deeper and the wandering faster."
+ },
+ {
+  "name": "Natthymn",
+  "category": "Pad",
+  "description": "A saw and a pulse through a resonant band-pass that sings like a vowel, a slow vibrato from LFO 2: a night hymn. Hold chords in the middle. Strike harder to morph the vowel open, from oo towards ah; the wheel opens the filter."
+ },
+ {
+  "name": "Nattvandring",
+  "category": "Pad",
+  "description": "Unison in poly: two detuned voices on every key, one to each side, each a saw with a saw an octave up, through a slowly opening low-pass. A wide, lush pad for long walks at night. Push the wheel to morph it brighter; the pedal opens the filter."
+ },
+ {
+  "name": "Polarvind",
+  "category": "Pad",
+  "description": "A saw with high noise beside it through a resonant band-pass that LFO 2 sweeps slowly: a pad with the polar wind in it. Hold chords. Push the wheel to morph the wind over the saw and the band-pass narrower."
+ },
+ {
+  "name": "Rimfrost",
+  "category": "Pad",
+  "description": "Two pulses, the second an octave up, their widths swept slowly by LFO 1: a glassy, shimmering pad. Strike harder to morph it brighter and quicker to speak; the wheel deepens the sweep."
+ },
+ {
+  "name": "Sammet",
+  "category": "Pad",
+  "description": "Velvet: a saw and a square an octave up. Play softly for a dark, slow swell; strike hard to morph it bright, resonant and quick. The wheel brings in vibrato."
+ },
+ {
+  "name": "Skymningsdis",
+  "category": "Pad",
+  "description": "A saw and a pulse an octave down through a resonant 24 dB low-pass that LFO 1's smooth random wanders over: dusk haze that never sits still. Hold long chords. Push the wheel to morph the drift faster, deeper and more resonant."
+ },
+ {
+  "name": "Sommarnatt",
+  "category": "Pad",
+  "description": "Two saws through the 24 dB low-pass, swelling in slowly, each new voice to the other side. Hold chords low in the middle. Push the wheel to morph the summer night into day: the cutoff, the resonance and the filter's envelope rise together and the attack quickens, the amber arcs on the face showing how far. The pedal opens the filter."
+ },
+ {
+  "name": "Tundra",
+  "category": "Pad",
+  "description": "Oscillator 2 synced to oscillator 1, its pitch swept slowly up and down by LFO 1: a hard, glassy pad whose overtones wander. Hold open chords. Strike harder to morph the sync higher; the wheel opens the filter."
+ },
+ {
+  "name": "Vinterhav",
+  "category": "Pad",
+  "description": "Two saws through the notch and low-pass, the notch swept up and down by LFO 1 like a slow phaser: a winter sea rolling under the chord. Hold chords. Push the wheel to morph the swell quicker and the notch deeper."
+ },
+ {
+  "name": "Droppe",
+  "category": "Pluck",
+  "description": "A drop: two triangles an octave apart, plucked through a soft low-pass, each note to the other side. Pick through chords up high. Strike harder to morph it louder, brighter and ringing longer; the wheel brings in vibrato."
+ },
+ {
+  "name": "Eko",
+  "category": "Pluck",
+  "description": "An echo: a square pluck whose every note comes back six times in triplet eighths, in time with the song, each softer and to the other side. Play a few notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato."
+ },
+ {
+  "name": "Gnista",
+  "category": "Pluck",
+  "description": "A spark: oscillator 2 synced and swept down by the mod envelope at each pick, short and bright. Pick through chords up high. Strike harder to morph the sweep wider and the pick louder; the wheel raises the synced oscillator."
+ },
+ {
+  "name": "Harpa",
+  "category": "Pluck",
+  "description": "A harp: a triangle and a saw an octave up. Pick softly for a dull, short note; strike hard to morph it bright, louder and ringing long. The wheel brings in vibrato."
+ },
+ {
+  "name": "Istapp",
+  "category": "Pluck",
+  "description": "An icicle: a sine frequency-modulated by a triangle two octaves up, a burst of FM from the mod envelope at each pick. Pick through chords up high. Strike harder to morph the burst brighter and louder; the wheel adds FM."
+ },
+ {
+  "name": "Kantele",
+  "category": "Pluck",
+  "description": "A plucked zither: a saw and a narrow pulse, bright at the pick, as bright as it is struck, and closing, ringing on. Pick through chords in the middle. Push the wheel to morph the strings ringing longer and brighter."
+ },
+ {
+  "name": "Regn",
+  "category": "Pluck",
+  "description": "Rain: a saw with a little noise through a ringing band-pass that the envelope flicks open. Pick through chords up high. Strike harder to morph each drop brighter; the wheel opens the filter."
+ },
+ {
+  "name": "Ringla",
+  "category": "Pluck",
+  "description": "A ring: a sine ring-modulated by a triangle two octaves up, the sine beside it, plucked short. Pick through chords up high. Push the wheel to morph the ring louder over the sine."
+ },
+ {
+  "name": "Ekon",
+  "category": "Sequence",
+  "description": "Echoes: a short pulse for sequences, every note answered three times in eighth notes, in time with the song, softer and to the other side. Play a sixteenth-note line firmly, as softer notes echo softer. The wheel brings in vibrato."
+ },
+ {
+  "name": "Flimmer",
+  "category": "Sequence",
+  "description": "A flicker: held chords chopped into sixteenths by LFO 2's tremolo, in time with the song. Hold chords. Push the wheel to morph the chop shallower and the chord brighter."
+ },
+ {
+  "name": "Karusell",
+  "category": "Sequence",
+  "description": "A carousel: LFO 2's arpeggiator runs up the held chord over three octaves in sixteenths, in time with the song, each step to the other side. Hold chords in the middle. Push the wheel to morph the steps brighter and more resonant."
+ },
+ {
+  "name": "Klockverk",
+  "category": "Sequence",
+  "description": "Clockwork: the arpeggiator ticks up the held chord in sixteenths through a ringing band-pass, and the strike sets its range: a soft chord stays in its octave, a hard one climbs four, the morph moving LFO 2's amount. Hold chords and vary the touch; the wheel opens the filter."
+ },
+ {
+  "name": "Maskin",
+  "category": "Sequence",
+  "description": "A machine: a mono saw and pulse through a resonant 24 dB low-pass, LFO 1 sweeping the cutoff over each bar in time with the song. Play a sixteenth-note line. Strike harder to morph the envelope deeper; the wheel opens the filter."
+ },
+ {
+  "name": "Pendel",
+  "category": "Sequence",
+  "description": "A pendulum: the arpeggiator swings up and down the held chord over four octaves in eighth notes, a triangle and a pulse a few cents apart. Hold chords low down. Push the wheel to morph the range in, down to two octaves."
+ },
+ {
+  "name": "Vattenfall",
+  "category": "Sequence",
+  "description": "A waterfall: the arpeggiator runs down the held chord over two octaves in eighth-note triplets, each step a synced pluck swept by the mod envelope. Hold chords. Push the wheel to morph the sweep wider."
+ },
+ {
+  "name": "Fjord Strings",
+  "category": "Strings",
+  "description": "Two saws far apart in tune, a quick shiver of pitch from LFO 2 for the ensemble, each voice to the other side. Play string parts in the middle. Strike harder to morph the bow quicker and brighter; the wheel or the pedal brings in vibrato."
+ },
+ {
+  "name": "Spelman",
+  "category": "Strings",
+  "description": "A folk fiddler's solo line: a saw and a narrow pulse through a resonant low-pass, played legato with a little glide. Play a melody low down; press into a key to bring in its vibrato. Strike harder to morph the bow brighter."
+ },
+ {
+  "name": "Vinterljus",
+  "category": "Strings",
+  "description": "Two pulses an octave apart, their widths swept by LFO 1: a string machine in winter light. Hold chords and voice the top line. Push the wheel to morph the sweep quicker and the tone brighter."
+ },
+ {
+  "name": "Djupfryst",
+  "category": "Texture",
+  "description": "Deep frozen: a saw ring-modulated by a triangle held at one low pitch whatever the key, the triangle drifting on LFO 1's smooth random, through a resonant 24 dB low-pass. Hold low notes. Push the wheel to morph the filter open and the drift wider."
+ },
+ {
+  "name": "Evighetsmaskin",
+  "category": "Texture",
+  "description": "A perpetual motion machine: the arpeggiator's hold keeps the chord running after the keys are let go, up and down three octaves in sixteenths, until the next chord takes its place. Strike a chord and let go. Push the wheel to morph the steps brighter."
+ },
+ {
+  "name": "Gnistregn",
+  "category": "Texture",
+  "description": "A shower of sparks: a saw and a square through a ringing band-pass that LFO 1's random steps jump about in sixteenths, in time with the song. Hold chords. Push the wheel to morph the jumps wider."
+ },
+ {
+  "name": "Havsbrus",
+  "category": "Texture",
+  "description": "The sea's roar: noise through a low-pass, LFO 2 rolling its level in and out like waves and LFO 1 the filter with them. Hold a note or a chord. Push the wheel to morph the waves quicker."
+ },
+ {
+  "name": "Iskristall",
+  "category": "Texture",
+  "description": "Ice crystals: the arpeggiator picks notes of the chord at random over three octaves, in sixteenths, each a short FM chime, and its hold keeps them falling after the keys are let go. Strike a chord and let go. Push the wheel to morph the chimes brighter."
+ },
+ {
+  "name": "Polarljus",
+  "category": "Texture",
+  "description": "Polar light: a sine frequency-modulated a little off a twelfth, so it beats slowly, the FM wandering on LFO 1's smooth random. Hold one chord and let it move. Push the wheel to morph the shimmer deeper and quicker."
+ },
+ {
+  "name": "Trollskog",
+  "category": "Texture",
+  "description": "A troll forest: a sine ring-modulated a little over an octave up, the partner wandering on LFO 1's smooth random, every note answered by eight echoes. Play a few notes firmly, with room between them, as softer notes echo softer. The wheel brings in vibrato."
+ },
+ {
+  "name": "Vidd",
+  "category": "Texture",
+  "description": "Wide open country: two saws a fifth apart, in unison pairs spread wide, through the notch and low-pass that LFO 1 sweeps slowly, phasing. Hold one low note. Push the wheel to morph the swell deeper."
+ },
+ {
+  "name": "Vindkast",
+  "category": "Texture",
+  "description": "A gust: noise alone through a resonant band-pass that follows the keys, LFO 1's smooth random blowing it about, so each key whistles its own wind. Hold notes or chords. Push the wheel to morph the gusts stronger and the whistle sharper."
+ }
+]

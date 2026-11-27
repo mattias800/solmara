@@ -1,0 +1,152 @@
+[
+ {
+  "name": "Acrylic Phase Bass",
+  "category": "Bass",
+  "description": "After Howard Scarr's tutorial for the instrument: the notch bass hard-clipped, its sweep quicker, the mids lifted and a phaser turning through it."
+ },
+ {
+  "name": "Banded Detune Bass",
+  "category": "Bass",
+  "description": "After a thread on the Dogs On Acid forum: three detuned saws through a band-pass and a notch, a synced LFO turning the cutoff in half notes: a dark, phasing drum-and-bass growl."
+ },
+ {
+  "name": "Glide Acid Line",
+  "category": "Bass",
+  "description": "After a thread on the maker's forum about acid lines: one saw through the three-pole filter, resonant, accented by velocity, gliding where notes touch, warmed below and echoed in quarters."
+ },
+ {
+  "name": "Rectifier Wah Bass",
+  "category": "Bass",
+  "description": "After Howard Scarr's tutorial for the instrument: the squelch bass with its filter as a notch that sweeps in slowly, through the rectifier at full: a funky, wah-like growl."
+ },
+ {
+  "name": "Rolling Night Bass",
+  "category": "Bass",
+  "description": "After a full-on bassline thread on the psynews forum: a saw and a synced saw a fourth below through the four-pole filter, short and tight with a little drive, for rolling sixteenth lines."
+ },
+ {
+  "name": "Squelch Club Bass",
+  "category": "Bass",
+  "description": "After Howard Scarr's tutorial for the instrument: synced saws over a full sub, the analog boost and punch up, a resonant filter that squelches, its decay shortening the harder it opens."
+ },
+ {
+  "name": "Thunk Saw Bass",
+  "category": "Bass",
+  "description": "After a thread on the Elektronauts forum: two saws between a shut low-pass and a high-pass, a synced saw LFO knocking the cutoff open in dotted sixteenths and a slow sine wandering under it."
+ },
+ {
+  "name": "Hyper Rave Stab",
+  "category": "Brass",
+  "description": "After Chromatic's drum-and-bass stab walkthrough in Computer Music: saw stacks an octave apart over a low saw, twin unison and hard distortion, a synced LFO moving the mix, all three pitches bent up a fifth by an envelope, through the doppler tape echo."
+ },
+ {
+  "name": "Contour Dive",
+  "category": "FX",
+  "description": "After Howard Scarr's tutorial for the instrument: a one-shot saw LFO dropping the first oscillator from an octave up into pitch at every note, against the steady second: a falling, laser-like dive."
+ },
+ {
+  "name": "Talking Psy Buzz",
+  "category": "FX",
+  "description": "After a psytrance effects thread on the maker's forum: a saw whose pitch flicks at each note, filtered by velocity, then the vowel filter wandering on an LFO into a long tape echo."
+ },
+ {
+  "name": "Dusty Rave Lead",
+  "category": "Lead",
+  "description": "After Howard Scarr's tutorial for the instrument: two saws in six-voice unison detuned to the limit, through the low-pass distortion, the wheel cleaning it up."
+ },
+ {
+  "name": "Eight-Voice Unison Lead",
+  "category": "Lead",
+  "description": "After the First Steps chapter of Howard Scarr's manual for the instrument: two saws stacked eight voices deep, detuned as far as they go and spread across the stereo field, a dotted echo behind, the wheel bringing in vibrato."
+ },
+ {
+  "name": "Formant Pulse Solo",
+  "category": "Lead",
+  "description": "After Richard Leon's masterclass in Sound On Sound: a thin pulse through two resonant band-passes in parallel, set apart like a voice's formants, gliding, with a vibrato that fades in."
+ },
+ {
+  "name": "Full-Suction Unison Lead",
+  "category": "Lead",
+  "description": "After the First Steps chapter of Howard Scarr's manual: the eight-voice saw stack with a sub, a little noise and a third saw an octave down, through a short dotted echo; sweep the cutoff while it plays."
+ },
+ {
+  "name": "Narrow Pulse Dive",
+  "category": "Lead",
+  "description": "After Howard Scarr's tutorial for the instrument: two thin pulses, band-passed and driven hard, a fast LFO shaking their widths under thick chorus; the wheel makes each note dive two octaves."
+ },
+ {
+  "name": "Nine-Saw Lead",
+  "category": "Lead",
+  "description": "After the First Steps chapter of Howard Scarr's manual: one oscillator as a stack of nine saws spread wide, with its sub, the filter shut and thrown open by its envelope; four unison voices, chorus and a dotted echo spread it."
+ },
+ {
+  "name": "Pressure Glide Lead",
+  "category": "Lead",
+  "description": "After the First Steps chapter of Howard Scarr's manual: a gliding mono saw lead, the wheel speeding the vibrato and the key's pressure opening the filter."
+ },
+ {
+  "name": "Rectified Solo Lead",
+  "category": "Lead",
+  "description": "After Howard Scarr's tutorial for the instrument: two saws pushed hard into the saturation, the filter envelope stretching its own attack for a swelling front, bends snapping with no smoothing."
+ },
+ {
+  "name": "Rising Sync Lead",
+  "category": "Lead",
+  "description": "After Richard Leon's masterclass in Sound On Sound: the second oscillator alone, synced to the first and swept up by the filter envelope at each note, driven a little: a tearing sync lead."
+ },
+ {
+  "name": "Twin-Saw Bright Top Lead",
+  "category": "Lead",
+  "description": "After a thread on the infekted.org forum about a saw-stack lead on the older model: three detuned voices kept fairly narrow, the second filter unlinked and resonant over the first, a phaser on top."
+ },
+ {
+  "name": "Uplift Stack Lead",
+  "category": "Lead",
+  "description": "After ADSR Sounds' trance lead walkthrough for the instrument: both oscillators as saw stacks a fifth apart, a third saw and the sub under them, twin unison, a touch of distortion, then echo and a hall."
+ },
+ {
+  "name": "Chord Gate Saw Pad",
+  "category": "Pad",
+  "description": "After Sound Design Tutorials' trance-gate video: both oscillators as saw stacks over a pulse an octave down, the arpeggiator's chord mode chopping held chords in sixteenths with a rest every third step, then chorus, the widener, echo and a hall."
+ },
+ {
+  "name": "Gated Fifths PWM Pad",
+  "category": "Pad",
+  "description": "After Richard Leon's masterclass in Sound On Sound: two pulses a fifth apart, each gated by its own square LFO pushing its width to silence, one in eighths and one in sixteenths."
+ },
+ {
+  "name": "Matrix Gate Pad",
+  "category": "Pad",
+  "description": "After a thread on the maker's forum about trance gates: the arpeggiator's steps sent through the matrix to the cutoff, so a pattern of loud and silent steps opens and shuts a detuned saw pad."
+ },
+ {
+  "name": "Quarter Pump Pad",
+  "category": "Pad",
+  "description": "After a thread on the maker's forum about pumping pads: one LFO, a rising ramp locked to quarter notes, lifts the oscillators' volume from low on every beat, as a kick's side-chain would."
+ },
+ {
+  "name": "Rectified Saw Pluck",
+  "category": "Pluck",
+  "description": "After ADSR Sounds' trance pluck walkthrough, with tips from the maker's forum: a seven-saw stack, the filter snapped open and shut, four unison voices, the rectifier at full, then ping-pong echo and a hall."
+ },
+ {
+  "name": "Dirty Dotted Pluck",
+  "category": "Sequence",
+  "description": "After Howard Scarr's tutorial for the instrument: the same plucked saws arpeggiated into the reverb's feedback mode, a darker, dirtier dotted echo."
+ },
+ {
+  "name": "Dotted Echo Arp",
+  "category": "Sequence",
+  "description": "After Howard Scarr's tutorial for the instrument: a plucked saw pair, brighter up the keyboard, arpeggiated over two octaves into a long dotted-eighth echo whose time wavers."
+ },
+ {
+  "name": "Envelope-LFO Arp Pluck",
+  "category": "Sequence",
+  "description": "After a tips thread on the Elektronauts forum: both filters shut, a one-shot falling LFO plucking them open on every arpeggiator step, through the tape echo and a light phaser."
+ },
+ {
+  "name": "Theory Strings",
+  "category": "Strings",
+  "description": "After Howard Scarr's tutorial for the instrument: two pulses with vibratos of opposite sign, a slow pan, a softer bow the harder you play, and the equaliser lifting lows, mids and highs; no chorus."
+ }
+]

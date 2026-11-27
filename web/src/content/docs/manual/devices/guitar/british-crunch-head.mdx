@@ -1,0 +1,50 @@
+---
+title: "British Crunch Head"
+description: "Master-volume valve head in the style of the early-1980s British rock amps: crunch and lead."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/british-crunch-head.webp';
+
+**An emulation of an analogue original,** modelled on the early-1980s British master-volume valve head of hard rock.
+
+A modelled British master-volume guitar head of one channel, without a cabinet: an input valve, a cold-biased second stage that clips one side of the wave first, a third stage into a cathode follower, a passive tone stack whose knobs lean on each other, a master before the phase inverter, and four European output pentodes in push-pull on a speaker's load, with the presence in the power stage's feedback loop. Preamp, bass, middle, treble, presence, and master, a high input and a low one that passes the input valve by, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt master-volume lead head of the early 1980s, the crunch and lead sound of that decade's hard rock.
+
+[British Crunch Head on the website](/solmara/guitar/#british-crunch-head)
+
+## In the device chain
+
+British Crunch Head on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="British Crunch Head in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with British Crunch Head. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Classic Crunch**: The head's crunch: the preamp just past its middle and the middle up, for open chords and riffs. Put a cabinet after it, such as Boxed Twelves.
+- **Clean, Low Input**: The low input, which passes the input valve by, with the preamp and the master at their tops: clean played softly, a little hair when dug into, and some 10 dB quieter than the others. Put a cabinet after it, such as Boxed Twelves.
+- **Cranked Master**: The preamp at its middle and the master far up, so the power stage clips too and squeezes the chords. Put a cabinet after it, such as Boxed Twelves.
+- **Dark Blues**: A light crunch with the treble and the presence down: a warm, round top for blues. Put a cabinet after it, such as Boxed Twelves.
+- **Edge of Breakup**: The high input with the preamp low: chords that clean up with the guitar's volume and bite when hit hard. Put a cabinet after it, such as Boxed Twelves.
+- **Hot Lead**: The preamp at its top and the middle well up, for single notes that sustain. Put a cabinet after it, such as Boxed Twelves.
+- **Rock Rhythm**: More preamp than the crunch and a little less bass: tight power chords. Put a cabinet after it, such as Boxed Twelves.
+- **Scooped Eighties**: The preamp high, the bass and treble up and the middle down: the scooped rhythm of the decade. Put a cabinet after it, such as Boxed Twelves.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Preamp | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Master | 0 to 100 | 50 |
+| Input | High, Low | High |
+| Quality | Standard, Ultra | Standard |

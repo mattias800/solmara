@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Dub Runaway",
+  "category": "Echo",
+  "description": "The second and third heads together, slow, with the intensity past the point where each pass comes back louder than the last: a stab grows into a howl that the tape holds and darkens. Ride the intensity and the repeat rate by hand or by automation; turning the rate bends the pitch of everything on the tape."
+ },
+ {
+  "name": "Hot Input Grit",
+  "category": "Echo",
+  "description": "The input turned up so that the record amplifier and the tape are driven: the repeats come back compressed and thick with third harmonic, the first two heads and the springs behind them."
+ },
+ {
+  "name": "Quarter Repeats",
+  "category": "Echo",
+  "description": "The second head alone, synced so that it plays a quarter note after the note, with a few repeats each darker than the last. A delay throw for a vocal that keeps the song's time."
+ },
+ {
+  "name": "Slapback",
+  "category": "Echo",
+  "description": "The first head alone with the motor near its fastest: one repeat some 75 ms behind, a little darker than the voice or guitar it follows, and no feedback. The rockabilly double."
+ },
+ {
+  "name": "Space Wash",
+  "category": "Echo",
+  "description": "All three heads and the springs at a slow rate, the treble down, and the intensity at 45: with three heads feeding back, each pass is some 3 dB under the last, so the repeats pile up into a dark wash that takes seconds to die away. Past about 52 with all three heads in, the machine sings."
+ },
+ {
+  "name": "Spring Only",
+  "category": "Echo",
+  "description": "The last position of the selector: no heads, only the springs, at a level that sits behind a guitar. They ring for about three seconds and pass from some 250 Hz to 4 kHz, the boing of a spring tank."
+ },
+ {
+  "name": "Three-Head Rhythm",
+  "category": "Echo",
+  "description": "All three heads and the springs, the motor set from the project's tempo so that the first head plays an eighth after the note: the second and third fall at 1.9 and 2.75 times that, the galloping pattern of the machine, with a little of the springs behind it."
+ },
+ {
+  "name": "Worn Machine",
+  "category": "Echo",
+  "description": "A loop that has run for years: wow and flutter near their tops, the capstan's wobble deep, hiss over the repeats, and the third head with the springs. Held notes waver and the repeats smear. The same wobble every time it is rendered."
+ }
+]

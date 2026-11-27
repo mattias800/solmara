@@ -1,0 +1,337 @@
+[
+ {
+  "name": "Layered Bass",
+  "category": "Bass",
+  "description": "Square at 16' under saw at 8', a short resonant filter envelope, the chorus spreading it; harder notes brighter."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "A saw through a resonant low-pass flicked open and shut by each note over a square an octave down: a round, plucked bass with a squelch on the hard notes."
+ },
+ {
+  "name": "Sub Bass",
+  "category": "Bass",
+  "description": "Channel I's sine at 16' under channel II's square at 8' through a nearly closed filter, quick and still: a round, dark sub-bass."
+ },
+ {
+  "name": "Unison Bass",
+  "category": "Bass",
+  "description": "Saws at 8' and 16', channel II pulled sharp so the two beat against each other, the filters opening a little on each note and more on the hard ones, dry: a thick, rolling bass."
+ },
+ {
+  "name": "Celesta",
+  "category": "Bell",
+  "description": "Pure sines at 4' and 2', struck and quickly gone, a gentle tremolo: a celesta, or a music box, up high."
+ },
+ {
+  "name": "Glass Chime",
+  "category": "Bell",
+  "description": "The sines of both channels at 4' and 2' through the ring modulator, struck and ringing away up high: a cold, glassy chime."
+ },
+ {
+  "name": "Gong Bell",
+  "category": "Bell",
+  "description": "A square and a sine through the ring modulator, its speed thrown up by each strike and snapping back, so each stroke starts with a clangorous slide before it rings: a gong-like, metallic bell."
+ },
+ {
+  "name": "Thin Chime",
+  "category": "Bell",
+  "description": "A saw through the high-pass and the low-pass set together into a narrow, resonant band, struck and ringing: a thin, whistling chime, as in the film scores that made the instrument famous. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Tubular Bells",
+  "category": "Bell",
+  "description": "A sine and a saw through the ring modulator, each strike throwing its speed up into a clangour that clears at once, leaving the tone beating slowly as it rings for seconds, harder strikes louder: tubular bells. After Sound On Sound's Synth Secrets on bells."
+ },
+ {
+  "name": "Brass Stabs",
+  "category": "Brass",
+  "description": "Both saws, channel II a little sharper, the filters snapped open by each strike and shut within a tenth of a second, the pitch kicking up into the note, short and dry: brass stabs for funk and disco; the harder you hit, the brighter and louder."
+ },
+ {
+  "name": "Cosmos Brass",
+  "category": "Brass",
+  "description": "Both channels' saws, channel II detuned, through low-passes the filter envelope swells slowly open: each key's pressure opens it further and bends its vibrato in. The soundtrack brass."
+ },
+ {
+  "name": "Mellow Horns",
+  "category": "Brass",
+  "description": "A saw with its sine beside it on channel I, a square on channel II, low filters slowly swelling, the chorus on: round, distant French horns."
+ },
+ {
+  "name": "Night Rain Brass",
+  "category": "Brass",
+  "description": "Both saws, channel II detuned against channel I, a little resonance in filters that bloom open over half a second and stay bright, a long release, dry: the big, dark brass of 1980s science-fiction scores. Lean on a key to brighten it and bring in its vibrato, and slide down the ribbon (the pitch bend) as a chord lets go for the falls the audition plays."
+ },
+ {
+  "name": "Resonant Section",
+  "category": "Brass",
+  "description": "Both saws through low-passes with their resonance turned well up, the filter envelope sweeping them open over a second and down again so each chord whistles as it blooms, a light chorus, touch on the level: brass built from the strings' settings, a session player's trick of the time. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Soft Brass",
+  "category": "Brass",
+  "description": "Both saws at 8', channel II a little sharp, the filters opening gently a moment after each key and settling back to a round glow, dry: quiet section brass to play under a melody; play softly for a dark tone and harder to bring the edge in. After Sound On Sound's Synth Secrets on brass."
+ },
+ {
+  "name": "String Brass",
+  "category": "Brass",
+  "description": "Two instruments in one: channel I a bowed string section, slow and thinned by its high-pass, channel II a brass section opening on each strike, under a thick chorus and a slightly darkened brilliance: the string-and-brass layer of late 1970s pop. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Swell Horns",
+  "category": "Brass",
+  "description": "Dark, low horns, channel II at 16', that open and grow only as each key is pressed, slow to come and slow to go: lean in and the section swells, let up and it falls back."
+ },
+ {
+  "name": "Swelling Brass",
+  "category": "Brass",
+  "description": "Saws at 8' and 4', slow to sound and slower to open, so a held chord grows for seconds; the key's pressure opens it further, lifts it and brings in a vibrato: press harder through each chord for the crescendo, ease off to let it fall back. The audition presses each chord harder and harder."
+ },
+ {
+  "name": "Trombones",
+  "category": "Brass",
+  "description": "Saws at 16' and 8' through resonant low-passes that open a little late and buzz, the strike bending each note up into pitch, dry: a low trombone section, played an octave down."
+ },
+ {
+  "name": "Trumpet Section",
+  "category": "Brass",
+  "description": "Saws at 8' and 4', thinned by the high-pass, opening quickly and brightly, each strike bending the note up into pitch; pressure adds a little brightness and vibrato: bright trumpets. Hit hard for the blare. After Sound On Sound's Synth Secrets on brass."
+ },
+ {
+  "name": "Velocity Brass",
+  "category": "Brass",
+  "description": "Both saws, channel II an octave under and a touch sharp, the filters thrown wide open at once by each strike, the harder the brighter, cut off as the keys lift, dry: punchy, bright brass."
+ },
+ {
+  "name": "Alien Signal",
+  "category": "Effects",
+  "description": "A resonant saw and square through the ring modulator, its speed thrown high by each strike and sinking back, the sub-oscillator's random steps jittering the pitch: a transmission from somewhere else."
+ },
+ {
+  "name": "Crossing Sweeps",
+  "category": "Effects",
+  "description": "Channel I's resonant filter climbs for seconds from deep below while channel II's starts wide open and falls, noise in both, so each held note's sweeps pass each other: a film-score whoosh in two directions."
+ },
+ {
+  "name": "Dark Drone",
+  "category": "Effects",
+  "description": "A saw at 16' under a saw a fifth and an octave above it, through a resonant low-pass the sub-oscillator sways open and shut every two seconds: a dark, slowly breathing drone for the low notes."
+ },
+ {
+  "name": "Glissando Cascade",
+  "category": "Effects",
+  "description": "A bright saw and a square that glide slowly between notes, stepping through every semitone on the way: play wide leaps for the stepped, falling and rising runs of 1970s science fiction."
+ },
+ {
+  "name": "Noise Vowels",
+  "category": "Effects",
+  "description": "Noise through both resonant filters, the sub-oscillator's square stepping them, under the tremolo."
+ },
+ {
+  "name": "Storm Wind",
+  "category": "Effects",
+  "description": "Noise through resonant filters the sub-oscillator's random steps drag about, slow to rise and fall, under the chorus: a gusting wind for a storm."
+ },
+ {
+  "name": "Electric Organ",
+  "category": "Keys",
+  "description": "Squares at 8' and 4' with a sine under them, on at once and off at once, under the chorus: a bright combo organ."
+ },
+ {
+  "name": "Funk Keys",
+  "category": "Keys",
+  "description": "A narrow pulse thinned by the high-pass, its resonant filter flicked open by each strike and decaying with it: a plucked-string keyboard for funk, brighter the harder you play."
+ },
+ {
+  "name": "Metal Keys",
+  "category": "Keys",
+  "description": "A saw and a sine through the ring modulator held low, the strike opening the filter: a hard, clanging keyboard."
+ },
+ {
+  "name": "Quill Keys",
+  "category": "Keys",
+  "description": "A saw at 8' and a pulse at 4', thinned by the high-pass and bright, plucked and fading: a harpsichord-like keyboard for baroque runs."
+ },
+ {
+  "name": "Ring Bell",
+  "category": "Keys",
+  "description": "A sine and a saw through the ring modulator, its envelope sweeping the sidebands at each key."
+ },
+ {
+  "name": "Touch Pluck",
+  "category": "Keys",
+  "description": "A short saw whose strike sets how bright and loud each note starts."
+ },
+ {
+  "name": "Tremolo Keys",
+  "category": "Keys",
+  "description": "A square and a sine struck and decaying, the strike setting the brightness, the tremolo on: a soft, throbbing electric keyboard."
+ },
+ {
+  "name": "Brilliance Lead",
+  "category": "Lead",
+  "description": "Two saws, dark and a little resonant until you lean on the key: its pressure opens the filters and brings in the vibrato, each note on its own, so a held note blooms and cries. The audition leans in halfway through each note."
+ },
+ {
+  "name": "Pressure Lead",
+  "category": "Lead",
+  "description": "A square an octave up over the saw, bright and widened by the chorus, gliding between notes; pressing a key adds its vibrato."
+ },
+ {
+  "name": "Ribbon Lead",
+  "category": "Lead",
+  "description": "A saw with its sine beside it over a saw an octave up, gliding, the filters opening on each note, a long release and the chorus: the singing film lead of the 1980s. Scoop into notes and shake them on the ribbon (the pitch bend), as the audition does, and lean on a key for its vibrato."
+ },
+ {
+  "name": "Sine Whistle",
+  "category": "Lead",
+  "description": "Both channels' sines alone, at 4', no filter at all, gliding, the sub-oscillator's vibrato always on and the key's pressure deepening it: a pure, whistling lead up high."
+ },
+ {
+  "name": "Singing Lead",
+  "category": "Lead",
+  "description": "A saw at 4' over a square an octave down, gliding high; each strike bends the note up into pitch and the key's pressure brightens it and brings in the vibrato, the chorus widening it: an expressive, crying lead that leans into each note."
+ },
+ {
+  "name": "Twin Saw Lead",
+  "category": "Lead",
+  "description": "Two saws, channel II at 4' and pulled sharp so they beat, bright and resonant, gliding and always gently shaking, dry: a fat, buzzing lead for the low line."
+ },
+ {
+  "name": "Bassoon",
+  "category": "Orchestral",
+  "description": "A pulse and a saw at 16', thinned below and rounded above with a little resonance between, a slow breath in: a low, reedy bassoon, played an octave under the line; pressure brings its vibrato. After Sound On Sound's Synth Secrets on wind instruments."
+ },
+ {
+  "name": "Clarinet",
+  "category": "Orchestral",
+  "description": "A square, its odd harmonics alone, through a soft low-pass on channel I, a quieter square an octave up on channel II for the upper register's edge, a soft attack: a hollow, woody clarinet played low; pressure brings its vibrato. After Sound On Sound's Synth Secrets on wind instruments."
+ },
+ {
+  "name": "Flute",
+  "category": "Orchestral",
+  "description": "Channel I's sine alone at 4', where the flute sings, with channel II's breath of filtered noise under it, a soft attack, the strike bending the note up a little into pitch, a gentle vibrato always on; lean on a key and the vibrato deepens, as a player's does. After Sound On Sound's Synth Secrets on the flute."
+ },
+ {
+  "name": "Harp",
+  "category": "Orchestral",
+  "description": "A sine and a saw plucked at once and left to ring away, the filter closing after the pluck, a quiet sine an octave up for the string's shine: a concert harp for arpeggios and glissandos."
+ },
+ {
+  "name": "Kettle Drums",
+  "category": "Orchestral",
+  "description": "Channel I's sine at 8' struck and ringing for over a second, the strike bending it up into pitch, under channel II's thump of dark noise: tuned kettle drums for single strokes and rolls in the low octaves."
+ },
+ {
+  "name": "Oboe",
+  "category": "Orchestral",
+  "description": "A narrow pulse through a band of resonance between the high-pass and the low-pass, channel I alone: a thin, nasal double reed; pressure adds its vibrato and a little brightness. After Sound On Sound's Synth Secrets on wind instruments."
+ },
+ {
+  "name": "Solo Cello",
+  "category": "Orchestral",
+  "description": "A saw bowed in slowly through a gently resonant low-pass, thinned by the high-pass, a quieter saw beside it for body; lean on each note to bring in a singing vibrato and a little more bow. The audition leans in halfway through each note. After Sound On Sound's Synth Secrets on bowed strings."
+ },
+ {
+  "name": "Synth Choir",
+  "category": "Orchestral",
+  "description": "Both saws through bands of resonance set where a sung 'ah' rings, channel I's lower and channel II's higher, a slow breath in and out, a gentle vibrato and a deep chorus: a wordless choir."
+ },
+ {
+  "name": "Dawn Sweep",
+  "category": "Pad",
+  "description": "Channel I's resonant filter swells open and sinks back over seconds while channel II's snaps open and closes at once, the sub-oscillator's slow sine moving both, the chorus on: a pad whose brightness rises, falls and drifts."
+ },
+ {
+  "name": "Glass Pad",
+  "category": "Pad",
+  "description": "A saw through a resonant band high up, a pure sine an octave above it, the ring modulator beating slowly against them so the chord shimmers, under the chorus: a thin, glassy pad up high."
+ },
+ {
+  "name": "Night Drive Pad",
+  "category": "Pad",
+  "description": "Pulses on both channels, each swept by its own slow LFO, resonant filters opening over seconds, a long release under a slow, deep chorus: the warm, moving pad of 1980s film and television scores."
+ },
+ {
+  "name": "Pressure Pad",
+  "category": "Pad",
+  "description": "A saw and a slowly swept pulse, dark and low, that open, lift and waver only as each key is pressed, each note on its own: lean into one note of the chord to bring it forward. The audition presses each chord halfway through."
+ },
+ {
+  "name": "Ribbon Pad",
+  "category": "Pad",
+  "description": "Warm saws, channel II an octave down and a little sharp, swelling in with the filters easing open, under the chorus: a pad to bend with the ribbon (the pitch bend), as the audition does, sliding a chord up a semitone and back and letting the last fall away."
+ },
+ {
+  "name": "Sub Sweep Pad",
+  "category": "Pad",
+  "description": "Saws on both channels, channel II an octave up, the sub-oscillator's falling saw dragging both resonant filters down again and again, dry: a pad that pulses in time under the chord."
+ },
+ {
+  "name": "Swirling Strings",
+  "category": "Pad",
+  "description": "Channel I's square with its width swept against channel II's saw, slow in and out, a touch of vibrato and the chorus."
+ },
+ {
+  "name": "Touch Pad",
+  "category": "Pad",
+  "description": "Two detuned saws whose every key answers its own strike and pressure in brightness and level."
+ },
+ {
+  "name": "Bowed Strings",
+  "category": "Strings",
+  "description": "Saws on both channels with a hiss of noise for the bow, thinned by the high-pass, slow to bow in and out; each key's pressure brings its own vibrato, the chorus spreading the section."
+ },
+ {
+  "name": "High Strings",
+  "category": "Strings",
+  "description": "Saws thinned hard by the high-pass and rounded above, bowed in, played up high; each key's pressure brings its own vibrato and a little more bow, as violins lean into long notes. The audition leans into each chord. After Sound On Sound's Synth Secrets on bowed strings."
+ },
+ {
+  "name": "Low Strings",
+  "category": "Strings",
+  "description": "Saws at 16' and 8' bowed in slowly through dark low-passes, a slow vibrato and a light chorus, played low: cellos and basses together under a score."
+ },
+ {
+  "name": "Octave Strings",
+  "category": "Strings",
+  "description": "Saws an octave apart, channel II at 4', through filters left wide open, bowed in over a third of a second, the sub-oscillator's vibrato always on, dry: bright, airy strings. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Pizzicato Strings",
+  "category": "Strings",
+  "description": "Saws on both channels, channel II an octave up, thinned by the high-pass, plucked and gone at once, the chorus spreading them: a plucked string section."
+ },
+ {
+  "name": "Slow Strings",
+  "category": "Strings",
+  "description": "Saws detuned against each other, bowed in over more than a second and out as slowly, darkened, under the chorus; lean on the keys to bring in each note's vibrato: the slow string section of a film's opening titles."
+ },
+ {
+  "name": "Tremolo Strings",
+  "category": "Strings",
+  "description": "Saws bowed fast, the sub-oscillator's sine shaking their level nine times a second: the trembling strings of a film's tense scene."
+ },
+ {
+  "name": "Bouncing Stabs",
+  "category": "Synth",
+  "description": "Channel II's saw alone through a resonant low-pass the sub-oscillator's falling saw drags shut two and a half times a second, so each chord bounces like an echo: bouncing pop chord stabs. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Dream Chords",
+  "category": "Synth",
+  "description": "Channel I's saw and channel II's swept pulse each through a resonant band of their own, under a quick, deep chorus: bright, vocal chords for synth-pop. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Filter Pluck",
+  "category": "Synth",
+  "description": "A saw through a low-pass set very low with its resonance at the top, the filter flicked open and ringing down, a long release, the high-pass trimming the bottom and the chorus: a liquid, singing filter pluck. After Reverb Machine's walkthrough of the instrument."
+ },
+ {
+  "name": "Resonant Pair",
+  "category": "Synth",
+  "description": "The high-pass's and low-pass's peaks close together at high resonance, swept by the filter envelope."
+ }
+]

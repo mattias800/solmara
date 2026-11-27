@@ -1,0 +1,55 @@
+---
+title: "Himlavalv Limiter"
+description: "True-peak limiter: loud and clean, for the master and buses."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/himlavalv-limiter.webp';
+
+**A design of Solmara's own.**
+
+A limiter for the master and for buses, made to be heard as little as it can: nothing passes its ceiling, between the samples as on them, as the streaming services read a peak. It looks ahead so the gain is down when a peak arrives, and turns down in two parts: a slow one that holds the level that keeps coming back, so a steady tone is not bent and loud music does not pump, and a fast one that takes what is left of each peak and lets go at once, so a lone snare does not duck what follows. Its character goes from Clear to Push; its lookahead is how late it makes the audio.
+
+[Himlavalv Limiter on the website](/solmara/effects/#himlavalv-limiter)
+
+## In the device chain
+
+Himlavalv Limiter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Himlavalv Limiter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Himlavalv Limiter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bus
+
+- **Drum Bus Peaks**: On a drum bus, the tallest hits taken down so the bus can be turned up: a short lookahead, a quick release set by hand, and the channels partly apart so a hit on one side does not pull the other down.
+- **Stems Apart**: Each channel held by its own peaks, as two limiters: for stems or two microphones on one track, where turning both down for one would be heard.
+- **Vocal Bus Even**: A vocal bus held level without sounding squeezed: a few dB into Balanced with a slow attack, so the syllables keep their shape and only the loudest lines come down.
+
+### Mastering
+
+- **Club Loud**: For a track played in a club rather than streamed: loud, with the ceiling at -0.3 dBTP and the Loud character holding the level harder and letting go sooner.
+- **Push It**: As loud as it goes before it is heard working: Push follows the music closely and lets go at once, with a short lookahead that keeps the attacks' edge. Listen to the kick: past here it flattens.
+- **Safety Net**: Changes nothing that is under the ceiling: no gain into it, only the stray peak caught before it passes -1 dBTP. For a master already where it should be, or a bounce that must not clip.
+- **Streaming Loud**: A modern master's loudness, some -9 to -10 LUFS from a mix around -14, held under -1 dBTP: Balanced, so the drums keep their hits while the level between them comes up.
+- **Transparent Master**: The last thing on a master that should sound as it did: a few dB into Clear, so the level is held over 50 ms and steady tones pass unbent, and nothing past -1 dBTP, where the streaming services' encoders do not clip.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input | 0 dB to 24 dB | 0 dB |
+| Ceiling | -12 dBTP to 0 dBTP | -1 dBTP |
+| Lookahead | 0.5 ms to 5 ms | 1.5 ms |
+| Attack | 1 ms to 100 ms | 10 ms |
+| Release | 10 ms to 2000 ms | 200 ms |
+| Link | 0% to 100% | 100% |
+| Character | Clear, Balanced, Loud, Push | Balanced |
+| Auto release | Off, On | On |

@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus, Punch",
+  "category": "Dynamics",
+  "description": "4 to 1 with the slowest attack and the fastest release: each hit's front passes before it takes hold, and it lets go before the next, so the drums come out harder."
+ },
+ {
+  "name": "Drum Bus, Tight",
+  "category": "Dynamics",
+  "description": "4 to 1 at 3 ms and 0.3 s, with the lows out of the sidechain: the kit is held in one place, the room is brought up a little, and the kick does not pump the cymbals."
+ },
+ {
+  "name": "Drum Room, Breathing",
+  "category": "Dynamics",
+  "description": "10 to 1 with the detector behind the gain element, as the console's own is, which takes hold sooner the higher the ratio, at 1 ms and the fastest release: a room microphone pumps and breathes between the hits."
+ },
+ {
+  "name": "Ducked by the Kick",
+  "category": "Dynamics",
+  "description": "4 to 1, the fastest attack, and 0.3 s of release, for a sidechain: set it to the kick's track, and a bass or a pad is pushed down each time the kick hits and swells back between."
+ },
+ {
+  "name": "Master, Touch",
+  "category": "Dynamics",
+  "description": "2 to 1, the slowest attack, the automatic release, and a high threshold: it works only on the loudest moments, a dB at the most. The last device on the master."
+ },
+ {
+  "name": "Mix, Glue",
+  "category": "Dynamics",
+  "description": "2 to 1 with the slowest attack and the automatic release: the whole mix is held together by a dB or two, the fronts of the hits pass, and a loud passage is let go slowly. Lower the threshold until the meter moves 1 to 3 dB."
+ },
+ {
+  "name": "Mix, Low End Free",
+  "category": "Dynamics",
+  "description": "The glue with a high-pass of 120 Hz in the sidechain, so the kick and the bass do not pull the rest of the mix down with them, and a faster attack of 10 ms."
+ },
+ {
+  "name": "Parallel Smash",
+  "category": "Dynamics",
+  "description": "10 to 1 with both switches at their fastest and the threshold low, everything flattened, and the mix at 40 %: the crushed drums under the drums as they were, in one device."
+ }
+]

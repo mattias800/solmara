@@ -1,0 +1,33 @@
+---
+title: "Frequency Shifter"
+description: "Frequency Shifter"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/frequency-shifter.webp';
+
+**A design of Solmara's own.**
+
+Moves every partial of the audio by the same number of hertz, up or down: unlike a pitch shift, the harmonics stop being harmonic, from a slow phasing swirl at a few hertz to bell and robot tones; the right channel can go the other way.
+
+[Frequency Shifter on the website](/solmara/effects/#frequency-shifter)
+
+## In the device chain
+
+Frequency Shifter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Frequency Shifter in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Shift | -5000 Hz to 5000 Hz | 0 Hz |
+| Spread | 0% to 100% | 0% |
+| Mix | 0% to 100% | 100% |
+| Output | -24 dB to 24 dB | 0 dB |

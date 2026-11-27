@@ -1,0 +1,62 @@
+---
+title: "Boxed Twelves"
+description: "4x12 speaker cabinet: the miked box after any amp."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/boxed-twelves.webp';
+
+**A design of Solmara's own.**
+
+A guitar speaker cabinet with its microphone, to follow a guitar amplifier: a closed box of four twelve-inch speakers, as a row of filters fitted to measured cabinets, in two voicings, forward and thick, with the microphone's place across the cone, the box's resonance, and its size. Low and high cuts, phase, mix, and level. It holds the audio back by nothing. For a cabinet of your own, as an impulse response, use Cabinet IR.
+
+[Boxed Twelves on the website](/solmara/guitar/#boxed-twelves)
+
+## In the device chain
+
+Boxed Twelves on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Boxed Twelves in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+19 factory presets come with Boxed Twelves. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Chug Cab**: The cabinet Chug Rig comes with, for any amplifier: a full low end round 200 Hz, a lean middle, and a top that falls away steeply above 4 kHz. Tight, heavy rhythm.
+- **Djent Clean Cab**: Djent Amp's clean cabinet: its warmth in the low middle round 400 Hz rather than in the lows, for clean arpeggios and chords.
+- **Djent Lead Cab**: Djent Amp's lead cabinet: full lows round 190 Hz, a lean 1 kHz, and a smooth top, for singing leads.
+- **Djent Rhythm Cab**: Djent Amp's rhythm cabinet: lows round 135 Hz, less at 500 Hz, and an open 2 to 3 kHz: tight, articulate rhythm on extended-range guitars.
+- **Flipside 1x15**: Flipside Bass Combo's fifteen in its sealed box: round lows near 100 Hz, an even middle, and almost no top: the old studio bass sound.
+- **Forward**: The forward 4x12: a closed box of four twelves with a microphone close to a cone, its upper middle forward and its top falling away above 5 kHz. It cuts through a band.
+- **Forward, Cap**: The forward 4x12 with the microphone toward the cone's centre: the top falls off higher, and more of 4 to 6 kHz comes through. For a dark amplifier, or a lead that has to be heard.
+- **Forward, Edge**: The forward 4x12 with the microphone toward the cone's edge: the top falls off sooner, and the fizz of a high gain goes with it.
+- **Forward, Tight**: The forward 4x12 as a smaller, damped box with a low cut at 90 Hz: less boom under fast, muted playing, and room left for a bass.
+- **Halfglow 8x10**: Halfglow Bass Head's eight tens: lows round 150 Hz and a dip from 1 to 2 kHz.
+- **Icebox 8x10**: Icebox Bass Stack's eight tens: deep lows round 90 Hz, less at 1 kHz, and more top than the other cabinets, for a bass that growls.
+- **Leviathan Clean Cab**: The cabinet Leviathan Rig's clean amp comes with: a gentle bump round 240 Hz and a top that stays open longer than most, for clean and edge-of-break-up guitar.
+- **Leviathan Hot Cab**: The cabinet Leviathan Rig's high-gain amp comes with: full lows round 180 Hz, an even middle, and presence round 3.5 kHz.
+- **Leviathan Rust Cab**: The cabinet Leviathan Rig's crunch amp comes with: firm lows round 190 Hz and a lean middle.
+- **Thick**: The thick 4x12: more from 150 to 400 Hz and less from 1 to 2 kHz than the forward one, and a top that falls off sooner. Heavy chords sound large through it.
+- **Thick, Big Box**: The thick 4x12 as a larger box that rings more at its resonance: the lows reach further down and bloom. For slow, heavy playing with nothing else in the low end.
+- **Thick, Cap**: The thick 4x12 with the microphone toward the cone's centre, which gives its dark top some of its edge back.
+- **Thick, In a Mix**: The thick 4x12 with a low cut at 100 Hz and a high cut at 9 kHz, and the microphone a little toward the centre: what two rhythm guitars need of it beside a bass and cymbals.
+- **Untitled Cab**: The cabinet Untitled Amp comes with: lows round 170 Hz, an even middle, and a top that falls away above 4 kHz.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Cabinet | 13 choices: Forward 4x12, Thick 4x12, Chug Cab, Leviathan Clean Cab, … | Forward 4x12 |
+| Mic | 0 to 100 | 50 |
+| Resonance | 0 to 100 | 50 |
+| Size | 0 to 100 | 50 |
+| Low cut | 20 Hz to 500 Hz | 20 Hz |
+| High cut | 2000 Hz to 20000 Hz | 20000 Hz |
+| Phase | Normal, Inverted | Normal |
+| Mix | 0% to 100% | 100% |
+| Level | -24 dB to 24 dB | 0 dB |

@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Dorian Chord Walk",
+  "category": "Players",
+  "description": "A complete pattern of dorian chord walk."
+ },
+ {
+  "name": "Four Bar Arcs",
+  "category": "Players",
+  "description": "A complete pattern of four bar arcs."
+ },
+ {
+  "name": "Held Key Jet-8000",
+  "category": "Players",
+  "description": "A complete pattern of held key jet."
+ },
+ {
+  "name": "Legato Footsteps",
+  "category": "Players",
+  "description": "A complete pattern of legato footsteps."
+ },
+ {
+  "name": "Minor Bell Steps",
+  "category": "Players",
+  "description": "A complete pattern of minor bell steps."
+ },
+ {
+  "name": "Offbeat Stabs",
+  "category": "Players",
+  "description": "A complete pattern of offbeat stabs."
+ },
+ {
+  "name": "Repeated Fifths",
+  "category": "Players",
+  "description": "A complete pattern of repeated fifths."
+ },
+ {
+  "name": "Wide Lydian Strums",
+  "category": "Players",
+  "description": "A complete pattern of wide lydian strums."
+ }
+]

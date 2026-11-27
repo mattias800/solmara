@@ -1,0 +1,51 @@
+---
+title: "Drip Spring"
+description: "Spring reverb in the style of the early-1960s American outboard tanks: drip and boing for surf guitar and dub."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/drip-spring.webp';
+
+**An emulation of an analogue original,** modelled on the early-1960s American outboard spring reverb tank of surf guitar.
+
+A spring reverb tank of the kind built into guitar amplifiers and sold as studio units, modelled as its springs: two or three long coil springs, each driven at one end and heard at the other, each a bank of modes of one kind of wave whose speed falls as its pitch rises, so a hit comes out as a chirp, lows first, and comes back as a longer one each time it has been to the far end and back: the drip and the boing of surf guitar. Dwell drives the valve amplifier that drives the tank, and a loud transient overdrives it into a crash; tone is a shelf on what comes back. Decay, a short or a long tank, two or three springs panned across the sides, pre-delay, width, mix, and output. No latency.
+
+[Drip Spring on the website](/solmara/effects/#drip-spring)
+
+## In the device chain
+
+Drip Spring on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Drip Spring in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Drip Spring. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Crashing Tank**: The dwell all but full: the drive amplifier clips on every loud note and the tank crashes and splashes, as when an amplifier is kicked. For a dramatic hit, or to automate up for one bar.
+- **Dub Spring**: A long, dark tank held back 60 ms, all wet, for a return track: send a snare or a skank chord to it in bursts and let it boing.
+- **Keys Spring**: Three springs, wide and a little bright, at a moderate dwell: an electric piano or an organ in a room of coils.
+- **Short Tank Slap**: The short tank with two springs and a short decay: a tight, metallic bounce behind a snare or a percussive part.
+- **Studio Spring Send**: The long tank alone with the dwell at its middle, for a return track: the springs as a studio unit was used, clean unless a loud hit drives it.
+- **Subtle Amp Spring**: The short tank turned low behind a clean or crunchy amplifier, as most amplifiers' reverb knob is left: a little space and a little bounce, not heard as an effect.
+- **Surf Drip**: The long tank with three springs, the dwell well up and the tone bright: every picked note drips and a hard one crashes the springs. For surf and twang guitar, on the amplifier's clean channel.
+- **Vocal Spring**: Two springs, darker, held back 25 ms so the words come first: the boxy, bouncing reverb of 1960s records behind a voice.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Dwell | 0 to 10 | 5 |
+| Tone | 0 to 10 | 5 |
+| Decay | 0.5 s to 6 s | 2.5 s |
+| Pre-delay | 0 ms to 250 ms | 0 ms |
+| Width | 0% to 100% | 70% |
+| Mix | 0% to 100% | 30% |
+| Output | -24 dB to 24 dB | 0 dB |
+| Tank | Short, Long | Long |
+| Springs | Two, Three | Three |

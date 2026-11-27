@@ -1,0 +1,65 @@
+---
+title: "1976 Digital Reverb"
+description: "The first digital reverb: a dense, smooth, dark tail for vocals, drums and keys."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/1976-digital-reverb.webp';
+
+**An emulation of a digital original,** modelled on the first commercial digital reverb, of the mid-1970s.
+
+The first digital reverb, of the mid-1970s, modelled as its algorithm: a long loop of memory with many taps between converters of a short word with gain ranging, at a low sample rate behind steep filters, so the tail is dense, smooth, and dark above 11 kHz. A time of 0.4 to 4.5 s, with the lows and the highs at multiples of it, and pre-delay; beside the reverb, its programs of two delays, phasing, chorus, echo, and a long space. The converters' hiss, mix, and output. Edits never stop the tail.
+
+[1976 Digital Reverb on the website](/solmara/effects/#1976-digital-reverb)
+
+## In the device chain
+
+1976 Digital Reverb on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="1976 Digital Reverb in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+10 factory presets come with 1976 Digital Reverb. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Delay
+
+- **Falling Echo**: The echo program every 235 ms, the high lever at half so each repeat is 2.5 dB under the last, turned over.
+- **Wide Slap**: The delay program: 80 ms on the left and 120 on the right, each a single repeat, widening a vocal or a guitar.
+
+### Modulation
+
+- **Four Voice Chorus**: The chorus program's third mode: two delays a side wandering at random, a thick, wide doubling.
+- **Lever Phasing**: The phasing program at 3.2 ms: a short delay against a fixed one, a comb of notches that the lever moves when it is turned or automated.
+
+### Reverb
+
+- **As It Starts**: The unit as it is switched on: 2.8 seconds, the lows as long as the middle, the highs at half, 40 ms before it. The dense, smooth, dark tail of 1970s and 1980s records, for vocals, strings, and a mix's send.
+- **Dark Cathedral**: The longest time with the lows doubled and the highs at a quarter: a deep, dark tail for pads and slow parts.
+- **Endless Space**: The space program: some ten seconds at every frequency, as bright as the converters allow. A wash under a drone or a pad.
+- **Small Room**: Under a second, the highs at half: a small, dark room around drums or a guitar that does not wash them.
+- **Snare Bloom**: A short, dense burst for a snare: 1.2 seconds with the lows doubled and the highs at a third, no gap.
+- **Vocal Tail**: Two seconds with the highs open to the converters' edge and 20 ms before it, so a voice stays in front of its tail.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Program | Reverb, Delay, Phase, Chorus, Echo, Space | Reverb |
+| Time | 0.4 s to 4.5 s | 2.8 s |
+| Low | x0.5, x1.0, x1.5, x2.0 | x1.0 |
+| High | x0.25, x0.33, x0.5, Max | x0.5 |
+| Pre-delay | 0 ms to 60 ms | 40 ms |
+| Left delay | 0 ms to 315 ms | 0 ms |
+| Right delay | 0 ms to 315 ms | 0 ms |
+| Phase | 0 ms to 15 ms | 0 ms |
+| Chorus | I, II, III, IV | I |
+| Echo | 0 ms to 315 ms | 0 ms |
+| Noise | Off, On | Off |
+| Mix | 0% to 100% | 30% |
+| Output | -24 dB to 24 dB | 0 dB |

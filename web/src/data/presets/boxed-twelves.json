@@ -1,0 +1,97 @@
+[
+ {
+  "name": "Chug Cab",
+  "category": "Cabinet",
+  "description": "The cabinet Chug Rig comes with, for any amplifier: a full low end round 200 Hz, a lean middle, and a top that falls away steeply above 4 kHz. Tight, heavy rhythm."
+ },
+ {
+  "name": "Djent Clean Cab",
+  "category": "Cabinet",
+  "description": "Djent Amp's clean cabinet: its warmth in the low middle round 400 Hz rather than in the lows, for clean arpeggios and chords."
+ },
+ {
+  "name": "Djent Lead Cab",
+  "category": "Cabinet",
+  "description": "Djent Amp's lead cabinet: full lows round 190 Hz, a lean 1 kHz, and a smooth top, for singing leads."
+ },
+ {
+  "name": "Djent Rhythm Cab",
+  "category": "Cabinet",
+  "description": "Djent Amp's rhythm cabinet: lows round 135 Hz, less at 500 Hz, and an open 2 to 3 kHz: tight, articulate rhythm on extended-range guitars."
+ },
+ {
+  "name": "Flipside 1x15",
+  "category": "Cabinet",
+  "description": "Flipside Bass Combo's fifteen in its sealed box: round lows near 100 Hz, an even middle, and almost no top: the old studio bass sound."
+ },
+ {
+  "name": "Forward",
+  "category": "Cabinet",
+  "description": "The forward 4x12: a closed box of four twelves with a microphone close to a cone, its upper middle forward and its top falling away above 5 kHz. It cuts through a band."
+ },
+ {
+  "name": "Forward, Cap",
+  "category": "Cabinet",
+  "description": "The forward 4x12 with the microphone toward the cone's centre: the top falls off higher, and more of 4 to 6 kHz comes through. For a dark amplifier, or a lead that has to be heard."
+ },
+ {
+  "name": "Forward, Edge",
+  "category": "Cabinet",
+  "description": "The forward 4x12 with the microphone toward the cone's edge: the top falls off sooner, and the fizz of a high gain goes with it."
+ },
+ {
+  "name": "Forward, Tight",
+  "category": "Cabinet",
+  "description": "The forward 4x12 as a smaller, damped box with a low cut at 90 Hz: less boom under fast, muted playing, and room left for a bass."
+ },
+ {
+  "name": "Halfglow 8x10",
+  "category": "Cabinet",
+  "description": "Halfglow Bass Head's eight tens: lows round 150 Hz and a dip from 1 to 2 kHz."
+ },
+ {
+  "name": "Icebox 8x10",
+  "category": "Cabinet",
+  "description": "Icebox Bass Stack's eight tens: deep lows round 90 Hz, less at 1 kHz, and more top than the other cabinets, for a bass that growls."
+ },
+ {
+  "name": "Leviathan Clean Cab",
+  "category": "Cabinet",
+  "description": "The cabinet Leviathan Rig's clean amp comes with: a gentle bump round 240 Hz and a top that stays open longer than most, for clean and edge-of-break-up guitar."
+ },
+ {
+  "name": "Leviathan Hot Cab",
+  "category": "Cabinet",
+  "description": "The cabinet Leviathan Rig's high-gain amp comes with: full lows round 180 Hz, an even middle, and presence round 3.5 kHz."
+ },
+ {
+  "name": "Leviathan Rust Cab",
+  "category": "Cabinet",
+  "description": "The cabinet Leviathan Rig's crunch amp comes with: firm lows round 190 Hz and a lean middle."
+ },
+ {
+  "name": "Thick",
+  "category": "Cabinet",
+  "description": "The thick 4x12: more from 150 to 400 Hz and less from 1 to 2 kHz than the forward one, and a top that falls off sooner. Heavy chords sound large through it."
+ },
+ {
+  "name": "Thick, Big Box",
+  "category": "Cabinet",
+  "description": "The thick 4x12 as a larger box that rings more at its resonance: the lows reach further down and bloom. For slow, heavy playing with nothing else in the low end."
+ },
+ {
+  "name": "Thick, Cap",
+  "category": "Cabinet",
+  "description": "The thick 4x12 with the microphone toward the cone's centre, which gives its dark top some of its edge back."
+ },
+ {
+  "name": "Thick, In a Mix",
+  "category": "Cabinet",
+  "description": "The thick 4x12 with a low cut at 100 Hz and a high cut at 9 kHz, and the microphone a little toward the centre: what two rhythm guitars need of it beside a bass and cymbals."
+ },
+ {
+  "name": "Untitled Cab",
+  "category": "Cabinet",
+  "description": "The cabinet Untitled Amp comes with: lows round 170 Hz, an even middle, and a top that falls away above 4 kHz."
+ }
+]

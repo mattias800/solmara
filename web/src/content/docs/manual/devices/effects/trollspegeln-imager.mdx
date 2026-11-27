@@ -1,0 +1,57 @@
+---
+title: "Trollspegeln Imager"
+description: "Stereo imager: width by band, the lows in mono."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/trollspegeln-imager.webp';
+
+**A design of Solmara's own.**
+
+A stereo imager for the master and for buses, the mastering family's: how wide each of four bands is, from mono through as it came to its side doubled, split where the crossover splits so at every width 1 it changes nothing; and the lows folded to mono below a frequency, as a master's should be.
+
+[Trollspegeln Imager on the website](/solmara/effects/#trollspegeln-imager)
+
+## In the device chain
+
+Trollspegeln Imager on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Trollspegeln Imager in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Trollspegeln Imager. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Bus
+
+- **Drum Bus Image**: The kick and the snare kept in the middle, the cymbals and the room as wide as the overheads gave them, a little wider at the top.
+- **Narrow Guitars**: A pair of guitars drawn in so they leave room at the edges for the rest, their top left as it was.
+- **Stereo Repair**: For a recording whose lows go out of phase between the sides: below 250 Hz made mono, the rest a little narrower.
+- **Wide Pads**: Pads and keys spread wide above the low middle, their lows kept narrow so they do not muddy the middle.
+
+### Mastering
+
+- **Focused Middle**: The low middle drawn in toward the middle, where the voice and the snare live, and the top left wide: more focus, the same space.
+- **Mono Check**: Everything mono, for listening to how a mix holds up on one speaker; switch it off again before export.
+- **Mono Lows**: What every master wants and nothing else: the lows in mono below 120 Hz, so a kick and a bass sit in the middle and a club's system and a vinyl cut take them, everything above as it came.
+- **Wider Top**: The top opened a little and the upper middle a touch, the lows mono: a master that breathes wider without its middle going hollow.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Low split | 20 Hz to 1000 Hz | 200 Hz |
+| Middle split | 200 Hz to 8000 Hz | 2000 Hz |
+| High split | 1000 Hz to 16000 Hz | 8000 Hz |
+| Low width | 0 to 2 | 1 |
+| Low mid width | 0 to 2 | 1 |
+| High mid width | 0 to 2 | 1 |
+| High width | 0 to 2 | 1 |
+| Mono below | Off, On | On |
+| Mono below | 20 Hz to 500 Hz | 120 Hz |
+| Output | -24 dB to 24 dB | 0 dB |

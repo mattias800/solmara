@@ -1,0 +1,54 @@
+---
+title: "Punch Bus Compressor"
+description: "RMS bus compressor in the style of the 2000s American discrete units: punchy glue for the mix and drum buses."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/punch-bus-compressor.webp';
+
+**An emulation of an analogue original,** modelled on the 2000s American discrete stereo bus compressor, its knee and its detector switchable.
+
+A modelled stereo bus compressor of discrete op-amps, VCAs and an output transformer, for a mix bus or a drum bus: an RMS detector in each channel, ratios of 1.5 to infinity to 1, attacks of 0.03 to 30 ms, releases of 0.05 to 2 s on a switch or a variable one, three knees, a weighting in the detector that hears the low end less and the top more for a punchier sound, feed-forward or feedback, and a link between the two channels by a share from independent to 100 % through a filter. Modelled on the American bus compressors of the late 1990s and 2000s.
+
+[Punch Bus Compressor on the website](/solmara/effects/#punch-bus-compressor)
+
+## In the device chain
+
+Punch Bus Compressor on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Punch Bus Compressor in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+6 factory presets come with Punch Bus Compressor. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Drum Bus, Old School**: Old: the detector hears the VCA's output, as the older units did, so 10 to 1 behaves like some 2 to 1 and the release breathes. Thick, smooth drums.
+- **Drum Bus, Slam**: 4 to 1, 10 ms to let each hit's front through and a 0.1 s release that pumps with the beat, with the Loud weighting so the kick does not duck the cymbals. Blend it back with the mix for parallel slam.
+- **Mix, Glue**: 2 to 1 with a soft knee, the slowest attack and a half-second release, both channels linked: a mix held together by a dB or two. Turn the threshold down until the meter moves 1 to 3 dB.
+- **Mix, Punch**: 3 to 1, medium knee and the Loud weighting: the detector hears the low end less and the top more, so the kick and the bass pass with their weight while the mix is held together. The maker's own "little more punch".
+- **Parallel Smash**: Infinity to 1 at the fastest attack and release, half wet: the room and the sustain jump up between the hits under the untouched drums.
+- **Stereo Keys, Wide**: 4 to 1 with the link at 50 % through its high-pass: each side keeps its own level, only sudden peaks pull the other side down, so a wide stereo source stays wide.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Threshold | -20 dB to 10 dB | -5 dB |
+| Ratio | 1.5:1, 2:1, 3:1, 4:1, 6:1, 10:1, Inf:1 | 4:1 |
+| Attack | 0.03 ms, 0.1 ms, 0.3 ms, 1 ms, 3 ms, 10 ms, 30 ms | 1 ms |
+| Release | 0.05 s, 0.1 s, 0.2 s, 0.5 s, 1 s, 2 s, Variable | 0.5 s |
+| Variable release | 0.05 s to 3 s | 0.5 s |
+| Knee | Hard, Medium, Soft | Medium |
+| Punch | Normal, Medium, Loud | Normal |
+| Type | New (feed-forward), Old (feedback) | New (feed-forward) |
+| Link | Independent, 50%, 60%, 70%, 80%, 90%, 100% | 50% |
+| Link filter | Off, Low-pass, High-pass, Band-pass | Off |
+| Make-up | Manual, Auto | Manual |
+| Gain | 0 dB to 22 dB | 0 dB |
+| Mix | 0% to 100% | 100% |
+| In | Out, In | In |

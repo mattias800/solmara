@@ -1,0 +1,37 @@
+[
+ {
+  "name": "Chorale",
+  "category": "Modulation",
+  "description": "The cabinet turning slowly: the horn at 0.8 Hz and the drum a little slower, the microphones apart."
+ },
+ {
+  "name": "Guitar Swirl",
+  "category": "Modulation",
+  "description": "Slow, mixed with the dry signal and close-miked for a guitar or an electric piano."
+ },
+ {
+  "name": "Mono Close",
+  "category": "Modulation",
+  "description": "One microphone close to the cabinet: the swirl as level and pitch, with no stereo."
+ },
+ {
+  "name": "Overdriven Cabinet",
+  "category": "Modulation",
+  "description": "The amplifier driven hard and the horn up a little, fast: the cabinet a rock organist leans on."
+ },
+ {
+  "name": "Stopped",
+  "category": "Modulation",
+  "description": "The rotors held still: the cabinet's colour and its walls, and no swirl until the speed is switched."
+ },
+ {
+  "name": "Tremolo",
+  "category": "Modulation",
+  "description": "The cabinet at speed: the horn near 7 Hz and the drum close behind."
+ },
+ {
+  "name": "Wide Chorale",
+  "category": "Modulation",
+  "description": "The cabinet turning slowly with the drum on one close microphone, and the microphones set wide: the drum still heard in stereo beside the horn."
+ }
+]

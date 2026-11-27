@@ -1,0 +1,52 @@
+[
+ {
+  "name": "Falling Echo",
+  "category": "Delay",
+  "description": "The echo program every 235 ms, the high lever at half so each repeat is 2.5 dB under the last, turned over."
+ },
+ {
+  "name": "Wide Slap",
+  "category": "Delay",
+  "description": "The delay program: 80 ms on the left and 120 on the right, each a single repeat, widening a vocal or a guitar."
+ },
+ {
+  "name": "Four Voice Chorus",
+  "category": "Modulation",
+  "description": "The chorus program's third mode: two delays a side wandering at random, a thick, wide doubling."
+ },
+ {
+  "name": "Lever Phasing",
+  "category": "Modulation",
+  "description": "The phasing program at 3.2 ms: a short delay against a fixed one, a comb of notches that the lever moves when it is turned or automated."
+ },
+ {
+  "name": "As It Starts",
+  "category": "Reverb",
+  "description": "The unit as it is switched on: 2.8 seconds, the lows as long as the middle, the highs at half, 40 ms before it. The dense, smooth, dark tail of 1970s and 1980s records, for vocals, strings, and a mix's send."
+ },
+ {
+  "name": "Dark Cathedral",
+  "category": "Reverb",
+  "description": "The longest time with the lows doubled and the highs at a quarter: a deep, dark tail for pads and slow parts."
+ },
+ {
+  "name": "Endless Space",
+  "category": "Reverb",
+  "description": "The space program: some ten seconds at every frequency, as bright as the converters allow. A wash under a drone or a pad."
+ },
+ {
+  "name": "Small Room",
+  "category": "Reverb",
+  "description": "Under a second, the highs at half: a small, dark room around drums or a guitar that does not wash them."
+ },
+ {
+  "name": "Snare Bloom",
+  "category": "Reverb",
+  "description": "A short, dense burst for a snare: 1.2 seconds with the lows doubled and the highs at a third, no gap."
+ },
+ {
+  "name": "Vocal Tail",
+  "category": "Reverb",
+  "description": "Two seconds with the highs open to the converters' edge and 20 ms before it, so a voice stays in front of its tail."
+ }
+]

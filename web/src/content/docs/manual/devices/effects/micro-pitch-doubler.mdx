@@ -1,0 +1,35 @@
+---
+title: "Micro Pitch Doubler"
+description: "Pitch-shift doubler in the style of the 1980s studio rack harmonisers: wide, still doubling for vocals, guitars, and synths."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/micro-pitch-doubler.webp';
+
+**An emulation of a digital original,** modelled on the micro-pitch doubling of the 1980s studio rack harmonisers.
+
+A modelled studio micro-shift doubler, for lead and backing vocals, guitars, synths, and whole mixes: two pitch shifters a few cents up and a few cents down, each with a short delay of its own, one on each side, so that a sound is heard twice, a little apart in pitch and time, wide and still, without the wobble of a chorus. Three styles: I and II after the late-1980s American rack harmoniser's two micro-shift programs, I the grainier, III after the British rack pitch changer of the late 1970s, with longer delays and a harder splice. Detune and Delay scale the style's own shift and delays; Focus keeps the lows below it in the middle, unshifted.
+
+[Micro Pitch Doubler on the website](/solmara/effects/#micro-pitch-doubler)
+
+## In the device chain
+
+Micro Pitch Doubler on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Micro Pitch Doubler in a track's device chain, as it starts." /></a>
+
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Style | I, II, III | I |
+| Detune | 50% to 200% | 100% |
+| Delay | 50% to 200% | 100% |
+| Focus | 20 Hz to 10000 Hz | 20 Hz |
+| Mix | 0% to 100% | 100% |
+| Input | -12 dB to 12 dB | 0 dB |

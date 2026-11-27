@@ -1,0 +1,76 @@
+---
+title: "Anchor Arpeggiator"
+description: "Anchor Arpeggiator"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/anchor-arpeggiator.webp';
+
+A MIDI device: an arpeggio of two parts, an anchor that plays one to three of the chord's notes in a sparse, repeating rhythm, and a movement that runs through the others between them in one of forty shapes, as thick as its density says, with rhythm and octave modifiers chosen by a seed.
+
+[Anchor Arpeggiator on the website](/solmara/write/#anchor-arpeggiator)
+
+## In the device chain
+
+Anchor Arpeggiator on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Anchor Arpeggiator in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Anchor Arpeggiator. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dusk Two Hands**: Alternating low notes under a sparse upper movement.
+- **Hearth Picking**: A quarter-note bass under a gentle broken chord.
+- **Quiet Spaces**: A slow, sparse accompaniment with space for a melody.
+- **Rolling Glass**: Rolling upper notes above a held bass.
+- **Shuffled Guitar**: A shuffled picking figure with a quiet movement.
+- **Skipping Stones**: Syncopated anchor, broken thirds and light humanizing.
+- **Trill and Root**: A low root with short rising trills between its beats.
+- **Wide Pendulum**: A long movement over a sparse low pulse.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Hold | Off, On | Off |
+| Hold mode | Hold All, Latch, Chord, Toggle | Latch |
+| Clear | 0 to 9999 | 0 |
+| Play mode | Retrig, Sync to Song | Retrig |
+| Shuffle | 50% to 75% | 50% |
+| Rate | 11 choices: 1/64, 1/32, 1/16T, 1/16, … | 1/16 |
+| Steps | 4 to 64 | 16 |
+| Anchor | Off, On | On |
+| Anchor pattern | 0 to 64 | 1 |
+| Anchor length | 10% to 410% | 100% |
+| Anchor velocity mode | Offset, Fixed | Offset |
+| Anchor velocity offset | -127 to 127 | 0 |
+| Anchor fixed velocity | 1 to 127 | 100 |
+| Anchor octave | -2 oct to 2 oct | 0 oct |
+| Movement | Off, On | On |
+| Shape | 1 to 40 | 1 |
+| Density | 0% to 100% | 100% |
+| Shift rhythm | -16 to 16 | 0 |
+| Movement length | 10% to 410% | 75% |
+| Movement velocity mode | Offset, Fixed | Offset |
+| Movement velocity offset | -127 to 127 | 0 |
+| Movement fixed velocity | 1 to 127 | 100 |
+| Movement octave | -2 oct to 2 oct | 0 oct |
+| Humanize | 0% to 100% | 0% |
+| Rhythm modifier | Off, On | Off |
+| Rhythm function | Mute, Mute or Double, Double, Double or Triple, Triple, Triple or Quad, Quad | Double |
+| Doubled steps | Repeat, Arpeggiate | Repeat |
+| Rhythm amount | 0% to 100% | 25% |
+| Rhythm movement only | Off, On | Off |
+| Rhythm seed | 0 to 9999 | 1 |
+| Octave modifier | Off, On | Off |
+| Octave function | -2, -2 or -1, -1, -1 or +1, +1, +1 or +2, +2 | +1 |
+| Octave amount | 0% to 100% | 25% |
+| Octave movement only | Off, On | Off |
+| Octave seed | 0 to 9999 | 1 |
+| Shuffle source | Local, Global | Local |

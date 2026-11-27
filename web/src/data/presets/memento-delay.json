@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Chorused Echo",
+  "category": "Delay",
+  "description": "A medium echo with the chorus swinging the clock, so every repeat wavers in pitch: the pedal's best-known sound."
+ },
+ {
+  "name": "Dark Repeats",
+  "category": "Delay",
+  "description": "Some 300 ms and several repeats, each darker than the last, under a lead."
+ },
+ {
+  "name": "Long Wash",
+  "category": "Delay",
+  "description": "The long line at some 700 ms, dark and smeared, with a slow chorus: a wash behind chords."
+ },
+ {
+  "name": "Self-Oscillation",
+  "category": "Delay",
+  "description": "The feedback past where the repeats die away: they grow until the line clips them, and the delay knob bends them in pitch as it turns."
+ },
+ {
+  "name": "Slapback",
+  "category": "Delay",
+  "description": "The shortest delay, one repeat and a little more, under the dry signal: the slap of the rockabilly records."
+ },
+ {
+  "name": "Vibrato",
+  "category": "Modulation",
+  "description": "The echo alone at the shortest delay, the vibrato fast and deep: the pitch wobbles and nothing repeats."
+ }
+]

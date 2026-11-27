@@ -1,0 +1,237 @@
+[
+ {
+  "name": "Acid Arp",
+  "category": "Arpeggio",
+  "description": "The saw through a filter near singing, each sixteenth plucking it, up and down the chord: an acid arpeggio."
+ },
+ {
+  "name": "Bubble Arp",
+  "category": "Arpeggio",
+  "description": "The square with the sub, through a resonant filter that each step plucks, arpeggiated up and down in sixteenths over the keys held."
+ },
+ {
+  "name": "Down Arp",
+  "category": "Arpeggio",
+  "description": "The square and the sub through a resonant filter, the chord held played down in eighths: a falling arpeggio."
+ },
+ {
+  "name": "Fast Arp",
+  "category": "Arpeggio",
+  "description": "The saw plucked short, the chord held played up in thirty-second notes: a fast, glittering arpeggio."
+ },
+ {
+  "name": "Soft Arp",
+  "category": "Arpeggio",
+  "description": "A wide pulse through a dark filter, soft and round, the chord held played up in sixteenth triplets: a gentle arpeggio."
+ },
+ {
+  "name": "Triplet Arp",
+  "category": "Arpeggio",
+  "description": "A narrow pulse two octaves up from the keys, plucked short, climbing the chord held in eighth-note triplets."
+ },
+ {
+  "name": "Acid Squelch",
+  "category": "Bass",
+  "description": "A bare saw through a resonant filter that the envelope snaps open, gliding under auto portamento into a note struck before the last one is let go, without striking the envelope again: the squelching line the instrument is known for, from a step-pattern clip with slides."
+ },
+ {
+  "name": "Deep Sub",
+  "category": "Bass",
+  "description": "The sub two octaves down under a quiet square, the filter nearly shut: a deep, felt sub."
+ },
+ {
+  "name": "Envelope Width Bass",
+  "category": "Bass",
+  "description": "The pulse's width narrowed by the envelope at each key and widening as it falls: a bass whose tone changes inside every note."
+ },
+ {
+  "name": "Funk Bass",
+  "category": "Bass",
+  "description": "The saw through a resonant filter the envelope sweeps down at each key: a quacking funk bass."
+ },
+ {
+  "name": "Gate Bass",
+  "category": "Bass",
+  "description": "The amplifier by the gate, full while a key is held and shut at once, the filter steady: an organ-like bass with no envelope on its level."
+ },
+ {
+  "name": "Glide Bass",
+  "category": "Bass",
+  "description": "The saw and the sub with portamento always on, so every note slides from the last: a sliding bass."
+ },
+ {
+  "name": "Narrow Sub Bass",
+  "category": "Bass",
+  "description": "The sub-oscillator's narrow pulse under the saw: a nasal, reedy bass."
+ },
+ {
+  "name": "Noise Pick Bass",
+  "category": "Bass",
+  "description": "The saw and the sub with a breath of noise in the strike, the envelope quick: a bass with a pick's click."
+ },
+ {
+  "name": "Pluck Bass",
+  "category": "Bass",
+  "description": "The saw and the sub an octave down through a filter the envelope plucks, a short glide between notes held together: a bass for lines of octaves, rests and slides from a step-pattern clip."
+ },
+ {
+  "name": "PWM Bass",
+  "category": "Bass",
+  "description": "The pulse's width swung by the LFO with the sub under it: a bass that churns as it holds."
+ },
+ {
+  "name": "Rubber Bass",
+  "category": "Bass",
+  "description": "The saw and the square an octave down, the filter popping open with a little resonance at each key and settling: the round, rubbery bass of the instrument."
+ },
+ {
+  "name": "Saw Punch",
+  "category": "Bass",
+  "description": "The saw and the sub, the filter snapped open at each key and falling back fast: a plain, punchy saw bass."
+ },
+ {
+  "name": "Square Bass",
+  "category": "Bass",
+  "description": "The square with the sub an octave down, the filter half shut and lifted a little at each key: a hollow, woody bass."
+ },
+ {
+  "name": "Sub Bass",
+  "category": "Bass",
+  "description": "The square and the sub-oscillator an octave under it, two octaves down, through a filter low enough to round them off: a deep, steady bass that holds as long as the key."
+ },
+ {
+  "name": "Thump Bass",
+  "category": "Bass",
+  "description": "The square and the sub through a nearly closed filter that the envelope flicks once: a short, dark thump."
+ },
+ {
+  "name": "Wobble Bass",
+  "category": "Bass",
+  "description": "The LFO's triangle sweeping the resonant filter a few times a beat: a wobbling bass."
+ },
+ {
+  "name": "Filter Kick",
+  "category": "Drums",
+  "description": "The filter singing at full resonance with a breath of noise, swept down from high by a fast envelope: a kick from the filter alone."
+ },
+ {
+  "name": "Noise Hat",
+  "category": "Drums",
+  "description": "The noise alone through an open filter, gone in a blink: a closed hat."
+ },
+ {
+  "name": "Noise Snare",
+  "category": "Drums",
+  "description": "The noise alone through a half-open filter, struck and fading in a fifth of a second: a snare from the noise source."
+ },
+ {
+  "name": "Sub Tom",
+  "category": "Drums",
+  "description": "The square and the sub through a filter the envelope flicks open, short: a round, tuned tom."
+ },
+ {
+  "name": "Blips",
+  "category": "FX",
+  "description": "A narrow pulse at two feet through a resonant filter, the envelope over in a blink: short blips for sequences and accents."
+ },
+ {
+  "name": "Gated Pulse",
+  "category": "FX",
+  "description": "The envelope struck by the LFO rather than the keys, a short pluck on each of its cycles while a key is held: a pulsing, rhythmic tone."
+ },
+ {
+  "name": "Laser Zap",
+  "category": "FX",
+  "description": "No oscillator at all: the filter singing by itself, swept down from the top by a fast envelope at each key."
+ },
+ {
+  "name": "Noise Sweep",
+  "category": "FX",
+  "description": "The noise through a resonant filter the LFO sweeps slowly up and down: wind."
+ },
+ {
+  "name": "Random Bleeps",
+  "category": "FX",
+  "description": "The LFO's random level steps the pitch and opens the envelope at each of its cycles while a key is held: the burbling computer sound of the instrument's sample and hold."
+ },
+ {
+  "name": "Siren",
+  "category": "FX",
+  "description": "The LFO's triangle swinging the pitch slowly and far: a wailing siren."
+ },
+ {
+  "name": "Glide Lead",
+  "category": "Lead",
+  "description": "The saw and a pulse with portamento always on, a long slide between every note: a lead for slow lines."
+ },
+ {
+  "name": "Octave Lead",
+  "category": "Lead",
+  "description": "The saw at 4' with the sub an octave under it, so every note is doubled: a bright lead in octaves."
+ },
+ {
+  "name": "Pulse Lead",
+  "category": "Lead",
+  "description": "A narrow pulse, the filter open: a thin, reedy lead that cuts."
+ },
+ {
+  "name": "Resonant Lead",
+  "category": "Lead",
+  "description": "The saw through a filter near singing that follows the keys: a lead with a nasal, vocal ring."
+ },
+ {
+  "name": "Saw Lead",
+  "category": "Lead",
+  "description": "The saw alone through an open filter that follows the keys, a little resonance: the plain synth lead."
+ },
+ {
+  "name": "Solo Lead",
+  "category": "Lead",
+  "description": "The saw and a pulse that the LFO widens and narrows, a gentle vibrato, and portamento between keys held together: a singing lead."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "The square with the sub an octave down, a gentle vibrato: a hollow, clarinet-like lead."
+ },
+ {
+  "name": "Trill Lead",
+  "category": "Lead",
+  "description": "The LFO's square on the pitch, up a step and back several times a second: a trilling lead."
+ },
+ {
+  "name": "Wah Lead",
+  "category": "Lead",
+  "description": "The saw through a resonant filter the envelope throws open and lets fall at each note: a lead that says wah."
+ },
+ {
+  "name": "Whistle Lead",
+  "category": "Lead",
+  "description": "No oscillator: the filter singing by itself at full resonance, following the keys, a breath of noise starting it: a pure, whistled line."
+ },
+ {
+  "name": "PWM Pad",
+  "category": "Pad",
+  "description": "The pulse widened and narrowed by a slow LFO with the saw and the sub under it, a slow attack and a long release: as near a pad as one oscillator comes."
+ },
+ {
+  "name": "Slow Pad",
+  "category": "Pad",
+  "description": "The saw, a pulse the LFO widens and the sub, slow in and slow out under a soft filter: a one-voice pad for long notes."
+ },
+ {
+  "name": "Muted Pluck",
+  "category": "Pluck",
+  "description": "The square under a nearly closed filter, flicked open for an instant: a muted, damped pluck."
+ },
+ {
+  "name": "Pluck",
+  "category": "Pluck",
+  "description": "The saw and a pulse, the filter snapped open and falling to nothing: a short, bright pluck."
+ },
+ {
+  "name": "Resonant Pluck",
+  "category": "Pluck",
+  "description": "The saw through a filter near singing, swept down fast at each key: a chirping pluck."
+ }
+]

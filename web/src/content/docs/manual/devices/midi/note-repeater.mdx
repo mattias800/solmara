@@ -1,0 +1,48 @@
+---
+title: "Note Repeater"
+description: "Note Repeater"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/note-repeater.webp';
+
+A MIDI device: repeats each note, as a delay repeats sound, up to sixteen times, each repeat a step later, moved in pitch from the one before and louder or softer. With no time between them the repeats stack into chords.
+
+[Note Repeater on the website](/solmara/write/#note-repeater)
+
+## In the device chain
+
+Note Repeater on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Note Repeater in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+10 factory presets come with Note Repeater. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Dotted Answers**: Two dotted-eighth answers, each a fifth higher.
+- **Falling Octaves**: Three eighth-note echoes falling an octave each time.
+- **Major Seventh**: A close major seventh on every key.
+- **Minor Ninth**: A parallel minor ninth: root, minor third, fifth, seventh and ninth.
+- **Open Fifths**: Root, fifth and octave, leaving room for a melody's thirds.
+- **Quiet Sixteenths**: Four soft sixteenth echoes behind short keys.
+- **Rising Minor Strum**: A minor seventh strummed gently from low to high.
+- **Suspended Seconds**: A stack of seconds and fifths, without a third.
+- **Suspended Strum**: An open suspended chord spread across a short strum.
+- **Triplet Climb**: Triplet echoes climbing in minor thirds.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Tempo sync | Off, On | On |
+| Step | 16 choices: 1/128, 1/64T, 1/64, 1/32T, … | 1/8 |
+| Step time | 0 ms to 1000 ms | 250 ms |
+| Repeats | 1 to 16 | 3 |
+| Velocity | 10% to 200% | 70% |
+| Pitch | -12 st to 12 st | 0 st |

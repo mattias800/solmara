@@ -1,0 +1,42 @@
+---
+title: "Squash Compressor"
+description: "OTA compressor pedal in the style of the 1970s American squash boxes: even picking, long sustain, squashed clean attacks."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/squash-compressor.webp';
+
+**An emulation of an analogue original,** modelled on the 1970s American OTA compressor pedal.
+
+A compressor pedal for guitar: a transconductance gain cell whose gain a detector of its own output pulls down, fast to clamp and slow to let go. It evens out picking, lifts a fading note into a long sustain, and squashes the attack of a clean funk or country part. Sustain, volume, and an output. Modelled on the orange and red compressor pedals of the 1970s.
+
+[Squash Compressor on the website](/solmara/guitar/#squash-compressor)
+
+## In the device chain
+
+Squash Compressor on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Squash Compressor in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+5 factory presets come with Squash Compressor. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Before the Fuzz**: Squashed hard and a little loud, to feed a fuzz or a drive after it a steady level.
+- **Country Squash**: The sustain past half: every pick evened out, the attacks flattened, for clean chicken picking.
+- **Endless Sustain**: Full sustain: a held note lifted as it fades, for clean leads and swells.
+- **Funk Rhythm**: A moderate squash that keeps sixteenth-note strums level and snappy.
+- **Gentle Leveller**: The sustain low: a light hand on the loudest notes, always on.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Sustain | 0 to 100 | 50 |
+| Volume | 0 to 100 | 50 |
+| Output | -24 dB to 24 dB | 0 dB |

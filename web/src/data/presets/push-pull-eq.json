@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Acoustic Guitar, Sparkle",
+  "category": "EQ",
+  "description": "A peak at 8 kHz for the strings, and less of the body under it."
+ },
+ {
+  "name": "Bass, Round Bottom",
+  "category": "EQ",
+  "description": "Boost and cut at once at 100 Hz, which fills a bass out and clears the low mids, with the top taken down a little."
+ },
+ {
+  "name": "Dark and Warm",
+  "category": "EQ",
+  "description": "The high cut from 10 kHz and a little more below: takes the edge off something bright or thin."
+ },
+ {
+  "name": "Kick, Lift and Dip",
+  "category": "EQ",
+  "description": "The low boost and cut at once at 60 Hz: weight under the kick, a dip above it, and a little click at 4 kHz."
+ },
+ {
+  "name": "Master, Both Ends",
+  "category": "EQ",
+  "description": "A little more at the very bottom and the very top, and the middle left alone."
+ },
+ {
+  "name": "Mix, Broad Top",
+  "category": "EQ",
+  "description": "The widest peak at 10 kHz, a couple of dB: a whole mix a little brighter, with no edge to it."
+ },
+ {
+  "name": "Sub Weight",
+  "category": "EQ",
+  "description": "Boost and cut at once at 30 Hz: the very bottom lifted, and what lies just above it held back."
+ },
+ {
+  "name": "Vocal, Air",
+  "category": "EQ",
+  "description": "A broad lift at 12 kHz that opens a voice up, with the lows eased off."
+ }
+]

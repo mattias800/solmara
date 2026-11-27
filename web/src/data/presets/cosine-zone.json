@@ -1,0 +1,317 @@
+[
+ {
+  "name": "Deep Sub",
+  "category": "Bass",
+  "description": "A cosine with only a click of the saw at each key, doubled in phase for weight, short to let go: a deep, clean sub bass."
+ },
+ {
+  "name": "Fretless Bass",
+  "category": "Bass",
+  "description": "The saw-pulse with its bend rising a moment after each note, the singing 'mwah' of a fretless string, gliding between notes, a slow, late vibrato on the long ones."
+ },
+ {
+  "name": "Phase Bass",
+  "category": "Bass",
+  "description": "The saw doubled, its bend struck nearly wide open and falling in a blink to a dark, round body, the bend smaller up the keys: the instrument's own classic bass, a filter-like pluck with no filter."
+ },
+ {
+  "name": "Pulse Bass",
+  "category": "Bass",
+  "description": "Line 1's pulse and its copy an octave down, the bend opening and settling: a solid, woody bass."
+ },
+ {
+  "name": "Reso Bass",
+  "category": "Bass",
+  "description": "The first resonance wave doubled, its peak dropped through the partials at each key: a resonant, squelching bass."
+ },
+ {
+  "name": "Rolling Bass",
+  "category": "Bass",
+  "description": "After MusicRadar's walkthrough of a dark, detuned bass on a software copy of the instrument: a pulse and a double sine in turn on line 1 (an octave under the key) under line 2's square, both bent only a little, a click of pitch at each key, a fast, shallow vibrato and a glide. The waves, the bend, the pitch's click, the vibrato and the glide are the walkthrough's; the detune is half its 63 cents, so that the pair stays in tune."
+ },
+ {
+  "name": "Slap Bass",
+  "category": "Bass",
+  "description": "After Phil South's slap bass in Sound On Sound's 1987 programmer's guide (part 2): the double sine on line 1 with line 2 three octaves, ten notes and 54 fine steps up, on its fifteenth harmonic, ringing against it, so the slap's bright, odd partials fall on the harmonics. The detune and ring are the article's; the envelopes, which it only describes, are estimated: a short pop over a body that holds."
+ },
+ {
+  "name": "Squelch Bass",
+  "category": "Bass",
+  "description": "The second resonance wave doubled, its peak struck high and dropped twice in quick succession, a double squelch at each key, gliding between notes: a rubbery acid line."
+ },
+ {
+  "name": "Wah Bass",
+  "category": "Bass",
+  "description": "The third resonance wave, its peak swept up and back down at each key: a vocal, wah-like bass."
+ },
+ {
+  "name": "Digital Bell",
+  "category": "Bell",
+  "description": "The double sine on line 1 and a cosine two octaves and a fifth up on line 2, both struck and ringing long: a clean, digital bell."
+ },
+ {
+  "name": "Gong",
+  "category": "Bell",
+  "description": "Line 2 a tritone and a few cents over line 1 rings against it, and line 1's bend blooms open after the strike before it fades, as a gong's shimmer swells after the hit: a low, long gong."
+ },
+ {
+  "name": "Music Box",
+  "category": "Bell",
+  "description": "A cosine with a glint of the saw at the pluck, line 2 three octaves up gone in a moment, each note short and ringing a little, high up: a music box's comb."
+ },
+ {
+  "name": "Ring Bell",
+  "category": "Bell",
+  "description": "Line 2 an octave and a fifth over line 1 ringing against it, both cosines barely bent, struck and left to fade: a metallic, ringing bell."
+ },
+ {
+  "name": "Tubular Chime",
+  "category": "Bell",
+  "description": "Line 2 two octaves and a minor third up rings against a cosine on line 1, so the strike carries partials between the harmonics, as a struck tube's do; they die first, the fundamental rings on: a tubular chime."
+ },
+ {
+  "name": "Brass Section",
+  "category": "Brass",
+  "description": "A saw on line 1 and the saw-pulse an octave down on line 2, each bend swelling at its own pace, a little blat of pitch at each key, the vibrato late: trumpets and trombones together."
+ },
+ {
+  "name": "Brass Stab",
+  "category": "Brass",
+  "description": "Two saws a few cents apart, the bend snapped open and quickly half shut, a hard blat of pitch, gone as soon as the key is: short, punchy brass hits."
+ },
+ {
+  "name": "Saw Brass",
+  "category": "Brass",
+  "description": "Line 1's saw and its copy detuned, the bend swelling open over the attack and settling, a touch of delayed vibrato: a digital brass section."
+ },
+ {
+  "name": "Soft Horns",
+  "category": "Brass",
+  "description": "The saw opened only a third of the way, slowly, swelling in and settling back a little, its copy a few cents off, a gentle vibrato: mellow French horns."
+ },
+ {
+  "name": "Sweep Brass",
+  "category": "Brass",
+  "description": "After Phil South's 1987 programmer's guide in Sound On Sound (part 1), which counts the saw-pulse among the brassiest waves: that wave, its bend sweeping slowly open over half a second and back down, doubled wide; the sweep and the detune are our own. A slow-swelling eighties synth brass."
+ },
+ {
+  "name": "Laser Drop",
+  "category": "FX",
+  "description": "The second resonance wave's peak held high while the pitch envelope throws each note five octaves up and drops it onto the key in about a tenth of a second: a laser shot."
+ },
+ {
+  "name": "Noise Crash",
+  "category": "FX",
+  "description": "Line 1 silent and line 2 three octaves up, wide open and thrown at random by the noise modulation, struck and fading over a few seconds: a metallic noise crash."
+ },
+ {
+  "name": "Noise Wash",
+  "category": "FX",
+  "description": "Line 2's speed thrown at random by the noise modulation, both lines slow to swell and slow to go: a hissing, wind-like wash."
+ },
+ {
+  "name": "Release Arpeggio",
+  "category": "FX",
+  "description": "The key plays its note; let go, the pitch envelope's steps climb a major third, a fifth and an octave while the note dies away, the top note sagging a little as it fades: each chord ends in a rising arpeggio."
+ },
+ {
+  "name": "Ring Zap",
+  "category": "FX",
+  "description": "Line 2 ringing against line 1, its pitch thrown up by the DCO's envelope and falling: a metallic zap."
+ },
+ {
+  "name": "Step Sequence",
+  "category": "FX",
+  "description": "The second resonance wave with its bend's eight steps used as a sequencer: struck high and falling, again and again, four plucks of the peak at each key before it settles, as if one note played a pattern."
+ },
+ {
+  "name": "Stutter Gate",
+  "category": "FX",
+  "description": "The level's eight steps strike the chord three times, about an eighth note apart at 120 BPM: struck and cut to nearly nothing, struck again and let fall away to nearly nothing, then struck a third time and held: a stuttering, gated chord from one key press."
+ },
+ {
+  "name": "Funk Keys",
+  "category": "Keys",
+  "description": "The narrow pulse snapped wide open and closing at once, the level gone quickly under the key, a quick flick of pitch at the strike: a picked, funky keyboard for short chords."
+ },
+ {
+  "name": "Glass Piano",
+  "category": "Keys",
+  "description": "The double sine on line 1 and its copy a few cents sharp, the bend struck open and falling to a soft glow: a glassy electric piano."
+ },
+ {
+  "name": "Hammer Piano",
+  "category": "Keys",
+  "description": "After Phil South's hammered piano in Sound On Sound's 1987 programmer's guide (part 2): a pulse and a saw in turn on line 1, a square and a saw on line 2, line 1's bend closing fast up the keys and line 2's barely, a hair of detune. The waves, key follows and detune are the article's; its envelopes are drawings, so the sharp peak falling to a long, low sustain is estimated."
+ },
+ {
+  "name": "Reed Keys",
+  "category": "Keys",
+  "description": "The pulse struck with a short, nasal bark that settles to a near-sine, its copy some 20 cents sharp so that the pair beats like a slow tremolo: a reed electric piano."
+ },
+ {
+  "name": "Soft Keys",
+  "category": "Keys",
+  "description": "The square barely bent, struck a little brighter, the level falling slowly under the key: a round, mellow keyboard for comping."
+ },
+ {
+  "name": "Tine Piano",
+  "category": "Keys",
+  "description": "A soft saw body on line 1 and line 2's double sine two octaves up struck hard and gone in a moment: an electric piano with a bright tine at the front."
+ },
+ {
+  "name": "Digital Flute",
+  "category": "Lead",
+  "description": "A near-pure cosine with a chiff of brightness as it speaks, and line 2 two octaves up thrown at random by the noise modulation, held quiet, for the breath; a vibrato after a moment: a breathy flute."
+ },
+ {
+  "name": "Fifth Lead",
+  "category": "Lead",
+  "description": "A square on line 1 and a saw a fifth over it on line 2, both bent half open and gliding together: a parallel-fifths solo line."
+ },
+ {
+  "name": "Saw Lead",
+  "category": "Lead",
+  "description": "The saw nearly wide open and its copy some 15 cents sharp, a bite at the front of each note, gliding, the vibrato late: a bright, fat solo saw."
+ },
+ {
+  "name": "Square Lead",
+  "category": "Lead",
+  "description": "The square half bent, gliding between notes, its vibrato coming in after a moment: a hollow solo voice."
+ },
+ {
+  "name": "Sync Lead",
+  "category": "Lead",
+  "description": "The second resonance wave and its copy detuned, the peak held high, gliding: a sharp lead that sounds like a synced oscillator."
+ },
+ {
+  "name": "Vowel Lead",
+  "category": "Lead",
+  "description": "The first resonance wave, its peak rising from low to high and settling between at each note, a 'wow' like a voice opening its mouth, gliding, the vibrato late: a talking lead."
+ },
+ {
+  "name": "Glass Mallet",
+  "category": "Mallet",
+  "description": "The double sine struck bright and closing at once, the level gone in under a second: a glassy mallet."
+ },
+ {
+  "name": "Marimba",
+  "category": "Mallet",
+  "description": "A cosine on line 1 and line 2 two octaves up, its fourth harmonic as a tuned bar's, gone first, a knock of pitch at the strike: a warm wooden marimba."
+ },
+ {
+  "name": "Steel Drum",
+  "category": "Mallet",
+  "description": "Line 2 an octave over line 1 ringing against it, which puts the 1st and 3rd harmonics around the strike, the saw's bend snapping shut: a bright steel pan."
+ },
+ {
+  "name": "Vibes",
+  "category": "Mallet",
+  "description": "A cosine struck with a little brightness, its copy some 7 cents sharp so the pair beats like a slow motor, ringing while held and damped when let go: a vibraphone."
+ },
+ {
+  "name": "Click Organ",
+  "category": "Organ",
+  "description": "A cosine-bright organ on line 1, line 2 an octave and a fifth up struck and gone at each key: an organ with its percussion on."
+ },
+ {
+  "name": "Pipe Organ",
+  "category": "Organ",
+  "description": "A bright saw principal on line 1 that speaks with a breath of extra brightness, line 2 a near-pure cosine an octave and a fifth up as a mixture stop, both slow to speak and dying away into the room: a church organ."
+ },
+ {
+  "name": "Reed Organ",
+  "category": "Organ",
+  "description": "The pulse held half open and nasal, its copy a few cents off so it breathes, swelling in and letting go softly: a pumped reed organ."
+ },
+ {
+  "name": "Square Organ",
+  "category": "Organ",
+  "description": "Line 1's square and line 2's an octave up, both held still and gated: a hollow combo organ."
+ },
+ {
+  "name": "Bell Pad",
+  "category": "Pad",
+  "description": "A warm saw pad on line 1 under line 2's double sine two octaves up, struck at each chord and ringing away while the pad holds: a bell over strings."
+ },
+ {
+  "name": "Breath Pad",
+  "category": "Pad",
+  "description": "A soft square on line 1 and line 2 an octave up thrown at random by the noise modulation, held low under it, so the chord carries a breath of air: an airy, breathy pad."
+ },
+ {
+  "name": "Choir Pad",
+  "category": "Pad",
+  "description": "The third resonance wave with its peak held low, near the fifth harmonic, where it sounds like a sung vowel, its copy some 13 cents sharp, slow in and out with vibrato: a soft 'ooh' choir."
+ },
+ {
+  "name": "Reso Sweep Pad",
+  "category": "Pad",
+  "description": "Both lines on the resonance waves, their peaks rising slowly and falling back over the held chord: a pad whose resonance sweeps through the partials."
+ },
+ {
+  "name": "Step Pad",
+  "category": "Pad",
+  "description": "The double sine's bend and level each climbing and falling through several steps while the chord is held: a pad that pulses and evolves in stages."
+ },
+ {
+  "name": "Vox Pad",
+  "category": "Pad",
+  "description": "The double sine at its resonance-like corner alternating with the cosine an octave down, slow in, with vibrato: a hollow, sung pad."
+ },
+ {
+  "name": "Warm Pad",
+  "category": "Pad",
+  "description": "The saw and its copy apart by a few cents, barely bent, slow in and slower out, with a gentle vibrato: a soft, warm pad."
+ },
+ {
+  "name": "Harp",
+  "category": "Pluck",
+  "description": "A soft saw on line 1, its bend plucked half open and closing slowly, and a cosine an octave up on line 2; both ring a while: a concert harp for arpeggios."
+ },
+ {
+  "name": "Koto",
+  "category": "Pluck",
+  "description": "The saw-pulse struck bright with the pitch falling a semitone onto the note, as a player's press on the string lets go, then a long, thinning ring: a plucked koto string."
+ },
+ {
+  "name": "Reso Pluck",
+  "category": "Pluck",
+  "description": "The second resonance wave, its peak struck high and falling through the partials: a twanging, resonant pluck."
+ },
+ {
+  "name": "Saw Pluck",
+  "category": "Pluck",
+  "description": "Line 1's saw and its copy detuned, the bend snapped open and falling with the level: a bright pluck."
+ },
+ {
+  "name": "Woody Pluck",
+  "category": "Pluck",
+  "description": "After MusicRadar's walkthrough of a classic woody sound on a software copy of the instrument: line 1's squares in both slots with a flick of pitch and a bend gone in some 11 ms, under a mellow square on line 2 that rings a little longer, no sustain anywhere. The waves, the line mode and the step times are the walkthrough's; the levels are estimated."
+ },
+ {
+  "name": "Digital Strings",
+  "category": "Strings",
+  "description": "The saw-pulse wave on line 1 and its copy detuned, half bent, slow in and out, with vibrato: a thin, bright string section."
+ },
+ {
+  "name": "Ensemble Strings",
+  "category": "Strings",
+  "description": "A saw on line 1 and another an octave up on line 2, a few cents off it, both half bent and held still, slow in and out with a light vibrato: a wide string section, violins over violas."
+ },
+ {
+  "name": "Pizzicato",
+  "category": "Strings",
+  "description": "Two saws a little apart, each plucked half open and closing at once, the level gone in a moment: a section's plucked strings."
+ },
+ {
+  "name": "Slow Strings",
+  "category": "Strings",
+  "description": "The saw and its copy apart by some 17 cents, both the level and the bend swelling in over a second and a half and fading as slowly: lush, slow strings for long chords."
+ },
+ {
+  "name": "Solo Cello",
+  "category": "Strings",
+  "description": "The saw with a bite of brightness as the bow digs in, swelling into each note, gliding a little between them, its vibrato coming in after a moment: a solo cello line."
+ }
+]

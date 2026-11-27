@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Drum Bus Peaks",
+  "category": "Bus",
+  "description": "On a drum bus, the tallest hits taken down so the bus can be turned up: a short lookahead, a quick release set by hand, and the channels partly apart so a hit on one side does not pull the other down."
+ },
+ {
+  "name": "Stems Apart",
+  "category": "Bus",
+  "description": "Each channel held by its own peaks, as two limiters: for stems or two microphones on one track, where turning both down for one would be heard."
+ },
+ {
+  "name": "Vocal Bus Even",
+  "category": "Bus",
+  "description": "A vocal bus held level without sounding squeezed: a few dB into Balanced with a slow attack, so the syllables keep their shape and only the loudest lines come down."
+ },
+ {
+  "name": "Club Loud",
+  "category": "Mastering",
+  "description": "For a track played in a club rather than streamed: loud, with the ceiling at -0.3 dBTP and the Loud character holding the level harder and letting go sooner."
+ },
+ {
+  "name": "Push It",
+  "category": "Mastering",
+  "description": "As loud as it goes before it is heard working: Push follows the music closely and lets go at once, with a short lookahead that keeps the attacks' edge. Listen to the kick: past here it flattens."
+ },
+ {
+  "name": "Safety Net",
+  "category": "Mastering",
+  "description": "Changes nothing that is under the ceiling: no gain into it, only the stray peak caught before it passes -1 dBTP. For a master already where it should be, or a bounce that must not clip."
+ },
+ {
+  "name": "Streaming Loud",
+  "category": "Mastering",
+  "description": "A modern master's loudness, some -9 to -10 LUFS from a mix around -14, held under -1 dBTP: Balanced, so the drums keep their hits while the level between them comes up."
+ },
+ {
+  "name": "Transparent Master",
+  "category": "Mastering",
+  "description": "The last thing on a master that should sound as it did: a few dB into Clear, so the level is held over 50 ms and steady tones pass unbent, and nothing past -1 dBTP, where the streaming services' encoders do not clip."
+ }
+]

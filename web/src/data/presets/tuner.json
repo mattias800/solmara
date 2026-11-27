@@ -1,0 +1,17 @@
+[
+ {
+  "name": "A at 432",
+  "category": "Tuner",
+  "description": "A at 432 Hz, for playing along with a recording or an instrument tuned so."
+ },
+ {
+  "name": "Tune Live",
+  "category": "Tuner",
+  "description": "The audio passes as it came, so the tuner can stay on while playing."
+ },
+ {
+  "name": "Tune Silent",
+  "category": "Tuner",
+  "description": "Muted while tuning, against A at 440 Hz, as a tuner pedal on the board."
+ }
+]

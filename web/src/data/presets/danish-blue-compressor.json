@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Bass, Steady",
+  "category": "Dynamics",
+  "description": "Keeps a bass in place: a firmer ratio, slow to take hold and slow to let go."
+ },
+ {
+  "name": "Drum Bus, Fast",
+  "category": "Dynamics",
+  "description": "The fixed timing: quick on each hit and gone before the next."
+ },
+ {
+  "name": "Mix, Fixed and Manual",
+  "category": "Dynamics",
+  "description": "The combined timing: a short peak is let go at once, and a long passage by the release knob."
+ },
+ {
+  "name": "Vocal, Gentle",
+  "category": "Dynamics",
+  "description": "Holds a voice a little, taking hold and letting go at an easy pace."
+ }
+]

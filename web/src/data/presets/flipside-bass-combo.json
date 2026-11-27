@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Bright Sixty-Six",
+  "category": "Amp",
+  "description": "The 1966 channel, thinner in the lows and brighter round 2 kHz: a clearer note for a pick or a busy line."
+ },
+ {
+  "name": "Pushed Combo",
+  "category": "Amp",
+  "description": "The volume up past 80: the small power stage squashes and sags on the low notes, a soft, warm grind."
+ },
+ {
+  "name": "Quiet Jack",
+  "category": "Amp",
+  "description": "The second, quieter jack with the volume up: clean headroom for a hot active bass."
+ },
+ {
+  "name": "Soul Thump",
+  "category": "Amp",
+  "description": "The bass up and the treble down, a little louder: a thick, short thump for fingers and flatwounds."
+ },
+ {
+  "name": "Studio Round",
+  "category": "Amp",
+  "description": "The 1964 channel with the volume low and the knobs near noon: round and warm, the studio bass of the 1960s."
+ }
+]

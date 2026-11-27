@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Dusk Two Hands",
+  "category": "Players",
+  "description": "Alternating low notes under a sparse upper movement."
+ },
+ {
+  "name": "Hearth Picking",
+  "category": "Players",
+  "description": "A quarter-note bass under a gentle broken chord."
+ },
+ {
+  "name": "Quiet Spaces",
+  "category": "Players",
+  "description": "A slow, sparse accompaniment with space for a melody."
+ },
+ {
+  "name": "Rolling Glass",
+  "category": "Players",
+  "description": "Rolling upper notes above a held bass."
+ },
+ {
+  "name": "Shuffled Guitar",
+  "category": "Players",
+  "description": "A shuffled picking figure with a quiet movement."
+ },
+ {
+  "name": "Skipping Stones",
+  "category": "Players",
+  "description": "Syncopated anchor, broken thirds and light humanizing."
+ },
+ {
+  "name": "Trill and Root",
+  "category": "Players",
+  "description": "A low root with short rising trills between its beats."
+ },
+ {
+  "name": "Wide Pendulum",
+  "category": "Players",
+  "description": "A long movement over a sparse low pulse."
+ }
+]

@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Bass Safe",
+  "category": "Modulation",
+  "description": "Width above 250 Hz only: the low end stays where it was, the top spreads."
+ },
+ {
+  "name": "Ringing Ensemble",
+  "category": "Modulation",
+  "description": "Three pairs fed back hard through a band in the middle: the voices ring, near a flanger, for leads that sing."
+ },
+ {
+  "name": "Subtle Doubler",
+  "category": "Modulation",
+  "description": "One pair, a little behind and barely moving: a second take beside the first, for a voice or a guitar."
+ },
+ {
+  "name": "Tempo Swirl",
+  "category": "Modulation",
+  "description": "Two pairs swept once a bar, deep, so the width breathes with the song."
+ },
+ {
+  "name": "Wide Shimmer",
+  "category": "Modulation",
+  "description": "Four pairs of voices between 7 and 16 ms, swept slowly and spread wide: a pad or a pluck made broad and alive."
+ }
+]

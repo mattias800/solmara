@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Acoustic Sparkle",
+  "category": "EQ",
+  "description": "The high-pass at 80 Hz, the low shelf down at 220 Hz to thin the body's boom, a little taken out at 700 Hz, and the high shelf well up for the strings."
+ },
+ {
+  "name": "Bass DI Growl",
+  "category": "EQ",
+  "description": "A bass straight from its instrument, through the channel with the gain at +15: the output stage runs short of current on the low notes and adds a second and a third harmonic that are heard on a small speaker. The low shelf up at 110 Hz, the presence band up at 700 Hz for the growl, the highs a little down, and the trim back by 15 dB."
+ },
+ {
+  "name": "Electric Bite",
+  "category": "EQ",
+  "description": "The high-pass at 80 Hz, the presence band up at 1.6 kHz where a guitar cuts through a mix, the lows a little down at 110 Hz, and the gain at +5 with the trim back by as much."
+ },
+ {
+  "name": "Kick Weight",
+  "category": "EQ",
+  "description": "The low shelf lifted at 60 Hz and the presence band cut at 360 Hz, which takes the box out of a kick drum and leaves its weight, with the high shelf up a little for the beater. The gain at +5, so the output stage's lows thicken a loud kick, and the trim back by as much."
+ },
+ {
+  "name": "Snare Crack",
+  "category": "EQ",
+  "description": "The low shelf up at 220 Hz for the drum's body, the presence band up at 4.8 kHz for its crack, the high shelf a little up, and the high-pass at 80 Hz to keep the kick's spill out."
+ },
+ {
+  "name": "Vocal Presence",
+  "category": "EQ",
+  "description": "The high-pass at 80 Hz, the low shelf a little down at 110 Hz against the proximity effect, the presence band up at 3.2 kHz, where a voice's words are, and the high shelf up for air."
+ },
+ {
+  "name": "Drive Only",
+  "category": "Saturation",
+  "description": "The equaliser out and the gain at +20, with the trim back by 20 dB: nothing but the amplifiers and the transformers, driven so that the loud parts of a track come up against the output stage and its lows thicken. Turn the trim to taste."
+ },
+ {
+  "name": "Gentle Glue",
+  "category": "Saturation",
+  "description": "The gain at +10 with the trim back by as much and the equaliser in with a touch of air and a little low shelf at 35 Hz: the transformers' colour on a whole mix, with a loud low note given a little more of it."
+ }
+]

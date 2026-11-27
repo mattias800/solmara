@@ -1,0 +1,32 @@
+[
+ {
+  "name": "Dark and Distant",
+  "category": "EQ",
+  "description": "A 5 kHz high cut: pushes a part back and darkens it."
+ },
+ {
+  "name": "Rumble and Hiss",
+  "category": "EQ",
+  "description": "50 Hz and 12 kHz: takes rumble and hiss away and leaves the program."
+ },
+ {
+  "name": "Small Radio",
+  "category": "EQ",
+  "description": "1 kHz to 4 kHz: a tinny little radio speaker."
+ },
+ {
+  "name": "Telephone",
+  "category": "EQ",
+  "description": "500 Hz to 3 kHz: a voice down a telephone line."
+ },
+ {
+  "name": "Thin Out",
+  "category": "EQ",
+  "description": "A 250 Hz low cut: clears the low end out of a part that does not need it."
+ },
+ {
+  "name": "Vocal Cleanup",
+  "category": "EQ",
+  "description": "100 Hz and 15 kHz: takes handling noise and air hiss off a voice."
+ }
+]

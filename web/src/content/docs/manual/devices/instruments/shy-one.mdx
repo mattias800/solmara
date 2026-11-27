@@ -1,0 +1,144 @@
+---
+title: "Shy One"
+description: "One-oscillator monosynth in the style of the early-1980s Japanese portables: punchy bass and acid lines."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/shy-one.webp';
+import window from '../../../../../assets/devices/shy-one.webp';
+
+**An emulation of an analogue original,** modelled on the early-1980s Japanese portable monosynth with one oscillator, a sub, an arpeggiator and a sequencer.
+
+A modelled one-oscillator monosynth of the early 1980s, built from its circuit and fitted to a reference by measurement: one oscillator with its saw, a pulse with its width by hand, by the LFO or by the envelope, a sub-oscillator one or two octaves down or a narrow pulse, and noise, each by its slider, into a four-pole transconductance low-pass that sings at full resonance and an amplifier opened by the envelope or the gate. One envelope, started by the gate and each key, by the gate alone, or by the LFO; an LFO of four waveforms to the pitch, the pulse width and the filter; portamento always or between keys held together; the bender and its push to the LFO. The last key struck sounds.
+
+[Shy One on the website](/solmara/instruments/shy-one/)
+
+## In the device chain
+
+Shy One on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Shy One in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="Shy One's window, as it starts." /></a>
+
+
+## Presets
+
+47 factory presets come with Shy One. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+### Arpeggio
+
+- **Acid Arp**: The saw through a filter near singing, each sixteenth plucking it, up and down the chord: an acid arpeggio.
+- **Bubble Arp**: The square with the sub, through a resonant filter that each step plucks, arpeggiated up and down in sixteenths over the keys held.
+- **Down Arp**: The square and the sub through a resonant filter, the chord held played down in eighths: a falling arpeggio.
+- **Fast Arp**: The saw plucked short, the chord held played up in thirty-second notes: a fast, glittering arpeggio.
+- **Soft Arp**: A wide pulse through a dark filter, soft and round, the chord held played up in sixteenth triplets: a gentle arpeggio.
+- **Triplet Arp**: A narrow pulse two octaves up from the keys, plucked short, climbing the chord held in eighth-note triplets.
+
+### Bass
+
+- **Acid Squelch**: A bare saw through a resonant filter that the envelope snaps open, gliding under auto portamento into a note struck before the last one is let go, without striking the envelope again: the squelching line the instrument is known for, from a step-pattern clip with slides.
+- **Deep Sub**: The sub two octaves down under a quiet square, the filter nearly shut: a deep, felt sub.
+- **Envelope Width Bass**: The pulse's width narrowed by the envelope at each key and widening as it falls: a bass whose tone changes inside every note.
+- **Funk Bass**: The saw through a resonant filter the envelope sweeps down at each key: a quacking funk bass.
+- **Gate Bass**: The amplifier by the gate, full while a key is held and shut at once, the filter steady: an organ-like bass with no envelope on its level.
+- **Glide Bass**: The saw and the sub with portamento always on, so every note slides from the last: a sliding bass.
+- **Narrow Sub Bass**: The sub-oscillator's narrow pulse under the saw: a nasal, reedy bass.
+- **Noise Pick Bass**: The saw and the sub with a breath of noise in the strike, the envelope quick: a bass with a pick's click.
+- **Pluck Bass**: The saw and the sub an octave down through a filter the envelope plucks, a short glide between notes held together: a bass for lines of octaves, rests and slides from a step-pattern clip.
+- **PWM Bass**: The pulse's width swung by the LFO with the sub under it: a bass that churns as it holds.
+- **Rubber Bass**: The saw and the square an octave down, the filter popping open with a little resonance at each key and settling: the round, rubbery bass of the instrument.
+- **Saw Punch**: The saw and the sub, the filter snapped open at each key and falling back fast: a plain, punchy saw bass.
+- **Square Bass**: The square with the sub an octave down, the filter half shut and lifted a little at each key: a hollow, woody bass.
+- **Sub Bass**: The square and the sub-oscillator an octave under it, two octaves down, through a filter low enough to round them off: a deep, steady bass that holds as long as the key.
+- **Thump Bass**: The square and the sub through a nearly closed filter that the envelope flicks once: a short, dark thump.
+- **Wobble Bass**: The LFO's triangle sweeping the resonant filter a few times a beat: a wobbling bass.
+
+### Drums
+
+- **Filter Kick**: The filter singing at full resonance with a breath of noise, swept down from high by a fast envelope: a kick from the filter alone.
+- **Noise Hat**: The noise alone through an open filter, gone in a blink: a closed hat.
+- **Noise Snare**: The noise alone through a half-open filter, struck and fading in a fifth of a second: a snare from the noise source.
+- **Sub Tom**: The square and the sub through a filter the envelope flicks open, short: a round, tuned tom.
+
+### FX
+
+- **Blips**: A narrow pulse at two feet through a resonant filter, the envelope over in a blink: short blips for sequences and accents.
+- **Gated Pulse**: The envelope struck by the LFO rather than the keys, a short pluck on each of its cycles while a key is held: a pulsing, rhythmic tone.
+- **Laser Zap**: No oscillator at all: the filter singing by itself, swept down from the top by a fast envelope at each key.
+- **Noise Sweep**: The noise through a resonant filter the LFO sweeps slowly up and down: wind.
+- **Random Bleeps**: The LFO's random level steps the pitch and opens the envelope at each of its cycles while a key is held: the burbling computer sound of the instrument's sample and hold.
+- **Siren**: The LFO's triangle swinging the pitch slowly and far: a wailing siren.
+
+### Lead
+
+- **Glide Lead**: The saw and a pulse with portamento always on, a long slide between every note: a lead for slow lines.
+- **Octave Lead**: The saw at 4' with the sub an octave under it, so every note is doubled: a bright lead in octaves.
+- **Pulse Lead**: A narrow pulse, the filter open: a thin, reedy lead that cuts.
+- **Resonant Lead**: The saw through a filter near singing that follows the keys: a lead with a nasal, vocal ring.
+- **Saw Lead**: The saw alone through an open filter that follows the keys, a little resonance: the plain synth lead.
+- **Solo Lead**: The saw and a pulse that the LFO widens and narrows, a gentle vibrato, and portamento between keys held together: a singing lead.
+- **Square Lead**: The square with the sub an octave down, a gentle vibrato: a hollow, clarinet-like lead.
+- **Trill Lead**: The LFO's square on the pitch, up a step and back several times a second: a trilling lead.
+- **Wah Lead**: The saw through a resonant filter the envelope throws open and lets fall at each note: a lead that says wah.
+- **Whistle Lead**: No oscillator: the filter singing by itself at full resonance, following the keys, a breath of noise starting it: a pure, whistled line.
+
+### Pad
+
+- **PWM Pad**: The pulse widened and narrowed by a slow LFO with the saw and the sub under it, a slow attack and a long release: as near a pad as one oscillator comes.
+- **Slow Pad**: The saw, a pulse the LFO widens and the sub, slow in and slow out under a soft filter: a one-voice pad for long notes.
+
+### Pluck
+
+- **Muted Pluck**: The square under a nearly closed filter, flicked open for an instant: a muted, damped pluck.
+- **Pluck**: The saw and a pulse, the filter snapped open and falling to nothing: a short, bright pluck.
+- **Resonant Pluck**: The saw through a filter near singing, swept down fast at each key: a chirping pluck.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Tune | -1 to 1 | 0 |
+| LFO rate | 0 to 10 | 5 |
+| LFO waveform | Triangle, Square, Random, Noise | Triangle |
+| LFO to pitch | 0 to 10 | 0 |
+| Range | 16', 8', 4', 2' | 8' |
+| Pulse width | 0 to 10 | 0 |
+| Pulse width by | LFO, Manual, Envelope | Manual |
+| Pulse | 0 to 10 | 0 |
+| Saw | 0 to 10 | 10 |
+| Sub-oscillator | 0 to 10 | 5 |
+| Sub-oscillator mode | -1 octave, -2 octaves, -2, narrow | -1 octave |
+| Noise | 0 to 10 | 0 |
+| Cutoff | 0 to 10 | 5 |
+| Resonance | 0 to 10 | 2 |
+| Envelope to filter | 0 to 10 | 4 |
+| LFO to filter | 0 to 10 | 0 |
+| Key follow | 0 to 10 | 5 |
+| Amplifier by | Envelope, Gate | Envelope |
+| Envelope by | Gate and trigger, Gate, LFO | Gate and trigger |
+| Attack | 0 to 10 | 0 |
+| Decay | 0 to 10 | 4 |
+| Sustain | 0 to 10 | 5 |
+| Release | 0 to 10 | 2 |
+| Portamento | 0 to 10 | 0 |
+| Portamento by | Off, Auto, On | Off |
+| Transpose | Low, Middle, High | Middle |
+| Bender to pitch | 0 to 10 | 1.67 |
+| Bender to filter | 0 to 10 | 0 |
+| Bender's push to LFO | 0 to 10 | 3 |
+| Bender | -1 to 1 | 0 |
+| Bender's push | 0 to 1 | 0 |
+| Keys play | Keyboard, Arp down, Arp up-down, Arp up | Keyboard |
+| Hold | Off, On | Off |
+| Step | LFO, 1/4, 1/8, 1/8T, 1/16, 1/16T, 1/32 | 1/16 |
+| Volume | 0 to 10 | 5 |
+| Quality | Light, Full | Full |

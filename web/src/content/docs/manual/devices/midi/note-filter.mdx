@@ -1,0 +1,68 @@
+---
+title: "Note Filter"
+description: "Note Filter"
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/note-filter.webp';
+
+A MIDI device: lets through the notes within a range of keys and of velocities, or outside it, and moves, fixes or scales their pitch, octave, velocity on a curve, and length, limits how many sound at once, and holds them.
+
+[Note Filter on the website](/solmara/write/#note-filter)
+
+## In the device chain
+
+Note Filter on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Note Filter in a track's device chain, as it starts." /></a>
+
+
+## Presets
+
+8 factory presets come with Note Filter. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+
+- **Even Percussion**: Every note at a steady velocity and a short trigger length.
+- **Four Voice Chords**: Four voices, retaining the most recently played chord tones.
+- **Left Hand Bass**: Only the lower keyboard, moved down an octave and kept monophonic.
+- **Low Octave Split**: The lower hand drops an octave while the upper hand passes through.
+- **Quiet Keys Only**: Keep softly played notes and give them a useful dynamic range.
+- **Right Hand Bell**: Only middle C and above, lifted an octave.
+- **Soft Electric Keys**: A gentle velocity curve that keeps the loudest keys restrained.
+- **Staccato Eighths**: Long notes end after an eighth; short notes keep their articulation.
+
+## Controls
+
+Each of the device's controls, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Mode | Filter > Adjust, Adjust > Filter, Filter > Adjust (split) | Filter > Adjust |
+| Pitch range | Off, On | Off |
+| Lowest key | 0 to 127 | 0 |
+| Highest key | 0 to 127 | 127 |
+| Flip key range | Off, On | Off |
+| Velocity range | Off, On | Off |
+| Lowest velocity | 1 to 127 | 1 |
+| Highest velocity | 1 to 127 | 127 |
+| Flip velocity range | Off, On | Off |
+| Pitch | Off, On | Off |
+| Pitch mode | Offset, Fixed | Offset |
+| Pitch offset | -24 st to 24 st | 0 st |
+| Fixed key | 0 to 127 | 60 |
+| Octave | Off, On | Off |
+| Octaves | -3 oct to 3 oct | 0 oct |
+| Velocity | Off, On | Off |
+| Velocity mode | Offset, Fixed, Scale | Offset |
+| Velocity offset | -127 to 127 | 0 |
+| Fixed velocity | 1 to 127 | 100 |
+| Velocity scale | 1% to 800% | 100% |
+| Note length | Off, On | Off |
+| Length mode | Min, Max, Fixed | Min |
+| Length | 13 choices: Pulse, 1/128, 1/64, 1/32, … | 1/16 |
+| Restrict poly | Off, On | Off |
+| Voices | 1 to 16 | 1 |
+| Restrict mode | First Note, Low Note, High Note, Last Note | Last Note |
+| Hold | Off, On | Off |
+| Hold mode | Hold All, Latch, Chord | Hold All |

@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Doom Wall",
+  "category": "Distortion",
+  "description": "Everything for weight: the dist at its top, the low lifted all the way, the high down, and the middle lifted low, near 300 Hz. Slow, heavy chords."
+ },
+ {
+  "name": "Fizzy Bedroom",
+  "category": "Distortion",
+  "description": "The dist at its top and the high all the way up: the buzzing top the pedal is mocked for, kept as it is. A cabinet or a high cut after it tames it."
+ },
+ {
+  "name": "Flat Noon",
+  "category": "Distortion",
+  "description": "Every knob at its middle: the circuit's own voicing, the upper middle lifted before the clipping and the lows and the top lifted after it."
+ },
+ {
+  "name": "Hiss and All",
+  "category": "Distortion",
+  "description": "The flat setting with the dist up and the pedal's own hiss turned on, for a part that should sound like a pedal on a floor."
+ },
+ {
+  "name": "Low Gain Crunch",
+  "category": "Distortion",
+  "description": "The dist low, the equaliser near flat: chords that clip when they are hit and clean up a little as they fade, with the middle a touch forward."
+ },
+ {
+  "name": "Mid-Forward Lead",
+  "category": "Distortion",
+  "description": "The middle lifted near 1.2 kHz and the dist well up, for single notes that sit in front of a band and sustain."
+ },
+ {
+  "name": "Scooped Classic",
+  "category": "Distortion",
+  "description": "The sound the pedal is known for: the dist well up, the low and the high lifted, and the middle cut hard near 500 Hz. Chugging rhythm with the body taken out of the middle; into a clean amplifier or a cabinet."
+ },
+ {
+  "name": "Tight Modern",
+  "category": "Distortion",
+  "description": "The dist high, the lows held back and the upper middle lifted near 2 kHz: palm-muted riffs that stay tight on a low string."
+ }
+]

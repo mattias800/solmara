@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Low Mid Growl",
+  "category": "Amp",
+  "description": "The middle up at 550 Hz and the gain past half way: a growling low middle that cuts through heavy guitars."
+ },
+ {
+  "name": "Modern Smile",
+  "category": "Amp",
+  "description": "The graphic EQ in, the lows and highs up and the middle down, with bright on: a wide, hi-fi modern sound."
+ },
+ {
+  "name": "Tight Punch",
+  "category": "Amp",
+  "description": "The gain at 40 with the middle a little up at 1 kHz: a punchy, even note that sits under a band."
+ },
+ {
+  "name": "Tube Grind",
+  "category": "Amp",
+  "description": "The gain high and the tube gain down: the valve drive stage grinds and grows its second harmonic."
+ },
+ {
+  "name": "Ultra Low Slap",
+  "category": "Amp",
+  "description": "Ultra low and ultra high on, the treble up: the scooped, bright sound for slap and pop."
+ }
+]
