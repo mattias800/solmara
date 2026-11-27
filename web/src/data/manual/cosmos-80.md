@@ -1,0 +1,173 @@
+Cosmos 80 is an eight-voice polyphonic synthesizer in the image of the Japanese flagship polysynth of the late 1970s: a huge, heavy instrument in which every voice is two complete synthesizers layered, played from a keyboard that feels how hard you strike and how hard you press each key, with a ribbon above it for bending the pitch. It is one of the most expressive synthesizers ever made, and the source of some of the most famous synth sounds in film: the soaring brass of science-fiction scores, the bending, crying leads, the glistening, breathing pads that move under the player's fingers.
+
+Its secret is touch. A key struck harder can be brighter and louder; a key pressed down after it is struck can open its filter, raise its level, add vibrato, one key at a time. And there is a ribbon running the length of the keyboard: put a finger on it and slide, and the pitch follows. Cosmos 80 models the two channels of each voice from the circuit, the high-pass and low-pass in series, the filter's unusual envelope, the ring modulator and the sub-oscillator, and it takes the pressure of each key from a keyboard with polyphonic aftertouch, an MPE controller, or a clip's drawn aftertouch.
+
+## At a glance
+
+- **Eight voices**, each made of **two channels**, I and II, each a complete synthesizer with its own settings.
+- **Each channel:** a VCO with **square** (with pulse width and its own PWM LFO) and **saw**, noise, and a sine; six footages including 5 1/3' and 2 2/3'.
+- **A high-pass and a low-pass filter in series**, 12 dB an octave each, each resonant, both following the keys.
+- **A filter envelope** with an initial level and an attack level, and **an ADSR** for the amplifier.
+- **Touch response** in each channel: **initial** (how hard you strike) and **after** (how hard you press), each to brilliance and level.
+- **Detune** of channel II, **mix** of the two channels, overall **brilliance** and **resonance**, and **keyboard control** that tilts brightness and level across the keys.
+- **A sub-oscillator** (an LFO) with five shapes, to the pitch, the filters and the amplifiers, and its speed and depth by aftertouch.
+- **A ring modulator** with its own attack–decay envelope on its speed.
+- **Portamento** with glissando, **chorus** and **tremolo**, **touch pitch bend**, and **the ribbon**.
+
+## Signal flow
+
+<Flow
+  caption="One voice of Cosmos 80: two channels, each a whole synthesizer, mixed and then shared by the ring modulator and the chorus or tremolo. The frame is built eight times."
+  voice={4}
+  voices="Each of the eight voices"
+  columns={[
+    [{id: 'vco1', label: 'Channel I VCO', note: 'square · saw · noise'}, {id: 'vco2', label: 'Channel II VCO', note: 'square · saw · noise'}],
+    [{id: 'vcf1', label: 'I: HPF → LPF', note: '12 dB each'}, {id: 'vcf2', label: 'II: HPF → LPF', note: '12 dB each'}],
+    [{id: 'vca1', label: 'I: VCA', note: 'filtered + sine'}, {id: 'vca2', label: 'II: VCA', note: 'filtered + sine'}],
+    [{id: 'mix', label: 'Mix', note: 'I ↔ II'}],
+    [{id: 'ring', label: 'Ring modulator'}],
+    [{id: 'fx', label: 'Chorus · tremolo'}],
+    [{id: 'vol', label: 'Volume'}],
+  ]}
+  mods={[
+    {label: 'Filter envelope', to: ['vcf1', 'vcf2']},
+    {label: 'ADSR', to: ['vca2']},
+    {label: 'Touch', to: ['vcf2', 'vca2']},
+    {label: 'Sub-oscillator', to: ['vco2', 'vcf2']},
+  ]}
+/>
+
+Each channel runs its own path: an oscillator, a high-pass and a low-pass in series, and an amplifier that mixes the filtered sound with a pure sine at the oscillator's pitch. The two channels are mixed, then pass the ring modulator and the chorus or tremolo. Each channel's filter envelope and ADSR move its own filters and amplifier; the touch, the sub-oscillator and the instrument-wide controls reach both.
+
+## The face
+
+### In the device chain
+
+The original's panel is very long. In the chain, Cosmos 80 shows a compact face by default.
+
+{{chain}}
+
+### Its window
+
+The window has the whole panel: channel I over channel II, with the instrument's sections below and the keyboard at the bottom. Above the channels, pictures show each channel live: its oscillator's wave, both filters' response, the filter envelope and the ADSR, each dragged by its points, and two panels, **STRIKE** and **PRESSURE**, that show each voice's strike and pressure as you play. Above the keyboard is the ribbon. Open it with the window key at the card's left, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while Cosmos 80 has the focus.
+
+{{window}}
+
+The sliders are coloured by their job: green for the oscillator's and the filters' frequencies, red for resonance, yellow for the release times. Right-click a channel or one of its sections to copy it to the other channel, swap the two, or reset it.
+
+## The two channels
+
+Channel I and channel II have the same sections, each with its own settings. Use them as two layers: a brass and a string in one key, a bright attack over a soft body, two saws detuned.
+
+### FEET and VCO
+
+- **FEET**: 16', 8', 5 1/3', 4', 2 2/3' and 2'. 5 1/3' is a fifth above 8', 2 2/3' a fifth above 4': set one channel on 8' and the other on 5 1/3' for an organ-like fifth.
+- **Square** and **saw** keys switch each wave on. Both together are a richer wave.
+- **PW** sets the square's width, from a square to a narrow pulse; **PWM** sweeps it with the channel's own LFO at **SPEED** (from slow to 127 Hz, fast enough to become a buzz).
+- **NOISE** adds noise to the channel.
+
+### VCF
+
+Two filters in series, each 12 dB an octave:
+
+- **HPF** and its **RES**: the high-pass, taking away the bottom, resonant.
+- **LPF** and its **RES**: the low-pass, taking away the top, resonant.
+
+Both follow the keys, so the tone stays even across the keyboard. With both resonances up and the cutoffs near each other you get a band-pass with two peaks: vocal, nasal, the sound of the instrument's woodwinds and its crying leads.
+
+The **filter envelope** is the original's, and different from the usual ADSR:
+
+- **IL** (initial level): where the filter starts when a key is struck, below the cutoffs.
+- **AL** (attack level): where the attack takes it.
+- **A**, **D**, **R**: the attack rises from IL to AL, the decay falls back to the cutoffs you set, and on release the filter falls back to IL.
+
+So a brass swell is IL low, AL high, a slow attack: the filter opens past the cutoff and settles. An inverted sweep is IL high, AL low.
+
+### VCA
+
+- **VCF**: the level of the filtered sound.
+- **Sine** (∿): a pure sine at the oscillator's pitch, beside the filters. It adds a clean fundamental under the filtered sound, the body of the instrument's flutes and organs.
+- **A**, **D**, **S**, **R**: the amplifier's envelope.
+- **LEVEL**: the channel's level.
+
+### TOUCH RESPONSE
+
+Four sliders per channel:
+
+- **INITIAL BRIL** and **INITIAL LEVEL**: how much the strike of a key brightens the filters and raises the level. A hard strike gives a bright, loud note that fades back over a few seconds.
+- **AFTER BRIL** and **AFTER LEVEL**: how much pressing the key down after striking it brightens and raises it. Each key is pressed on its own: in a chord, you can swell one note.
+
+Give channel II a lot of after-touch brilliance and channel I none, and pressing a key brings in a brighter layer.
+
+## The instrument's controls
+
+### MIX · TONE
+
+- **MIX**: the balance of channel I and channel II, both at full in the middle.
+- **BRIL** (brilliance): all four filters of both channels at once, darker or brighter.
+- **RES**: adds to every filter's resonance.
+
+### TUNE
+
+**PITCH** is the master tune; **DETUNE** moves channel II alone, for the slow beating of two channels a little apart: the start of the instrument's richness.
+
+### KEYBOARD CONTROL
+
+**B LO** and **B HI** tilt the brilliance toward the low or the high end of the keyboard, **L LO** and **L HI** the level. The picture above them shows the tilt over the keys. Use it to make the bass end darker and the treble brighter, or a sound that fades out toward the top.
+
+### SUB OSCILLATOR
+
+An LFO for the whole instrument. **FUNCTION**: **sine**, **saw down**, **saw up**, **square** or **noise** (random). **SPEED**, and its depth to the **VCO** (vibrato), the **VCF** (wah) and the **VCA** (tremolo). The **SUB** picture shows its wave.
+
+### TOUCH RESPONSE (the instrument's)
+
+- **BEND**: a struck key bends up into its pitch, further the harder you strike. The scooping attack of the original's leads and brass.
+- **SPEED**, **VCO**, **VCF**: pressing a key quickens the sub-oscillator on that voice, adds its vibrato and its sweep of the filters. Press into a held note and it starts to shake: expressive vibrato under your finger.
+
+### RING MODULATOR
+
+**SPEED** (0.25 to 205 Hz) and **MOD** (how much of the ring-modulated sound replaces the dry). The ring modulator has its own **A** and **D** envelope on its speed, struck by each key, with its **DEPTH**: the speed swoops with each note, for bells, metallic swells and science-fiction sounds. The **RING SPEED** picture shows it.
+
+### PORTAMENTO
+
+**TIME** up to two seconds an octave, its **ON** key, and **GLISS**, which makes the glide step through the semitones like a harp's glissando.
+
+### CHORUS · TREMOLO
+
+**SPEED** and **DEPTH**, with **CHORUS** and **TREMOLO** keys. The chorus widens and thickens; the tremolo pulses the level.
+
+### VOICES and VOLUME
+
+Eight lamps show the voices as they play. Voices are taken in turn; with all eight held, the oldest key gives up its voice. **VOLUME** sets the output.
+
+## Playing it
+
+- **The ribbon** above the keyboard is the pitch bend: the track's pitch bend moves it, and you can drag it in the window.
+- **Strike** is the key's velocity; **pressure** is each key's own aftertouch. It comes from a keyboard with polyphonic aftertouch, an MPE controller, or a note's own aftertouch curve drawn in a clip. Without pressure, the after-touch sliders do nothing, so a keyboard with channel aftertouch only, or none, plays the instrument without its after touch.
+- Many of the factory presets are made to be played with pressure or the ribbon, and say so in their description.
+
+## Your first patch: film brass
+
+From a new Cosmos 80:
+
+1. **Two saws.** Both channels on 8' with saw only; DETUNE a little.
+2. **The swell.** Filter envelope on both channels: IL 2, AL 8, A 4, D 5, R 3; LPF 4, its RES 2.
+3. **The amplifier.** A 3, D 4, S 8, R 4.
+4. **Touch.** INITIAL BRIL 5 and AFTER BRIL 5 on both channels.
+5. **Bend.** Touch response BEND 3: hard notes scoop up into pitch.
+6. **Expression.** Touch response VCO 3 and sub-oscillator sine at SPEED 5: press into a note for vibrato.
+
+## Starting points
+
+- **Crying lead.** Channel I only (MIX toward I), square at PW 6, HPF 3 with RES 5, LPF 5 with RES 5, PORTAMENTO 3 on, touch VCO 4: bend with the ribbon, press for vibrato.
+- **Glistening pad.** Channel I saw 8', channel II square 4' with PWM 4 at SPEED 3, CHORUS on, both A 5, R 6, AFTER LEVEL 4.
+- **Flute.** Sine 8, VCF 2 on channel I, noise 2, LPF 4, A 2, S 9.
+- **Bells.** Ring MOD 6, SPEED 7, ring A 0, D 5, DEPTH 4; amplifier A 0, D 7, S 0, R 7.
+- **Organ fifths.** Channel I 8', channel II 5 1/3', both sine up and VCF down, A 0, S 10.
+
+## Tips
+
+- **Play it with pressure** if you can. A keyboard with polyphonic aftertouch or an MPE controller turns Cosmos 80 into the instrument it was meant to be; without one, draw aftertouch curves on notes in the piano roll.
+- **Split the work between the channels:** one for the attack, one for the body.
+- **The sine is the secret body.** A little sine under a thin, filtered sound fills it out without muddying it.
+- **IL and AL are levels, not times.** If a filter sweep is too small, widen the gap between them.

@@ -7,19 +7,109 @@ description: "Titan 303 in the style of the early-1980s Japanese bass machines: 
 
 import Shot from '../../../../../components/Shot.astro';
 import chain from '../../../../../assets/devices/titan-303.webp';
+import Flow from '../../../../../components/Flow.astro';
 
 **An emulation of an analogue original,** modelled on the early-1980s Japanese bass machine whose accent and slide became the sound of acid.
 
-A modelled acid bass line synthesizer of the early 1980s, built from its circuit and fitted to a reference by measurement: one oscillator, its saw or the square a waveshaper makes from it, into a four-pole diode-ladder low-pass and an amplifier. A decay-only envelope on the filter by its amount and decay, and a fixed one on the amplifier. Played by notes: a velocity of 100 or more accents a note, louder and brighter, accents in a row building through the accent's sweep; a note struck while another is held slides to its pitch. A drive after it: off, or the overdrive or the distortion pedal's circuit.
-
 [Titan 303 on the website](/solmara/instruments/titan-303/)
 
-## In the device chain
+Titan 303 is a bass-line synthesizer in the image of the small silver Japanese bass machine of the early 1980s. It was made to accompany guitarists practising alone, sold badly, and was soon in second-hand shops for next to nothing. Then a few musicians in Chicago turned its knobs while its sequencer ran, and the squelching, squealing, rubbery sound that came out became acid house, and later acid techno, trance and countless other styles.
 
-Titan 303 on a track, as it starts.
+It is one of the simplest synths there is: one oscillator, saw or square, one resonant low-pass filter, one decay-only envelope, and two ways to play a note, **accent** and **slide**. Everything that makes it special is in how those few parts behave together: a diode-ladder filter that is bright and wiry rather than round, an envelope that is all attack and decay, accents that pile up in the filter when they come close together, and slides that glide between notes without restarting anything. Titan 303 models each of those stages from the circuit, and adds a drive after it.
+
+## At a glance
+
+- **Monophonic**, last-note priority.
+- **One oscillator:** saw, or square made from it.
+- **A four-pole diode-ladder low-pass filter** with cutoff and resonance.
+- **One envelope** that only decays, moving the filter by **Env Mod**, its time set by **Decay**.
+- **Accent:** notes struck at velocity 100 or more are louder, brighter and shorter, and push the filter through the accent's sweep.
+- **Slide:** a note struck while another is held glides to its pitch without restarting the envelopes.
+- **Drive:** an overdrive or a distortion after the synth, with amount, tone and level.
+
+## Signal flow
+
+<Flow
+  caption="Titan 303's signal flow. The envelope and the accent's sweep both move the filter; an accented note also lifts the amplifier."
+  columns={[
+    [{id: 'vco', label: 'Oscillator', note: 'saw or square'}],
+    [{id: 'vcf', label: 'Filter', note: '4-pole diode ladder'}],
+    [{id: 'vca', label: 'Amplifier'}],
+    [{id: 'drive', label: 'Drive', note: 'overdrive · distortion'}],
+  ]}
+  mods={[
+    {label: 'Slide', to: ['vco']},
+    {label: 'Envelope', to: ['vcf']},
+    {label: 'Accent sweep', to: ['vcf', 'vca']},
+  ]}
+/>
+
+The oscillator goes through the filter and the amplifier, then the drive. The envelope opens the filter at every struck note and lets it close over the decay time. An accented note sends its envelope to the amplifier too, by the Accent knob, and to the filter through the accent's sweep: a capacitor that charges with each accent and lets go slowly, so accents close together open the filter further each time. A slide moves the pitch without striking the envelopes.
+
+## The face
+
+Titan 303 has one face, in the chain, with no window: the original's brushed silver top, the waveform switch at the left, the knobs in a row and the volume at the right; below, in a dark half, the drive and the quality.
 
 <a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Titan 303 in a track's device chain, as it starts." /></a>
 
+Right-click the cutoff, resonance, env mod or decay knob to set all four at once as a **squelch**, a **dry pluck** or a **scream**.
+
+## The controls
+
+- **Tuning**: 12 semitones either way.
+- **Waveform**: **saw** (buzzy, the classic) or **square** (hollow and woody, the other classic). The square is made from the saw by a waveshaper, so it is not a perfect square: its top droops a little.
+- **Cutoff**: the filter's resting point, from about 118 Hz to 890 Hz, before the envelope and the accent move it. That range is low: the envelope does most of the opening.
+- **Resonance**: the peak at the cutoff. As it rises it thins the bass and makes the filter whistle; it also sets how strongly accents build on each other (see below).
+- **Env Mod**: how far the envelope opens the filter, up to about 3.6 octaves. It also lowers the filter's resting place as it rises, so more Env Mod gives both a darker floor and a higher peak: more squelch.
+- **Decay**: how long the envelope takes to close on a plain note, from about 50 ms to 0.8 s. An accented note always decays quickly, whatever this says.
+- **Accent**: how much an accented note adds to the level and the filter. At 10, an accent is about four times as loud before the filter.
+- **Volume**: the output level.
+
+### Drive
+
+**Drive** puts one of Solmara's guitar pedals after the synth: **Off**, **Overdrive** (the [Green Overdrive Pedal](../../guitar/green-overdrive-pedal/)'s circuit, warm and mid-heavy) or **Distortion** (the [Metal District Pedal](../../guitar/metal-district-pedal/)'s, harder and brighter). **Drive amount**, **Drive tone** and **Drive level** work as on those pedals. Acid through distortion is a classic of its own.
+
+**Quality**: **Full** runs the oscillator and the filter at twice the sample rate (the default), **Light** at the rate.
+
+## Accent and slide
+
+Titan 303 has no sequencer of its own; it is played by notes, from a clip, a keyboard or anything else. Two things about a note matter:
+
+**Accent.** A note at a velocity of **100 or more** is accented; under 100 it is plain. Velocity does nothing else: all plain notes are alike, and all accented notes are alike. An accented note is louder, brighter and shorter, and charges the accent's sweep. With the resonance up, several accents in a row make the filter climb higher with each, the "wow" of acid lines.
+
+**Slide.** A note that starts while the previous one is still held **slides**: the pitch glides to it (most of the way in about 20 ms) and neither envelope is struck again, so the filter does not snap open. In a clip, make a note overlap the start of the next to slide into it. A slid-into note can still be accented.
+
+Two more:
+
+- **A tie** (a long note) holds the gate open: the envelope keeps falling under one long note.
+- **A gap** between notes closes the gate; the next note is struck afresh.
+
+Let go of the last key while an earlier one is still held and the pitch slides back to the earlier one.
+
+## Step patterns
+
+The original's sequencer is replaced by Solmara's [step-pattern clips](/solmara/manual/guides/drum-patterns/): each step a note, a tie or a rest, with its own accent and slide. An accented step plays at the clip's accent velocity (100 unless you change it), so it is an accent here; a slide holds its note into the next struck step, so the synth glides; a tie holds the gate. Put several pattern clips one after another in the arrangement, and automate the knobs over them, as acid producers turn them over a running pattern.
+
+## Your first acid line
+
+1. **A pattern.** Make a step-pattern clip of sixteen steps on Titan 303's track: some notes, a few rests, a few octave jumps, some steps accented and some slides.
+2. **The squelch.** Right-click the cutoff knob and choose the squelch, or set Cutoff 3, Resonance 8, Env Mod 7, Decay 4, Accent 6.
+3. **Play it and turn the knobs.** Cutoff up and down, Decay longer for rubbery notes, Resonance up for the scream. Automate them over the clip.
+4. **Add grit.** Drive Distortion, amount 4, level to taste.
+
+## Starting points
+
+- **Classic squelch.** Saw, Cutoff 3, Resonance 8, Env Mod 7, Decay 4, Accent 6.
+- **Dry pluck bass.** Saw, Cutoff 4, Resonance 3, Env Mod 4, Decay 2, Accent 3: a tight bass, not acid.
+- **Square sub line.** Square, Cutoff 2, Resonance 2, Env Mod 3, Decay 6.
+- **Screaming lead.** Saw, Cutoff 5, Resonance 10, Env Mod 9, Decay 6, Accent 8, Drive Overdrive at 6.
+
+## Tips
+
+- **Accents and resonance work together.** If accents don't seem to do much, raise the resonance: the sweep builds more.
+- **Slides are about overlap.** In the piano roll, stretch a note until it touches the next one.
+- **The cutoff range is low by design.** For a brighter sound, raise Env Mod, not only the cutoff.
+- **Velocity is a switch.** Only 100 and up counts as an accent; everything else plays the same.
 
 ## Appendix: the factory presets
 

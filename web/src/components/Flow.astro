@@ -33,10 +33,16 @@ interface Props {
 }
 const { caption, columns, voice = 0, voices = 'Each voice', links, mods = [], out = 'Out', wrap } = Astro.props;
 
-const W = 150, H = 54, GX = 34, GY = 14, PAD = 30, TOP = voice ? 38 : 16;
+// Every box as wide as the widest text needs: its label at 16 px bold,
+// its note at 12.5 px, never under 150.
+const widest = Math.max(...columns.flat().map((b) => Math.max(b.label.length * 9.4, (b.note ?? '').length * 6.9)));
+const W = Math.max(150, Math.ceil(widest + 24)), H = 54, GX = 34, GY = 14, PAD = 30, TOP = voice ? 38 : 16;
 // A long chain wraps: the voices' part on the first row, the rest under it.
-const wrapAt = wrap ?? (columns.length <= 4 ? columns.length : voice > 0 && voice < columns.length ? voice : Math.ceil(columns.length / 2));
-const rows = [columns.slice(0, wrapAt), columns.slice(wrapAt)].filter((r) => r.length);
+const wrapAt = wrap ?? (columns.length <= 4 ? columns.length : voice > 0 && voice < columns.length && voice <= 3 ? voice : 3);
+// The rest in rows of three at most, each under the one before.
+const rows = [columns.slice(0, wrapAt)];
+for (let at = wrapAt; at < columns.length; at += 3) rows.push(columns.slice(at, at + 3));
+const firstCol = rows.map((_, line) => rows.slice(0, line).reduce((n, r) => n + r.length, 0));
 const rowH = (r: Box[][]) => {
 	const t = Math.max(...r.map((c) => c.length));
 	return t * H + (t - 1) * GY;
@@ -46,15 +52,17 @@ const laneTop = TOP + row1H + 24;
 const lanes = mods.map((_, i) => laneTop + i * 12);
 const pillY = laneTop + Math.max(mods.length - 1, 0) * 12 + 18;
 const below = mods.length ? pillY + 24 : TOP + row1H;
-const row2Top = below + 44;
+const tops: number[] = [TOP];
+rows.slice(1).forEach((_, k) => tops.push(k ? tops[k] + rowH(rows[k]) + 44 : below + 44));
+const row2Top = tops[1] ?? below + 44;
 type Placed = Box & { x: number; y: number; col: number; row: number; line: number; lowest: boolean };
 const placed: Placed[] = [];
 rows.forEach((row, line) => {
-	const top = line ? row2Top : TOP, tall = rowH(row);
+	const top = tops[line], tall = rowH(row);
 	row.forEach((column, local) => {
 		const height = column.length * H + (column.length - 1) * GY;
 		column.forEach((box, r) => {
-			placed.push({ ...box, col: local + (line ? wrapAt : 0), row: r, line, lowest: r === column.length - 1,
+			placed.push({ ...box, col: local + firstCol[line], row: r, line, lowest: r === column.length - 1,
 				x: PAD + local * (W + GX), y: top + (tall - height) / 2 + r * (H + GY) });
 		});
 	});
@@ -71,8 +79,8 @@ const pairs: [Placed, Placed][] = links
 const signal = pairs.map(([a, b]) => {
 	const x1 = a.x + W, y1 = a.y + H / 2, x2 = b.x - 6, y2 = b.y + H / 2;
 	if (a.line !== b.line) {
-		// Down from the end of the first row and back to the start of the second.
-		const turn = x1 + 16, across = row2Top - 20, back = PAD - 18;
+		// Down from the end of a row and back to the start of the next.
+		const turn = x1 + 16, across = tops[b.line] - 20, back = PAD - 18;
 		return `M${x1},${y1} L${turn},${y1} L${turn},${across} L${back},${across} L${back},${y2} L${x2},${y2}`;
 	}
 	const bend = (x2 - x1) / 2;
@@ -82,7 +90,7 @@ const rowRight = (line: number) => Math.max(...placed.filter((p) => p.line === l
 const lastLine = rows.length - 1;
 const right = rowRight(lastLine);
 const last = columns[columns.length - 1].map((b) => at[b.id]);
-const outY = lastLine ? row2Top + rowH(rows[1]) / 2 : TOP + row1H / 2;
+const outY = tops[lastLine] + rowH(rows[lastLine]) / 2;
 const outPaths = last.map((b) => `M${b.x + W},${b.y + H / 2} C${right + 18},${b.y + H / 2} ${right + 14},${outY} ${right + 34},${outY}`);
 
 // The modulation: each source a pill under the first row, under its
@@ -103,7 +111,7 @@ const pills = mods
 		cursor = x + pillW(p.mod.label) + 10;
 		return { ...p, x, w: pillW(p.mod.label) };
 	});
-const width = Math.max(rowRight(0) + (lastLine ? 40 : 76), right + 76, cursor + PAD);
+const width = Math.max(...rows.map((_, line) => rowRight(line) + (line < lastLine ? 40 : 76)), cursor + PAD);
 const entries: Record<string, number> = {};
 const arriving: Record<string, number> = {};
 for (const m of mods) for (const id of m.to) arriving[id] = (arriving[id] ?? 0) + 1;
@@ -127,7 +135,7 @@ const modPaths: { d: string; head: boolean }[] = pills.flatMap((p) => {
 	const anyUp = p.mod.to.some((id) => at[id] && !at[id].line);
 	return [...(anyUp ? [{ d: `M${cx},${pillY} L${cx},${lane}`, head: false }] : []), ...ends];
 });
-const height = lastLine ? row2Top + rowH(rows[1]) + 16 : mods.length ? pillY + 32 : TOP + row1H + 16;
+const height = lastLine ? tops[lastLine] + rowH(rows[lastLine]) + 16 : mods.length ? pillY + 32 : TOP + row1H + 16;
 const frame = voice ? { x: PAD - 10, y: 8, w: Math.min(voice, wrapAt) * (W + GX) - GX + 20, h: TOP + row1H - 8 + 12 } : null;
 // A voice that goes on into the second row is framed there too.
 const frame2 = voice > wrapAt && lastLine

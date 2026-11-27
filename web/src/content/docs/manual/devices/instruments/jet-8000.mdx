@@ -8,25 +8,195 @@ description: "Ten-voice virtual-analogue synth in the style of the late-1990s Ja
 import Shot from '../../../../../components/Shot.astro';
 import chain from '../../../../../assets/devices/chain/jet-8000.webp';
 import window from '../../../../../assets/devices/jet-8000.webp';
+import Flow from '../../../../../components/Flow.astro';
 
 **An emulation of a digital original,** modelled on the late-1990s Japanese virtual-analogue dance synth with the supersaw and the morphing knobs.
 
-A ten-voice, two-part digital synthesizer: Super Saw and six other oscillator modes, sync, cross and ring modulation, a 12/24 dB multimode filter, three envelopes, two LFOs, Unison, velocity destinations, multi-effects and delay, the ribbon and the arpeggiator. Imports original patches and performances. Another track's audio is its external input, which OSC2 External and the Voice Modulator play.
-
 [Jet-8000 on the website](/solmara/instruments/jet-8000/)
 
-## In the device chain
+Jet-8000 is a digital synthesizer in the image of the Japanese virtual-analogue synth of the late 1990s that gave trance music its sound. Its **Super Saw**, seven detuned saws in a single oscillator, made the huge, shimmering leads and pads that defined the genre and are still the go-to sound for anthems, hardstyle and festival music. It modelled an analogue synthesizer in software when that was new, and added things no analogue synth had: morphing every knob from a single control, two parts layered or split, tempo-synced LFOs and delays, a vocoder, and recorded knob movement played back in time with the music.
 
-Jet-8000 on a track, as it starts.
+Jet-8000 is built from a detailed study of the original's own program, recreated as it ran, at the original's own rate inside, so its oscillators, filters, envelopes and effects behave as the original's do. It reads the original's patches (SysEx and Standard MIDI Files).
+
+## At a glance
+
+- **Ten voices**, shared between **two parts**, **Upper** and **Lower**, played **Single**, **Dual** (layered) or **Split**.
+- **Oscillator 1** in seven modes: **Super Saw**, **Triangle Mod**, **Noise**, **Feedback Osc**, **Pulse**, **Saw** and **Triangle**, each with two controls of its own.
+- **Oscillator 2:** pulse, saw, triangle or noise, with **ring**, **sync** and **cross modulation**.
+- **A multimode filter:** low-pass, band-pass or high-pass, **12 or 24 dB** an octave, with its envelope.
+- **Pitch**, **filter** and **amplifier envelopes**.
+- **LFO 1** (four waves, fade, tempo sync) and **LFO 2** (to pitch, filter or amplifier).
+- **Unison**, **mono**, **legato**, **portamento**.
+- **Velocity and Control morphing:** each of forty parameters can move by velocity and by the ribbon or aftertouch.
+- **Effects:** tone control, a multi-effect (choruses, flangers, phasers), a delay, all tempo-syncable.
+- **Arpeggiator**, **Motion Control** (recorded knob movement) and **Individual Trigger**.
+- **Voice Modulator**, a vocoder, and **external input** from another track.
+
+## Signal flow
+
+<Flow
+  caption="One voice of Jet-8000 and the part's effects after it. Each part (Upper and Lower) has all of this with its own settings."
+  voice={4}
+  voices="Each voice"
+  columns={[
+    [{id: 'osc1', label: 'OSC 1', note: '7 modes · Super Saw'}, {id: 'osc2', label: 'OSC 2', note: 'ring · sync · X-mod'}],
+    [{id: 'common', label: 'OSC Common', note: 'balance · shift'}],
+    [{id: 'vcf', label: 'Filter', note: 'LPF · BPF · HPF'}],
+    [{id: 'amp', label: 'Amp', note: 'level · pan'}],
+    [{id: 'tone', label: 'Tone control', note: 'bass · treble'}],
+    [{id: 'mfx', label: 'Multi-FX', note: 'chorus · flange · phase'}],
+    [{id: 'delay', label: 'Delay'}],
+  ]}
+  links={[['osc1', 'common'], ['osc2', 'common'], ['common', 'vcf'], ['vcf', 'amp'], ['amp', 'tone'], ['tone', 'mfx'], ['mfx', 'delay']]}
+  mods={[
+    {label: 'Pitch env', to: ['osc2']},
+    {label: 'LFO 1', to: ['osc2', 'vcf', 'amp']},
+    {label: 'LFO 2', to: ['osc2', 'vcf', 'amp']},
+    {label: 'Filter env', to: ['vcf']},
+    {label: 'Amp env', to: ['amp']},
+  ]}
+/>
+
+Two oscillators meet in **OSC Common**, where their balance and the cross modulation are set, and go through the filter and the amplifier, each with its envelope. Then come the part's tone control, multi-effect and delay. LFO 1 can reach the oscillators, the filter and the amplifier (or the pan); LFO 2, the modulation wheel's LFO, goes to the pitch, the filter or the amplifier.
+
+## The face
+
+### In the device chain
 
 <a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Jet-8000 in a track's device chain, as it starts." /></a>
 
-## Its window
+### Its window
 
-The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+The window has the whole panel, laid out by section as the original's, with a picture over each section: the LFOs' waves, each oscillator's wave, the sum going into the filter, the filter's response, the three envelopes, and where each voice sits in the stereo field. At the bottom are the controllers (the ribbon, wheel and bend) and a keyboard. An LCD in the middle shows the control you last moved and how many voices each part plays. Open it with the window key at the card's left, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while Jet-8000 has the focus.
 
 <a href={window.src} title="The picture at its full size"><Shot src={window} alt="Jet-8000's window, as it starts." /></a>
 
+Many knobs have a second name printed in blue under them: that is what the knob does in the Voice Modulator's panel mode.
+
+## Oscillator 1
+
+**WAVEFORM** chooses one of seven modes; **CONTROL 1** and **CONTROL 2** do something different in each:
+
+| Mode | Control 1 | Control 2 | What it is |
+| --- | --- | --- | --- |
+| **Super Saw** | Detune | Mix | Seven saws spread around the note. Detune sets how far apart, Mix how loud the side saws are against the middle one. The trance lead and pad. |
+| **Triangle Mod** | Offset | LFO depth | A triangle whose shape is bent, for hollow, vocal, morphing tones. |
+| **Noise** | Cutoff | Resonance | Noise through its own resonant filter: pitched wind, surf, snares. |
+| **Feedback Osc** | Harmonics | Feedback | An oscillator fed back into itself: from pure to screaming, metallic tones. |
+| **Pulse** | Width | PWM depth | A pulse with its width and the LFO's sweep of it. |
+| **Saw** | Shape | LFO depth | A saw whose shape can be bent. |
+| **Triangle** | Shape | LFO depth | A triangle whose shape can be bent. |
+
+The picture over oscillator 1 draws its wave as it is set.
+
+## Oscillator 2
+
+- **WAVEFORM:** pulse, saw, triangle or noise.
+- **RANGE** (coarse tuning) and **FINE/WIDE** (fine tuning, or wide).
+- **CONTROL 1** and **CONTROL 2**: its wave's own shape controls.
+- **RING**: ring modulation of oscillator 2 by oscillator 1, metallic and bell-like.
+- **SYNC**: oscillator 2 restarted by oscillator 1, for sync sweeps.
+- **EXT**: oscillator 2 plays the external input instead (see below).
+
+## OSC Common
+
+- **OSC SHIFT** moves both oscillators by octaves, -2 to +2.
+- **LFO 1 & ENV DESTINATION**: where the pitch envelope and LFO 1's pitch depth go: **OSC 1+2**, **OSC 2** alone, or **X-MOD** (the cross-modulation depth).
+- **OSC BALANCE**: from oscillator 1 alone to oscillator 2 alone.
+- **X-MOD DEPTH**: cross modulation, oscillator 2's pitch moved by oscillator 1 at audio rate. Hard, metallic, FM-like.
+- **LFO 1 DEPTH**: LFO 1 to the pitch.
+
+The **PITCH ENVELOPE** has a **DEPTH** and an attack and decay: a quick blip for percussive attacks, a slow swoop for effects. Sent to X-MOD, it sweeps the cross modulation with each note.
+
+## Filter
+
+- **TYPE:** **LPF** (low-pass, the usual), **BPF** (band-pass, thin and vocal) or **HPF** (high-pass, removing the bottom).
+- **-12dB / -24dB**: the slope. 24 dB is deeper and rounder; 12 dB lets more of the oscillators through.
+- **CUTOFF FREQ**, **RESONANCE**, **KEY FOLLOW**, and **LFO 1 DEPTH** (a filter wobble).
+- The **FILTER ENVELOPE**: **DEPTH**, **A**, **D**, **S**, **R**.
+
+## Amp and envelope
+
+- The **AMP ENVELOPE**: **A**, **D**, **S**, **R**.
+- **LEVEL**, and **LFO 1 DEPTH** for tremolo, or with **PAN** on **AUTO**, for auto-pan; **MANUAL** pans the part by hand. The picture shows where each voice is in the stereo field.
+
+## The LFOs
+
+- **LFO 1:** **WAVEFORM** (triangle, saw, square, random), **RATE**, **FADE** (it grows in after each note) and **SYNC** to the song's tempo, from sixteenths to dotted quarters. With a project playing, a synced LFO 1 lines up with the song's bars wherever playback starts.
+- **MODULATION (LFO 2):** **RATE**, and its depth to **PITCH**, **FILTER** or **AMP**, brought in by the modulation wheel.
+
+## Effects
+
+- **TONE CONTROL:** **BASS** and **TREBLE** for the part.
+- **MULTI-FX** with its **LEVEL**: slow, medium, fast and clear choruses, slow, deep and fast flangers, slow and jet phasers, and twist. **SYNC** runs it at the song's tempo.
+- **DELAY:** **TIME**, **FEEDBACK** and **LEVEL**, and the type: pan left to right, pan right to left, short pan, short mono or long mono. **SYNC** sets its time in note values.
+
+## Control: playing and morphing
+
+- **MONO**, **LEGATO** and **UNISON** (with **UNISON DETUNE**). Unison with Super Saw is the biggest sound the instrument makes.
+- **VELOCITY** on lets the key's velocity move parameters by **VELOCITY ASSIGN**.
+- **Morphing**: with **CONTROL ASSIGN**, the ribbon (**CONTROL** in the controllers' strip, also driven by aftertouch) moves any of forty parameters, each by a depth of its own, up or down. One movement can open the filter, raise the resonance, speed up the LFO and add detune all at once: the original's morphing knob.
+- **SOLO ENV**: **STANDARD** or **ANALOG** envelope behaviour in mono.
+- **PORTAMENTO** **ON** and **TIME**.
+- **BEND UP** and **BEND DOWN** set the pitch bend's range each way; **TRANSPOSE** and **MASTER TUNE** the tuning.
+
+## Two parts: Panel Select and Key Mode
+
+Each patch has two parts, **Upper** and **Lower**. **PANEL SELECT** (**LOWER**, **UPPER**) chooses which part the panel shows and edits.
+
+- **KEY MODE: SINGLE** plays the selected part.
+- **DUAL** layers both on every key.
+- **SPLIT** puts Lower below the **SPLIT** point and Upper above.
+
+**VOICES** divides the ten voices between the parts (5 / 5, 8 / 2 and so on), **PART DETUNE** detunes them against each other, and **OUT** chooses whether the parts are mixed or kept apart.
+
+## Arpeggiator
+
+**ON**, **HOLD**, **TEMPO** (follows the song), **MODE** (**UP**, **DOWN**, **UP/DN**, **RND**), **RANGE** (1 to 4 octaves) and **BEAT**, the step pattern: quarters, triplets, eighths, sixteenths, thirty-seconds and six sequence patterns. **ARP TO** chooses the part it plays in Dual: both, Lower or Upper. In Split, the keys below the split point are arpeggiated on Lower while Upper plays directly.
+
+## Motion Control
+
+Motion plays back recorded knob movement, looped over 1 to 8 measures or once, in time with the song: four motions (**A1**, **A2**, **B1**, **B2**), set **A** or **B**, motion **1** and **2** switched on and off, and **RESTART** to start them again with each new phrase. Moving a recorded knob by hand takes it over until the next loop. Recording motion from the panel is not built yet; motions can be written as text by an agent or from the command line.
+
+## Individual Trigger
+
+With **INDIVIDUAL TRIGGER** on, a part's notes wait with their filter or amplifier envelopes (or both) unstarted, and a trigger note starts them: in Split, a key below the split point triggers the Upper part's held notes, or a note on a chosen channel and note does. Hold a chord in the right hand and tap rhythms with the left.
+
+## Voice Modulator and external input
+
+Choose another track as Jet-8000's sidechain, and its audio becomes the **external input**: the left channel the instrument input, the right the vocal.
+
+- **The Voice Modulator** is a vocoder: the vocal (from the right channel) shapes the carrier (Jet-8000's own parts, by **VOICE MOD SEND**). It has its **ALGORITHM**, twelve bands' **Character** levels, **Robot** pitch and control, **Ensemble**, noise, delay, resonance and release. Switched on, it takes two of the ten voices.
+- **Vocal Morph** lets the vocal's loudness move the morphing Control.
+- **OSC 2 EXT** plays the external input as oscillator 2, through a gate whose threshold Control 1 sets.
+- **EXT TRIGGER** restarts the part's envelopes whenever the input's gate opens: a drum loop on another track can trigger a pad's filter.
+
+## Loading the original's patches
+
+Jet-8000 reads the original's single patches as SysEx and Standard MIDI Files, so patch libraries made for the original load as they are.
+
+## Your first patch: the trance lead
+
+1. **Super Saw.** Oscillator 1 **SUPER SAW**, CONTROL 1 (detune) at 7, CONTROL 2 (mix) at 8. OSC BALANCE fully to oscillator 1.
+2. **Filter.** LPF, -24dB, CUTOFF high, RESONANCE low, filter envelope depth a little.
+3. **Envelope.** Amp A 0, D 6, S 8, R 4.
+4. **Width.** UNISON on with UNISON DETUNE a little; MULTI-FX Slow chorus at a medium level.
+5. **Space.** DELAY Long mono, SYNC to dotted eighths, FEEDBACK 4, LEVEL 4.
+
+## Starting points
+
+- **Supersaw pad.** Super Saw, detune 5, mix 7, LPF at the middle, amp A 6, R 7, Slow chorus.
+- **Pluck.** Saw, LPF 24 dB, cutoff low, filter envelope depth high with D 4, S 0; amp D 4, S 0; delay synced eighths.
+- **Feedback lead.** Feedback Osc, harmonics 6, feedback 7, mono with portamento.
+- **Hoover.** Super Saw, pitch envelope depth negative with a slow decay, portamento on, Fast flange.
+- **Morph sweep.** CONTROL ASSIGN on cutoff, resonance and LFO 1 rate; drag the CONTROL ribbon while holding a chord.
+
+## Tips
+
+- **Super Saw's Mix is half the sound.** At low Mix it is one saw with a halo; at high Mix a wall.
+- **Sync the delay** to dotted eighths for the classic trance echo.
+- **Unison and Super Saw** multiply: watch the voice count.
+- **Use the ribbon's morphing** as a performance control: one movement, many parameters.
 
 ## Appendix: the factory presets
 

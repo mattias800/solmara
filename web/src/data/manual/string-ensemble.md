@@ -1,0 +1,105 @@
+String Ensemble is a string machine in the image of the string ensemble keyboards of the 1970s. These were not synthesizers in the usual sense: inside, they were electronic organs, with a single master oscillator divided down into every note, so every key could sound at once. What turned their thin, buzzy saws into strings was the **ensemble**: three delay lines, each swept by slow and fast modulation, mixed together so the sound shimmers and swirls like a section of players never quite in tune. That sound is everywhere in the music of the seventies and eighties, from progressive rock and disco to new wave and ambient, and it is still the quickest way to a lush, warm string pad.
+
+String Ensemble models the instrument's divide-down organ, its fixed register filters, its envelopes and crescendo, and the three-line ensemble, and adds a choir register and an LFO.
+
+## At a glance
+
+- **Fully polyphonic upper section**: every key sounds, each with its own envelope.
+- **A bass section** below G3, one voice: **contrabass** (16') and **cello** (8').
+- **Upper registers:** **viola** and **violin** (strings), **trumpet** and **horn** (brass), and a **choir**.
+- **Sustain** and **volume** for each section, and a **crescendo** that swells the strings and choir in.
+- **The ensemble**, in stereo or mono, or off for the organ underneath.
+- **An LFO** with five waves, a delay and a fade, for **vibrato** and **tremolo**.
+
+## Signal flow
+
+<Flow
+  caption="String Ensemble's signal flow. One master clock divided down gives every key its saws; each key is keyed through its own envelope, the registers colour them, and the ensemble turns the sum into strings."
+  columns={[
+    [{id: 'org', label: 'Divide-down organ', note: '16\' · 8\' · 4\' saws'}],
+    [{id: 'keys', label: 'Keying', note: 'an envelope a key'}],
+    [{id: 'upper', label: 'Upper registers', note: 'viola · violin · brass · choir'}, {id: 'bass', label: 'Bass registers', note: 'contrabass · cello'}],
+    [{id: 'ens', label: 'Ensemble', note: '3 swept lines'}],
+    [{id: 'vol', label: 'Volume'}],
+  ]}
+  links={[['org', 'keys'], ['keys', 'upper'], ['keys', 'bass'], ['upper', 'ens'], ['bass', 'ens'], ['ens', 'vol']]}
+  mods={[
+    {label: 'Crescendo', to: ['keys']},
+    {label: 'LFO', to: ['org', 'vol']},
+  ]}
+/>
+
+Every key's saws come from one master clock divided down, so they are always in tune with each other and no key's wave ever restarts. Each key opens through its own envelope, swelling in by the crescendo and ringing out by the sustain. The registers are fixed filters that give each voice its colour. The ensemble then spreads the sum over three slowly drifting copies: the strings.
+
+## The face
+
+String Ensemble has one face, in the chain: a dark brown panel printed in cream, with the bass section's register tabs, sustain and volume, the upper section's five tabs, sustain and volume, the crescendo, the ensemble and the volume; under it, on a lighter strip, the LFO. The register tabs light amber while they sound.
+
+{{chain}}
+
+## The bass section
+
+The bass section sounds on keys up to G3, and it is **one voice**: the lowest key held plays it, and a lower key takes it over without starting it again.
+
+- **Contrabass**: a 16' saw, the deeper and louder.
+- **Cello**: an 8' saw.
+
+Both go through the same bass filter, a resonant high-pass near 215 Hz and a fall above 1 kHz. **Bass sustain** sets how long the bass rings after you let go, and **Bass volume** its level. Use the bass section for the left hand's root notes under a chord.
+
+## The upper section
+
+Every key of the upper section sounds, each through its own envelope, so a chord's notes swell and fade each on its own.
+
+- **Viola** and **Violin**: the strings. Viola on the 8', violin on the 4' (an octave up, brighter). Both together are the classic string sound.
+- **Trumpet** and **Horn**: brass registers on the 8'. The trumpet is bright with a peak near 4.5 kHz; the horn rounder, peaking near 1.4 kHz.
+- **Choir**: three saws a key, a few cents apart, softened: a vocal pad. The original did not have it.
+
+**Upper sustain** and **Upper volume** set how long the upper keys ring and how loud the section is.
+
+### Crescendo
+
+**Crescendo** makes a string or choir key start quieter and swell up to its level, more slowly the higher you set it, up to about a second. Each time you strike a key it starts its swell again. The brass registers ignore it, as on the original.
+
+## The ensemble
+
+**Ensemble** on: the sound goes through three delay lines, each swept by a slow (2.5 Hz) and a fast (about 12 Hz) wave, each line at its own depth and phase, mixed with no dry sound. The slow sweep makes the pitch drift like many players; the fast one adds the shimmer. Off, you hear the organ underneath: thin, steady and buzzy, which makes clear how much the ensemble does.
+
+**Ensemble output**: **Stereo** spreads the lines over the two sides, wide and enveloping; **Mono** sums them.
+
+## The LFO
+
+Added to the original's panel, on the lower strip:
+
+- **LFO rate** from 0.01 Hz to 13 Hz, and **LFO wave**: **random**, **square**, **saw down**, **saw up** or **triangle**.
+- **LFO delay** and **LFO fade**: after the first key of a phrase, the LFO waits, then fades in.
+- **Vibrato** sends it to the pitch (5 cents a step); **Tremolo** to the level.
+
+## Playing it
+
+- **Velocity does nothing**, as on the original.
+- **Pitch bend** moves the master clock, so every key bends together.
+- **The mod wheel** adds up to 25 cents of vibrato from the LFO.
+- **Tuning** moves the master clock up to a semitone either way; **Volume** sets the output.
+
+## Your first sound: the classic strings
+
+From a new String Ensemble (cello, viola and violin on, the ensemble on in stereo):
+
+1. Play a chord with your right hand above G3 and a single bass note below.
+2. Raise **Crescendo** to 6: the chord now swells in.
+3. Raise **Upper sustain** to 7: it rings on as you change chords.
+4. Switch **Ensemble** off and on to hear what it does.
+
+## Starting points
+
+- **Disco strings.** Violin only, Crescendo 2, Upper sustain 4: bright and quick, for stabs and runs.
+- **Slow pad.** Viola and violin, Crescendo 8, Upper sustain 8, LFO triangle at rate 4 with delay 5 and vibrato 2.
+- **Choir pad.** Choir only, Crescendo 6, Upper sustain 7.
+- **Brass section.** Trumpet and horn, Ensemble on, Upper sustain 3.
+- **Pulsing strings.** Viola and violin, LFO square at rate 6, Tremolo 4.
+
+## Tips
+
+- **Keep the bass section for the bass.** It is one voice; for chords in the low register, play them above G3.
+- **Put a phaser after it.** A slow phaser on a string machine is one of the great sounds of the seventies: try the [Clementine Phaser](../../effects/clementine-phaser/).
+- **Sustain is your legato.** With a long upper sustain, chords overlap smoothly as you move between them.
