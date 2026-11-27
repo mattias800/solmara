@@ -16,11 +16,12 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  # Built in one job and deployed from another, as GitHub lays it out: the
+  # deploy then finds the uploaded site, which a deploy in the same job
+  # right after the upload sometimes did not ("No artifacts named
+  # github-pages", 27 November 2026).
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,5 +39,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
