@@ -7,19 +7,185 @@ description: "Semi-modular two-filter monosynth in the style of the late-1970s J
 
 import Shot from '../../../../../components/Shot.astro';
 import chain from '../../../../../assets/devices/two-filter-mono.webp';
+import Flow from '../../../../../components/Flow.astro';
 
 **An emulation of an analogue original,** modelled on the late-1970s Japanese semi-modular monosynth with two screaming filters and a patch panel.
 
-A modelled semi-modular monosynth of the late 1970s, built from its circuit and fitted to a reference by measurement: two oscillators, the first with its triangle, saw, pulse of a width by hand and white noise, the second with its saw, square, narrow pulse and the ring modulator of the two, by a pitch knob of its own, each by its level into a high-pass and a low-pass in series, each with its cutoff and its peak, and an amplifier. Two envelopes, EG 1 (delay, attack, release) to the pitch and EG 2 (hold, attack, decay, sustain, release) to the filters and the amplifier; an MG from a falling saw through a triangle to a rising one, to the pitch and the filters; portamento. Its normalled routing; the filters, the envelopes and the MG are plain stand-ins until they are fitted.
-
 [Two-Filter Mono on the website](/solmara/instruments/two-filter-mono/)
 
-## In the device chain
+Two-Filter Mono is a monophonic synthesizer in the image of the small Japanese semi-modular of the late 1970s, the one with two filters in a row and a patch panel on its right-hand side. It was built to be affordable, and its filters were built to be cheap; the result was a sound nobody expected: aggressive, raw and screaming, with resonance that tears rather than sings. It became a favourite of industrial music, electro, techno and anyone who wanted a synth that bites, and its patch panel taught a generation how modular synthesis works.
 
-Two-Filter Mono on a track, as it starts.
+The idea is simple: two oscillators go through a **high-pass filter** and then a **low-pass filter**, each with a peak (resonance) that can scream. With both filters you can carve a band out of the sound, push a vowel-like peak through it, or let both filters sing at once. Two envelopes and a modulation generator move them, and the patch panel lets you rewire it all. Two-Filter Mono models the first revision of the original's filters, their diode-limited peaks and the way they saturate, along with the oscillators, the envelopes and all 28 jacks.
+
+## At a glance
+
+- **Monophonic**, last-note priority; every key restarts both envelopes.
+- **VCO 1:** triangle, saw, pulse (with width) or white noise; 32' to 4'.
+- **VCO 2:** saw, square, narrow pulse or **ring modulator** (VCO 1 times VCO 2); 16' to 2', tunable against VCO 1.
+- **A high-pass filter** and **a low-pass filter** in series, each with a cutoff, a **peak** that self-oscillates, and modulation from the MG and EG 2.
+- **EG 1:** delay, attack, release. **EG 2:** hold, attack, decay, sustain, release.
+- **A modulation generator (MG)** with a waveform knob from falling saw through triangle to rising saw.
+- **Portamento**, always gliding.
+- **A patch panel** of 28 jacks: envelopes, the MG, noise, a sample and hold, a modulation VCA, triggers and the keyboard's voltage, patched with cables.
+
+## Signal flow
+
+<Flow
+  caption="Two-Filter Mono with no cables patched: its normalled routing. Every input on the patch panel replaces one of these connections when a cable goes in."
+  columns={[
+    [{id: 'v1', label: 'VCO 1', note: 'tri · saw · pulse · noise'}, {id: 'v2', label: 'VCO 2', note: 'saw · square · pulse · ring'}],
+    [{id: 'mix', label: 'Mixer'}],
+    [{id: 'hpf', label: 'High-pass', note: '6 dB, peak'}],
+    [{id: 'lpf', label: 'Low-pass', note: '12 dB, peak'}],
+    [{id: 'vca', label: 'VCA', note: 'by EG 2'}],
+  ]}
+  mods={[
+    {label: 'MG', to: ['v2', 'hpf', 'lpf']},
+    {label: 'EG 1', to: ['v2']},
+    {label: 'EG 2', to: ['hpf', 'lpf', 'vca']},
+  ]}
+/>
+
+The two oscillators meet in the mixer and go first through the high-pass and then the low-pass. Between them they decide which band of the sound survives: the high-pass takes away the bottom, the low-pass the top. EG 2 opens the amplifier and can sweep both filters; the MG and EG 1 bend the oscillators' pitch, and the MG can sweep the filters too.
+
+The filters do not follow the keyboard, as on the original: a filter set to sing holds its pitch whatever key you play. Play the singing with the cutoff knob, EG 2 or the MG, or patch the keyboard's voltage into a cutoff.
+
+## The face
+
+Two-Filter Mono has no window: its face lives in the chain and comes in two sizes. The compact face, as it starts, has the two filters' response on one display, both cutoffs and peaks, the two oscillators' waves and scales, and the eight knobs it is played by: the oscillators' levels, EG 2 to the low-pass, the decay, the portamento, the vibrato, the MG's rate and the volume.
 
 <a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Two-Filter Mono in a track's device chain, as it starts." /></a>
 
+The key at the right of the header (or **Show the compact face** in the device's menu) switches to the full face, with every section of the original's panel and the patch panel beside it.
+
+On the filters' display, a handle sits at each filter's corner: drag it sideways for the cutoff and up and down for the peak (hold **Shift** for fine moves). When a peak is high enough to sing on its own, its handle glows and its tag lights (**HP sings**, **LP sings**). While the voice plays, each cutoff knob shows where the MG and EG 2 are moving it, as an arc outside its collar.
+
+## The oscillators
+
+### VCO 1
+
+- **Waveform:** **triangle** (soft), **saw** (bright), **pulse** or **noise** (white noise, so VCO 1 doubles as a noise source).
+- **Pulse width:** a square at 0, narrowing as you turn it, until it disappears from about 8. The pulse also narrows a little as you play higher, as on the original.
+- **Scale:** 32', 16', 8' or 4'.
+
+### VCO 2
+
+- **Waveform:** **saw**, **square**, **narrow pulse**, or **ring**: the ring modulator, VCO 1's pulse multiplied by VCO 2's square. Ring modulation gives the sum and difference of the two pitches instead of either: metallic, bell-like, inharmonic. Detune VCO 2 against VCO 1 and listen to the clangs move.
+- **Pitch:** VCO 2's tuning against VCO 1, nearly flat around the middle for fine detuning and up to 13 semitones at either end.
+- **Scale:** 16', 8', 4' or 2'.
+
+### Mixer
+
+**VCO 1 level** and **VCO 2 level**. At the top, VCO 1 drives the filters' input a little: more grit.
+
+### Frequency modulation
+
+**MG to pitch** is vibrato from the modulation generator. **EG 1 to pitch** bends both oscillators by EG 1: with EG 1's delay and attack, a note can start in tune and then swoop, or start bent and settle; with the release, it falls as you let go.
+
+## The filters
+
+This is what the instrument is for. Both filters are built like the original's first revision: each a pair of simple cells with a peak amplifier limited by diodes, which is why the peaks distort and scream instead of ringing cleanly.
+
+### High-pass
+
+- **High-pass cutoff:** below it, the sound is taken away. At 0 nothing is removed.
+- **High-pass peak:** resonance at the cutoff. From about 6 the filter sings on its own. A high-pass peak sounds thinner and more nasal than a low-pass one: the honk and whistle of the instrument.
+- **MG to high-pass** and **EG 2 to high-pass** move its cutoff.
+
+### Low-pass
+
+- **Low-pass cutoff:** above it, the sound is taken away.
+- **Low-pass peak:** resonance; sings from about 7, and at the top it screams.
+- **MG to low-pass** and **EG 2 to low-pass** move its cutoff.
+
+EG 2 moves a cutoff by how far it stands from its sustain level: the attack sweeps the cutoff up past where the knob puts it, and the decay brings it back. Set a high sustain and the sweep is small; set the sustain low and the decay sweeps the filter down.
+
+### Using two filters together
+
+- **A band-pass.** Raise the high-pass cutoff toward the low-pass cutoff: only the band between them is left. Narrow it for a telephone or a radio; move both with EG 2 for a wah.
+- **Two peaks.** Turn up both peaks with the cutoffs apart: two resonant formants, a vowel sound. Sweep one with the MG.
+- **The scream.** Low-pass peak near the top, the cutoff swept by EG 2, VCO 1 at full level into the filters.
+
+## The envelopes
+
+**EG 2** is the main envelope: **hold**, **attack**, **decay**, **sustain** and **release**. It opens the amplifier and, by its amounts, sweeps the filters. Its attack overshoots full a little before the decay begins, which gives notes a punch. The amplifier opens only past about a fifth of EG 2's swing: a slow attack is silent at first, and a sustain under 1 leaves the amplifier shut once the decay is done. **Hold** keeps EG 2 going for a while after you let go of the key.
+
+**EG 1** has **delay**, **attack** and **release**. It is for the pitch (EG 1 to pitch) and, on the patch panel, anything you patch it to. Its delay holds it back after the key, so effects can arrive late.
+
+Every key starts both envelopes again from where they are, even when you play legato.
+
+## The modulation generator: MG
+
+**MG frequency** from 0.1 to 18 Hz, and **MG waveform**, a single knob that leans the wave's peak: a falling saw at 0, a triangle at 5 and a rising saw at 10, and everything between. It goes to the pitch, both filters and, on the patch panel, its triangle and square to anything.
+
+## Portamento and output
+
+**Portamento** always glides, between legato and detached notes alike, a few milliseconds even at the bottom of its knob. It glides in hertz, as the original's keyboard did, so a glide down feels slower than one up. **Master tune** is about 165 cents either way, and **Volume** the output. **Quality**: Full runs the oscillators and filters at twice the sample rate; Light runs the oscillators at the rate and keeps the filters at twice it, so their singing is unchanged.
+
+## The patch panel
+
+On the full face, the patch panel holds 28 jacks. Outputs are on one side, inputs on the other, and printed lines show what each input takes when no cable is in it (its normal), the MG's and EG 2's lit as they move. Drag from an output to an input to patch a cable; drag a plug off its input to pull it, or onto another input to move it. An input takes one cable, an output any number. A cable into an input breaks its normal, as on the original. Cables droop between the jacks, faint while you are not handling them, in front of the panel; each patch is one undo step.
+
+**Outputs**
+
+| Jack | What it gives |
+| --- | --- |
+| **MG TRI**, **MG SQ** | The modulation generator's wave, and its square. |
+| **EG 1**, **EG 1 REV** | EG 1, and EG 1 upside down. |
+| **EG 2**, **EG 2 REV** | EG 2 as it moves the filters, and upside down. |
+| **VCO 1**, **VCO 2** | Each oscillator's wave at full level, before the mixer. |
+| **WHITE**, **PINK** | The noise generator. |
+| **S&H**, **MOD VCA** | The sample and hold's output, and the modulation VCA's. |
+| **KBD CV**, **KBD TRIG** | The keyboard's pitch voltage (after the portamento), and its trigger. |
+
+**Inputs**
+
+| Jack | What it does |
+| --- | --- |
+| **TOTAL** | Replaces the MG as the source of the MG knobs (pitch and both filters). |
+| **FREQ** | Replaces EG 1 as the source of the EG 1 to pitch knob. |
+| **VCO CV**, **VCO 2 CV** | The pitch voltage of both oscillators, or of VCO 2 alone. |
+| **HP CUT**, **LP CUT** | Replaces EG 2 as the source of each filter's EG 2 knob. |
+| **HP IN** | An audio input into the high-pass, added to the mixer. |
+| **VCA GAIN** | Opens the amplifier, added to EG 2: a cable here sounds the voice without a key. |
+| **S&H IN**, **CLOCK** | The sample and hold follows its input while the clock is high and holds it while low. |
+| **VCA IN**, **CONTROL** | The modulation VCA: its input times its control. |
+| **TRIG**, **EG 1 TRIG** | Starts both envelopes, or EG 1 alone. A cable into TRIG sounds the voice without a key. |
+
+An oscillator patched into a cutoff, the amplifier or the high-pass's input moves it at audio rate: frequency modulation of the filters.
+
+### Patches to try
+
+- **Noise into the low-pass cutoff** (WHITE → LP CUT): a rough, crackling growl.
+- **Random steps** (WHITE → S&H IN, MG SQ → CLOCK, S&H → LP CUT): the classic sample-and-hold bubbles, at the MG's rate.
+- **Filter FM** (VCO 2 → LP CUT): the filter swept at audio rate, metallic and vocal.
+- **The keyboard plays the filter** (KBD CV → LP CUT): the singing low-pass follows the keys.
+- **VCO 2 its own LFO** (MG TRI → VCO 2 CV): VCO 2 off the keyboard, wobbling against VCO 1.
+- **An external sound** through the filters: patch VCO 1 into HP IN for a second path, or PINK into HP IN to feed the filters noise.
+
+## Your first patch: the scream
+
+From a new Two-Filter Mono:
+
+1. **Sources.** VCO 1 saw at 8', level 10; VCO 2 square at 8', level 6, its pitch a few steps off the middle for beating.
+2. **Filters.** High-pass cutoff 3, peak 4. Low-pass cutoff 4, peak 8.
+3. **Sweep.** EG 2 to low-pass 6; EG 2 attack 0, decay 5, sustain 3, release 3.
+4. **Play.** Each key screams open and settles. Turn the low-pass peak toward 10 and back.
+
+## Starting points
+
+- **Acid-like bass.** VCO 1 saw at 16', Low-pass cutoff 3, peak 7, EG 2 to low-pass 7, EG 2 decay 3, sustain 0, Portamento 2.
+- **Ring-mod bell.** VCO 2 Ring, VCO 2 pitch off the middle, VCO 2 level 10, VCO 1 level 0, Low-pass open, EG 2 attack 0, decay 6, sustain 0, release 6.
+- **Wah lead.** High-pass cutoff 4, peak 6; Low-pass cutoff 5, peak 5; MG to both filters 3 at MG frequency 5.
+- **Siren.** EG 1 to pitch 8, EG 1 delay 3, attack 6; MG to pitch 4 with the MG on a rising saw.
+- **Snare and hats.** VCO 1 on noise, High-pass cutoff 6, peak 3, EG 2 attack 0, decay 2, sustain 0.
+
+## Tips
+
+- **Raise the high-pass before you close the low-pass.** Taking the bottom away often makes the sound bite harder than taking the top.
+- **Drive it.** VCO 1 at full level pushes the filters into their grit.
+- **Sustain under 1 means silence**: if a held note disappears after its decay, raise EG 2's sustain.
+- **Patch, then undo.** Each cable is one undo step, so experiment freely.
 
 ## Appendix: the factory presets
 

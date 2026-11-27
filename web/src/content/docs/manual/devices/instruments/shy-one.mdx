@@ -8,25 +8,156 @@ description: "One-oscillator monosynth in the style of the early-1980s Japanese 
 import Shot from '../../../../../components/Shot.astro';
 import chain from '../../../../../assets/devices/chain/shy-one.webp';
 import window from '../../../../../assets/devices/shy-one.webp';
+import Flow from '../../../../../components/Flow.astro';
 
 **An emulation of an analogue original,** modelled on the early-1980s Japanese portable monosynth with one oscillator, a sub, an arpeggiator and a sequencer.
 
-A modelled one-oscillator monosynth of the early 1980s, built from its circuit and fitted to a reference by measurement: one oscillator with its saw, a pulse with its width by hand, by the LFO or by the envelope, a sub-oscillator one or two octaves down or a narrow pulse, and noise, each by its slider, into a four-pole transconductance low-pass that sings at full resonance and an amplifier opened by the envelope or the gate. One envelope, started by the gate and each key, by the gate alone, or by the LFO; an LFO of four waveforms to the pitch, the pulse width and the filter; portamento always or between keys held together; the bender and its push to the LFO. The last key struck sounds.
-
 [Shy One on the website](/solmara/instruments/shy-one/)
 
-## In the device chain
+Shy One is a one-oscillator monophonic synthesizer in the image of the small Japanese monosynth of the early 1980s, the one that came in grey, red or blue, could hang from a strap like a guitar, and ran on batteries. It was meant as a beginner's instrument and became a classic anyway: its basses, squelchy sequences and bright leads are all over acid house, techno, synth-pop and drum and bass, and it remains one of the best synths to learn synthesis on, because everything is in plain sight.
 
-Shy One on a track, as it starts.
+One oscillator, but a well-fed one: a saw, a pulse, a sub-oscillator in three flavours and noise, all mixable at once. One resonant filter, one envelope, one LFO with a random wave, portamento, and an arpeggiator. Shy One models the stages from the circuit, including the way the envelope is retriggered and how the arpeggiator drives the voice's gate.
+
+## At a glance
+
+- **Monophonic**, last-note priority.
+- **One oscillator (VCO)** with four ranges, and a **source mixer** for its pulse, saw, sub-oscillator and noise, all at once.
+- **Pulse width** by hand, by the LFO or by the envelope.
+- **Sub-oscillator:** a square an octave down, two octaves down, or a narrow pulse two octaves down.
+- **A 24 dB/octave resonant low-pass filter (VCF)** that self-oscillates, with envelope, LFO and keyboard tracking.
+- **One ADSR envelope**, triggered by the gate and each new key, by the gate alone, or by the LFO.
+- **One LFO (modulator):** triangle, square, random or noise.
+- **Portamento** off, auto or on; **transpose** by octaves; a **bender** with a push for vibrato.
+- **An arpeggiator** (down, up and down, up) with hold, stepped by the LFO or by the song's tempo.
+
+## Signal flow
+
+<Flow
+  caption="Shy One's signal flow: one voice, all four sources mixed at once."
+  columns={[
+    [{id: 'pulse', label: 'Pulse'}, {id: 'saw', label: 'Saw'}, {id: 'sub', label: 'Sub-oscillator', note: '-1, -2 octaves, narrow'}, {id: 'noise', label: 'Noise'}],
+    [{id: 'mix', label: 'Source mixer'}],
+    [{id: 'vcf', label: 'VCF', note: '24 dB low-pass'}],
+    [{id: 'vca', label: 'VCA', note: 'envelope or gate'}],
+  ]}
+  mods={[
+    {label: 'LFO', to: ['pulse', 'vcf']},
+    {label: 'Envelope', to: ['vcf', 'vca']},
+    {label: 'Key', to: ['vcf']},
+    {label: 'Bender', to: ['vcf']},
+  ]}
+/>
+
+The oscillator's pulse and saw, the sub-oscillator and the noise each have a slider in the source mixer, so they can be blended in any proportion. The mix goes through the filter and the amplifier. The LFO can reach the pitch, the pulse width and the filter; the envelope reaches the filter, the amplifier and, if you choose, the pulse width.
+
+## The face
+
+### In the device chain
+
+In the chain Shy One shows its whole panel in the grey of the original's case: tune, the modulator, the oscillator, the source mixer, the filter, the amplifier and the envelope, with a strip under them for the volume, portamento, transpose, the bender and the arpeggiator. The bender's lever is on the face: drag it sideways to bend, up to push. A compact face, for a long chain, keeps the filter's, the envelope's and the mixer's sliders, portamento, volume and the arpeggiator.
 
 <a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Shy One in a track's device chain, as it starts." /></a>
 
-## Its window
+### Its window
 
-The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+The window has the whole panel larger, with pictures over the sliders: the LFO's wave, the oscillator's mixed wave as you set it, the filter's response (drag its corner for the cutoff and the resonance) and the envelope, dragged by its corners. Open it with the window key at the card's left, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while Shy One has the focus.
 
 <a href={window.src} title="The picture at its full size"><Shot src={window} alt="Shy One's window, as it starts." /></a>
 
+## The oscillator: VCO
+
+- **Range:** 16', 8', 4' or 2'.
+- **LFO to pitch** (MOD): vibrato, growing faster than the knob: two semitones either way at 4, more than two octaves at 10.
+- **Pulse width**: a square at 0, ever narrower toward 10. **Pulse width by** (LFO, MAN, ENV) chooses who moves it: **LFO** (the knob sets how far the LFO sweeps it), **Manual** (the knob sets it), or **Envelope** (the knob sets how far the envelope narrows it). The envelope on the pulse width gives each note a change of tone as it plays, even with the filter wide open.
+
+## The source mixer
+
+Four sliders, mixed at once:
+
+- **Pulse** and **Saw**, from the oscillator. The saw is bright and full; the pulse hollow or nasal by its width. Both together are thicker than either.
+- **Sub-oscillator**, a square below the oscillator. **Sub-oscillator mode** chooses: **-1 octave** (weight under a bass), **-2 octaves** (deep, rumbling), or **-2, narrow** (a narrow pulse two octaves down, buzzier and more defined).
+- **Noise**, for snares, hats, wind and breath.
+
+A new Shy One plays the saw with the sub-oscillator an octave down: already a good bass.
+
+## The filter: VCF
+
+A four-pole resonant low-pass, 24 dB an octave.
+
+- **Cutoff** (FREQ): about 29 Hz at 2, 181 Hz at 5, 3.2 kHz at 8 and 13 kHz at 10.
+- **Resonance** (RES): from a gentle edge to a whistle; from about 8.5 it rings by itself, a sine you can play.
+- **Envelope to filter** (ENV): how far the envelope opens it, up to almost nine octaves.
+- **LFO to filter** (MOD): the LFO on the cutoff, a wobble or, with the random wave, the bubbling sample-and-hold.
+- **Key follow** (KYBD): an octave an octave at 10, for an even tone across the keys and a filter that plays in tune.
+
+## The amplifier and envelope: VCA and ENV
+
+**Amplifier by** chooses **Envelope** (the envelope shapes the loudness) or **Gate** (full on while a key is held, off when it is let go). Gate is the setting for sequences where the filter does the shaping.
+
+The envelope has **Attack**, **Decay**, **Sustain** and **Release**, and **Envelope by** chooses what starts it:
+
+- **Gate and trigger** (G+T): the envelope starts at every key, even when you play legato. Each note is articulated.
+- **Gate:** the envelope starts only when you strike a key with none held; legato notes change the pitch under one envelope.
+- **LFO:** while a key is held, the envelope restarts at every cycle of the LFO's square: a repeating, rhythmic pulse from a single held note.
+
+## The modulator: LFO
+
+**Rate** from about 0.2 Hz to 38 Hz, and four waves:
+
+- **Triangle** for vibrato and smooth sweeps.
+- **Square** for trills and on-off effects.
+- **Random**: a new level every cycle, the sample-and-hold sound, classic on the filter.
+- **Noise**: fast random movement, for rough, gritty modulation.
+
+The LFO reaches the pitch, the pulse width and the filter, and clocks the envelope and the arpeggiator when they are set to follow it.
+
+## Portamento, transpose and bender
+
+- **Portamento** sets the glide time, and **Portamento by** when it glides: **Off**, **Auto** (only between keys held together, so you choose by playing legato) or **On** (always).
+- **Transpose:** **Low**, **Middle** or **High**, an octave down, none or up.
+- **Bender** is the lever (the track's pitch bend), with its depths **Bender to pitch** (an octave at 10) and **Bender to filter**. Pushing the lever (**Bender's push**, also pushed by your keyboard's mod wheel) brings in the LFO on the pitch by **Bender's push to LFO**: vibrato on demand.
+- **Tune** moves the pitch 50 cents either way, and **Volume** is the output.
+- **Quality**: **Full** runs the oscillator and the filter at twice the sample rate (the default); **Light** at the rate.
+
+The last key struck sounds; let go, and a key still held sounds again. The oscillator and the LFO run freely, so no two notes start alike.
+
+## The arpeggiator
+
+**Keys play** chooses **Keyboard** (play normally, no key lit) or one of the arpeggios by the **ARPEGGIO** keys: **DOWN**, **U & D** (up and down, without playing the ends twice) or **UP**. The arpeggio plays the keys held, lowest first; the first note sounds as you strike the chord, the next on the next step. **Hold** keeps it playing after you let go, until you strike a new chord.
+
+**Step** sets the speed: one step each cycle of the **LFO** (so the LFO's rate is the arpeggio's tempo), or locked to the song: **1/4**, **1/8**, **1/8T**, **1/16**, **1/16T** or **1/32**.
+
+The arpeggiator plays the voice as the original's does: the gate stays open from step to step, the envelope is struck again at each step when **Envelope by** is **Gate and trigger**, and portamento glides between steps only when it is **On**.
+
+## Sequences
+
+The original had a step sequencer; in Solmara, a [step-pattern clip](/solmara/manual/guides/drum-patterns/) on Shy One's track plays sequences the same way. Rests close the gate, ties hold it open, and slides hold a note into the next, so the envelope is not restarted and, with portamento on Auto or On, the pitch glides: the acid squelch. Accents are not heard, as on the original.
+
+## Your first patch: the squelch bass
+
+From a new Shy One:
+
+1. **Sources.** Saw 8, Sub-oscillator 6 at -1 octave.
+2. **Filter.** Cutoff 3, Resonance 7, Envelope to filter 6, Key follow 3.
+3. **Envelope.** Attack 0, Decay 3, Sustain 0, Release 2; Amplifier by Gate.
+4. **Glide.** Portamento 3, Portamento by Auto.
+5. **Play.** Hold one key and tap others over it: they slide. Lift between notes: each one snaps the filter. Now turn the Resonance and the Cutoff as it plays.
+
+## Starting points
+
+- **Bubbling sample-and-hold.** LFO Random, Rate 6, LFO to filter 5, Resonance 6, Cutoff 5; hold a note.
+- **Rhythmic pulse from one key.** Envelope by LFO, LFO Square at Rate 5, Attack 0, Decay 3, Sustain 0, Amplifier by Envelope.
+- **Lead.** Pulse 8 by LFO (Pulse width 4, LFO Rate 4), Saw 4, Cutoff 6, Resonance 3, Envelope to filter 3, Portamento 2 Auto; push the bender for vibrato.
+- **Snare and hats.** Noise only, Cutoff 8 with Key follow 10, Attack 0, Decay 2, Sustain 0, Release 2.
+- **Arpeggio.** Keys play Arp up, Step 1/16, Hold on, a short pluck: Envelope to filter 5, Decay 2.5, Sustain 0.
+- **Deep sub.** Sub-oscillator 10 at -2 octaves, Saw 3, Cutoff 2.5, Resonance 0.
+
+## Tips
+
+- **Mix the sources, don't choose.** Shy One's sound is in the blends: a little noise under a saw, the sub under a narrow pulse.
+- **Auto portamento** glides only when you play legato, so you decide note by note.
+- **The envelope on the pulse width** gives movement without touching the filter.
+- **Gate on the amplifier, envelope on the filter** is the classic sequence setup.
 
 ## Appendix: the factory presets
 

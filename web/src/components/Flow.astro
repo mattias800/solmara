@@ -35,7 +35,7 @@ const { caption, columns, voice = 0, voices = 'Each voice', links, mods = [], ou
 
 const W = 150, H = 54, GX = 34, GY = 14, PAD = 30, TOP = voice ? 38 : 16;
 // A long chain wraps: the voices' part on the first row, the rest under it.
-const wrapAt = wrap ?? (columns.length > 4 && voice > 0 && voice < columns.length ? voice : columns.length);
+const wrapAt = wrap ?? (columns.length <= 4 ? columns.length : voice > 0 && voice < columns.length ? voice : Math.ceil(columns.length / 2));
 const rows = [columns.slice(0, wrapAt), columns.slice(wrapAt)].filter((r) => r.length);
 const rowH = (r: Box[][]) => {
 	const t = Math.max(...r.map((c) => c.length));
@@ -129,6 +129,10 @@ const modPaths: { d: string; head: boolean }[] = pills.flatMap((p) => {
 });
 const height = lastLine ? row2Top + rowH(rows[1]) + 16 : mods.length ? pillY + 32 : TOP + row1H + 16;
 const frame = voice ? { x: PAD - 10, y: 8, w: Math.min(voice, wrapAt) * (W + GX) - GX + 20, h: TOP + row1H - 8 + 12 } : null;
+// A voice that goes on into the second row is framed there too.
+const frame2 = voice > wrapAt && lastLine
+	? { x: PAD - 10, y: row2Top - 10, w: (voice - wrapAt) * (W + GX) - GX + 20, h: rowH(rows[1]) + 20 }
+	: null;
 const id = `flow-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
@@ -145,6 +149,7 @@ const id = `flow-${Math.random().toString(36).slice(2, 8)}`;
 			</defs>
 			{frame && <rect x={frame.x} y={frame.y} width={frame.w} height={frame.h} rx="10" class="flow-frame" />}
 			{frame && <text x={frame.x + 10} y={frame.y + 16} class="flow-voices">{voices}</text>}
+			{frame2 && <rect x={frame2.x} y={frame2.y} width={frame2.w} height={frame2.h} rx="10" class="flow-frame" />}
 			{modPaths.map((m) => <path d={m.d} class="flow-mod" marker-end={m.head ? `url(#${id}-m)` : undefined} />)}
 			{signal.map((d) => <path d={d} class="flow-line" marker-end={`url(#${id}-a)`} />)}
 			{outPaths.map((d) => <path d={d} class="flow-line" marker-end={`url(#${id}-a)`} />)}
