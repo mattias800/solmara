@@ -1,0 +1,258 @@
+---
+// A signal-flow diagram, drawn as a schematic block diagram: the sound's
+// path left to right, a stage to a column (stages side by side stacked in
+// it), the voices' part framed, and what modulates what in dashed gold from
+// the sources along the bottom. Every colour is a theme token, so it reads
+// in the dark and the light manual alike.
+//
+//   <Flow caption="..." voice={3} voices="Each of the six voices"
+//     columns={[[{id:'dco', label:'DCO', note:'saw · pulse · sub'}], ...]}
+//     mods={[{label:'LFO', to:['dco','vcf']}]} />
+//
+// Each box goes to every box of the next column (pairwise where both have
+// more than one), unless `links` names the connections instead.
+
+interface Box {
+	id: string;
+	label: string;
+	note?: string;
+}
+interface Mod {
+	label: string;
+	to: string[];
+}
+interface Props {
+	caption?: string;
+	columns: Box[][];
+	voice?: number;
+	voices?: string;
+	links?: [string, string][];
+	mods?: Mod[];
+	out?: string;
+	wrap?: number;
+}
+const { caption, columns, voice = 0, voices = 'Each voice', links, mods = [], out = 'Out', wrap } = Astro.props;
+
+const W = 150, H = 54, GX = 34, GY = 14, PAD = 30, TOP = voice ? 38 : 16;
+// A long chain wraps: the voices' part on the first row, the rest under it.
+const wrapAt = wrap ?? (columns.length > 4 && voice > 0 && voice < columns.length ? voice : columns.length);
+const rows = [columns.slice(0, wrapAt), columns.slice(wrapAt)].filter((r) => r.length);
+const rowH = (r: Box[][]) => {
+	const t = Math.max(...r.map((c) => c.length));
+	return t * H + (t - 1) * GY;
+};
+const row1H = rowH(rows[0]);
+const laneTop = TOP + row1H + 24;
+const lanes = mods.map((_, i) => laneTop + i * 12);
+const pillY = laneTop + Math.max(mods.length - 1, 0) * 12 + 18;
+const below = mods.length ? pillY + 24 : TOP + row1H;
+const row2Top = below + 44;
+type Placed = Box & { x: number; y: number; col: number; row: number; line: number; lowest: boolean };
+const placed: Placed[] = [];
+rows.forEach((row, line) => {
+	const top = line ? row2Top : TOP, tall = rowH(row);
+	row.forEach((column, local) => {
+		const height = column.length * H + (column.length - 1) * GY;
+		column.forEach((box, r) => {
+			placed.push({ ...box, col: local + (line ? wrapAt : 0), row: r, line, lowest: r === column.length - 1,
+				x: PAD + local * (W + GX), y: top + (tall - height) / 2 + r * (H + GY) });
+		});
+	});
+});
+const at = Object.fromEntries(placed.map((p) => [p.id, p]));
+const pairs: [Placed, Placed][] = links
+	? links.map(([a, b]) => [at[a], at[b]] as [Placed, Placed]).filter(([a, b]) => a && b)
+	: columns.slice(0, -1).flatMap((column, col) => {
+			const next = columns[col + 1];
+			if (column.length > 1 && next.length > 1)
+				return column.map((box, i) => [at[box.id], at[next[Math.min(i, next.length - 1)].id]] as [Placed, Placed]);
+			return column.flatMap((a) => next.map((b) => [at[a.id], at[b.id]] as [Placed, Placed]));
+		});
+const signal = pairs.map(([a, b]) => {
+	const x1 = a.x + W, y1 = a.y + H / 2, x2 = b.x - 6, y2 = b.y + H / 2;
+	if (a.line !== b.line) {
+		// Down from the end of the first row and back to the start of the second.
+		const turn = x1 + 16, across = row2Top - 20, back = PAD - 18;
+		return `M${x1},${y1} L${turn},${y1} L${turn},${across} L${back},${across} L${back},${y2} L${x2},${y2}`;
+	}
+	const bend = (x2 - x1) / 2;
+	return `M${x1},${y1} C${x1 + bend},${y1} ${x2 - bend},${y2} ${x2},${y2}`;
+});
+const rowRight = (line: number) => Math.max(...placed.filter((p) => p.line === line).map((p) => p.x + W));
+const lastLine = rows.length - 1;
+const right = rowRight(lastLine);
+const last = columns[columns.length - 1].map((b) => at[b.id]);
+const outY = lastLine ? row2Top + rowH(rows[1]) / 2 : TOP + row1H / 2;
+const outPaths = last.map((b) => `M${b.x + W},${b.y + H / 2} C${right + 18},${b.y + H / 2} ${right + 14},${outY} ${right + 34},${outY}`);
+
+// The modulation: each source a pill under the first row, under its
+// targets; its own lane across, then up into each target (from below for the
+// lowest box of a column, else up the gap beside it and in from the left), or
+// down into a box of the second row.
+const pillW = (label: string) => Math.max(48, label.length * 8 + 24);
+let cursor = PAD;
+const pills = mods
+	.map((mod, i) => {
+		const xs = mod.to.map((id) => at[id]).filter(Boolean).map((b) => b.x + W / 2);
+		const want = xs.length ? Math.min(...xs) - pillW(mod.label) / 2 : PAD;
+		return { mod, i, want };
+	})
+	.sort((a, b) => a.want - b.want)
+	.map((p) => {
+		const x = Math.max(cursor, p.want);
+		cursor = x + pillW(p.mod.label) + 10;
+		return { ...p, x, w: pillW(p.mod.label) };
+	});
+const width = Math.max(rowRight(0) + (lastLine ? 40 : 76), right + 76, cursor + PAD);
+const entries: Record<string, number> = {};
+const arriving: Record<string, number> = {};
+for (const m of mods) for (const id of m.to) arriving[id] = (arriving[id] ?? 0) + 1;
+// The arrows into a box spread evenly across its middle, 18 apart.
+const spread = (b: Placed, n: number) => b.x + W / 2 + (n - 1 - (arriving[b.id] - 1) / 2) * 18;
+const modPaths: { d: string; head: boolean }[] = pills.flatMap((p) => {
+	const lane = lanes[p.i], cx = p.x + p.w / 2;
+	const ends = p.mod.to.map((id) => at[id]).filter(Boolean).map((b) => {
+		const n = (entries[b.id] = (entries[b.id] ?? 0) + 1);
+		if (b.line) {
+			const drop = below + 8 + p.i * 5, tx = spread(b, n);
+			return { d: `M${cx},${below} L${cx},${drop} L${tx},${drop} L${tx},${b.y - 6}`, head: true };
+		}
+		if (b.lowest) {
+			const tx = spread(b, n);
+			return { d: `M${cx},${lane} L${tx},${lane} L${tx},${b.y + H + 6}`, head: true };
+		}
+		const gx = b.x - 12 - (n - 1) * 6, ty = b.y + H - 10;
+		return { d: `M${cx},${lane} L${gx},${lane} L${gx},${ty} L${b.x - 6},${ty}`, head: true };
+	});
+	const anyUp = p.mod.to.some((id) => at[id] && !at[id].line);
+	return [...(anyUp ? [{ d: `M${cx},${pillY} L${cx},${lane}`, head: false }] : []), ...ends];
+});
+const height = lastLine ? row2Top + rowH(rows[1]) + 16 : mods.length ? pillY + 32 : TOP + row1H + 16;
+const frame = voice ? { x: PAD - 10, y: 8, w: Math.min(voice, wrapAt) * (W + GX) - GX + 20, h: TOP + row1H - 8 + 12 } : null;
+const id = `flow-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<figure class="flow">
+	<div class="flow-scroll">
+		<svg viewBox={`0 0 ${width} ${height}`} width={width} role="img" aria-labelledby={`${id}-cap`} style={`min-width:${Math.min(width, 540)}px`}>
+			<defs>
+				<marker id={`${id}-a`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+					<path d="M0,0 L10,5 L0,10 z" class="flow-head" />
+				</marker>
+				<marker id={`${id}-m`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+					<path d="M0,0 L10,5 L0,10 z" class="flow-mod-head" />
+				</marker>
+			</defs>
+			{frame && <rect x={frame.x} y={frame.y} width={frame.w} height={frame.h} rx="10" class="flow-frame" />}
+			{frame && <text x={frame.x + 10} y={frame.y + 16} class="flow-voices">{voices}</text>}
+			{modPaths.map((m) => <path d={m.d} class="flow-mod" marker-end={m.head ? `url(#${id}-m)` : undefined} />)}
+			{signal.map((d) => <path d={d} class="flow-line" marker-end={`url(#${id}-a)`} />)}
+			{outPaths.map((d) => <path d={d} class="flow-line" marker-end={`url(#${id}-a)`} />)}
+			<text x={right + 40} y={outY + 4} class="flow-out">{out}</text>
+			{placed.map((b) => (
+				<g>
+					<rect x={b.x} y={b.y} width={W} height={H} rx="7" class="flow-box" />
+					<text x={b.x + W / 2} y={b.note ? b.y + 23 : b.y + H / 2 + 6} class="flow-label">{b.label}</text>
+					{b.note && <text x={b.x + W / 2} y={b.y + 41} class="flow-note">{b.note}</text>}
+				</g>
+			))}
+			{pills.map((p) => (
+				<g>
+					<rect x={p.x} y={pillY} width={p.w} height="24" rx="12" class="flow-pill" />
+					<text x={p.x + p.w / 2} y={pillY + 16} class="flow-pill-text">{p.mod.label}</text>
+				</g>
+			))}
+		</svg>
+	</div>
+	{caption && <figcaption id={`${id}-cap`}>{caption}</figcaption>}
+</figure>
+
+<style>
+	.flow {
+		margin: 1.5rem 0;
+	}
+	.flow-scroll {
+		overflow-x: auto;
+		padding: 0.75rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 10px;
+		background: var(--sl-color-gray-6);
+	}
+	svg {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		font-family: var(--sl-font);
+	}
+	.flow-box {
+		fill: var(--sl-color-black);
+		stroke: var(--sl-color-gray-3);
+		stroke-width: 1.2;
+	}
+	.flow-label {
+		fill: var(--sl-color-white);
+		font-size: 16px;
+		font-weight: 600;
+		text-anchor: middle;
+		letter-spacing: 0.03em;
+	}
+	.flow-note {
+		fill: var(--sl-color-gray-3);
+		font-size: 12.5px;
+		text-anchor: middle;
+	}
+	.flow-line {
+		fill: none;
+		stroke: var(--sl-color-gray-2);
+		stroke-width: 1.6;
+	}
+	.flow-head {
+		fill: var(--sl-color-gray-2);
+	}
+	.flow-out {
+		fill: var(--sl-color-gray-2);
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	.flow-frame {
+		fill: none;
+		stroke: var(--sl-color-gray-4);
+		stroke-dasharray: 5 4;
+	}
+	.flow-voices {
+		fill: var(--sl-color-gray-3);
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.flow-mod {
+		fill: none;
+		stroke: var(--sl-color-accent);
+		stroke-width: 1.3;
+		stroke-dasharray: 4 3;
+	}
+	.flow-mod-head {
+		fill: var(--sl-color-accent);
+	}
+	.flow-pill {
+		fill: var(--sl-color-accent-low);
+		stroke: var(--sl-color-accent);
+	}
+	.flow-pill-text {
+		fill: var(--sl-color-accent-high);
+		font-size: 13px;
+		font-weight: 600;
+		text-anchor: middle;
+	}
+	figcaption {
+		margin-top: 0.5rem;
+		font-size: 0.875rem;
+		color: var(--sl-color-gray-3);
+	}
+	/* Starlight's content images get a frame; the diagram has its own. */
+	.sl-markdown-content .flow svg {
+		border: 0;
+	}
+</style>

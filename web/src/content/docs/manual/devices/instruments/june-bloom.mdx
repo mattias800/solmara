@@ -8,259 +8,222 @@ description: "Six-voice polysynth with chorus in the style of the early-1980s Ja
 import Shot from '../../../../../components/Shot.astro';
 import chain from '../../../../../assets/devices/chain/june-bloom.webp';
 import window from '../../../../../assets/devices/june-bloom.webp';
+import Flow from '../../../../../components/Flow.astro';
 
 **An emulation of an analogue original,** modelled on the early-1980s Japanese six-voice polysynth with one oscillator a voice and a stereo chorus.
 
 [June Bloom on the website](/solmara/instruments/june-bloom/)
 
-June Bloom is a six-voice polysynth with one oscillator a voice, a resonant low-pass, one envelope, one LFO and a stereo chorus. That is all it has, and it is enough for warm pads, round basses, brass stabs and bright chords; most of its character is the chorus. A new June Bloom plays a saw with the sub-oscillator under it, the filter half open, a short envelope and the chorus on I.
+June Bloom is a six-voice polyphonic synthesizer in the image of the Japanese polysynths of the early and mid-1980s: one oscillator a voice, one resonant low-pass filter, one envelope, one LFO, and a bucket-brigade stereo chorus that turns all of that into something enormous. Those instruments were affordable, simple and stable, and they ended up everywhere: the pads of eighties pop, the stabs and basses of early house, the warm chords of synthwave today.
 
-## How the sound is made
+The design is a lesson in doing a lot with a little. There is no second oscillator to detune, so the width comes from the chorus; there is one envelope, so the filter and the amplifier move together; and the oscillator is digitally controlled, so it stays in tune all evening. June Bloom models each of those stages from its circuit: the oscillator's counter and ramp, the filter's four transconductance stages, the envelope's curves and the chorus's two delay lines.
 
-Each of the six voices runs the same path, left to right on the panel:
+## At a glance
 
-1. **DCO**, the oscillator: a saw, a pulse and a square an octave down, mixed with noise.
-2. **VCF**, a four-pole low-pass, opened and closed by the envelope, the LFO and the key you play.
-3. **VCA**, the amplifier, opened by the envelope or straight by the key.
+- **Six voices**, each with its own oscillator, filter, amplifier and envelope.
+- **One digitally controlled oscillator (DCO)** a voice: saw and pulse, each switched on or off, a square sub-oscillator an octave down, and white noise.
+- **Pulse-width modulation** by hand or by the LFO.
+- **A 24 dB/octave low-pass filter (VCF)** that self-oscillates, with envelope (either polarity), LFO and keyboard tracking.
+- **A four-position high-pass filter (HPF)** after the voices, from a bass lift to a thin cut.
+- **One ADSR envelope** a voice, for the filter and the amplifier, or the amplifier opened by the key alone (gate).
+- **One triangle LFO** with a delay, shared by all six voices.
+- **A stereo bucket-brigade chorus** with modes I, II and I+II.
+- **Two voice-assignment modes**, glide, and a bender for the pitch, the filter and the LFO, with the mod wheel bringing in the LFO.
 
-The six voices are then summed and go through the **HPF**, a stepped high-pass, the **chorus** and the **volume**. The LFO and the envelope serve every voice: the LFO is one for all six, the envelope runs once for each voice.
+## Signal flow
 
-## In the device chain
+<Flow
+  caption="June Bloom's signal flow. Everything inside the frame is built six times, once a voice; the high-pass, the chorus and the volume work on the six voices' sum."
+  voice={3}
+  voices="Each of the six voices"
+  columns={[
+    [{id: 'dco', label: 'DCO', note: 'saw · pulse · sub · noise'}],
+    [{id: 'vcf', label: 'VCF', note: '24 dB low-pass'}],
+    [{id: 'vca', label: 'VCA', note: 'envelope or gate'}],
+    [{id: 'hpf', label: 'HPF', note: '4 positions'}],
+    [{id: 'chorus', label: 'Chorus', note: 'I · II · I+II'}],
+    [{id: 'vol', label: 'Volume'}],
+  ]}
+  mods={[
+    {label: 'LFO', to: ['dco', 'vcf']},
+    {label: 'Envelope', to: ['vcf', 'vca']},
+    {label: 'Key', to: ['vcf']},
+    {label: 'Bender', to: ['dco', 'vcf']},
+  ]}
+/>
 
-In a track's chain June Bloom shows the controls you reach for most: the filter, the envelope drawn with its four knobs, and the LFO's rate, the sub-oscillator, the chorus and the volume. The whole panel is in its window.
+Read it from the top left. The DCO makes the raw sound: a mix of its saw, its pulse, its sub-oscillator and noise. The VCF takes away the highs above its cutoff, moved by the envelope, the LFO, the key you play and the bender. The VCA sets the voice's loudness by the same envelope, or by the key alone. The six voices are then added together and go through the high-pass, the chorus and the volume.
+
+The gold lines are modulation: what moves what. The LFO reaches the pitch and the pulse width (both in the DCO) and the cutoff; the envelope reaches the cutoff and the amplifier.
+
+## The face
+
+### In the device chain
+
+In a track's chain June Bloom shows a compact face with what you reach for while playing: the filter's cutoff, resonance, envelope amount, LFO and key follow; the envelope drawn above its four knobs; and the LFO rate, the sub-oscillator, the chorus and the volume.
 
 <a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="June Bloom in a track's device chain, as it starts." /></a>
 
-## Its window
+### Its window
 
-The window holds the whole panel, laid out as the original's: a bank of sliders, each section named on a band of its colour. Open it with the window key at the card's left, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while June Bloom has the focus.
+The window has the whole panel, laid out like the original: a bank of sliders, each section named on a band of its colour (the LFO cream, the oscillator and chorus blue, the filters, amplifier and envelope red), and a strip under it with what June Bloom adds. Open it with the window key at the card's left, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while June Bloom has the focus.
 
 <a href={window.src} title="The picture at its full size"><Shot src={window} alt="June Bloom's window, as it starts." /></a>
 
-The sections below follow it from left to right. The panel's printed names are in brackets where they differ from the control's name.
+The window's pictures are controls too. Drag the filter curve's corner sideways for the cutoff and up and down for the resonance. Drag the envelope's corners for its attack, decay and sustain, and release. Right-click the envelope for a pluck, a pad or an organ's envelope, or to reset it. While you play, a dot for each voice shows where it is on the envelope and on the filter curve, the last key brightest, and the LFO shows where it is in its cycle.
 
-## The panel, section by section
+The sections below follow the panel from left to right. Where the panel prints a shorter name than the control has, it is in brackets.
 
-### LFO
+## The oscillator: DCO
 
-One triangle LFO for all six voices. **LFO rate** sets its speed, from a slow swell to a fast flutter. **LFO delay** holds it back after you strike a key with none held, then lets it grow in, so a held note starts plain and gains its vibrato: set it near 4 for a string player's late vibrato. The LFO does nothing until you send it somewhere: to the pitch here, to the pulse width in the DCO, and to the cutoff in the VCF.
+An analogue oscillator drifts with temperature. June Bloom's, like its original's, does not: a digital counter divides a fast master clock by a whole number for each note, and every time the count runs out, an analogue ramp is reset. The ramp is the saw; the pitch is exactly as stable as the clock. The price is that the highest notes can only land on the nearest whole divisor, so they are a few cents off, as on the original.
 
-### DCO
+The other waves are made from the ramp:
 
-- **Range** picks the octave: 16', 8' or 4'.
-- **LFO to pitch** (LFO) is vibrato. A little (1 to 2) is vibrato; more is a siren.
-- **Pulse width** (PWM) sets the pulse's width by hand, or, with **Pulse width by** on LFO (the LFO and MAN buttons), how far the LFO sweeps it. A slow sweep is the classic moving, chorused pulse.
-- **Pulse** and **Saw** switch each wave on. Both on is brighter and thicker; the pulse alone is hollow.
-- **Sub-oscillator** (SUB) adds a square an octave down: the weight under a bass.
-- **Noise** adds hiss, for breath, wind and percussion.
+- **Saw.** The ramp itself: bright, buzzy, every harmonic present. The starting point of strings, brass and most pads.
+- **Pulse.** The ramp compared against a level: high while the ramp is under it, low above it. **Pulse width** (PWM) sets the level. At 5 it is a square, hollow and woody; toward the ends it narrows to a thin, nasal pulse.
+- **Sub-oscillator** (SUB). A square an octave down, made by a flip-flop that changes state at every reset. It does not add brightness, only weight: the body under a bass or a pad.
+- **Noise.** White noise, one source for all six voices, for breath, wind, surf and percussion.
 
-### HPF
+**Saw** and **Pulse** are switches, as on the original; the sub and the noise are levels. With both waves on, the voice is brighter and fuller than either alone.
 
-**High-pass** (FREQ) is the high-pass after the voices, in four steps. **0** lifts the bass, **1** is flat, **2** and **3** thin the sound, cutting under about 240 Hz and 770 Hz. Use 2 or 3 to keep a pad out of the way of the bass and kick.
+**Range** sets the octave: 16', 8' or 4', the organ-pipe lengths that synthesizers borrowed.
 
-### VCF
+### Moving the pulse width
 
-- **Cutoff** (FREQ) is how open the filter is. **Resonance** (RES) makes it ring at the cutoff; from about 8 it sings on its own.
-- **Envelope to filter** (ENV) is how far the envelope opens it, and **Envelope polarity** (+ENV and -ENV) turns that upside down: Negative closes the filter as the envelope rises.
-- **LFO to filter** (LFO) sweeps the cutoff with the LFO: a wah, or a slow breathing.
-- **Key follow** (KYBD) opens the filter as you play higher. At 10 it follows the keys an octave an octave, so a singing filter plays in tune.
+**Pulse width by** chooses who sets the width. On **MAN** (manual) the **Pulse width** slider sets it. On **LFO**, the slider sets how far the LFO sweeps it. A slowly swept pulse is the sound of the era: the harmonics shift continuously, and a single oscillator sounds like several slightly detuned ones. Try LFO rate 3 and Pulse width 5 with the pulse alone and the chorus off, then turn the chorus on.
 
-### VCA
+### Vibrato
 
-**Amplifier by** (ENV and GATE) chooses what opens the amplifier: the **Envelope**, or the **Gate**, full on while a key is held, like an organ. **Amplifier level** (LEVEL) sets the voices' level before the chorus.
+**LFO to pitch** (LFO, in the DCO section) sends the LFO to the pitch. 1 to 2 is vibrato; at the top it is a siren. Combine it with the LFO's delay for vibrato that arrives after the note starts.
 
-### ENV
+The oscillators run freely: a key does not restart them, so no two notes start quite alike. That is part of the warmth.
 
-**Attack**, **Decay**, **Sustain** and **Release**, one envelope a voice. It drives the amplifier (with the VCA on Envelope) and, by **Envelope to filter**, the cutoff. A slow attack and long release make a pad; no attack, a short decay and no sustain make a pluck.
+## The high-pass filter: HPF
 
-### Chorus
+After the six voices are summed, a simple high-pass with four positions (FREQ):
 
-**Chorus** has four settings, by its two buttons: off, **I** (a slow, wide sweep), **II** (the same depth, nearly twice as fast), and **I+II** (a fast, shallow shimmer, the same in both sides). **Chorus output** (MONO and ST) plays it in **Stereo** or folds it to **Mono**. Turn the chorus off to hear how plain the voice beneath it is; turn it back on for the sound June Bloom is known for.
+| Position | What it does |
+| --- | --- |
+| **0** | Lifts the bass: a low shelf, for a rounder, heavier sound. |
+| **1** | Flat: nothing taken, nothing added. A new June Bloom starts here. |
+| **2** | Takes away the bass under about 240 Hz. |
+| **3** | Takes away the bass under about 770 Hz: thin and bright. |
 
-### More: voices, glide, bender and output
+It is a mixing tool built into the synth. A pad on 2 or 3 leaves room for the bass and the kick; a bass on 0 gains weight.
 
-The strip under the sliders holds what June Bloom has beside the original's panel.
+## The low-pass filter: VCF
 
-- **Voices** (POLY 1 and POLY 2) chooses how keys find a voice. **Poly 1** gives each new key the next voice in turn, so a released note rings on under the next. **Poly 2** gives a key the voice let go last, cutting its release: tighter for a fast line.
-- **Glide** slides each voice's pitch to its new key. In Poly 2 each note glides from the one before.
-- **Bender** is the pitch-bend lever, from -1 to 1. **Bender to pitch**, **Bender to filter** and **Bender to LFO** (TO PITCH, TO FILTER, TO LFO) set how far it moves each; at 10 the pitch bends an octave.
-- **Bender's push to LFO** (PUSH) brings in the LFO by hand, 0 to 1. Your keyboard's **mod wheel** pushes it too: put some **LFO to pitch** in, leave the LFO's delay at 0, and the wheel adds vibrato as you play.
+This is where June Bloom's sound is shaped. It is a four-pole low-pass filter, falling at 24 dB an octave above its cutoff, built like the original's from four transconductance stages in a row with a feedback loop round them. Each stage bends gently when driven hard, which is why the filter sounds smooth rather than glassy.
+
+- **Cutoff** (FREQ) sets where the highs start to go. Its scale is exponential: about 69 Hz at 2.5, 860 Hz at 5 and 10 kHz at 7.5.
+- **Resonance** (RES) feeds the filter's output back to its input, which boosts the frequencies at the cutoff. A little gives the sound a vocal edge; from about 8 the filter rings by itself, and at 10 it sings a sine wave of its own. As with most filters of this kind, more resonance means less bass.
+- **Envelope to filter** (ENV) is how far the envelope moves the cutoff, up to 14 octaves at 10. It is the control that makes a sound pluck, swell or bark.
+- **Envelope polarity** (+ENV and -ENV): on negative, the envelope closes the filter as it rises, so a sound gets darker on its attack and brighter as it fades.
+- **LFO to filter** (LFO) sweeps the cutoff with the LFO, up to about 3.3 octaves: a slow breathing, or a fast wah.
+- **Key follow** (KYBD) opens the filter as you play higher. At 10 the cutoff follows the keyboard an octave an octave, so the sound is equally bright across the keys and a self-oscillating filter plays in tune; at 0, high notes are darker than low ones.
+
+The bender can move the cutoff too; see [Performance](#performance).
+
+## The amplifier and envelope: VCA and ENV
+
+There is one envelope for each voice, and it does two jobs: it opens the filter (by **Envelope to filter**) and it shapes the loudness.
+
+- **Attack** is the time to rise to full, from 3 ms to about 3 s, in a straight line.
+- **Decay** is the time to fall to the sustain level, from 4 ms to 15 s.
+- **Sustain** is the level held while the key is down.
+- **Release** is the time to fade after the key is let go, from under 1 ms to about 14 s.
+
+Decay and release fall as curves, quickly at first and then slowly, like a capacitor discharging. That is why a June Bloom pluck has a snap to it.
+
+**Amplifier by** (ENV and GATE) chooses what opens the amplifier. On **Envelope**, the envelope shapes the loudness. On **Gate**, the amplifier opens fully while the key is held and closes when it is let go, like an organ, while the envelope still moves the filter. Gate lets you have a filter sweep on a sound that does not fade.
+
+**Amplifier level** (LEVEL) sets the level of each voice, about 10 dB either way of the middle.
+
+## The LFO
+
+One LFO serves all six voices, as on the original. Its wave is a triangle, made in small steps, and it runs from a slow 0.04 Hz (one cycle in 25 seconds) to 30 Hz.
+
+**LFO delay** (DELAY) is the clever part. When you strike a key with no others held, the LFO waits (from 0.2 s up to 3.3 s along the slider) and then grows in. A long note starts plain and gains its vibrato or filter movement the way a string player's or a singer's would. Keys played while others are held do not restart the delay.
+
+Because the LFO is shared, a vibrato or a filter sweep moves the whole chord together. That is a large part of the instrument's character: a chord breathes as one.
+
+## The chorus
+
+The chorus is half of June Bloom's sound. It is a bucket-brigade chorus: two analogue delay lines, each a chain of capacitors that pass the sound along at the speed of a clock. A slow triangle sweeps the clock, so the delay grows and shrinks, which bends the pitch of the delayed sound slightly up and down. The two lines are swept in opposite directions, one to each side, and mixed with the dry sound, so a mono voice comes out wide and shimmering.
+
+| Mode | Speed | Character |
+| --- | --- | --- |
+| **I** | 0.41 Hz | Slow and wide: the classic pad. |
+| **II** | 0.75 Hz | Nearly twice as fast, the same depth: more obvious movement. |
+| **I+II** | 8 Hz | A fast, shallow shimmer, the same in both sides: an organ's flutter. |
+
+**Chorus output** (MONO and ST) plays it in stereo or folds it to mono. A bucket-brigade line also adds a little noise of its own and softens the highs, which June Bloom keeps: the chorus sounds like hardware, not like a clean digital effect.
+
+To hear what it does, play a chord with the chorus off, then on I.
+
+## Performance
+
+These controls are in the window's **MORE** strip.
+
+- **Voices** (POLY 1 and POLY 2). In **Poly 1**, each new key takes the next voice in turn, so a released note rings on under the next one: chords and pads blend. In **Poly 2**, a key takes the voice let go last, cutting its release: lines and basses stay tight.
+- **Glide** slides each voice from its last pitch to its new key, at a steady rate: about 0.06 s an octave at 2, 0.27 s at 4, 0.86 s at 6, 1.6 s at 8 and 12.5 s at 10. The original had no glide; June Bloom adds it. In Poly 2 each note glides from the one before, which is the setting for a gliding bass line.
+- **Bender** is the pitch-bend lever, -1 to 1, and the track's pitch bend moves it. **Bender to pitch** (TO PITCH) sets the range, an octave at 10. **Bender to filter** (TO FILTER) moves the cutoff, and **Bender to LFO** (TO LFO) sets how much LFO the lever's push brings in.
+- **Bender's push to LFO** (PUSH) brings in the LFO by hand, 0 to 1; your keyboard's **mod wheel** pushes it too. Put some **LFO to pitch** in, leave the LFO's delay at 0, and the mod wheel adds vibrato as you play.
 - **Volume** is the output level.
-- **Quality** is **Full** (the filter run at twice the rate, the default) or **Light**, which sounds almost the same and costs half the processing. Use Light when a project has many voices playing.
+- **Quality** (Full or Light): Full runs each voice's filter at twice the sample rate, which keeps a high, resonant filter clean. Light runs it at the sample rate and costs half the processing; it sounds nearly the same.
 
-## Pictures you can play
+Six notes sound at once; with six held, a seventh is not played. June Bloom does not answer velocity, as the original did not: the dynamics come from the filter and the envelope.
 
-The window's pictures are controls too:
+## Your first patch: a warm pad
 
-- **The LFO's wave** grows in by its delay, so you see what the delay does.
-- **The filter's curve**: drag its corner sideways for the cutoff and up and down for the resonance.
-- **The envelope**: drag its corners for the attack, the decay with the sustain, and the release.
-- **Right-click the envelope** to set it as a pluck, a pad or an organ's, or to reset it.
+Start from a new June Bloom and build a pad step by step, listening after each step.
 
-While it plays, a dot for each voice shows where it is on the envelope and on the filter's curve, the last key struck brightest, and the LFO shows where it is in its cycle.
+1. **Make it slow.** Attack 5, Decay 6, Sustain 8, Release 6. Each chord now swells in and fades out.
+2. **Make it dark.** Cutoff 4, Resonance 1, Envelope to filter 2, so the swell opens the filter a little.
+3. **Make it move.** Switch the pulse on, set **Pulse width by** to LFO, Pulse width 4 and LFO rate 3. The tone starts to shift slowly.
+4. **Make it wide.** Chorus II.
+5. **Make room in the mix.** HPF 2.
 
-## Playing it
-
-- Six notes sound at once. A seventh key held with six down is not played.
-- June Bloom does not answer velocity: every key plays at the same level, as on the original.
-- The track's **pitch bend** moves the **Bender** lever, and the **mod wheel** pushes the LFO in (see above).
-- Every control can be automated, and each change is heard on the notes already playing.
+Now change one thing at a time to hear what it does: the chorus between I and II, the saw on and off, a little Noise for air.
 
 ## Starting points
 
-From a new June Bloom (its controls as they start):
-
-- **Warm pad.** Attack 5, Decay 6, Sustain 8, Release 6. Cutoff 4.5, Envelope to filter 1. Pulse on with **Pulse width by** LFO, LFO rate 3, Pulse width 4. Chorus II.
-- **Round bass.** Range 16', Sub-oscillator 8, Cutoff 3, Resonance 3, Envelope to filter 5. Attack 0, Decay 3.5, Sustain 2, Release 1.5. Chorus off, **Voices** on Poly 2, HPF 0.
-- **Brass stab.** Saw only, Cutoff 3.5, Envelope to filter 6, Attack 1.5, Decay 4, Sustain 5, Release 2. Chorus I.
-- **Pluck.** Cutoff 2.5, Envelope to filter 7, Key follow 7, Attack 0, Decay 3, Sustain 0, Release 3.
-- **Organ.** **Amplifier by** Gate, Pulse on, Saw off, Pulse width 5, Cutoff 7, Chorus I+II.
-- **Singing filter.** Resonance 9, Key follow 10, Noise 0, Saw off, Pulse off, Sub-oscillator 0: the filter itself is the tone, played in tune by the keys.
+- **Round bass.** Range 16', Sub-oscillator 8, Cutoff 3, Resonance 3, Envelope to filter 5, Attack 0, Decay 3.5, Sustain 2, Release 1.5. Chorus off, Voices Poly 2, HPF 0.
+- **House organ stab.** Amplifier by Gate, Pulse on, Saw off, Pulse width 5, Cutoff 7, Chorus I+II. Play short chords.
+- **Brass.** Saw only, Cutoff 3.5, Envelope to filter 6, Attack 1.5, Decay 4, Sustain 5, Release 2. Chorus I.
+- **Pluck.** Cutoff 2.5, Envelope to filter 7, Key follow 7, Attack 0, Decay 3, Sustain 0, Release 3. Chorus II.
+- **Strings with late vibrato.** Saw, Cutoff 5, Attack 4, Release 5, LFO to pitch 1.5, LFO rate 5.5, LFO delay 5, Chorus I.
+- **Singing filter.** Saw, Pulse and Sub-oscillator off, Resonance 10, Key follow 10, Envelope to filter 0: the filter's own sine is the sound, played in tune.
+- **Gliding lead.** Voices Poly 2, Glide 3, Saw, Sub-oscillator 3, Cutoff 6, Resonance 3, Chorus off.
 
 ## Tips
 
-- **The chorus is half the sound.** Before reaching for an effect, try I and II.
-- **A thin pad sits better.** In a full mix, HPF 2 makes room for the bass.
-- **One LFO for all voices** means a vibrato or a filter sweep moves the whole chord together, as the original did.
-- **For more voices or a second layer**, put a second June Bloom on another track, or both in an instrument rack.
+- **Try the chorus first.** Before reaching for another effect, switch between I and II; most of June Bloom's sounds are built around one of them.
+- **One envelope does two jobs.** For a pad that sweeps without fading, set Amplifier by to Gate and let the envelope work the filter alone.
+- **For a fatter sound, use the sub before the resonance.** Resonance thins the bass; the sub-oscillator adds it back.
+- **Six voices are a real limit.** A long release on a fast part steals voices; shorten the release, or use Poly 2.
+- **For two layers**, put a second June Bloom on another track, or both in an [instrument rack](../instrument-rack/), one an octave apart by its Range.
+- **June Bloom's chorus is also an effect of its own**, the [June Chorus](../../effects/june-chorus/), for any track.
 
-## Presets
+## Appendix: the factory presets
 
-100 factory presets come with June Bloom. Click the device's name to browse them, and try one while the song plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).
+June Bloom comes with 100 factory presets. Click the device's name to browse them, each with a line on what it is, and try one while the song plays. See [presets](/solmara/manual/guides/devices/#presets).
 
-### Bass
+- **Bass:** Bloom Bass, Felt Bass, Glide Bass, Grit Bass, Hollow Bass, Organ Bass, Ping Bass, Punch Bass, Round Bass, Rubber Bass, Snap Bass, Square Bass, Squelch Bass, Sub Floor, Thumb Bass, Velvet Bass, Wah Bass, Wide Bass.
+- **Brass:** Brass Section, Brass Stab, Bright Brass, Low Brass, Pulse Brass, Soft Horns, Swell Brass.
+- **Chord:** Big Stab, Bright Stab, Dark Stab, Detuned Chord, Filter Chord, Organ Stab, Snap Chord, Soft Chord.
+- **FX:** Bubbles, Hover, Laser Zap, Noise Surf, Resonant Sweep, Riser, Rumble, Warble.
+- **Keys:** Bell Keys, Funk Keys, Gate Organ, Music Box Keys, Poly Keys, Reed Organ, Soft Tine Keys, Warm Keys.
+- **Lead:** Breath Lead, Breathy Saw Lead, Bright Poly Lead, Click Lead, Ensemble Lead, Glide Lead, Growl Lead, Nasal Lead, Pluck Lead, PWM Lead, Saw Lead, Sine Whistle, Singing Lead, Square Lead, Thin Pulse Lead, Tremble Lead.
+- **Pad:** Airy Pad, Breath Pad, Bright Pad, Dark Pad, Deep Pad, Hollow Pad, Night Pad, PWM Pad, Shimmer Pad, Slow Sweep Pad, Swell Pad, Vowel Pad, Warm Pad.
+- **Pluck:** Brush Pluck, Glass Pluck, Harp Pluck, Mallet Pluck, Pizzicato Pluck, Soft Pluck, Twang Pluck.
+- **Sequence:** Bubble Sequence, Chug Sequence, Dark Sequence, Pulse Sequence, Saw Arp, Slide Sequence, Sparkle Arp.
+- **Strings:** Bright Strings, Chamber Strings, Ensemble Strings, High Strings, Low Strings, Silk Strings, Slow Strings, Staccato Strings.
 
-- **Bloom Bass**: The amplifier on its gate and a slow attack on the envelope, so each note starts at once and its filter opens after: a bass that blooms as it is held.
-- **Felt Bass**: The sub-oscillator alone at 4 feet, an octave under the key, through a closed filter with no resonance: near a sine, a soft, round bass.
-- **Glide Bass**: A saw and a square in POLY 2 with the glide at 3.5, so a line whose keys touch slides from note to note, the filter held half open.
-- **Grit Bass**: A saw with noise mixed under it into a resonant filter: the noise rasps at each note's start, a gritty edge on a firm bass.
-- **Hollow Bass**: A narrow pulse with little sub through a half-shut filter: a hollow, nasal bass that leaves room under it.
-- **Organ Bass**: A square and a full sub, the amplifier on its gate so each key starts and stops at once, the filter steady: an organ's pedal bass.
-- **Ping Bass**: A square and its sub through a resonant filter that pings at each note and settles: a bright, plucked bass.
-- **Punch Bass**: A saw and a square in 8 feet with the sub, the filter opened well at each note and let settle: a bright, punchy bass that cuts.
-- **Round Bass**: A saw and the sub-oscillator an octave down at 16 feet, the filter snapped open at each note and falling back: a round, punchy bass with no chorus.
-- **Rubber Bass**: A square and its sub through a filter with some resonance, opened hard at each note and closed in a beat: a bouncy, rubbery bass.
-- **Snap Bass**: A saw and the full sub under a filter thrown open and shut in a few tens of milliseconds, falling to a low hold: a snapping, percussive bass.
-- **Square Bass**: A plain square and its sub through a filter left mostly open, the envelope barely moving it: an even, hollow bass that sits still.
-- **Squelch Bass**: A saw and its sub into a resonant filter that the envelope snaps open and lets fall, gliding between keys that touch: a squelchy line.
-- **Sub Floor**: A square at 16 feet and the sub-oscillator under it, the filter nearly shut: a deep, steady bass that is mostly felt, lifted further by the high-pass's bass position.
-- **Thumb Bass**: A saw at 16 feet, the filter nearly shut and flicked open for an instant: a short, dark thump under each note.
-- **Velvet Bass**: The pulse, its width swept slowly by the LFO, and the sub under it, the chorus on I: a soft, moving bass that spreads a little in stereo.
-- **Wah Bass**: The envelope turned upside down: each note starts with the filter pulled shut and opens as it decays, a backwards wah.
-- **Wide Bass**: A saw and a pulse the LFO sweeps, the chorus on II: a fat, wide bass for a sparse track.
+## Appendix: every control
 
-### Brass
-
-- **Brass Section**: Saws behind a filter the envelope opens with a short swell and lets settle half shut: a section of horns, the chorus on I.
-- **Brass Stab**: Saws whose filter leaps open and falls back fast, the note short: brass hits for off-beats.
-- **Bright Brass**: A saw with a quicker swell and a filter that opens further and stays brighter, no chorus: a brash, forward brass.
-- **Low Brass**: A saw an octave down with a full sub, the filter swelling open: trombones and tubas under a section.
-- **Pulse Brass**: A pulse a little narrower than square, swelling open, the chorus on II: a reedy brass with a wide edge.
-- **Soft Horns**: A saw and a square with a slower swell, the filter opening only part way, the chorus on I: mellow horns.
-- **Swell Brass**: Saws whose filter opens over most of a second as the note swells: brass that crescendos into each chord.
-
-### Chord
-
-- **Big Stab**: A saw, a pulse and the sub, the filter opened hard, the chorus on II: a big, wide chord hit.
-- **Bright Stab**: A saw and a pulse with the bass cut hard and a quick decay, the chorus on II: a bright, thin chord hit.
-- **Dark Stab**: A saw behind a closed, resonant filter that opens for a moment: a dark, dubby chord.
-- **Detuned Chord**: A pulse swept quickly by the LFO and a saw, the chorus on II: a chord that sounds detuned, with a medium decay.
-- **Filter Chord**: A saw and a square through a singing filter that sweeps down after each chord: a dub chord with a tail of resonance.
-- **Organ Stab**: A square and a strong sub with a short decay and the filter open, the chorus on I: an organ chord for off-beats in a dance track.
-- **Snap Chord**: The amplifier on its gate with the filter struck open at each chord: a chord that starts with a click and a wah and holds as long as the keys.
-- **Soft Chord**: A saw with a slight swell and a gentle filter, the chorus on II: soft, sustained chords that are neither pad nor stab.
-
-### FX
-
-- **Bubbles**: A little noise into a filter at the edge of singing that the LFO moves fast through its range: bubbling, gurgling water.
-- **Hover**: A saw under a singing filter, the LFO moving both the filter and the pitch: a hovering, otherworldly drone.
-- **Laser Zap**: A saw and a pulse under a singing filter that the envelope throws from the top to the bottom in a quarter of a second: a zap at each key.
-- **Noise Surf**: Noise alone through a resonant filter the LFO sweeps slowly up and down, rising and falling like surf, the fast chorus on I+II.
-- **Resonant Sweep**: A saw and the sub-oscillator into the filter near singing, the envelope sweeping its corner up through the harmonics in a second and slowly back down.
-- **Riser**: Noise and a saw whose filter the envelope opens over two seconds while it swells: a riser into a drop.
-- **Rumble**: Noise at the bottom of the filter, rising slowly and falling away over seconds, the bass lifted: distant thunder.
-- **Warble**: A square with the LFO on the pitch at full and fast: a warbling, alarm-like tone.
-
-### Keys
-
-- **Bell Keys**: A narrow pulse under a filter near singing that the envelope pings at each key: a glassy, bell-like tone that rings away.
-- **Funk Keys**: A narrow pulse through a resonant filter flicked open and shut, the bass cut and no chorus: a percussive, clucking keyboard.
-- **Gate Organ**: A square and the sub with the amplifier on its gate, the filter open and steady, the chorus on I+II as a spinning speaker: an organ.
-- **Music Box Keys**: A pulse at 4 feet, the bass cut hard, each note short and dying away: a small, tinkling keyboard.
-- **Poly Keys**: A saw and a pulse through a filter that the envelope opens at each key and lets settle, the bass taken off by the high-pass: chords that sit above a bass line.
-- **Reed Organ**: A saw and a narrow pulse on the amplifier's gate, the filter part open, the chorus on II: a reedy, harmonium-like organ.
-- **Soft Tine Keys**: A near-square through a low filter the envelope opens a little at each key, dying away slowly, the chorus on I: a soft electric piano.
-- **Warm Keys**: A saw through a closing filter with a long decay and some of it held, the chorus on II: warm chords for ballads.
-
-### Lead
-
-- **Breath Lead**: A square with noise under it through a soft filter, a slow attack and a delayed vibrato: a breathy, flute-like lead.
-- **Breathy Saw Lead**: A saw with noise blown through it and a gentle filter, the chorus on II: an airy lead with a soft edge.
-- **Bright Poly Lead**: A saw and a pulse in POLY 1, so each note's release rings under the next, the filter open and the chorus on I: a bright lead that can play chords.
-- **Click Lead**: The amplifier on its gate, the filter swept by the envelope at each key: every note speaks with a quick wah and stops the moment it is let go.
-- **Ensemble Lead**: A saw and a pulse the LFO sweeps, under the chorus on I+II, whose fast, shallow sweep is the same in both sides: a thick lead with a quick shimmer, gliding a little.
-- **Glide Lead**: A saw and a pulse in POLY 2, so that a line played a key at a time glides from note to note, with vibrato coming in after each held note.
-- **Growl Lead**: A saw and its sub, an octave below the usual lead, through a resonant filter the envelope opens: a growling lead that glides.
-- **Nasal Lead**: A narrow pulse into a filter with high resonance that sits still, the bass taken off: a nasal, reedy lead.
-- **Pluck Lead**: A saw and a square through a resonant filter that falls to half-shut within a beat: a plucked lead whose held notes stay soft.
-- **PWM Lead**: The pulse alone, its width swept fast and deep by the LFO, through the chorus on II: a lead that shimmers as it holds.
-- **Saw Lead**: A saw over its sub in POLY 2, the filter wide open and no chorus: a plain, dry, bright lead that cuts.
-- **Sine Whistle**: No oscillator: the filter at full resonance sings a near sine at its corner, the keys playing it an octave an octave, with a slow vibrato.
-- **Singing Lead**: A saw under a filter near singing that follows the keys closely, the envelope lifting it at each note: a lead with a vowel in it.
-- **Square Lead**: A square in POLY 2 through a filter left open, the vibrato rising in after a moment: a clear, woody lead.
-- **Thin Pulse Lead**: A narrow pulse, bright and reedy, with the bass cut by the high-pass and the chorus on I: a thin lead that sits on top of a mix.
-- **Tremble Lead**: A square with a wide vibrato from the first moment: a wobbling lead for a playful line.
-
-### Pad
-
-- **Airy Pad**: A narrow pulse with noise over it, the bass cut away by the high-pass and the filter open, the chorus on II: a pad that is mostly air.
-- **Breath Pad**: A saw with plenty of noise through a low filter: a hushed pad, as of breath across the chord.
-- **Bright Pad**: A saw and a pulse with the filter wide open and the bass trimmed, the chorus on II: a bright pad for the top of a mix.
-- **Dark Pad**: A saw and its sub behind a filter nearly closed, the chorus on II: a dark, deep pad, more felt than heard.
-- **Deep Pad**: A saw an octave down with a strong sub, the filter low and the bass lifted: a pad that carries the bottom of a chord.
-- **Hollow Pad**: A plain square, the bass taken off by the high-pass, the chorus on I: a hollow, clarinet-coloured pad.
-- **Night Pad**: The envelope turned upside down on a slow attack, so the filter closes as the pad swells in and opens again as it lets go: a pad that darkens as it holds.
-- **PWM Pad**: The pulse alone, its width swept by the LFO, under the chorus on I: a slow, shimmering pad.
-- **Shimmer Pad**: A pulse whose width the LFO moves quickly, the high-pass cutting the bass and the chorus on II: a glittering, restless pad.
-- **Slow Sweep Pad**: A saw under a resonant filter the LFO moves slowly up and down: a pad that breathes over a bar or two.
-- **Swell Pad**: A saw and a pulse that swell in over a second and more, the envelope opening the filter as they come: a pad that grows into each chord.
-- **Vowel Pad**: A square through a resonant filter that barely follows the keys, so a vowel-like peak stays put across the chord, the fast chorus on I+II and a little vibrato: a soft choir.
-- **Warm Pad**: A saw and a slowly swept pulse through a half-closed filter, the chorus on II: a warm bed that fills the middle.
-
-### Pluck
-
-- **Brush Pluck**: A saw with noise through a filter that opens and closes quickly: a pluck with a brushed, breathy attack.
-- **Glass Pluck**: A saw and a narrow pulse into a resonant filter that the envelope flicks open and lets fall to nothing within half a second, the chorus on II.
-- **Harp Pluck**: A pulse whose notes ring a long while, the bass trimmed and the chorus on II: a harp-like pluck for arpeggios.
-- **Mallet Pluck**: A square and its sub through a closed, slightly resonant filter struck open: a wooden mallet.
-- **Pizzicato Pluck**: Saws with a very short note, the chorus on II: plucked strings.
-- **Soft Pluck**: A saw through a low filter opened gently at each note, ringing out slowly, the chorus on II: a soft, warm pluck.
-- **Twang Pluck**: A narrow pulse with a resonant filter snapped shut in an instant, no chorus: a twanging, koto-like pluck.
-
-### Sequence
-
-- **Bubble Sequence**: A square into a filter near singing, plucked open and shut: a round, bubbling sequence.
-- **Chug Sequence**: A saw and its sub on the amplifier's gate, the filter flicked at each note: a chugging, driving sequence that starts and stops with the keys.
-- **Dark Sequence**: A saw an octave down, the filter low and touched open at each step: a dark, pulsing sequence for the bottom of a track.
-- **Pulse Sequence**: A narrow pulse with no sub, the bass trimmed, through a resonant filter struck open at each note and closed in a moment, no chorus: a thin, ticking sequence.
-- **Saw Arp**: A saw with a short, bright envelope and a little of it held, the chorus on II: a wide arpeggio.
-- **Slide Sequence**: A saw in POLY 2 with a short glide and a resonant filter: each step slides into the next, a liquid line.
-- **Sparkle Arp**: A narrow pulse at 4 feet with the bass cut hard and a quick decay, the chorus on I: a glittering arpeggio above everything.
-
-### Strings
-
-- **Bright Strings**: A saw and a lightly swept pulse with the bass cut and the filter open, the chorus on II: bright strings that sit high.
-- **Chamber Strings**: The pulse alone, its width moved gently by the LFO, a soft filter and the chorus on I: thinner, more intimate strings.
-- **Ensemble Strings**: Saws under the chorus on II, a gentle filter and a vibrato that rises late: a big string ensemble, darker and slower to speak than Silk Strings.
-- **High Strings**: Saws at 4 feet with the bass cut hard and the filter open, the chorus on II: high, airy strings.
-- **Low Strings**: Saws an octave down through a darker filter, the chorus on II: a low section under a melody.
-- **Silk Strings**: Saws through a half-open filter that follows the keys, slow to swell and slow to let go, spread by the chorus on II: the string sound the instrument is known for.
-- **Slow Strings**: Saws that take two seconds to swell and as long to fade, the filter opening as they come: strings for long chords.
-- **Staccato Strings**: Saws with a quick swell and a short decay, the chorus on II: string stabs and short bowed chords.
-
-## Controls
-
-Each of the device's controls, with the values it can take and the one it starts at.
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
 
 | Control | Range | Starts at |
 | --- | --- | --- |

@@ -99,26 +99,21 @@ def pictures(device: dict) -> tuple[list[str], dict[str, list[str]]]:
 
 
 def preset_list(device: dict) -> list[str]:
-    """Its factory presets by category, each with what it is."""
+    """Its factory presets by category, their names only: an appendix."""
     path = DATA / "presets" / f"{device['slug']}.json"
     presets = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
     if not presets:
         return []
-    count = "One factory preset comes" if len(presets) == 1 else f"{len(presets)} factory presets come"
-    lines = ["## Presets", "",
-             f"{count} with {device['label']}. Click the device's name to browse them, and try one while the song "
-             f"plays; the library has them too. See [presets](/solmara/manual/guides/devices/#presets).", ""]
-    categories: dict[str, list[dict]] = {}
+    count = "one factory preset" if len(presets) == 1 else f"{len(presets)} factory presets"
+    lines = ["## Appendix: the factory presets", "",
+             f"{device['label']} comes with {count}. Click the device's name to browse them, each with a line on "
+             f"what it is, and try one while the song plays. See [presets](/solmara/manual/guides/devices/#presets).", ""]
+    categories: dict[str, list[str]] = {}
     for preset in presets:
-        categories.setdefault(preset.get("category") or "Other", []).append(preset)
-    for category, members in categories.items():
-        if len(categories) > 1:
-            lines += [f"### {mdx(category)}", ""]
-        for preset in members:
-            about = preset.get("description")
-            lines.append(f"- **{mdx(preset['name'])}**" + (f": {mdx(about)}" if about else ""))
-        lines.append("")
-    return lines
+        categories.setdefault(preset.get("category") or "Other", []).append(mdx(preset["name"]))
+    if len(categories) == 1:
+        return lines + [", ".join(next(iter(categories.values()))) + ".", ""]
+    return lines + [f"- **{mdx(category)}:** {', '.join(names)}." for category, names in categories.items()] + [""]
 
 
 def guide(device: dict, shown: dict[str, list[str]]) -> list[str]:
@@ -166,6 +161,9 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
         "",
     ]
     imports, shown = pictures(device)
+    written = GUIDES / f"{device['slug']}.md"
+    if written.exists() and "<Flow" in written.read_text(encoding="utf-8"):
+        imports.append("import Flow from '../../../../../components/Flow.astro';")
     lines += imports + [""]
     origin = device.get("origin")
     if origin:
@@ -189,9 +187,10 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     lines += preset_list(device)
     if controls:
         lines += [
-            "## Controls",
+            "## Appendix: every control",
             "",
-            "Each of the device's controls, with the values it can take and the one it starts at.",
+            "Each of the device's controls by the name automation and the inspector give it, with the values it "
+            "can take and the one it starts at.",
             "",
             "| Control | Range | Starts at |",
             "| --- | --- | --- |",
