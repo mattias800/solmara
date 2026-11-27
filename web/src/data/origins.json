@@ -1,6 +1,18 @@
 {
  "_": "Where each device comes from. A device listed here emulates gear, analogue or digital, and modelledOn says what it is modelled on, plainly: never by its maker's or its model's name, and never as another company's software. A device not listed is a design of Solmara's own.",
  "emulations": {
+  "builtin.lead-head-amplifier": {
+   "circuit": "analogue",
+   "modelledOn": "the late-1980s British 100-watt two-channel lead head, its lead channel clipped through a pair of diodes"
+  },
+  "builtin.thrash-metal-head": {
+   "circuit": "analogue",
+   "modelledOn": "the early-1980s British 100-watt master-volume head as a thrash player had it built, with a boost and a gate before its valves"
+  },
+  "builtin.rock-bass-head": {
+   "circuit": "analogue",
+   "modelledOn": "the 1970s British 100-watt bass head played dirty, the grinding bass of hard rock"
+  },
   "builtin.tube-mixer-saturator": {
    "circuit": "analogue",
    "modelledOn": "the 1950s American valve broadcast microphone mixer"
