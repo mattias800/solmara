@@ -30,7 +30,7 @@ GUIDE = "/solmara/manual/guides/modular/"
 # The groups in the order of the Modular's library, each with a line of its own.
 GROUPS = OrderedDict([
     ("Sources", "What makes a sound: oscillators, samples, grains and noise."),
-    ("Filters and amps", "What shapes a sound's colour and loudness: filters, resonators and amplifiers."),
+    ("Filters and amps", "What shapes a sound's color and loudness: filters, resonators and amplifiers."),
     ("Shapers", "What bends a wave into another: folding, saturation, multiplying and rectifying."),
     ("Modulation", "What moves things: envelopes, LFOs, random voltages and followers."),
     ("Sequencing", "What keeps time and plays in it: clocks, dividers, sequencers and the song's place."),

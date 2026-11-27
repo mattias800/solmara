@@ -1,6 +1,6 @@
-Shy One is a one-oscillator monophonic synthesizer in the image of the small Japanese monosynth of the early 1980s, the one that came in grey, red or blue, could hang from a strap like a guitar, and ran on batteries. It was meant as a beginner's instrument and became a classic anyway: its basses, squelchy sequences and bright leads are all over acid house, techno, synth-pop and drum and bass, and it remains one of the best synths to learn synthesis on, because everything is in plain sight.
+Shy One is a one-oscillator monophonic synthesizer in the image of the small Japanese monosynth of the early 1980s, the one that came in gray, red or blue, could hang from a strap like a guitar, and ran on batteries. It was meant as a beginner's instrument and became a classic anyway: its basses, squelchy sequences and bright leads are all over acid house, techno, synth-pop and drum and bass, and it remains one of the best synths to learn synthesis on, because everything is in plain sight.
 
-One oscillator, but a well-fed one: a saw, a pulse, a sub-oscillator in three flavours and noise, all mixable at once. One resonant filter, one envelope, one LFO with a random wave, portamento, and an arpeggiator. Shy One models the stages from the circuit, including the way the envelope is retriggered and how the arpeggiator drives the voice's gate.
+One oscillator, but a well-fed one: a saw, a pulse, a sub-oscillator in three flavors and noise, all mixable at once. One resonant filter, one envelope, one LFO with a random wave, portamento, and an arpeggiator. Shy One models the stages from the circuit, including the way the envelope is retriggered and how the arpeggiator drives the voice's gate.
 
 ## At a glance
 
@@ -38,7 +38,7 @@ The oscillator's pulse and saw, the sub-oscillator and the noise each have a sli
 
 ### In the device chain
 
-In the chain Shy One shows its whole panel in the grey of the original's case: tune, the modulator, the oscillator, the source mixer, the filter, the amplifier and the envelope, with a strip under them for the volume, portamento, transpose, the bender and the arpeggiator. The bender's lever is on the face: drag it sideways to bend, up to push. A compact face, for a long chain, keeps the filter's, the envelope's and the mixer's sliders, portamento, volume and the arpeggiator.
+In the chain Shy One shows its whole panel in the gray of the original's case: tune, the modulator, the oscillator, the source mixer, the filter, the amplifier and the envelope, with a strip under them for the volume, portamento, transpose, the bender and the arpeggiator. The bender's lever is on the face: drag it sideways to bend, up to push. A compact face, for a long chain, keeps the filter's, the envelope's and the mixer's sliders, portamento, volume and the arpeggiator.
 
 {{chain}}
 

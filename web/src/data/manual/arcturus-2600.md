@@ -38,7 +38,7 @@ Three oscillators, noise, a ring modulator, a four-pole filter, two envelopes, a
   ]}
 />
 
-On the original, the panel prints these lines, and on Arcturus 2600's face each slider's jack is labelled with what it takes. Every slider in a module is an input level: the filter's **SQR 1** slider is how much of VCO-1's square goes into the filter, its **ADSR** slider how far the ADSR moves its frequency. A new Arcturus 2600 plays VCO-1's square through the filter and the amplifier, shaped by the ADSR.
+On the original, the panel prints these lines, and on Arcturus 2600's face each slider's jack is labeled with what it takes. Every slider in a module is an input level: the filter's **SQR 1** slider is how much of VCO-1's square goes into the filter, its **ADSR** slider how far the ADSR moves its frequency. A new Arcturus 2600 plays VCO-1's square through the filter and the amplifier, shaped by the ADSR.
 
 ## The face
 
@@ -54,7 +54,7 @@ The window has the whole panel, in three rows of modules on orange-tabbed plates
 
 {{window}}
 
-Across the top runs the **patch** strip: a jack for every source the instrument has, from **SAW 1** to **KBD**. Under each module's sliders are its input jacks, labelled with what is normalled into them; a jack with a double ring can be re-patched.
+Across the top runs the **patch** strip: a jack for every source the instrument has, from **SAW 1** to **KBD**. Under each module's sliders are its input jacks, labeled with what is normalled into them; a jack with a double ring can be re-patched.
 
 ## The oscillators
 

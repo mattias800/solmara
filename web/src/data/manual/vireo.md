@@ -1,6 +1,6 @@
-Vireo is a virtual-analogue and wavetable synthesizer in the image of the German synths of the early 2000s that ruled trance, hard dance and electronic pop: a bright red or black box, or a keyboard, with an engine that kept growing through its life. It started as a virtual analogue and gained wavetables, a stack of seven saws, a vocoder, three LFOs, four envelopes, a modulation matrix, an arpeggiator with programmable patterns, and a complete effects section: chorus, phaser, delay, reverb, distortion, a filter bank, EQ. Its sound is punchy, clean and very wide, and its basses and plucks are still everywhere in dance music.
+Vireo is a virtual-analog and wavetable synthesizer in the image of the German synths of the early 2000s that ruled trance, hard dance and electronic pop: a bright red or black box, or a keyboard, with an engine that kept growing through its life. It started as a virtual analog and gained wavetables, a stack of seven saws, a vocoder, three LFOs, four envelopes, a modulation matrix, an arpeggiator with programmable patterns, and a complete effects section: chorus, phaser, delay, reverb, distortion, a filter bank, EQ. Its sound is punchy, clean and very wide, and its basses and plucks are still everywhere in dance music.
 
-Vireo is built from a detailed study of the original's behaviour, measured from the original running, and holds a patch exactly as the original does: every byte of it is a control. It loads the original's own patches (SysEx), banks included.
+Vireo is built from a detailed study of the original's behavior, measured from the original running, and holds a patch exactly as the original does: every byte of it is a control. It loads the original's own patches (SysEx), banks included.
 
 ## At a glance
 
@@ -8,7 +8,7 @@ Vireo is built from a detailed study of the original's behaviour, measured from 
 - **Three oscillators** and a **sub-oscillator**, **noise** and a **ring modulator**.
 - Oscillators 1 and 2 in several **modes**: **Classic** (saw to pulse, and 64 spectral waves), **HyperSaw** (a stack of saws with its own sub), **Wavetable** and **Wave PWM**.
 - **FM** of oscillator 2 by oscillator 1, **sync**, and **saturation**.
-- **Two filters**, routed **serial**, **parallel** or **split**, with the first offering analogue-style **1- to 4-pole** low-passes.
+- **Two filters**, routed **serial**, **parallel** or **split**, with the first offering analog-style **1- to 4-pole** low-passes.
 - **Four envelopes** (filter, amplifier, and two free ones) and **three LFOs**, all syncable to the tempo.
 - **A modulation matrix**: six slots, each a source with up to three destinations.
 - **Velocity** to many parameters; **three soft knobs** each patch assigns.
@@ -71,7 +71,7 @@ Then **Semitone**, **Keyfollow**, and for oscillator 2 **Detune**, **FM Amount**
 
 ### Oscillator 3, sub-oscillator and noise
 
-**Osc 3** adds a third oscillator with its own mode, semitone and detune. The **sub-oscillator** is a square or triangle an octave down. **Noise** has a volume and a colour, from dark to bright. The **ring modulator** multiplies oscillators 1 and 2, its own volume in the mix.
+**Osc 3** adds a third oscillator with its own mode, semitone and detune. The **sub-oscillator** is a square or triangle an octave down. **Noise** has a volume and a color, from dark to bright. The **ring modulator** multiplies oscillators 1 and 2, its own volume in the mix.
 
 ### The mixer
 
@@ -81,7 +81,7 @@ Then **Semitone**, **Keyfollow**, and for oscillator 2 **Detune**, **FM Amount**
 
 ## The filters
 
-- **Filter 1** modes: **Low Pass**, **High Pass**, **Band Pass** and **Band Stop**, plus **Analog 1 Pole** to **Analog 4 Pole**: a model of an analogue ladder-style low-pass, from gentle to steep, warmer and more resonant.
+- **Filter 1** modes: **Low Pass**, **High Pass**, **Band Pass** and **Band Stop**, plus **Analog 1 Pole** to **Analog 4 Pole**: a model of an analog ladder-style low-pass, from gentle to steep, warmer and more resonant.
 - **Filter 2** modes: Low Pass, High Pass, Band Pass and Band Stop.
 - **Cutoff**, **Cutoff2** (filter 2's, or its offset from filter 1 when **Filter2 Cutoff Link** is on), **Resonance** for each, **Env Amt** and **Env Polarity** for each, **Keyfollow** for each.
 - **Filter Routing**:
@@ -116,7 +116,7 @@ The **three soft knobs** are set up per patch to the controls that matter most f
 - **Unison Mode** from **Twin** to eight voices a note, with **Unison Detune**, **Unison Pan Spread** and **Unison Lfo Phase** (each unison voice's LFOs offset, for movement).
 - **Portamento Time**, **Bender Range Up** and **Down**, **Bender Scale**.
 - **Transpose**, **Patch Volume**, **Panorama**, **Punch Intensity** (a little extra snap at the attack).
-- **Control Smooth Mode** smooths stepped controller changes, or quantises them to the beat.
+- **Control Smooth Mode** smooths stepped controller changes, or quantizes them to the beat.
 
 ## The arpeggiator
 
@@ -130,8 +130,8 @@ The **three soft knobs** are set up per patch to the controls that matter most f
 - **Distortion**: a curve (light to hard, digital, wave shaper, rectifier, reducers, filters, and more) and its intensity.
 - **Filter Bank**: a ring modulator, frequency shifter, **vowel filter**, **comb filter**, or crossfading and variable-slope filters, with mix, frequency, resonance and stereo phase.
 - **EQ**: low, mid and high bands, and **Bass Intensity** and **Bass Tune**, a low-end boost.
-- **Delay**: **Simple**, **Ping Pong** with several ratios, and rhythmic **Pattern** modes; **Delay Type** Classic or **Tape** (clocked, free or with doppler), with send, time or clock, feedback, modulation and colour.
-- **Reverb**: **Ambience**, **Small Room**, **Large Room** or **Hall**, with send, time, damping, colour, predelay and feedback.
+- **Delay**: **Simple**, **Ping Pong** with several ratios, and rhythmic **Pattern** modes; **Delay Type** Classic or **Tape** (clocked, free or with doppler), with send, time or clock, feedback, modulation and color.
+- **Reverb**: **Ambience**, **Small Room**, **Large Room** or **Hall**, with send, time, damping, color, predelay and feedback.
 
 ## External input: follower and vocoder
 

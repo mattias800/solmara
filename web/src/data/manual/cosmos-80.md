@@ -53,7 +53,7 @@ The window has the whole panel: channel I over channel II, with the instrument's
 
 {{window}}
 
-The sliders are coloured by their job: green for the oscillator's and the filters' frequencies, red for resonance, yellow for the release times. Right-click a channel or one of its sections to copy it to the other channel, swap the two, or reset it.
+The sliders are colored by their job: green for the oscillator's and the filters' frequencies, red for resonance, yellow for the release times. Right-click a channel or one of its sections to copy it to the other channel, swap the two, or reset it.
 
 ## The two channels
 

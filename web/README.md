@@ -13,7 +13,7 @@ Every device page and card is made from the app itself:
 python scripts/devices.py PATH/TO/BUILD
 ```
 
-It asks Solmara for every device (its name, kind, summary and controls) and takes a fresh picture of each face, with settings of its own so nothing of your computer's shows (a device's nickname names the hardware it is modelled on). It writes `src/data/devices.json`, `src/data/controls/`, and `src/assets/devices/`. It stops if any of the app's words name a maker or a model the public site must not carry. `--only TYPE_ID,...` redoes some; `--no-faces` skips the pictures.
+It asks Solmara for every device (its name, kind, summary and controls) and takes a fresh picture of each face, with settings of its own so nothing of your computer's shows (a device's nickname names the hardware it is modeled on). It writes `src/data/devices.json`, `src/data/controls/`, and `src/assets/devices/`. It stops if any of the app's words name a maker or a model the public site must not carry. `--only TYPE_ID,...` redoes some; `--no-faces` skips the pictures.
 
 Laid over that by hand:
 
@@ -32,7 +32,7 @@ Pages are Markdown, in four kinds after the [Diátaxis](https://diataxis.fr) fra
 | `concepts/` | Explanation | wants to understand how a part works |
 | `reference/` | Reference | wants to look something up |
 
-The sidebar is set in `astro.config.mjs`. Write for musicians: plain words, second person, one idea a paragraph. Name Solmara's own devices only, never the hardware or the makers they are modelled on.
+The sidebar is set in `astro.config.mjs`. Write for musicians: plain words, second person, one idea a paragraph. Name Solmara's own devices only, never the hardware or the makers they are modeled on.
 
 The manual's pictures come from Solmara too: `python screenshots/shoot.py PATH/TO/BUILD` builds the demo song in `screenshots/night-drive.json` and crops the pictures into `src/assets/clips/`.
 

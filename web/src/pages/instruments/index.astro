@@ -6,8 +6,8 @@ import { byOrigin, familyOf, instrumentFamilies, instruments } from '../../lib/d
 const families = instrumentFamilies.filter((family) => family.devices.length > 0);
 const intros: Record<string, string> = {
 	own: 'Instruments of Solmara’s own design: the wavetable synth, the modular, the samplers and the drum tools.',
-	analogue: 'Synths, keys and drum machines modelled on analogue instruments, circuit by circuit, and held to references by measurement and by ear.',
-	digital: 'Synths modelled on digital instruments, from the early FM and phase-distortion keyboards to the virtual-analogue synths of the 1990s and 2000s.',
+	analogue: 'Synths, keys and drum machines modeled on analog instruments, circuit by circuit, and held to references by measurement and by ear.',
+	digital: 'Synths modeled on digital instruments, from the early FM and phase-distortion keyboards to the virtual-analog synths of the 1990s and 2000s.',
 };
 const parts = byOrigin(instruments);
 ---
@@ -15,10 +15,10 @@ const parts = byOrigin(instruments);
 <Site
 	title="Instruments"
 	section="instruments"
-	description={`Solmara's ${instruments.length} instruments: our own designs, and emulations of analogue and digital synths, keys and drum machines.`}
+	description={`Solmara's ${instruments.length} instruments: our own designs, and emulations of analog and digital synths, keys and drum machines.`}
 	eyebrow={`${instruments.length} instruments`}
 	heading="Instruments with names, and faces of their own"
-	lede="Synths, keys, drum machines and samplers: some of our own design, the rest modelled on the analogue and digital instruments they come from. Your own plugins play beside them."
+	lede="Synths, keys, drum machines and samplers: some of our own design, the rest modeled on the analog and digital instruments they come from. Your own plugins play beside them."
 >
 	<section>
 		<div class="chips" role="group" aria-label="Show a family">

@@ -33,7 +33,7 @@ export interface Shown extends Device {
 	image: ImageMetadata | null;
 	/** A design of Solmara's own, or an emulation of other gear or software. */
 	origin: Origin;
-	/** For an emulation, what it is modelled on, never by its maker's or its model's name. */
+	/** For an emulation, what it is modeled on, never by its maker's or its model's name. */
 	modelledOn: string | null;
 	/** The presets of other instruments it opens (interoperability, where products are named). */
 	opens: string | null;
@@ -41,12 +41,12 @@ export interface Shown extends Device {
 
 // 'unsaid' for a device whose origin the website does not tell: the MIDI
 // players, which follow another DAW's functions closely and are neither
-// called our own nor said to be modelled on software.
+// called our own nor said to be modeled on software.
 export type Origin = 'own' | 'analogue' | 'digital' | 'unsaid';
 /** The three parts every family's devices are shown in, in this order. */
 export const originParts: { key: Origin; label: string; short: string }[] = [
 	{ key: 'own', label: 'Our own designs', short: 'Our own design' },
-	{ key: 'analogue', label: 'Emulations of analogue gear', short: 'Analogue emulation' },
+	{ key: 'analogue', label: 'Emulations of analog gear', short: 'Analog emulation' },
 	{ key: 'digital', label: 'Emulations of digital gear', short: 'Digital emulation' },
 ];
 export const originLabel = (origin: Origin) => originParts.find((part) => part.key === origin)?.short ?? '';

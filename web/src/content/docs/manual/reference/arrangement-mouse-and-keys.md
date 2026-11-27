@@ -24,7 +24,7 @@ On a Mac, <kbd>Cmd</kbd> is the Command key and <kbd>Alt</kbd> is Option. On Win
 | Drag | Lower half of the right edge | Loops a MIDI or automation clip |
 | Drag | The left edge | Trims the clip's start |
 | Double-click | A MIDI clip | Opens it in its Composer window |
-| Right-click | A clip | The clip's menu: rename, mute, loop, colour, split, and more |
+| Right-click | A clip | The clip's menu: rename, mute, loop, color, split, and more |
 
 ## Clip keys
 

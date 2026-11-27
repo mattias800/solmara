@@ -194,8 +194,8 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     lines += imports + [""]
     origin = device.get("origin")
     if origin:
-        kind = "an analogue" if origin["circuit"] == "analogue" else "a digital"
-        lines += [f"**An emulation of {kind} original,** modelled on {origin['modelledOn']}.", ""]
+        kind = "an analog" if origin["circuit"] == "analogue" else "a digital"
+        lines += [f"**An emulation of {kind} original,** modeled on {origin['modelledOn']}.", ""]
     elif device.get("kind") != "midi":  # The players' origin is not told.
         lines += ["**A design of Solmara's own.**", ""]
     if (GUIDES / f"{device['slug']}.md").exists():

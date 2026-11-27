@@ -129,7 +129,7 @@ Start from a new Six-Op FM (operator 1 alone, a sine) and choose **algorithm 5**
 ## Tips
 
 - **Modulator level is brightness.** If a sound is too harsh, lower the modulators, not the volume.
-- **Watch the colours.** Green operators are heard, maroon ones only colour the sound.
+- **Watch the colors.** Green operators are heard, maroon ones only color the sound.
 - **Use velocity on modulators** for natural dynamics.
 - **Ratios tell the character:** whole numbers for harmonic, non-whole for metallic.
 - **Start from a preset or a voice bank** and change one operator at a time to learn how it is built.

@@ -1,4 +1,4 @@
-Gemini Plate is a steel-plate reverb: a sheet of steel two metres by one, hung in a frame, shaken by a driver at one point and heard by two pickups at others. It is the bright, dense, smooth reverb of countless vocals, snares and string sections, with no room in it: a plate has no walls to reflect from, so its sound is dense from the first milliseconds and has no echoes you can pick out.
+Gemini Plate is a steel-plate reverb: a sheet of steel two meters by one, hung in a frame, shaken by a driver at one point and heard by two pickups at others. It is the bright, dense, smooth reverb of countless vocals, snares and string sections, with no room in it: a plate has no walls to reflect from, so its sound is dense from the first milliseconds and has no echoes you can pick out.
 
 Gemini Plate is built as the sheet itself, tens of thousands of its resonances ringing together, not as a recording of one played back.
 
@@ -18,7 +18,7 @@ Gemini Plate is built as the sheet itself, tens of thousands of its resonances r
 
 How long the plate rings, in seconds, at 200 Hz: from half a second up to the 4.9 seconds the plate rings with its damper as far away as it goes. On the original this moved a damping plate closer to the steel, and it works the same here: it shortens the lows most and hardly changes the highs, so a short plate stays bright.
 
-The picture on the face draws how long each frequency rings, from 50 Hz to 20 kHz. **Drag it up and down** to move the damper, as you would turn **Decay**. Its whole travel is shaded behind it, and the cuts grey out the frequencies they take away.
+The picture on the face draws how long each frequency rings, from 50 Hz to 20 kHz. **Drag it up and down** to move the damper, as you would turn **Decay**. Its whole travel is shaded behind it, and the cuts gray out the frequencies they take away.
 
 You can turn **Decay** while the plate rings: what rings goes on, at the new rate.
 

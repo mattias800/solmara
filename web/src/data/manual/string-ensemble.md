@@ -14,7 +14,7 @@ String Ensemble models the instrument's divide-down organ, its fixed register fi
 ## Signal flow
 
 <Flow
-  caption="String Ensemble's signal flow. One master clock divided down gives every key its saws; each key is keyed through its own envelope, the registers colour them, and the ensemble turns the sum into strings."
+  caption="String Ensemble's signal flow. One master clock divided down gives every key its saws; each key is keyed through its own envelope, the registers color them, and the ensemble turns the sum into strings."
   columns={[
     [{id: 'org', label: 'Divide-down organ', note: '16\' · 8\' · 4\' saws'}],
     [{id: 'keys', label: 'Keying', note: 'an envelope a key'}],
@@ -29,7 +29,7 @@ String Ensemble models the instrument's divide-down organ, its fixed register fi
   ]}
 />
 
-Every key's saws come from one master clock divided down, so they are always in tune with each other and no key's wave ever restarts. Each key opens through its own envelope, swelling in by the crescendo and ringing out by the sustain. The registers are fixed filters that give each voice its colour. The ensemble then spreads the sum over three slowly drifting copies: the strings.
+Every key's saws come from one master clock divided down, so they are always in tune with each other and no key's wave ever restarts. Each key opens through its own envelope, swelling in by the crescendo and ringing out by the sustain. The registers are fixed filters that give each voice its color. The ensemble then spreads the sum over three slowly drifting copies: the strings.
 
 ## The face
 

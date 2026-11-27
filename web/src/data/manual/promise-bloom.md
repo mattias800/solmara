@@ -80,7 +80,7 @@ The original's oscillators drift and differ slightly from voice to voice, and so
 A four-pole low-pass, 24 dB an octave, built like the original's from four transconductance stages with a resonance loop, the loop itself bending gently when pushed.
 
 - **CUTOFF** covers about ten octaves, up to 7.3 kHz.
-- **RESONANCE** emphasises the cutoff; from about 6.5 the filter sings on its own, and higher up it is a sine-wave oscillator. As resonance rises, the bass thins.
+- **RESONANCE** emphasizes the cutoff; from about 6.5 the filter sings on its own, and higher up it is a sine-wave oscillator. As resonance rises, the bass thins.
 - **ENV AMOUNT** is how far the filter envelope opens the filter, up to 8 octaves.
 - **KEYBOARD** on makes the filter follow the keys an octave an octave, so the tone is even across the keyboard and a singing filter plays in tune.
 
