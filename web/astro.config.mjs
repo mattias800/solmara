@@ -2,24 +2,23 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { readFileSync } from 'node:fs';
+import { deviceSections, formerFolders, manualFolder } from './src/lib/manual-sections.mjs';
 
-// The guitar devices' chapters stand in their part's folder, as the app's
-// browser groups them (scripts/manual_devices.py, GUITAR_PARTS); their old
-// addresses, before the parts, lead there.
-const guitarParts = { 'Guitar amps': 'amps', 'Bass amps': 'bass-amps', Pedals: 'pedals', Cabs: 'cabs' };
-const guitarDevices = JSON.parse(readFileSync(new URL('./src/data/devices.json', import.meta.url), 'utf-8')).filter(
-	(device) => device.group === 'Guitar & bass',
+// The device chapters in the app's sections (src/lib/manual-sections.mjs);
+// each chapter's addresses from before the sections lead to it.
+const devices = JSON.parse(readFileSync(new URL('./src/data/devices.json', import.meta.url), 'utf-8'));
+const movedRedirects = Object.fromEntries(
+	devices.flatMap((device) =>
+		formerFolders(device).map((old) => [
+			`/manual/devices/${old}/${device.slug}/`,
+			`/solmara/manual/devices/${manualFolder(device)}/${device.slug}/`,
+		]),
+	),
 );
-const guitarRedirects = Object.fromEntries(
-	guitarDevices.map((device) => [
-		`/manual/devices/guitar/${device.slug}/`,
-		`/solmara/manual/devices/guitar/${guitarParts[device.part] ?? 'other'}/${device.slug}/`,
-	]),
-);
-const guitarGroup = (label, folder) => ({
+const deviceGroup = (label, folder) => ({
 	label,
 	collapsed: true,
-	items: [{ autogenerate: { directory: `manual/devices/guitar/${folder}` } }],
+	items: [{ autogenerate: { directory: `manual/devices/${folder}` } }],
 });
 
 // One project for Solmara's website and its manual, served on GitHub Pages
@@ -29,7 +28,7 @@ export default defineConfig({
 	site: 'https://mattias800.github.io',
 	base: '/solmara',
 	trailingSlash: 'always',
-	redirects: guitarRedirects,
+	redirects: movedRedirects,
 	integrations: [
 		starlight({
 			title: 'Solmara manual',
@@ -133,20 +132,15 @@ export default defineConfig({
 					label: 'Devices',
 					collapsed: true,
 					items: [
-						{ label: 'Instruments', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/instruments' } }] },
-						{ label: 'Effects', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/effects' } }] },
+						...deviceSections.map(([label, folder]) => deviceGroup(label, folder)),
 						{
-							label: 'Guitar and bass',
+							label: 'Modular',
 							collapsed: true,
 							items: [
-								guitarGroup('Guitar amps', 'amps'),
-								guitarGroup('Bass amps', 'bass-amps'),
-								guitarGroup('Pedals', 'pedals'),
-								guitarGroup('Cabs', 'cabs'),
+								{ autogenerate: { directory: 'manual/devices/modular' } },
+								{ label: 'Modules', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/modules' } }] },
 							],
 						},
-						{ label: 'MIDI devices', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/midi' } }] },
-						{ label: 'Modular modules', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/modules' } }] },
 					],
 				},
 				{ label: '← The Solmara website', link: '/' },

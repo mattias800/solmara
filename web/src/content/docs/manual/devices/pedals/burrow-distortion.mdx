@@ -1,0 +1,40 @@
+---
+title: "Burrow Distortion"
+description: "Op-amp distortion into diodes in the style of the late-1970s American hard-clipping pedals, with a filter knob: grit to thick distortion."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/burrow-distortion.webp';
+
+**An emulation of an analogue original,** modelled on the late-1970s American op-amp distortion pedal.
+
+An op-amp distortion for guitar: a slow op-amp whose gain the distortion knob raises, its bandwidth narrowing as it does, clipping into two diodes to ground, then a filter knob that darkens it. From a gritty overdrive to a thick, saturated distortion. Distortion, filter, volume, and an output; light or full quality. Modelled on the American op-amp distortion pedal of the late 1970s.
+
+[Burrow Distortion on the website](/solmara/guitar/#burrow-distortion)
+
+## In the device chain
+
+Burrow Distortion on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Burrow Distortion in a track's device chain, as it starts." /></a>
+
+
+## Appendix: the factory presets
+
+Burrow Distortion comes with 5 factory presets. Click the device's name to browse them, each with a line on what it is, and try one while the song plays. See [presets](/solmara/manual/guides/devices/#presets).
+
+Classic Crunch, Dark Lead, Edge of Breakup, Fuzzed Bass, Grunge Wall.
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Distortion | 0 to 100 | 50 |
+| Filter | 0 to 100 | 30 |
+| Volume | 0 to 100 | 50 |
+| Output | -24 dB to 24 dB | 0 dB |
+| Quality | Light, Full | Light |

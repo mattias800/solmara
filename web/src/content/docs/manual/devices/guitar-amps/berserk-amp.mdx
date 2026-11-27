@@ -1,0 +1,45 @@
+---
+title: "Berserk Amp"
+description: "Three-channel valve head with a temper switch: thick, dark modern high gain."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/berserk-amp.webp';
+
+**An emulation of an analogue original,** modelled on a modern three-channel high-gain valve head with a temper switch.
+
+A modelled three-channel high-gain valve head with a temper switch, and a cabinet that can be switched off: an input valve, the temper's voicing and the gain pot, a second valve, a third on the high and insane channels, a clipping stage that clips one side of the wave first, a fourth stage into a cathode follower, a bass, middle, and treble stack after the clipping, the master, and the power stage's loop with its depth and presence. Clean, high, and insane channels; calm, fierce, and rage tempers, each a set of the circuit's values fitted to a reference. It holds the audio back by 38 frames.
+
+[Berserk Amp on the website](/solmara/guitar/#berserk-amp)
+
+## In the device chain
+
+Berserk Amp on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Berserk Amp in a track's device chain, as it starts." /></a>
+
+
+## Appendix: the factory presets
+
+Berserk Amp comes with 6 factory presets. Click the device's name to browse them, each with a line on what it is, and try one while the song plays. See [presets](/solmara/manual/guides/devices/#presets).
+
+Clean Calm, Clean Rage Crunch, Fierce Rhythm, High Calm, Insane Chug, Rage Lead.
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Gain | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Depth | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Master | 0 to 100 | 50 |
+| Channel | Clean, High, Insane | High |
+| Temper | Calm, Fierce, Rage | Calm |
+| Cab | Off, On | On |

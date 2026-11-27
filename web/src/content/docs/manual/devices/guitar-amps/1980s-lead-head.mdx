@@ -1,0 +1,114 @@
+---
+title: "1980s Lead Head"
+description: "Two-channel valve head in the style of the late-1980s British lead heads: diode-clipped lead and a rhythm channel."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/1980s-lead-head.webp';
+import Flow from '../../../../../components/Flow.astro';
+
+**An emulation of an analogue original,** modelled on the late-1980s British 100-watt two-channel lead head, its lead channel clipped through a pair of diodes.
+
+[1980s Lead Head on the website](/solmara/guitar/#1980s-lead-head)
+
+1980s Lead Head is a two-channel valve guitar head in the image of the British 100-watt lead heads of the late 1980s: the amplifier whose lead channel clips through a pair of diodes, a tight, saturated, singing sound that hard rock and metal players made their own, and whose rhythm channel stays nearly clean until you pull in its clip. It is built from the circuit: the valves, the diodes, the tone stack and the power stage, solved as the music plays.
+
+It is a head alone, with no speaker: by itself it sounds harsh and fizzy, as a real head played straight into a desk does. **Put Boxed Twelves after it** for the cabinet and the microphone.
+
+## At a glance
+
+- **Two channels**: **Lead**, clipped through a pair of diodes, and **Rhythm**, nearly clean.
+- **Rhythm Clip**: lifts the rhythm channel onto the same diodes, for a crunch.
+- **Input Gain** for both channels, **Lead Master** for the lead channel's level, **Output Master** for the whole head.
+- **A passive tone stack** (Bass, Middle, Treble) after the clipping, and **Presence** in the power stage.
+- **Four output valves** in push-pull, driven by the Output Master.
+
+## Signal flow
+
+<Flow
+  caption="The guitar through the input valve, then one of the two channels, the tone stack and the power stage. The cabinet is a device of its own after it."
+  columns={[
+    [{id: 'in', label: 'Input valve', note: 'Input Gain'}],
+    [{id: 'lead', label: 'Lead: the diodes', note: 'Lead Master'}, {id: 'rhythm', label: 'Rhythm', note: 'clean, or Clip'}],
+    [{id: 'stack', label: 'Tone stack', note: 'Bass · Middle · Treble'}],
+    [{id: 'power', label: 'Power stage', note: 'Output Master · Presence'}],
+    [{id: 'cab', label: 'Boxed Twelves', note: 'after it'}],
+  ]}
+/>
+
+The input valve and its **Input Gain** feed a second stage, and from there the two channels part. The lead channel clips through a red LED one way and silicon diodes the other, so it clips a little differently on each side of the wave, then passes the **Lead Master**. The rhythm channel takes the same stage through a pad to ground: clean, or, with the clip, through a pair of the same diodes. Either then drives a third stage and a cathode follower into the tone stack, and the **Output Master** sets how hard the power stage is driven.
+
+## The face
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="1980s Lead Head in a track's device chain, as it starts." /></a>
+
+The silver panel prints its knobs 0 to 10, as the original does; the value itself shows while you turn a knob or hold the mouse over it. On the original the channel and the clip are pull switches on two of the knobs; here they are keys at the left, lit while they play.
+
+## The controls
+
+### CHANNEL
+
+**LEAD** and **RHYTHM**. The lead channel is the head's lead sound: the preamp clips on its diodes, saturated and smooth. The rhythm channel comes from an earlier stage, nearly clean and some 16 dB quieter, and a little brighter. You can switch while you play: the two cross over in a few milliseconds.
+
+### RHYTHM CLIP
+
+**CLEAN** and **CLIP**. Clip lifts the rhythm channel some 7 dB onto a pair of the same diodes: a crunch for chords, as much a boost as a clipper. It reaches the lead channel too: with the clip on, the lead is some 3.5 dB quieter.
+
+### Presence
+
+The top of the sound, in what the power stage feeds back. Turn it up to bring a dull cabinet forward; down for a darker, rounder lead.
+
+### Bass, Middle and Treble
+
+The passive tone stack, after the clipping. Its three knobs lean on each other, as on any amplifier of its kind: Middle low gives the scooped metal sound, Middle up a lead that cuts through a band. A right click on any of them offers **Reset the stack to noon**.
+
+### Output Master
+
+How hard the power stage is driven, and how loud the whole head is, on either channel: some 24 dB from 2 to 10. Turned up, the output valves add their own compression and grind.
+
+### Lead Master
+
+The lead channel's level after its diodes: some 28 dB from 1 to 10, silent at 0. It does nothing to the rhythm channel, so it is how the two channels are balanced: set the rhythm sound first, then bring the lead up to sit above it.
+
+### Input Gain
+
+How hard the preamp is driven, on both channels. On the lead channel it is the amount of saturation; on the rhythm channel it gives most of its gain below 7.5.
+
+## Setting it up
+
+1. Put **1980s Lead Head** on a guitar track, and **Boxed Twelves** after it.
+2. Start on **LEAD** with everything at 5. Play, and set **Input Gain** for the saturation you want.
+3. Shape the sound with the stack and **Presence**, with the cabinet on: alone, the head is always too bright.
+4. Switch to **RHYTHM**, set its sound, then go back to **LEAD** and set **Lead Master** so the lead sits above it.
+5. Set **Output Master** last, for the level and the power stage's push.
+
+## Starting points
+
+- **Classic lead.** LEAD, Input Gain 7, Bass 5, Middle 7, Treble 6, Presence 6, Lead Master 6.
+- **Scooped metal rhythm.** LEAD, Input Gain 8, Bass 7, Middle 2, Treble 7, Presence 7.
+- **Crunch chords.** RHYTHM with CLIP, Input Gain 6, Middle 6.
+- **Clean.** RHYTHM, CLEAN, Input Gain 4, Treble 6, Presence 4.
+
+## Tips
+
+- **Always play it through a cabinet.** Boxed Twelves after it turns the fizz into a guitar sound.
+- **Switch channels with automation.** Draw the Channel or Rhythm Clip in a lane, and the head changes sound where the song does, as a footswitch would.
+- **Tame the fizz with Treble and Presence, not Input Gain.** The diodes keep their saturation as you lower the top.
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input Gain | 0 to 100 | 50 |
+| Lead Master | 0 to 100 | 50 |
+| Output Master | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Channel | Lead, Rhythm | Lead |
+| Rhythm Clip | Clean, Clip | Clean |

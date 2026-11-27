@@ -1,0 +1,43 @@
+---
+title: "British Jumper Head"
+description: "Jumpered valve head in the style of the late-1960s British 100-watt amps: loud, open classic rock."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/british-jumper-head.webp';
+
+**An emulation of an analogue original,** modelled on the late-1960s British 100-watt valve head, its two channels jumpered.
+
+A modelled British guitar head of two channels and no master volume, without a cabinet: four input jacks, a high and a low for a normal channel and a bright one, into the two halves of the input valve; a volume for each, the bright one with a large capacitor that lifts the top the more the lower it is turned; the two mixed into a second stage coupled to a cathode follower, a passive tone stack whose knobs lean on each other, and four European output pentodes in push-pull on a speaker's load, with the presence in the power stage's feedback loop. With no master the volumes drive the power stage as well, and turned up it is the power stage that distorts. Bright and normal volumes, bass, middle, treble, presence, which jack the guitar is in and whether a jumper joins the channels, and a quality switch for how far above the sample rate the circuit is solved. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt lead head of the late 1960s with its clear front panel, the loud, open crunch of that era's rock, cleaner than a master-volume head at the same settings.
+
+[British Jumper Head on the website](/solmara/guitar/#british-jumper-head)
+
+## In the device chain
+
+British Jumper Head on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="British Jumper Head in a track's device chain, as it starts." /></a>
+
+
+## Appendix: the factory presets
+
+British Jumper Head comes with 8 factory presets. Click the device's name to browse them, each with a line on what it is, and try one while the song plays. See [presets](/solmara/manual/guides/devices/#presets).
+
+Bright Channel Chime, Cranked Lead, Edge of Breakup, Everything on Ten, Jumpered Crunch, Low Input Rhythm, Normal Channel Warmth, Scooped Jumper.
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Bright volume | 0 to 100 | 50 |
+| Normal volume | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Input | 12 choices: Bright high, Bright high, jumpered, Bright high, straight, Bright low, … | Bright high, jumpered |
+| Quality | Standard, Ultra | Standard |

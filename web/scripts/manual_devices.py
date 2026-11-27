@@ -14,6 +14,7 @@ has taken over (without the generated mark on its first lines) is left alone.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 WEB = Path(__file__).resolve().parent.parent
@@ -23,16 +24,33 @@ GUIDES = DATA / "manual"
 FACES = WEB / "src" / "assets" / "devices"
 MARK_WORDS = "Written by scripts/manual_devices.py"
 MARK = "{/* " + MARK_WORDS + " from the app and src/data/manual; edit those, or remove this line to write it by hand. */}"
+# The website's families, whose pages a device is shown on.
 FAMILIES = {"instrument": "instruments", "effect": "effects", "midi": "midi"}
-# The guitar devices in the app's parts, each a folder and a group in the
-# sidebar (astro.config.mjs), as the app's browser has them.
-GUITAR_PARTS = {"Guitar amps": "amps", "Bass amps": "bass-amps", "Pedals": "pedals", "Cabs": "cabs"}
+
+
+def folder_of(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
 def family(device: dict) -> str:
-    """Its chapter's folder under DOCS: guitar/<part> for the guitar devices."""
+    """Its chapter's folder under DOCS: its section of the manual's Devices,
+    as the app's browser groups it (src/lib/manual-sections.mjs, manualFolder:
+    keep the two alike)."""
+    if device.get("kind") == "midi":
+        return "midi"
+    if device["id"] == "builtin.modular":
+        return "modular"
     if device.get("group") == "Guitar & bass":
-        return "guitar/" + GUITAR_PARTS.get(device.get("part") or "", "other")
+        return folder_of(device.get("part") or "other")
+    if device.get("group") == "Synths":
+        return folder_of(f"{device.get('part') or 'other'} synths")
+    return folder_of(device.get("group") or "other")
+
+
+def site_family(device: dict) -> str:
+    """Its family on the website, whose page it is shown on."""
+    if device.get("group") == "Guitar & bass":
+        return "guitar"
     return FAMILIES.get(device.get("kind"), "effects")
 
 
@@ -188,7 +206,7 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
         lines += [mdx(lede), ""]
     if device["id"] not in site_hidden:
         place = {"instruments": f"/solmara/instruments/{device['slug']}/", "guitar": f"/solmara/guitar/#{device['slug']}",
-                 "midi": f"/solmara/write/#{device['slug']}"}.get(family(device).split("/")[0], f"/solmara/effects/#{device['slug']}")
+                 "midi": f"/solmara/write/#{device['slug']}"}.get(site_family(device), f"/solmara/effects/#{device['slug']}")
         if device["id"] == "builtin.modular":
             place = "/solmara/modular/"
         lines += [f"[{device['label']} on the website]({place})", ""]

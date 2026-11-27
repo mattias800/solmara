@@ -5,6 +5,7 @@ import Shot from '../../components/Shot.astro';
 import { getEntry } from 'astro:content';
 import Site from '../../layouts/Site.astro';
 import { familyOf, instruments, originLabel, type Shown } from '../../lib/devices';
+import { manualFolder } from '../../lib/manual-sections.mjs';
 import demos from '../../data/demos.json';
 import featureData from '../../data/features.json';
 
@@ -23,7 +24,8 @@ const index = siblings.indexOf(device);
 const previous = index > 0 ? siblings[index - 1] : null;
 const next = index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : null;
 const related = siblings.filter((other) => other !== device).slice(0, 5);
-const manual = await getEntry('docs', `manual/devices/instruments/${device.slug}`);
+const chapter = `manual/devices/${manualFolder(device)}/${device.slug}`;
+const manual = await getEntry('docs', chapter);
 const features = (featureData as unknown as Record<string, { heading: string; lede: string; items: { title: string; text: string }[] }>)[device.slug];
 const heard = (demos as Record<string, { title: string; file: string }[]>)[device.slug] ?? [];
 const facts = [
@@ -106,7 +108,7 @@ const facts = [
 				<div class="box manual">
 					<h3>In the manual</h3>
 					<p>Every control of the {device.label}, with its range and where it starts.</p>
-					<a href={`${base}/manual/devices/instruments/${device.slug}/`}>Open its chapter →</a>
+					<a href={`${base}/${chapter}/`}>Open its chapter →</a>
 				</div>
 			)}
 			{related.length > 0 && (

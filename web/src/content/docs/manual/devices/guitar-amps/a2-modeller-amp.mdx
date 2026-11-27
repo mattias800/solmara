@@ -1,0 +1,42 @@
+---
+title: "A2 Modeller Amp"
+description: "A Neural Amp Modeler capture of an amp, a pedal or a rig, played from its .nam file."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/chain/a2-modeller-amp.webp';
+import window from '../../../../../assets/devices/a2-modeller-amp.webp';
+
+**A design of Solmara's own.**
+
+A tone captured with Neural Amp Modeler, an amp, a pedal or a whole rig, played from its .nam file (NAM's A2, Lite and Full, and A1's WaveNets and LSTMs), which is kept with the project; with an input gain, a calibration to the level the tone was captured at, the output levelled by its loudness, and an output gain. It holds the audio back by 64 frames, and 128 where the model's rate is not the project's.
+
+[A2 Modeller Amp on the website](/solmara/guitar/#a2-modeller-amp)
+
+## In the device chain
+
+A2 Modeller Amp on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="A2 Modeller Amp in a track's device chain, as it starts." /></a>
+
+## Its window
+
+The window opens from the key in the device's header, or with **Ctrl+Shift+W** (**Cmd+Shift+W** on a Mac) while the device has the focus.
+
+<a href={window.src} title="The picture at its full size"><Shot src={window} alt="A2 Modeller Amp's window, as it starts." /></a>
+
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input | -24 dB to 24 dB | 0 dB |
+| Calibrate | Off, On | Off |
+| Interface | 0 dBu to 30 dBu | 12 dBu |
+| Size | Lite, Full | Full |
+| Normalize | Off, On | On |
+| Output | -24 dB to 24 dB | 0 dB |
