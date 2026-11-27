@@ -1,6 +1,26 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { readFileSync } from 'node:fs';
+
+// The guitar devices' chapters stand in their part's folder, as the app's
+// browser groups them (scripts/manual_devices.py, GUITAR_PARTS); their old
+// addresses, before the parts, lead there.
+const guitarParts = { 'Guitar amps': 'amps', 'Bass amps': 'bass-amps', Pedals: 'pedals', Cabs: 'cabs' };
+const guitarDevices = JSON.parse(readFileSync(new URL('./src/data/devices.json', import.meta.url), 'utf-8')).filter(
+	(device) => device.group === 'Guitar & bass',
+);
+const guitarRedirects = Object.fromEntries(
+	guitarDevices.map((device) => [
+		`/manual/devices/guitar/${device.slug}/`,
+		`/solmara/manual/devices/guitar/${guitarParts[device.part] ?? 'other'}/${device.slug}/`,
+	]),
+);
+const guitarGroup = (label, folder) => ({
+	label,
+	collapsed: true,
+	items: [{ autogenerate: { directory: `manual/devices/guitar/${folder}` } }],
+});
 
 // One project for Solmara's website and its manual, served on GitHub Pages
 // at /solmara/. The website's pages are in src/pages; the manual is
@@ -9,6 +29,7 @@ export default defineConfig({
 	site: 'https://mattias800.github.io',
 	base: '/solmara',
 	trailingSlash: 'always',
+	redirects: guitarRedirects,
 	integrations: [
 		starlight({
 			title: 'Solmara manual',
@@ -114,7 +135,16 @@ export default defineConfig({
 					items: [
 						{ label: 'Instruments', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/instruments' } }] },
 						{ label: 'Effects', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/effects' } }] },
-						{ label: 'Guitar and bass', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/guitar' } }] },
+						{
+							label: 'Guitar and bass',
+							collapsed: true,
+							items: [
+								guitarGroup('Guitar amps', 'amps'),
+								guitarGroup('Bass amps', 'bass-amps'),
+								guitarGroup('Pedals', 'pedals'),
+								guitarGroup('Cabs', 'cabs'),
+							],
+						},
 						{ label: 'MIDI devices', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/midi' } }] },
 						{ label: 'Modular modules', collapsed: true, items: [{ autogenerate: { directory: 'manual/devices/modules' } }] },
 					],

@@ -1,0 +1,115 @@
+---
+title: "Thrash Metal Head"
+description: "Master-volume valve head in the style of the early-1980s British heads as thrash players boosted and gated them: tight, fast rhythm."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../../components/Shot.astro';
+import chain from '../../../../../../assets/devices/thrash-metal-head.webp';
+import Flow from '../../../../../../components/Flow.astro';
+
+**An emulation of an analogue original,** modelled on the early-1980s British 100-watt master-volume head as a thrash player had it built, with a boost and a gate before its valves.
+
+[Thrash Metal Head on the website](/solmara/guitar/#thrash-metal-head)
+
+Thrash Metal Head is a valve guitar head in the image of the British 100-watt master-volume heads of the early 1980s, as a thrash player had one built for him, with a boost and a noise gate in front of its valves. Boost off, it is the classic master-volume head; boost on, a voiced boost drives the preamp hard, tight and fast, with the mids pushed and the top held back, and a gate keeps the silences between riffs silent. It is built from the circuit, solved as the music plays.
+
+It is a head alone, with no speaker: by itself it sounds harsh and fizzy, as a real head played straight into a desk does. **Put Boxed Twelves after it** for the cabinet and the microphone.
+
+## At a glance
+
+- **The head:** Pre-amp Volume, a passive tone stack (Bass, Middle, Treble), Presence and Master Volume.
+- **The boost:** a voiced boost before the preamp, its gain set by **Assault**.
+- **The gate:** an expander that listens to your guitar, its threshold set by **Gate**, with a lamp that shows it working.
+- The boost and the gate come on together with the **BOOST** switch.
+
+## Signal flow
+
+<Flow
+  caption="The guitar through the gate and the boost while the boost is on, then the head: the preamp, the tone stack and the power stage. The cabinet is a device of its own after it."
+  columns={[
+    [{id: 'gate', label: 'Gate', note: 'with the boost'}],
+    [{id: 'boost', label: 'Boost', note: 'Assault'}],
+    [{id: 'pre', label: 'Preamp', note: 'Pre-amp Volume'}],
+    [{id: 'stack', label: 'Tone stack', note: 'Bass · Middle · Treble'}],
+    [{id: 'power', label: 'Power stage', note: 'Master Volume · Presence'}],
+    [{id: 'cab', label: 'Boxed Twelves', note: 'after it'}],
+  ]}
+/>
+
+With the boost on, the gate comes first and listens to the guitar itself, so how hard it closes does not depend on the boost or the preamp. The boost lifts a band from about 250 Hz to 5 kHz, with a peak near 1 kHz, ahead of the valves; it never clips itself, but drives the preamp into clipping. With the boost off, both are out of the way and the guitar goes straight into the head.
+
+## The face
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="Thrash Metal Head in a track's device chain, as it starts." /></a>
+
+The gold panel prints its knobs 0 to 10; the value itself shows while you turn a knob or hold the mouse over it. The boost sits on its own black inlay. While it is off, **Assault** and **Gate** are dimmed, as they do nothing then.
+
+## The controls
+
+### Presence
+
+The top of the sound, in what the power stage feeds back. Turn it up to bring a dull cabinet forward.
+
+### Bass, Middle and Treble
+
+The passive tone stack, after the clipping. Its three knobs lean on each other: Middle low for the scooped sound, up for riffs that cut through. A right click on any of them offers **Reset the stack to noon**.
+
+### Volume Master
+
+How hard the power stage is driven, and how loud the head is.
+
+### Volume Pre-amp
+
+How hard the preamp's stages are driven, before the stack: the amount of distortion. With the boost on, a lower setting goes a long way.
+
+### BOOST
+
+Switches the boost and the gate on and off together. Off, the head is the plain master-volume head. You can switch while you play.
+
+### Assault
+
+How much the boost lifts: some 12 dB over the plain head at 0, 24 at 5 and 28 at 10. The more Assault, the tighter and more saturated the head, with more mids and less top.
+
+### Gate
+
+The gate's threshold. To the left it gates harder; far to the right it hardly acts at all. It is an expander, not a switch: below the threshold it turns the guitar down progressively, letting a long note fade slowly and stopping a short one quickly, so palm-muted riffs stay tight without chopping the sustain off held chords.
+
+The lamp under the knob lights while the gate turns the guitar down, brighter the further. Set the knob so it lights in your pauses, not while you play.
+
+## Setting it up
+
+1. Put **Thrash Metal Head** on a guitar track, and **Boxed Twelves** after it.
+2. With **BOOST** off, set the head: Pre-amp Volume, the stack and Presence, with the cabinet on.
+3. Switch **BOOST** on and bring **Assault** up until the riffs are as tight as you want. Lower Pre-amp Volume if it gets fizzy.
+4. Turn **Gate** from the right toward the left while you stop and start playing, until the lamp lights in the pauses and the hiss is gone.
+5. Set **Volume Master** last.
+
+## Starting points
+
+- **Thrash rhythm.** BOOST on, Assault 6, Pre-amp Volume 5, Bass 6, Middle 4, Treble 6, Presence 6, Gate 4.
+- **Classic master-volume crunch.** BOOST off, Pre-amp Volume 7, Middle 6.
+- **Lead.** BOOST on, Assault 4, Pre-amp Volume 6, Middle 7, Gate 7.
+
+## Tips
+
+- **Always play it through a cabinet.** Boxed Twelves after it turns the fizz into a guitar sound.
+- **More Assault, less Pre-amp.** The boost tightens the low end as it drives; it is the sound of the head with it on.
+- **Watch the lamp, not the meter.** If the lamp lights while you hold a chord, the gate is set too far left.
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Preamp Volume | 0 to 100 | 50 |
+| Master Volume | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Boost | Off, On | Off |
+| Assault | 0 to 100 | 50 |
+| Gate Threshold | 0 to 100 | 50 |

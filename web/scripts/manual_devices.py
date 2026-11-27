@@ -24,12 +24,21 @@ FACES = WEB / "src" / "assets" / "devices"
 MARK_WORDS = "Written by scripts/manual_devices.py"
 MARK = "{/* " + MARK_WORDS + " from the app and src/data/manual; edit those, or remove this line to write it by hand. */}"
 FAMILIES = {"instrument": "instruments", "effect": "effects", "midi": "midi"}
+# The guitar devices in the app's parts, each a folder and a group in the
+# sidebar (astro.config.mjs), as the app's browser has them.
+GUITAR_PARTS = {"Guitar amps": "amps", "Bass amps": "bass-amps", "Pedals": "pedals", "Cabs": "cabs"}
 
 
 def family(device: dict) -> str:
+    """Its chapter's folder under DOCS: guitar/<part> for the guitar devices."""
     if device.get("group") == "Guitar & bass":
-        return "guitar"
+        return "guitar/" + GUITAR_PARTS.get(device.get("part") or "", "other")
     return FAMILIES.get(device.get("kind"), "effects")
+
+
+def up_to_src(device: dict) -> str:
+    """From its chapter's folder back to src/, for its imports."""
+    return "../" * (len((DOCS / family(device)).relative_to(WEB / "src").parts))
 
 
 def number(value: float) -> str:
@@ -84,8 +93,8 @@ def generated(path: Path) -> bool:
 def pictures(device: dict) -> tuple[list[str], dict[str, list[str]]]:
     """The imports, and each picture as the page shows it."""
     slug, label = device["slug"], device["label"]
-    up = "../../../../../assets/devices/"
-    imports, shown = ["import Shot from '../../../../../components/Shot.astro';"], {}
+    up = up_to_src(device) + "assets/devices/"
+    imports, shown = [f"import Shot from '{up_to_src(device)}components/Shot.astro';"], {}
     chain = FACES / "chain" / f"{slug}.webp"
     if chain.exists() or (not device["window"] and (FACES / f"{slug}.webp").exists()):
         imports.append(f"import chain from '{up}{'chain/' if chain.exists() else ''}{slug}.webp';")
@@ -163,7 +172,7 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
     imports, shown = pictures(device)
     written = GUIDES / f"{device['slug']}.md"
     if written.exists() and "<Flow" in written.read_text(encoding="utf-8"):
-        imports.append("import Flow from '../../../../../components/Flow.astro';")
+        imports.append(f"import Flow from '{up_to_src(device)}components/Flow.astro';")
     lines += imports + [""]
     origin = device.get("origin")
     if origin:
@@ -179,7 +188,7 @@ def write(device: dict, site_hidden: set[str]) -> Path | None:
         lines += [mdx(lede), ""]
     if device["id"] not in site_hidden:
         place = {"instruments": f"/solmara/instruments/{device['slug']}/", "guitar": f"/solmara/guitar/#{device['slug']}",
-                 "midi": f"/solmara/write/#{device['slug']}"}.get(family(device), f"/solmara/effects/#{device['slug']}")
+                 "midi": f"/solmara/write/#{device['slug']}"}.get(family(device).split("/")[0], f"/solmara/effects/#{device['slug']}")
         if device["id"] == "builtin.modular":
             place = "/solmara/modular/"
         lines += [f"[{device['label']} on the website]({place})", ""]
@@ -225,11 +234,12 @@ def main() -> None:
         device["origin"] = origins.get(device["id"])
     hidden = set(json.loads((DATA / "site.json").read_text(encoding="utf-8"))["hidden"])
     written = [p for p in (write(d, hidden) for d in devices) if p]
-    # A generated chapter for a device that is no longer there, or is named
-    # anew, goes; one written by hand stays, to be moved by hand.
-    slugs = {d["slug"] for d in devices}
+    # A generated chapter for a device that is no longer there, is named
+    # anew or has moved to another folder goes; one written by hand stays,
+    # to be moved by hand.
+    places = {DOCS / family(d) / f"{d['slug']}.mdx" for d in devices}
     for old in [*DOCS.rglob("*.md"), *DOCS.rglob("*.mdx")]:
-        if old.stem not in slugs and generated(old):
+        if old not in places and generated(old):
             old.unlink()
             print(f"removed {old.relative_to(WEB)}")
     print(f"{len(written)} chapters written, {len(devices) - len(written)} kept as written by hand")
