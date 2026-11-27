@@ -1,0 +1,38 @@
+---
+title: "1980s Lead Head"
+description: "Two-channel valve head in the style of the late-1980s British lead heads: diode-clipped lead and a rhythm channel."
+---
+
+{/* Written by scripts/manual_devices.py from the app and src/data/manual; edit those, or remove this line to write it by hand. */}
+
+import Shot from '../../../../../components/Shot.astro';
+import chain from '../../../../../assets/devices/1980s-lead-head.webp';
+
+**A design of Solmara's own.**
+
+A modelled British two-channel master-volume guitar head of the late 1980s, without a cabinet: an input valve and its gain pot, a second stage into a pair of diodes (a red LED one way, silicon the other) and the lead master on the lead channel, a rhythm channel that passes them by with its own clip switch for the diodes, a third stage into a cathode follower, a passive tone stack, an output master, and four European output pentodes in push-pull. Input gain, lead master, output master, bass, middle, treble, presence, the channel, and the rhythm clip. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt lead head of the late 1980s whose diode-clipped lead channel became a rock and metal sound of its own.
+
+[1980s Lead Head on the website](/solmara/guitar/#1980s-lead-head)
+
+## In the device chain
+
+1980s Lead Head on a track, as it starts.
+
+<a href={chain.src} title="The picture at its full size"><Shot src={chain} alt="1980s Lead Head in a track's device chain, as it starts." /></a>
+
+
+## Appendix: every control
+
+Each of the device's controls by the name automation and the inspector give it, with the values it can take and the one it starts at.
+
+| Control | Range | Starts at |
+| --- | --- | --- |
+| Input Gain | 0 to 100 | 50 |
+| Lead Master | 0 to 100 | 50 |
+| Output Master | 0 to 100 | 50 |
+| Bass | 0 to 100 | 50 |
+| Middle | 0 to 100 | 50 |
+| Treble | 0 to 100 | 50 |
+| Presence | 0 to 100 | 50 |
+| Channel | Lead, Rhythm | Lead |
+| Rhythm Clip | Clean, Clip | Clean |

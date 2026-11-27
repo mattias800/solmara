@@ -98,5 +98,17 @@
    "Left-Right",
    "Mid-Side"
   ]
+ },
+ {
+  "key": "noiseGate",
+  "label": "Noise Gate",
+  "unit": "switch",
+  "minimum": 0.0,
+  "maximum": 1.0,
+  "default": 1.0,
+  "choices": [
+   "Off",
+   "On"
+  ]
  }
 ]

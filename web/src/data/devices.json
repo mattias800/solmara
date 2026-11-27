@@ -1110,6 +1110,36 @@
   "face": "british-crunch-head"
  },
  {
+  "id": "builtin.lead-head-amplifier",
+  "slug": "1980s-lead-head",
+  "label": "1980s Lead Head",
+  "kind": "effect",
+  "group": "Guitar & bass",
+  "part": "Guitar amps",
+  "tag": "80s lead amp",
+  "summary": "two-channel valve head in the style of the late-1980s British lead heads: diode-clipped lead and a rhythm channel",
+  "description": "A modelled British two-channel master-volume guitar head of the late 1980s, without a cabinet: an input valve and its gain pot, a second stage into a pair of diodes (a red LED one way, silicon the other) and the lead master on the lead channel, a rhythm channel that passes them by with its own clip switch for the diodes, a third stage into a cathode follower, a passive tone stack, an output master, and four European output pentodes in push-pull. Input gain, lead master, output master, bass, middle, treble, presence, the channel, and the rhythm clip. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt lead head of the late 1980s whose diode-clipped lead channel became a rock and metal sound of its own.",
+  "window": false,
+  "sidechain": false,
+  "controls": 9,
+  "face": "1980s-lead-head"
+ },
+ {
+  "id": "builtin.thrash-metal-head",
+  "slug": "thrash-metal-head",
+  "label": "Thrash Metal Head",
+  "kind": "effect",
+  "group": "Guitar & bass",
+  "part": "Guitar amps",
+  "tag": "thrash amp",
+  "summary": "master-volume valve head in the style of the early-1980s British heads as thrash players boosted and gated them: tight, fast rhythm",
+  "description": "A modelled British master-volume guitar head of the early 1980s as a thrash player had it built for him, without a cabinet: a boost before the valves, a voiced equaliser with its own gain (Assault), and an expander gate that follows the guitar's level, both in while the boost is on; then an input valve and the preamp volume, a cold-biased second stage, a third stage into a cathode follower, a passive tone stack, a master volume, and four European output pentodes in push-pull. Preamp volume, master volume, bass, middle, treble, presence, the boost, assault, and the gate's threshold. It wants a cabinet after it, the speaker cabinet device.",
+  "window": false,
+  "sidechain": false,
+  "controls": 9,
+  "face": "thrash-metal-head"
+ },
+ {
   "id": "builtin.blues-combo-amplifier",
   "slug": "1960s-blues-combo",
   "label": "1960s Blues Combo",
@@ -1123,6 +1153,21 @@
   "sidechain": false,
   "controls": 10,
   "face": "1960s-blues-combo"
+ },
+ {
+  "id": "builtin.rock-bass-head",
+  "slug": "british-rock-bass-head",
+  "label": "British Rock Bass Head",
+  "kind": "effect",
+  "group": "Guitar & bass",
+  "part": "Bass amps",
+  "tag": "rock bass amp",
+  "summary": "valve bass head in the style of the 1970s British 100-watt heads: a loud, distorted rock bass",
+  "description": "A modelled British 100-watt valve bass head of the 1970s, without its cabinet: the jumpered head's circuit of two channels and four input jacks, with its own numbers, no master volume, a passive tone stack and four European output pentodes in push-pull, turned up until the power stage distorts. Bright and normal volumes, bass, middle, treble, presence, which jack the bass is in and whether a jumper joins the channels, and a quality switch. It wants a cabinet after it, the speaker cabinet device. Modelled on the British 100-watt bass head as a loud rock trio's bassist played it, every knob up but the bass, a distorted bass that fills the room.",
+  "window": false,
+  "sidechain": false,
+  "controls": 8,
+  "face": "british-rock-bass-head"
  },
  {
   "id": "builtin.jumpered-amplifier",
@@ -1226,7 +1271,7 @@
   "description": "A modelled modern American valve channel strip: a valve microphone preamplifier of two triode stages with a gain switch and a level knob that warms and then drives it, an 80 Hz low cut, a three-band equaliser of a low shelf, a swept mid bell and a high shelf, an optical compressor with one knob that also sets its make-up gain, and the output. The preamplifier at two or four times the sample rate, as late at both.",
   "window": false,
   "sidechain": false,
-  "controls": 13,
+  "controls": 14,
   "face": "tube-console-strip"
  },
  {
@@ -1241,7 +1286,7 @@
   "description": "A modelled American valve vocal channel of the late 1990s: a line input transformer, a 6 dB low cut and the input pot, a passive optical compressor ahead of the valves with stepped attack and release, a two-triode preamplifier whose gain switch sets its feedback, a passive equaliser of a low peak, a mid dip and a high peak on stepped coils, a passive optical de-esser or limiter, a valve line amplifier and the output transformer. The preamplifier at two or four times the sample rate, as late at both.",
   "window": false,
   "sidechain": false,
-  "controls": 22,
+  "controls": 23,
   "face": "tube-vocal-strip"
  },
  {
@@ -2216,7 +2261,7 @@
   "description": "A modelled variable-mu valve compressor, for masters and drum buses: a push-pull pair of remote-cutoff valves between an input and an output transformer, whose gain falls smoothly as the sidechain takes their grids further under their cathodes. The ratio is no switch's: it grows with the reduction, from a gentle slope at the knee to a limiter's well over it. An input knob in dB that drives the valves and sets the threshold with the threshold knob, a time constant switch of six places, four fixed and two automatic that let a short peak go quickly and a long passage slowly, the sidechain's bias trimmer, an output knob, a mix, a balance trimmer for the pair, a high-pass in the sidechain, a link between the two channels, a matrix that compresses their middle and side, and a sidechain from another track. The gain cell is a circuit solved part by part; the timing network is the circuit's, solved exactly. Modelled on the large American valve limiter of the late 1950s, two channels of it in one unit.",
   "window": false,
   "sidechain": true,
-  "controls": 10,
+  "controls": 11,
   "face": "mid-century-vari-mu"
  },
  {
@@ -2441,7 +2486,7 @@
   "description": "A modelled analogue filter: a transistor ladder, a squelchy diode ladder, a screaming Sallen-Key, a polished OTA cascade, or a smooth state variable, driven into saturation and ringing at high resonance, as low-, band-, or high-pass, with an LFO and an envelope follower to move its cutoff. The follower listens to the filter's input or another track by sidechain.",
   "window": false,
   "sidechain": true,
-  "controls": 17,
+  "controls": 18,
   "face": "filter"
  },
  {
